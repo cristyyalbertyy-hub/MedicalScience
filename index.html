@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Science — modular UK-style learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <header class="site-header leg-shadow block-green">
+      <h1 class="site-title">Medical Science</h1>
+      <p class="site-tagline">Study smarter, not harder — brick by brick</p>
+      <p class="lead">
+        Right, here’s the pitch: we’re basically selling you back a bit of headspace. Less faff, more
+        flow — bite-sized modules that actually fit around labs, placements, and the chaos of uni life.
+        Think <strong>light-touch learning</strong> with structure that doesn’t feel like another essay
+        crisis.
+      </p>
+      <div class="cta-row">
+        <a class="btn-lego btn-red" href="#curriculum">Browse the three-year layout</a>
+        <a class="btn-lego btn-blue" href="#pricing">See pricing</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="pricing" class="pricing-hero leg-shadow block-blue">
+        <h2>Pricing — dead simple</h2>
+        <div class="pricing-grid">
+          <div class="price-card leg-shadow brick-yellow">
+            <h3>One module</h3>
+            <p class="price-tag">€15</p>
+            <p>Pick what you need when you need it. No drama.</p>
+          </div>
+          <div class="price-card leg-shadow brick-green featured">
+            <h3>Bundle of four</h3>
+            <p class="price-tag">€50</p>
+            <p>Any four modules — grab the discount and sort the whole term’s stack.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="curriculum" class="curriculum-section">
+        <h2 class="section-title">Course outline · three years</h2>
+        <p class="section-blurb">
+          Tap a coloured brick to open the syllabus, pricing reminder, and — where live — jump straight
+          into the interactive apps (Medical Biology lives in Studio9; Medical Genetics in Genetics).
+        </p>
+        <div id="curriculum-root"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer leg-shadow block-red">
+      <p>
+        <strong>Medical Science</strong> · LEGO-inspired layout, zero affiliation with the LEGO Group.
+      </p>
+      <p class="footer-note">Made for students who’d rather revise than wrestle the LMS.</p>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-panel leg-shadow">
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close syllabus">&times;</button>
+        <h2 id="modal-title">Module</h2>
+        <div id="modal-body"></div>
+        <div class="modal-actions" id="modal-actions" hidden></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
