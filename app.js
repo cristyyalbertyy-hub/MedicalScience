@@ -98,47 +98,51 @@ function placeholderSyllabus(displayTitle) {
   };
 }
 
-SYLLABI["y1-2"] = placeholderSyllabus("2");
-SYLLABI["y1-3"] = placeholderSyllabus("3");
-SYLLABI["y1-4"] = placeholderSyllabus("4");
+SYLLABI["y1-2"] = placeholderSyllabus("Chemistry and Introductory Biochemistry");
+SYLLABI["y1-3"] = placeholderSyllabus("Economics and International Social Politics");
+SYLLABI["y1-4"] = placeholderSyllabus("Histology and Embryology");
+SYLLABI["y1-5"] = placeholderSyllabus("Human Anatomy I");
+SYLLABI["y1-6"] = placeholderSyllabus("Physics, Statistics and Information Processing");
 
-for (let i = 5; i <= 12; i += 1) {
+for (let i = 7; i <= 14; i += 1) {
   SYLLABI[`subject-${i}`] = placeholderSyllabus(`Subject ${i}`);
 }
 
 const BRICK_CYCLE = ["brick-red", "brick-blue", "brick-yellow", "brick-green"];
 const YEAR_COLOURS = ["block-red", "block-blue", "block-yellow"];
 
-/** Four subjects per year · twelve modules total */
+/** Year 1 has confirmed subject names; Years 2 and 3 remain placeholders. */
 const CURRICULUM = [
   {
     year: 1,
     colour: YEAR_COLOURS[0],
     modules: [
       { id: "medical-biology-and-genetics", label: "Medical Biology and Genetics" },
-      { id: "y1-2", label: "2" },
-      { id: "y1-3", label: "3" },
-      { id: "y1-4", label: "4" },
+      { id: "y1-2", label: "Chemistry and Introductory Biochemistry" },
+      { id: "y1-3", label: "Economics and International Social Politics" },
+      { id: "y1-4", label: "Histology and Embryology" },
+      { id: "y1-5", label: "Human Anatomy I" },
+      { id: "y1-6", label: "Physics, Statistics and Information Processing" },
     ],
   },
   {
     year: 2,
     colour: YEAR_COLOURS[1],
     modules: [
-      { id: "subject-5", label: "Subject 5" },
-      { id: "subject-6", label: "Subject 6" },
       { id: "subject-7", label: "Subject 7" },
       { id: "subject-8", label: "Subject 8" },
+      { id: "subject-9", label: "Subject 9" },
+      { id: "subject-10", label: "Subject 10" },
     ],
   },
   {
     year: 3,
     colour: YEAR_COLOURS[2],
     modules: [
-      { id: "subject-9", label: "Subject 9" },
-      { id: "subject-10", label: "Subject 10" },
       { id: "subject-11", label: "Subject 11" },
       { id: "subject-12", label: "Subject 12" },
+      { id: "subject-13", label: "Subject 13" },
+      { id: "subject-14", label: "Subject 14" },
     ],
   },
 ].map((y) => ({
