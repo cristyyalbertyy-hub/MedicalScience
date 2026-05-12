@@ -21,5 +21,5 @@ document.querySelectorAll("[data-nav]").forEach((link) => {
 });
 
 document.querySelector(".sound-button")?.addEventListener("click", (event) => {
-  event.currentTarget.textContent = "Vídeo pronto para som";
+  event.currentTarget.textContent = "Video ready for sound";
 });
