@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ready packages · Medical Science · Studio9</title>
+    <meta
+      name="description"
+      content="Studio9 ready-made learning packages: Medical Biology, Genetics, Physics, Information Processing, History of Medicine and Moral Philosophy."
+    />
+    <meta name="theme-color" content="#1F4E6B" />
+    <link rel="icon" type="image/png" href="../StudioNine.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-page="packages">
+    <a class="skip-link" href="#conteudo">Skip to content</a>
+
+    <header class="site-nav" aria-label="Main navigation">
+      <a class="brand" href="../" aria-label="Studio9 Medical Science - home">
+        <img src="../StudioNine.png" alt="" width="38" height="38" />
+        <span><strong>Studio9</strong> Medical Science</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+        Menu
+      </button>
+      <nav id="main-menu" class="nav-menu">
+        <a href="../" data-nav="home">Home</a>
+        <a href="../curriculo/" data-nav="curriculo">Curriculum</a>
+        <a href="./" data-nav="packages">Packages</a>
+        <a href="../precos/" data-nav="precos">How it works + Pricing</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="page-hero section-shell">
+        <div>
+          <p class="eyebrow">Interactive · ready to use</p>
+          <h1>Ready-made packages.</h1>
+          <p>
+            Six standalone Studio9 apps with videos, podcasts and exercises already built. Open a
+            live package below, or check back as the rest roll out.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-shell packages-section" aria-label="Ready-made learning packages">
+        <div class="packages-config-note">
+          <p>
+            <strong>For editors:</strong> package titles and app URLs are managed in
+            <code>app.js</code> (<code>READY_PACKAGES</code>). Set <code>url</code> and
+            <code>status: "live"</code> when an app is ready to publish.
+          </p>
+        </div>
+        <div class="packages-grid" data-packages-root></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="../StudioNine.png" alt="" width="34" height="34" />
+        <strong>Studio9 + Medical Science</strong>
+      </div>
+      <nav aria-label="Footer links">
+        <a href="../curriculo/">Curriculum</a>
+        <a href="../packages/">Packages</a>
+        <a href="../precos/#como-funciona">How it works</a>
+        <a href="../precos/#precos">Pricing</a>
+        <a href="../precos/#faq">FAQ</a>
+        <a href="mailto:hello@studio9.example">Contact</a>
+      </nav>
+      <p>© 2026 Studio9 – learning without stress, really</p>
+    </footer>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
