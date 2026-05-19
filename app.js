@@ -27,17 +27,17 @@ const READY_PACKAGES = [
     title: "Physics",
     description:
       "Physical principles applied to the human body, imaging, forces and measurement in medicine.",
-    url: "",
-    status: "soon",
+    url: "https://physics-tau-five.vercel.app/",
+    status: "live",
   },
   {
     id: "information-processing",
     number: "04",
     title: "Information Processing",
     description:
-      "Data literacy, statistics and digital tools for evidence-based study and clinical practice.",
-    url: "",
-    status: "soon",
+      "Data literacy and digital tools for evidence-based study — classes, videos, podcasts and questions.",
+    url: "https://informatics-theta.vercel.app/",
+    status: "live",
   },
   {
     id: "history-of-medicine",
@@ -45,8 +45,8 @@ const READY_PACKAGES = [
     title: "History of Medicine",
     description:
       "Key discoveries, figures and turning points that shaped modern health sciences.",
-    url: "",
-    status: "soon",
+    url: "https://history-medicine.vercel.app/",
+    status: "live",
   },
   {
     id: "moral-philosophy",
@@ -54,6 +54,15 @@ const READY_PACKAGES = [
     title: "Moral Philosophy",
     description:
       "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
+    url: "https://moral-philosophy.vercel.app/",
+    status: "live",
+  },
+  {
+    id: "statistics",
+    number: "07",
+    title: "Statistics",
+    description:
+      "Descriptive and inferential statistics for health sciences — coming as a dedicated Studio9 package.",
     url: "",
     status: "soon",
   },
