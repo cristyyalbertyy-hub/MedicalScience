@@ -58,8 +58,17 @@ const READY_PACKAGES = [
     status: "live",
   },
   {
-    id: "statistics",
+    id: "health-technology-assessments",
     number: "07",
+    title: "Health Technology Assessments",
+    description:
+      "HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
+    url: "https://health-technology-assessments.vercel.app/",
+    status: "live",
+  },
+  {
+    id: "statistics",
+    number: "08",
     title: "Statistics",
     description:
       "Descriptive and inferential statistics for health sciences — coming as a dedicated Studio9 package.",
