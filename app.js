@@ -40,8 +40,17 @@ const READY_PACKAGES = [
     status: "live",
   },
   {
-    id: "history-of-medicine",
+    id: "statistics",
     number: "05",
+    title: "Statistics",
+    description:
+      "Descriptive and inferential statistics for health sciences — coming as a dedicated Studio9 package.",
+    url: "",
+    status: "soon",
+  },
+  {
+    id: "history-of-medicine",
+    number: "06",
     title: "History of Medicine",
     description:
       "Key discoveries, figures and turning points that shaped modern health sciences.",
@@ -50,7 +59,7 @@ const READY_PACKAGES = [
   },
   {
     id: "moral-philosophy",
-    number: "06",
+    number: "07",
     title: "Moral Philosophy",
     description:
       "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
@@ -59,7 +68,7 @@ const READY_PACKAGES = [
   },
   {
     id: "health-technology-assessments",
-    number: "07",
+    number: "08",
     title: "Health Technology Assessments",
     description:
       "HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
@@ -67,13 +76,13 @@ const READY_PACKAGES = [
     status: "live",
   },
   {
-    id: "statistics",
-    number: "08",
-    title: "Statistics",
+    id: "italian-health-system",
+    number: "09",
+    title: "Italian Health System",
     description:
-      "Descriptive and inferential statistics for health sciences — coming as a dedicated Studio9 package.",
-    url: "",
-    status: "soon",
+      "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
+    url: "https://italian-health-system.vercel.app/",
+    status: "live",
   },
 ];
 
