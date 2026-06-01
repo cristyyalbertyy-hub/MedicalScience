@@ -84,6 +84,15 @@ const READY_PACKAGES = [
     url: "https://italian-health-system.vercel.app/",
     status: "live",
   },
+  {
+    id: "human-anatomy-1",
+    number: "10",
+    title: "Human Anatomy I",
+    description:
+      "Skeletal, muscular and nervous systems — the base for clinical study and dissection-ready terminology.",
+    url: "https://human-anatomy1.vercel.app/",
+    status: "live",
+  },
 ];
 
 function escapeHtml(value) {
