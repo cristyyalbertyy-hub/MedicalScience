@@ -992,6 +992,10 @@ p {
   gap: 1rem;
 }
 
+.package-card[id^="package-"] {
+  scroll-margin-top: 6rem;
+}
+
 .package-card {
   display: flex;
   flex-direction: column;
