@@ -4,21 +4,21 @@
  */
 const READY_PACKAGES = [
   {
-    id: "medical-biology",
-    number: "01",
-    title: "Medical Biology",
-    description:
-      "Cell biology, tissues, metabolism and the foundations you need before clinical years.",
-    url: "https://biology-genetics.vercel.app/#/login",
-    status: "live",
-  },
-  {
     id: "human-anatomy-1",
-    number: "02",
+    number: "01",
     title: "Human Anatomy I",
     description:
       "Skeletal, muscular and nervous systems — the base for clinical study and dissection-ready terminology.",
     url: "https://human-anatomy1.vercel.app/",
+    status: "live",
+  },
+  {
+    id: "medical-biology",
+    number: "02",
+    title: "Medical Biology",
+    description:
+      "Cell biology, tissues, metabolism and the foundations you need before clinical years.",
+    url: "https://biology-genetics.vercel.app/#/login",
     status: "live",
   },
   {
