@@ -58,8 +58,35 @@ const READY_PACKAGES = [
     status: "soon",
   },
   {
-    id: "history-of-medicine",
+    id: "histology-embryology",
     number: "07",
+    title: "Histology and Embryology",
+    description:
+      "Microscopy, fundamental tissues, early development, and correlation with anatomy.",
+    url: "https://histology-embryology.vercel.app/",
+    status: "live",
+  },
+  {
+    id: "chemistry",
+    number: "08",
+    title: "Chemistry",
+    description:
+      "Atomic structure, chemical bonding and the chemistry foundations for health sciences — under construction.",
+    url: "",
+    status: "soon",
+  },
+  {
+    id: "introductory-biochemistry",
+    number: "09",
+    title: "Introductory Biochemistry",
+    description:
+      "Proteins, enzymes, metabolism and the molecular basis of life in health sciences — under construction.",
+    url: "",
+    status: "soon",
+  },
+  {
+    id: "history-of-medicine",
+    number: "10",
     title: "History of Medicine",
     description:
       "Key discoveries, figures and turning points that shaped modern health sciences.",
@@ -68,7 +95,7 @@ const READY_PACKAGES = [
   },
   {
     id: "moral-philosophy",
-    number: "08",
+    number: "11",
     title: "Moral Philosophy",
     description:
       "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
@@ -77,7 +104,7 @@ const READY_PACKAGES = [
   },
   {
     id: "health-technology-assessments",
-    number: "09",
+    number: "12",
     title: "Health Technology Assessments",
     description:
       "HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
@@ -86,7 +113,7 @@ const READY_PACKAGES = [
   },
   {
     id: "italian-health-system",
-    number: "10",
+    number: "13",
     title: "Italian Health System",
     description:
       "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
