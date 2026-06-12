@@ -53,9 +53,9 @@ const READY_PACKAGES = [
     number: "06",
     title: "Statistics",
     description:
-      "Descriptive and inferential statistics for health sciences — coming as a dedicated Studio9 package.",
-    url: "",
-    status: "soon",
+      "Descriptive and inferential statistics for health sciences.",
+    url: "https://statistics-nu-eight.vercel.app/",
+    status: "live",
   },
   {
     id: "histology-embryology",
