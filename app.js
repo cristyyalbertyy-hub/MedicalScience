@@ -67,26 +67,17 @@ const READY_PACKAGES = [
     status: "live",
   },
   {
-    id: "chemistry",
+    id: "chemistry-introductory-biochemistry",
     number: "08",
-    title: "Chemistry",
+    title: "Chemistry and Introductory Biochemistry",
     description:
-      "Atomic structure, chemical bonding and the chemistry foundations for health sciences — under construction.",
-    url: "",
-    status: "soon",
-  },
-  {
-    id: "introductory-biochemistry",
-    number: "09",
-    title: "Introductory Biochemistry",
-    description:
-      "Proteins, enzymes, metabolism and the molecular basis of life in health sciences — under construction.",
-    url: "",
-    status: "soon",
+      "Atomic structure, chemical bonding, proteins, enzymes, metabolism and the molecular foundations for health sciences.",
+    url: "https://chemistry-roan.vercel.app/",
+    status: "live",
   },
   {
     id: "history-of-medicine",
-    number: "10",
+    number: "09",
     title: "History of Medicine",
     description:
       "Key discoveries, figures and turning points that shaped modern health sciences.",
@@ -95,7 +86,7 @@ const READY_PACKAGES = [
   },
   {
     id: "moral-philosophy",
-    number: "11",
+    number: "10",
     title: "Moral Philosophy",
     description:
       "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
@@ -104,7 +95,7 @@ const READY_PACKAGES = [
   },
   {
     id: "health-technology-assessments",
-    number: "12",
+    number: "11",
     title: "Health Technology Assessments",
     description:
       "HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
@@ -113,7 +104,7 @@ const READY_PACKAGES = [
   },
   {
     id: "italian-health-system",
-    number: "13",
+    number: "12",
     title: "Italian Health System",
     description:
       "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
