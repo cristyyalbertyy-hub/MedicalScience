@@ -122,22 +122,33 @@ function escapeHtml(value) {
   return node.innerHTML;
 }
 
+function packageText(key) {
+  if (window.SiteI18n) {
+    return SiteI18n.siteT(SiteI18n.getSiteLang(), key);
+  }
+  return key;
+}
+
 function renderPackageCard(pkg, { compact = false } = {}) {
   const isLive = pkg.status === "live" && pkg.url;
   const statusClass = isLive ? "is-live" : "is-soon";
-  const statusLabel = isLive ? "Live" : "Coming soon";
+  const statusLabel = isLive
+    ? packageText("packagesUi.live")
+    : packageText("packagesUi.comingSoon");
+  const title = packageText(`pkg.${pkg.id}.title`);
+  const description = packageText(`pkg.${pkg.id}.description`);
   const action = isLive
-    ? `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">Open app</a>`
-    : `<span class="package-soon">Launching soon</span>`;
+    ? `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`
+    : `<span class="package-soon">${escapeHtml(packageText("packagesUi.launchingSoon"))}</span>`;
 
   return `
     <article class="package-card ${statusClass}${compact ? " is-compact" : ""}" id="package-${escapeHtml(pkg.id)}">
       <div class="package-card-top">
         <span class="package-number">${escapeHtml(pkg.number)}</span>
-        <span class="package-status">${statusLabel}</span>
+        <span class="package-status">${escapeHtml(statusLabel)}</span>
       </div>
-      <h3>${escapeHtml(pkg.title)}</h3>
-      <p>${escapeHtml(pkg.description)}</p>
+      <h3>${escapeHtml(title)}</h3>
+      <p>${escapeHtml(description)}</p>
       <div class="package-card-action">${action}</div>
     </article>`;
 }
@@ -183,13 +194,17 @@ function initNavigation() {
 }
 
 function init() {
+  if (window.SiteI18n) {
+    SiteI18n.initSiteLanguage();
+    document.addEventListener("site:langchange", () => {
+      document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
+      initStudentProgressLinks();
+    });
+  }
+
   document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
   initStudentProgressLinks();
   initNavigation();
-
-  document.querySelector(".sound-button")?.addEventListener("click", (event) => {
-    event.currentTarget.textContent = "Video ready for sound";
-  });
 }
 
 document.addEventListener("DOMContentLoaded", init);

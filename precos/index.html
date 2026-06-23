@@ -7,6 +7,7 @@
     <meta
       name="description"
       content="How the Studio9 Medical Science course works, with pricing plans for modules, bundles, full years and the complete course."
+      data-i18n="meta.precos.description"
     />
     <meta name="theme-color" content="#1F4E6B" />
     <link rel="icon" type="image/png" href="../StudioNine.png" />
@@ -18,32 +19,41 @@
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body data-page="precos">
-    <a class="skip-link" href="#conteudo">Skip to content</a>
+  <body data-page="precos" data-i18n-title="meta.precos.title">
+    <a class="skip-link" href="#conteudo" data-i18n="nav.skip">Skip to content</a>
 
-    <header class="site-nav" aria-label="Main navigation">
-      <a class="brand" href="../" aria-label="Studio9 Medical Science - home">
+    <header class="site-nav" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a class="brand" href="../" data-i18n-attr="aria-label" data-i18n="brand.aria">
         <img src="../StudioNine.png" alt="" width="38" height="38" />
-        <span><strong>Studio9</strong> Medical Science</span>
+        <span><strong data-i18n="brand.name">Studio9</strong> Medical Science</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
-        Menu
-      </button>
+      <div class="nav-actions">
+        <div class="lang-selector" role="group" data-i18n-attr="aria-label" data-i18n="lang.label">
+          <button type="button" data-lang="en" aria-pressed="true">En</button>
+          <button type="button" data-lang="es" aria-pressed="false">Es</button>
+          <button type="button" data-lang="fr" aria-pressed="false">Fr</button>
+          <button type="button" data-lang="it" aria-pressed="false">It</button>
+          <button type="button" data-lang="pt" aria-pressed="false">Pt</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-i18n="nav.menu">
+          Menu
+        </button>
+      </div>
       <nav id="main-menu" class="nav-menu">
-        <a href="../" data-nav="home">Home</a>
-        <a href="../curriculo/" data-nav="curriculo">Curriculum</a>
-        <a href="../packages/" data-nav="packages">Packages</a>
-        <a href="../precos/" data-nav="precos">How it works + Pricing</a>
-        <a class="nav-progress" data-student-progress target="_blank" rel="noopener noreferrer">My progress</a>
+        <a href="../" data-nav="home" data-i18n="nav.home">Home</a>
+        <a href="../curriculo/" data-nav="curriculo" data-i18n="nav.curriculo">Curriculum</a>
+        <a href="../packages/" data-nav="packages" data-i18n="nav.packages">Packages</a>
+        <a href="../precos/" data-nav="precos" data-i18n="nav.precos">How it works + Pricing</a>
+        <a class="nav-progress" data-student-progress target="_blank" rel="noopener noreferrer" data-i18n="nav.progress">My progress</a>
       </nav>
     </header>
 
     <main id="conteudo">
       <section class="page-hero pricing-hero section-shell" id="como-funciona">
         <div>
-          <p class="eyebrow">Flexible method</p>
-          <h1>Studying should bring calm, not panic.</h1>
-          <p>
+          <p class="eyebrow" data-i18n="precos.hero.eyebrow">Flexible method</p>
+          <h1 data-i18n="precos.hero.title">Studying should bring calm, not panic.</h1>
+          <p data-i18n="precos.hero.text">
             A multimedia format for when you are focused, on the move, or only have ten minutes
             before bed.
           </p>
@@ -54,23 +64,23 @@
         <div class="feature-grid steps-grid">
           <article class="feature-card calm-card">
             <span class="step-number">1</span>
-            <h3>Choose your modules</h3>
-            <p>Buy one module, a full year, or all three years.</p>
+            <h3 data-i18n="precos.steps.s1Title">Choose your modules</h3>
+            <p data-i18n="precos.steps.s1Text">Buy one module, a full year, or all three years.</p>
           </article>
           <article class="feature-card calm-card">
             <span class="step-number">2</span>
-            <h3>Access them in the Studio9 app</h3>
-            <p>Download on your phone or computer. It works offline.</p>
+            <h3 data-i18n="precos.steps.s2Title">Access them in the Studio9 app</h3>
+            <p data-i18n="precos.steps.s2Text">Open it on your phone or computer — wherever you are.</p>
           </article>
           <article class="feature-card calm-card">
             <span class="step-number">3</span>
-            <h3>Study at your own pace</h3>
-            <p>Videos when you are focused. Podcasts when you are moving. Exercises to test yourself.</p>
+            <h3 data-i18n="precos.steps.s3Title">Study at your own pace</h3>
+            <p data-i18n="precos.steps.s3Text">Videos when you are focused. Podcasts when you are moving. Exercises to test yourself.</p>
           </article>
           <article class="feature-card calm-card">
             <span class="step-number">4</span>
-            <h3>Track your progress</h3>
-            <p>
+            <h3 data-i18n="precos.steps.s4Title">Track your progress</h3>
+            <p data-i18n-html="precos.steps.s4Text">
               See what you have completed and what is left, discipline by discipline.
               <a class="text-link" data-student-progress target="_blank" rel="noopener noreferrer">Open progress dashboard →</a>
             </p>
@@ -80,52 +90,52 @@
 
       <section class="section-shell" id="precos">
         <div class="section-heading centered">
-          <p class="eyebrow">No surprises</p>
-          <h2>Simple pricing.</h2>
+          <p class="eyebrow" data-i18n="precos.pricing.eyebrow">No surprises</p>
+          <h2 data-i18n="precos.pricing.title">Simple pricing.</h2>
         </div>
         <div class="pricing-grid">
           <article class="price-plan">
-            <p class="plan-label">Single module</p>
-            <h3>€15</h3>
+            <p class="plan-label" data-i18n="precos.pricing.p1Label">Single module</p>
+            <h3 data-i18n="precos.pricing.p1Price">€15</h3>
             <ul>
-              <li>40-60h of study</li>
-              <li>Immediate access (1 year)</li>
-              <li>Videos + podcasts + exercises + summary</li>
+              <li data-i18n="precos.pricing.p1l1">40-60h of study</li>
+              <li data-i18n="precos.pricing.p1l2">Immediate access (1 year)</li>
+              <li data-i18n="precos.pricing.p1l3">Videos + podcasts + exercises + summary</li>
             </ul>
-            <a class="btn btn-secondary" href="../curriculo/">Choose a module →</a>
+            <a class="btn btn-secondary" href="../curriculo/" data-i18n="precos.pricing.p1cta">Choose a module →</a>
           </article>
 
           <article class="price-plan">
-            <p class="plan-label">4-module bundle</p>
-            <h3>€50 <span>€12.50 each</span></h3>
+            <p class="plan-label" data-i18n="precos.pricing.p2Label">4-module bundle</p>
+            <h3 data-i18n-html="precos.pricing.p2Price">€50 <span>€12.50 each</span></h3>
             <ul>
-              <li>4 modules of your choice</li>
-              <li>Immediate access (1 year)</li>
-              <li>Save 25% versus buying individually</li>
+              <li data-i18n="precos.pricing.p2l1">4 modules of your choice</li>
+              <li data-i18n="precos.pricing.p2l2">Immediate access (1 year)</li>
+              <li data-i18n="precos.pricing.p2l3">Save 25% versus buying individually</li>
             </ul>
-            <a class="btn btn-secondary" href="../curriculo/">Build your pack →</a>
+            <a class="btn btn-secondary" href="../curriculo/" data-i18n="precos.pricing.p2cta">Build your pack →</a>
           </article>
 
           <article class="price-plan">
-            <p class="plan-label">Full year</p>
-            <h3>€120 <span>€15 per month if paid annually</span></h3>
+            <p class="plan-label" data-i18n="precos.pricing.p3Label">Full year</p>
+            <h3 data-i18n-html="precos.pricing.p3Price">€120 <span>€15 per month if paid annually</span></h3>
             <ul>
-              <li>1 complete curriculum year</li>
-              <li>Immediate access (1 year + 6 extra months)</li>
-              <li>Save 40% versus buying individually</li>
+              <li data-i18n="precos.pricing.p3l1">1 complete curriculum year</li>
+              <li data-i18n="precos.pricing.p3l2">Immediate access (1 year + 6 extra months)</li>
+              <li data-i18n="precos.pricing.p3l3">Save 40% versus buying individually</li>
             </ul>
-            <a class="btn btn-secondary" href="../curriculo/">See the years →</a>
+            <a class="btn btn-secondary" href="../curriculo/" data-i18n="precos.pricing.p3cta">See the years →</a>
           </article>
 
           <article class="price-plan featured-plan">
-            <p class="plan-label">Complete course</p>
-            <h3>€300 <span>equivalent to €10/month</span></h3>
+            <p class="plan-label" data-i18n="precos.pricing.p4Label">Complete course</p>
+            <h3 data-i18n-html="precos.pricing.p4Price">€300 <span>equivalent to €10/month</span></h3>
             <ul>
-              <li>All 22 modules across the 3 years</li>
-              <li>Lifetime access (while the app exists)</li>
-              <li>Save 58% versus buying individually</li>
+              <li data-i18n="precos.pricing.p4l1">All 22 modules across the 3 years</li>
+              <li data-i18n="precos.pricing.p4l2">Lifetime access (while the app exists)</li>
+              <li data-i18n="precos.pricing.p4l3">Save 58% versus buying individually</li>
             </ul>
-            <a class="btn btn-primary" href="mailto:hello@studio9.example?subject=I%20want%20the%20Medical%20Science%20course">
+            <a class="btn btn-primary" href="mailto:hello@studio9.example?subject=I%20want%20the%20Medical%20Science%20course" data-i18n="precos.pricing.p4cta">
               Most popular → I want everything
             </a>
           </article>
@@ -134,37 +144,29 @@
 
       <section class="section-shell faq-section" id="faq">
         <div class="section-heading">
-          <p class="eyebrow">Quick questions</p>
-          <h2>FAQ.</h2>
+          <p class="eyebrow" data-i18n="precos.faq.eyebrow">Quick questions</p>
+          <h2 data-i18n="precos.faq.title">FAQ.</h2>
         </div>
         <div class="faq-list">
           <details>
-            <summary>Can I really study at the beach?</summary>
-            <p>Yes. The app works offline. Save the videos and podcasts before leaving home.</p>
-          </details>
-          <details>
-            <summary>How do I receive the certificate?</summary>
-            <p>
-              After completing a module (with exercises above 80%), you receive a downloadable PDF
-              with a verification code.
+            <summary data-i18n="precos.faq.q1">Can I really study at the beach?</summary>
+            <p data-i18n="precos.faq.a1">
+              Absolutely — on the beach, in the park, on the bus, at the bar. Videos, podcasts and
+              infographics are made to be absorbed in a relaxed way: you learn while life happens,
+              not only when you are chained to a desk.
             </p>
           </details>
           <details>
-            <summary>Are the teachers real?</summary>
-            <p>
-              Yes. The modules were designed by a board of 5 teachers from medical and health
-              science faculties.
+            <summary data-i18n="precos.faq.q2">Are the teachers real?</summary>
+            <p data-i18n="precos.faq.a2">
+              Yes. Cristina Alberto, university professor with 30 years of experience, and Alexandra
+              Sousa, business consultant with 20 years of experience, shape the academic vision of
+              the course.
             </p>
           </details>
           <details>
-            <summary>What if I do not like it?</summary>
-            <p>
-              We refund you in the first 7 days if you complete less than 20% of the module. No questions asked.
-            </p>
-          </details>
-          <details>
-            <summary>Does this replace university?</summary>
-            <p>
+            <summary data-i18n="precos.faq.q3">Does this replace university?</summary>
+            <p data-i18n="precos.faq.a3">
               No. It is a complement to help you study in a lighter and more efficient way. The
               topics follow the common curriculum from Year 1 to Year 3 of health sciences.
             </p>
@@ -176,20 +178,25 @@
     <footer class="site-footer">
       <div class="footer-brand">
         <img src="../StudioNine.png" alt="" width="34" height="34" />
-        <strong>Studio9 + Medical Science</strong>
+        <strong data-i18n="footer.brand">Studio9 + Medical Science</strong>
       </div>
-      <nav aria-label="Footer links">
-        <a href="../curriculo/">Curriculum</a>
-        <a href="../packages/">Packages</a>
-        <a href="../precos/#como-funciona">How it works</a>
-        <a href="../precos/#precos">Pricing</a>
-        <a href="../precos/#faq">FAQ</a>
-        <a data-student-progress target="_blank" rel="noopener noreferrer">My progress</a>
-        <a href="mailto:hello@studio9.example">Contact</a>
+      <nav data-i18n-attr="aria-label" data-i18n="footer.aria">
+        <a href="../curriculo/" data-i18n="footer.curriculo">Curriculum</a>
+        <a href="../packages/" data-i18n="footer.packages">Packages</a>
+        <a href="../precos/#como-funciona" data-i18n="footer.howItWorks">How it works</a>
+        <a href="../precos/#precos" data-i18n="footer.pricing">Pricing</a>
+        <a href="../precos/#faq" data-i18n="footer.faq">FAQ</a>
+        <a data-student-progress target="_blank" rel="noopener noreferrer" data-i18n="footer.progress">My progress</a>
+        <a href="mailto:hello@studio9.example" data-i18n="footer.contact">Contact</a>
       </nav>
-      <p>© 2026 Studio9 – learning without stress, really</p>
+      <p data-i18n="footer.copy">© 2026 Studio9 – learning without stress, really</p>
     </footer>
 
-    <script src="../app.js?v=8"></script>
+    <script src="../i18n.js?v=1"></script>
+    <script src="../i18n.es.js?v=1"></script>
+    <script src="../i18n.fr.js?v=1"></script>
+    <script src="../i18n.it.js?v=1"></script>
+    <script src="../i18n.pt.js?v=1"></script>
+    <script src="../app.js?v=10"></script>
   </body>
 </html>

@@ -1,0 +1,369 @@
+SITE_LOCALES.it = {
+  meta: {
+    home: {
+      title: "Medical Science · Studio9",
+      description:
+        "Corso online Medical Science di Studio9: video brevi, podcast ed esercizi interattivi per studenti di scienze della salute.",
+    },
+    curriculo: {
+      title: "Programma completo · Medical Science · Studio9",
+      description:
+        "Programma completo del corso Medical Science: tre anni, 22 moduli, con ore di studio e descrizione di ogni materia.",
+    },
+    packages: {
+      title: "Pacchetti pronti · Medical Science · Studio9",
+      description: "Pacchetti Studio9: dodici moduli, tutte e dodici le app sono già online.",
+    },
+    precos: {
+      title: "Come funziona + Prezzi · Medical Science · Studio9",
+      description:
+        "Come funziona il corso Medical Science di Studio9, con piani tariffari per moduli, bundle, anni completi e corso integrale.",
+    },
+  },
+  brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
+  lang: { label: "Lingua" },
+  nav: {
+    skip: "Vai al contenuto",
+    menu: "Menu",
+    home: "Home",
+    curriculo: "Programma",
+    packages: "Pacchetti",
+    precos: "Come funziona + Prezzi",
+    progress: "I miei progressi",
+    aria: "Navigazione principale",
+  },
+  footer: {
+    brand: "Studio9 + Medical Science",
+    curriculo: "Programma",
+    packages: "Pacchetti",
+    howItWorks: "Come funziona",
+    pricing: "Prezzi",
+    faq: "FAQ",
+    progress: "I miei progressi",
+    contact: "Contatti",
+    copy: "© 2026 Studio9 – imparare senza stress, davvero",
+    aria: "Link del footer",
+  },
+  packagesUi: {
+    live: "Online",
+    comingSoon: "In arrivo",
+    openApp: "Apri app",
+    launchingSoon: "Lancio imminente",
+  },
+  screenshots: {
+    hero: { alt: "App Studio9 con una breve lezione video di scienze mediche" },
+    videos: { alt: "App mobile con una lezione video di 5–10 minuti" },
+    podcasts: { alt: "Ascolto di un podcast di scienze mediche sull'autobus" },
+    exercises: { alt: "Esercizio interattivo con feedback immediato nell'app" },
+    packages: { alt: "Panoramica dei pacchetti di apprendimento Studio9 pronti all'uso" },
+    progress: { alt: "Dashboard dei progressi dello studente nelle discipline del 1° anno" },
+  },
+  home: {
+    hero: {
+      eyebrow: "Corso online · 22 moduli · App Studio9",
+      title: "Medical Science. Dal 1° al 3° anno — dove e quando vuoi.",
+      lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
+      ctaCurriculum: "Vedi il programma completo",
+      ctaHow: "Scopri come funziona",
+      mediaAria: "Anteprima dell'app",
+    },
+    audience: {
+      eyebrow: "Niente drammi accademici",
+      title: "A chi è rivolto.",
+      c1Title: "Matricole e studenti pre-universitari",
+      c1Text:
+        "Vuoi arrivare all'università con basi solide? O sei al 1° anno e devi studiare in modo efficiente tra una lezione e l'altra?",
+      c2Title: "Studenti di scienze della salute",
+      c2Text:
+        "Medicina, infermieristica, biomedica, biologia, farmacia. Il corso copre le basi comuni di questi primi anni.",
+      c3Title: "Chi ha un'agenda piena",
+      c3Text:
+        "Lavori o hai orari complicati? Studia sull'autobus, nella pausa pranzo o prima di dormire. Senza sensi di colpa, senza stress.",
+    },
+    preview: {
+      eyebrow: "Anteprima del programma",
+      title: "Il programma — tre anni, mese per mese.",
+      intro:
+        'Qui sotto alcune materie. In fondo alla pagina, consulta il <a href="curriculo/">programma completo</a>.',
+      m1Title: "Biologia e Genetica",
+      m1Text: "Cellule, ereditarietà e basi della genetica clinica.",
+      m2Title: "Anatomia Umana I",
+      m2Text: "Sistemi scheletrico, muscolare e nervoso.",
+      m2Link: "Apri pacchetto →",
+      m3Title: "Genetica Medica",
+      m3Text: "Ereditarietà, mutazioni, disturbi genetici.",
+      m4Title: "Fisiologia I",
+      m4Text: "Sistemi cardiovascolare e respiratorio.",
+      allLink: "Vedi tutte le 22 materie →",
+    },
+    packages: {
+      eyebrow: "Già disponibili",
+      title: "Pacchetti pronti all'uso.",
+      intro: 'Dodici pacchetti Studio9 — tutte e dodici le app sono già online. <a href="packages/">Vedi tutti i pacchetti →</a>',
+    },
+    progress: {
+      aria: "Progressi dello studente",
+      eyebrow: "Sei già iscritto?",
+      title: "Tieni traccia dei tuoi progressi.",
+      text: "Consulta cosa hai completato in tutte le discipline del 1° anno — video, esercizi e conteggi di completamento, materia per materia.",
+      cta: "Apri dashboard progressi →",
+    },
+    study: {
+      eyebrow: "L'app ti segue ovunque",
+      title: "Studia dove vuoi. Davvero.",
+      c1Title: "Video da 5-10 min",
+      c1Text: "Un argomento alla volta. Niente chiacchiere. Attiva i sottotitoli e studia in silenzio.",
+      c2Title: "Podcast da ascoltare",
+      c2Text: "Impara i contenuti sull'autobus, camminando verso le lezioni o mentre riordini la stanza.",
+      c3Title: "Esercizi con feedback",
+      c3Text: "Metti alla prova ciò che hai imparato. L'app ti mostra dove hai sbagliato e te lo spiega di nuovo. Senza frustrazione.",
+    },
+    final: {
+      title: "€15 a modulo. €50 per quattro.",
+      text: "E un corso completo che non ti farà impazzire.",
+      cta: "Vedi i prezzi e inizia",
+    },
+  },
+  curriculo: {
+    hero: {
+      eyebrow: "Tre anni · 22 moduli",
+      title: "Programma completo · Medical Science",
+      text: "Tre anni, 22 moduli. Ogni modulo = 40-60 ore di studio. Al tuo ritmo.",
+    },
+    table: {
+      subject: "Materia",
+      hours: "Ore",
+      description: "Breve descrizione",
+      packageLink: "Pacchetto Studio9 (online) →",
+    },
+    years: {
+      y1: "1° anno · Fondamenti",
+      y1n: "6 moduli",
+      y1aria: "1° anno · Fondamenti",
+      y2: "2° anno · Sistemi e patologia",
+      y2n: "8 moduli",
+      y2aria: "2° anno · Sistemi e patologia",
+      y3: "3° anno · Integrazione clinica",
+      y3n: "8 moduli",
+      y3aria: "3° anno · Integrazione clinica",
+    },
+    note: {
+      text: "Puoi acquistare moduli singoli o un anno completo. Ogni modulo include video, podcast, esercizi e un riassunto scaricabile.",
+      cta: "Vedi i piani tariffari →",
+    },
+    listAria: "Elenco delle materie per anno",
+  },
+  packagesPage: {
+    hero: {
+      eyebrow: "Interattivo · pronto all'uso",
+      title: "Pacchetti pronti all'uso.",
+      text: "Dodici pacchetti — tutte e dodici le app sono già online.",
+    },
+    sectionAria: "Pacchetti di apprendimento pronti all'uso",
+  },
+  precos: {
+    hero: {
+      eyebrow: "Metodo flessibile",
+      title: "Studiare dovrebbe portare calma, non panico.",
+      text: "Un formato multimediale per quando sei concentrato, in movimento o hai solo dieci minuti prima di dormire.",
+    },
+    steps: {
+      s1Title: "Scegli i tuoi moduli",
+      s1Text: "Acquista un modulo, un anno completo o tutti e tre gli anni.",
+      s2Title: "Accedi nell'app Studio9",
+      s2Text: "Aprila su telefono o computer — ovunque tu sia.",
+      s3Title: "Studia al tuo ritmo",
+      s3Text: "Video quando sei concentrato. Podcast in movimento. Esercizi per metterti alla prova.",
+      s4Title: "Tieni traccia dei progressi",
+      s4Text:
+        'Consulta cosa hai completato e cosa resta, materia per materia. <a class="text-link" data-student-progress target="_blank" rel="noopener noreferrer">Apri dashboard progressi →</a>',
+    },
+    pricing: {
+      eyebrow: "Nessuna sorpresa",
+      title: "Prezzi semplici.",
+      p1Label: "Modulo singolo",
+      p1Price: "€15",
+      p1l1: "40-60h di studio",
+      p1l2: "Accesso immediato (1 anno)",
+      p1l3: "Video + podcast + esercizi + riassunto",
+      p1cta: "Scegli un modulo →",
+      p2Label: "Bundle da 4 moduli",
+      p2Price: '€50 <span>€12,50 ciascuno</span>',
+      p2l1: "4 moduli a tua scelta",
+      p2l2: "Accesso immediato (1 anno)",
+      p2l3: "Risparmia il 25% rispetto all'acquisto singolo",
+      p2cta: "Componi il tuo pack →",
+      p3Label: "Anno completo",
+      p3Price: "€120 <span>€15 al mese con pagamento annuale</span>",
+      p3l1: "1 anno completo del programma",
+      p3l2: "Accesso immediato (1 anno + 6 mesi extra)",
+      p3l3: "Risparmia il 40% rispetto all'acquisto singolo",
+      p3cta: "Vedi gli anni →",
+      p4Label: "Corso completo",
+      p4Price: "€300 <span>equivalente a €10/mese</span>",
+      p4l1: "Tutti i 22 moduli su 3 anni",
+      p4l2: "Accesso a vita (finché l'app esiste)",
+      p4l3: "Risparmia il 58% rispetto all'acquisto singolo",
+      p4cta: "Il più popolare → Voglio tutto",
+    },
+    faq: {
+      eyebrow: "Domande rapide",
+      title: "FAQ.",
+      q1: "Posso davvero studiare in spiaggia?",
+      a1: "Assolutamente sì — in spiaggia, al parco, sull'autobus, al bar. Video, podcast e infografiche sono pensati per essere assimilati in modo rilassato: impari mentre la vita scorre, non solo quando sei incatenato alla scrivania.",
+      q2: "I docenti sono persone reali?",
+      a2: "Sì. Cristina Alberto, docente universitaria con 30 anni di esperienza, e Alexandra Sousa, consulente aziendale con 20 anni di esperienza, guidano la visione accademica del corso.",
+      q3: "Sostituisce l'università?",
+      a3: "No. È un complemento per aiutarti a studiare in modo più leggero ed efficiente. Gli argomenti seguono il programma comune dal 1° al 3° anno delle scienze della salute.",
+    },
+  },
+  pkg: {
+    "human-anatomy-1": {
+      title: "Anatomia Umana I",
+      description:
+        "Sistemi scheletrico, muscolare e nervoso — la base per lo studio clinico e la terminologia pronta per la dissezione.",
+    },
+    "medical-biology": {
+      title: "Biologia Medica",
+      description:
+        "Biologia cellulare, tessuti, metabolismo e le basi necessarie prima degli anni clinici.",
+    },
+    genetics: {
+      title: "Genetica",
+      description: "Ereditarietà mendeliana, mutazioni, alberi genealogici e scenari di genetica clinica.",
+    },
+    physics: {
+      title: "Fisica",
+      description:
+        "Principi fisici applicati al corpo umano, imaging, forze e misurazione in medicina.",
+    },
+    "information-processing": {
+      title: "Elaborazione dell'Informazione",
+      description:
+        "Alfabetizzazione dei dati e strumenti digitali per lo studio basato sulle evidenze — lezioni, video, podcast e domande.",
+    },
+    statistics: {
+      title: "Statistica",
+      description: "Statistica descrittiva e inferenziale per le scienze della salute.",
+    },
+    "histology-embryology": {
+      title: "Istologia ed Embriologia",
+      description:
+        "Microscopia, tessuti fondamentali, sviluppo precoce e correlazione con l'anatomia.",
+    },
+    "chemistry-introductory-biochemistry": {
+      title: "Chimica e Biochimica Introduttiva",
+      description:
+        "Struttura atomica, legami chimici, proteine, enzimi, metabolismo e fondamenti molecolari per le scienze della salute.",
+    },
+    "history-of-medicine": {
+      title: "Storia della Medicina",
+      description: "Scoperte chiave, figure e svolte che hanno plasmato le scienze della salute moderne.",
+    },
+    "moral-philosophy": {
+      title: "Filosofia Morale",
+      description:
+        "Quadri etici per consenso, riservatezza, cure di fine vita e condotta professionale.",
+    },
+    "health-technology-assessments": {
+      title: "Valutazioni delle Tecnologie Sanitarie",
+      description:
+        "Metodi HTA, valutazione delle evidenze e processo decisionale su farmaci, dispositivi e interventi sanitari.",
+    },
+    "italian-health-system": {
+      title: "Sistema Sanitario Italiano",
+      description:
+        "Struttura, finanziamento e organizzazione dell'assistenza sanitaria in Italia — regioni, servizi e contesto normativo.",
+    },
+  },
+  mod: {
+    y1bio: {
+      name: "Biologia e Genetica",
+      desc: "Biologia cellulare, genetica molecolare, ereditarietà e basi della genetica clinica",
+    },
+    y1chem: {
+      name: "Chimica e Biochimica Introduttiva",
+      desc: 'Atomi, molecole, legami, pH e vie biochimiche essenziali per le scienze della salute. <a href="../packages/#package-chemistry-introductory-biochemistry">Pacchetto Studio9 (online) →</a>',
+    },
+    y1econ: {
+      name: "Economia e Politica Sociale Internazionale",
+      desc: "Sistemi sanitari, politiche globali e contesto sociale della medicina e della salute pubblica",
+    },
+    y1histo: {
+      name: "Istologia ed Embriologia",
+      desc: 'Microscopia, tessuti fondamentali, sviluppo precoce e correlazione con l\'anatomia. <a href="../packages/#package-histology-embryology">Pacchetto Studio9 (online) →</a>',
+    },
+    y1anat: {
+      name: "Anatomia Umana I",
+      desc: 'Sistemi scheletrico, muscolare e nervoso – la base per lo studio clinico. <a href="../packages/#package-human-anatomy-1">Pacchetto Studio9 (online) →</a>',
+    },
+    y1psi: {
+      name: "Fisica, Statistica ed Elaborazione dell'Informazione",
+      desc: "Principi fisici in medicina, alfabetizzazione dei dati e strumenti per lo studio basato sulle evidenze",
+    },
+    y2gen: {
+      name: "Genetica Medica",
+      desc: "Ereditarietà mendeliana, mutazioni, disturbi genetici, terapia genica",
+    },
+    y2anat: {
+      name: "Anatomia Umana II",
+      desc: "Sistemi cardiovascolare, respiratorio, digestivo, urinario e riproduttivo",
+    },
+    y2phys: {
+      name: "Fisiologia II",
+      desc: "Sistemi renale, digestivo, endocrino e riproduttivo",
+    },
+    y2imm: {
+      name: "Immunologia",
+      desc: "Immunità adattativa, vaccini, allergie, autoimmunità",
+    },
+    y2micro: {
+      name: "Microbiologia",
+      desc: "Batteri, virus, funghi, parassiti – patogenesi e diagnosi",
+    },
+    y2pharm: {
+      name: "Farmacologia I",
+      desc: "Farmacocinetica, farmacodinamica, farmaci del SNC e cardiovascolari",
+    },
+    y2epi: {
+      name: "Epidemiologia",
+      desc: "Misure di frequenza, design degli studi, screening",
+    },
+    y2stats: {
+      name: "Biostatistica",
+      desc: 'Statistica descrittiva e inferenziale per le scienze della salute. <a href="../packages/#package-statistics">Pacchetto Studio9 (online) →</a>',
+    },
+    y3path: {
+      name: "Patologia Sistemica",
+      desc: "Patologia per sistemi (cuore, polmone, rene, fegato)",
+    },
+    y3clin1: {
+      name: "Medicina Clinica I",
+      desc: "Semiologia di base, sintomi comuni, ragionamento clinico",
+    },
+    y3clin2: {
+      name: "Medicina Clinica II",
+      desc: "Patologie comuni: ipertensione, diabete, asma, infezioni",
+    },
+    y3pharm: {
+      name: "Farmacologia II",
+      desc: "Farmaci per infezioni, tumori e malattie metaboliche",
+    },
+    y3ethics: {
+      name: "Etica Medica e Diritto",
+      desc: "Consenso, riservatezza, inizio e fine vita",
+    },
+    y3evidence: {
+      name: "Pratica Basata sulle Evidenze",
+      desc: "Come leggere gli articoli, usare le linee guida e applicarle alle decisioni",
+    },
+    y3psych: {
+      name: "Psicologia della Salute",
+      desc: "Adesione al trattamento, comunicazione clinico-paziente, burnout",
+    },
+    y3cases: {
+      name: "Casi Integrati",
+      desc: "Casi clinici trasversali: dai sintomi al trattamento",
+    },
+  },
+};

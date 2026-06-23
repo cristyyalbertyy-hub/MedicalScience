@@ -7,6 +7,7 @@
     <meta
       name="description"
       content="Full Medical Science course curriculum: three years, 22 modules, with study hours and a description for each subject."
+      data-i18n="meta.curriculo.description"
     />
     <meta name="theme-color" content="#1F4E6B" />
     <link rel="icon" type="image/png" href="../StudioNine.png" />
@@ -18,142 +19,151 @@
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body data-page="curriculo">
-    <a class="skip-link" href="#conteudo">Skip to content</a>
+  <body data-page="curriculo" data-i18n-title="meta.curriculo.title">
+    <a class="skip-link" href="#conteudo" data-i18n="nav.skip">Skip to content</a>
 
-    <header class="site-nav" aria-label="Main navigation">
-      <a class="brand" href="../" aria-label="Studio9 Medical Science - home">
+    <header class="site-nav" data-i18n-attr="aria-label" data-i18n="nav.aria">
+      <a class="brand" href="../" data-i18n-attr="aria-label" data-i18n="brand.aria">
         <img src="../StudioNine.png" alt="" width="38" height="38" />
-        <span><strong>Studio9</strong> Medical Science</span>
+        <span><strong data-i18n="brand.name">Studio9</strong> Medical Science</span>
       </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
-        Menu
-      </button>
+      <div class="nav-actions">
+        <div class="lang-selector" role="group" data-i18n-attr="aria-label" data-i18n="lang.label">
+          <button type="button" data-lang="en" aria-pressed="true">En</button>
+          <button type="button" data-lang="es" aria-pressed="false">Es</button>
+          <button type="button" data-lang="fr" aria-pressed="false">Fr</button>
+          <button type="button" data-lang="it" aria-pressed="false">It</button>
+          <button type="button" data-lang="pt" aria-pressed="false">Pt</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-i18n="nav.menu">
+          Menu
+        </button>
+      </div>
       <nav id="main-menu" class="nav-menu">
-        <a href="../" data-nav="home">Home</a>
-        <a href="../curriculo/" data-nav="curriculo">Curriculum</a>
-        <a href="../packages/" data-nav="packages">Packages</a>
-        <a href="../precos/" data-nav="precos">How it works + Pricing</a>
-        <a class="nav-progress" data-student-progress target="_blank" rel="noopener noreferrer">My progress</a>
+        <a href="../" data-nav="home" data-i18n="nav.home">Home</a>
+        <a href="../curriculo/" data-nav="curriculo" data-i18n="nav.curriculo">Curriculum</a>
+        <a href="../packages/" data-nav="packages" data-i18n="nav.packages">Packages</a>
+        <a href="../precos/" data-nav="precos" data-i18n="nav.precos">How it works + Pricing</a>
+        <a class="nav-progress" data-student-progress target="_blank" rel="noopener noreferrer" data-i18n="nav.progress">My progress</a>
       </nav>
     </header>
 
     <main id="conteudo">
       <section class="page-hero curriculum-hero section-shell">
         <div>
-          <p class="eyebrow">Three years · 22 modules</p>
-          <h1>Full curriculum · Medical Science</h1>
-          <p>
+          <p class="eyebrow" data-i18n="curriculo.hero.eyebrow">Three years · 22 modules</p>
+          <h1 data-i18n="curriculo.hero.title">Full curriculum · Medical Science</h1>
+          <p data-i18n="curriculo.hero.text">
             Three years, 22 modules. Each module = 40 to 60 hours of study. Go at your own pace.
           </p>
         </div>
         <div class="library-ghost" aria-hidden="true"></div>
       </section>
 
-      <section class="section-shell curriculum-list" aria-label="Subject list by year">
+      <section class="section-shell curriculum-list" data-i18n-attr="aria-label" data-i18n="curriculo.listAria">
         <details class="year-panel" open>
           <summary>
-            <span>Year 1 · Foundations</span>
-            <small>6 modules</small>
+            <span data-i18n="curriculo.years.y1">Year 1 · Foundations</span>
+            <small data-i18n="curriculo.years.y1n">6 modules</small>
           </summary>
-          <div class="module-table" role="table" aria-label="Year 1 · Foundations">
+          <div class="module-table" role="table" data-i18n-attr="aria-label" data-i18n="curriculo.years.y1aria">
             <div class="module-row header" role="row">
-              <span role="columnheader">Subject</span>
-              <span role="columnheader">Hours</span>
-              <span role="columnheader">Brief description</span>
+              <span role="columnheader" data-i18n="curriculo.table.subject">Subject</span>
+              <span role="columnheader" data-i18n="curriculo.table.hours">Hours</span>
+              <span role="columnheader" data-i18n="curriculo.table.description">Brief description</span>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Biology and Genetics</strong>
+              <strong role="cell" data-i18n="mod.y1bio.name">Biology and Genetics</strong>
               <span role="cell">55h</span>
-              <p role="cell">Cell biology, molecular genetics, inheritance, and the foundations of clinical genetics</p>
+              <p role="cell" data-i18n="mod.y1bio.desc">Cell biology, molecular genetics, inheritance, and the foundations of clinical genetics</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Chemistry and Introductory Biochemistry</strong>
+              <strong role="cell" data-i18n="mod.y1chem.name">Chemistry and Introductory Biochemistry</strong>
               <span role="cell">50h</span>
-              <p role="cell">
+              <p role="cell" data-i18n-html="mod.y1chem.desc">
                 Atoms, molecules, bonds, pH, and core biochemical pathways for health sciences.
                 <a href="../packages/#package-chemistry-introductory-biochemistry">Studio9 package (live) →</a>
               </p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Economics and International Social Politics</strong>
+              <strong role="cell" data-i18n="mod.y1econ.name">Economics and International Social Politics</strong>
               <span role="cell">40h</span>
-              <p role="cell">Health systems, global policy, and the social context of medicine and public health</p>
+              <p role="cell" data-i18n="mod.y1econ.desc">Health systems, global policy, and the social context of medicine and public health</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Histology and Embryology</strong>
+              <strong role="cell" data-i18n="mod.y1histo.name">Histology and Embryology</strong>
               <span role="cell">45h</span>
-              <p role="cell">
+              <p role="cell" data-i18n-html="mod.y1histo.desc">
                 Microscopy, fundamental tissues, early development, and correlation with anatomy.
                 <a href="../packages/#package-histology-embryology">Studio9 package (live) →</a>
               </p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Human Anatomy I</strong>
+              <strong role="cell" data-i18n="mod.y1anat.name">Human Anatomy I</strong>
               <span role="cell">60h</span>
-              <p role="cell">
+              <p role="cell" data-i18n-html="mod.y1anat.desc">
                 Skeletal, muscular and nervous systems – the base for clinical study.
                 <a href="../packages/#package-human-anatomy-1">Studio9 package (live) →</a>
               </p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Physics, Statistics and Information Processing</strong>
+              <strong role="cell" data-i18n="mod.y1psi.name">Physics, Statistics and Information Processing</strong>
               <span role="cell">45h</span>
-              <p role="cell">Physical principles in medicine, data literacy, and tools for evidence-based study</p>
+              <p role="cell" data-i18n="mod.y1psi.desc">Physical principles in medicine, data literacy, and tools for evidence-based study</p>
             </div>
           </div>
         </details>
 
         <details class="year-panel">
           <summary>
-            <span>Year 2 · Systems and disease</span>
-            <small>8 modules</small>
+            <span data-i18n="curriculo.years.y2">Year 2 · Systems and disease</span>
+            <small data-i18n="curriculo.years.y2n">8 modules</small>
           </summary>
-          <div class="module-table" role="table" aria-label="Year 2 · Systems and disease">
+          <div class="module-table" role="table" data-i18n-attr="aria-label" data-i18n="curriculo.years.y2aria">
             <div class="module-row header" role="row">
-              <span role="columnheader">Subject</span>
-              <span role="columnheader">Hours</span>
-              <span role="columnheader">Brief description</span>
+              <span role="columnheader" data-i18n="curriculo.table.subject">Subject</span>
+              <span role="columnheader" data-i18n="curriculo.table.hours">Hours</span>
+              <span role="columnheader" data-i18n="curriculo.table.description">Brief description</span>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Medical Genetics</strong>
+              <strong role="cell" data-i18n="mod.y2gen.name">Medical Genetics</strong>
               <span role="cell">55h</span>
-              <p role="cell">Mendelian inheritance, mutations, genetic disorders, gene therapy</p>
+              <p role="cell" data-i18n="mod.y2gen.desc">Mendelian inheritance, mutations, genetic disorders, gene therapy</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Human Anatomy II</strong>
+              <strong role="cell" data-i18n="mod.y2anat.name">Human Anatomy II</strong>
               <span role="cell">55h</span>
-              <p role="cell">Cardiovascular, respiratory, digestive, urinary and reproductive systems</p>
+              <p role="cell" data-i18n="mod.y2anat.desc">Cardiovascular, respiratory, digestive, urinary and reproductive systems</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Physiology II</strong>
+              <strong role="cell" data-i18n="mod.y2phys.name">Physiology II</strong>
               <span role="cell">55h</span>
-              <p role="cell">Renal, digestive, endocrine and reproductive systems</p>
+              <p role="cell" data-i18n="mod.y2phys.desc">Renal, digestive, endocrine and reproductive systems</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Immunology</strong>
+              <strong role="cell" data-i18n="mod.y2imm.name">Immunology</strong>
               <span role="cell">50h</span>
-              <p role="cell">Adaptive immunity, vaccines, allergies, autoimmunity</p>
+              <p role="cell" data-i18n="mod.y2imm.desc">Adaptive immunity, vaccines, allergies, autoimmunity</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Microbiology</strong>
+              <strong role="cell" data-i18n="mod.y2micro.name">Microbiology</strong>
               <span role="cell">50h</span>
-              <p role="cell">Bacteria, viruses, fungi, parasites – pathogenesis and diagnosis</p>
+              <p role="cell" data-i18n="mod.y2micro.desc">Bacteria, viruses, fungi, parasites – pathogenesis and diagnosis</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Pharmacology I</strong>
+              <strong role="cell" data-i18n="mod.y2pharm.name">Pharmacology I</strong>
               <span role="cell">45h</span>
-              <p role="cell">Pharmacokinetics, pharmacodynamics, CNS and cardiovascular drugs</p>
+              <p role="cell" data-i18n="mod.y2pharm.desc">Pharmacokinetics, pharmacodynamics, CNS and cardiovascular drugs</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Epidemiology</strong>
+              <strong role="cell" data-i18n="mod.y2epi.name">Epidemiology</strong>
               <span role="cell">40h</span>
-              <p role="cell">Frequency measures, study designs, screening</p>
+              <p role="cell" data-i18n="mod.y2epi.desc">Frequency measures, study designs, screening</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Biostatistics</strong>
+              <strong role="cell" data-i18n="mod.y2stats.name">Biostatistics</strong>
               <span role="cell">40h</span>
-              <p role="cell">
+              <p role="cell" data-i18n-html="mod.y2stats.desc">
                 Descriptive and inferential statistics for health sciences.
                 <a href="../packages/#package-statistics">Studio9 package (live) →</a>
               </p>
@@ -163,64 +173,64 @@
 
         <details class="year-panel">
           <summary>
-            <span>Year 3 · Clinical integration</span>
-            <small>8 modules</small>
+            <span data-i18n="curriculo.years.y3">Year 3 · Clinical integration</span>
+            <small data-i18n="curriculo.years.y3n">8 modules</small>
           </summary>
-          <div class="module-table" role="table" aria-label="Year 3 · Clinical integration">
+          <div class="module-table" role="table" data-i18n-attr="aria-label" data-i18n="curriculo.years.y3aria">
             <div class="module-row header" role="row">
-              <span role="columnheader">Subject</span>
-              <span role="columnheader">Hours</span>
-              <span role="columnheader">Brief description</span>
+              <span role="columnheader" data-i18n="curriculo.table.subject">Subject</span>
+              <span role="columnheader" data-i18n="curriculo.table.hours">Hours</span>
+              <span role="columnheader" data-i18n="curriculo.table.description">Brief description</span>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Systemic Pathology</strong>
+              <strong role="cell" data-i18n="mod.y3path.name">Systemic Pathology</strong>
               <span role="cell">55h</span>
-              <p role="cell">System pathology (heart, lung, kidney, liver)</p>
+              <p role="cell" data-i18n="mod.y3path.desc">System pathology (heart, lung, kidney, liver)</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Clinical Medicine I</strong>
+              <strong role="cell" data-i18n="mod.y3clin1.name">Clinical Medicine I</strong>
               <span role="cell">50h</span>
-              <p role="cell">Basic semiology, common symptoms, clinical reasoning</p>
+              <p role="cell" data-i18n="mod.y3clin1.desc">Basic semiology, common symptoms, clinical reasoning</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Clinical Medicine II</strong>
+              <strong role="cell" data-i18n="mod.y3clin2.name">Clinical Medicine II</strong>
               <span role="cell">50h</span>
-              <p role="cell">Common conditions: hypertension, diabetes, asthma, infections</p>
+              <p role="cell" data-i18n="mod.y3clin2.desc">Common conditions: hypertension, diabetes, asthma, infections</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Pharmacology II</strong>
+              <strong role="cell" data-i18n="mod.y3pharm.name">Pharmacology II</strong>
               <span role="cell">50h</span>
-              <p role="cell">Drugs for infection, cancer and metabolic diseases</p>
+              <p role="cell" data-i18n="mod.y3pharm.desc">Drugs for infection, cancer and metabolic diseases</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Medical Ethics and Law</strong>
+              <strong role="cell" data-i18n="mod.y3ethics.name">Medical Ethics and Law</strong>
               <span role="cell">30h</span>
-              <p role="cell">Consent, confidentiality, beginning and end of life</p>
+              <p role="cell" data-i18n="mod.y3ethics.desc">Consent, confidentiality, beginning and end of life</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Evidence-Based Practice</strong>
+              <strong role="cell" data-i18n="mod.y3evidence.name">Evidence-Based Practice</strong>
               <span role="cell">40h</span>
-              <p role="cell">How to read papers, use guidelines and apply them to decisions</p>
+              <p role="cell" data-i18n="mod.y3evidence.desc">How to read papers, use guidelines and apply them to decisions</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Health Psychology</strong>
+              <strong role="cell" data-i18n="mod.y3psych.name">Health Psychology</strong>
               <span role="cell">40h</span>
-              <p role="cell">Treatment adherence, clinician-patient communication, burnout</p>
+              <p role="cell" data-i18n="mod.y3psych.desc">Treatment adherence, clinician-patient communication, burnout</p>
             </div>
             <div class="module-row" role="row">
-              <strong role="cell">Integrated Cases</strong>
+              <strong role="cell" data-i18n="mod.y3cases.name">Integrated Cases</strong>
               <span role="cell">40h</span>
-              <p role="cell">Cross-system clinical cases: from symptoms to treatment</p>
+              <p role="cell" data-i18n="mod.y3cases.desc">Cross-system clinical cases: from symptoms to treatment</p>
             </div>
           </div>
         </details>
 
         <div class="curriculum-note">
-          <p>
+          <p data-i18n="curriculo.note.text">
             You can buy individual modules or a full year. Each module includes videos, podcasts,
             exercises and a downloadable summary.
           </p>
-          <a class="btn btn-primary" href="../precos/">See pricing plans →</a>
+          <a class="btn btn-primary" href="../precos/" data-i18n="curriculo.note.cta">See pricing plans →</a>
         </div>
       </section>
     </main>
@@ -228,20 +238,25 @@
     <footer class="site-footer">
       <div class="footer-brand">
         <img src="../StudioNine.png" alt="" width="34" height="34" />
-        <strong>Studio9 + Medical Science</strong>
+        <strong data-i18n="footer.brand">Studio9 + Medical Science</strong>
       </div>
-      <nav aria-label="Footer links">
-        <a href="../curriculo/">Curriculum</a>
-        <a href="../packages/">Packages</a>
-        <a href="../precos/#como-funciona">How it works</a>
-        <a href="../precos/#precos">Pricing</a>
-        <a href="../precos/#faq">FAQ</a>
-        <a data-student-progress target="_blank" rel="noopener noreferrer">My progress</a>
-        <a href="mailto:hello@studio9.example">Contact</a>
+      <nav data-i18n-attr="aria-label" data-i18n="footer.aria">
+        <a href="../curriculo/" data-i18n="footer.curriculo">Curriculum</a>
+        <a href="../packages/" data-i18n="footer.packages">Packages</a>
+        <a href="../precos/#como-funciona" data-i18n="footer.howItWorks">How it works</a>
+        <a href="../precos/#precos" data-i18n="footer.pricing">Pricing</a>
+        <a href="../precos/#faq" data-i18n="footer.faq">FAQ</a>
+        <a data-student-progress target="_blank" rel="noopener noreferrer" data-i18n="footer.progress">My progress</a>
+        <a href="mailto:hello@studio9.example" data-i18n="footer.contact">Contact</a>
       </nav>
-      <p>© 2026 Studio9 – learning without stress, really</p>
+      <p data-i18n="footer.copy">© 2026 Studio9 – learning without stress, really</p>
     </footer>
 
-    <script src="../app.js?v=8"></script>
+    <script src="../i18n.js?v=1"></script>
+    <script src="../i18n.es.js?v=1"></script>
+    <script src="../i18n.fr.js?v=1"></script>
+    <script src="../i18n.it.js?v=1"></script>
+    <script src="../i18n.pt.js?v=1"></script>
+    <script src="../app.js?v=10"></script>
   </body>
 </html>
