@@ -53,7 +53,7 @@ SITE_LOCALES.it = {
   screenshots: {
     hero: { alt: "App Studio9 con una breve lezione video di scienze mediche" },
     videos: { alt: "App mobile con una lezione video di 5–10 minuti" },
-    podcasts: { alt: "Ascolto di un podcast di scienze mediche sull'autobus" },
+    podcasts: { alt: "Studente che ascolta un podcast di scienze mediche all'aperto nel parco" },
     exercises: { alt: "Esercizio interattivo con feedback immediato nell'app" },
     packages: { alt: "Panoramica dei pacchetti di apprendimento Studio9 pronti all'uso" },
     progress: { alt: "Dashboard dei progressi dello studente nelle discipline del 1° anno" },

@@ -60,7 +60,7 @@ const SITE_LOCALES = {
     screenshots: {
       hero: { alt: "Studio9 app showing a short medical science video lesson" },
       videos: { alt: "Mobile app with a 5–10 minute video lesson" },
-      podcasts: { alt: "Listening to a medical science podcast on the bus" },
+      podcasts: { alt: "Student listening to a medical science podcast outdoors in the park" },
       exercises: { alt: "Interactive exercise with instant feedback in the app" },
       packages: { alt: "Overview of ready-made Studio9 learning packages" },
       progress: { alt: "Student progress dashboard across Year 1 disciplines" },

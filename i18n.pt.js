@@ -53,7 +53,7 @@ SITE_LOCALES.pt = {
   screenshots: {
     hero: { alt: "App Studio9 a mostrar uma lição em vídeo curta de ciências médicas" },
     videos: { alt: "App móvel com uma lição em vídeo de 5–10 minutos" },
-    podcasts: { alt: "A ouvir um podcast de ciências médicas no autocarro" },
+    podcasts: { alt: "Estudante a ouvir um podcast de ciências médicas ao ar livre no parque" },
     exercises: { alt: "Exercício interativo com feedback instantâneo na app" },
     packages: { alt: "Visão geral dos pacotes de aprendizagem Studio9 prontos a usar" },
     progress: { alt: "Painel de progresso do estudante nas disciplinas do Ano 1" },
