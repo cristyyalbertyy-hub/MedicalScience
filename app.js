@@ -1,3 +1,6 @@
+/** Student progress dashboard — edit URL here only. */
+const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
+
 /**
  * Ready-made interactive packages — edit titles, URLs and status here.
  * status: "live" (needs url) | "soon"
@@ -145,6 +148,18 @@ function renderPackages(root) {
   root.innerHTML = READY_PACKAGES.map((pkg) => renderPackageCard(pkg, { compact })).join("");
 }
 
+function initStudentProgressLinks() {
+  const navToggle = document.querySelector(".nav-toggle");
+
+  document.querySelectorAll("[data-student-progress]").forEach((link) => {
+    link.href = STUDENT_PROGRESS_URL;
+    link.addEventListener("click", () => {
+      document.body.classList.remove("nav-open");
+      navToggle?.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
 function initNavigation() {
   const navToggle = document.querySelector(".nav-toggle");
   const activePage = document.body.dataset.page;
@@ -169,6 +184,7 @@ function initNavigation() {
 
 function init() {
   document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
+  initStudentProgressLinks();
   initNavigation();
 
   document.querySelector(".sound-button")?.addEventListener("click", (event) => {

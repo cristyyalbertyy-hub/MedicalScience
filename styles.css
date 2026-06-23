@@ -193,6 +193,38 @@ p {
   background: var(--primary-soft);
 }
 
+.nav-progress {
+  border: 1px solid rgba(31, 78, 107, 0.22);
+  background: var(--paper-warm);
+  text-align: center;
+}
+
+.nav-progress:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.student-progress-card {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(122, 155, 122, 0.16), transparent 42%),
+    rgba(255, 253, 249, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.student-progress-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.student-progress-card .btn {
+  width: fit-content;
+}
+
 .section-shell {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
@@ -925,6 +957,10 @@ p {
     padding: 0.65rem 0.9rem;
   }
 
+  .nav-progress {
+    margin-left: 0.15rem;
+  }
+
   .hero {
     grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
     padding-top: 1rem;
@@ -937,6 +973,14 @@ p {
 
   .feature-grid.three {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .feature-grid.steps-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .student-progress-card {
+    grid-template-columns: 1fr auto;
   }
 
   .module-row {
