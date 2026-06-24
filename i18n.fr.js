@@ -83,20 +83,23 @@ SITE_LOCALES.fr = {
         "Vous travaillez ou jonglez avec des horaires compliqués ? Étudiez dans le bus, à la pause déjeuner ou avant de dormir. Sans culpabilité, sans stress.",
     },
     preview: {
-      eyebrow: "Aperçu du programme",
-      title: "Le programme — trois ans, mois par mois.",
+      eyebrow: "Structure du programme",
+      title: "Le programme — trois ans, module par module.",
       intro:
-        'Voici quelques matières. En bas de page, consultez le <a href="curriculo/">programme complet</a>.',
-      m1Title: "Biologie et Génétique",
-      m1Text: "Cellules, hérédité et bases de la génétique clinique.",
-      m2Title: "Anatomie Humaine I",
-      m2Text: "Systèmes squelettique, musculaire et nerveux.",
-      m2Link: "Ouvrir le forfait →",
-      m3Title: "Génétique Médicale",
-      m3Text: "Hérédité, mutations, troubles génétiques.",
-      m4Title: "Physiologie I",
-      m4Text: "Systèmes cardiovasculaire et respiratoire.",
-      allLink: "Voir les 22 matières →",
+        "22 modules sur 3 ans. Chacun comprend 40 à 60 heures d'étude — vidéos, podcasts, infographies et questionnaires. Consultez la liste complète matière par matière.",
+      y1Label: "Année 1 · Fondements",
+      y1Count: "6 modules",
+      y1Text:
+        "Biologie, chimie, anatomie, histologie et les bases essentielles des sciences de la santé.",
+      y2Label: "Année 2 · Systèmes et maladie",
+      y2Count: "8 modules",
+      y2Text:
+        "Physiologie, immunologie, microbiologie, pharmacologie et systèmes du corps en détail.",
+      y3Label: "Année 3 · Intégration clinique",
+      y3Count: "8 modules",
+      y3Text:
+        "Pathologie, médecine clinique, éthique, pratique fondée sur les preuves et cas intégrés.",
+      cta: "Voir le programme complet →",
     },
     packages: {
       eyebrow: "Déjà disponibles",

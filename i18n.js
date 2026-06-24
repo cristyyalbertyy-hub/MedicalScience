@@ -90,20 +90,23 @@ const SITE_LOCALES = {
           "Working or juggling complicated schedules? Study on the bus, during your lunch break, or before bed. No guilt, no stress.",
       },
       preview: {
-        eyebrow: "Programme preview",
-        title: "The curriculum — three years, month by month.",
+        eyebrow: "Programme structure",
+        title: "The programme — three years, module by module.",
         intro:
-          'Below are a few subjects. At the end of the page, see the <a href="curriculo/">full curriculum</a>.',
-        m1Title: "Biology and Genetics",
-        m1Text: "Cells, inheritance, and clinical genetics foundations.",
-        m2Title: "Human Anatomy I",
-        m2Text: "Skeletal, muscular and nervous systems.",
-        m2Link: "Open package →",
-        m3Title: "Medical Genetics",
-        m3Text: "Inheritance, mutations, genetic disorders.",
-        m4Title: "Physiology I",
-        m4Text: "Cardiovascular and respiratory systems.",
-        allLink: "See all 22 subjects →",
+          "22 modules over 3 years. Each one includes 40–60 hours of study — videos, podcasts, infographics and quizzes. See the full list subject by subject.",
+        y1Label: "Year 1 · Foundations",
+        y1Count: "6 modules",
+        y1Text:
+          "Biology, chemistry, anatomy, histology and the core bases of health sciences.",
+        y2Label: "Year 2 · Systems and disease",
+        y2Count: "8 modules",
+        y2Text:
+          "Physiology, immunology, microbiology, pharmacology and body systems in detail.",
+        y3Label: "Year 3 · Clinical integration",
+        y3Count: "8 modules",
+        y3Text:
+          "Pathology, clinical medicine, ethics, evidence-based practice and integrated cases.",
+        cta: "See full curriculum →",
       },
       packages: {
         eyebrow: "Already built",

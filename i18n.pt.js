@@ -83,20 +83,23 @@ SITE_LOCALES.pt = {
         "Trabalhas ou tens horários complicados? Estuda no autocarro, na pausa do almoço ou antes de dormir. Sem culpa, sem stress.",
     },
     preview: {
-      eyebrow: "Pré-visualização do programa",
-      title: "O programa — três anos, mês a mês.",
+      eyebrow: "Estrutura do programa",
+      title: "O programa — três anos, módulo a módulo.",
       intro:
-        'Abaixo estão algumas disciplinas. No final da página, consulta o <a href="curriculo/">programa completo</a>.',
-      m1Title: "Biologia e Genética",
-      m1Text: "Células, herança e bases da genética clínica.",
-      m2Title: "Anatomia Humana I",
-      m2Text: "Sistemas esquelético, muscular e nervoso.",
-      m2Link: "Abrir pacote →",
-      m3Title: "Genética Médica",
-      m3Text: "Herança, mutações, distúrbios genéticos.",
-      m4Title: "Fisiologia I",
-      m4Text: "Sistemas cardiovascular e respiratório.",
-      allLink: "Ver as 22 disciplinas →",
+        "22 módulos ao longo de 3 anos. Cada um inclui 40–60 horas de estudo — vídeos, podcasts, infográficos e questionários. Vê a lista completa disciplina a disciplina.",
+      y1Label: "Ano 1 · Fundamentos",
+      y1Count: "6 módulos",
+      y1Text:
+        "Biologia, química, anatomia, histologia e as bases centrais das ciências da saúde.",
+      y2Label: "Ano 2 · Sistemas e doença",
+      y2Count: "8 módulos",
+      y2Text:
+        "Fisiologia, imunologia, microbiologia, farmacologia e sistemas do corpo em detalhe.",
+      y3Label: "Ano 3 · Integração clínica",
+      y3Count: "8 módulos",
+      y3Text:
+        "Patologia, medicina clínica, ética, prática baseada em evidência e casos integrados.",
+      cta: "Ver programa completo →",
     },
     packages: {
       eyebrow: "Já disponíveis",

@@ -83,20 +83,23 @@ SITE_LOCALES.it = {
         "Lavori o hai orari complicati? Studia sull'autobus, nella pausa pranzo o prima di dormire. Senza sensi di colpa, senza stress.",
     },
     preview: {
-      eyebrow: "Anteprima del programma",
-      title: "Il programma — tre anni, mese per mese.",
+      eyebrow: "Struttura del programma",
+      title: "Il programma — tre anni, modulo per modulo.",
       intro:
-        'Qui sotto alcune materie. In fondo alla pagina, consulta il <a href="curriculo/">programma completo</a>.',
-      m1Title: "Biologia e Genetica",
-      m1Text: "Cellule, ereditarietà e basi della genetica clinica.",
-      m2Title: "Anatomia Umana I",
-      m2Text: "Sistemi scheletrico, muscolare e nervoso.",
-      m2Link: "Apri pacchetto →",
-      m3Title: "Genetica Medica",
-      m3Text: "Ereditarietà, mutazioni, disturbi genetici.",
-      m4Title: "Fisiologia I",
-      m4Text: "Sistemi cardiovascolare e respiratorio.",
-      allLink: "Vedi tutte le 22 materie →",
+        "22 moduli in 3 anni. Ognuno include 40–60 ore di studio — video, podcast, infografiche e questionari. Consulta l'elenco completo materia per materia.",
+      y1Label: "Anno 1 · Fondamenti",
+      y1Count: "6 moduli",
+      y1Text:
+        "Biologia, chimica, anatomia, istologia e le basi centrali delle scienze della salute.",
+      y2Label: "Anno 2 · Sistemi e malattia",
+      y2Count: "8 moduli",
+      y2Text:
+        "Fisiologia, immunologia, microbiologia, farmacologia e sistemi del corpo nel dettaglio.",
+      y3Label: "Anno 3 · Integrazione clinica",
+      y3Count: "8 moduli",
+      y3Text:
+        "Patologia, medicina clinica, etica, pratica basata sull'evidenza e casi integrati.",
+      cta: "Vedi programma completo →",
     },
     packages: {
       eyebrow: "Già disponibili",

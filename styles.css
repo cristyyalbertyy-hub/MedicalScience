@@ -461,29 +461,37 @@ p {
   gap: 1.5rem;
 }
 
-.module-preview-grid {
+.curriculum-years-grid {
   display: grid;
   gap: 0.9rem;
 }
 
-.module-preview-grid article {
+.curriculum-year-card {
   border: 1px solid var(--line);
   border-radius: 22px;
   background: rgba(255, 253, 249, 0.82);
-  padding: 1.1rem;
+  padding: 1.25rem;
 }
 
-.module-preview-grid span {
+.curriculum-year-card span {
   display: inline-block;
   color: var(--secondary-dark);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.12em;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.55rem;
 }
 
-.module-preview-grid p {
+.curriculum-year-card h3 {
+  margin-bottom: 0.45rem;
+}
+
+.curriculum-year-card p {
   margin-bottom: 0;
+}
+
+.curriculum-overview-section .section-heading .btn {
+  margin-top: 1.25rem;
 }
 
 .study-section {
@@ -790,7 +798,6 @@ p {
   }
 
   .feature-grid,
-  .module-preview-grid,
   .pricing-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
