@@ -538,33 +538,46 @@ p {
   padding-bottom: 3rem;
 }
 
-.library-ghost {
-  min-height: 15rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background:
-    linear-gradient(90deg, rgba(31, 78, 107, 0.12) 1px, transparent 1px) 0 0 / 4rem 100%,
-    linear-gradient(180deg, rgba(31, 78, 107, 0.11) 1px, transparent 1px) 0 0 / 100% 3.8rem,
-    linear-gradient(155deg, rgba(217, 122, 62, 0.22), rgba(122, 155, 122, 0.18)),
-    rgba(255, 253, 249, 0.55);
-  opacity: 0.72;
-  position: relative;
-  overflow: hidden;
+.curriculum-hero-copy {
+  min-width: 0;
 }
 
-.library-ghost::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 1.2rem;
-  width: 4.6rem;
-  height: 6.6rem;
-  border-radius: 3rem 3rem 1.4rem 1.4rem;
-  background: rgba(255, 255, 255, 0.56);
-  box-shadow:
-    -5rem -1rem 0 -1.5rem rgba(31, 78, 107, 0.15),
-    4.7rem -0.4rem 0 -1.7rem rgba(217, 122, 62, 0.16);
-  transform: translateX(-50%);
+.curriculum-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin: 1.35rem 0 0;
+}
+
+.curriculum-stats div {
+  min-width: 5.5rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 253, 249, 0.82);
+}
+
+.curriculum-stats dt {
+  color: var(--primary);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.curriculum-stats dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.curriculum-hero-media {
+  margin: 0;
+  box-shadow: var(--shadow);
 }
 
 .curriculum-list {

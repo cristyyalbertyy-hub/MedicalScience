@@ -50,14 +50,43 @@
 
     <main id="conteudo">
       <section class="page-hero curriculum-hero section-shell">
-        <div>
+        <div class="curriculum-hero-copy">
           <p class="eyebrow" data-i18n="curriculo.hero.eyebrow">Three years · 22 modules</p>
           <h1 data-i18n="curriculo.hero.title">Full curriculum · Medical Science</h1>
           <p data-i18n="curriculo.hero.text">
             Three years, 22 modules. Each module = 40 to 60 hours of study. Go at your own pace.
           </p>
+          <dl class="curriculum-stats">
+            <div>
+              <dt>22</dt>
+              <dd data-i18n="curriculo.hero.statModules">modules</dd>
+            </div>
+            <div>
+              <dt>3</dt>
+              <dd data-i18n="curriculo.hero.statYears">years</dd>
+            </div>
+            <div>
+              <dt>12</dt>
+              <dd data-i18n="curriculo.hero.statApps">live apps</dd>
+            </div>
+          </dl>
         </div>
-        <div class="library-ghost" aria-hidden="true"></div>
+        <figure
+          class="screenshot-slot curriculum-hero-media"
+          data-i18n-attr="aria-label"
+          data-i18n="curriculo.hero.mediaAria"
+        >
+          <img
+            src="../screenshots/04-packages-overview.png"
+            alt="Overview of ready-made Studio9 learning packages"
+            width="1120"
+            height="560"
+            loading="lazy"
+            draggable="false"
+            data-i18n-attr="alt"
+            data-i18n="screenshots.packages.alt"
+          />
+        </figure>
       </section>
 
       <section class="section-shell curriculum-list" data-i18n-attr="aria-label" data-i18n="curriculo.listAria">

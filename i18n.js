@@ -145,6 +145,10 @@ const SITE_LOCALES = {
         eyebrow: "Three years · 22 modules",
         title: "Full curriculum · Medical Science",
         text: "Three years, 22 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
+        statModules: "modules",
+        statYears: "years",
+        statApps: "live apps",
+        mediaAria: "Overview of Studio9 learning packages",
       },
       table: {
         subject: "Subject",

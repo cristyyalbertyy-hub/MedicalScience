@@ -138,6 +138,10 @@ SITE_LOCALES.es = {
       eyebrow: "Tres años · 22 módulos",
       title: "Programa completo · Medical Science",
       text: "Tres años, 22 módulos. Cada módulo = 40 a 60 horas de estudio. A tu ritmo.",
+      statModules: "módulos",
+      statYears: "años",
+      statApps: "apps live",
+      mediaAria: "Vista general de los paquetes de aprendizaje Studio9",
     },
     table: {
       subject: "Asignatura",
