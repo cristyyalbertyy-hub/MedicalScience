@@ -62,6 +62,8 @@ const SITE_LOCALES = {
       videos: { alt: "Mobile app with a 5–10 minute video lesson" },
       podcasts: { alt: "Student listening to a medical science podcast outdoors in the park" },
       exercises: { alt: "Interactive exercise with instant feedback in the app" },
+      infographics: { alt: "Medical science infographic summarising key concepts visually" },
+      quiz: { alt: "Interactive quiz with open questions and instant checking in the app" },
       packages: { alt: "Overview of ready-made Studio9 learning packages" },
       progress: { alt: "Student progress dashboard across Year 1 disciplines" },
     },
@@ -122,8 +124,12 @@ const SITE_LOCALES = {
         c1Text: "One topic at a time. No waffle. Turn on captions and study in silence.",
         c2Title: "Podcasts to listen to",
         c2Text: "Learn the material while you are on the bus, walking to class or tidying your room.",
-        c3Title: "Exercises with feedback",
-        c3Text: "Test what you learned. The app shows where you went wrong and explains it again. No frustration.",
+        c3Title: "Infographics at a glance",
+        c3Text:
+          "Complex topics in visual summaries — ideal for a quick review before class or exam.",
+        c4Title: "Quizzes and questionnaires",
+        c4Text:
+          "Test what you learned. Instant feedback shows where you went wrong and explains it again.",
       },
       final: {
         title: "€15 per module. €50 for four.",

@@ -55,6 +55,8 @@ SITE_LOCALES.it = {
     videos: { alt: "App mobile con una lezione video di 5–10 minuti" },
     podcasts: { alt: "Studente che ascolta un podcast di scienze mediche all'aperto nel parco" },
     exercises: { alt: "Esercizio interattivo con feedback immediato nell'app" },
+    infographics: { alt: "Infografica di scienze mediche con concetti chiave riassunti visivamente" },
+    quiz: { alt: "Questionario interattivo con domande aperte e verifica immediata nell'app" },
     packages: { alt: "Panoramica dei pacchetti di apprendimento Studio9 pronti all'uso" },
     progress: { alt: "Dashboard dei progressi dello studente nelle discipline del 1° anno" },
   },
@@ -115,8 +117,12 @@ SITE_LOCALES.it = {
       c1Text: "Un argomento alla volta. Niente chiacchiere. Attiva i sottotitoli e studia in silenzio.",
       c2Title: "Podcast da ascoltare",
       c2Text: "Impara i contenuti sull'autobus, camminando verso le lezioni o mentre riordini la stanza.",
-      c3Title: "Esercizi con feedback",
-      c3Text: "Metti alla prova ciò che hai imparato. L'app ti mostra dove hai sbagliato e te lo spiega di nuovo. Senza frustrazione.",
+      c3Title: "Infografiche a colpo d'occhio",
+      c3Text:
+        "Argomenti complessi in sintesi visive — ideali per ripassare prima della lezione o dell'esame.",
+      c4Title: "Questionari e quiz",
+      c4Text:
+        "Metti alla prova ciò che hai imparato. Il feedback immediato mostra gli errori e spiega di nuovo.",
     },
     final: {
       title: "€15 a modulo. €50 per quattro.",

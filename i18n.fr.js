@@ -55,6 +55,8 @@ SITE_LOCALES.fr = {
     videos: { alt: "Application mobile avec une leçon vidéo de 5 à 10 minutes" },
     podcasts: { alt: "Étudiant écoutant un podcast de sciences médicales en plein air dans le parc" },
     exercises: { alt: "Exercice interactif avec retour instantané dans l'app" },
+    infographics: { alt: "Infographie de sciences médicales résumant visuellement les concepts clés" },
+    quiz: { alt: "Questionnaire interactif avec questions ouvertes et vérification instantanée dans l'app" },
     packages: { alt: "Aperçu des forfaits d'apprentissage Studio9 prêts à l'emploi" },
     progress: { alt: "Tableau de bord de progression de l'étudiant pour les disciplines de l'Année 1" },
   },
@@ -115,8 +117,12 @@ SITE_LOCALES.fr = {
       c1Text: "Un sujet à la fois. Sans blabla. Activez les sous-titres et étudiez en silence.",
       c2Title: "Podcasts à écouter",
       c2Text: "Apprenez le contenu dans le bus, en marchant vers les cours ou en rangeant votre chambre.",
-      c3Title: "Exercices avec retour",
-      c3Text: "Testez ce que vous avez appris. L'app vous montre vos erreurs et vous réexplique. Sans frustration.",
+      c3Title: "Infographies en un coup d'œil",
+      c3Text:
+        "Sujets complexes en résumés visuels — idéals pour réviser avant le cours ou l'examen.",
+      c4Title: "Questionnaires et quiz",
+      c4Text:
+        "Testez ce que vous avez appris. Le retour instantané montre vos erreurs et réexplique.",
     },
     final: {
       title: "€15 par module. €50 pour quatre.",

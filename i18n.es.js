@@ -55,6 +55,8 @@ SITE_LOCALES.es = {
     videos: { alt: "App móvil con una lección en vídeo de 5–10 minutos" },
     podcasts: { alt: "Estudiante escuchando un podcast de ciencias médicas al aire libre en el parque" },
     exercises: { alt: "Ejercicio interactivo con feedback instantáneo en la app" },
+    infographics: { alt: "Infografía de ciencias médicas con conceptos clave resumidos visualmente" },
+    quiz: { alt: "Cuestionario interactivo con preguntas abiertas y comprobación instantánea en la app" },
     packages: { alt: "Vista general de los paquetes de aprendizaje Studio9 listos para usar" },
     progress: { alt: "Panel de progreso del estudiante en las disciplinas del Año 1" },
   },
@@ -115,8 +117,12 @@ SITE_LOCALES.es = {
       c1Text: "Un tema cada vez. Sin rodeos. Activa los subtítulos y estudia en silencio.",
       c2Title: "Podcasts para escuchar",
       c2Text: "Aprende el material mientras vas en autobús, caminas a clase o ordenas tu habitación.",
-      c3Title: "Ejercicios con feedback",
-      c3Text: "Pon a prueba lo aprendido. La app te muestra dónde te equivocaste y te lo explica de nuevo. Sin frustración.",
+      c3Title: "Infografías de un vistazo",
+      c3Text:
+        "Temas complejos en resúmenes visuales — ideales para repasar antes de clase o examen.",
+      c4Title: "Cuestionarios y quizzes",
+      c4Text:
+        "Pon a prueba lo aprendido. El feedback instantáneo muestra dónde te equivocaste y te lo explica de nuevo.",
     },
     final: {
       title: "€15 por módulo. €50 por cuatro.",
