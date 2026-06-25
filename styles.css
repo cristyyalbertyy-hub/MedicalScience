@@ -755,18 +755,6 @@ p {
   margin-top: 0.25rem;
 }
 
-.price-plan h3 .plan-price__currency {
-  font-size: 0.48em;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin-right: 0.06em;
-}
-
-.price-plan h3 > span .plan-price__currency {
-  font-size: 1em;
-  margin-right: 0.12em;
-}
-
 .price-plan ul {
   display: grid;
   gap: 0.65rem;

@@ -211,18 +211,10 @@ function pricingLocale() {
 function formatPlanAmount(amount, currency) {
   const hasFraction = Math.abs(amount % 1) > 0.001;
   const digits = hasFraction ? 2 : 0;
-  const number = new Intl.NumberFormat(pricingLocale(), {
-    minimumFractionDigits: digits,
-    maximumFractionDigits: 2,
-  }).format(amount);
-
-  if (currency === "usd") {
-    return `<span class="plan-price__currency">$</span>${number}`;
-  }
-
   return new Intl.NumberFormat(pricingLocale(), {
     style: "currency",
-    currency: "EUR",
+    currency: currency === "usd" ? "USD" : "EUR",
+    currencyDisplay: "narrowSymbol",
     minimumFractionDigits: digits,
     maximumFractionDigits: 2,
   }).format(amount);
