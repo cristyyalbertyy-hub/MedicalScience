@@ -210,7 +210,8 @@ p {
   gap: 0.45rem;
 }
 
-.lang-selector {
+.lang-selector,
+.currency-selector {
   display: inline-flex;
   gap: 0.2rem;
   padding: 0.2rem;
@@ -219,7 +220,8 @@ p {
   background: var(--paper-warm);
 }
 
-.lang-selector button {
+.lang-selector button,
+.currency-selector button {
   border: 0;
   border-radius: 999px;
   background: transparent;
@@ -230,10 +232,11 @@ p {
   font-weight: 800;
   line-height: 1;
   min-width: 2rem;
-  padding: 0.45rem 0.5rem;
+  padding: 0.45rem 0.65rem;
 }
 
-.lang-selector button.is-active {
+.lang-selector button.is-active,
+.currency-selector button.is-active {
   background: var(--primary);
   color: #fff;
 }
@@ -676,6 +679,12 @@ p {
 
 .pricing-hero {
   padding-bottom: 2rem;
+}
+
+.pricing-currency-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .calm-card {

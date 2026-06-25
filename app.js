@@ -1,6 +1,14 @@
 /** Student progress dashboard — edit URL here only. */
 const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 
+const CURRENCY_STORAGE_KEY = "studio9-medical-currency";
+const EUR_USD_FALLBACK = 1.08;
+
+/** @type {"eur"|"usd"} */
+let pricingCurrency = "eur";
+/** @type {number|null} */
+let eurUsdRate = null;
+
 /**
  * Ready-made interactive packages — edit titles, URLs and status here.
  * status: "live" (needs url) | "soon"
@@ -193,18 +201,119 @@ function initNavigation() {
   });
 }
 
+function pricingLocale() {
+  const lang = window.SiteI18n?.getSiteLang?.() ?? "en";
+  if (lang === "en") return "en-GB";
+  if (lang === "pt") return "pt-PT";
+  return lang;
+}
+
+function formatPlanMoney(amount, currency) {
+  const code = currency === "usd" ? "USD" : "EUR";
+  const hasFraction = Math.abs(amount % 1) > 0.001;
+  return new Intl.NumberFormat(pricingLocale(), {
+    style: "currency",
+    currency: code,
+    minimumFractionDigits: hasFraction ? 2 : 0,
+    maximumFractionDigits: 2,
+  }).format(amount);
+}
+
+function convertFromEur(amountEur, currency) {
+  if (currency === "eur") return amountEur;
+  const rate = eurUsdRate ?? EUR_USD_FALLBACK;
+  return Math.round(amountEur * rate * 100) / 100;
+}
+
+function renderPlanPrices() {
+  document.querySelectorAll(".plan-price[data-price-eur]").forEach((el) => {
+    const mainEur = Number(el.dataset.priceEur);
+    const eachEur = el.dataset.priceEachEur ? Number(el.dataset.priceEachEur) : null;
+    const subType = el.dataset.priceSub;
+    const main = formatPlanMoney(convertFromEur(mainEur, pricingCurrency), pricingCurrency);
+
+    if (!eachEur || !subType) {
+      el.textContent = main;
+      return;
+    }
+
+    const each = formatPlanMoney(convertFromEur(eachEur, pricingCurrency), pricingCurrency);
+    const subLabel =
+      subType === "perModule"
+        ? packageText("precos.pricing.perModuleLabel")
+        : packageText("precos.pricing.eachLabel");
+    el.innerHTML = `${main} <span>${each} ${subLabel}</span>`;
+  });
+}
+
+async function ensureUsdRate() {
+  if (eurUsdRate != null) return eurUsdRate;
+  try {
+    const response = await fetch("https://api.frankfurter.app/latest?from=EUR&to=USD");
+    if (!response.ok) throw new Error("rate unavailable");
+    const data = await response.json();
+    eurUsdRate = data.rates?.USD ?? EUR_USD_FALLBACK;
+  } catch {
+    eurUsdRate = EUR_USD_FALLBACK;
+  }
+  return eurUsdRate;
+}
+
+function setPricingCurrency(next) {
+  pricingCurrency = next;
+  document.querySelectorAll("[data-currency]").forEach((btn) => {
+    const active = btn.dataset.currency === next;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-pressed", String(active));
+  });
+  try {
+    localStorage.setItem(CURRENCY_STORAGE_KEY, next);
+  } catch {
+    /* ignore */
+  }
+}
+
+async function applyPricingCurrency(next) {
+  setPricingCurrency(next);
+  if (next === "usd") await ensureUsdRate();
+  renderPlanPrices();
+}
+
+function initPricingCurrency() {
+  const selector = document.querySelector(".currency-selector");
+  if (!selector) return;
+
+  try {
+    const stored = localStorage.getItem(CURRENCY_STORAGE_KEY);
+    if (stored === "eur" || stored === "usd") pricingCurrency = stored;
+  } catch {
+    /* ignore */
+  }
+
+  selector.querySelectorAll("[data-currency]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const next = btn.dataset.currency;
+      if (next === "eur" || next === "usd") applyPricingCurrency(next);
+    });
+  });
+
+  applyPricingCurrency(pricingCurrency);
+}
+
 function init() {
   if (window.SiteI18n) {
     SiteI18n.initSiteLanguage();
     document.addEventListener("site:langchange", () => {
       document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
       initStudentProgressLinks();
+      renderPlanPrices();
     });
   }
 
   document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
   initStudentProgressLinks();
   initNavigation();
+  initPricingCurrency();
 }
 
 document.addEventListener("DOMContentLoaded", init);

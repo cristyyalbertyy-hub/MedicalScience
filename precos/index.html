@@ -93,10 +93,16 @@
           <p class="eyebrow" data-i18n="precos.pricing.eyebrow">No surprises</p>
           <h2 data-i18n="precos.pricing.title">Simple pricing.</h2>
         </div>
+        <div class="pricing-currency-wrap">
+          <div class="currency-selector" role="group" data-i18n-attr="aria-label" data-i18n="precos.pricing.currencyLabel">
+            <button type="button" data-currency="eur" class="is-active" aria-pressed="true">€ EUR</button>
+            <button type="button" data-currency="usd" aria-pressed="false">$ USD</button>
+          </div>
+        </div>
         <div class="pricing-grid">
           <article class="price-plan">
             <p class="plan-label" data-i18n="precos.pricing.p1Label">Single module</p>
-            <h3 data-i18n="precos.pricing.p1Price">€15</h3>
+            <h3 class="plan-price" data-price-eur="15">€15</h3>
             <ul>
               <li data-i18n="precos.pricing.p1l1">40-60h of study</li>
               <li data-i18n="precos.pricing.p1l2">Immediate access (1 year)</li>
@@ -107,7 +113,7 @@
 
           <article class="price-plan">
             <p class="plan-label" data-i18n="precos.pricing.p2Label">4-module bundle</p>
-            <h3 data-i18n-html="precos.pricing.p2Price">€50 <span>€12.50 each</span></h3>
+            <h3 class="plan-price" data-price-eur="50" data-price-each-eur="12.5" data-price-sub="each">€50 <span>€12.50 each</span></h3>
             <ul>
               <li data-i18n="precos.pricing.p2l1">4 modules of your choice</li>
               <li data-i18n="precos.pricing.p2l2">Immediate access (1 year)</li>
@@ -118,7 +124,7 @@
 
           <article class="price-plan">
             <p class="plan-label" data-i18n="precos.pricing.p3Label">Full year</p>
-            <h3 data-i18n-html="precos.pricing.p3Price">€120 <span>€10 per module</span></h3>
+            <h3 class="plan-price" data-price-eur="120" data-price-each-eur="10" data-price-sub="perModule">€120 <span>€10 per module</span></h3>
             <ul>
               <li data-i18n="precos.pricing.p3l1">1 complete curriculum year</li>
               <li data-i18n="precos.pricing.p3l2">Immediate access (1 year)</li>
@@ -129,7 +135,7 @@
 
           <article class="price-plan featured-plan">
             <p class="plan-label" data-i18n="precos.pricing.p4Label">Complete course</p>
-            <h3 data-i18n-html="precos.pricing.p4Price">€300 <span>equivalent to €10/month</span></h3>
+            <h3 class="plan-price" data-price-eur="300">€300</h3>
             <ul>
               <li data-i18n="precos.pricing.p4l1">All 22 modules across the 3 years</li>
               <li data-i18n="precos.pricing.p4l2">Lifetime access (while the app exists)</li>
@@ -197,6 +203,6 @@
     <script src="../i18n.fr.js?v=1"></script>
     <script src="../i18n.it.js?v=1"></script>
     <script src="../i18n.pt.js?v=1"></script>
-    <script src="../app.js?v=10"></script>
+    <script src="../app.js?v=11"></script>
   </body>
 </html>
