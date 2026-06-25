@@ -694,11 +694,6 @@ p {
     min-width: 0;
     letter-spacing: -0.01em;
   }
-
-  .currency-selector button[data-currency="usd"] {
-    font-size: 0.58rem;
-    padding: 0.38rem 0.42rem;
-  }
 }
 
 .calm-card {
@@ -758,6 +753,18 @@ p {
   font-weight: 700;
   letter-spacing: 0;
   margin-top: 0.25rem;
+}
+
+.price-plan h3 .plan-price__currency {
+  font-size: 0.48em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-right: 0.06em;
+}
+
+.price-plan h3 > span .plan-price__currency {
+  font-size: 1em;
+  margin-right: 0.12em;
 }
 
 .price-plan ul {

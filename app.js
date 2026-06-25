@@ -208,13 +208,22 @@ function pricingLocale() {
   return lang;
 }
 
-function formatPlanMoney(amount, currency) {
-  const code = currency === "usd" ? "USD" : "EUR";
+function formatPlanAmount(amount, currency) {
   const hasFraction = Math.abs(amount % 1) > 0.001;
+  const digits = hasFraction ? 2 : 0;
+  const number = new Intl.NumberFormat(pricingLocale(), {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: 2,
+  }).format(amount);
+
+  if (currency === "usd") {
+    return `<span class="plan-price__currency">US$</span>${number}`;
+  }
+
   return new Intl.NumberFormat(pricingLocale(), {
     style: "currency",
-    currency: code,
-    minimumFractionDigits: hasFraction ? 2 : 0,
+    currency: "EUR",
+    minimumFractionDigits: digits,
     maximumFractionDigits: 2,
   }).format(amount);
 }
@@ -230,14 +239,14 @@ function renderPlanPrices() {
     const mainEur = Number(el.dataset.priceEur);
     const eachEur = el.dataset.priceEachEur ? Number(el.dataset.priceEachEur) : null;
     const subType = el.dataset.priceSub;
-    const main = formatPlanMoney(convertFromEur(mainEur, pricingCurrency), pricingCurrency);
+    const main = formatPlanAmount(convertFromEur(mainEur, pricingCurrency), pricingCurrency);
 
     if (!eachEur || !subType) {
-      el.textContent = main;
+      el.innerHTML = main;
       return;
     }
 
-    const each = formatPlanMoney(convertFromEur(eachEur, pricingCurrency), pricingCurrency);
+    const each = formatPlanAmount(convertFromEur(eachEur, pricingCurrency), pricingCurrency);
     const subLabel =
       subType === "perModule"
         ? packageText("precos.pricing.perModuleLabel")
