@@ -687,6 +687,20 @@ p {
   margin-bottom: 1.5rem;
 }
 
+@media (max-width: 480px) {
+  .currency-selector button {
+    font-size: 0.62rem;
+    padding: 0.38rem 0.5rem;
+    min-width: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .currency-selector button[data-currency="usd"] {
+    font-size: 0.58rem;
+    padding: 0.38rem 0.42rem;
+  }
+}
+
 .calm-card {
   background: rgba(228, 236, 225, 0.7);
 }
