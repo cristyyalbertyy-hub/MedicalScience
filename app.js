@@ -217,7 +217,7 @@ function formatPlanAmount(amount, currency) {
   }).format(amount);
 
   if (currency === "usd") {
-    return `<span class="plan-price__currency">US$</span>${number}`;
+    return `<span class="plan-price__currency">$</span>${number}`;
   }
 
   return new Intl.NumberFormat(pricingLocale(), {
