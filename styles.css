@@ -287,7 +287,11 @@ p {
 }
 
 .study-section .screenshot-slot--study img[src*="podcast"] {
-  object-position: center 38%;
+  object-position: center 42%;
+}
+
+.study-section .screenshot-slot--study img[src*="infographic"] {
+  object-position: center center;
 }
 
 .screenshot-slot--progress {

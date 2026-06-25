@@ -55,7 +55,7 @@ SITE_LOCALES.fr = {
     videos: { alt: "Application mobile avec une leçon vidéo de 5 à 10 minutes" },
     podcasts: { alt: "Étudiant écoutant un podcast de sciences médicales en plein air dans le parc" },
     exercises: { alt: "Exercice interactif avec retour instantané dans l'app" },
-    infographics: { alt: "Infographie de sciences médicales résumant visuellement les concepts clés" },
+    infographics: { alt: "Tablette sur un bureau avec infographie d'anatomie humaine" },
     quiz: { alt: "Questionnaire interactif avec questions ouvertes et vérification instantanée dans l'app" },
     packages: { alt: "Aperçu des forfaits d'apprentissage Studio9 prêts à l'emploi" },
     progress: { alt: "Tableau de bord de progression de l'étudiant pour les disciplines de l'Année 1" },

@@ -62,7 +62,7 @@ const SITE_LOCALES = {
       videos: { alt: "Mobile app with a 5–10 minute video lesson" },
       podcasts: { alt: "Student listening to a medical science podcast outdoors in the park" },
       exercises: { alt: "Interactive exercise with instant feedback in the app" },
-      infographics: { alt: "Medical science infographic summarising key concepts visually" },
+      infographics: { alt: "Tablet on a desk showing a human anatomy infographic summary" },
       quiz: { alt: "Interactive quiz with open questions and instant checking in the app" },
       packages: { alt: "Overview of ready-made Studio9 learning packages" },
       progress: { alt: "Student progress dashboard across Year 1 disciplines" },
