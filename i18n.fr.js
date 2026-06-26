@@ -184,7 +184,8 @@ SITE_LOCALES.fr = {
       s1Title: "Choisissez vos modules",
       s1Text: "Achetez un module, une année complète ou les trois années.",
       s2Title: "Accédez-y dans l'app Studio9",
-      s2Text: "Ouvrez-la sur votre téléphone ou ordinateur — où que vous soyez.",
+      s2Text:
+        "Après l'achat, vous recevez un magic link par email — sans mot de passe. Connectez-vous sur mobile ou ordinateur ; l'accès reste actif pendant 1 an.",
       s3Title: "Étudiez à votre rythme",
       s3Text: "Vidéos quand vous êtes concentré. Podcasts en déplacement. Exercices pour vous tester.",
       s4Title: "Suivez votre progression",

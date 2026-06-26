@@ -191,7 +191,8 @@ const SITE_LOCALES = {
         s1Title: "Choose your modules",
         s1Text: "Buy one module, a full year, or all three years.",
         s2Title: "Access them in the Studio9 app",
-        s2Text: "Open it on your phone or computer — wherever you are.",
+        s2Text:
+          "After purchase you receive a magic link by email — no password. Sign in on your phone or computer; access stays active for 1 year.",
         s3Title: "Study at your own pace",
         s3Text: "Videos when you are focused. Podcasts when you are moving. Exercises to test yourself.",
         s4Title: "Track your progress",
