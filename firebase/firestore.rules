@@ -25,8 +25,11 @@ service cloud.firestore {
 //
 // Grant access manually after purchase (Firestore → entitlements → Add document):
 //   user_id:     <Firebase Auth UID>
-//   package_id:  medical-biology | genetics
+//   package_id:  medical-biology | genetics | ...
 //   expires_at:  2027-06-23T00:00:00.000Z   (ISO string, 1 year from purchase)
+//
+// Automatic grants: POST /api/lemonsqueezy-webhook (Firebase Admin SDK, bypasses rules)
+// Idempotency: collection orders_processed (admin write only)
 //
 // Vercel env vars (Biology + Genetics):
 //   VITE_FIREBASE_API_KEY

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "freePackageIds": ["italian-health-system"],
+  "paidPackageIds": [
+    "human-anatomy-1",
+    "medical-biology",
+    "genetics",
+    "physics",
+    "information-processing",
+    "statistics",
+    "histology-embryology",
+    "chemistry-introductory-biochemistry",
+    "history-of-medicine",
+    "moral-philosophy",
+    "health-technology-assessments"
+  ],
+  "plans": {
+    "single": {
+      "label": "Single module",
+      "maxPackages": 1,
+      "durationDays": 365
+    },
+    "pick4": {
+      "label": "4-module bundle",
+      "maxPackages": 4,
+      "durationDays": 365
+    },
+    "full_year": {
+      "label": "Full year (11 paid modules)",
+      "includes": "all_paid",
+      "durationDays": 365
+    },
+    "complete": {
+      "label": "Complete course",
+      "includes": "all_paid",
+      "enabled": false,
+      "lifetime": true
+    }
+  }
+}
