@@ -14,6 +14,57 @@
     "moral-philosophy",
     "health-technology-assessments"
   ],
+  "packageMeta": {
+    "human-anatomy-1": {
+      "title": "Human Anatomy I",
+      "url": "https://human-anatomy1.vercel.app/"
+    },
+    "medical-biology": {
+      "title": "Medical Biology",
+      "url": "https://biology-genetics.vercel.app/#/login"
+    },
+    "genetics": {
+      "title": "Genetics",
+      "url": "https://medica-genetics.vercel.app/"
+    },
+    "physics": {
+      "title": "Physics",
+      "url": "https://physics-tau-five.vercel.app/"
+    },
+    "information-processing": {
+      "title": "Information Processing",
+      "url": "https://informatics-theta.vercel.app/"
+    },
+    "statistics": {
+      "title": "Statistics",
+      "url": "https://statistics-nu-eight.vercel.app/"
+    },
+    "histology-embryology": {
+      "title": "Histology and Embryology",
+      "url": "https://histology-embryology.vercel.app/"
+    },
+    "chemistry-introductory-biochemistry": {
+      "title": "Chemistry and Introductory Biochemistry",
+      "url": "https://chemistry-roan.vercel.app/"
+    },
+    "history-of-medicine": {
+      "title": "History of Medicine",
+      "url": "https://history-medicine.vercel.app/"
+    },
+    "moral-philosophy": {
+      "title": "Moral Philosophy",
+      "url": "https://moral-philosophy.vercel.app/"
+    },
+    "health-technology-assessments": {
+      "title": "Health Technology Assessments",
+      "url": "https://health-technology-assessments.vercel.app/"
+    },
+    "italian-health-system": {
+      "title": "Italian Health System",
+      "url": "https://italian-health-system.vercel.app/",
+      "free": true
+    }
+  },
   "plans": {
     "single": {
       "label": "Single module",

@@ -1,0 +1,136 @@
+.admin-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.admin-header h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--primary);
+  margin: 0.25rem 0 0.75rem;
+}
+
+.admin-lead {
+  color: var(--muted);
+  margin: 0;
+}
+
+.admin-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--paper-warm);
+  box-shadow: var(--shadow);
+}
+
+.admin-field {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.admin-field input {
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.admin-packages {
+  border: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.admin-packages legend {
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.admin-packages__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.admin-packages__grid {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.admin-package {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.admin-package.is-free {
+  border-color: var(--sage);
+  background: var(--sage-soft);
+}
+
+.admin-package input {
+  margin-top: 0.2rem;
+}
+
+.admin-package span {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.admin-package small {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.admin-submit {
+  width: 100%;
+}
+
+.admin-status {
+  margin: 0.85rem 0 0;
+  font-size: 0.95rem;
+}
+
+.admin-status.is-error {
+  color: #b42318;
+}
+
+.admin-status.is-ok {
+  color: var(--sage);
+}
+
+.admin-result h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.admin-links {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.admin-links a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.admin-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 0;
+}

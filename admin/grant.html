@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Conceder acesso · Studio9 Admin</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="grant.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <header class="admin-header">
+        <p class="eyebrow">Studio9 · uso interno</p>
+        <h1>Conceder acesso a um aluno</h1>
+        <p class="admin-lead">
+          Cria entitlements no Firebase para um email — sem pagamento. A pessoa
+          usa o mesmo email para pedir magic link nas apps.
+        </p>
+      </header>
+
+      <form id="grant-form" class="admin-card">
+        <label class="admin-field">
+          <span>Email do aluno</span>
+          <input type="email" name="email" required placeholder="amiga@example.com" autocomplete="email" />
+        </label>
+
+        <label class="admin-field">
+          <span>Chave de admin</span>
+          <input type="password" name="secret" required autocomplete="current-password" placeholder="ADMIN_GRANT_SECRET" />
+        </label>
+
+        <label class="admin-field">
+          <span>Validade (dias)</span>
+          <input type="number" name="duration_days" value="365" min="1" max="3650" required />
+        </label>
+
+        <fieldset class="admin-packages">
+          <legend>Pacotes</legend>
+          <div class="admin-packages__actions">
+            <button type="button" class="btn btn-secondary" id="select-all-paid">Todos os pagos (11)</button>
+            <button type="button" class="btn btn-secondary" id="clear-all">Limpar</button>
+          </div>
+          <div id="packages-root" class="admin-packages__grid"></div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary admin-submit">Conceder acesso</button>
+        <p id="grant-status" class="admin-status" role="status" hidden></p>
+      </form>
+
+      <section id="grant-result" class="admin-card admin-result" hidden>
+        <h2>Acesso concedido</h2>
+        <p id="result-summary"></p>
+        <ul id="result-links" class="admin-links"></ul>
+        <p class="admin-note">
+          Diz à pessoa para abrir a app, pedir magic link com <strong>este email</strong>,
+          e clicar <strong>Verificar acesso</strong>.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="grant.js"></script>
+  </body>
+</html>

@@ -35,13 +35,15 @@ export async function grantEntitlements({
   userId,
   packageIds,
   expiresAt,
-  orderId,
-  plan,
+  orderId = null,
+  plan = null,
   email,
+  source = "lemonsqueezy",
 }) {
   const db = getFirestore();
   const expiresIso = expiresAt.toISOString();
   const batch = db.batch();
+  const now = new Date().toISOString();
 
   for (const packageId of packageIds) {
     const existing = await db
@@ -60,8 +62,8 @@ export async function grantEntitlements({
         order_id: orderId,
         plan,
         email,
-        source: "lemonsqueezy",
-        granted_at: new Date().toISOString(),
+        source,
+        granted_at: now,
       });
     } else {
       const doc = existing.docs[0];
@@ -74,11 +76,19 @@ export async function grantEntitlements({
         order_id: orderId,
         plan,
         email,
-        source: "lemonsqueezy",
-        updated_at: new Date().toISOString(),
+        source,
+        updated_at: now,
       });
     }
   }
 
   await batch.commit();
+}
+
+export async function logAdminGrant(payload) {
+  const db = getFirestore();
+  await db.collection("admin_grants").add({
+    ...payload,
+    created_at: new Date().toISOString(),
+  });
 }
