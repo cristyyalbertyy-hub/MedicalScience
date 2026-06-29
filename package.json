@@ -2,6 +2,9 @@
   "name": "medical-science-site",
   "private": true,
   "type": "module",
+  "scripts": {
+    "build": "node scripts/write-firebase-config.js"
+  },
   "dependencies": {
     "firebase-admin": "^13.6.0"
   }
