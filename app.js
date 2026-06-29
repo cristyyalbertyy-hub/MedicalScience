@@ -29,7 +29,7 @@ const READY_PACKAGES = [
     title: "Medical Biology",
     description:
       "Cell biology, tissues, metabolism and the foundations you need before clinical years.",
-    url: "https://biology-genetics.vercel.app/app",
+    url: "https://biology-genetics.vercel.app/",
     status: "live",
   },
   {

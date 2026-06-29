@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>A minha conta · Studio9 Medical Science</title>
+    <link rel="icon" type="image/png" href="../StudioNine.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="conta.css" />
+  </head>
+  <body>
+    <main class="acesso-shell">
+      <header class="acesso-header">
+        <a class="acesso-back" href="../">← Site Medical Science</a>
+        <p class="eyebrow">Conta Studio9</p>
+        <h1>A minha conta</h1>
+        <p class="acesso-lead">
+          Entre <strong>uma vez</strong> aqui com magic link. Depois abra os pacotes
+          sem pedir email outra vez — poupa a quota diária de emails.
+        </p>
+      </header>
+
+      <section id="auth-panel" class="acesso-card" hidden>
+        <h2 id="auth-title">Entrar</h2>
+        <p id="auth-subtitle" class="acesso-muted"></p>
+
+        <form id="signin-form" class="acesso-form" hidden>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required placeholder="o email usado na compra" />
+          </label>
+          <button type="submit" class="btn btn-primary">Enviar link de acesso (1.ª vez)</button>
+          <p class="acesso-note">
+            Só precisa disto uma vez por browser. Depois use os botões «Abrir pacote» abaixo.
+          </p>
+        </form>
+
+        <div id="signed-in-panel" hidden>
+          <p class="acesso-signed-in">
+            Sessão: <strong id="signed-in-email"></strong>
+          </p>
+          <button type="button" class="btn btn-ghost" id="signout-btn">Terminar sessão</button>
+        </div>
+
+        <p id="auth-status" class="acesso-status" role="status" hidden></p>
+      </section>
+
+      <section id="packages-panel" class="acesso-card" hidden>
+        <h2>Os meus pacotes</h2>
+        <p class="acesso-muted">Clique em Abrir — entra no pacote sem novo magic link.</p>
+        <ul id="packages-list" class="acesso-packages"></ul>
+        <p class="acesso-note">
+          Sem acesso? <a href="../precos/">Ver planos</a> ou peça ao admin para activar o email.
+        </p>
+      </section>
+    </main>
+
+    <script src="firebase-config.js"></script>
+    <script type="module" src="conta.js"></script>
+  </body>
+</html>
