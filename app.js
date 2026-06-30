@@ -5,7 +5,7 @@ const CURRENCY_STORAGE_KEY = "studio9-medical-currency";
 const EUR_USD_FALLBACK = 1.08;
 
 /** @type {"eur"|"usd"} */
-let pricingCurrency = "eur";
+let pricingCurrency = "usd";
 /** @type {number|null} */
 let eurUsdRate = null;
 
@@ -220,25 +220,25 @@ function formatPlanAmount(amount, currency) {
   }).format(amount);
 }
 
-function convertFromEur(amountEur, currency) {
-  if (currency === "eur") return amountEur;
+function planAmount(amountUsd, currency) {
+  if (currency === "usd") return amountUsd;
   const rate = eurUsdRate ?? EUR_USD_FALLBACK;
-  return Math.round(amountEur * rate * 100) / 100;
+  return Math.round((amountUsd / rate) * 100) / 100;
 }
 
 function renderPlanPrices() {
-  document.querySelectorAll(".plan-price[data-price-eur]").forEach((el) => {
-    const mainEur = Number(el.dataset.priceEur);
-    const eachEur = el.dataset.priceEachEur ? Number(el.dataset.priceEachEur) : null;
+  document.querySelectorAll(".plan-price[data-price-usd]").forEach((el) => {
+    const mainUsd = Number(el.dataset.priceUsd);
+    const eachUsd = el.dataset.priceEachUsd ? Number(el.dataset.priceEachUsd) : null;
     const subType = el.dataset.priceSub;
-    const main = formatPlanAmount(convertFromEur(mainEur, pricingCurrency), pricingCurrency);
+    const main = formatPlanAmount(planAmount(mainUsd, pricingCurrency), pricingCurrency);
 
-    if (!eachEur || !subType) {
+    if (!eachUsd || !subType) {
       el.innerHTML = main;
       return;
     }
 
-    const each = formatPlanAmount(convertFromEur(eachEur, pricingCurrency), pricingCurrency);
+    const each = formatPlanAmount(planAmount(eachUsd, pricingCurrency), pricingCurrency);
     const subLabel =
       subType === "perModule"
         ? packageText("precos.pricing.perModuleLabel")
@@ -276,7 +276,7 @@ function setPricingCurrency(next) {
 
 async function applyPricingCurrency(next) {
   setPricingCurrency(next);
-  if (next === "usd") await ensureUsdRate();
+  if (next === "eur") await ensureUsdRate();
   renderPlanPrices();
 }
 
