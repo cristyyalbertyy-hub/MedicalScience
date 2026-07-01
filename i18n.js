@@ -168,18 +168,27 @@ const SITE_LOCALES = {
       eyebrow: "Studio9 account",
       title: "My account",
       leadHtml:
-        "Sign in <strong>once</strong> here with a magic link. Then open your packages without asking for email again — saves the daily email quota.",
+        "Open your packages from here. If this browser already knows you, your session loads automatically — <strong>no new email</strong>.",
       signInTitle: "Sign in",
       emailLabel: "Email",
       emailPlaceholder: "the email used at checkout",
-      sendLink: "Send access link (first time only)",
-      signInNote: "You only need this once per browser. Then use the Open buttons below.",
+      sendLink: "Send sign-in link",
+      resendLink: "Send link again",
+      signInNote:
+        "After you sign in, this browser keeps your session. Use Open below — no new email needed.",
+      signInNoteReturning:
+        "Send a link only if this browser lost your session (after sign out or clearing data).",
+      checkingSession: "Checking your session…",
       sessionLabel: "Session:",
       signOut: "Sign out",
       signedInSubtitle:
         "Account active in this browser. Use Open to enter your packages without a new email.",
-      signedOutSubtitle:
-        "First time? Send a magic link. After that, always return to this page.",
+      signedOutSubtitle: "Enter the email you used at checkout to receive a sign-in link.",
+      signedOutReturningSubtitle:
+        "Welcome back. No active session in this browser — send a link to sign in again.",
+      linkPendingSubtitle: "We sent a link to {email}. Open it in this browser before requesting another.",
+      linkPendingNote:
+        "Check your spam folder. To save email quota, wait for the link instead of sending again.",
       myPackages: "My packages",
       packagesIntro: "Click Open — enter the package without a new magic link.",
       emptyTitle: "You don't have any modules on this account yet.",

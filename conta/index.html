@@ -32,13 +32,14 @@
         <p class="eyebrow" data-i18n="accountPage.eyebrow">Studio9 account</p>
         <h1 data-i18n="accountPage.title">My account</h1>
         <p class="acesso-lead" data-i18n-html="accountPage.leadHtml">
-          Sign in <strong>once</strong> here with a magic link. Then open your packages without asking for email again — saves the daily email quota.
+          Open your packages from here. If this browser already knows you, your session loads automatically — <strong>no new email</strong>.
         </p>
       </header>
 
       <section id="auth-panel" class="acesso-card" hidden>
         <h2 id="auth-title" data-i18n="accountPage.signInTitle">Sign in</h2>
         <p id="auth-subtitle" class="acesso-muted"></p>
+        <p id="auth-loading" class="acesso-muted" data-i18n="accountPage.checkingSession">Checking your session…</p>
 
         <form id="signin-form" class="acesso-form" hidden>
           <label>
@@ -52,11 +53,11 @@
               placeholder="the email used at checkout"
             />
           </label>
-          <button type="submit" class="btn btn-primary" data-i18n="accountPage.sendLink">
-            Send access link (first time only)
+          <button type="submit" class="btn btn-primary" id="send-link-btn" data-i18n="accountPage.sendLink">
+            Send sign-in link
           </button>
-          <p class="acesso-note" data-i18n="accountPage.signInNote">
-            You only need this once per browser. Then use the Open buttons below.
+          <p id="signin-note" class="acesso-note" data-i18n="accountPage.signInNote">
+            After you sign in, this browser keeps your session. Use Open below — no new email needed.
           </p>
         </form>
 

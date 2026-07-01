@@ -161,18 +161,29 @@ SITE_LOCALES.fr = {
     eyebrow: "Compte Studio9",
     title: "Mon compte",
     leadHtml:
-      "Connectez-vous <strong>une fois</strong> ici avec un magic link. Ensuite ouvrez vos forfaits sans redemander l'email — cela préserve le quota quotidien d'emails.",
+      "Ouvrez vos forfaits ici. Si ce navigateur vous connaît déjà, la session se charge automatiquement — <strong>sans nouvel email</strong>.",
     signInTitle: "Se connecter",
     emailLabel: "Email",
     emailPlaceholder: "l'email utilisé lors de l'achat",
-    sendLink: "Envoyer le lien d'accès (1re fois seulement)",
-    signInNote: "Vous n'en avez besoin qu'une fois par navigateur. Ensuite utilisez les boutons Ouvrir ci-dessous.",
+    sendLink: "Envoyer le lien de connexion",
+    resendLink: "Renvoyer le lien",
+    signInNote:
+      "Une fois connecté, ce navigateur garde votre session. Utilisez Ouvrir ci-dessous — sans nouvel email.",
+    signInNoteReturning:
+      "Envoyez un lien seulement si ce navigateur a perdu la session (après déconnexion ou effacement des données).",
+    checkingSession: "Vérification de votre session…",
     sessionLabel: "Session :",
     signOut: "Se déconnecter",
     signedInSubtitle:
       "Compte actif dans ce navigateur. Utilisez Ouvrir pour accéder à vos forfaits sans nouvel email.",
     signedOutSubtitle:
-      "Première fois ? Envoyez un magic link. Ensuite, revenez toujours sur cette page.",
+      "Entrez l'email utilisé lors de l'achat pour recevoir un lien de connexion.",
+    signedOutReturningSubtitle:
+      "Bon retour. Aucune session active dans ce navigateur — envoyez un lien pour vous reconnecter.",
+    linkPendingSubtitle:
+      "Nous avons envoyé un lien à {email}. Ouvrez-le dans ce navigateur avant d'en demander un autre.",
+    linkPendingNote:
+      "Vérifiez les spams. Pour économiser le quota d'emails, attendez le lien au lieu de renvoyer.",
     myPackages: "Mes forfaits",
     packagesIntro: "Cliquez sur Ouvrir — entrez dans le forfait sans nouveau magic link.",
     emptyTitle: "Vous n'avez pas encore de modules sur ce compte.",

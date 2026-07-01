@@ -18,6 +18,7 @@ import {
 } from "https://esm.sh/firebase@12.15.0/firestore";
 
 const EMAIL_KEY = "studio9.emailForSignIn";
+const LAST_EMAIL_KEY = "studio9.lastSignedInEmail";
 const cfg = window.STUDIO9_FIREBASE ?? {};
 
 const authPanel = document.getElementById("auth-panel");
@@ -27,6 +28,9 @@ const signedInPanel = document.getElementById("signed-in-panel");
 const signedInEmail = document.getElementById("signed-in-email");
 const authStatus = document.getElementById("auth-status");
 const authSubtitle = document.getElementById("auth-subtitle");
+const authLoading = document.getElementById("auth-loading");
+const sendLinkBtn = document.getElementById("send-link-btn");
+const signinNote = document.getElementById("signin-note");
 const packagesList = document.getElementById("packages-list");
 const packagesIntro = document.getElementById("packages-intro");
 const packagesEmpty = document.getElementById("packages-empty");
@@ -46,6 +50,63 @@ let activePackageIds = new Set();
 let catalogData = null;
 /** @type {{ key?: string, raw?: string, vars?: Record<string, string>, type?: string } | null} */
 let lastStatus = null;
+/** @type {boolean} */
+let authResolved = false;
+
+function getStoredEmail(key) {
+  try {
+    return window.localStorage.getItem(key)?.trim() ?? "";
+  } catch {
+    return "";
+  }
+}
+
+function rememberSignedInEmail(email) {
+  if (!email) return;
+  try {
+    window.localStorage.setItem(LAST_EMAIL_KEY, email.trim().toLowerCase());
+  } catch {
+    /* ignore */
+  }
+}
+
+function configureSignInForm() {
+  if (!signinForm) return;
+
+  const emailInput = signinForm.email;
+  const pendingEmail = getStoredEmail(EMAIL_KEY);
+  const lastEmail = getStoredEmail(LAST_EMAIL_KEY);
+
+  if (pendingEmail) {
+    emailInput.value = pendingEmail;
+    authSubtitle.textContent = t("accountPage.linkPendingSubtitle", { email: pendingEmail });
+    if (sendLinkBtn) sendLinkBtn.textContent = t("accountPage.resendLink");
+    if (signinNote) signinNote.textContent = t("accountPage.linkPendingNote");
+    return;
+  }
+
+  if (lastEmail && !emailInput.value.trim()) {
+    emailInput.value = lastEmail;
+  }
+
+  if (lastEmail) {
+    authSubtitle.textContent = t("accountPage.signedOutReturningSubtitle");
+    if (signinNote) signinNote.textContent = t("accountPage.signInNoteReturning");
+  } else {
+    authSubtitle.textContent = t("accountPage.signedOutSubtitle");
+    if (signinNote) signinNote.textContent = t("accountPage.signInNote");
+  }
+
+  if (sendLinkBtn) sendLinkBtn.textContent = t("accountPage.sendLink");
+}
+
+function refreshAuthSubtitle(signedIn) {
+  if (signedIn) {
+    authSubtitle.textContent = t("accountPage.signedInSubtitle");
+    return;
+  }
+  configureSignInForm();
+}
 
 function t(key, vars = {}) {
   const lang = window.SiteI18n?.getSiteLang?.() ?? "en";
@@ -72,12 +133,6 @@ function setStatusKey(key, vars = {}, type = "") {
   authStatus.hidden = false;
   authStatus.textContent = t(key, vars);
   authStatus.className = `acesso-status${type ? ` is-${type}` : ""}`;
-}
-
-function refreshAuthSubtitle(signedIn) {
-  authSubtitle.textContent = signedIn
-    ? t("accountPage.signedInSubtitle")
-    : t("accountPage.signedOutSubtitle");
 }
 
 function refreshStatusMessage() {
@@ -109,6 +164,7 @@ async function completeEmailLinkSignIn() {
   }
   if (!email) return;
   await signInWithEmailLink(auth, email, window.location.href);
+  rememberSignedInEmail(email);
   window.localStorage.removeItem(EMAIL_KEY);
   cleanEmailLinkFromUrl();
 }
@@ -219,7 +275,9 @@ async function openPackage(appUrl, button) {
 async function showSignedIn(user, catalog) {
   signinForm.hidden = true;
   signedInPanel.hidden = false;
+  if (authLoading) authLoading.hidden = true;
   signedInEmail.textContent = user.email ?? user.uid;
+  rememberSignedInEmail(user.email ?? "");
   refreshAuthSubtitle(true);
   await loadEntitlements(user.uid);
   renderPackages(catalog);
@@ -228,10 +286,19 @@ async function showSignedIn(user, catalog) {
 }
 
 function showSignedOut() {
-  signinForm.hidden = false;
   signedInPanel.hidden = true;
   packagesPanel.hidden = true;
-  refreshAuthSubtitle(false);
+
+  if (!authResolved) {
+    signinForm.hidden = true;
+    if (authLoading) authLoading.hidden = false;
+    authSubtitle.textContent = t("accountPage.checkingSession");
+    return;
+  }
+
+  if (authLoading) authLoading.hidden = true;
+  signinForm.hidden = false;
+  configureSignInForm();
 }
 
 signinForm?.addEventListener("submit", async (event) => {
@@ -247,6 +314,7 @@ signinForm?.addEventListener("submit", async (event) => {
     });
     window.localStorage.setItem(EMAIL_KEY, email);
     setStatusKey("accountPage.linkSent", { email }, "ok");
+    configureSignInForm();
   } catch (err) {
     const message = err instanceof Error ? err.message : t("accountPage.sendError");
     if (message.includes("auth/quota-exceeded")) {
@@ -266,7 +334,13 @@ function initLanguage() {
   if (!window.SiteI18n) return;
   SiteI18n.initSiteLanguage();
   document.addEventListener("site:langchange", () => {
-    refreshAuthSubtitle(Boolean(auth?.currentUser));
+    if (auth?.currentUser) {
+      refreshAuthSubtitle(true);
+    } else if (authResolved) {
+      configureSignInForm();
+    } else if (authLoading && !authLoading.hidden) {
+      authSubtitle.textContent = t("accountPage.checkingSession");
+    }
     refreshStatusMessage();
     if (catalogData && auth?.currentUser) renderPackages(catalogData);
   });
@@ -275,8 +349,12 @@ function initLanguage() {
 async function bootstrap() {
   initLanguage();
   authPanel.hidden = false;
+  if (authLoading) authLoading.hidden = false;
+  signinForm.hidden = true;
+  authSubtitle.textContent = t("accountPage.checkingSession");
 
   if (!configured()) {
+    if (authLoading) authLoading.hidden = true;
     setStatusKey("accountPage.firebaseError", {}, "error");
     return;
   }
@@ -293,6 +371,7 @@ async function bootstrap() {
   cleanEmailLinkFromUrl();
 
   onAuthStateChanged(auth, (user) => {
+    authResolved = true;
     if (user) {
       void showSignedIn(user, catalogData);
     } else {

@@ -161,18 +161,28 @@ SITE_LOCALES.es = {
     eyebrow: "Cuenta Studio9",
     title: "Mi cuenta",
     leadHtml:
-      "Inicia sesión <strong>una vez</strong> aquí con un magic link. Después abre tus paquetes sin pedir el email otra vez — ahorra la cuota diaria de emails.",
+      "Abre tus paquetes desde aquí. Si este navegador ya te conoce, la sesión se carga sola — <strong>sin nuevo email</strong>.",
     signInTitle: "Iniciar sesión",
     emailLabel: "Email",
     emailPlaceholder: "el email usado en la compra",
-    sendLink: "Enviar enlace de acceso (solo la 1.ª vez)",
-    signInNote: "Solo necesitas esto una vez por navegador. Después usa los botones Abrir abajo.",
+    sendLink: "Enviar enlace de acceso",
+    resendLink: "Enviar enlace otra vez",
+    signInNote:
+      "Después de entrar, este navegador guarda la sesión. Usa Abrir abajo — sin nuevo email.",
+    signInNoteReturning:
+      "Envía un enlace solo si este navegador perdió la sesión (tras cerrar sesión o borrar datos).",
+    checkingSession: "Comprobando tu sesión…",
     sessionLabel: "Sesión:",
     signOut: "Cerrar sesión",
     signedInSubtitle:
       "Cuenta activa en este navegador. Usa Abrir para entrar en tus paquetes sin un nuevo email.",
-    signedOutSubtitle:
-      "¿Primera vez? Envía un magic link. Después, vuelve siempre a esta página.",
+    signedOutSubtitle: "Introduce el email usado en la compra para recibir un enlace de acceso.",
+    signedOutReturningSubtitle:
+      "Bienvenido de nuevo. No hay sesión activa en este navegador — envía un enlace para entrar otra vez.",
+    linkPendingSubtitle:
+      "Enviamos un enlace a {email}. Ábrelo en este navegador antes de pedir otro.",
+    linkPendingNote:
+      "Revisa la carpeta de spam. Para ahorrar cuota de email, espera al enlace en lugar de reenviar.",
     myPackages: "Mis paquetes",
     packagesIntro: "Haz clic en Abrir — entra en el paquete sin un nuevo magic link.",
     emptyTitle: "Aún no tienes módulos disponibles en esta cuenta.",

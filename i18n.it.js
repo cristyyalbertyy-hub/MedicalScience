@@ -161,18 +161,28 @@ SITE_LOCALES.it = {
     eyebrow: "Account Studio9",
     title: "Il mio account",
     leadHtml:
-      "Accedi <strong>una volta</strong> qui con un magic link. Poi apri i tuoi pacchetti senza chiedere di nuovo l'email — risparmia la quota giornaliera di email.",
+      "Apri i tuoi pacchetti da qui. Se questo browser ti conosce già, la sessione si carica da sola — <strong>senza nuova email</strong>.",
     signInTitle: "Accedi",
     emailLabel: "Email",
     emailPlaceholder: "l'email usata al checkout",
-    sendLink: "Invia link di accesso (solo la 1ª volta)",
-    signInNote: "Ti serve solo una volta per browser. Poi usa i pulsanti Apri qui sotto.",
+    sendLink: "Invia link di accesso",
+    resendLink: "Invia link di nuovo",
+    signInNote:
+      "Dopo l'accesso, questo browser mantiene la sessione. Usa Apri sotto — senza nuova email.",
+    signInNoteReturning:
+      "Invia un link solo se questo browser ha perso la sessione (dopo uscita o cancellazione dati).",
+    checkingSession: "Verifica della sessione…",
     sessionLabel: "Sessione:",
     signOut: "Esci",
     signedInSubtitle:
       "Account attivo in questo browser. Usa Apri per entrare nei pacchetti senza una nuova email.",
-    signedOutSubtitle:
-      "Prima volta? Invia un magic link. Dopodiché torna sempre a questa pagina.",
+    signedOutSubtitle: "Inserisci l'email usata al checkout per ricevere un link di accesso.",
+    signedOutReturningSubtitle:
+      "Bentornato. Nessuna sessione attiva in questo browser — invia un link per accedere di nuovo.",
+    linkPendingSubtitle:
+      "Abbiamo inviato un link a {email}. Aprilo in questo browser prima di richiederne un altro.",
+    linkPendingNote:
+      "Controlla lo spam. Per risparmiare quota email, attendi il link invece di reinviare.",
     myPackages: "I miei pacchetti",
     packagesIntro: "Clicca Apri — entra nel pacchetto senza un nuovo magic link.",
     emptyTitle: "Non hai ancora moduli disponibili su questo account.",
