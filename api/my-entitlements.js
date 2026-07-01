@@ -16,7 +16,10 @@ export default async function handler(req, res) {
 
   try {
     const decoded = await getAuth().verifyIdToken(idToken);
-    const packageIds = await listActiveEntitlements(decoded.uid);
+    const packageIds = await listActiveEntitlements(
+      decoded.uid,
+      decoded.email ?? null,
+    );
     return res.status(200).json({
       ok: true,
       user_id: decoded.uid,

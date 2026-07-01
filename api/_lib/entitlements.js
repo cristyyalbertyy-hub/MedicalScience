@@ -93,7 +93,7 @@ export async function logAdminGrant(payload) {
   });
 }
 
-export async function listActiveEntitlements(userId) {
+export async function listActiveEntitlements(userId, email = null) {
   const db = getFirestore();
   const catalog = getCatalog();
   const allIds = [
@@ -102,27 +102,74 @@ export async function listActiveEntitlements(userId) {
   ];
   const now = Date.now();
   const packageIds = new Set();
+  const normalizedEmail = email?.trim().toLowerCase() ?? null;
 
-  for (const packageId of allIds) {
-    const snap = await db.collection("entitlements").doc(`${userId}_${packageId}`).get();
-    if (!snap.exists) continue;
-    const data = snap.data();
+  function collectDoc(data) {
     if (isActiveEntitlement(data, now)) {
       packageIds.add(String(data.package_id));
     }
   }
 
+  for (const packageId of allIds) {
+    const snap = await db.collection("entitlements").doc(`${userId}_${packageId}`).get();
+    if (!snap.exists) continue;
+    collectDoc(snap.data());
+  }
+
   if (!packageIds.size) {
-    const snap = await db
+    const byUser = await db
       .collection("entitlements")
       .where("user_id", "==", userId)
       .get();
-    snap.forEach((doc) => {
+    byUser.forEach((doc) => collectDoc(doc.data()));
+  }
+
+  if (!packageIds.size && normalizedEmail) {
+    const byEmail = await db
+      .collection("entitlements")
+      .where("email", "==", normalizedEmail)
+      .get();
+
+    const batch = db.batch();
+    let pendingMigration = 0;
+
+    byEmail.forEach((doc) => {
       const data = doc.data();
-      if (isActiveEntitlement(data, now)) {
-        packageIds.add(String(data.package_id));
+      if (!isActiveEntitlement(data, now)) return;
+      const packageId = String(data.package_id);
+      packageIds.add(packageId);
+
+      if (data.user_id !== userId) {
+        const targetRef = db.collection("entitlements").doc(`${userId}_${packageId}`);
+        batch.set(
+          targetRef,
+          {
+            ...data,
+            user_id: userId,
+            email: normalizedEmail,
+            migrated_from: doc.id,
+            migrated_at: new Date().toISOString(),
+          },
+          { merge: true },
+        );
+        pendingMigration += 1;
       }
     });
+
+    if (pendingMigration) {
+      await batch.commit();
+    }
+  }
+
+  if (!packageIds.size && normalizedEmail) {
+    try {
+      const authUser = await getAuth().getUserByEmail(normalizedEmail);
+      if (authUser.uid !== userId) {
+        return listActiveEntitlements(authUser.uid, normalizedEmail);
+      }
+    } catch {
+      /* no auth user for this email */
+    }
   }
 
   return [...packageIds];

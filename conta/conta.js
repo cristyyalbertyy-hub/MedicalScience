@@ -171,6 +171,9 @@ function setAuthPanelMode(mode) {
   authTitle.textContent = t("accountPage.signInTitle");
 }
 
+/** @type {string | null} */
+let lastAccountUid = null;
+
 async function loadEntitlements(user) {
   activePackageIds = new Set();
   const idToken = await user.getIdToken(true);
@@ -196,6 +199,8 @@ async function loadEntitlements(user) {
   if (!res.ok) {
     throw new Error(data.error || `${t("accountPage.entitlementsError")} (HTTP ${res.status})`);
   }
+
+  lastAccountUid = data.user_id ?? user.uid ?? null;
 
   for (const id of data.package_ids ?? []) {
     activePackageIds.add(id);
@@ -231,6 +236,7 @@ function renderPackages(catalog) {
   if (packagesEmptyHint && auth?.currentUser?.email) {
     packagesEmptyHint.textContent = t("accountPage.emptySignedInHint", {
       email: auth.currentUser.email,
+      uid: lastAccountUid ?? "—",
     });
   }
 
@@ -393,6 +399,7 @@ function initLanguage() {
     if (packagesEmptyHint && auth?.currentUser?.email) {
       packagesEmptyHint.textContent = t("accountPage.emptySignedInHint", {
         email: auth.currentUser.email,
+        uid: lastAccountUid ?? "—",
       });
     }
     if (catalogData && auth?.currentUser) renderPackages(catalogData);

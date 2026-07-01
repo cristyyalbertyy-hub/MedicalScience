@@ -194,7 +194,7 @@ const SITE_LOCALES = {
       packagesIntro: "Click Open — enter the package without a new magic link.",
       emptyTitle: "You don't have any modules on this account yet.",
       emptySignedInHint:
-        "Signed in as {email}. If access was granted in admin, the email must match exactly — then click Refresh access.",
+        "Signed in as {email} (UID: {uid}). If access was granted in admin, use the same email — then click Refresh access.",
       emptyText: "After purchase, access will appear here automatically.",
       emptyCta: "See plans and buy",
       refreshAccess: "Refresh access",
