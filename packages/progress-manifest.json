@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "resourceTypes": {
+    "V": "video",
+    "P": "podcast",
+    "I": "infographic",
+    "Q": "questions"
+  },
+  "packages": {
+    "genetics": {
+      "title": "Genetics",
+      "schema": "chapter/subchapter/resource",
+      "topics": [
+        {
+          "id": "BG/T",
+          "label": "Basic Genetics · Terminology",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BG/MP",
+          "label": "Basic Genetics · Mendelian Principles",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BG/PG",
+          "label": "Basic Genetics · Population Genetics",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IM/M",
+          "label": "Inheritance Models · Monogenic",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IM/C",
+          "label": "Inheritance Models · Chromosomal",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IM/Mu",
+          "label": "Inheritance Models · Multifactorial",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IM/Mi",
+          "label": "Inheritance Models · Mitochondrial",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CA/PA",
+          "label": "Clinical Application · Pedigree Analysis",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CA/RC",
+          "label": "Clinical Application · Risk Calculation",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CA/GD",
+          "label": "Clinical Application · Genetic Diagnosis",
+          "resources": ["V", "P", "I", "Q"]
+        }
+      ]
+    },
+    "medical-biology": {
+      "title": "Medical Biology",
+      "schema": "group/leaf/resource",
+      "topics": [
+        { "id": "cell-fundamentals/cell-theory", "label": "Cell Theory", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cell-fundamentals/macromolecules", "label": "Macromolecules", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cell-fundamentals/prokaryotic-vs-eukaryotic", "label": "Prokaryotic vs Eukaryotic", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cell-fundamentals/viruses", "label": "Viruses", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cell-structure-function/plasma-membrane", "label": "Plasma Membrane", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cell-structure-function/organelles", "label": "Organelles", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cell-structure-function/cytoskeleton", "label": "Cytoskeleton", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cell-structure-function/mitochondria", "label": "Mitochondria", "resources": ["V", "P", "I", "Q"] },
+        { "id": "molecular-biology/dna-structure-duplication", "label": "DNA Structure & Duplication", "resources": ["V", "P", "I", "Q"] },
+        { "id": "molecular-biology/rna-transcription", "label": "RNA & Transcription", "resources": ["V", "P", "I", "Q"] },
+        { "id": "molecular-biology/protein-synthesis", "label": "Protein Synthesis", "resources": ["V", "P", "I", "Q"] },
+        { "id": "molecular-biology/gene-expression-control", "label": "Gene Expression Control", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cellular-processes/cell-trafficking", "label": "Cell Trafficking", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cellular-processes/mitosis-meiosis", "label": "Mitosis & Meiosis", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cellular-processes/cell-death", "label": "Cell Death", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cellular-processes/cell-signaling", "label": "Cell Signaling", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cancer-biology/tumour-transformation", "label": "Tumour Transformation", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cancer-biology/proto-oncogenes", "label": "Proto-oncogenes", "resources": ["V", "P", "I", "Q"] },
+        { "id": "cancer-biology/tumour-suppressors", "label": "Tumour Suppressors", "resources": ["V", "P", "I", "Q"] }
+      ]
+    }
+  }
+}

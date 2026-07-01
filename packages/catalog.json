@@ -21,11 +21,13 @@
     },
     "medical-biology": {
       "title": "Medical Biology",
-      "url": "https://biology-genetics.vercel.app/"
+      "url": "https://biology-genetics.vercel.app/",
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=medical-biology"
     },
     "genetics": {
       "title": "Genetics",
-      "url": "https://medica-genetics.vercel.app/"
+      "url": "https://medica-genetics.vercel.app/",
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics"
     },
     "physics": {
       "title": "Physics",

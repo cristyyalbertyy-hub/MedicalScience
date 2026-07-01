@@ -46,15 +46,10 @@ export async function grantEntitlements({
   const now = new Date().toISOString();
 
   for (const packageId of packageIds) {
-    const existing = await db
-      .collection("entitlements")
-      .where("user_id", "==", userId)
-      .where("package_id", "==", packageId)
-      .limit(1)
-      .get();
+    const ref = db.collection("entitlements").doc(`${userId}_${packageId}`);
+    const existing = await ref.get();
 
-    if (existing.empty) {
-      const ref = db.collection("entitlements").doc();
+    if (!existing.exists) {
       batch.set(ref, {
         user_id: userId,
         package_id: packageId,
@@ -66,12 +61,11 @@ export async function grantEntitlements({
         granted_at: now,
       });
     } else {
-      const doc = existing.docs[0];
-      const current = doc.data().expires_at;
+      const current = existing.data().expires_at;
       const currentDate = current ? new Date(current) : new Date(0);
       const nextExpires =
         expiresAt > currentDate ? expiresIso : current;
-      batch.update(doc.ref, {
+      batch.update(ref, {
         expires_at: nextExpires,
         order_id: orderId,
         plan,
