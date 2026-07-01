@@ -163,6 +163,7 @@ SITE_LOCALES.it = {
     leadHtml:
       "Apri i tuoi pacchetti da qui. Se questo browser ti conosce già, la sessione si carica da sola — <strong>senza nuova email</strong>.",
     signInTitle: "Accedi",
+    sessionTitle: "La tua sessione",
     emailLabel: "Email",
     emailPlaceholder: "l'email usata al checkout",
     sendLink: "Invia link di accesso",
@@ -186,8 +187,14 @@ SITE_LOCALES.it = {
     myPackages: "I miei pacchetti",
     packagesIntro: "Clicca Apri — entra nel pacchetto senza un nuovo magic link.",
     emptyTitle: "Non hai ancora moduli disponibili su questo account.",
+    emptySignedInHint:
+      "Accesso come {email}. Se l'accesso è stato concesso in admin, l'email deve coincidere — poi clicca Aggiorna accesso.",
     emptyText: "Dopo l'acquisto, l'accesso apparirà qui automaticamente.",
     emptyCta: "Vedi i piani e acquista",
+    refreshAccess: "Aggiorna accesso",
+    refreshing: "Aggiornamento accesso…",
+    entitlementsError:
+      "Impossibile caricare l'elenco accessi. Controlla la connessione e prova Aggiorna accesso.",
     footnoteHtml:
       'Vuoi più moduli? <a href="../packages/">Vedi tutte le discipline</a> · <a href="../precos/">Acquista</a>',
     open: "Apri",

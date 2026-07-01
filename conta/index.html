@@ -82,10 +82,16 @@
         <ul id="packages-list" class="acesso-packages"></ul>
         <div id="packages-empty" class="acesso-empty" hidden>
           <p data-i18n="accountPage.emptyTitle">You don't have any modules on this account yet.</p>
+          <p id="packages-empty-hint" class="acesso-muted"></p>
           <p class="acesso-muted" data-i18n="accountPage.emptyText">
             After purchase, access will appear here automatically.
           </p>
-          <a class="btn btn-primary" href="../precos/" data-i18n="accountPage.emptyCta">See plans and buy</a>
+          <div class="acesso-empty__actions">
+            <button type="button" class="btn btn-secondary" id="refresh-access-btn" data-i18n="accountPage.refreshAccess">
+              Refresh access
+            </button>
+            <a class="btn btn-primary" href="../precos/" data-i18n="accountPage.emptyCta">See plans and buy</a>
+          </div>
         </div>
         <p
           id="packages-footnote"

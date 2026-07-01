@@ -163,6 +163,7 @@ SITE_LOCALES.pt = {
     leadHtml:
       "Abra os pacotes a partir daqui. Se este browser já o conhece, a sessão carrega automaticamente — <strong>sem novo email</strong>.",
     signInTitle: "Entrar",
+    sessionTitle: "A tua sessão",
     emailLabel: "Email",
     emailPlaceholder: "o email usado na compra",
     sendLink: "Enviar link de entrada",
@@ -186,8 +187,14 @@ SITE_LOCALES.pt = {
     myPackages: "Os meus pacotes",
     packagesIntro: "Clique em Abrir — entra no pacote sem novo magic link.",
     emptyTitle: "Ainda não tens módulos disponíveis nesta conta.",
+    emptySignedInHint:
+      "Sessão: {email}. Se o acesso foi dado no admin, o email tem de ser igual — depois clica Actualizar acesso.",
     emptyText: "Depois da compra, o acesso aparece aqui automaticamente.",
     emptyCta: "Ver planos e comprar",
+    refreshAccess: "Actualizar acesso",
+    refreshing: "A actualizar acesso…",
+    entitlementsError:
+      "Não foi possível carregar a lista de acesso. Verifica a ligação e tenta Actualizar acesso.",
     footnoteHtml:
       'Queres mais módulos? <a href="../packages/">Ver todas as disciplinas</a> · <a href="../precos/">Comprar</a>',
     open: "Abrir",

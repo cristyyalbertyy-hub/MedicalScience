@@ -170,6 +170,7 @@ const SITE_LOCALES = {
       leadHtml:
         "Open your packages from here. If this browser already knows you, your session loads automatically — <strong>no new email</strong>.",
       signInTitle: "Sign in",
+      sessionTitle: "Your session",
       emailLabel: "Email",
       emailPlaceholder: "the email used at checkout",
       sendLink: "Send sign-in link",
@@ -192,8 +193,14 @@ const SITE_LOCALES = {
       myPackages: "My packages",
       packagesIntro: "Click Open — enter the package without a new magic link.",
       emptyTitle: "You don't have any modules on this account yet.",
+      emptySignedInHint:
+        "Signed in as {email}. If access was granted in admin, the email must match exactly — then click Refresh access.",
       emptyText: "After purchase, access will appear here automatically.",
       emptyCta: "See plans and buy",
+      refreshAccess: "Refresh access",
+      refreshing: "Refreshing access…",
+      entitlementsError:
+        "Could not load your access list. Check your connection and try Refresh access.",
       footnoteHtml:
         'Want more modules? <a href="../packages/">See all disciplines</a> · <a href="../precos/">Buy</a>',
       open: "Open",

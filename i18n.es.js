@@ -163,6 +163,7 @@ SITE_LOCALES.es = {
     leadHtml:
       "Abre tus paquetes desde aquí. Si este navegador ya te conoce, la sesión se carga sola — <strong>sin nuevo email</strong>.",
     signInTitle: "Iniciar sesión",
+    sessionTitle: "Tu sesión",
     emailLabel: "Email",
     emailPlaceholder: "el email usado en la compra",
     sendLink: "Enviar enlace de acceso",
@@ -186,8 +187,14 @@ SITE_LOCALES.es = {
     myPackages: "Mis paquetes",
     packagesIntro: "Haz clic en Abrir — entra en el paquete sin un nuevo magic link.",
     emptyTitle: "Aún no tienes módulos disponibles en esta cuenta.",
+    emptySignedInHint:
+      "Sesión: {email}. Si el acceso se concedió en admin, el email debe coincidir — luego pulsa Actualizar acceso.",
     emptyText: "Después de la compra, el acceso aparecerá aquí automáticamente.",
     emptyCta: "Ver planes y comprar",
+    refreshAccess: "Actualizar acceso",
+    refreshing: "Actualizando acceso…",
+    entitlementsError:
+      "No se pudo cargar tu lista de acceso. Comprueba la conexión e intenta Actualizar acceso.",
     footnoteHtml:
       '¿Quieres más módulos? <a href="../packages/">Ver todas las disciplinas</a> · <a href="../precos/">Comprar</a>',
     open: "Abrir",

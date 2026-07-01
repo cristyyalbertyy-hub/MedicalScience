@@ -163,6 +163,7 @@ SITE_LOCALES.fr = {
     leadHtml:
       "Ouvrez vos forfaits ici. Si ce navigateur vous connaît déjà, la session se charge automatiquement — <strong>sans nouvel email</strong>.",
     signInTitle: "Se connecter",
+    sessionTitle: "Votre session",
     emailLabel: "Email",
     emailPlaceholder: "l'email utilisé lors de l'achat",
     sendLink: "Envoyer le lien de connexion",
@@ -187,8 +188,14 @@ SITE_LOCALES.fr = {
     myPackages: "Mes forfaits",
     packagesIntro: "Cliquez sur Ouvrir — entrez dans le forfait sans nouveau magic link.",
     emptyTitle: "Vous n'avez pas encore de modules sur ce compte.",
+    emptySignedInHint:
+      "Connecté en tant que {email}. Si l'accès a été accordé dans l'admin, l'email doit correspondre — puis cliquez sur Actualiser l'accès.",
     emptyText: "Après l'achat, l'accès apparaîtra ici automatiquement.",
     emptyCta: "Voir les offres et acheter",
+    refreshAccess: "Actualiser l'accès",
+    refreshing: "Actualisation de l'accès…",
+    entitlementsError:
+      "Impossible de charger votre liste d'accès. Vérifiez la connexion et essayez Actualiser l'accès.",
     footnoteHtml:
       'Vous voulez plus de modules ? <a href="../packages/">Voir toutes les disciplines</a> · <a href="../precos/">Acheter</a>',
     open: "Ouvrir",

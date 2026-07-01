@@ -34,7 +34,9 @@ const signinNote = document.getElementById("signin-note");
 const packagesList = document.getElementById("packages-list");
 const packagesIntro = document.getElementById("packages-intro");
 const packagesEmpty = document.getElementById("packages-empty");
-const packagesFootnote = document.getElementById("packages-footnote");
+const authTitle = document.getElementById("auth-title");
+const refreshAccessBtn = document.getElementById("refresh-access-btn");
+const packagesEmptyHint = document.getElementById("packages-empty-hint");
 
 /** @type {import('firebase/app').FirebaseApp | null} */
 let app = null;
@@ -98,14 +100,6 @@ function configureSignInForm() {
   }
 
   if (sendLinkBtn) sendLinkBtn.textContent = t("accountPage.sendLink");
-}
-
-function refreshAuthSubtitle(signedIn) {
-  if (signedIn) {
-    authSubtitle.textContent = t("accountPage.signedInSubtitle");
-    return;
-  }
-  configureSignInForm();
 }
 
 function t(key, vars = {}) {
@@ -175,6 +169,17 @@ async function loadCatalog() {
   return res.json();
 }
 
+function setAuthPanelMode(mode) {
+  if (!authTitle) return;
+  if (mode === "signed-in") {
+    authTitle.dataset.i18n = "accountPage.sessionTitle";
+    authTitle.textContent = t("accountPage.sessionTitle");
+    return;
+  }
+  authTitle.dataset.i18n = "accountPage.signInTitle";
+  authTitle.textContent = t("accountPage.signInTitle");
+}
+
 async function loadEntitlements(userId) {
   activePackageIds = new Set();
   if (!db) return;
@@ -191,12 +196,30 @@ async function loadEntitlements(userId) {
   });
 }
 
+async function refreshAccountAccess() {
+  if (!auth?.currentUser || !catalogData) return;
+  setStatusKey("accountPage.refreshing");
+  try {
+    await loadEntitlements(auth.currentUser.uid);
+    renderPackages(catalogData);
+    setStatus("", "");
+  } catch {
+    setStatusKey("accountPage.entitlementsError", {}, "error");
+  }
+}
+
 function renderPackages(catalog) {
   packagesList.replaceChildren();
   const ownedIds = [
     ...catalog.paidPackageIds,
     ...catalog.freePackageIds.filter((id) => !catalog.paidPackageIds.includes(id)),
   ].filter((id) => activePackageIds.has(id));
+
+  if (packagesEmptyHint && auth?.currentUser?.email) {
+    packagesEmptyHint.textContent = t("accountPage.emptySignedInHint", {
+      email: auth.currentUser.email,
+    });
+  }
 
   if (!ownedIds.length) {
     packagesList.hidden = true;
@@ -278,11 +301,17 @@ async function showSignedIn(user, catalog) {
   if (authLoading) authLoading.hidden = true;
   signedInEmail.textContent = user.email ?? user.uid;
   rememberSignedInEmail(user.email ?? "");
-  refreshAuthSubtitle(true);
-  await loadEntitlements(user.uid);
-  renderPackages(catalog);
+  setAuthPanelMode("signed-in");
+  authSubtitle.textContent = t("accountPage.signedInSubtitle");
   packagesPanel.hidden = false;
-  setStatus("", "");
+  try {
+    await loadEntitlements(user.uid);
+    renderPackages(catalog);
+    setStatus("", "");
+  } catch {
+    renderPackages(catalog);
+    setStatusKey("accountPage.entitlementsError", {}, "error");
+  }
 }
 
 function showSignedOut() {
@@ -298,8 +327,13 @@ function showSignedOut() {
 
   if (authLoading) authLoading.hidden = true;
   signinForm.hidden = false;
+  setAuthPanelMode("signed-out");
   configureSignInForm();
 }
+
+refreshAccessBtn?.addEventListener("click", () => {
+  void refreshAccountAccess();
+});
 
 signinForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -335,13 +369,20 @@ function initLanguage() {
   SiteI18n.initSiteLanguage();
   document.addEventListener("site:langchange", () => {
     if (auth?.currentUser) {
-      refreshAuthSubtitle(true);
+      setAuthPanelMode("signed-in");
+      authSubtitle.textContent = t("accountPage.signedInSubtitle");
     } else if (authResolved) {
+      setAuthPanelMode("signed-out");
       configureSignInForm();
     } else if (authLoading && !authLoading.hidden) {
       authSubtitle.textContent = t("accountPage.checkingSession");
     }
     refreshStatusMessage();
+    if (packagesEmptyHint && auth?.currentUser?.email) {
+      packagesEmptyHint.textContent = t("accountPage.emptySignedInHint", {
+        email: auth.currentUser.email,
+      });
+    }
     if (catalogData && auth?.currentUser) renderPackages(catalogData);
   });
 }
