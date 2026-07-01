@@ -30,6 +30,7 @@ const packagesEmpty = document.getElementById("packages-empty");
 const authTitle = document.getElementById("auth-title");
 const refreshAccessBtn = document.getElementById("refresh-access-btn");
 const packagesEmptyHint = document.getElementById("packages-empty-hint");
+const packagesFootnote = document.getElementById("packages-footnote");
 
 /** @type {import('firebase/app').FirebaseApp | null} */
 let app = null;
