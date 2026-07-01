@@ -188,7 +188,7 @@ SITE_LOCALES.pt = {
     packagesIntro: "Clique em Abrir — entra no pacote sem novo magic link.",
     emptyTitle: "Ainda não tens módulos disponíveis nesta conta.",
     emptySignedInHint:
-      "Sessão: {email} (UID: {uid}). Se o admin concedeu acesso, usa o mesmo email — depois clica Actualizar acesso.",
+      "Sessão: {email} (UID: {uid}). Se o admin concedeu acesso, usa o mesmo email — no Gmail, studio9.cris e studio9cris são contas diferentes. Depois clica Actualizar acesso.",
     emptyText: "Depois da compra, o acesso aparece aqui automaticamente.",
     emptyCta: "Ver planos e comprar",
     refreshAccess: "Actualizar acesso",
