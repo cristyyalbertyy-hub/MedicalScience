@@ -9,13 +9,6 @@ import {
   signInWithEmailLink,
   signOut,
 } from "https://esm.sh/firebase@12.15.0/auth";
-import {
-  getFirestore,
-  collection,
-  query,
-  where,
-  getDocs,
-} from "https://esm.sh/firebase@12.15.0/firestore";
 
 const EMAIL_KEY = "studio9.emailForSignIn";
 const LAST_EMAIL_KEY = "studio9.lastSignedInEmail";
@@ -42,8 +35,6 @@ const packagesEmptyHint = document.getElementById("packages-empty-hint");
 let app = null;
 /** @type {import('firebase/auth').Auth | null} */
 let auth = null;
-/** @type {import('firebase/firestore').Firestore | null} */
-let db = null;
 /** @type {Record<string, { title: string, url?: string, free?: boolean }>} */
 let packageMeta = {};
 /** @type {Set<string>} */
@@ -180,27 +171,28 @@ function setAuthPanelMode(mode) {
   authTitle.textContent = t("accountPage.signInTitle");
 }
 
-async function loadEntitlements(userId) {
+async function loadEntitlements(user) {
   activePackageIds = new Set();
-  if (!db) return;
-  const snap = await getDocs(
-    query(collection(db, "entitlements"), where("user_id", "==", userId)),
-  );
-  const now = new Date();
-  snap.forEach((doc) => {
-    const data = doc.data();
-    const expires = new Date(data.expires_at);
-    if (!Number.isNaN(expires.getTime()) && expires > now) {
-      activePackageIds.add(data.package_id);
-    }
+  const idToken = await user.getIdToken();
+  const res = await fetch("/api/my-entitlements", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ id_token: idToken }),
   });
+  const data = await res.json();
+  if (!res.ok) {
+    throw new Error(data.error || t("accountPage.entitlementsError"));
+  }
+  for (const id of data.package_ids ?? []) {
+    activePackageIds.add(id);
+  }
 }
 
 async function refreshAccountAccess() {
   if (!auth?.currentUser || !catalogData) return;
   setStatusKey("accountPage.refreshing");
   try {
-    await loadEntitlements(auth.currentUser.uid);
+    await loadEntitlements(auth.currentUser);
     renderPackages(catalogData);
     setStatus("", "");
   } catch {
@@ -305,7 +297,7 @@ async function showSignedIn(user, catalog) {
   authSubtitle.textContent = t("accountPage.signedInSubtitle");
   packagesPanel.hidden = false;
   try {
-    await loadEntitlements(user.uid);
+    await loadEntitlements(user);
     renderPackages(catalog);
     setStatus("", "");
   } catch {
@@ -402,7 +394,6 @@ async function bootstrap() {
 
   app = initializeApp(cfg);
   auth = getAuth(app);
-  db = getFirestore(app);
   await setPersistence(auth, browserLocalPersistence);
 
   catalogData = await loadCatalog();

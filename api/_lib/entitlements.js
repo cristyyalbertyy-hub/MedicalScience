@@ -86,3 +86,23 @@ export async function logAdminGrant(payload) {
     created_at: new Date().toISOString(),
   });
 }
+
+export async function listActiveEntitlements(userId) {
+  const db = getFirestore();
+  const snap = await db
+    .collection("entitlements")
+    .where("user_id", "==", userId)
+    .get();
+  const now = Date.now();
+  const packageIds = [];
+
+  snap.forEach((doc) => {
+    const data = doc.data();
+    const expires = new Date(data.expires_at).getTime();
+    if (!Number.isNaN(expires) && expires > now && data.package_id) {
+      packageIds.push(String(data.package_id));
+    }
+  });
+
+  return packageIds;
+}
