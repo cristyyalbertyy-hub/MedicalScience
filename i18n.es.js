@@ -128,7 +128,7 @@ SITE_LOCALES.es = {
         "Pon a prueba lo aprendido. El feedback instantáneo muestra dónde te equivocaste y te lo explica de nuevo.",
     },
     final: {
-      title: "€15 por módulo. €50 por cuatro.",
+      title: "$14.97 por módulo. $49.97 por cuatro.",
       text: "Y un curso completo que no te volverá loco.",
       cta: "Ver precios y empezar",
     },

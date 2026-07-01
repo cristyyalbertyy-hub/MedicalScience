@@ -128,7 +128,7 @@ SITE_LOCALES.fr = {
         "Testez ce que vous avez appris. Le retour instantané montre vos erreurs et réexplique.",
     },
     final: {
-      title: "€15 par module. €50 pour quatre.",
+      title: "$14.97 par module. $49.97 pour quatre.",
       text: "Et un cursus complet qui ne vous rendra pas fou.",
       cta: "Voir les tarifs et commencer",
     },

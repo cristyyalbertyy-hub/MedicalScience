@@ -135,7 +135,7 @@ const SITE_LOCALES = {
           "Test what you learned. Instant feedback shows where you went wrong and explains it again.",
       },
       final: {
-        title: "€15 per module. €50 for four.",
+        title: "$14.97 per module. $49.97 for four.",
         text: "And a complete course that will not drive you mad.",
         cta: "See pricing and start",
       },

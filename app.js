@@ -1,7 +1,7 @@
 /** Student progress dashboard — edit URL here only. */
 const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 
-const CURRENCY_STORAGE_KEY = "studio9-medical-currency";
+const CURRENCY_STORAGE_KEY = "studio9-medical-currency-v2";
 const EUR_USD_FALLBACK = 1.08;
 
 /** @type {"eur"|"usd"} */
@@ -211,7 +211,8 @@ function pricingLocale() {
 function formatPlanAmount(amount, currency) {
   const hasFraction = Math.abs(amount % 1) > 0.001;
   const digits = hasFraction ? 2 : 0;
-  return new Intl.NumberFormat(pricingLocale(), {
+  const locale = currency === "usd" ? "en-US" : pricingLocale();
+  return new Intl.NumberFormat(locale, {
     style: "currency",
     currency: currency === "usd" ? "USD" : "EUR",
     currencyDisplay: "narrowSymbol",

@@ -128,7 +128,7 @@ SITE_LOCALES.it = {
         "Metti alla prova ciò che hai imparato. Il feedback immediato mostra gli errori e spiega di nuovo.",
     },
     final: {
-      title: "€15 a modulo. €50 per quattro.",
+      title: "$14.97 a modulo. $49.97 per quattro.",
       text: "E un corso completo che non ti farà impazzire.",
       cta: "Vedi i prezzi e inizia",
     },
