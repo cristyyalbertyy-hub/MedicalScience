@@ -195,6 +195,7 @@ SITE_LOCALES.pt = {
     refreshing: "A actualizar acesso…",
     entitlementsError:
       "Não foi possível carregar a lista de acesso. Verifica a ligação e tenta Actualizar acesso.",
+    entitlementsNetworkError: "Erro de rede ao carregar a lista de acesso.",
     footnoteHtml:
       'Queres mais módulos? <a href="../packages/">Ver todas as disciplinas</a> · <a href="../precos/">Comprar</a>',
     open: "Abrir",

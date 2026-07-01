@@ -9,6 +9,7 @@ import {
   grantEntitlements,
   logAdminGrant,
 } from "./_lib/entitlements.js";
+import { parseJsonBody } from "./_lib/request.js";
 
 function isValidPackageId(id) {
   return isPaidPackageId(id) || isFreePackageId(id);
@@ -30,7 +31,7 @@ export default async function handler(req, res) {
     return res.status(503).json({ error: "Admin grant is not configured." });
   }
 
-  const body = req.body ?? {};
+  const body = parseJsonBody(req);
   const secret = String(body.secret ?? "");
   const email = String(body.email ?? "").trim().toLowerCase();
   const packageIds = normalizePackageIds(body.package_ids);

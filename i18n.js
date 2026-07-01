@@ -201,6 +201,7 @@ const SITE_LOCALES = {
       refreshing: "Refreshing access…",
       entitlementsError:
         "Could not load your access list. Check your connection and try Refresh access.",
+      entitlementsNetworkError: "Network error while loading your access list.",
       footnoteHtml:
         'Want more modules? <a href="../packages/">See all disciplines</a> · <a href="../precos/">Buy</a>',
       open: "Open",

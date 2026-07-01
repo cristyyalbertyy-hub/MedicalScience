@@ -173,19 +173,40 @@ function setAuthPanelMode(mode) {
 
 async function loadEntitlements(user) {
   activePackageIds = new Set();
-  const idToken = await user.getIdToken();
-  const res = await fetch("/api/my-entitlements", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ id_token: idToken }),
-  });
-  const data = await res.json();
-  if (!res.ok) {
-    throw new Error(data.error || t("accountPage.entitlementsError"));
+  const idToken = await user.getIdToken(true);
+  let res;
+  try {
+    res = await fetch("/api/my-entitlements", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id_token: idToken }),
+    });
+  } catch {
+    throw new Error(t("accountPage.entitlementsNetworkError"));
   }
+
+  const raw = await res.text();
+  let data = {};
+  try {
+    data = raw ? JSON.parse(raw) : {};
+  } catch {
+    throw new Error(`${t("accountPage.entitlementsError")} (HTTP ${res.status})`);
+  }
+
+  if (!res.ok) {
+    throw new Error(data.error || `${t("accountPage.entitlementsError")} (HTTP ${res.status})`);
+  }
+
   for (const id of data.package_ids ?? []) {
     activePackageIds.add(id);
   }
+}
+
+function handleEntitlementsFailure(err, catalog) {
+  renderPackages(catalog);
+  const message =
+    err instanceof Error && err.message ? err.message : t("accountPage.entitlementsError");
+  setStatus(message, "error");
 }
 
 async function refreshAccountAccess() {
@@ -195,8 +216,8 @@ async function refreshAccountAccess() {
     await loadEntitlements(auth.currentUser);
     renderPackages(catalogData);
     setStatus("", "");
-  } catch {
-    setStatusKey("accountPage.entitlementsError", {}, "error");
+  } catch (err) {
+    handleEntitlementsFailure(err, catalogData);
   }
 }
 
@@ -300,9 +321,8 @@ async function showSignedIn(user, catalog) {
     await loadEntitlements(user);
     renderPackages(catalog);
     setStatus("", "");
-  } catch {
-    renderPackages(catalog);
-    setStatusKey("accountPage.entitlementsError", {}, "error");
+  } catch (err) {
+    handleEntitlementsFailure(err, catalog);
   }
 }
 

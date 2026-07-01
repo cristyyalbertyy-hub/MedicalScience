@@ -1,4 +1,10 @@
 import { getAuth, getFirestore } from "./firebase.js";
+import { getCatalog } from "./catalog.js";
+
+function isActiveEntitlement(data, nowMs) {
+  const expires = new Date(data.expires_at).getTime();
+  return !Number.isNaN(expires) && expires > nowMs && data.package_id;
+}
 
 export async function getOrCreateUserByEmail(email) {
   const auth = getAuth();
@@ -89,20 +95,35 @@ export async function logAdminGrant(payload) {
 
 export async function listActiveEntitlements(userId) {
   const db = getFirestore();
-  const snap = await db
-    .collection("entitlements")
-    .where("user_id", "==", userId)
-    .get();
+  const catalog = getCatalog();
+  const allIds = [
+    ...catalog.paidPackageIds,
+    ...catalog.freePackageIds.filter((id) => !catalog.paidPackageIds.includes(id)),
+  ];
   const now = Date.now();
-  const packageIds = [];
+  const packageIds = new Set();
 
-  snap.forEach((doc) => {
-    const data = doc.data();
-    const expires = new Date(data.expires_at).getTime();
-    if (!Number.isNaN(expires) && expires > now && data.package_id) {
-      packageIds.push(String(data.package_id));
+  for (const packageId of allIds) {
+    const snap = await db.collection("entitlements").doc(`${userId}_${packageId}`).get();
+    if (!snap.exists) continue;
+    const data = snap.data();
+    if (isActiveEntitlement(data, now)) {
+      packageIds.add(String(data.package_id));
     }
-  });
+  }
 
-  return packageIds;
+  if (!packageIds.size) {
+    const snap = await db
+      .collection("entitlements")
+      .where("user_id", "==", userId)
+      .get();
+    snap.forEach((doc) => {
+      const data = doc.data();
+      if (isActiveEntitlement(data, now)) {
+        packageIds.add(String(data.package_id));
+      }
+    });
+  }
+
+  return [...packageIds];
 }

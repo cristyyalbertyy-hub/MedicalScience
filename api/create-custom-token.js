@@ -1,4 +1,5 @@
 import { getAuth } from "./_lib/firebase.js";
+import { parseJsonBody } from "./_lib/request.js";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -6,7 +7,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  const idToken = String(req.body?.id_token ?? "");
+  const body = parseJsonBody(req);
+  const idToken = String(body.id_token ?? "");
   if (!idToken) {
     return res.status(400).json({ error: "Missing id_token" });
   }
