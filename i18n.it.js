@@ -8,7 +8,7 @@ SITE_LOCALES.it = {
     curriculo: {
       title: "Programma completo · Medical Science · Studio9",
       description:
-        "Programma completo del corso Medical Science: tre anni, 22 moduli, con ore di studio e descrizione di ogni materia.",
+        "Catalogo del corso Medical Science: 22 moduli con ore di studio e descrizione di ogni materia.",
     },
     packages: {
       title: "Pacchetti pronti · Medical Science · Studio9",
@@ -17,7 +17,10 @@ SITE_LOCALES.it = {
     precos: {
       title: "Come funziona + Prezzi · Medical Science · Studio9",
       description:
-        "Come funziona il corso Medical Science di Studio9, con piani tariffari per moduli, bundle, anni completi e corso integrale.",
+        "Come funziona il corso Medical Science di Studio9, con piani tariffari per moduli, bundle e corso integrale.",
+    },
+    account: {
+      title: "Il mio account · Studio9 Medical Science",
     },
   },
   brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
@@ -58,14 +61,14 @@ SITE_LOCALES.it = {
     infographics: { alt: "Tablet su una scrivania con infografica di anatomia umana" },
     quiz: { alt: "Questionario interattivo con domande aperte e verifica immediata nell'app" },
     packages: { alt: "Panoramica dei pacchetti di apprendimento Studio9 pronti all'uso" },
-    progress: { alt: "Dashboard dei progressi dello studente nelle discipline del 1° anno" },
+    progress: { alt: "Dashboard dei progressi dello studente per disciplina" },
   },
   home: {
     hero: {
       eyebrow: "Corso online · 22 moduli · App Studio9",
-      title: "Medical Science. Dal 1° al 3° anno — dove e quando vuoi.",
+      title: "Medical Science — dove e quando vuoi.",
       lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
-      ctaCurriculum: "Vedi il programma completo",
+      ctaDisciplines: "Vedi tutte le discipline",
       ctaHow: "Scopri come funziona",
       mediaAria: "Anteprima dell'app",
     },
@@ -74,32 +77,23 @@ SITE_LOCALES.it = {
       title: "A chi è rivolto.",
       c1Title: "Matricole e studenti pre-universitari",
       c1Text:
-        "Vuoi arrivare all'università con basi solide? O sei al 1° anno e devi studiare in modo efficiente tra una lezione e l'altra?",
+        "Vuoi arrivare all'università con basi solide? O devi studiare in modo efficiente tra una lezione e l'altra?",
       c2Title: "Studenti di scienze della salute",
       c2Text:
-        "Medicina, infermieristica, biomedica, biologia, farmacia. Il corso copre le basi comuni di questi primi anni.",
+        "Medicina, infermieristica, biomedica, biologia, farmacia. Il corso copre le basi comuni delle scienze della salute.",
       c3Title: "Chi ha un'agenda piena",
       c3Text:
         "Lavori o hai orari complicati? Studia sull'autobus, nella pausa pranzo o prima di dormire. Senza sensi di colpa, senza stress.",
     },
     preview: {
-      eyebrow: "Struttura del programma",
-      title: "Il programma — tre anni, modulo per modulo.",
+      eyebrow: "Tutte le discipline",
+      title: "22 materie — scegli quelle che ti servono.",
       intro:
-        "22 moduli in 3 anni. Ognuno include 40–60 ore di studio — video, podcast, infografiche e questionari. Consulta l'elenco completo materia per materia.",
-      y1Label: "Anno 1 · Fondamenti",
-      y1Count: "6 moduli",
-      y1Text:
-        "Biologia, chimica, anatomia, istologia e le basi centrali delle scienze della salute.",
-      y2Label: "Anno 2 · Sistemi e malattia",
-      y2Count: "8 moduli",
-      y2Text:
-        "Fisiologia, immunologia, microbiologia, farmacologia e sistemi del corpo nel dettaglio.",
-      y3Label: "Anno 3 · Integrazione clinica",
-      y3Count: "8 moduli",
-      y3Text:
-        "Patologia, medicina clinica, etica, pratica basata sull'evidenza e casi integrati.",
-      cta: "Vedi programma completo →",
+        "Dodici app Studio9 sono già online. Dieci discipline arriveranno presto. Ogni modulo include 40–60 ore di studio — video, podcast, infografiche e questionari.",
+      liveCount: "12 app online",
+      soonCount: "10 in arrivo",
+      hours: "40–60 ore per modulo",
+      cta: "Vedi tutte le discipline →",
     },
     packages: {
       eyebrow: "Già disponibili",
@@ -110,7 +104,7 @@ SITE_LOCALES.it = {
       aria: "Progressi dello studente",
       eyebrow: "Sei già iscritto?",
       title: "Tieni traccia dei tuoi progressi.",
-      text: "Consulta cosa hai completato in tutte le discipline del 1° anno — video, esercizi e conteggi di completamento, materia per materia.",
+      text: "Consulta cosa hai completato in tutte le tue discipline — video, esercizi e conteggi di completamento, materia per materia.",
       cta: "Apri dashboard progressi →",
     },
     study: {
@@ -135,11 +129,10 @@ SITE_LOCALES.it = {
   },
   curriculo: {
     hero: {
-      eyebrow: "Tre anni · 22 moduli",
-      title: "Programma completo · Medical Science",
-      text: "Tre anni, 22 moduli. Ogni modulo = 40-60 ore di studio. Al tuo ritmo.",
+      eyebrow: "22 moduli · App Studio9",
+      title: "Catalogo completo · Medical Science",
+      text: "22 moduli. Ogni modulo = 40-60 ore di studio. Al tuo ritmo.",
       statModules: "moduli",
-      statYears: "anni",
       statApps: "app live",
       mediaAria: "Panoramica dei pacchetti di apprendimento Studio9",
     },
@@ -149,22 +142,11 @@ SITE_LOCALES.it = {
       description: "Breve descrizione",
       packageLink: "Pacchetto Studio9 (online) →",
     },
-    years: {
-      y1: "1° anno · Fondamenti",
-      y1n: "6 moduli",
-      y1aria: "1° anno · Fondamenti",
-      y2: "2° anno · Sistemi e patologia",
-      y2n: "8 moduli",
-      y2aria: "2° anno · Sistemi e patologia",
-      y3: "3° anno · Integrazione clinica",
-      y3n: "8 moduli",
-      y3aria: "3° anno · Integrazione clinica",
-    },
     note: {
-      text: "Puoi acquistare moduli singoli o un anno completo. Ogni modulo include video, podcast, esercizi e un riassunto scaricabile.",
+      text: "Puoi acquistare moduli singoli o bundle. Ogni modulo include video, podcast, esercizi e un riassunto scaricabile.",
       cta: "Vedi i piani tariffari →",
     },
-    listAria: "Elenco delle materie per anno",
+    listAria: "Elenco delle materie",
   },
   packagesPage: {
     hero: {
@@ -174,6 +156,48 @@ SITE_LOCALES.it = {
     },
     sectionAria: "Pacchetti di apprendimento pronti all'uso",
   },
+  accountPage: {
+    back: "← Sito Medical Science",
+    eyebrow: "Account Studio9",
+    title: "Il mio account",
+    leadHtml:
+      "Accedi <strong>una volta</strong> qui con un magic link. Poi apri i tuoi pacchetti senza chiedere di nuovo l'email — risparmia la quota giornaliera di email.",
+    signInTitle: "Accedi",
+    emailLabel: "Email",
+    emailPlaceholder: "l'email usata al checkout",
+    sendLink: "Invia link di accesso (solo la 1ª volta)",
+    signInNote: "Ti serve solo una volta per browser. Poi usa i pulsanti Apri qui sotto.",
+    sessionLabel: "Sessione:",
+    signOut: "Esci",
+    signedInSubtitle:
+      "Account attivo in questo browser. Usa Apri per entrare nei pacchetti senza una nuova email.",
+    signedOutSubtitle:
+      "Prima volta? Invia un magic link. Dopodiché torna sempre a questa pagina.",
+    myPackages: "I miei pacchetti",
+    packagesIntro: "Clicca Apri — entra nel pacchetto senza un nuovo magic link.",
+    emptyTitle: "Non hai ancora moduli disponibili su questo account.",
+    emptyText: "Dopo l'acquisto, l'accesso apparirà qui automaticamente.",
+    emptyCta: "Vedi i piani e acquista",
+    footnoteHtml:
+      'Vuoi più moduli? <a href="../packages/">Vedi tutte le discipline</a> · <a href="../precos/">Acquista</a>',
+    open: "Apri",
+    opening: "Apertura…",
+    soon: "Prossimamente",
+    free: "gratuito",
+    active: "attivo",
+    confirmEmail: "Conferma l'email usata per richiedere il link",
+    catalogError: "Catalogo non disponibile.",
+    firebaseError: "Account non disponibile — Firebase non configurato in questo deploy.",
+    sendingLink: "Invio del link…",
+    linkSent: "Link inviato a {email}. Apri l'email in questo browser.",
+    quotaError:
+      "Quota giornaliera di email esaurita. Riprova domani o usa una sessione attiva.",
+    signInFirst: "Accedi prima.",
+    openError: "Impossibile aprire il pacchetto.",
+    sendError: "Impossibile inviare il link.",
+    genericError: "Qualcosa è andato storto.",
+    startError: "Impossibile avviare.",
+  },
   precos: {
     hero: {
       eyebrow: "Metodo flessibile",
@@ -182,7 +206,7 @@ SITE_LOCALES.it = {
     },
     steps: {
       s1Title: "Scegli i tuoi moduli",
-      s1Text: "Acquista un modulo, un anno completo o tutti e tre gli anni.",
+      s1Text: "Acquista un modulo, un bundle da quattro o più.",
       s2Title: "Accedi nell'app Studio9",
       s2Text:
         "Dopo l'acquisto ricevi un magic link via email — senza password. Accedi da telefono o computer; l'accesso resta attivo per 1 anno.",
@@ -208,7 +232,7 @@ SITE_LOCALES.it = {
       p2l2: "Accesso immediato (1 anno)",
       p2l3: "Risparmia il 25% rispetto all'acquisto singolo",
       p2cta: "Componi il tuo pack →",
-      p3Label: "Anno completo",
+      p3Label: "Bundle completo",
       p3l1: "12 moduli",
       p3l2: "Accesso immediato (1 anno)",
       p3l3: "Risparmia il 40% rispetto all'acquisto singolo",
@@ -227,7 +251,7 @@ SITE_LOCALES.it = {
       q2: "I docenti sono persone reali?",
       a2: "Sì. Cristina Alberto, docente universitaria con 30 anni di esperienza, e Alexandra Sousa, consulente aziendale con 20 anni di esperienza, guidano la visione accademica del corso.",
       q3: "Sostituisce l'università?",
-      a3: "No. È un complemento per aiutarti a studiare in modo più leggero ed efficiente. Gli argomenti seguono il programma comune dal 1° al 3° anno delle scienze della salute.",
+      a3: "No. È un complemento per aiutarti a studiare in modo più leggero ed efficiente. Gli argomenti seguono il programma comune delle scienze della salute.",
     },
   },
   pkg: {

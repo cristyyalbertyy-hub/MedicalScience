@@ -15,7 +15,7 @@ const SITE_LOCALES = {
       curriculo: {
         title: "Full curriculum · Medical Science · Studio9",
         description:
-          "Full Medical Science course curriculum: three years, 22 modules, with study hours and a description for each subject.",
+          "Medical Science course catalogue: 22 modules with study hours and a description for each subject.",
       },
       packages: {
         title: "All disciplines · Medical Science · Studio9",
@@ -24,7 +24,10 @@ const SITE_LOCALES = {
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
         description:
-          "How the Studio9 Medical Science course works, with pricing plans for modules, bundles, full years and the complete course.",
+          "How the Studio9 Medical Science course works, with pricing plans for modules, bundles and the complete course.",
+      },
+      account: {
+        title: "My account · Studio9 Medical Science",
       },
     },
     brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
@@ -64,12 +67,12 @@ const SITE_LOCALES = {
       infographics: { alt: "Tablet on a desk showing a human anatomy infographic summary" },
       quiz: { alt: "Interactive quiz with open questions and instant checking in the app" },
       packages: { alt: "Overview of ready-made Studio9 learning packages" },
-      progress: { alt: "Student progress dashboard across Year 1 disciplines" },
+      progress: { alt: "Student progress dashboard across disciplines" },
     },
     home: {
       hero: {
         eyebrow: "Online course · 22 modules · Studio9 app",
-        title: "Medical Science. From Year 1 to Year 3 — wherever and whenever you want.",
+        title: "Medical Science — wherever and whenever you want.",
         lead: "Study anatomy, physiology, genetics and much more. In short videos, podcasts for the bus, and interactive exercises. All inside the Studio9 app.",
         ctaDisciplines: "Browse all disciplines",
         ctaHow: "See how it works",
@@ -80,10 +83,10 @@ const SITE_LOCALES = {
         title: "Who this is for.",
         c1Title: "Freshers and pre-university students",
         c1Text:
-          "Want to arrive at university with solid foundations? Or are you in Year 1 and need to study efficiently between classes?",
+          "Want to arrive at university with solid foundations? Or need to study efficiently between classes?",
         c2Title: "Health science students",
         c2Text:
-          "Medicine, nursing, biomedicine, biology, pharmacy. The course covers the shared foundations of these first years.",
+          "Medicine, nursing, biomedicine, biology, pharmacy. The course covers the shared foundations of health sciences.",
         c3Title: "Anyone with a packed routine",
         c3Text:
           "Working or juggling complicated schedules? Study on the bus, during your lunch break, or before bed. No guilt, no stress.",
@@ -108,7 +111,7 @@ const SITE_LOCALES = {
         aria: "Student progress",
         eyebrow: "Already enrolled?",
         title: "Track your progress.",
-        text: "See what you have completed across all Year 1 disciplines — videos, exercises and completion counts, discipline by discipline.",
+        text: "See what you have completed across all your disciplines — videos, exercises and completion counts, discipline by discipline.",
         cta: "Open progress dashboard →",
       },
       study: {
@@ -133,11 +136,10 @@ const SITE_LOCALES = {
     },
     curriculo: {
       hero: {
-        eyebrow: "Three years · 22 modules",
-        title: "Full curriculum · Medical Science",
-        text: "Three years, 22 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
+        eyebrow: "22 modules · Studio9 apps",
+        title: "Full catalogue · Medical Science",
+        text: "22 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
         statModules: "modules",
-        statYears: "years",
         statApps: "live apps",
         mediaAria: "Overview of Studio9 learning packages",
       },
@@ -147,22 +149,11 @@ const SITE_LOCALES = {
         description: "Brief description",
         packageLink: "Studio9 package (live) →",
       },
-      years: {
-        y1: "Year 1 · Foundations",
-        y1n: "6 modules",
-        y1aria: "Year 1 · Foundations",
-        y2: "Year 2 · Systems and disease",
-        y2n: "8 modules",
-        y2aria: "Year 2 · Systems and disease",
-        y3: "Year 3 · Clinical integration",
-        y3n: "8 modules",
-        y3aria: "Year 3 · Clinical integration",
-      },
       note: {
-        text: "You can buy individual modules or a full year. Each module includes videos, podcasts, exercises and a downloadable summary.",
+        text: "You can buy individual modules or bundles. Each module includes videos, podcasts, exercises and a downloadable summary.",
         cta: "See pricing plans →",
       },
-      listAria: "Subject list by year",
+      listAria: "Subject list",
     },
     packagesPage: {
       hero: {
@@ -171,6 +162,48 @@ const SITE_LOCALES = {
         text: "22 health-science subjects — 12 live apps today, 10 coming soon. Buy only what you need.",
       },
       sectionAria: "Health science disciplines",
+    },
+    accountPage: {
+      back: "← Medical Science site",
+      eyebrow: "Studio9 account",
+      title: "My account",
+      leadHtml:
+        "Sign in <strong>once</strong> here with a magic link. Then open your packages without asking for email again — saves the daily email quota.",
+      signInTitle: "Sign in",
+      emailLabel: "Email",
+      emailPlaceholder: "the email used at checkout",
+      sendLink: "Send access link (first time only)",
+      signInNote: "You only need this once per browser. Then use the Open buttons below.",
+      sessionLabel: "Session:",
+      signOut: "Sign out",
+      signedInSubtitle:
+        "Account active in this browser. Use Open to enter your packages without a new email.",
+      signedOutSubtitle:
+        "First time? Send a magic link. After that, always return to this page.",
+      myPackages: "My packages",
+      packagesIntro: "Click Open — enter the package without a new magic link.",
+      emptyTitle: "You don't have any modules on this account yet.",
+      emptyText: "After purchase, access will appear here automatically.",
+      emptyCta: "See plans and buy",
+      footnoteHtml:
+        'Want more modules? <a href="../packages/">See all disciplines</a> · <a href="../precos/">Buy</a>',
+      open: "Open",
+      opening: "Opening…",
+      soon: "Coming soon",
+      free: "free",
+      active: "active",
+      confirmEmail: "Confirm the email used to request the link",
+      catalogError: "Catalog unavailable.",
+      firebaseError: "Account unavailable — Firebase not configured on this deploy.",
+      sendingLink: "Sending link…",
+      linkSent: "Link sent to {email}. Open the email in this browser.",
+      quotaError:
+        "Daily email quota exceeded. Try tomorrow or use an active session.",
+      signInFirst: "Sign in first.",
+      openError: "Could not open the package.",
+      sendError: "Could not send the link.",
+      genericError: "Something went wrong.",
+      startError: "Could not start.",
     },
     precos: {
       hero: {
@@ -225,7 +258,7 @@ const SITE_LOCALES = {
         q2: "Are the teachers real?",
         a2: "Yes. Cristina Alberto, university professor with 30 years of experience, and Alexandra Sousa, business consultant with 20 years of experience, shape the academic vision of the course.",
         q3: "Does this replace university?",
-        a3: "No. It is a complement to help you study in a lighter and more efficient way. The topics follow the common curriculum from Year 1 to Year 3 of health sciences.",
+        a3: "No. It is a complement to help you study in a lighter and more efficient way. The topics follow the common health-sciences curriculum.",
       },
     },
     pkg: {
@@ -237,7 +270,7 @@ const SITE_LOCALES = {
       "medical-biology": {
         title: "Medical Biology",
         description:
-          "Cell biology, tissues, metabolism and the foundations you need before clinical years.",
+          "Cell biology, tissues, metabolism and the core foundations for health-sciences study.",
       },
       genetics: {
         title: "Genetics",

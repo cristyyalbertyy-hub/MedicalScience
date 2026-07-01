@@ -28,7 +28,7 @@ const READY_PACKAGES = [
     number: "02",
     title: "Medical Biology",
     description:
-      "Cell biology, tissues, metabolism and the foundations you need before clinical years.",
+      "Cell biology, tissues, metabolism and the core foundations for health-sciences study.",
     url: "https://biology-genetics.vercel.app/",
     status: "live",
   },

@@ -4,6 +4,12 @@
   padding: 2rem 1.25rem 3rem;
 }
 
+.acesso-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
 .acesso-back {
   color: var(--primary);
   font-weight: 600;

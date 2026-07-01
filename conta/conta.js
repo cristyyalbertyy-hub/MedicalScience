@@ -42,15 +42,49 @@ let db = null;
 let packageMeta = {};
 /** @type {Set<string>} */
 let activePackageIds = new Set();
+/** @type {Awaited<ReturnType<typeof loadCatalog>> | null} */
+let catalogData = null;
+/** @type {{ key?: string, raw?: string, vars?: Record<string, string>, type?: string } | null} */
+let lastStatus = null;
+
+function t(key, vars = {}) {
+  const lang = window.SiteI18n?.getSiteLang?.() ?? "en";
+  let text = window.SiteI18n?.siteT(lang, key) ?? key;
+  for (const [name, value] of Object.entries(vars)) {
+    text = text.replace(`{${name}}`, value);
+  }
+  return text;
+}
 
 function configured() {
   return Boolean(cfg.apiKey && cfg.authDomain && cfg.projectId && cfg.appId);
 }
 
 function setStatus(message, type = "") {
+  lastStatus = message ? { raw: message, type } : null;
   authStatus.hidden = !message;
   authStatus.textContent = message;
   authStatus.className = `acesso-status${type ? ` is-${type}` : ""}`;
+}
+
+function setStatusKey(key, vars = {}, type = "") {
+  lastStatus = { key, vars, type };
+  authStatus.hidden = false;
+  authStatus.textContent = t(key, vars);
+  authStatus.className = `acesso-status${type ? ` is-${type}` : ""}`;
+}
+
+function refreshAuthSubtitle(signedIn) {
+  authSubtitle.textContent = signedIn
+    ? t("accountPage.signedInSubtitle")
+    : t("accountPage.signedOutSubtitle");
+}
+
+function refreshStatusMessage() {
+  if (!lastStatus) return;
+  authStatus.textContent = lastStatus.raw
+    ? lastStatus.raw
+    : t(lastStatus.key ?? "", lastStatus.vars ?? {});
 }
 
 function continueUrl() {
@@ -71,7 +105,7 @@ async function completeEmailLinkSignIn() {
   if (!auth || !isSignInWithEmailLink(auth, window.location.href)) return;
   let email = window.localStorage.getItem(EMAIL_KEY);
   if (!email) {
-    email = window.prompt("Confirme o email usado para pedir o link");
+    email = window.prompt(t("accountPage.confirmEmail"));
   }
   if (!email) return;
   await signInWithEmailLink(auth, email, window.location.href);
@@ -81,7 +115,7 @@ async function completeEmailLinkSignIn() {
 
 async function loadCatalog() {
   const res = await fetch("/packages/catalog.json");
-  if (!res.ok) throw new Error("Catálogo indisponível.");
+  if (!res.ok) throw new Error(t("accountPage.catalogError"));
   return res.json();
 }
 
@@ -128,7 +162,8 @@ function renderPackages(catalog) {
 
     const info = document.createElement("div");
     info.className = "acesso-package__meta";
-    info.innerHTML = `<strong>${meta.title}</strong><small>${id}${meta.free ? " · grátis" : ""} · activo</small>`;
+    const freeLabel = meta.free ? ` · ${t("accountPage.free")}` : "";
+    info.innerHTML = `<strong>${meta.title}</strong><small>${id}${freeLabel} · ${t("accountPage.active")}</small>`;
 
     const actions = document.createElement("div");
     actions.className = "acesso-package__actions";
@@ -137,11 +172,11 @@ function renderPackages(catalog) {
       const openBtn = document.createElement("button");
       openBtn.type = "button";
       openBtn.className = "btn btn-primary";
-      openBtn.textContent = "Abrir";
+      openBtn.textContent = t("accountPage.open");
       openBtn.addEventListener("click", () => void openPackage(meta.url, openBtn));
       actions.appendChild(openBtn);
     } else {
-      actions.innerHTML = `<span class="acesso-muted">Em breve</span>`;
+      actions.innerHTML = `<span class="acesso-muted">${t("accountPage.soon")}</span>`;
     }
 
     li.append(info, actions);
@@ -151,12 +186,12 @@ function renderPackages(catalog) {
 
 async function openPackage(appUrl, button) {
   if (!auth?.currentUser) {
-    setStatus("Inicie sessão primeiro.", "error");
+    setStatusKey("accountPage.signInFirst", {}, "error");
     return;
   }
 
   button.disabled = true;
-  button.textContent = "A abrir…";
+  button.textContent = t("accountPage.opening");
   try {
     const idToken = await auth.currentUser.getIdToken();
     const res = await fetch("/api/create-custom-token", {
@@ -165,15 +200,19 @@ async function openPackage(appUrl, button) {
       body: JSON.stringify({ id_token: idToken }),
     });
     const data = await res.json();
-    if (!res.ok) throw new Error(data.error || "Não foi possível abrir o pacote.");
+    if (!res.ok) throw new Error(data.error || t("accountPage.openError"));
 
     const target = new URL(appUrl, window.location.origin);
     target.searchParams.set("studio9_handoff", data.custom_token);
     window.location.href = target.toString();
   } catch (err) {
-    setStatus(err instanceof Error ? err.message : "Erro ao abrir.", "error");
+    const message =
+      err instanceof Error && err.message !== t("accountPage.openError")
+        ? err.message
+        : t("accountPage.openError");
+    setStatus(message, "error");
     button.disabled = false;
-    button.textContent = "Abrir";
+    button.textContent = t("accountPage.open");
   }
 }
 
@@ -181,8 +220,7 @@ async function showSignedIn(user, catalog) {
   signinForm.hidden = true;
   signedInPanel.hidden = false;
   signedInEmail.textContent = user.email ?? user.uid;
-  authSubtitle.textContent =
-    "Conta activa neste browser. Use «Abrir» para entrar nos pacotes sem novo email.";
+  refreshAuthSubtitle(true);
   await loadEntitlements(user.uid);
   renderPackages(catalog);
   packagesPanel.hidden = false;
@@ -193,8 +231,7 @@ function showSignedOut() {
   signinForm.hidden = false;
   signedInPanel.hidden = true;
   packagesPanel.hidden = true;
-  authSubtitle.textContent =
-    "Primeira vez? Envie um magic link. Depois disso, volte sempre a esta página.";
+  refreshAuthSubtitle(false);
 }
 
 signinForm?.addEventListener("submit", async (event) => {
@@ -202,23 +239,20 @@ signinForm?.addEventListener("submit", async (event) => {
   if (!auth) return;
   const form = event.currentTarget;
   const email = form.email.value.trim();
-  setStatus("A enviar link…", "");
+  setStatusKey("accountPage.sendingLink");
   try {
     await sendSignInLinkToEmail(auth, email, {
       url: continueUrl(),
       handleCodeInApp: true,
     });
     window.localStorage.setItem(EMAIL_KEY, email);
-    setStatus(`Link enviado para ${email}. Abra o email neste browser.`, "ok");
+    setStatusKey("accountPage.linkSent", { email }, "ok");
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Erro ao enviar.";
+    const message = err instanceof Error ? err.message : t("accountPage.sendError");
     if (message.includes("auth/quota-exceeded")) {
-      setStatus(
-        "Quota diária de emails esgotada. Tente amanhã ou use a sessão já activa.",
-        "error",
-      );
+      setStatusKey("accountPage.quotaError", {}, "error");
     } else {
-      setStatus(message, "error");
+      setStatus(message.includes("accountPage.") ? t(message) : message, "error");
     }
   }
 });
@@ -228,11 +262,22 @@ document.getElementById("signout-btn")?.addEventListener("click", () => {
   void signOut(auth);
 });
 
+function initLanguage() {
+  if (!window.SiteI18n) return;
+  SiteI18n.initSiteLanguage();
+  document.addEventListener("site:langchange", () => {
+    refreshAuthSubtitle(Boolean(auth?.currentUser));
+    refreshStatusMessage();
+    if (catalogData && auth?.currentUser) renderPackages(catalogData);
+  });
+}
+
 async function bootstrap() {
+  initLanguage();
   authPanel.hidden = false;
 
   if (!configured()) {
-    setStatus("Conta indisponível — Firebase não configurado neste deploy.", "error");
+    setStatusKey("accountPage.firebaseError", {}, "error");
     return;
   }
 
@@ -241,15 +286,15 @@ async function bootstrap() {
   db = getFirestore(app);
   await setPersistence(auth, browserLocalPersistence);
 
-  const catalog = await loadCatalog();
-  packageMeta = catalog.packageMeta ?? {};
+  catalogData = await loadCatalog();
+  packageMeta = catalogData.packageMeta ?? {};
 
   await completeEmailLinkSignIn().catch(() => undefined);
   cleanEmailLinkFromUrl();
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      void showSignedIn(user, catalog);
+      void showSignedIn(user, catalogData);
     } else {
       showSignedOut();
     }
@@ -257,5 +302,6 @@ async function bootstrap() {
 }
 
 bootstrap().catch((err) => {
-  setStatus(err instanceof Error ? err.message : "Erro ao iniciar.", "error");
+  const message = err instanceof Error ? err.message : t("accountPage.startError");
+  setStatus(message, "error");
 });
