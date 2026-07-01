@@ -26,16 +26,15 @@ SITE_LOCALES.pt = {
     skip: "Saltar para o conteúdo",
     menu: "Menu",
     home: "Início",
-    curriculo: "Programa",
-    packages: "Pacotes",
+    packages: "Disciplinas",
     precos: "Como funciona + Preços",
+    account: "A minha conta",
     progress: "O meu progresso",
     aria: "Navegação principal",
   },
   footer: {
     brand: "Studio9 + Medical Science",
-    curriculo: "Programa",
-    packages: "Pacotes",
+    packages: "Disciplinas",
     howItWorks: "Como funciona",
     pricing: "Preços",
     faq: "FAQ",
@@ -65,7 +64,7 @@ SITE_LOCALES.pt = {
       eyebrow: "Curso online · 22 módulos · App Studio9",
       title: "Medical Science. Do Ano 1 ao Ano 3 — onde e quando quiseres.",
       lead: "Estuda anatomia, fisiologia, genética e muito mais. Em vídeos curtos, podcasts para o autocarro e exercícios interativos. Tudo dentro da app Studio9.",
-      ctaCurriculum: "Ver o programa completo",
+      ctaDisciplines: "Ver todas as disciplinas",
       ctaHow: "Ver como funciona",
       mediaAria: "Pré-visualização da app",
     },
@@ -83,28 +82,20 @@ SITE_LOCALES.pt = {
         "Trabalhas ou tens horários complicados? Estuda no autocarro, na pausa do almoço ou antes de dormir. Sem culpa, sem stress.",
     },
     preview: {
-      eyebrow: "Estrutura do programa",
-      title: "O programa — três anos, módulo a módulo.",
+      eyebrow: "Todas as disciplinas",
+      title: "22 disciplinas — escolhe as que precisas.",
       intro:
-        "22 módulos ao longo de 3 anos. Cada um inclui 40–60 horas de estudo — vídeos, podcasts, infográficos e questionários. Vê a lista completa disciplina a disciplina.",
-      y1Label: "Ano 1 · Fundamentos",
-      y1Count: "6 módulos",
-      y1Text:
-        "Biologia, química, anatomia, histologia e as bases centrais das ciências da saúde.",
-      y2Label: "Ano 2 · Sistemas e doença",
-      y2Count: "8 módulos",
-      y2Text:
-        "Fisiologia, imunologia, microbiologia, farmacologia e sistemas do corpo em detalhe.",
-      y3Label: "Ano 3 · Integração clínica",
-      y3Count: "8 módulos",
-      y3Text:
-        "Patologia, medicina clínica, ética, prática baseada em evidência e casos integrados.",
-      cta: "Ver programa completo →",
+        "Doze apps Studio9 já estão disponíveis. Dez disciplinas chegam em breve. Cada módulo inclui 40–60 horas de estudo — vídeos, podcasts, infográficos e questionários.",
+      liveCount: "12 apps disponíveis",
+      soonCount: "10 a caminho",
+      hours: "40–60 horas por módulo",
+      cta: "Ver todas as disciplinas →",
     },
     packages: {
-      eyebrow: "Já disponíveis",
-      title: "Pacotes prontos a usar.",
-      intro: 'Doze pacotes Studio9 — as doze apps já estão disponíveis. <a href="packages/">Ver todos os pacotes →</a>',
+      eyebrow: "Catálogo interactivo",
+      title: "Todas as disciplinas.",
+      intro:
+        'Doze apps já estão online — o resto está a caminho. <a href="packages/">Ver a lista completa →</a>',
     },
     progress: {
       aria: "Progresso do estudante",
@@ -168,11 +159,11 @@ SITE_LOCALES.pt = {
   },
   packagesPage: {
     hero: {
-      eyebrow: "Interativo · pronto a usar",
-      title: "Pacotes prontos a usar.",
-      text: "Doze pacotes — as doze apps já estão disponíveis.",
+      eyebrow: "Interactivo · catálogo",
+      title: "Todas as disciplinas.",
+      text: "22 disciplinas de ciências da saúde — 12 apps disponíveis hoje, 10 em breve. Compra só o que precisas.",
     },
-    sectionAria: "Pacotes de aprendizagem prontos a usar",
+    sectionAria: "Disciplinas de ciências da saúde",
   },
   precos: {
     hero: {
@@ -182,7 +173,7 @@ SITE_LOCALES.pt = {
     },
     steps: {
       s1Title: "Escolhe os teus módulos",
-      s1Text: "Compra um módulo, um ano completo ou os três anos.",
+      s1Text: "Compra um módulo, um pack de quatro ou mais.",
       s2Title: "Acede na app Studio9",
       s2Text:
         "Após a compra recebes um magic link por email — sem palavra-passe. Entra no telemóvel ou no computador; o acesso mantém-se activo durante 1 ano.",
@@ -208,11 +199,11 @@ SITE_LOCALES.pt = {
       p2l2: "Acesso imediato (1 ano)",
       p2l3: "Poupa 25% face à compra individual",
       p2cta: "Montar o teu pack →",
-      p3Label: "Ano completo",
+      p3Label: "Pack completo",
       p3l1: "12 módulos",
       p3l2: "Acesso imediato (1 ano)",
       p3l3: "Poupa 40% face à compra individual",
-      p3cta: "Ver os anos →",
+      p3cta: "Ver todas as disciplinas →",
       p4Label: "Curso completo",
       p4l1: "22 módulos",
       p4l2: "Acesso vitalício (enquanto a app existir)",

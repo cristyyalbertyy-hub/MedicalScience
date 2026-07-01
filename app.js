@@ -124,17 +124,103 @@ const READY_PACKAGES = [
   },
 ];
 
+const SOON_PACKAGES = [
+  {
+    id: "human-anatomy-2",
+    number: "13",
+    title: "Human Anatomy II",
+    description:
+      "Cardiovascular, respiratory, digestive, urinary and reproductive systems in depth.",
+    status: "soon",
+  },
+  {
+    id: "physiology-2",
+    number: "14",
+    title: "Physiology II",
+    description:
+      "Renal, digestive, endocrine and reproductive physiology for clinical reasoning.",
+    status: "soon",
+  },
+  {
+    id: "immunology",
+    number: "15",
+    title: "Immunology",
+    description:
+      "Adaptive immunity, vaccines, hypersensitivity, autoimmunity and clinical immunology.",
+    status: "soon",
+  },
+  {
+    id: "microbiology",
+    number: "16",
+    title: "Microbiology",
+    description:
+      "Bacteria, viruses, fungi and parasites — pathogenesis, diagnosis and treatment basics.",
+    status: "soon",
+  },
+  {
+    id: "pharmacology-1",
+    number: "17",
+    title: "Pharmacology I",
+    description:
+      "Pharmacokinetics, pharmacodynamics, and core drug classes for the nervous and cardiovascular systems.",
+    status: "soon",
+  },
+  {
+    id: "epidemiology",
+    number: "18",
+    title: "Epidemiology",
+    description:
+      "Frequency measures, study designs, screening and population health reasoning.",
+    status: "soon",
+  },
+  {
+    id: "economics-health-policy",
+    number: "19",
+    title: "Economics and Health Policy",
+    description:
+      "Health systems, funding models, and the social and political context of medicine.",
+    status: "soon",
+  },
+  {
+    id: "systemic-pathology",
+    number: "20",
+    title: "Systemic Pathology",
+    description:
+      "Organ-system pathology spanning heart, lung, kidney, liver and related clinical patterns.",
+    status: "soon",
+  },
+  {
+    id: "clinical-medicine-1",
+    number: "21",
+    title: "Clinical Medicine I",
+    description:
+      "Basic semiology, common symptoms and introductory clinical reasoning.",
+    status: "soon",
+  },
+  {
+    id: "clinical-medicine-2",
+    number: "22",
+    title: "Clinical Medicine II",
+    description:
+      "Common conditions such as hypertension, diabetes, asthma and major infections.",
+    status: "soon",
+  },
+];
+
+const ALL_PACKAGES = [...READY_PACKAGES, ...SOON_PACKAGES];
+
 function escapeHtml(value) {
   const node = document.createElement("div");
   node.textContent = value;
   return node.innerHTML;
 }
 
-function packageText(key) {
+function packageText(key, fallback = "") {
   if (window.SiteI18n) {
-    return SiteI18n.siteT(SiteI18n.getSiteLang(), key);
+    const value = SiteI18n.siteT(SiteI18n.getSiteLang(), key);
+    if (value !== key) return value;
   }
-  return key;
+  return fallback || key;
 }
 
 function renderPackageCard(pkg, { compact = false } = {}) {
@@ -143,8 +229,8 @@ function renderPackageCard(pkg, { compact = false } = {}) {
   const statusLabel = isLive
     ? packageText("packagesUi.live")
     : packageText("packagesUi.comingSoon");
-  const title = packageText(`pkg.${pkg.id}.title`);
-  const description = packageText(`pkg.${pkg.id}.description`);
+  const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
+  const description = packageText(`pkg.${pkg.id}.description`, pkg.description);
   const action = isLive
     ? `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`
     : `<span class="package-soon">${escapeHtml(packageText("packagesUi.launchingSoon"))}</span>`;
@@ -164,7 +250,7 @@ function renderPackageCard(pkg, { compact = false } = {}) {
 function renderPackages(root) {
   if (!root) return;
   const compact = root.dataset.packagesCompact === "true";
-  root.innerHTML = READY_PACKAGES.map((pkg) => renderPackageCard(pkg, { compact })).join("");
+  root.innerHTML = ALL_PACKAGES.map((pkg) => renderPackageCard(pkg, { compact })).join("");
 }
 
 function initStudentProgressLinks() {

@@ -28,6 +28,9 @@ const signedInEmail = document.getElementById("signed-in-email");
 const authStatus = document.getElementById("auth-status");
 const authSubtitle = document.getElementById("auth-subtitle");
 const packagesList = document.getElementById("packages-list");
+const packagesIntro = document.getElementById("packages-intro");
+const packagesEmpty = document.getElementById("packages-empty");
+const packagesFootnote = document.getElementById("packages-footnote");
 
 /** @type {import('firebase/app').FirebaseApp | null} */
 let app = null;
@@ -100,39 +103,45 @@ async function loadEntitlements(userId) {
 
 function renderPackages(catalog) {
   packagesList.replaceChildren();
-  const ids = [
+  const ownedIds = [
     ...catalog.paidPackageIds,
     ...catalog.freePackageIds.filter((id) => !catalog.paidPackageIds.includes(id)),
-  ];
+  ].filter((id) => activePackageIds.has(id));
 
-  for (const id of ids) {
+  if (!ownedIds.length) {
+    packagesList.hidden = true;
+    packagesIntro.hidden = true;
+    packagesEmpty.hidden = false;
+    packagesFootnote.hidden = true;
+    return;
+  }
+
+  packagesList.hidden = false;
+  packagesIntro.hidden = false;
+  packagesEmpty.hidden = true;
+  packagesFootnote.hidden = false;
+
+  for (const id of ownedIds) {
     const meta = packageMeta[id] ?? { title: id };
-    const active = activePackageIds.has(id);
     const li = document.createElement("li");
-    li.className = `acesso-package${active ? " is-active" : ""}${meta.free ? " is-free" : ""}`;
+    li.className = `acesso-package is-active${meta.free ? " is-free" : ""}`;
 
     const info = document.createElement("div");
     info.className = "acesso-package__meta";
-    info.innerHTML = `<strong>${meta.title}</strong><small>${id}${meta.free ? " · grátis" : ""}${active ? " · activo" : ""}</small>`;
+    info.innerHTML = `<strong>${meta.title}</strong><small>${id}${meta.free ? " · grátis" : ""} · activo</small>`;
 
     const actions = document.createElement("div");
     actions.className = "acesso-package__actions";
 
-    if (meta.url && (active || meta.free)) {
+    if (meta.url) {
       const openBtn = document.createElement("button");
       openBtn.type = "button";
       openBtn.className = "btn btn-primary";
       openBtn.textContent = "Abrir";
       openBtn.addEventListener("click", () => void openPackage(meta.url, openBtn));
       actions.appendChild(openBtn);
-    } else if (!meta.url) {
-      actions.innerHTML = `<span class="acesso-muted">Em breve</span>`;
     } else {
-      const buy = document.createElement("a");
-      buy.className = "btn btn-secondary";
-      buy.href = "../precos/";
-      buy.textContent = "Comprar";
-      actions.appendChild(buy);
+      actions.innerHTML = `<span class="acesso-muted">Em breve</span>`;
     }
 
     li.append(info, actions);

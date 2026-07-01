@@ -54,10 +54,15 @@
 
       <section id="packages-panel" class="acesso-card" hidden>
         <h2>Os meus pacotes</h2>
-        <p class="acesso-muted">Clique em Abrir — entra no pacote sem novo magic link.</p>
+        <p id="packages-intro" class="acesso-muted">Clique em Abrir — entra no pacote sem novo magic link.</p>
         <ul id="packages-list" class="acesso-packages"></ul>
-        <p class="acesso-note">
-          Sem acesso? <a href="../precos/">Ver planos</a> ou peça ao admin para activar o email.
+        <div id="packages-empty" class="acesso-empty" hidden>
+          <p>Ainda não tens módulos disponíveis nesta conta.</p>
+          <p class="acesso-muted">Depois da compra, o acesso aparece aqui automaticamente.</p>
+          <a class="btn btn-primary" href="../precos/">Ver planos e comprar</a>
+        </div>
+        <p id="packages-footnote" class="acesso-note">
+          Queres mais módulos? <a href="../packages/">Ver todas as disciplinas</a> · <a href="../precos/">Comprar</a>
         </p>
       </section>
     </main>
