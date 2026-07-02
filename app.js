@@ -439,10 +439,17 @@ function pricingLocale() {
 function formatPlanAmount(amount, currency) {
   const hasFraction = Math.abs(amount % 1) > 0.001;
   const digits = hasFraction ? 2 : 0;
-  const locale = currency === "usd" ? "en-US" : pricingLocale();
+  if (currency === "usd") {
+    const value = new Intl.NumberFormat("en-US", {
+      minimumFractionDigits: digits,
+      maximumFractionDigits: 2,
+    }).format(amount);
+    return `$${value}`;
+  }
+  const locale = pricingLocale();
   return new Intl.NumberFormat(locale, {
     style: "currency",
-    currency: currency === "usd" ? "USD" : "EUR",
+    currency: "EUR",
     currencyDisplay: "narrowSymbol",
     minimumFractionDigits: digits,
     maximumFractionDigits: 2,

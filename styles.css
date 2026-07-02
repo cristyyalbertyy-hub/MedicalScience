@@ -570,6 +570,9 @@ p {
 
 .final-cta h2 {
   margin-bottom: 0.45rem;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .final-cta p {
@@ -1149,9 +1152,10 @@ p {
 
 .tier-card-price {
   margin: 0 0 1rem;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: clamp(1.85rem, 4vw, 2.35rem);
-  font-weight: 700;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
   line-height: 1.1;
 }
 
@@ -1229,6 +1233,11 @@ p {
   border-radius: 999px;
   font-weight: 900;
   line-height: 1;
+}
+
+.package-tier-amount {
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-variant-numeric: tabular-nums;
 }
 
 .package-tier-letter {
