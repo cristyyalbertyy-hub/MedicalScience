@@ -66,15 +66,30 @@
 
         <div class="hero-media" data-i18n-attr="aria-label" data-i18n="home.hero.mediaAria">
           <figure class="screenshot-slot screenshot-slot--hero">
-            <img
-              src="public/bus.png"
-              alt="Student listening to a medical science podcast on the bus"
-              width="2106"
-              height="1528"
-              draggable="false"
-              data-i18n-attr="alt"
-              data-i18n="screenshots.hero.alt"
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="public/bus-640.avif 640w, public/bus-960.avif 960w, public/bus-1280.avif 1280w"
+                sizes="(min-width: 760px) 480px, 92vw"
+              />
+              <source
+                type="image/webp"
+                srcset="public/bus-640.webp 640w, public/bus-960.webp 960w, public/bus-1280.webp 1280w"
+                sizes="(min-width: 760px) 480px, 92vw"
+              />
+              <img
+                src="public/bus-1280.webp"
+                srcset="public/bus-640.webp 640w, public/bus-960.webp 960w, public/bus-1280.webp 1280w"
+                sizes="(min-width: 760px) 480px, 92vw"
+                alt="Student listening to a medical science podcast on the bus"
+                width="1280"
+                height="929"
+                fetchpriority="high"
+                draggable="false"
+                data-i18n-attr="alt"
+                data-i18n="screenshots.hero.alt"
+              />
+            </picture>
           </figure>
         </div>
       </section>
@@ -253,48 +268,92 @@
         <div class="feature-grid four illustrated">
           <article class="feature-card">
             <figure class="screenshot-slot screenshot-slot--study">
-              <img
-                src="public/video.png"
-                alt="Mobile app with a 5–10 minute video lesson"
-                width="2752"
-                height="1566"
-                loading="lazy"
-                draggable="false"
-                data-i18n-attr="alt"
-                data-i18n="screenshots.videos.alt"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="public/video-640.avif 640w, public/video-960.avif 960w, public/video-1280.avif 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="public/video-640.webp 640w, public/video-960.webp 960w, public/video-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <img
+                  src="public/video-1280.webp"
+                  srcset="public/video-640.webp 640w, public/video-960.webp 960w, public/video-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                  alt="Mobile app with a 5–10 minute video lesson"
+                  width="1280"
+                  height="728"
+                  loading="lazy"
+                  draggable="false"
+                  data-i18n-attr="alt"
+                  data-i18n="screenshots.videos.alt"
+                />
+              </picture>
             </figure>
             <h3 data-i18n="home.study.c1Title">5-10 min videos</h3>
             <p data-i18n="home.study.c1Text">One topic at a time. No waffle. Turn on captions and study in silence.</p>
           </article>
           <article class="feature-card">
             <figure class="screenshot-slot screenshot-slot--study">
-              <img
-                src="public/podcast.png"
-                alt="Student listening to a medical science podcast on the go"
-                width="1921"
-                height="1832"
-                loading="lazy"
-                draggable="false"
-                data-i18n-attr="alt"
-                data-i18n="screenshots.podcasts.alt"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="public/podcast-640.avif 640w, public/podcast-960.avif 960w, public/podcast-1280.avif 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="public/podcast-640.webp 640w, public/podcast-960.webp 960w, public/podcast-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <img
+                  class="study-img study-img--podcast"
+                  src="public/podcast-1280.webp"
+                  srcset="public/podcast-640.webp 640w, public/podcast-960.webp 960w, public/podcast-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                  alt="Student listening to a medical science podcast on the go"
+                  width="1280"
+                  height="1221"
+                  loading="lazy"
+                  draggable="false"
+                  data-i18n-attr="alt"
+                  data-i18n="screenshots.podcasts.alt"
+                />
+              </picture>
             </figure>
             <h3 data-i18n="home.study.c2Title">Podcasts to listen to</h3>
             <p data-i18n="home.study.c2Text">Learn the material while you are on the bus, walking to class or tidying your room.</p>
           </article>
           <article class="feature-card">
             <figure class="screenshot-slot screenshot-slot--study">
-              <img
-                src="public/infographic.png"
-                alt="Tablet on a desk showing a human anatomy infographic summary"
-                width="1536"
-                height="2161"
-                loading="lazy"
-                draggable="false"
-                data-i18n-attr="alt"
-                data-i18n="screenshots.infographics.alt"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="public/infographic-640.avif 640w, public/infographic-960.avif 960w, public/infographic-1280.avif 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="public/infographic-640.webp 640w, public/infographic-960.webp 960w, public/infographic-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <img
+                  class="study-img study-img--infographic"
+                  src="public/infographic-1280.webp"
+                  srcset="public/infographic-640.webp 640w, public/infographic-960.webp 960w, public/infographic-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                  alt="Tablet on a desk showing a human anatomy infographic summary"
+                  width="1280"
+                  height="1801"
+                  loading="lazy"
+                  draggable="false"
+                  data-i18n-attr="alt"
+                  data-i18n="screenshots.infographics.alt"
+                />
+              </picture>
             </figure>
             <h3 data-i18n="home.study.c3Title">Infographics at a glance</h3>
             <p data-i18n="home.study.c3Text">
@@ -303,16 +362,30 @@
           </article>
           <article class="feature-card">
             <figure class="screenshot-slot screenshot-slot--study">
-              <img
-                src="public/questions.png"
-                alt="Interactive quiz with open questions and instant checking in the app"
-                width="2816"
-                height="1536"
-                loading="lazy"
-                draggable="false"
-                data-i18n-attr="alt"
-                data-i18n="screenshots.quiz.alt"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="public/questions-640.avif 640w, public/questions-960.avif 960w, public/questions-1280.avif 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <source
+                  type="image/webp"
+                  srcset="public/questions-640.webp 640w, public/questions-960.webp 960w, public/questions-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                />
+                <img
+                  src="public/questions-1280.webp"
+                  srcset="public/questions-640.webp 640w, public/questions-960.webp 960w, public/questions-1280.webp 1280w"
+                  sizes="(min-width: 760px) 520px, 92vw"
+                  alt="Interactive quiz with open questions and instant checking in the app"
+                  width="1280"
+                  height="698"
+                  loading="lazy"
+                  draggable="false"
+                  data-i18n-attr="alt"
+                  data-i18n="screenshots.quiz.alt"
+                />
+              </picture>
             </figure>
             <h3 data-i18n="home.study.c4Title">Quizzes and questionnaires</h3>
             <p data-i18n="home.study.c4Text">

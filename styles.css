@@ -274,10 +274,14 @@ p {
   height: 3.25rem;
 }
 
-.screenshot-slot img {
+.screenshot-slot img,
+.screenshot-slot picture {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.screenshot-slot img {
   pointer-events: none;
   -webkit-user-drag: none;
   user-select: none;
@@ -305,17 +309,21 @@ p {
   aspect-ratio: 16 / 9;
 }
 
-.study-section .screenshot-slot--study img {
+.study-section .screenshot-slot--study img,
+.study-section .screenshot-slot--study picture {
   width: 100%;
   height: 100%;
+}
+
+.study-section .screenshot-slot--study img {
   object-fit: cover;
 }
 
-.study-section .screenshot-slot--study img[src*="podcast"] {
+.study-section .study-img--podcast {
   object-position: center 42%;
 }
 
-.study-section .screenshot-slot--study img[src*="infographic"] {
+.study-section .study-img--infographic {
   object-position: center center;
 }
 
