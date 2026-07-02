@@ -136,6 +136,20 @@ SITE_LOCALES.fr = {
       title: "Forfaits prêts à l'emploi.",
       intro: 'Douze forfaits Studio9 — les douze apps sont déjà en ligne. <a href="packages/">Voir tous les forfaits →</a>',
     },
+    testimonials: {
+      aria: "Témoignages",
+      eyebrow: "Voix réelles",
+      title: "Ce que disent étudiants et familles.",
+      t1Quote:
+        "Les forfaits sont fantastiques pour une première approche de la matière — on apprend avec confiance et sans stress. En cours, les étudiants peuvent en profiter à presque 100 %, parce que ce n'est plus une matière nouvelle.",
+      t1Name: "Cristina Alberto",
+      t1Role: "Professeure d'université · Studio9",
+      pendingQuote: "Témoignage bientôt disponible.",
+      t2Name: "Parent d'étudiant",
+      t2Role: "Famille · bientôt",
+      t3Name: "Étudiant",
+      t3Role: "Pré-universitaire · bientôt",
+    },
     progress: {
       aria: "Progression de l'étudiant",
       eyebrow: "Déjà inscrit ?",

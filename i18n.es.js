@@ -136,6 +136,20 @@ SITE_LOCALES.es = {
       title: "Paquetes listos para usar.",
       intro: 'Doce paquetes Studio9 — las doce apps ya están disponibles. <a href="packages/">Ver todos los paquetes →</a>',
     },
+    testimonials: {
+      aria: "Testimonios",
+      eyebrow: "Voces reales",
+      title: "Lo que dicen estudiantes y familias.",
+      t1Quote:
+        "Los paquetes son fantásticos para un primer acercamiento a la materia — se aprende con confianza y sin estrés. Cuando llegan a clase, pueden aprovechar casi al 100%, porque ya no es material nuevo.",
+      t1Name: "Cristina Alberto",
+      t1Role: "Profesora universitaria · Studio9",
+      pendingQuote: "Testimonio próximamente.",
+      t2Name: "Madre de estudiante",
+      t2Role: "Familia · próximamente",
+      t3Name: "Estudiante",
+      t3Role: "Preuniversitario · próximamente",
+    },
     progress: {
       aria: "Progreso del estudiante",
       eyebrow: "¿Ya estás matriculado?",

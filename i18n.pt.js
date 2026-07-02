@@ -135,6 +135,20 @@ SITE_LOCALES.pt = {
       intro:
         'Doze apps já estão online — o resto está a caminho. <a href="packages/">Ver a lista completa →</a>',
     },
+    testimonials: {
+      aria: "Testemunhos",
+      eyebrow: "Vozes reais",
+      title: "O que dizem estudantes e famílias.",
+      t1Quote:
+        "Os pacotes são fantásticos para uma primeira abordagem da matéria — para aprender com confiança e sem stress. Quando chegam às aulas, conseguem aproveitar quase a 100%, porque já não é matéria nova.",
+      t1Name: "Cristina Alberto",
+      t1Role: "Professora universitária · Studio9",
+      pendingQuote: "Testemunho em breve.",
+      t2Name: "Mãe de estudante",
+      t2Role: "Família · em breve",
+      t3Name: "Estudante",
+      t3Role: "Pré-universitário · em breve",
+    },
     progress: {
       aria: "Progresso do estudante",
       eyebrow: "Já estás inscrito?",
