@@ -317,7 +317,7 @@ SITE_LOCALES.it = {
       s3Text: "Video quando sei concentrato. Podcast in movimento. Esercizi per metterti alla prova.",
       s4Title: "Tieni traccia dei progressi",
       s4Text:
-        'Consulta cosa hai completato e cosa resta, materia per materia. <a class="text-link" data-student-progress target="_blank" rel="noopener noreferrer">Apri dashboard progressi →</a>',
+        "Consulta cosa hai completato e cosa resta, materia per materia.",
     },
     pricing: {
       eyebrow: "Nessuna sorpresa",

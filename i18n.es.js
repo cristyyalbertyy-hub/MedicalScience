@@ -317,7 +317,7 @@ SITE_LOCALES.es = {
       s3Text: "Vídeos cuando estás concentrado. Podcasts cuando te mueves. Ejercicios para autoevaluarte.",
       s4Title: "Sigue tu progreso",
       s4Text:
-        'Consulta lo que has completado y lo que queda, disciplina por disciplina. <a class="text-link" data-student-progress target="_blank" rel="noopener noreferrer">Abrir panel de progreso →</a>',
+        "Consulta lo que has completado y lo que queda, disciplina por disciplina.",
     },
     pricing: {
       eyebrow: "Sin sorpresas",

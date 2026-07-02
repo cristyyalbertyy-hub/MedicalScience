@@ -322,7 +322,7 @@ const SITE_LOCALES = {
         s3Text: "Videos when you are focused. Podcasts when you are moving. Exercises to test yourself.",
         s4Title: "Track your progress",
         s4Text:
-          'See what you have completed and what is left, discipline by discipline. <a class="text-link" data-student-progress target="_blank" rel="noopener noreferrer">Open progress dashboard →</a>',
+          "See what you have completed and what is left, discipline by discipline.",
       },
       pricing: {
         eyebrow: "No surprises",

@@ -318,7 +318,7 @@ SITE_LOCALES.fr = {
       s3Text: "Vidéos quand vous êtes concentré. Podcasts en déplacement. Exercices pour vous tester.",
       s4Title: "Suivez votre progression",
       s4Text:
-        "Consultez ce que vous avez terminé et ce qu'il reste, discipline par discipline. <a class=\"text-link\" data-student-progress target=\"_blank\" rel=\"noopener noreferrer\">Ouvrir le tableau de bord →</a>",
+        "Consultez ce que vous avez terminé et ce qu'il reste, discipline par discipline.",
     },
     pricing: {
       eyebrow: "Sans surprise",
