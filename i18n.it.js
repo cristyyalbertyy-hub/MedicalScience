@@ -94,7 +94,7 @@ SITE_LOCALES.it = {
   screenshots: {
     hero: { alt: "Studente che ascolta un podcast di scienze mediche sull'autobus" },
     videos: { alt: "App mobile con una lezione video di 5–10 minuti" },
-    podcasts: { alt: "Studente che ascolta un podcast di scienze mediche all'aperto nel parco" },
+    podcasts: { alt: "Studente che ascolta un podcast di scienze mediche in movimento" },
     exercises: { alt: "Esercizio interattivo con feedback immediato nell'app" },
     infographics: { alt: "Tablet su una scrivania con infografica di anatomia umana" },
     quiz: { alt: "Questionario interattivo con domande aperte e verifica immediata nell'app" },

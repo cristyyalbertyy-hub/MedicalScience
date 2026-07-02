@@ -92,7 +92,7 @@ SITE_LOCALES.pt = {
   screenshots: {
     hero: { alt: "Estudante a ouvir um podcast de ciências médicas no autocarro" },
     videos: { alt: "App móvel com uma lição em vídeo de 5–10 minutos" },
-    podcasts: { alt: "Estudante a ouvir um podcast de ciências médicas ao ar livre no parque" },
+    podcasts: { alt: "Estudante a ouvir um podcast de ciências médicas em movimento" },
     exercises: { alt: "Exercício interativo com feedback instantâneo na app" },
     infographics: { alt: "Tablet numa secretária com infográfico de anatomia humana" },
     quiz: { alt: "Questionário interativo com perguntas abertas e verificação instantânea na app" },

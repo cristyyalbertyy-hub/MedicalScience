@@ -99,7 +99,7 @@ const SITE_LOCALES = {
     screenshots: {
       hero: { alt: "Student listening to a medical science podcast on the bus" },
       videos: { alt: "Mobile app with a 5–10 minute video lesson" },
-      podcasts: { alt: "Student listening to a medical science podcast outdoors in the park" },
+      podcasts: { alt: "Student listening to a medical science podcast on the go" },
       exercises: { alt: "Interactive exercise with instant feedback in the app" },
       infographics: { alt: "Tablet on a desk showing a human anatomy infographic summary" },
       quiz: { alt: "Interactive quiz with open questions and instant checking in the app" },
