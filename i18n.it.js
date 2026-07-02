@@ -90,7 +90,7 @@ SITE_LOCALES.it = {
     priceFree: "Gratis",
   },
   screenshots: {
-    hero: { alt: "Studente con cuffie che studia scienze mediche a casa" },
+    hero: { alt: "Studente che ascolta un podcast di scienze mediche sull'autobus" },
     videos: { alt: "App mobile con una lezione video di 5–10 minuti" },
     podcasts: { alt: "Studente che ascolta un podcast di scienze mediche all'aperto nel parco" },
     exercises: { alt: "Esercizio interattivo con feedback immediato nell'app" },
@@ -106,7 +106,7 @@ SITE_LOCALES.it = {
       lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
       ctaDisciplines: "Vedi tutte le discipline",
       ctaHow: "Scopri come funziona",
-      mediaAria: "Studente che studia a casa",
+      mediaAria: "Studente che studia sull'autobus",
     },
     audience: {
       eyebrow: "Niente drammi accademici",

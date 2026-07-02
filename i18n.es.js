@@ -90,7 +90,7 @@ SITE_LOCALES.es = {
     priceFree: "Gratis",
   },
   screenshots: {
-    hero: { alt: "Estudiante con auriculares estudiando ciencias médicas en casa" },
+    hero: { alt: "Estudiante escuchando un podcast de ciencias médicas en el autobús" },
     videos: { alt: "App móvil con una lección en vídeo de 5–10 minutos" },
     podcasts: { alt: "Estudiante escuchando un podcast de ciencias médicas al aire libre en el parque" },
     exercises: { alt: "Ejercicio interactivo con feedback instantáneo en la app" },
@@ -106,7 +106,7 @@ SITE_LOCALES.es = {
       lead: "Estudia anatomía, fisiología, genética y mucho más. En vídeos cortos, podcasts para el autobús y ejercicios interactivos. Todo dentro de la app Studio9.",
       ctaDisciplines: "Ver todas las disciplinas",
       ctaHow: "Ver cómo funciona",
-      mediaAria: "Estudiante estudiando en casa",
+      mediaAria: "Estudiante estudiando en el autobús",
     },
     audience: {
       eyebrow: "Sin drama académico",
