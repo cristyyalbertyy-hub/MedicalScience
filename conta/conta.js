@@ -31,6 +31,8 @@ const authTitle = document.getElementById("auth-title");
 const refreshAccessBtn = document.getElementById("refresh-access-btn");
 const packagesEmptyHint = document.getElementById("packages-empty-hint");
 const packagesFootnote = document.getElementById("packages-footnote");
+const packagesProgressLink = document.getElementById("packages-progress-link");
+const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 
 /** @type {import('firebase/app').FirebaseApp | null} */
 let app = null;
@@ -246,6 +248,7 @@ function renderPackages(catalog) {
     packagesIntro.hidden = true;
     packagesEmpty.hidden = false;
     packagesFootnote.hidden = true;
+    if (packagesProgressLink) packagesProgressLink.hidden = true;
     return;
   }
 
@@ -253,6 +256,7 @@ function renderPackages(catalog) {
   packagesIntro.hidden = false;
   packagesEmpty.hidden = true;
   packagesFootnote.hidden = false;
+  if (packagesProgressLink) packagesProgressLink.hidden = false;
 
   for (const id of ownedIds) {
     const meta = packageMeta[id] ?? { title: id };
@@ -409,6 +413,9 @@ function initLanguage() {
 
 async function bootstrap() {
   initLanguage();
+  document.querySelectorAll("[data-student-progress]").forEach((link) => {
+    link.href = STUDENT_PROGRESS_URL;
+  });
   authPanel.hidden = false;
   if (authLoading) authLoading.hidden = false;
   signinForm.hidden = true;

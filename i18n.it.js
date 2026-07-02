@@ -22,6 +22,11 @@ SITE_LOCALES.it = {
     account: {
       title: "Il mio account · Studio9 Medical Science",
     },
+    tomatoTime: {
+      title: "Tomato Time · Medical Science · Studio9",
+      description:
+        "Timer Pomodoro per lo studio in scienze della salute — blocchi di focus con pause regolari.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
   lang: { label: "Lingua" },
@@ -32,6 +37,8 @@ SITE_LOCALES.it = {
     curriculo: "Programma",
     packages: "Pacchetti",
     precos: "Come funziona + Prezzi",
+    account: "Il mio account",
+    tomatoTime: "Tomato Time",
     progress: "I miei progressi",
     aria: "Navigazione principale",
   },
@@ -156,6 +163,21 @@ SITE_LOCALES.it = {
     },
     sectionAria: "Pacchetti di apprendimento pronti all'uso",
   },
+  tomatoTime: {
+    eyebrow: "Focus · Pomodoro",
+    title: "Tomato Time",
+    lead: "Studia a blocchi di focus con brevi pause. Un timer semplice per lunghe sessioni di lettura e ripasso.",
+    modeFocus: "Focus",
+    modeShortBreak: "Pausa breve",
+    modeLongBreak: "Pausa lunga",
+    start: "Avvia",
+    pause: "Pausa",
+    reset: "Reimposta",
+    completed: "Sessioni oggi:",
+    hint: "Suggerimento: dopo quattro blocchi di focus, fai una pausa più lunga. I progressi nei pacchetti si seguono separatamente in Il mio account.",
+    notifyFocus: "Blocco di focus terminato — tempo per una pausa.",
+    notifyBreak: "Pausa terminata — pronto a concentrarti di nuovo.",
+  },
   accountPage: {
     back: "← Sito Medical Science",
     eyebrow: "Account Studio9",
@@ -197,6 +219,8 @@ SITE_LOCALES.it = {
       "Impossibile caricare l'elenco accessi. Controlla la connessione e prova Aggiorna accesso.",
     footnoteHtml:
       'Vuoi più moduli? <a href="../packages/">Vedi tutte le discipline</a> · <a href="../precos/">Acquista</a>',
+    progressLinkHtml:
+      'Stai già studiando? <a data-student-progress target="_blank" rel="noopener noreferrer">Apri I miei progressi →</a>',
     open: "Apri",
     opening: "Apertura…",
     soon: "Prossimamente",

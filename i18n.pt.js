@@ -22,6 +22,11 @@ SITE_LOCALES.pt = {
     account: {
       title: "A minha conta · Studio9 Medical Science",
     },
+    tomatoTime: {
+      title: "Tomato Time · Medical Science · Studio9",
+      description:
+        "Temporizador Pomodoro para estudo em ciências da saúde — blocos de foco com pausas regulares.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - início", name: "Studio9" },
   lang: { label: "Idioma" },
@@ -32,6 +37,7 @@ SITE_LOCALES.pt = {
     packages: "Disciplinas",
     precos: "Como funciona + Preços",
     account: "A minha conta",
+    tomatoTime: "Tomato Time",
     progress: "O meu progresso",
     aria: "Navegação principal",
   },
@@ -156,6 +162,21 @@ SITE_LOCALES.pt = {
     },
     sectionAria: "Disciplinas de ciências da saúde",
   },
+  tomatoTime: {
+    eyebrow: "Foco · Pomodoro",
+    title: "Tomato Time",
+    lead: "Estuda em blocos de foco com pausas curtas. Um temporizador simples para leituras longas e revisão.",
+    modeFocus: "Foco",
+    modeShortBreak: "Pausa curta",
+    modeLongBreak: "Pausa longa",
+    start: "Iniciar",
+    pause: "Pausar",
+    reset: "Repor",
+    completed: "Sessões hoje:",
+    hint: "Dica: após quatro blocos de foco, faz uma pausa mais longa. O progresso nos pacotes fica separado em A minha conta.",
+    notifyFocus: "Bloco de foco terminado — hora de uma pausa.",
+    notifyBreak: "Pausa terminada — pronto para focar outra vez.",
+  },
   accountPage: {
     back: "← Site Medical Science",
     eyebrow: "Conta Studio9",
@@ -198,6 +219,8 @@ SITE_LOCALES.pt = {
     entitlementsNetworkError: "Erro de rede ao carregar a lista de acesso.",
     footnoteHtml:
       'Queres mais módulos? <a href="../packages/">Ver todas as disciplinas</a> · <a href="../precos/">Comprar</a>',
+    progressLinkHtml:
+      'Já estás a estudar? <a data-student-progress target="_blank" rel="noopener noreferrer">Abrir o meu progresso →</a>',
     open: "Abrir",
     opening: "A abrir…",
     soon: "Em breve",

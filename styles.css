@@ -204,6 +204,19 @@ p {
   color: #fff;
 }
 
+.nav-tomato {
+  border: 1px solid rgba(217, 122, 62, 0.35);
+  background: rgba(217, 122, 62, 0.08);
+  text-align: center;
+}
+
+.nav-tomato:hover,
+.nav-tomato.is-active {
+  background: var(--secondary);
+  color: #fff;
+  border-color: var(--secondary);
+}
+
 .nav-actions {
   display: inline-flex;
   align-items: center;
@@ -881,7 +894,8 @@ p {
     padding: 0.65rem 0.9rem;
   }
 
-  .nav-progress {
+  .nav-progress,
+  .nav-tomato {
     margin-left: 0.15rem;
   }
 

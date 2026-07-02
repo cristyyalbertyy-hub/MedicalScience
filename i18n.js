@@ -29,6 +29,11 @@ const SITE_LOCALES = {
       account: {
         title: "My account · Studio9 Medical Science",
       },
+      tomatoTime: {
+        title: "Tomato Time · Medical Science · Studio9",
+        description:
+          "Pomodoro focus timer for medical science study — short focus blocks with regular breaks.",
+      },
     },
     brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
     lang: { label: "Language" },
@@ -39,6 +44,7 @@ const SITE_LOCALES = {
       packages: "Disciplines",
       precos: "How it works + Pricing",
       account: "My account",
+      tomatoTime: "Tomato Time",
       progress: "My progress",
       aria: "Main navigation",
     },
@@ -163,6 +169,21 @@ const SITE_LOCALES = {
       },
       sectionAria: "Health science disciplines",
     },
+    tomatoTime: {
+      eyebrow: "Focus · Pomodoro",
+      title: "Tomato Time",
+      lead: "Study in focused blocks with short breaks. A simple timer for long reading sessions and revision.",
+      modeFocus: "Focus",
+      modeShortBreak: "Short break",
+      modeLongBreak: "Long break",
+      start: "Start",
+      pause: "Pause",
+      reset: "Reset",
+      completed: "Sessions today:",
+      hint: "Tip: after four focus blocks, take a longer break. Progress in your packages is tracked separately in My account.",
+      notifyFocus: "Focus block finished — time for a break.",
+      notifyBreak: "Break finished — ready to focus again.",
+    },
     accountPage: {
       back: "← Medical Science site",
       eyebrow: "Studio9 account",
@@ -204,6 +225,8 @@ const SITE_LOCALES = {
       entitlementsNetworkError: "Network error while loading your access list.",
       footnoteHtml:
         'Want more modules? <a href="../packages/">See all disciplines</a> · <a href="../precos/">Buy</a>',
+      progressLinkHtml:
+        'Already studying? <a data-student-progress target="_blank" rel="noopener noreferrer">Open My progress →</a>',
       open: "Open",
       opening: "Opening…",
       soon: "Coming soon",

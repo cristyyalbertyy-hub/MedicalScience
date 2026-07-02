@@ -22,6 +22,11 @@ SITE_LOCALES.fr = {
     account: {
       title: "Mon compte · Studio9 Medical Science",
     },
+    tomatoTime: {
+      title: "Tomato Time · Medical Science · Studio9",
+      description:
+        "Minuteur Pomodoro pour l'étude en sciences de la santé — blocs de focus avec pauses régulières.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - accueil", name: "Studio9" },
   lang: { label: "Langue" },
@@ -32,6 +37,8 @@ SITE_LOCALES.fr = {
     curriculo: "Programme",
     packages: "Forfaits",
     precos: "Comment ça marche + Tarifs",
+    account: "Mon compte",
+    tomatoTime: "Tomato Time",
     progress: "Ma progression",
     aria: "Navigation principale",
   },
@@ -156,6 +163,21 @@ SITE_LOCALES.fr = {
     },
     sectionAria: "Forfaits d'apprentissage prêts à l'emploi",
   },
+  tomatoTime: {
+    eyebrow: "Focus · Pomodoro",
+    title: "Tomato Time",
+    lead: "Étudiez par blocs de focus avec de courtes pauses. Un minuteur simple pour les longues sessions de lecture.",
+    modeFocus: "Focus",
+    modeShortBreak: "Courte pause",
+    modeLongBreak: "Longue pause",
+    start: "Démarrer",
+    pause: "Pause",
+    reset: "Réinitialiser",
+    completed: "Sessions aujourd'hui :",
+    hint: "Astuce : après quatre blocs de focus, prenez une pause plus longue. La progression dans vos forfaits se suit séparément dans Mon compte.",
+    notifyFocus: "Bloc de focus terminé — place à une pause.",
+    notifyBreak: "Pause terminée — prêt à vous reconcentrer.",
+  },
   accountPage: {
     back: "← Site Medical Science",
     eyebrow: "Compte Studio9",
@@ -198,6 +220,8 @@ SITE_LOCALES.fr = {
       "Impossible de charger votre liste d'accès. Vérifiez la connexion et essayez Actualiser l'accès.",
     footnoteHtml:
       'Vous voulez plus de modules ? <a href="../packages/">Voir toutes les disciplines</a> · <a href="../precos/">Acheter</a>',
+    progressLinkHtml:
+      'Vous étudiez déjà ? <a data-student-progress target="_blank" rel="noopener noreferrer">Ouvrir Ma progression →</a>',
     open: "Ouvrir",
     opening: "Ouverture…",
     soon: "Bientôt",

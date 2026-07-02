@@ -22,6 +22,11 @@ SITE_LOCALES.es = {
     account: {
       title: "Mi cuenta · Studio9 Medical Science",
     },
+    tomatoTime: {
+      title: "Tomato Time · Medical Science · Studio9",
+      description:
+        "Temporizador Pomodoro para estudio en ciencias de la salud — bloques de foco con pausas regulares.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - inicio", name: "Studio9" },
   lang: { label: "Idioma" },
@@ -32,6 +37,8 @@ SITE_LOCALES.es = {
     curriculo: "Programa",
     packages: "Paquetes",
     precos: "Cómo funciona + Precios",
+    account: "Mi cuenta",
+    tomatoTime: "Tomato Time",
     progress: "Mi progreso",
     aria: "Navegación principal",
   },
@@ -156,6 +163,21 @@ SITE_LOCALES.es = {
     },
     sectionAria: "Paquetes de aprendizaje listos para usar",
   },
+  tomatoTime: {
+    eyebrow: "Foco · Pomodoro",
+    title: "Tomato Time",
+    lead: "Estudia en bloques de foco con pausas cortas. Un temporizador simple para lecturas largas y repaso.",
+    modeFocus: "Foco",
+    modeShortBreak: "Pausa corta",
+    modeLongBreak: "Pausa larga",
+    start: "Iniciar",
+    pause: "Pausar",
+    reset: "Reiniciar",
+    completed: "Sesiones hoy:",
+    hint: "Consejo: tras cuatro bloques de foco, haz una pausa más larga. El progreso en tus paquetes se sigue por separado en Mi cuenta.",
+    notifyFocus: "Bloque de foco terminado — hora de una pausa.",
+    notifyBreak: "Pausa terminada — listo para volver al foco.",
+  },
   accountPage: {
     back: "← Sitio Medical Science",
     eyebrow: "Cuenta Studio9",
@@ -197,6 +219,8 @@ SITE_LOCALES.es = {
       "No se pudo cargar tu lista de acceso. Comprueba la conexión e intenta Actualizar acceso.",
     footnoteHtml:
       '¿Quieres más módulos? <a href="../packages/">Ver todas las disciplinas</a> · <a href="../precos/">Comprar</a>',
+    progressLinkHtml:
+      '¿Ya estás estudiando? <a data-student-progress target="_blank" rel="noopener noreferrer">Abrir Mi progreso →</a>',
     open: "Abrir",
     opening: "Abriendo…",
     soon: "Próximamente",
