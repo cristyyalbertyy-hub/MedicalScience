@@ -11,7 +11,7 @@
   border: 1px solid rgba(217, 122, 62, 0.22);
   background:
     radial-gradient(circle at 100% 0%, rgba(217, 122, 62, 0.14), transparent 42%),
-    radial-gradient(circle at 0% 100%, rgba(58, 173, 171, 0.12), transparent 38%),
+    radial-gradient(circle at 0% 100%, rgba(122, 155, 122, 0.12), transparent 38%),
     rgba(255, 255, 255, 0.72);
   box-shadow: var(--shadow);
 }
@@ -44,7 +44,7 @@
 }
 
 .tomato-ring-preview-track {
-  stroke: rgba(58, 173, 171, 0.2);
+  stroke: rgba(122, 155, 122, 0.28);
 }
 
 .tomato-ring-preview-progress {
