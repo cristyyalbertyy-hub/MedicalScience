@@ -65,6 +65,18 @@ SITE_LOCALES.es = {
     purchasable: "Compra disponible",
     openViaAccount: "Abrir vía cuenta",
     openAccess: "Acceso libre",
+    viewContents: "Ver contenido incluido",
+    syllabusNotePurchase:
+      "Índice completo — acceso a vídeos, podcasts y ejercicios tras la compra.",
+    syllabusNoteBrowse: "Índice completo del módulo — cada tema incluye los formatos abajo.",
+    syllabusPending: "Índice completo próximamente.",
+    resourceLegend: "V · Vídeo · P · Podcast · I · Infografía · Q · Cuestionario",
+    resource: {
+      V: "Vídeo",
+      P: "Podcast",
+      I: "Infografía",
+      Q: "Cuestionario",
+    },
   },
   screenshots: {
     hero: { alt: "App Studio9 mostrando una lección en vídeo corta de ciencias médicas" },

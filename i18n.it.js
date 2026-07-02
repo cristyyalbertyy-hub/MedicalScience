@@ -65,6 +65,18 @@ SITE_LOCALES.it = {
     purchasable: "Acquisto disponibile",
     openViaAccount: "Apri via account",
     openAccess: "Accesso libero",
+    viewContents: "Vedi contenuti inclusi",
+    syllabusNotePurchase:
+      "Indice completo — accesso a video, podcast ed esercizi dopo l'acquisto.",
+    syllabusNoteBrowse: "Indice completo del modulo — ogni argomento include i formati sotto.",
+    syllabusPending: "Indice completo in arrivo.",
+    resourceLegend: "V · Video · P · Podcast · I · Infografica · Q · Questionario",
+    resource: {
+      V: "Video",
+      P: "Podcast",
+      I: "Infografica",
+      Q: "Questionario",
+    },
   },
   screenshots: {
     hero: { alt: "App Studio9 con una breve lezione video di scienze mediche" },

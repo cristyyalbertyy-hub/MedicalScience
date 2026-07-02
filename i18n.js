@@ -70,6 +70,18 @@ const SITE_LOCALES = {
       purchasable: "Available to buy",
       openViaAccount: "Open via account",
       openAccess: "Free access",
+      viewContents: "View included content",
+      syllabusNotePurchase:
+        "Full index — access to videos, podcasts and exercises after purchase.",
+      syllabusNoteBrowse: "Full module index — each topic includes the formats below.",
+      syllabusPending: "Full index coming soon.",
+      resourceLegend: "V · Video · P · Podcast · I · Infographic · Q · Questions",
+      resource: {
+        V: "Video",
+        P: "Podcast",
+        I: "Infographic",
+        Q: "Questions",
+      },
     },
     screenshots: {
       hero: { alt: "Studio9 app showing a short medical science video lesson" },

@@ -219,6 +219,8 @@ function escapeHtml(value) {
 
 /** @type {Awaited<ReturnType<typeof loadPackageCatalog>> | null} */
 let packageCatalog = null;
+/** @type {Awaited<ReturnType<typeof loadProgressManifest>> | null} */
+let progressManifest = null;
 
 async function loadPackageCatalog() {
   if (packageCatalog) return packageCatalog;
@@ -229,6 +231,17 @@ async function loadPackageCatalog() {
     /* ignore */
   }
   return packageCatalog ?? {};
+}
+
+async function loadProgressManifest() {
+  if (progressManifest) return progressManifest;
+  try {
+    const response = await fetch("/packages/progress-manifest.json");
+    if (response.ok) progressManifest = await response.json();
+  } catch {
+    /* ignore */
+  }
+  return progressManifest ?? {};
 }
 
 function isPurchasablePackage(id, catalog) {
@@ -252,7 +265,54 @@ function packageText(key, fallback = "") {
   return fallback || key;
 }
 
-function renderPackageCard(pkg, { compact = false, catalog = {} } = {}) {
+function renderResourceBadges(resources, resourceTypes = {}) {
+  return (resources ?? [])
+    .map((code) => {
+      const label = packageText(`packagesUi.resource.${code}`, resourceTypes[code] ?? code);
+      return `<span class="package-resource-badge" title="${escapeHtml(label)}">${code}</span>`;
+    })
+    .join("");
+}
+
+function renderSyllabusBlock(pkg, catalog, manifest) {
+  const isSoon = pkg.status !== "live" || !pkg.url;
+  const purchasable = isPurchasablePackage(pkg.id, catalog);
+  const topics = manifest?.packages?.[pkg.id]?.topics ?? [];
+  const summaryLabel = packageText("packagesUi.viewContents");
+
+  if (!topics.length) {
+    if (!isSoon) return "";
+    return `
+      <details class="package-syllabus">
+        <summary>${escapeHtml(summaryLabel)}</summary>
+        <p class="package-syllabus-empty">${escapeHtml(packageText("packagesUi.syllabusPending"))}</p>
+      </details>`;
+  }
+
+  const note = purchasable
+    ? packageText("packagesUi.syllabusNotePurchase")
+    : packageText("packagesUi.syllabusNoteBrowse");
+
+  const list = topics
+    .map(
+      (topic) => `
+        <li class="package-syllabus-topic">
+          <span class="package-syllabus-label">${escapeHtml(topic.label)}</span>
+          <span class="package-syllabus-badges">${renderResourceBadges(topic.resources, manifest.resourceTypes)}</span>
+        </li>`,
+    )
+    .join("");
+
+  return `
+    <details class="package-syllabus">
+      <summary>${escapeHtml(summaryLabel)} <span class="package-syllabus-count">${topics.length}</span></summary>
+      <p class="package-syllabus-note">${escapeHtml(note)}</p>
+      <ul class="package-syllabus-list">${list}</ul>
+      <p class="package-syllabus-legend">${escapeHtml(packageText("packagesUi.resourceLegend"))}</p>
+    </details>`;
+}
+
+function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} } = {}) {
   const isSoon = pkg.status !== "live" || !pkg.url;
   const free = isFreePackage(pkg.id, catalog);
   const purchasable = isPurchasablePackage(pkg.id, catalog);
@@ -278,6 +338,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {} } = {}) {
 
   const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
   const description = packageText(`pkg.${pkg.id}.description`, pkg.description);
+  const syllabus = renderSyllabusBlock(pkg, catalog, manifest);
 
   return `
     <article class="package-card ${statusClass}${compact ? " is-compact" : ""}" id="package-${escapeHtml(pkg.id)}">
@@ -287,14 +348,17 @@ function renderPackageCard(pkg, { compact = false, catalog = {} } = {}) {
       </div>
       <h3>${escapeHtml(title)}</h3>
       <p>${escapeHtml(description)}</p>
+      ${syllabus}
       <div class="package-card-action">${action}</div>
     </article>`;
 }
 
-function renderPackages(root, catalog = packageCatalog ?? {}) {
+function renderPackages(root, catalog = packageCatalog ?? {}, manifest = progressManifest ?? {}) {
   if (!root) return;
   const compact = root.dataset.packagesCompact === "true";
-  root.innerHTML = ALL_PACKAGES.map((pkg) => renderPackageCard(pkg, { compact, catalog })).join("");
+  root.innerHTML = ALL_PACKAGES.map((pkg) =>
+    renderPackageCard(pkg, { compact, catalog, manifest }),
+  ).join("");
 }
 
 function initTomatoTimeLinks() {
@@ -482,7 +546,7 @@ async function init() {
     SiteI18n.initSiteLanguage();
     document.addEventListener("site:langchange", () => {
       document.querySelectorAll("[data-packages-root]").forEach((root) => {
-        renderPackages(root, packageCatalog ?? {});
+        renderPackages(root, packageCatalog ?? {}, progressManifest ?? {});
       });
       initStudentProgressLinks();
       initTomatoTimeLinks();
@@ -491,9 +555,9 @@ async function init() {
     });
   }
 
-  const catalog = await loadPackageCatalog();
+  const [catalog, manifest] = await Promise.all([loadPackageCatalog(), loadProgressManifest()]);
   document.querySelectorAll("[data-packages-root]").forEach((root) => {
-    renderPackages(root, catalog);
+    renderPackages(root, catalog, manifest);
   });
   initPricingPlans(catalog);
   initStudentProgressLinks();

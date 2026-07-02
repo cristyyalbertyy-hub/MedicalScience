@@ -1116,6 +1116,102 @@ p {
   margin-top: auto;
 }
 
+.package-syllabus {
+  margin: 0 0 1rem;
+  border: 1px solid rgba(31, 78, 107, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.package-syllabus summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary);
+  padding: 0.75rem 0.95rem;
+  list-style: none;
+}
+
+.package-syllabus summary::-webkit-details-marker {
+  display: none;
+}
+
+.package-syllabus summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.package-syllabus[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.package-syllabus-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  margin-left: 0.35rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(31, 78, 107, 0.08);
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.package-syllabus-note,
+.package-syllabus-empty,
+.package-syllabus-legend {
+  margin: 0;
+  padding: 0 0.95rem 0.75rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.package-syllabus-list {
+  margin: 0;
+  padding: 0 0.95rem 0.65rem;
+  list-style: none;
+  max-height: 14rem;
+  overflow: auto;
+}
+
+.package-syllabus-topic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.65rem;
+  padding: 0.45rem 0;
+  border-top: 1px solid rgba(31, 78, 107, 0.08);
+  font-size: 0.9rem;
+}
+
+.package-syllabus-label {
+  flex: 1;
+  line-height: 1.35;
+}
+
+.package-syllabus-badges {
+  display: inline-flex;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.package-resource-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  background: rgba(31, 78, 107, 0.08);
+  color: var(--primary);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
 .package-card-action .btn {
   width: 100%;
 }
