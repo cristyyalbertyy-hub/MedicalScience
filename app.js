@@ -316,7 +316,9 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   const isSoon = pkg.status !== "live" || !pkg.url;
   const free = isFreePackage(pkg.id, catalog);
   const purchasable = isPurchasablePackage(pkg.id, catalog);
-  const isLive = !isSoon;
+  const pricingConfig = getPricingConfig(catalog);
+  const topicCount = manifest?.packages?.[pkg.id]?.topics?.length ?? 0;
+  const tierId = topicCount > 0 ? resolvePackageTier(topicCount, pricingConfig) : null;
 
   let statusClass = "is-soon";
   let statusLabel = packageText("packagesUi.comingSoon");
@@ -339,13 +341,18 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
   const description = packageText(`pkg.${pkg.id}.description`, pkg.description);
   const syllabus = renderSyllabusBlock(pkg, catalog, manifest);
+  const tierBadge =
+    tierId != null
+      ? `<div class="package-tier-row">${renderTierPriceBadge(tierId, pricingConfig, { free, topicCount })}</div>`
+      : "";
 
   return `
-    <article class="package-card ${statusClass}${compact ? " is-compact" : ""}" id="package-${escapeHtml(pkg.id)}">
+    <article class="package-card ${statusClass}${compact ? " is-compact" : ""}${tierId ? ` has-tier-${tierId}` : ""}" id="package-${escapeHtml(pkg.id)}">
       <div class="package-card-top">
         <span class="package-number">${escapeHtml(pkg.number)}</span>
         <span class="package-status">${escapeHtml(statusLabel)}</span>
       </div>
+      ${tierBadge}
       <h3>${escapeHtml(title)}</h3>
       <p>${escapeHtml(description)}</p>
       ${syllabus}
@@ -448,7 +455,76 @@ function planAmount(amountUsd, currency) {
   return Math.round((amountUsd / rate) * 100) / 100;
 }
 
+function getPricingConfig(catalog = packageCatalog ?? {}) {
+  return (
+    catalog.pricing ?? {
+      tiers: {
+        s: { label: "Small", minTopics: 1, maxTopics: 9, priceUsd: 9.99 },
+        m: { label: "Medium", minTopics: 10, maxTopics: 19, priceUsd: 11.99 },
+        l: { label: "Large", minTopics: 20, maxTopics: null, priceUsd: 14.99 },
+      },
+      volumeDiscounts: [
+        { minPackages: 4, percentOff: 10 },
+        { minPackages: 8, percentOff: 15 },
+        { minPackages: 12, percentOff: 20 },
+        { minPackages: 22, percentOff: 30 },
+      ],
+    }
+  );
+}
+
+function resolvePackageTier(topicCount, pricingConfig = getPricingConfig()) {
+  const tiers = pricingConfig.tiers ?? {};
+  if (topicCount >= (tiers.l?.minTopics ?? 20)) return "l";
+  if (topicCount >= (tiers.m?.minTopics ?? 10)) return "m";
+  return "s";
+}
+
+function tierPriceUsd(tierId, pricingConfig = getPricingConfig()) {
+  return pricingConfig.tiers?.[tierId]?.priceUsd ?? 0;
+}
+
+function formatTierTopicsRange(tierId, pricingConfig = getPricingConfig()) {
+  const tier = pricingConfig.tiers?.[tierId];
+  if (!tier) return "";
+  const min = tier.minTopics ?? 1;
+  const max = tier.maxTopics;
+  if (max == null) {
+    return packageText("packagesUi.tierTopicsPlus", `${min}+ topics`).replace("{min}", String(min));
+  }
+  return packageText("packagesUi.tierTopicsRange", `${min}–${max} topics`)
+    .replace("{min}", String(min))
+    .replace("{max}", String(max));
+}
+
+function renderTierPriceBadge(tierId, pricingConfig, { free = false, topicCount = null } = {}) {
+  if (free) {
+    return `<span class="package-tier-price package-tier-price--s">${escapeHtml(packageText("packagesUi.priceFree", "Free"))}</span>`;
+  }
+
+  const tierKey = tierId === "s" || tierId === "m" || tierId === "l" ? tierId : "s";
+  const letter = tierKey.toUpperCase();
+  const usd = tierPriceUsd(tierKey, pricingConfig);
+  const formatted = formatPlanAmount(planAmount(usd, pricingCurrency), pricingCurrency);
+  const label = packageText(`packagesUi.tier${letter}`, letter);
+  const topics =
+    topicCount != null
+      ? packageText("packagesUi.tierTopicCount", `${topicCount} topics`).replace(
+          "{count}",
+          String(topicCount),
+        )
+      : formatTierTopicsRange(tierKey, pricingConfig);
+
+  return `<span class="package-tier-price package-tier-price--${tierKey}" title="${escapeHtml(`${label} · ${topics}`)}"><span class="package-tier-letter" aria-hidden="true">${letter}</span><span class="package-tier-amount">${escapeHtml(formatted)}</span></span>`;
+}
+
 function renderPlanPrices() {
+  document.querySelectorAll("[data-tier-price-usd]").forEach((el) => {
+    const usd = Number(el.dataset.tierPriceUsd);
+    if (!Number.isFinite(usd)) return;
+    el.textContent = formatPlanAmount(planAmount(usd, pricingCurrency), pricingCurrency);
+  });
+
   document.querySelectorAll(".plan-price[data-price-usd]").forEach((el) => {
     const mainUsd = Number(el.dataset.priceUsd);
     const eachUsd = el.dataset.priceEachUsd ? Number(el.dataset.priceEachUsd) : null;

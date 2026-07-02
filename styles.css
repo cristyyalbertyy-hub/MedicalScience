@@ -960,6 +960,10 @@ p {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .tier-pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .section-shell {
     padding: 5.5rem 0;
   }
@@ -1056,6 +1060,192 @@ p {
   color: var(--primary);
   font-weight: 600;
   text-align: center;
+}
+
+.tier-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 253, 249, 0.82);
+  box-shadow: 0 14px 38px rgba(31, 78, 107, 0.08);
+}
+
+.tier-card-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.tier-card--s {
+  border-color: rgba(122, 155, 122, 0.45);
+}
+
+.tier-card--s .tier-card-letter {
+  background: var(--sage-soft);
+  color: #3d6b3d;
+}
+
+.tier-card--m {
+  border-color: rgba(31, 78, 107, 0.28);
+}
+
+.tier-card--m .tier-card-letter {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.tier-card--l {
+  border-color: rgba(217, 122, 62, 0.42);
+  background:
+    linear-gradient(180deg, rgba(217, 122, 62, 0.08), transparent 55%),
+    rgba(255, 253, 249, 0.95);
+}
+
+.tier-card--l .tier-card-letter {
+  background: rgba(217, 122, 62, 0.16);
+  color: #9a4f24;
+}
+
+.tier-card-label {
+  margin: 0 0 0.2rem;
+  font-weight: 900;
+  font-size: 1.05rem;
+}
+
+.tier-card-range {
+  margin: 0 0 0.65rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.tier-card-price {
+  margin: 0 0 1rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.85rem, 4vw, 2.35rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.tier-card--s .tier-card-price {
+  color: #3d6b3d;
+}
+
+.tier-card--m .tier-card-price {
+  color: var(--primary);
+}
+
+.tier-card--l .tier-card-price {
+  color: var(--secondary-dark);
+}
+
+.tier-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: #4f4c48;
+}
+
+.tier-card li + li {
+  margin-top: 0.35rem;
+}
+
+.volume-discounts {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 253, 249, 0.82);
+  text-align: center;
+}
+
+.volume-discounts h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.volume-discount-list {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.volume-discount-list li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(31, 78, 107, 0.06);
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.volume-discount-note {
+  max-width: 36rem;
+  margin: 0 auto 1.25rem;
+  color: var(--muted);
+}
+
+.package-tier-row {
+  margin-bottom: 0.65rem;
+}
+
+.package-tier-price {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.42rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.package-tier-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.package-tier-price--s {
+  background: var(--sage-soft);
+  color: #3d6b3d;
+}
+
+.package-tier-price--s .package-tier-letter {
+  background: rgba(122, 155, 122, 0.22);
+}
+
+.package-tier-price--m {
+  background: var(--primary-soft);
+  color: var(--primary);
+}
+
+.package-tier-price--m .package-tier-letter {
+  background: rgba(31, 78, 107, 0.12);
+}
+
+.package-tier-price--l {
+  background: rgba(217, 122, 62, 0.14);
+  color: #9a4f24;
+}
+
+.package-tier-price--l .package-tier-letter {
+  background: rgba(217, 122, 62, 0.22);
 }
 
 .price-plan.is-disabled {

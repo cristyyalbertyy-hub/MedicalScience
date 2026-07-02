@@ -102,52 +102,56 @@
             <button type="button" data-currency="eur" aria-pressed="false">€ EUR</button>
           </div>
         </div>
-        <div class="pricing-grid">
-          <article class="price-plan" data-plan="single">
-            <p class="plan-label" data-i18n="precos.pricing.p1Label">Single module</p>
-            <h3 class="plan-price" data-price-usd="14.97">$14.97</h3>
+        <div class="pricing-grid tier-pricing-grid">
+          <article class="tier-card tier-card--s">
+            <span class="tier-card-letter" aria-hidden="true">S</span>
+            <p class="tier-card-label" data-i18n="precos.pricing.tierSLabel">Small</p>
+            <p class="tier-card-range" data-i18n="precos.pricing.tierSRange">1–9 topics</p>
+            <p class="tier-card-price" data-tier-price-usd="9.99">$9.99</p>
             <ul>
-              <li data-i18n="precos.pricing.p1l1">40-60h of study</li>
-              <li data-i18n="precos.pricing.p1l2">Immediate access (1 year)</li>
-              <li data-i18n="precos.pricing.p1l3">Videos + podcasts + exercises + summary</li>
+              <li data-i18n="precos.pricing.tierItem1">40–60h of study</li>
+              <li data-i18n="precos.pricing.tierItem2">Immediate access (1 year)</li>
+              <li data-i18n="precos.pricing.tierItem3">Videos + podcasts + exercises + summary</li>
             </ul>
-            <a class="btn btn-secondary" href="../packages/#package-medical-biology" data-i18n="precos.pricing.p1cta">Choose a discipline →</a>
           </article>
 
-          <article class="price-plan" data-plan="pick4">
-            <p class="plan-label" data-i18n="precos.pricing.p2Label">4-module bundle</p>
-            <h3 class="plan-price" data-price-usd="49.97" data-price-each-usd="12.49" data-price-sub="each">$49.97 <span>$12.49 each</span></h3>
+          <article class="tier-card tier-card--m">
+            <span class="tier-card-letter" aria-hidden="true">M</span>
+            <p class="tier-card-label" data-i18n="precos.pricing.tierMLabel">Medium</p>
+            <p class="tier-card-range" data-i18n="precos.pricing.tierMRange">10–19 topics</p>
+            <p class="tier-card-price" data-tier-price-usd="11.99">$11.99</p>
             <ul>
-              <li data-i18n="precos.pricing.p2l1">4 modules of your choice</li>
-              <li data-i18n="precos.pricing.p2l2">Immediate access (1 year)</li>
-              <li data-i18n="precos.pricing.p2l3">Save 25% versus buying individually</li>
+              <li data-i18n="precos.pricing.tierItem1">40–60h of study</li>
+              <li data-i18n="precos.pricing.tierItem2">Immediate access (1 year)</li>
+              <li data-i18n="precos.pricing.tierItem3">Videos + podcasts + exercises + summary</li>
             </ul>
-            <a class="btn btn-secondary" href="../packages/" data-i18n="precos.pricing.p2cta">Build your pack →</a>
           </article>
 
-          <article class="price-plan" data-plan="full_year">
-            <p class="plan-label" data-i18n="precos.pricing.p3Label">Full bundle</p>
-            <h3 class="plan-price" data-price-usd="119.97" data-price-each-usd="10" data-price-sub="perModule">$119.97 <span>$10 per module</span></h3>
+          <article class="tier-card tier-card--l">
+            <span class="tier-card-letter" aria-hidden="true">L</span>
+            <p class="tier-card-label" data-i18n="precos.pricing.tierLLabel">Large</p>
+            <p class="tier-card-range" data-i18n="precos.pricing.tierLRange">20+ topics</p>
+            <p class="tier-card-price" data-tier-price-usd="14.99">$14.99</p>
             <ul>
-              <li data-i18n="precos.pricing.p3l1">12 modules</li>
-              <li data-i18n="precos.pricing.p3l2">Immediate access (1 year)</li>
-              <li data-i18n="precos.pricing.p3l3">Save 40% versus buying individually</li>
+              <li data-i18n="precos.pricing.tierItem1">40–60h of study</li>
+              <li data-i18n="precos.pricing.tierItem2">Immediate access (1 year)</li>
+              <li data-i18n="precos.pricing.tierItem3">Videos + podcasts + exercises + summary</li>
             </ul>
-            <a class="btn btn-secondary" href="../packages/" data-i18n="precos.pricing.p3cta">See all disciplines →</a>
           </article>
+        </div>
 
-          <article class="price-plan featured-plan">
-            <p class="plan-label" data-i18n="precos.pricing.p4Label">Complete course</p>
-            <h3 class="plan-price" data-price-usd="176">$176</h3>
-            <ul>
-              <li data-i18n="precos.pricing.p4l1">22 modules</li>
-              <li data-i18n="precos.pricing.p4l2">Lifetime access (while the app exists)</li>
-              <li data-i18n="precos.pricing.p4l3">Save 58% versus buying individually</li>
-            </ul>
-            <a class="btn btn-primary" href="mailto:hello@studio9.example?subject=I%20want%20the%20Medical%20Science%20course" data-i18n="precos.pricing.p4cta">
-              Most popular → I want everything
-            </a>
-          </article>
+        <div class="volume-discounts">
+          <h3 data-i18n="precos.pricing.volumeTitle">Buy more, save more</h3>
+          <ul class="volume-discount-list">
+            <li data-i18n="precos.pricing.volume4">4 modules — 10% off</li>
+            <li data-i18n="precos.pricing.volume8">8 modules — 15% off</li>
+            <li data-i18n="precos.pricing.volume12">12 modules — 20% off</li>
+            <li data-i18n="precos.pricing.volume22">All 22 modules — 30% off</li>
+          </ul>
+          <p class="volume-discount-note" data-i18n="precos.pricing.volumeNote">
+            Discount applies to the combined total at checkout. Each module is priced by its size (S, M or L).
+          </p>
+          <a class="btn btn-primary" href="../packages/" data-i18n="precos.pricing.chooseCta">Choose your disciplines →</a>
         </div>
       </section>
 
@@ -206,6 +210,6 @@
     <script src="../i18n.fr.js?v=1"></script>
     <script src="../i18n.it.js?v=1"></script>
     <script src="../i18n.pt.js?v=1"></script>
-    <script src="../app.js?v=18"></script>
+    <script src="../app.js?v=19"></script>
   </body>
 </html>

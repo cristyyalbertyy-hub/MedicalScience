@@ -70,6 +70,34 @@
       "free": true
     }
   },
+  "pricing": {
+    "tiers": {
+      "s": {
+        "label": "Small",
+        "minTopics": 1,
+        "maxTopics": 9,
+        "priceUsd": 9.99
+      },
+      "m": {
+        "label": "Medium",
+        "minTopics": 10,
+        "maxTopics": 19,
+        "priceUsd": 11.99
+      },
+      "l": {
+        "label": "Large",
+        "minTopics": 20,
+        "maxTopics": null,
+        "priceUsd": 14.99
+      }
+    },
+    "volumeDiscounts": [
+      { "minPackages": 4, "percentOff": 10 },
+      { "minPackages": 8, "percentOff": 15 },
+      { "minPackages": 12, "percentOff": 20 },
+      { "minPackages": 22, "percentOff": 30 }
+    ]
+  },
   "plans": {
     "single": {
       "label": "Single module",
