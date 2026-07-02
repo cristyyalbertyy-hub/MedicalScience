@@ -58,6 +58,10 @@ SITE_LOCALES.pt = {
     comingSoon: "Em breve",
     openApp: "Abrir app",
     launchingSoon: "Lançamento em breve",
+    loginSoon: "Login em breve",
+    loginSoonHint: "O login por conta está a ser activado neste módulo.",
+    purchasable: "Compra disponível",
+    openViaAccount: "Abrir via conta",
   },
   screenshots: {
     hero: { alt: "App Studio9 a mostrar uma lição em vídeo curta de ciências médicas" },
@@ -297,6 +301,8 @@ SITE_LOCALES.pt = {
     pricing: {
       eyebrow: "Sem surpresas",
       title: "Preços simples.",
+      pilotNotice:
+        "Durante o piloto, a compra online está disponível apenas para Medical Biology e Genetics. Os restantes módulos chegam em breve.",
       currencyLabel: "Moeda",
       eachLabel: "cada",
       perModuleLabel: "por módulo",
@@ -320,6 +326,7 @@ SITE_LOCALES.pt = {
       p4l2: "Acesso vitalício (enquanto a app existir)",
       p4l3: "Poupa 58% face à compra individual",
       p4cta: "O mais popular → Quero tudo",
+      planSoon: "Em breve",
     },
     faq: {
       eyebrow: "Perguntas rápidas",

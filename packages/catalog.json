@@ -1,5 +1,6 @@
 {
   "version": 1,
+  "purchasablePackageIds": ["medical-biology", "genetics"],
   "freePackageIds": ["italian-health-system"],
   "paidPackageIds": [
     "human-anatomy-1",
@@ -22,11 +23,13 @@
     "medical-biology": {
       "title": "Medical Biology",
       "url": "https://biology-genetics.vercel.app/",
+      "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=medical-biology"
     },
     "genetics": {
       "title": "Genetics",
       "url": "https://medica-genetics.vercel.app/",
+      "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics"
     },
     "physics": {
@@ -71,17 +74,20 @@
     "single": {
       "label": "Single module",
       "maxPackages": 1,
-      "durationDays": 365
+      "durationDays": 365,
+      "enabled": true
     },
     "pick4": {
       "label": "4-module bundle",
       "maxPackages": 4,
-      "durationDays": 365
+      "durationDays": 365,
+      "enabled": false
     },
     "full_year": {
       "label": "Full year (11 paid modules)",
       "includes": "all_paid",
-      "durationDays": 365
+      "durationDays": 365,
+      "enabled": false
     },
     "complete": {
       "label": "Complete course",

@@ -60,6 +60,10 @@ SITE_LOCALES.it = {
     comingSoon: "In arrivo",
     openApp: "Apri app",
     launchingSoon: "Lancio imminente",
+    loginSoon: "Login in arrivo",
+    loginSoonHint: "L'accesso tramite account è in attivazione per questo modulo.",
+    purchasable: "Acquisto disponibile",
+    openViaAccount: "Apri via account",
   },
   screenshots: {
     hero: { alt: "App Studio9 con una breve lezione video di scienze mediche" },
@@ -297,6 +301,8 @@ SITE_LOCALES.it = {
     pricing: {
       eyebrow: "Nessuna sorpresa",
       title: "Prezzi semplici.",
+      pilotNotice:
+        "Durante il pilota, l'acquisto online è disponibile solo per Medical Biology e Genetics. Gli altri moduli arriveranno presto.",
       currencyLabel: "Valuta",
       eachLabel: "ciascuno",
       perModuleLabel: "a modulo",
@@ -320,6 +326,7 @@ SITE_LOCALES.it = {
       p4l2: "Accesso a vita (finché l'app esiste)",
       p4l3: "Risparmia il 58% rispetto all'acquisto singolo",
       p4cta: "Il più popolare → Voglio tutto",
+      planSoon: "In arrivo",
     },
     faq: {
       eyebrow: "Domande rapide",

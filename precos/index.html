@@ -93,6 +93,9 @@
           <p class="eyebrow" data-i18n="precos.pricing.eyebrow">No surprises</p>
           <h2 data-i18n="precos.pricing.title">Simple pricing.</h2>
         </div>
+        <p class="pricing-pilot-notice" data-i18n="precos.pricing.pilotNotice">
+          During the pilot, online purchase is available for Medical Biology and Genetics only. Other modules will follow soon.
+        </p>
         <div class="pricing-currency-wrap">
           <div class="currency-selector" role="group" data-i18n-attr="aria-label" data-i18n="precos.pricing.currencyLabel">
             <button type="button" data-currency="usd" class="is-active" aria-pressed="true">$ USD</button>
@@ -100,7 +103,7 @@
           </div>
         </div>
         <div class="pricing-grid">
-          <article class="price-plan">
+          <article class="price-plan" data-plan="single">
             <p class="plan-label" data-i18n="precos.pricing.p1Label">Single module</p>
             <h3 class="plan-price" data-price-usd="14.97">$14.97</h3>
             <ul>
@@ -108,10 +111,10 @@
               <li data-i18n="precos.pricing.p1l2">Immediate access (1 year)</li>
               <li data-i18n="precos.pricing.p1l3">Videos + podcasts + exercises + summary</li>
             </ul>
-            <a class="btn btn-secondary" href="../packages/" data-i18n="precos.pricing.p1cta">Choose a discipline →</a>
+            <a class="btn btn-secondary" href="../packages/#package-medical-biology" data-i18n="precos.pricing.p1cta">Choose a discipline →</a>
           </article>
 
-          <article class="price-plan">
+          <article class="price-plan" data-plan="pick4">
             <p class="plan-label" data-i18n="precos.pricing.p2Label">4-module bundle</p>
             <h3 class="plan-price" data-price-usd="49.97" data-price-each-usd="12.49" data-price-sub="each">$49.97 <span>$12.49 each</span></h3>
             <ul>
@@ -122,7 +125,7 @@
             <a class="btn btn-secondary" href="../packages/" data-i18n="precos.pricing.p2cta">Build your pack →</a>
           </article>
 
-          <article class="price-plan">
+          <article class="price-plan" data-plan="full_year">
             <p class="plan-label" data-i18n="precos.pricing.p3Label">Full bundle</p>
             <h3 class="plan-price" data-price-usd="119.97" data-price-each-usd="10" data-price-sub="perModule">$119.97 <span>$10 per module</span></h3>
             <ul>
@@ -203,6 +206,6 @@
     <script src="../i18n.fr.js?v=1"></script>
     <script src="../i18n.it.js?v=1"></script>
     <script src="../i18n.pt.js?v=1"></script>
-    <script src="../app.js?v=15"></script>
+    <script src="../app.js?v=16"></script>
   </body>
 </html>

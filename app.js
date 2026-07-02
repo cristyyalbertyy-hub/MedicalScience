@@ -217,6 +217,37 @@ function escapeHtml(value) {
   return node.innerHTML;
 }
 
+/** @type {Awaited<ReturnType<typeof loadPackageCatalog>> | null} */
+let packageCatalog = null;
+
+async function loadPackageCatalog() {
+  if (packageCatalog) return packageCatalog;
+  try {
+    const response = await fetch("/packages/catalog.json");
+    if (response.ok) packageCatalog = await response.json();
+  } catch {
+    /* ignore */
+  }
+  return packageCatalog ?? {};
+}
+
+function isPurchasablePackage(id, catalog) {
+  return (catalog.purchasablePackageIds ?? []).includes(id);
+}
+
+function isLoginReadyPackage(id, catalog) {
+  return catalog.packageMeta?.[id]?.loginReady === true;
+}
+
+function isFreePackage(id, catalog) {
+  return (catalog.freePackageIds ?? []).includes(id);
+}
+
+function sitePath(segment) {
+  const page = document.body.dataset.page;
+  return page === "home" ? segment : `../${segment}`;
+}
+
 function packageText(key, fallback = "") {
   if (window.SiteI18n) {
     const value = SiteI18n.siteT(SiteI18n.getSiteLang(), key);
@@ -225,17 +256,39 @@ function packageText(key, fallback = "") {
   return fallback || key;
 }
 
-function renderPackageCard(pkg, { compact = false } = {}) {
-  const isLive = pkg.status === "live" && pkg.url;
-  const statusClass = isLive ? "is-live" : "is-soon";
-  const statusLabel = isLive
-    ? packageText("packagesUi.live")
-    : packageText("packagesUi.comingSoon");
+function renderPackageCard(pkg, { compact = false, catalog = {} } = {}) {
+  const isSoon = pkg.status !== "live" || !pkg.url;
+  const free = isFreePackage(pkg.id, catalog);
+  const loginReady = isLoginReadyPackage(pkg.id, catalog);
+  const purchasable = isPurchasablePackage(pkg.id, catalog);
+  const isLive = !isSoon;
+
+  let statusClass = "is-soon";
+  let statusLabel = packageText("packagesUi.comingSoon");
+
+  if (isLive && (loginReady || free)) {
+    statusClass = purchasable ? "is-live is-purchasable" : "is-live";
+    statusLabel = purchasable
+      ? packageText("packagesUi.purchasable")
+      : packageText("packagesUi.live");
+  } else if (isLive) {
+    statusClass = "is-live is-login-pending";
+    statusLabel = packageText("packagesUi.loginSoon");
+  }
+
   const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
   const description = packageText(`pkg.${pkg.id}.description`, pkg.description);
-  const action = isLive
-    ? `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`
-    : `<span class="package-soon">${escapeHtml(packageText("packagesUi.launchingSoon"))}</span>`;
+
+  let action;
+  if (isSoon) {
+    action = `<span class="package-soon">${escapeHtml(packageText("packagesUi.launchingSoon"))}</span>`;
+  } else if (free) {
+    action = `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`;
+  } else if (loginReady) {
+    action = `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
+  } else {
+    action = `<span class="package-soon">${escapeHtml(packageText("packagesUi.loginSoonHint"))}</span>`;
+  }
 
   return `
     <article class="package-card ${statusClass}${compact ? " is-compact" : ""}" id="package-${escapeHtml(pkg.id)}">
@@ -249,10 +302,10 @@ function renderPackageCard(pkg, { compact = false } = {}) {
     </article>`;
 }
 
-function renderPackages(root) {
+function renderPackages(root, catalog = packageCatalog ?? {}) {
   if (!root) return;
   const compact = root.dataset.packagesCompact === "true";
-  root.innerHTML = ALL_PACKAGES.map((pkg) => renderPackageCard(pkg, { compact })).join("");
+  root.innerHTML = ALL_PACKAGES.map((pkg) => renderPackageCard(pkg, { compact, catalog })).join("");
 }
 
 function initTomatoTimeLinks() {
@@ -417,18 +470,43 @@ function initPricingCurrency() {
   applyPricingCurrency(pricingCurrency);
 }
 
-function init() {
+function initPricingPlans(catalog = packageCatalog ?? {}) {
+  const plans = catalog.plans ?? {};
+  document.querySelectorAll("[data-plan]").forEach((planEl) => {
+    const planId = planEl.dataset.plan;
+    const config = plans[planId];
+    if (!config || config.enabled !== false) return;
+
+    planEl.classList.add("is-disabled");
+    const cta = planEl.querySelector(".btn");
+    if (!cta) return;
+    cta.classList.remove("btn-primary", "btn-secondary");
+    cta.classList.add("btn-disabled");
+    cta.removeAttribute("href");
+    cta.setAttribute("aria-disabled", "true");
+    cta.textContent = packageText("precos.pricing.planSoon");
+  });
+}
+
+async function init() {
   if (window.SiteI18n) {
     SiteI18n.initSiteLanguage();
     document.addEventListener("site:langchange", () => {
-      document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
+      document.querySelectorAll("[data-packages-root]").forEach((root) => {
+        renderPackages(root, packageCatalog ?? {});
+      });
       initStudentProgressLinks();
       initTomatoTimeLinks();
       renderPlanPrices();
+      initPricingPlans(packageCatalog ?? {});
     });
   }
 
-  document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
+  const catalog = await loadPackageCatalog();
+  document.querySelectorAll("[data-packages-root]").forEach((root) => {
+    renderPackages(root, catalog);
+  });
+  initPricingPlans(catalog);
   initStudentProgressLinks();
   initTomatoTimeLinks();
   initNavigation();

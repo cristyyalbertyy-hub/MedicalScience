@@ -5,6 +5,9 @@ const catalog = require("../../packages/catalog.json");
 
 const paidSet = new Set(catalog.paidPackageIds);
 const freeSet = new Set(catalog.freePackageIds);
+const purchasableSet = new Set(
+  catalog.purchasablePackageIds ?? catalog.paidPackageIds,
+);
 
 export function getCatalog() {
   return catalog;
@@ -18,8 +21,16 @@ export function isFreePackageId(id) {
   return freeSet.has(id);
 }
 
+export function isPurchasablePackageId(id) {
+  return purchasableSet.has(id);
+}
+
 export function allPaidPackageIds() {
   return [...catalog.paidPackageIds];
+}
+
+export function allPurchasablePackageIds() {
+  return [...(catalog.purchasablePackageIds ?? catalog.paidPackageIds)];
 }
 
 export function resolvePackageIds(plan, rawPackageIds) {
@@ -28,15 +39,19 @@ export function resolvePackageIds(plan, rawPackageIds) {
     throw new Error(`Unknown plan: ${plan}`);
   }
 
+  if (planConfig.enabled === false) {
+    throw new Error(`Plan ${plan} is not available yet.`);
+  }
+
   if (plan === "complete") {
     if (!planConfig.enabled) {
       throw new Error("Complete course is not available yet.");
     }
-    return allPaidPackageIds();
+    return allPurchasablePackageIds();
   }
 
   if (planConfig.includes === "all_paid") {
-    return allPaidPackageIds();
+    return allPurchasablePackageIds();
   }
 
   const ids = parsePackageIds(rawPackageIds);
@@ -45,8 +60,8 @@ export function resolvePackageIds(plan, rawPackageIds) {
   }
 
   for (const id of ids) {
-    if (!isPaidPackageId(id)) {
-      throw new Error(`Invalid or non-paid package_id: ${id}`);
+    if (!isPurchasablePackageId(id)) {
+      throw new Error(`Package ${id} is not available for purchase yet.`);
     }
   }
 

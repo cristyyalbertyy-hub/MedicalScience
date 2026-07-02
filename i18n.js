@@ -65,6 +65,10 @@ const SITE_LOCALES = {
       comingSoon: "Coming soon",
       openApp: "Open app",
       launchingSoon: "Launching soon",
+      loginSoon: "Login coming soon",
+      loginSoonHint: "Account login is being rolled out for this module.",
+      purchasable: "Available to buy",
+      openViaAccount: "Open via account",
     },
     screenshots: {
       hero: { alt: "Studio9 app showing a short medical science video lesson" },
@@ -303,6 +307,8 @@ const SITE_LOCALES = {
       pricing: {
         eyebrow: "No surprises",
         title: "Simple pricing.",
+        pilotNotice:
+          "During the pilot, online purchase is available for Medical Biology and Genetics only. Other modules will follow soon.",
         currencyLabel: "Currency",
         eachLabel: "each",
         perModuleLabel: "per module",
@@ -326,6 +332,7 @@ const SITE_LOCALES = {
         p4l2: "Lifetime access (while the app exists)",
         p4l3: "Save 58% versus buying individually",
         p4cta: "Most popular → I want everything",
+        planSoon: "Coming soon",
       },
       faq: {
         eyebrow: "Quick questions",
