@@ -5,8 +5,6 @@
     { "source": "/acesso", "destination": "/conta/index.html" },
     { "source": "/acesso/", "destination": "/conta/index.html" },
     { "source": "/conta", "destination": "/conta/index.html" },
-    { "source": "/tomato-time", "destination": "https://tomato-time-rho.vercel.app/", "permanent": false },
-    { "source": "/tomato-time/", "destination": "https://tomato-time-rho.vercel.app/", "permanent": false },
     { "source": "/curriculo", "destination": "/packages/" },
     { "source": "/curriculo/", "destination": "/packages/" }
   ],

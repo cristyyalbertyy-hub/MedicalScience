@@ -25,7 +25,7 @@ SITE_LOCALES.pt = {
     tomatoTime: {
       title: "Tomato Time · Medical Science · Studio9",
       description:
-        "Temporizador Pomodoro para estudo em ciências da saúde — blocos de foco com pausas regulares.",
+        "Temporizador Pomodoro gratuito para estudantes de Medical Science — sessões que contam para a frente, pausas curtas e jornadas de 2 horas.",
     },
   },
   brand: { aria: "Studio9 Medical Science - início", name: "Studio9" },
@@ -48,6 +48,7 @@ SITE_LOCALES.pt = {
     pricing: "Preços",
     faq: "FAQ",
     progress: "O meu progresso",
+    tomatoTime: "Tomato Time",
     contact: "Contacto",
     copy: "© 2026 Studio9 – aprender sem stress, a sério",
     aria: "Links do rodapé",
@@ -113,6 +114,15 @@ SITE_LOCALES.pt = {
       text: "Consulta o que completaste em todas as tuas disciplinas — vídeos, exercícios e contagens de conclusão, disciplina a disciplina.",
       cta: "Abrir painel de progresso →",
     },
+    tomatoTime: {
+      aria: "Temporizador de foco Tomato Time",
+      eyebrow: "Ferramenta gratuita · Studio9",
+      title: "Tomato Time — estuda sem desejar que o relógio acabe.",
+      text:
+        "Um temporizador Pomodoro que conta para a frente (0:00 → 25:00), não para trás. Constrói foco e presença — e abre os teus pacotes Medical Science quando a jornada terminar.",
+      cta: "Descobrir Tomato Time →",
+      ctaApp: "Abrir app",
+    },
     study: {
       eyebrow: "A app vai contigo",
       title: "Estuda onde quiseres. A sério.",
@@ -162,20 +172,47 @@ SITE_LOCALES.pt = {
     },
     sectionAria: "Disciplinas de ciências da saúde",
   },
-  tomatoTime: {
-    eyebrow: "Foco · Pomodoro",
-    title: "Tomato Time",
-    lead: "Estuda em blocos de foco com pausas curtas. Um temporizador simples para leituras longas e revisão.",
-    modeFocus: "Foco",
-    modeShortBreak: "Pausa curta",
-    modeLongBreak: "Pausa longa",
-    start: "Iniciar",
-    pause: "Pausar",
-    reset: "Repor",
-    completed: "Sessões hoje:",
-    hint: "Dica: após quatro blocos de foco, faz uma pausa mais longa. O progresso nos pacotes fica separado em A minha conta.",
-    notifyFocus: "Bloco de foco terminado — hora de uma pausa.",
-    notifyBreak: "Pausa terminada — pronto para focar outra vez.",
+  tomatoTimePage: {
+    hero: {
+      eyebrow: "Foco · Pomodoro · Studio9",
+      title: "Tomato Time",
+      lead:
+        "Quatro blocos de 25 minutos, pausas curtas, uma jornada de 2 horas. O temporizador conta para a frente — acumulas tempo a estudar, em vez de esperar que acabe.",
+      cta: "Abrir Tomato Time",
+      ctaHint: "Grátis · no browser · sem conta",
+      ringPhase: "Foco",
+      ringSub: "de 25 min",
+    },
+    philosophy: {
+      eyebrow: "Conta para a frente, não para trás",
+      title: "Presença em vez de escape.",
+      text:
+        "A maioria dos temporizadores conta regressivamente. Isso diz ao cérebro, em silêncio: «quando é que isto acaba?» O Tomato Time conta para a frente — 0:00, 0:01, 0:02 — para acompanhares progresso, não fuga.",
+      quote:
+        "Quando o relógio desce, inconscientemente desejamos que a tarefa acabe. Quando sobe, acumulamos foco.",
+    },
+    how: {
+      eyebrow: "Uma jornada",
+      title: "Como funciona um ciclo de 2 horas.",
+      intro:
+        "Carrega em Go uma vez. O tomate percorre quatro linhas — foco, pausa, foco, pausa — até a jornada estar completa.",
+      f1Title: "Contagem progressiva",
+      f1Text: "0:00 → 25:00 com um anel que enche. Vês tempo conquistado, não tempo que falta aguentar.",
+      f2Title: "Tomate na linha",
+      f2Text: "Quatro sessões mostram onde estás no ciclo — progresso visual, não só números.",
+      f3Title: "Jornada completa",
+      f3Text: "Termina os quatro blocos e celebra — depois abre os teus pacotes Studio9 com energia.",
+      f4Title: "Harvest",
+      f4Text: "Tomates e jornadas somam-se ao longo dos dias. Séries de estudo sem culpa nem pressa.",
+    },
+    keyboard: {
+      text: "Carrega em Espaço para iniciar ou pausar.",
+    },
+    final: {
+      title: "Pronto para uma sessão focada?",
+      text: "Abre o Tomato Time, inicia uma jornada e volta ao Medical Science quando terminares.",
+      cta: "Abrir Tomato Time",
+    },
   },
   accountPage: {
     back: "← Site Medical Science",

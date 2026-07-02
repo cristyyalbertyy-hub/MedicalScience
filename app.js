@@ -257,9 +257,24 @@ function renderPackages(root) {
 
 function initTomatoTimeLinks() {
   const navToggle = document.querySelector(".nav-toggle");
+  const page = document.body.dataset.page;
+  const landingHref =
+    page === "tomatoTime" ? "./" : page === "home" ? "tomato-time/" : "../tomato-time/";
 
   document.querySelectorAll("[data-tomato-time]").forEach((link) => {
+    link.href = landingHref;
+    link.removeAttribute("target");
+    link.removeAttribute("rel");
+    link.addEventListener("click", () => {
+      document.body.classList.remove("nav-open");
+      navToggle?.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.querySelectorAll("[data-tomato-time-app]").forEach((link) => {
     link.href = TOMATO_TIME_URL;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
     link.addEventListener("click", () => {
       document.body.classList.remove("nav-open");
       navToggle?.setAttribute("aria-expanded", "false");

@@ -32,7 +32,7 @@ const SITE_LOCALES = {
       tomatoTime: {
         title: "Tomato Time · Medical Science · Studio9",
         description:
-          "Pomodoro focus timer for medical science study — short focus blocks with regular breaks.",
+          "Free Pomodoro focus timer for Medical Science students — forward-counting sessions, short breaks, and 2-hour study journeys.",
       },
     },
     brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
@@ -55,6 +55,7 @@ const SITE_LOCALES = {
       pricing: "Pricing",
       faq: "FAQ",
       progress: "My progress",
+      tomatoTime: "Tomato Time",
       contact: "Contact",
       copy: "© 2026 Studio9 – learning without stress, really",
       aria: "Footer links",
@@ -120,6 +121,15 @@ const SITE_LOCALES = {
         text: "See what you have completed across all your disciplines — videos, exercises and completion counts, discipline by discipline.",
         cta: "Open progress dashboard →",
       },
+      tomatoTime: {
+        aria: "Tomato Time focus timer",
+        eyebrow: "Free tool · Studio9",
+        title: "Tomato Time — study without wishing the clock away.",
+        text:
+          "A Pomodoro timer that counts forward (0:00 → 25:00), not down. Build focus and presence — then open your Medical Science packages when the journey is done.",
+        cta: "Discover Tomato Time →",
+        ctaApp: "Open app",
+      },
       study: {
         eyebrow: "The app goes with you",
         title: "Study wherever you want. Really.",
@@ -169,20 +179,47 @@ const SITE_LOCALES = {
       },
       sectionAria: "Health science disciplines",
     },
-    tomatoTime: {
-      eyebrow: "Focus · Pomodoro",
-      title: "Tomato Time",
-      lead: "Study in focused blocks with short breaks. A simple timer for long reading sessions and revision.",
-      modeFocus: "Focus",
-      modeShortBreak: "Short break",
-      modeLongBreak: "Long break",
-      start: "Start",
-      pause: "Pause",
-      reset: "Reset",
-      completed: "Sessions today:",
-      hint: "Tip: after four focus blocks, take a longer break. Progress in your packages is tracked separately in My account.",
-      notifyFocus: "Focus block finished — time for a break.",
-      notifyBreak: "Break finished — ready to focus again.",
+    tomatoTimePage: {
+      hero: {
+        eyebrow: "Focus · Pomodoro · Studio9",
+        title: "Tomato Time",
+        lead:
+          "Four 25-minute focus blocks, short breaks, one 2-hour journey. The timer counts forward — so you build time studying, instead of waiting for it to end.",
+        cta: "Open Tomato Time",
+        ctaHint: "Free · in your browser · no account needed",
+        ringPhase: "Focus",
+        ringSub: "of 25 min",
+      },
+      philosophy: {
+        eyebrow: "Count forward, not down",
+        title: "Presence beats escape.",
+        text:
+          "Most timers count backwards. That quietly tells your brain: “how soon can this be over?” Tomato Time counts up — 0:00, 0:01, 0:02 — so you track progress, not escape.",
+        quote:
+          "When the clock runs down, you unconsciously wish the task away. When it runs up, you accumulate focus.",
+      },
+      how: {
+        eyebrow: "One journey",
+        title: "How a 2-hour cycle works.",
+        intro:
+          "Press Go once. The tomato walks four tracks — work, break, work, break — until the journey is complete.",
+        f1Title: "Forward timer",
+        f1Text: "0:00 → 25:00 with a filling ring. You see time earned, not time left to endure.",
+        f2Title: "Tomato on the track",
+        f2Text: "Four session lines show where you are in the cycle — visual progress, not just numbers.",
+        f3Title: "Journey complete",
+        f3Text: "Finish all four blocks and celebrate — then open your Studio9 packages refreshed.",
+        f4Title: "Harvest",
+        f4Text: "Tomatoes and journeys add up over days. Study streaks without guilt or rush.",
+      },
+      keyboard: {
+        text: "Press Space to start or pause.",
+      },
+      final: {
+        title: "Ready for a focused session?",
+        text: "Open Tomato Time, start a journey, then return to Medical Science when you are done.",
+        cta: "Open Tomato Time",
+      },
     },
     accountPage: {
       back: "← Medical Science site",

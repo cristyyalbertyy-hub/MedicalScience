@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="tomato-time/tomato-time.css" />
   </head>
   <body data-page="home" data-i18n-title="meta.home.title">
     <a class="skip-link" href="#conteudo" data-i18n="nav.skip">Skip to content</a>
@@ -44,7 +45,7 @@
         <a href="packages/" data-nav="packages" data-i18n="nav.packages">Disciplines</a>
         <a href="precos/" data-nav="precos" data-i18n="nav.precos">How it works + Pricing</a>
         <a href="conta/" data-nav="account" data-i18n="nav.account">My account</a>
-        <a class="nav-tomato" data-tomato-time data-i18n="nav.tomatoTime">Tomato Time</a>
+        <a class="nav-tomato" href="tomato-time/" data-nav="tomatoTime" data-tomato-time data-i18n="nav.tomatoTime">Tomato Time</a>
       </nav>
     </header>
 
@@ -185,6 +186,42 @@
         </div>
       </section>
 
+      <section class="section-shell tomato-time-section" data-i18n-attr="aria-label" data-i18n="home.tomatoTime.aria">
+        <div class="tomato-time-card">
+          <div class="tomato-time-copy">
+            <p class="eyebrow" data-i18n="home.tomatoTime.eyebrow">Free tool · Studio9</p>
+            <h2 data-i18n="home.tomatoTime.title">Tomato Time — study without wishing the clock away.</h2>
+            <p data-i18n="home.tomatoTime.text">
+              A Pomodoro timer that counts forward (0:00 → 25:00), not down. Build focus and presence — then open your Medical Science packages when the journey is done.
+            </p>
+            <div class="tomato-time-actions">
+              <a class="btn btn-primary" href="tomato-time/" data-i18n="home.tomatoTime.cta">Discover Tomato Time →</a>
+              <a class="btn btn-secondary" data-tomato-time-app data-i18n="home.tomatoTime.ctaApp">Open app</a>
+            </div>
+          </div>
+          <div class="tomato-ring-preview" aria-hidden="true">
+            <svg viewBox="0 0 220 220">
+              <circle class="tomato-ring-preview-track" cx="110" cy="110" r="100" fill="none" stroke-width="10" />
+              <circle
+                class="tomato-ring-preview-progress"
+                cx="110"
+                cy="110"
+                r="100"
+                fill="none"
+                stroke-width="10"
+                stroke-dasharray="628.3"
+                stroke-dashoffset="251.3"
+              />
+            </svg>
+            <div class="tomato-ring-preview-center">
+              <span class="tomato-ring-preview-phase">Focus</span>
+              <span class="tomato-ring-preview-time">11:33</span>
+              <span class="tomato-ring-preview-sub">of 25 min</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section-shell study-section">
         <div class="section-heading centered">
           <p class="eyebrow" data-i18n="home.study.eyebrow">The app goes with you</p>
@@ -281,6 +318,7 @@
         <a href="precos/#como-funciona" data-i18n="footer.howItWorks">How it works</a>
         <a href="precos/#precos" data-i18n="footer.pricing">Pricing</a>
         <a href="precos/#faq" data-i18n="footer.faq">FAQ</a>
+        <a href="tomato-time/" data-i18n="footer.tomatoTime">Tomato Time</a>
         <a data-student-progress target="_blank" rel="noopener noreferrer" data-i18n="footer.progress">My progress</a>
         <a href="mailto:hello@studio9.example" data-i18n="footer.contact">Contact</a>
       </nav>
@@ -292,6 +330,6 @@
     <script src="i18n.fr.js"></script>
     <script src="i18n.it.js"></script>
     <script src="i18n.pt.js"></script>
-    <script src="app.js?v=10"></script>
+    <script src="app.js?v=11"></script>
   </body>
 </html>

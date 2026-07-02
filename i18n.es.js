@@ -50,6 +50,7 @@ SITE_LOCALES.es = {
     pricing: "Precios",
     faq: "FAQ",
     progress: "Mi progreso",
+    tomatoTime: "Tomato Time",
     contact: "Contacto",
     copy: "© 2026 Studio9 – aprender sin estrés, de verdad",
     aria: "Enlaces del pie de página",
@@ -114,6 +115,15 @@ SITE_LOCALES.es = {
       text: "Consulta lo que has completado en todas tus disciplinas — vídeos, ejercicios y recuentos de finalización, disciplina por disciplina.",
       cta: "Abrir panel de progreso →",
     },
+    tomatoTime: {
+      aria: "Temporizador de foco Tomato Time",
+      eyebrow: "Herramienta gratuita · Studio9",
+      title: "Tomato Time — estudia sin desear que el reloj acabe.",
+      text:
+        "Un temporizador Pomodoro que cuenta hacia adelante (0:00 → 25:00), no hacia atrás. Construye foco y presencia — y abre tus paquetes Medical Science cuando termine el viaje.",
+      cta: "Descubrir Tomato Time →",
+      ctaApp: "Abrir app",
+    },
     study: {
       eyebrow: "La app te acompaña",
       title: "Estudia donde quieras. De verdad.",
@@ -163,20 +173,47 @@ SITE_LOCALES.es = {
     },
     sectionAria: "Paquetes de aprendizaje listos para usar",
   },
-  tomatoTime: {
-    eyebrow: "Foco · Pomodoro",
-    title: "Tomato Time",
-    lead: "Estudia en bloques de foco con pausas cortas. Un temporizador simple para lecturas largas y repaso.",
-    modeFocus: "Foco",
-    modeShortBreak: "Pausa corta",
-    modeLongBreak: "Pausa larga",
-    start: "Iniciar",
-    pause: "Pausar",
-    reset: "Reiniciar",
-    completed: "Sesiones hoy:",
-    hint: "Consejo: tras cuatro bloques de foco, haz una pausa más larga. El progreso en tus paquetes se sigue por separado en Mi cuenta.",
-    notifyFocus: "Bloque de foco terminado — hora de una pausa.",
-    notifyBreak: "Pausa terminada — listo para volver al foco.",
+  tomatoTimePage: {
+    hero: {
+      eyebrow: "Foco · Pomodoro · Studio9",
+      title: "Tomato Time",
+      lead:
+        "Cuatro bloques de 25 minutos, pausas cortas, un viaje de 2 horas. El temporizador cuenta hacia adelante — acumulas tiempo estudiando, en lugar de esperar a que acabe.",
+      cta: "Abrir Tomato Time",
+      ctaHint: "Gratis · en el navegador · sin cuenta",
+      ringPhase: "Foco",
+      ringSub: "de 25 min",
+    },
+    philosophy: {
+      eyebrow: "Cuenta hacia adelante, no hacia atrás",
+      title: "Presencia, no escape.",
+      text:
+        "La mayoría de temporizadores cuentan hacia atrás. Eso le dice al cerebro, en silencio: «¿cuándo termina esto?» Tomato Time cuenta hacia adelante — 0:00, 0:01, 0:02 — para seguir el progreso, no la fuga.",
+      quote:
+        "Cuando el reloj baja, inconscientemente deseamos que la tarea acabe. Cuando sube, acumulamos foco.",
+    },
+    how: {
+      eyebrow: "Un viaje",
+      title: "Cómo funciona un ciclo de 2 horas.",
+      intro:
+        "Pulsa Go una vez. El tomate recorre cuatro líneas — foco, pausa, foco, pausa — hasta completar el viaje.",
+      f1Title: "Contador progresivo",
+      f1Text: "0:00 → 25:00 con un anillo que se llena. Ves tiempo ganado, no tiempo que falta por aguantar.",
+      f2Title: "Tomate en la línea",
+      f2Text: "Cuatro sesiones muestran dónde estás en el ciclo — progreso visual, no solo números.",
+      f3Title: "Viaje completo",
+      f3Text: "Termina los cuatro bloques y celebra — luego abre tus paquetes Studio9 con energía.",
+      f4Title: "Harvest",
+      f4Text: "Tomates y viajes se suman con el tiempo. Rachas de estudio sin culpa ni prisa.",
+    },
+    keyboard: {
+      text: "Pulsa Espacio para iniciar o pausar.",
+    },
+    final: {
+      title: "¿Listo para una sesión enfocada?",
+      text: "Abre Tomato Time, inicia un viaje y vuelve a Medical Science cuando termines.",
+      cta: "Abrir Tomato Time",
+    },
   },
   accountPage: {
     back: "← Sitio Medical Science",
