@@ -1,5 +1,7 @@
 /** Student progress dashboard — edit URL here only. */
 const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
+/** Tomato Time Pomodoro app — edit URL here only. */
+const TOMATO_TIME_URL = "https://tomato-time-rho.vercel.app/";
 
 const CURRENCY_STORAGE_KEY = "studio9-medical-currency-v2";
 const EUR_USD_FALLBACK = 1.08;
@@ -253,6 +255,18 @@ function renderPackages(root) {
   root.innerHTML = ALL_PACKAGES.map((pkg) => renderPackageCard(pkg, { compact })).join("");
 }
 
+function initTomatoTimeLinks() {
+  const navToggle = document.querySelector(".nav-toggle");
+
+  document.querySelectorAll("[data-tomato-time]").forEach((link) => {
+    link.href = TOMATO_TIME_URL;
+    link.addEventListener("click", () => {
+      document.body.classList.remove("nav-open");
+      navToggle?.setAttribute("aria-expanded", "false");
+    });
+  });
+}
+
 function initStudentProgressLinks() {
   const navToggle = document.querySelector(".nav-toggle");
 
@@ -394,12 +408,14 @@ function init() {
     document.addEventListener("site:langchange", () => {
       document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
       initStudentProgressLinks();
+      initTomatoTimeLinks();
       renderPlanPrices();
     });
   }
 
   document.querySelectorAll("[data-packages-root]").forEach(renderPackages);
   initStudentProgressLinks();
+  initTomatoTimeLinks();
   initNavigation();
   initPricingCurrency();
 }
