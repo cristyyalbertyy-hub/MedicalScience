@@ -64,6 +64,7 @@ SITE_LOCALES.it = {
     loginSoonHint: "L'accesso tramite account è in attivazione per questo modulo.",
     purchasable: "Acquisto disponibile",
     openViaAccount: "Apri via account",
+    openAccess: "Accesso libero",
   },
   screenshots: {
     hero: { alt: "App Studio9 con una breve lezione video di scienze mediche" },

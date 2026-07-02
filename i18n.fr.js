@@ -64,6 +64,7 @@ SITE_LOCALES.fr = {
     loginSoonHint: "La connexion par compte est en cours d'activation pour ce module.",
     purchasable: "Achat disponible",
     openViaAccount: "Ouvrir via le compte",
+    openAccess: "Accès libre",
   },
   screenshots: {
     hero: { alt: "App Studio9 affichant une courte leçon vidéo en sciences médicales" },

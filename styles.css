@@ -993,23 +993,48 @@ p {
   box-shadow: 0 14px 38px rgba(31, 78, 107, 0.08);
 }
 
-.package-card.is-live.is-login-pending {
-  border-color: rgba(217, 122, 62, 0.35);
+.package-card.is-live.is-pilot-purchase {
+  border-color: rgba(217, 122, 62, 0.45);
+  box-shadow: 0 14px 38px rgba(217, 122, 62, 0.12);
 }
 
-.package-card.is-live.is-purchasable {
-  border-color: rgba(31, 78, 107, 0.45);
-  box-shadow: 0 14px 38px rgba(31, 78, 107, 0.12);
+.package-card.is-live.is-open-access {
+  border-color: rgba(122, 155, 122, 0.55);
+  box-shadow: 0 14px 38px rgba(122, 155, 122, 0.12);
 }
 
-.package-card.is-live.is-login-pending .package-status {
+.package-card.is-live.is-pilot-purchase .package-status {
   background: rgba(217, 122, 62, 0.14);
   color: #9a4f24;
 }
 
-.package-card.is-live.is-purchasable .package-status {
-  background: rgba(31, 78, 107, 0.12);
-  color: var(--primary);
+.package-card.is-live.is-open-access .package-status {
+  background: var(--sage-soft);
+  color: #3d6b3d;
+}
+
+.btn-pilot-purchase {
+  background: linear-gradient(180deg, #e8894a, #d97a3e);
+  border-color: rgba(217, 122, 62, 0.5);
+  color: #fff;
+  box-shadow: 0 14px 26px rgba(217, 122, 62, 0.26);
+}
+
+.btn-pilot-purchase:hover {
+  background: linear-gradient(180deg, #ef9456, #e08045);
+  color: #fff;
+}
+
+.btn-open-access {
+  background: linear-gradient(180deg, #8fb08f, var(--sage));
+  border-color: rgba(122, 155, 122, 0.55);
+  color: #fff;
+  box-shadow: 0 14px 26px rgba(122, 155, 122, 0.24);
+}
+
+.btn-open-access:hover {
+  background: linear-gradient(180deg, #9cbc9c, #6f916f);
+  color: #fff;
 }
 
 .pricing-pilot-notice {

@@ -64,6 +64,7 @@ SITE_LOCALES.es = {
     loginSoonHint: "El acceso por cuenta se está activando en este módulo.",
     purchasable: "Compra disponible",
     openViaAccount: "Abrir vía cuenta",
+    openAccess: "Acceso libre",
   },
   screenshots: {
     hero: { alt: "App Studio9 mostrando una lección en vídeo corta de ciencias médicas" },

@@ -235,10 +235,6 @@ function isPurchasablePackage(id, catalog) {
   return (catalog.purchasablePackageIds ?? []).includes(id);
 }
 
-function isLoginReadyPackage(id, catalog) {
-  return catalog.packageMeta?.[id]?.loginReady === true;
-}
-
 function isFreePackage(id, catalog) {
   return (catalog.freePackageIds ?? []).includes(id);
 }
@@ -259,36 +255,29 @@ function packageText(key, fallback = "") {
 function renderPackageCard(pkg, { compact = false, catalog = {} } = {}) {
   const isSoon = pkg.status !== "live" || !pkg.url;
   const free = isFreePackage(pkg.id, catalog);
-  const loginReady = isLoginReadyPackage(pkg.id, catalog);
   const purchasable = isPurchasablePackage(pkg.id, catalog);
   const isLive = !isSoon;
 
   let statusClass = "is-soon";
   let statusLabel = packageText("packagesUi.comingSoon");
+  let action;
 
-  if (isLive && (loginReady || free)) {
-    statusClass = purchasable ? "is-live is-purchasable" : "is-live";
-    statusLabel = purchasable
-      ? packageText("packagesUi.purchasable")
-      : packageText("packagesUi.live");
-  } else if (isLive) {
-    statusClass = "is-live is-login-pending";
-    statusLabel = packageText("packagesUi.loginSoon");
+  if (isSoon) {
+    action = `<span class="package-soon">${escapeHtml(packageText("packagesUi.launchingSoon"))}</span>`;
+  } else if (purchasable) {
+    statusClass = "is-live is-pilot-purchase";
+    statusLabel = packageText("packagesUi.purchasable");
+    action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""}" href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
+  } else {
+    statusClass = "is-live is-open-access";
+    statusLabel = free
+      ? packageText("packagesUi.live")
+      : packageText("packagesUi.openAccess");
+    action = `<a class="btn btn-open-access${compact ? " btn-secondary" : ""}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`;
   }
 
   const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
   const description = packageText(`pkg.${pkg.id}.description`, pkg.description);
-
-  let action;
-  if (isSoon) {
-    action = `<span class="package-soon">${escapeHtml(packageText("packagesUi.launchingSoon"))}</span>`;
-  } else if (free) {
-    action = `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`;
-  } else if (loginReady) {
-    action = `<a class="btn ${compact ? "btn-secondary" : "btn-primary"}" href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
-  } else {
-    action = `<span class="package-soon">${escapeHtml(packageText("packagesUi.loginSoonHint"))}</span>`;
-  }
 
   return `
     <article class="package-card ${statusClass}${compact ? " is-compact" : ""}" id="package-${escapeHtml(pkg.id)}">

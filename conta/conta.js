@@ -274,9 +274,9 @@ function renderPackages(catalog) {
     if (meta.url) {
       const openBtn = document.createElement("button");
       openBtn.type = "button";
-      openBtn.className = "btn btn-primary";
+      openBtn.className = meta.loginReady ? "btn btn-pilot-purchase" : "btn btn-open-access";
       openBtn.textContent = t("accountPage.open");
-      openBtn.addEventListener("click", () => void openPackage(meta.url, openBtn));
+      openBtn.addEventListener("click", () => void openPackage(id, meta, openBtn));
       actions.appendChild(openBtn);
     } else {
       actions.innerHTML = `<span class="acesso-muted">${t("accountPage.soon")}</span>`;
@@ -287,9 +287,14 @@ function renderPackages(catalog) {
   }
 }
 
-async function openPackage(appUrl, button) {
+async function openPackage(packageId, meta, button) {
   if (!auth?.currentUser) {
     setStatusKey("accountPage.signInFirst", {}, "error");
+    return;
+  }
+
+  if (!meta.loginReady && meta.url) {
+    window.open(meta.url, "_blank", "noopener,noreferrer");
     return;
   }
 
@@ -305,7 +310,7 @@ async function openPackage(appUrl, button) {
     const data = await res.json();
     if (!res.ok) throw new Error(data.error || t("accountPage.openError"));
 
-    const target = new URL(appUrl, window.location.origin);
+    const target = new URL(meta.url, window.location.origin);
     target.searchParams.set("studio9_handoff", data.custom_token);
     window.location.href = target.toString();
   } catch (err) {

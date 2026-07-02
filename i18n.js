@@ -69,6 +69,7 @@ const SITE_LOCALES = {
       loginSoonHint: "Account login is being rolled out for this module.",
       purchasable: "Available to buy",
       openViaAccount: "Open via account",
+      openAccess: "Free access",
     },
     screenshots: {
       hero: { alt: "Studio9 app showing a short medical science video lesson" },
