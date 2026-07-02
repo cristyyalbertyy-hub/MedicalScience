@@ -289,14 +289,14 @@ p {
 
 .screenshot-slot--hero {
   box-shadow: var(--shadow);
-  aspect-ratio: 2106 / 1528;
+  aspect-ratio: 1024 / 522;
   max-height: min(52vh, 480px);
 }
 
 .screenshot-slot--hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center center;
 }
 

@@ -92,7 +92,7 @@ SITE_LOCALES.it = {
     priceFree: "Gratis",
   },
   screenshots: {
-    hero: { alt: "Studente che ascolta un podcast di scienze mediche sull'autobus" },
+    hero: { alt: "Panoramica del corso Medical Statistics nell'app Studio9 — capitoli, temi e infografica del programma" },
     videos: { alt: "App mobile con una lezione video di 5–10 minuti" },
     podcasts: { alt: "Studente che ascolta un podcast di scienze mediche in movimento" },
     exercises: { alt: "Esercizio interattivo con feedback immediato nell'app" },
@@ -108,7 +108,7 @@ SITE_LOCALES.it = {
       lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
       ctaDisciplines: "Vedi tutte le discipline",
       ctaHow: "Scopri come funziona",
-      mediaAria: "Studente che studia sull'autobus",
+      mediaAria: "App Studio9 con panoramica di un corso, capitoli e programma",
     },
     audience: {
       eyebrow: "Niente drammi accademici",

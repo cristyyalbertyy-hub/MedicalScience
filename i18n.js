@@ -97,7 +97,7 @@ const SITE_LOCALES = {
       priceFree: "Free",
     },
     screenshots: {
-      hero: { alt: "Student listening to a medical science podcast on the bus" },
+      hero: { alt: "Studio9 app course overview for Medical Statistics with chapters and syllabus infographic" },
       videos: { alt: "Mobile app with a 5–10 minute video lesson" },
       podcasts: { alt: "Student listening to a medical science podcast on the go" },
       exercises: { alt: "Interactive exercise with instant feedback in the app" },
@@ -113,7 +113,7 @@ const SITE_LOCALES = {
         lead: "Study anatomy, physiology, genetics and much more. In short videos, podcasts for the bus, and interactive exercises. All inside the Studio9 app.",
         ctaDisciplines: "Browse all disciplines",
         ctaHow: "See how it works",
-        mediaAria: "Student studying on the bus",
+        mediaAria: "Studio9 app showing a course overview with chapters and syllabus",
       },
       audience: {
         eyebrow: "No academic drama",

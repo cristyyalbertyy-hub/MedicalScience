@@ -92,7 +92,7 @@ SITE_LOCALES.fr = {
     priceFree: "Gratuit",
   },
   screenshots: {
-    hero: { alt: "Étudiant écoutant un podcast de sciences médicales dans le bus" },
+    hero: { alt: "Vue d'ensemble du cours Medical Statistics dans l'app Studio9 — chapitres, thèmes et infographie du programme" },
     videos: { alt: "Application mobile avec une leçon vidéo de 5 à 10 minutes" },
     podcasts: { alt: "Étudiant écoutant un podcast de sciences médicales en déplacement" },
     exercises: { alt: "Exercice interactif avec retour instantané dans l'app" },
@@ -108,7 +108,7 @@ SITE_LOCALES.fr = {
       lead: "Étudiez l'anatomie, la physiologie, la génétique et bien plus encore. En courtes vidéos, podcasts pour le bus et exercices interactifs. Le tout dans l'app Studio9.",
       ctaDisciplines: "Voir toutes les disciplines",
       ctaHow: "Voir comment ça marche",
-      mediaAria: "Étudiant révisant dans le bus",
+      mediaAria: "App Studio9 affichant la vue d'ensemble d'un cours, les chapitres et le programme",
     },
     audience: {
       eyebrow: "Sans drame académique",

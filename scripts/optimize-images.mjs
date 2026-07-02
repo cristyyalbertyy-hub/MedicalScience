@@ -7,8 +7,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const SOURCE = path.join(ROOT, "assets", "source");
 const PUBLIC = path.join(ROOT, "public");
-const WIDTHS = [640, 960, 1280];
-const SOURCES = ["bus", "video", "podcast", "infographic", "questions"];
+const WIDTHS = [640, 960, 1024, 1280];
+const SOURCES = ["app", "video", "podcast", "infographic", "questions"];
 
 async function optimizeOne(name) {
   const input = path.join(SOURCE, `${name}.png`);

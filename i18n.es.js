@@ -92,7 +92,7 @@ SITE_LOCALES.es = {
     priceFree: "Gratis",
   },
   screenshots: {
-    hero: { alt: "Estudiante escuchando un podcast de ciencias médicas en el autobús" },
+    hero: { alt: "Vista general del curso Medical Statistics en la app Studio9 — capítulos, temas e infografía del programa" },
     videos: { alt: "App móvil con una lección en vídeo de 5–10 minutos" },
     podcasts: { alt: "Estudiante escuchando un podcast de ciencias médicas en movimiento" },
     exercises: { alt: "Ejercicio interactivo con feedback instantáneo en la app" },
@@ -108,7 +108,7 @@ SITE_LOCALES.es = {
       lead: "Estudia anatomía, fisiología, genética y mucho más. En vídeos cortos, podcasts para el autobús y ejercicios interactivos. Todo dentro de la app Studio9.",
       ctaDisciplines: "Ver todas las disciplinas",
       ctaHow: "Ver cómo funciona",
-      mediaAria: "Estudiante estudiando en el autobús",
+      mediaAria: "App Studio9 con vista general de un curso, capítulos y resumen del programa",
     },
     audience: {
       eyebrow: "Sin drama académico",
