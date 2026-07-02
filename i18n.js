@@ -84,7 +84,7 @@ const SITE_LOCALES = {
       },
     },
     screenshots: {
-      hero: { alt: "Studio9 app showing a short medical science video lesson" },
+      hero: { alt: "Student with headphones studying medical science at home" },
       videos: { alt: "Mobile app with a 5–10 minute video lesson" },
       podcasts: { alt: "Student listening to a medical science podcast outdoors in the park" },
       exercises: { alt: "Interactive exercise with instant feedback in the app" },
@@ -100,7 +100,7 @@ const SITE_LOCALES = {
         lead: "Study anatomy, physiology, genetics and much more. In short videos, podcasts for the bus, and interactive exercises. All inside the Studio9 app.",
         ctaDisciplines: "Browse all disciplines",
         ctaHow: "See how it works",
-        mediaAria: "App preview",
+        mediaAria: "Student studying at home",
       },
       audience: {
         eyebrow: "No academic drama",

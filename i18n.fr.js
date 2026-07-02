@@ -79,7 +79,7 @@ SITE_LOCALES.fr = {
     },
   },
   screenshots: {
-    hero: { alt: "App Studio9 affichant une courte leçon vidéo en sciences médicales" },
+    hero: { alt: "Étudiant avec un casque étudiant les sciences médicales à domicile" },
     videos: { alt: "Application mobile avec une leçon vidéo de 5 à 10 minutes" },
     podcasts: { alt: "Étudiant écoutant un podcast de sciences médicales en plein air dans le parc" },
     exercises: { alt: "Exercice interactif avec retour instantané dans l'app" },
@@ -95,7 +95,7 @@ SITE_LOCALES.fr = {
       lead: "Étudiez l'anatomie, la physiologie, la génétique et bien plus encore. En courtes vidéos, podcasts pour le bus et exercices interactifs. Le tout dans l'app Studio9.",
       ctaDisciplines: "Voir toutes les disciplines",
       ctaHow: "Voir comment ça marche",
-      mediaAria: "Aperçu de l'app",
+      mediaAria: "Étudiant révisant à domicile",
     },
     audience: {
       eyebrow: "Sans drame académique",

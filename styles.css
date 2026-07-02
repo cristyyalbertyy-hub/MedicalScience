@@ -285,6 +285,15 @@ p {
 
 .screenshot-slot--hero {
   box-shadow: var(--shadow);
+  aspect-ratio: 819 / 1024;
+  max-height: min(72vh, 640px);
+}
+
+.screenshot-slot--hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .screenshot-slot--wide {

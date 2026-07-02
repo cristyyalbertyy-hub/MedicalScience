@@ -77,7 +77,7 @@ SITE_LOCALES.pt = {
     },
   },
   screenshots: {
-    hero: { alt: "App Studio9 a mostrar uma lição em vídeo curta de ciências médicas" },
+    hero: { alt: "Estudante com headphones a estudar ciências médicas em casa" },
     videos: { alt: "App móvel com uma lição em vídeo de 5–10 minutos" },
     podcasts: { alt: "Estudante a ouvir um podcast de ciências médicas ao ar livre no parque" },
     exercises: { alt: "Exercício interativo com feedback instantâneo na app" },
@@ -93,7 +93,7 @@ SITE_LOCALES.pt = {
       lead: "Estuda anatomia, fisiologia, genética e muito mais. Em vídeos curtos, podcasts para o autocarro e exercícios interativos. Tudo dentro da app Studio9.",
       ctaDisciplines: "Ver todas as disciplinas",
       ctaHow: "Ver como funciona",
-      mediaAria: "Pré-visualização da app",
+      mediaAria: "Estudante a estudar em casa",
     },
     audience: {
       eyebrow: "Sem drama académico",
