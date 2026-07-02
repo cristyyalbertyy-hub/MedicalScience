@@ -58,6 +58,8 @@ SITE_LOCALES.es = {
     tiktok: "TikTok",
     facebook: "Facebook",
     instagram: "Instagram",
+    aiNote:
+      "Contenido, diseño y código desarrollados con apoyo de IA bajo dirección académica humana.",
   },
   packagesUi: {
     live: "Disponible",
@@ -148,7 +150,13 @@ SITE_LOCALES.es = {
       t2Name: "Madre de estudiante",
       t2Role: "Familia · próximamente",
       t3Name: "Estudiante",
-      t3Role: "Preuniversitario · próximamente",
+      t3Role: "Universidad · próximamente",
+    },
+    aiCredit: {
+      aria: "Reconocimiento de la colaboración con IA",
+      eyebrow: "Experiencia humana + IA",
+      title: "Transparencia sobre cómo se construyó.",
+      text: "Studio9 Medical Science se apoya en décadas de enseñanza universitaria — y en un uso reflexivo de la inteligencia artificial. La IA ayudó a desarrollar el contenido del curso, diseñar este sitio web y programar la plataforma. Lo decimos abiertamente y con orgullo: cuando los expertos humanos lideran y la IA apoya, el aprendizaje puede ser más rico, más claro y más accesible para estudiantes de todo el mundo.",
     },
     progress: {
       aria: "Progreso del estudiante",

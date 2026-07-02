@@ -63,6 +63,8 @@ const SITE_LOCALES = {
       tiktok: "TikTok",
       facebook: "Facebook",
       instagram: "Instagram",
+      aiNote:
+        "Content, design, and code developed with AI support under human academic direction.",
     },
     packagesUi: {
       live: "Live",
@@ -154,7 +156,13 @@ const SITE_LOCALES = {
         t2Name: "Parent",
         t2Role: "Family voice · coming soon",
         t3Name: "Student",
-        t3Role: "Pre-university · coming soon",
+        t3Role: "University · coming soon",
+      },
+      aiCredit: {
+        aria: "AI partnership acknowledgment",
+        eyebrow: "Human expertise + AI",
+        title: "Open about how this was built.",
+        text: "Studio9 Medical Science rests on decades of university teaching — and on thoughtful use of artificial intelligence. AI helped develop the course content, design this website, and build the code that powers it. We say that openly and proudly: when human experts lead and AI assists, learning can be richer, clearer, and more accessible for students everywhere.",
       },
       progress: {
         aria: "Student progress",
