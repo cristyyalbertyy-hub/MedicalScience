@@ -59,6 +59,10 @@ const SITE_LOCALES = {
       contact: "Contact",
       copy: "© 2026 Studio9 – learning without stress, really",
       aria: "Footer links",
+      socialAria: "Social media",
+      tiktok: "TikTok",
+      facebook: "Facebook",
+      instagram: "Instagram",
     },
     packagesUi: {
       live: "Live",

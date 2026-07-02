@@ -54,6 +54,10 @@ SITE_LOCALES.fr = {
     contact: "Contact",
     copy: "© 2026 Studio9 – apprendre sans stress, vraiment",
     aria: "Liens du pied de page",
+    socialAria: "Réseaux sociaux",
+    tiktok: "TikTok",
+    facebook: "Facebook",
+    instagram: "Instagram",
   },
   packagesUi: {
     live: "En ligne",

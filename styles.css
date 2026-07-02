@@ -854,6 +854,27 @@ p {
   gap: 0.7rem 1rem;
 }
 
+.footer-social {
+  gap: 0.55rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.42rem 0.85rem;
+  border: 1px solid rgba(31, 78, 107, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.52);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  background: var(--primary-soft);
+  border-color: rgba(31, 78, 107, 0.28);
+}
+
 .site-footer a {
   color: var(--primary);
   font-weight: 700;

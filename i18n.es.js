@@ -54,6 +54,10 @@ SITE_LOCALES.es = {
     contact: "Contacto",
     copy: "© 2026 Studio9 – aprender sin estrés, de verdad",
     aria: "Enlaces del pie de página",
+    socialAria: "Redes sociales",
+    tiktok: "TikTok",
+    facebook: "Facebook",
+    instagram: "Instagram",
   },
   packagesUi: {
     live: "Disponible",
