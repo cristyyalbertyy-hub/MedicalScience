@@ -416,10 +416,36 @@ function initLanguage() {
   });
 }
 
+async function openProgressDashboard(event) {
+  event?.preventDefault();
+  const targetUrl = new URL(STUDENT_PROGRESS_URL);
+
+  if (!auth?.currentUser) {
+    window.location.href = targetUrl.toString();
+    return;
+  }
+
+  try {
+    const idToken = await auth.currentUser.getIdToken();
+    const res = await fetch("/api/create-custom-token", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id_token: idToken }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || t("accountPage.openError"));
+    targetUrl.searchParams.set("studio9_handoff", data.custom_token);
+    window.location.href = targetUrl.toString();
+  } catch {
+    window.location.href = targetUrl.toString();
+  }
+}
+
 async function bootstrap() {
   initLanguage();
   document.querySelectorAll("[data-student-progress]").forEach((link) => {
     link.href = STUDENT_PROGRESS_URL;
+    link.addEventListener("click", (event) => void openProgressDashboard(event));
   });
   authPanel.hidden = false;
   if (authLoading) authLoading.hidden = false;

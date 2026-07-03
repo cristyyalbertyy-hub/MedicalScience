@@ -17,6 +17,20 @@ service cloud.firestore {
         && ent.data.package_id == packageId;
     }
 
+    function validWatchCount() {
+      return request.resource.data.watch_count == null
+        || (request.resource.data.watch_count is int
+            && request.resource.data.watch_count >= 0
+            && request.resource.data.watch_count <= 3);
+    }
+
+    function validManualLevel() {
+      return request.resource.data.manual_level == null
+        || (request.resource.data.manual_level is int
+            && request.resource.data.manual_level >= 0
+            && request.resource.data.manual_level <= 3);
+    }
+
     match /entitlements/{docId} {
       allow read: if isSignedIn()
         && resource.data.user_id == request.auth.uid;
@@ -34,7 +48,9 @@ service cloud.firestore {
         && request.resource.data.item_key is string
         && request.resource.data.resource is string
         && request.resource.data.status in ['started', 'completed']
-        && hasActiveEntitlement(request.resource.data.package_id);
+        && hasActiveEntitlement(request.resource.data.package_id)
+        && validWatchCount()
+        && validManualLevel();
 
       allow delete: if false;
     }
