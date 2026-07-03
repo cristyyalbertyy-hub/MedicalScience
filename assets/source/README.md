@@ -4,7 +4,7 @@ High-resolution PNG sources for the homepage hero and study cards. These files a
 
 ## Regenerate after editing a master
 
-1. Replace the PNG here (same basename: `app`, `video`, `podcast`, `infographic`, `questions`).
+1. Replace the source here (`hero.jpeg`, or `video.png`, etc.).
 2. Run:
 
 ```bash

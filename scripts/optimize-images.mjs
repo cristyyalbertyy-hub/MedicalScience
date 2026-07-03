@@ -8,21 +8,33 @@ const ROOT = path.join(__dirname, "..");
 const SOURCE = path.join(ROOT, "assets", "source");
 const PUBLIC = path.join(ROOT, "public");
 const WIDTHS = [640, 960, 1024, 1280];
-const SOURCES = ["app", "video", "podcast", "infographic", "questions"];
+const SOURCE_NAMES = ["hero", "video", "podcast", "infographic", "questions"];
+const SOURCE_EXTS = [".png", ".jpeg", ".jpg"];
+
+function findSourcePath(name) {
+  for (const ext of SOURCE_EXTS) {
+    const candidate = path.join(SOURCE, `${name}${ext}`);
+    if (existsSync(candidate)) return candidate;
+  }
+  return null;
+}
 
 async function optimizeOne(name) {
-  const input = path.join(SOURCE, `${name}.png`);
-  if (!existsSync(input)) {
-    console.warn(`skip ${name}: ${input} not found`);
+  const input = findSourcePath(name);
+  if (!input) {
+    console.warn(`skip ${name}: no source file in ${SOURCE}`);
     return null;
   }
 
   const meta = await sharp(input).metadata();
+  const maxWidth = Math.min(meta.width, 1280);
+  const targetWidths = [...new Set([...WIDTHS.filter((w) => w <= maxWidth), maxWidth])].sort(
+    (a, b) => a - b,
+  );
+
   const sizes = [];
 
-  for (const width of WIDTHS) {
-    if (width > meta.width) continue;
-
+  for (const width of targetWidths) {
     const resized = sharp(input).resize(width, null, { withoutEnlargement: true });
     const webpPath = path.join(PUBLIC, `${name}-${width}.webp`);
     const avifPath = path.join(PUBLIC, `${name}-${width}.avif`);
@@ -50,7 +62,7 @@ console.log(`Sources: ${SOURCE}`);
 console.log(`Output:  ${PUBLIC}\n`);
 
 const results = [];
-for (const name of SOURCES) {
+for (const name of SOURCE_NAMES) {
   console.log(name);
   const result = await optimizeOne(name);
   if (result) results.push(result);
@@ -58,7 +70,7 @@ for (const name of SOURCES) {
 }
 
 if (!results.length) {
-  console.error("No images processed. Add PNG masters to assets/source/ and retry.");
+  console.error("No images processed. Add source masters to assets/source/ and retry.");
   process.exit(1);
 }
 
