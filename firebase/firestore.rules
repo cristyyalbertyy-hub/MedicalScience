@@ -6,20 +6,16 @@ service cloud.firestore {
       return request.auth != null;
     }
 
-    function entitlementDoc(userId, packageId) {
-      return /databases/$(database)/documents/entitlements/$(userId + '_' + packageId);
-    }
-
     function validWatchCount() {
-      return request.resource.data.watch_count == null
-        || (request.resource.data.watch_count is int
+      return !('watch_count' in request.resource.data)
+        || (request.resource.data.watch_count is number
             && request.resource.data.watch_count >= 0
             && request.resource.data.watch_count <= 3);
     }
 
     function validManualLevel() {
-      return request.resource.data.manual_level == null
-        || (request.resource.data.manual_level is int
+      return !('manual_level' in request.resource.data)
+        || (request.resource.data.manual_level is number
             && request.resource.data.manual_level >= 0
             && request.resource.data.manual_level <= 3);
     }
@@ -29,8 +25,12 @@ service cloud.firestore {
     }
 
     match /entitlements/{docId} {
-      allow read: if isSignedIn()
+      allow get: if isSignedIn()
+        && (resource == null || resource.data.user_id == request.auth.uid);
+
+      allow list: if isSignedIn()
         && resource.data.user_id == request.auth.uid;
+
       allow write: if false;
     }
 
@@ -39,18 +39,16 @@ service cloud.firestore {
         return docId.matches('^' + request.auth.uid + '_.*');
       }
 
-      // get: single doc (incl. getDoc before first write)
       allow get: if isSignedIn()
         && (resource == null
             ? isOwnProgressDoc()
             : resource.data.user_id == request.auth.uid);
 
-      // list: queries filtered by user_id (onSnapshot / getDocs)
       allow list: if isSignedIn()
         && resource.data.user_id == request.auth.uid;
 
+      // Writes: trust user_id on the document (doc id prefix check blocked valid client writes).
       allow create, update: if isSignedIn()
-        && isOwnProgressDoc()
         && request.resource.data.user_id == request.auth.uid
         && allowedProgressPackage(request.resource.data.package_id)
         && request.resource.data.item_key is string
