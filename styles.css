@@ -141,8 +141,11 @@ p {
 
 .brand img,
 .footer-brand img {
-  border-radius: 12px;
-  object-fit: cover;
+  height: 2.75rem;
+  width: auto;
+  max-width: min(11rem, 42vw);
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .brand span {
