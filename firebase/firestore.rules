@@ -10,13 +10,6 @@ service cloud.firestore {
       return /databases/$(database)/documents/entitlements/$(userId + '_' + packageId);
     }
 
-    function hasActiveEntitlement(packageId) {
-      let ent = get(entitlementDoc(request.auth.uid, packageId));
-      return ent != null
-        && ent.data.user_id == request.auth.uid
-        && ent.data.package_id == packageId;
-    }
-
     function validWatchCount() {
       return request.resource.data.watch_count == null
         || (request.resource.data.watch_count is int
@@ -31,6 +24,10 @@ service cloud.firestore {
             && request.resource.data.manual_level <= 3);
     }
 
+    function allowedProgressPackage(packageId) {
+      return packageId in ['medical-biology', 'genetics'];
+    }
+
     match /entitlements/{docId} {
       allow read: if isSignedIn()
         && resource.data.user_id == request.auth.uid;
@@ -42,28 +39,24 @@ service cloud.firestore {
         return docId.matches('^' + request.auth.uid + '_.*');
       }
 
-      // getDoc on a not-yet-created doc has resource == null; must allow before first watch.
+      // Progress is scoped to the signed-in user. App access still requires entitlement client-side.
       allow get: if isSignedIn()
         && isOwnProgressDoc()
         && (
           resource == null
-          || (
-            resource.data.user_id == request.auth.uid
-            && hasActiveEntitlement(resource.data.package_id)
-          )
+          || resource.data.user_id == request.auth.uid
         );
 
       allow list: if isSignedIn()
-        && resource.data.user_id == request.auth.uid
-        && hasActiveEntitlement(resource.data.package_id);
+        && resource.data.user_id == request.auth.uid;
 
       allow create, update: if isSignedIn()
+        && isOwnProgressDoc()
         && request.resource.data.user_id == request.auth.uid
-        && request.resource.data.package_id is string
+        && allowedProgressPackage(request.resource.data.package_id)
         && request.resource.data.item_key is string
         && request.resource.data.resource is string
         && request.resource.data.status in ['started', 'completed']
-        && hasActiveEntitlement(request.resource.data.package_id)
         && validWatchCount()
         && validManualLevel();
 

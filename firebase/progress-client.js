@@ -55,8 +55,17 @@ export async function recordWatchComplete(db, userId, packageId, itemKey, resour
   const { doc, getDoc, setDoc, serverTimestamp } = await import("firebase/firestore");
   const id = progressDocId(userId, packageId, itemKey, resource);
   const ref = doc(db, "progress", id);
-  const snap = await getDoc(ref);
-  const current = snap.exists() ? levelFromWatchCount(snap.data().watch_count) : 0;
+
+  let current = 0;
+  try {
+    const snap = await getDoc(ref);
+    if (snap.exists()) {
+      current = levelFromWatchCount(snap.data().watch_count);
+    }
+  } catch {
+    current = 0;
+  }
+
   const next = Math.min(MAX_PROGRESS_LEVEL, current + 1);
 
   await setDoc(
