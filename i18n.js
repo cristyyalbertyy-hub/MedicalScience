@@ -179,8 +179,8 @@ const SITE_LOCALES = {
       progress: {
         aria: "Student progress",
         eyebrow: "Already enrolled?",
-        title: "Track your progress.",
-        text: "See what you have completed across all your disciplines — videos, exercises and completion counts, discipline by discipline.",
+        title: "Progress dashboard",
+        text: "One place to follow your study across every package — videos, podcasts, infographics and quizzes, updated as you learn. Available from My account after purchase.",
         cta: "Open progress dashboard →",
       },
       tomatoTime: {

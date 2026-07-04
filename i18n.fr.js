@@ -173,8 +173,8 @@ SITE_LOCALES.fr = {
     progress: {
       aria: "Progression de l'étudiant",
       eyebrow: "Déjà inscrit ?",
-      title: "Suivez votre progression.",
-      text: "Consultez ce que vous avez terminé dans toutes vos disciplines — vidéos, exercices et compteurs de complétion, discipline par discipline.",
+      title: "Tableau de bord de progression",
+      text: "Un seul endroit pour suivre votre étude dans chaque forfait — vidéos, podcasts, infographies et questionnaires, mis à jour au fil de votre apprentissage. Disponible depuis Mon compte après l'achat.",
       cta: "Ouvrir le tableau de bord →",
     },
     tomatoTime: {

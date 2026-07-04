@@ -172,8 +172,8 @@ SITE_LOCALES.pt = {
     progress: {
       aria: "Progresso do estudante",
       eyebrow: "Já estás inscrito?",
-      title: "Acompanha o teu progresso.",
-      text: "Consulta o que completaste em todas as tuas disciplinas — vídeos, exercícios e contagens de conclusão, disciplina a disciplina.",
+      title: "Painel de progresso",
+      text: "Um só sítio para acompanhar o teu estudo em cada pacote — vídeos, podcasts, infográficos e questionários, actualizados à medida que aprendes. Disponível em A minha conta após a compra.",
       cta: "Abrir painel de progresso →",
     },
     tomatoTime: {

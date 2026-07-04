@@ -173,8 +173,8 @@ SITE_LOCALES.es = {
     progress: {
       aria: "Progreso del estudiante",
       eyebrow: "¿Ya estás matriculado?",
-      title: "Sigue tu progreso.",
-      text: "Consulta lo que has completado en todas tus disciplinas — vídeos, ejercicios y recuentos de finalización, disciplina por disciplina.",
+      title: "Panel de progreso",
+      text: "Un solo lugar para seguir tu estudio en cada paquete — vídeos, podcasts, infografías y cuestionarios, actualizados mientras aprendes. Disponible en Mi cuenta tras la compra.",
       cta: "Abrir panel de progreso →",
     },
     tomatoTime: {

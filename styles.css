@@ -347,6 +347,12 @@ p {
   box-shadow: var(--shadow);
 }
 
+.student-progress-heading {
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-bottom: 1.75rem;
+}
+
 .student-progress-card--photo-only {
   justify-items: center;
   max-width: 36rem;

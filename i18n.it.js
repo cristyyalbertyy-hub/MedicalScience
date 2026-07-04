@@ -173,8 +173,8 @@ SITE_LOCALES.it = {
     progress: {
       aria: "Progressi dello studente",
       eyebrow: "Sei già iscritto?",
-      title: "Tieni traccia dei tuoi progressi.",
-      text: "Consulta cosa hai completato in tutte le tue discipline — video, esercizi e conteggi di completamento, materia per materia.",
+      title: "Dashboard dei progressi",
+      text: "Un unico posto per seguire lo studio in ogni pacchetto — video, podcast, infografiche e questionari, aggiornati mentre impari. Disponibile da Il mio account dopo l'acquisto.",
       cta: "Apri dashboard progressi →",
     },
     tomatoTime: {
