@@ -39,9 +39,15 @@ service cloud.firestore {
         return docId.matches('^' + request.auth.uid + '_.*');
       }
 
-      allow read: if isSignedIn()
-        && isOwnProgressDoc()
-        && (resource == null || resource.data.user_id == request.auth.uid);
+      // get: single doc (incl. getDoc before first write)
+      allow get: if isSignedIn()
+        && (resource == null
+            ? isOwnProgressDoc()
+            : resource.data.user_id == request.auth.uid);
+
+      // list: queries filtered by user_id (onSnapshot / getDocs)
+      allow list: if isSignedIn()
+        && resource.data.user_id == request.auth.uid;
 
       allow create, update: if isSignedIn()
         && isOwnProgressDoc()
