@@ -4,6 +4,7 @@ const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 const TOMATO_TIME_URL = "https://tomato-time-rho.vercel.app/";
 
 const CURRENCY_STORAGE_KEY = "studio9-medical-currency-v2";
+const PURCHASE_TERMS_KEY = "studio9.purchaseTermsAccepted";
 const EUR_USD_FALLBACK = 1.08;
 
 /** @type {"eur"|"usd"} */
@@ -329,7 +330,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   } else if (purchasable) {
     statusClass = "is-live is-pilot-purchase";
     statusLabel = packageText("packagesUi.purchasable");
-    action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""}" href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
+    action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""} is-disabled" data-purchase-terms-gate href="${escapeHtml(sitePath("conta/"))}" aria-disabled="true">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
   } else {
     statusClass = "is-live is-open-access";
     statusLabel = free
@@ -624,6 +625,65 @@ function initPricingPlans(catalog = packageCatalog ?? {}) {
   });
 }
 
+function isPurchaseTermsAccepted() {
+  try {
+    return localStorage.getItem(PURCHASE_TERMS_KEY) === "1";
+  } catch {
+    return false;
+  }
+}
+
+function setPurchaseTermsAccepted(value) {
+  try {
+    if (value) localStorage.setItem(PURCHASE_TERMS_KEY, "1");
+    else localStorage.removeItem(PURCHASE_TERMS_KEY);
+  } catch {
+    /* ignore */
+  }
+}
+
+function applyPurchaseTermsGates(accepted) {
+  document.querySelectorAll("[data-purchase-terms-gate]").forEach((el) => {
+    if (!el.dataset.termsHref && el.getAttribute("href")) {
+      el.dataset.termsHref = el.getAttribute("href");
+    }
+
+    if (accepted) {
+      el.classList.remove("is-disabled");
+      el.removeAttribute("aria-disabled");
+      if (el.dataset.termsHref) el.setAttribute("href", el.dataset.termsHref);
+      return;
+    }
+
+    el.classList.add("is-disabled");
+    el.setAttribute("aria-disabled", "true");
+    if (el.hasAttribute("href")) {
+      if (!el.dataset.termsHref) el.dataset.termsHref = el.getAttribute("href");
+      el.removeAttribute("href");
+    }
+  });
+}
+
+function initPurchaseTerms() {
+  const acceptedStored = isPurchaseTermsAccepted();
+
+  document.querySelectorAll("[data-purchase-terms-checkbox]").forEach((checkbox) => {
+    checkbox.checked = acceptedStored;
+    if (checkbox.dataset.bound) return;
+    checkbox.dataset.bound = "1";
+    checkbox.addEventListener("change", () => {
+      const next = checkbox.checked;
+      setPurchaseTermsAccepted(next);
+      document.querySelectorAll("[data-purchase-terms-checkbox]").forEach((other) => {
+        other.checked = next;
+      });
+      applyPurchaseTermsGates(next);
+    });
+  });
+
+  applyPurchaseTermsGates(acceptedStored);
+}
+
 async function init() {
   if (window.SiteI18n) {
     SiteI18n.initSiteLanguage();
@@ -635,6 +695,7 @@ async function init() {
       initTomatoTimeLinks();
       renderPlanPrices();
       initPricingPlans(packageCatalog ?? {});
+      initPurchaseTerms();
     });
   }
 
@@ -643,6 +704,7 @@ async function init() {
     renderPackages(root, catalog, manifest);
   });
   initPricingPlans(catalog);
+  initPurchaseTerms();
   initStudentProgressLinks();
   initTomatoTimeLinks();
   initNavigation();

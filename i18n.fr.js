@@ -27,6 +27,16 @@ SITE_LOCALES.fr = {
       description:
         "Minuteur Pomodoro pour l'étude en sciences de la santé — blocs de focus avec pauses régulières.",
     },
+    termos: {
+      title: "Conditions de vente · Medical Science · Studio9",
+      description:
+        "Conditions de vente des modules numériques Studio9 Medical Science — durée d'accès, remboursements et information consommateur.",
+    },
+    privacidade: {
+      title: "Politique de confidentialité · Medical Science · Studio9",
+      description:
+        "Politique de confidentialité de Studio9 Medical Science — comment nous collectons et utilisons vos données.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - accueil", name: "Studio9" },
   lang: { label: "Langue" },
@@ -52,6 +62,8 @@ SITE_LOCALES.fr = {
     progress: "Ma progression",
     tomatoTime: "Tomato Time",
     contact: "Contact",
+    terms: "Conditions de vente",
+    privacy: "Politique de confidentialité",
     copy: "© 2026 Studio9 – apprendre sans stress, vraiment",
     aria: "Liens du pied de page",
     socialAria: "Réseaux sociaux",
@@ -371,6 +383,11 @@ SITE_LOCALES.fr = {
       chooseCta: "Choisir vos disciplines →",
       planSoon: "Bientôt disponible",
     },
+    terms: {
+      labelHtml:
+        'J\'ai lu et j\'accepte les <a href="../termos/">Conditions de vente</a> et la <a href="../privacidade/">Politique de confidentialité</a>. Je comprends que l\'accès est <strong>numérique</strong>, <strong>immédiat</strong> et <strong>valable 12 mois</strong> à partir de l\'achat ; <strong>aucun remboursement</strong> n\'est possible après confirmation du paiement. Je renonce expressément à mon droit de rétractation de 14 jours, le contenu numérique étant fourni immédiatement.',
+      hint: "Vous devez accepter avant de continuer vers l'achat.",
+    },
     faq: {
       eyebrow: "Questions rapides",
       title: "FAQ.",
@@ -380,6 +397,86 @@ SITE_LOCALES.fr = {
       a2: "Oui. Cristina Alberto, professeure d'université avec 30 ans d'expérience, et Alexandra Sousa, consultante en affaires avec 20 ans d'expérience, orientent la vision académique du cours.",
       q3: "Est-ce que ça remplace l'université ?",
       a3: "Non. C'est un complément pour vous aider à étudier de façon plus légère et efficace. Les sujets suivent le programme commun des sciences de la santé.",
+      q4: "Puis-je obtenir un remboursement ?",
+      a4: "Non. Toutes les ventes sont finales. Chaque module comprend 12 mois d'accès numérique à partir de l'achat. En finalisant le checkout, vous acceptez la livraison immédiate et renoncez au droit de rétractation de 14 jours pour le contenu numérique. Voir nos Conditions de vente pour les détails complets.",
+    },
+  },
+  legal: {
+    termos: {
+      eyebrow: "Legal",
+      title: "Conditions de vente",
+      updated: "Dernière mise à jour : juillet 2026",
+      s01Title: "1. Qui sommes-nous",
+      s01Body:
+        "Studio9 (« nous », « Studio9 ») vend un accès en ligne à des modules d'étude en sciences de la santé via medical-science-lilac.vercel.app et les apps associées. Les paiements sont traités par Lemon Squeezy en tant que merchant of record.",
+      s02Title: "2. Ce que vous achetez",
+      s02Body:
+        "Licence d'accès personnelle et non transférable à du contenu numérique (vidéos, podcasts, infographies, exercices, résumés) pour le ou les modules sélectionnés. Vous n'achetez pas de logiciel téléchargeable permanent ni de biens physiques.",
+      s03Title: "3. Durée de l'accès",
+      s03Body:
+        "Sauf indication contraire au checkout, chaque module payant comprend 12 mois (365 jours) d'accès à partir de la confirmation du paiement. À l'expiration, l'accès prend fin automatiquement. Vous pouvez racheter si le module est encore proposé.",
+      s04Title: "4. Livraison immédiate",
+      s04Body:
+        "Après paiement confirmé, vous recevez un email avec les instructions d'accès (magic link). L'accès peut commencer immédiatement.",
+      s05Title: "5. Aucun remboursement",
+      s05Body:
+        "Toutes les ventes sont finales. Nous n'offrons pas de remboursements — y compris si vous n'utilisez pas le contenu, si l'accès expire après 12 mois, si vous changez de filière ou d'université, ou en cas d'incompatibilité de l'appareil (sous réserve des exigences minimales indiquées sur le site). Exceptions uniquement lorsque la loi l'exige (p. ex. double facturation prouvée) ou selon la politique de litiges de Lemon Squeezy.",
+      s06Title: "6. Droit de rétractation (UE)",
+      s06Body:
+        "Pour le contenu numérique avec livraison immédiate : en finalisant l'achat et en cochant la case d'acceptation, vous consentez à l'exécution immédiate et reconnaissez perdre le droit de rétractation de 14 jours en vertu du droit de la consommation applicable dans l'UE.",
+      s07Title: "7. Modifications et discontinuation",
+      s07Body:
+        "Nous pouvons mettre à jour, modifier ou retirer du contenu pour des corrections, mises à jour pédagogiques ou raisons techniques. Nous pouvons discontinuer un module, une fonctionnalité ou la plateforme, en tout ou partie, pour des raisons commerciales, techniques ou légales. Si nous discontinuons l'accès avant la fin de la période payée, vous n'avez droit à aucun remboursement total ou partiel sauf lorsque la loi l'exige. Dans la mesure du possible, nous préviendrons raisonnablement par email ou sur le site.",
+      s08Title: "8. Usage autorisé",
+      s08Body:
+        "Accès réservé à un usage personnel et éducatif. Interdiction de partager les identifiants, copier, redistribuer, enregistrer ou revendre le contenu.",
+      s09Title: "9. Compte et email",
+      s09Body:
+        "L'accès est lié à l'email utilisé au checkout. Vous êtes responsable de maintenir cet email actif et sécurisé.",
+      s10Title: "10. Nature éducative",
+      s10Body:
+        "Le contenu complète l'enseignement universitaire officiel ; il ne garantit pas la réussite aux examens ni ne remplace votre établissement.",
+      s11Title: "11. Prix et erreurs",
+      s11Body:
+        "Les prix sont affichés en USD ou dans la devise indiquée au checkout. Nous pouvons corriger des erreurs manifestes de prix avant confirmation de la commande.",
+      s12Title: "12. Contact",
+      s12Body:
+        'Questions sur l\'accès ou les paiements : <a href="mailto:hello@studio9.example">hello@studio9.example</a>. Voir aussi notre <a href="../privacidade/">Politique de confidentialité</a>.',
+      s13Title: "13. Droit applicable",
+      s13Body:
+        "Ces conditions sont régies par le droit portugais, sans préjudice de la protection impérative du consommateur dans votre pays de résidence au sein de l'Union européenne.",
+    },
+    privacidade: {
+      eyebrow: "Legal",
+      title: "Politique de confidentialité",
+      updated: "Dernière mise à jour : juillet 2026",
+      s01Title: "1. Responsable du traitement",
+      s01Body:
+        'Studio9 est responsable des données personnelles traitées via les sites et apps Medical Science. Contact : <a href="mailto:hello@studio9.example">hello@studio9.example</a>.',
+      s02Title: "2. Données collectées",
+      s02Body:
+        "Adresse email (connexion et achat), identifiant utilisateur Firebase, enregistrements d'achat et de droits d'accès, données optionnelles de progression (p. ex. vidéos terminées) et journaux techniques de base (navigateur, région approximative, pages visitées) lors de l'utilisation du site ou des apps.",
+      s03Title: "3. Finalités",
+      s03Body:
+        "Fournir l'accès après achat, vous authentifier sans mot de passe, afficher vos modules actifs, synchroniser la progression entre apps, répondre au support et améliorer le service. Nous ne vendons pas vos données personnelles.",
+      s04Title: "4. Traitement des paiements",
+      s04Body:
+        "Les données de carte et de facturation sont gérées par Lemon Squeezy (merchant of record). Nous recevons la confirmation de commande, l'email et le produit acheté — pas les numéros complets de carte. Voir la politique de confidentialité de Lemon Squeezy.",
+      s05Title: "5. Authentification et hébergement",
+      s05Body:
+        "Nous utilisons Google Firebase (Auth, Firestore) et Vercel pour l'hébergement. Les données peuvent être traitées dans l'UE ou d'autres régions où ces fournisseurs opèrent, avec leurs garanties contractuelles standard.",
+      s06Title: "6. Conservation",
+      s06Body:
+        "Nous conservons les données de compte et de droits d'accès tant que l'accès est actif et pendant une période raisonnable ensuite, pour le support, la comptabilité et les obligations légales. Les données de progression sont conservées tant que vous utilisez le service ou jusqu'à demande de suppression le cas échéant.",
+      s07Title: "7. Vos droits",
+      s07Body:
+        "En vertu du RGPD, vous pouvez demander l'accès, la rectification, l'effacement, la limitation ou la portabilité de vos données, et vous opposer à certains traitements. Contactez-nous à l'email ci-dessus. Vous pouvez aussi saisir votre autorité locale de protection des données.",
+      s08Title: "8. Cookies et stockage local",
+      s08Body:
+        "Nous utilisons le stockage local pour la langue, l'état de connexion et l'acceptation des conditions d'achat. Firebase peut utiliser des cookies ou technologies similaires pour l'authentification. Pas de trackers publicitaires tiers sur le site Medical Science principal.",
+      s09Title: "9. Modifications",
+      s09Body:
+        'Nous pouvons mettre à jour cette politique ; la date en tête changera. L\'utilisation continue après mise à jour vaut acceptation lorsque la loi le permet. Voir aussi nos <a href="../termos/">Conditions de vente</a>.',
     },
   },
   pkg: {
