@@ -38,7 +38,22 @@ service cloud.firestore {
     }
 
     match /progress/{docId} {
-      allow read: if isSignedIn()
+      function isOwnProgressDoc() {
+        return docId.matches('^' + request.auth.uid + '_.*');
+      }
+
+      // getDoc on a not-yet-created doc has resource == null; must allow before first watch.
+      allow get: if isSignedIn()
+        && isOwnProgressDoc()
+        && (
+          resource == null
+          || (
+            resource.data.user_id == request.auth.uid
+            && hasActiveEntitlement(resource.data.package_id)
+          )
+        );
+
+      allow list: if isSignedIn()
         && resource.data.user_id == request.auth.uid
         && hasActiveEntitlement(resource.data.package_id);
 

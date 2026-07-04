@@ -5,8 +5,8 @@
   "scripts": {
     "build": "node scripts/write-firebase-config.js",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "deploy:rules": "firebase deploy --only firestore:rules",
-    "deploy:rules:npx": "npx firebase-tools deploy --only firestore:rules --project studio9-medical"
+    "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes",
+    "deploy:rules:npx": "npx firebase-tools deploy --only firestore:rules,firestore:indexes --project studio9-medical"
   },
   "dependencies": {
     "firebase-admin": "^13.6.0"
