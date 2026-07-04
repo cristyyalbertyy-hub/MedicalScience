@@ -157,9 +157,11 @@ SITE_LOCALES.pt = {
         "Os pacotes são fantásticos para uma primeira abordagem da matéria — para aprender com confiança e sem stress. Quando chegam às aulas, conseguem aproveitar quase a 100%, porque já não é matéria nova.",
       t1Name: "Cristina Alberto",
       t1Role: "Professora universitária · Studio9",
+      t2Quote:
+        "O Studio9 tem sido a ferramenta perfeita para a minha filha. Ela dedica um esforço enorme aos estudos e por vezes sente-se completamente sobrecarregada. Esta app dá-lhe clareza e orientação nas matérias mais exigentes — sabe exactamente como abordar cada tópico. Além disso, pode ouvir os podcasts a caminho da universidade ou entre aulas, o que faz valer cada momento. Foi uma mudança decisiva para a confiança e a rotina dela.",
+      t2Name: "Patricia Moreira",
+      t2Role: "Mãe de estudante universitária",
       pendingQuote: "Testemunho em breve.",
-      t2Name: "Mãe de estudante",
-      t2Role: "Família · em breve",
       t3Name: "Estudante",
       t3Role: "Universidade · em breve",
     },

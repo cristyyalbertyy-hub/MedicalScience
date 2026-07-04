@@ -158,9 +158,11 @@ SITE_LOCALES.fr = {
         "Les forfaits sont fantastiques pour une première approche de la matière — on apprend avec confiance et sans stress. En cours, les étudiants peuvent en profiter à presque 100 %, parce que ce n'est plus une matière nouvelle.",
       t1Name: "Cristina Alberto",
       t1Role: "Professeure d'université · Studio9",
+      t2Quote:
+        "Studio9 a été l'outil parfait pour ma fille. Elle met un effort considérable dans ses études et se sent parfois complètement dépassée. Cette app lui apporte clarté et repères sur les matières exigeantes — elle sait exactement comment aborder chaque sujet. De plus, elle peut écouter les podcasts en allant à l'université ou entre les cours, ce qui valorise chaque instant. Cela a transformé sa confiance et sa routine.",
+      t2Name: "Patricia Moreira",
+      t2Role: "Mère d'étudiante universitaire",
       pendingQuote: "Témoignage bientôt disponible.",
-      t2Name: "Parent d'étudiant",
-      t2Role: "Famille · bientôt",
       t3Name: "Étudiant",
       t3Role: "Université · bientôt",
     },

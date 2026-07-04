@@ -164,9 +164,11 @@ const SITE_LOCALES = {
           "The packages are fantastic for a first approach to the subject — you learn with confidence and without stress. When students get to class, they can take almost full advantage, because the material is no longer new.",
         t1Name: "Cristina Alberto",
         t1Role: "University professor · Studio9",
+        t2Quote:
+          "Studio9 has been the perfect tool for my daughter. She puts tremendous effort into her studies and sometimes feels completely overwhelmed. This app gives her clarity and guidance on challenging subjects — she knows exactly how to tackle each topic. Plus, she can listen to the podcasts while commuting to university or walking between classes, which makes every moment count. It's been a game-changer for her confidence and routine.",
+        t2Name: "Patricia Moreira",
+        t2Role: "Mother of a university student",
         pendingQuote: "Testimonial coming soon.",
-        t2Name: "Parent",
-        t2Role: "Family voice · coming soon",
         t3Name: "Student",
         t3Role: "University · coming soon",
       },
