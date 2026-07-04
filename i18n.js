@@ -326,8 +326,9 @@ const SITE_LOCALES = {
       entitlementsNetworkError: "Network error while loading your access list.",
       footnoteHtml:
         'Want more modules? <a href="../packages/">See all disciplines</a> · <a href="../precos/">Buy</a>',
-      progressLinkHtml:
-        'Already studying? <a data-student-progress target="_blank" rel="noopener noreferrer">Open My progress →</a>',
+      progressTitle: "My progress",
+      progressHint: "Progress dashboard · videos, podcasts, infographics and quizzes",
+      progressOpen: "Open",
       open: "Open",
       opening: "Opening…",
       soon: "Coming soon",

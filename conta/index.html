@@ -80,15 +80,22 @@
           Click Open — enter the package without a new magic link.
         </p>
         <ul id="packages-list" class="acesso-packages" hidden></ul>
-        <p
-          id="packages-progress-link"
-          class="acesso-note"
-          data-i18n-html="accountPage.progressLinkHtml"
-          hidden
-        >
-          Already studying?
-          <a data-student-progress>Open My progress →</a>
-        </p>
+        <div id="packages-progress" class="acesso-progress-entry" hidden>
+          <div class="acesso-progress-entry__meta">
+            <strong data-i18n="accountPage.progressTitle">My progress</strong>
+            <small data-i18n="accountPage.progressHint">
+              Progress dashboard · videos, podcasts, infographics and quizzes
+            </small>
+          </div>
+          <button
+            type="button"
+            class="btn btn-progress"
+            data-student-progress
+            data-i18n="accountPage.progressOpen"
+          >
+            Open
+          </button>
+        </div>
         <div id="packages-empty" class="acesso-empty" hidden>
           <p data-i18n="accountPage.emptyTitle">You don't have any modules on this account yet.</p>
           <p id="packages-empty-hint" class="acesso-muted"></p>
@@ -123,6 +130,6 @@
     <script src="../i18n.it.js?v=2"></script>
     <script src="../i18n.pt.js?v=2"></script>
     <script src="firebase-config.js"></script>
-    <script type="module" src="conta.js?v=6"></script>
+    <script type="module" src="conta.js?v=7"></script>
   </body>
 </html>

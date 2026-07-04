@@ -320,8 +320,9 @@ SITE_LOCALES.pt = {
     entitlementsNetworkError: "Erro de rede ao carregar a lista de acesso.",
     footnoteHtml:
       'Queres mais módulos? <a href="../packages/">Ver todas as disciplinas</a> · <a href="../precos/">Comprar</a>',
-    progressLinkHtml:
-      'Já estás a estudar? <a data-student-progress target="_blank" rel="noopener noreferrer">Abrir o meu progresso →</a>',
+    progressTitle: "O meu progresso",
+    progressHint: "Dashboard de progresso · vídeos, podcasts, infográficos e questionários",
+    progressOpen: "Abrir",
     open: "Abrir",
     opening: "A abrir…",
     soon: "Em breve",

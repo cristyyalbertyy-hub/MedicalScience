@@ -320,8 +320,9 @@ SITE_LOCALES.es = {
       "No se pudo cargar tu lista de acceso. Comprueba la conexión e intenta Actualizar acceso.",
     footnoteHtml:
       '¿Quieres más módulos? <a href="../packages/">Ver todas las disciplinas</a> · <a href="../precos/">Comprar</a>',
-    progressLinkHtml:
-      '¿Ya estás estudiando? <a data-student-progress target="_blank" rel="noopener noreferrer">Abrir Mi progreso →</a>',
+    progressTitle: "Mi progreso",
+    progressHint: "Panel de progreso · vídeos, podcasts, infografías y cuestionarios",
+    progressOpen: "Abrir",
     open: "Abrir",
     opening: "Abriendo…",
     soon: "Próximamente",

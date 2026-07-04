@@ -321,8 +321,9 @@ SITE_LOCALES.fr = {
       "Impossible de charger votre liste d'accès. Vérifiez la connexion et essayez Actualiser l'accès.",
     footnoteHtml:
       'Vous voulez plus de modules ? <a href="../packages/">Voir toutes les disciplines</a> · <a href="../precos/">Acheter</a>',
-    progressLinkHtml:
-      'Vous étudiez déjà ? <a data-student-progress target="_blank" rel="noopener noreferrer">Ouvrir Ma progression →</a>',
+    progressTitle: "Ma progression",
+    progressHint: "Tableau de bord · vidéos, podcasts, infographies et questionnaires",
+    progressOpen: "Ouvrir",
     open: "Ouvrir",
     opening: "Ouverture…",
     soon: "Bientôt",

@@ -106,6 +106,56 @@
   gap: 0.65rem;
 }
 
+#packages-progress[hidden] {
+  display: none !important;
+}
+
+.acesso-progress-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(31, 78, 107, 0.22);
+  border-radius: 12px;
+  background: rgba(31, 78, 107, 0.05);
+}
+
+.acesso-progress-entry__meta {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.acesso-progress-entry__meta strong {
+  font-size: 0.95rem;
+  color: var(--primary);
+}
+
+.acesso-progress-entry__meta small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.btn-progress {
+  min-height: 2.35rem;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: 1px solid rgba(31, 78, 107, 0.28);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--primary);
+  box-shadow: 0 8px 18px rgba(31, 78, 107, 0.1);
+  flex-shrink: 0;
+}
+
+.btn-progress:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
 .acesso-package {
   display: flex;
   align-items: center;

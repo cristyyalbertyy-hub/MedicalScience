@@ -320,8 +320,9 @@ SITE_LOCALES.it = {
       "Impossibile caricare l'elenco accessi. Controlla la connessione e prova Aggiorna accesso.",
     footnoteHtml:
       'Vuoi più moduli? <a href="../packages/">Vedi tutte le discipline</a> · <a href="../precos/">Acquista</a>',
-    progressLinkHtml:
-      'Stai già studiando? <a data-student-progress target="_blank" rel="noopener noreferrer">Apri I miei progressi →</a>',
+    progressTitle: "I miei progressi",
+    progressHint: "Dashboard progressi · video, podcast, infografiche e questionari",
+    progressOpen: "Apri",
     open: "Apri",
     opening: "Apertura…",
     soon: "Prossimamente",

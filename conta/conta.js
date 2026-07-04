@@ -31,7 +31,7 @@ const authTitle = document.getElementById("auth-title");
 const refreshAccessBtn = document.getElementById("refresh-access-btn");
 const packagesEmptyHint = document.getElementById("packages-empty-hint");
 const packagesFootnote = document.getElementById("packages-footnote");
-const packagesProgressLink = document.getElementById("packages-progress-link");
+const packagesProgressEntry = document.getElementById("packages-progress");
 const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 
 /** @type {import('firebase/app').FirebaseApp | null} */
@@ -248,7 +248,7 @@ function renderPackages(catalog) {
     packagesIntro.hidden = true;
     packagesEmpty.hidden = false;
     packagesFootnote.hidden = true;
-    if (packagesProgressLink) packagesProgressLink.hidden = true;
+    if (packagesProgressEntry) packagesProgressEntry.hidden = true;
     return;
   }
 
@@ -256,7 +256,7 @@ function renderPackages(catalog) {
   packagesIntro.hidden = false;
   packagesEmpty.hidden = true;
   packagesFootnote.hidden = false;
-  if (packagesProgressLink) packagesProgressLink.hidden = false;
+  if (packagesProgressEntry) packagesProgressEntry.hidden = false;
 
   for (const id of ownedIds) {
     const meta = packageMeta[id] ?? { title: id };
@@ -418,8 +418,21 @@ function initLanguage() {
 
 async function openProgressDashboard(event) {
   event?.preventDefault();
+  const trigger = event?.currentTarget;
   const targetUrl = new URL(STUDENT_PROGRESS_URL);
   targetUrl.searchParams.set("return_to", continueUrl());
+
+  if (trigger instanceof HTMLButtonElement) {
+    trigger.disabled = true;
+    trigger.textContent = t("accountPage.opening");
+  }
+
+  function restoreTrigger() {
+    if (trigger instanceof HTMLButtonElement) {
+      trigger.disabled = false;
+      trigger.textContent = t("accountPage.progressOpen");
+    }
+  }
 
   if (!auth?.currentUser) {
     window.location.href = targetUrl.toString();
@@ -438,15 +451,18 @@ async function openProgressDashboard(event) {
     targetUrl.searchParams.set("studio9_handoff", data.custom_token);
     window.location.href = targetUrl.toString();
   } catch {
+    restoreTrigger();
     window.location.href = targetUrl.toString();
   }
 }
 
 async function bootstrap() {
   initLanguage();
-  document.querySelectorAll("[data-student-progress]").forEach((link) => {
-    link.href = STUDENT_PROGRESS_URL;
-    link.addEventListener("click", (event) => void openProgressDashboard(event));
+  document.querySelectorAll("[data-student-progress]").forEach((el) => {
+    if (el instanceof HTMLAnchorElement) {
+      el.href = STUDENT_PROGRESS_URL;
+    }
+    el.addEventListener("click", (event) => void openProgressDashboard(event));
   });
   authPanel.hidden = false;
   if (authLoading) authLoading.hidden = false;
