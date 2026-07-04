@@ -347,6 +347,17 @@ p {
   box-shadow: var(--shadow);
 }
 
+.student-progress-card--photo-only {
+  justify-items: center;
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.student-progress-card--photo-only .screenshot-slot--progress img {
+  width: 100%;
+  height: auto;
+}
+
 .student-progress-copy p:last-of-type {
   margin-bottom: 1rem;
 }
