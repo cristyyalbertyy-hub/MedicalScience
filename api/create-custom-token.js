@@ -1,7 +1,12 @@
 import { getAuth } from "./_lib/firebase.js";
 import { parseJsonBody } from "./_lib/request.js";
 
+import { applyStudio9Cors, handleStudio9CorsPreflight } from "./_lib/cors.js";
+
 export default async function handler(req, res) {
+  if (handleStudio9CorsPreflight(req, res)) return;
+  applyStudio9Cors(req, res);
+
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
     return res.status(405).json({ error: "Method not allowed" });

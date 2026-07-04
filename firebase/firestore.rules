@@ -39,16 +39,9 @@ service cloud.firestore {
         return docId.matches('^' + request.auth.uid + '_.*');
       }
 
-      // Progress is scoped to the signed-in user. App access still requires entitlement client-side.
-      allow get: if isSignedIn()
+      allow read: if isSignedIn()
         && isOwnProgressDoc()
-        && (
-          resource == null
-          || resource.data.user_id == request.auth.uid
-        );
-
-      allow list: if isSignedIn()
-        && resource.data.user_id == request.auth.uid;
+        && (resource == null || resource.data.user_id == request.auth.uid);
 
       allow create, update: if isSignedIn()
         && isOwnProgressDoc()
