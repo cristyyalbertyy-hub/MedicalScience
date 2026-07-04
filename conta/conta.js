@@ -419,6 +419,7 @@ function initLanguage() {
 async function openProgressDashboard(event) {
   event?.preventDefault();
   const targetUrl = new URL(STUDENT_PROGRESS_URL);
+  targetUrl.searchParams.set("return_to", continueUrl());
 
   if (!auth?.currentUser) {
     window.location.href = targetUrl.toString();
