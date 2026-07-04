@@ -141,11 +141,12 @@ p {
 
 .brand img,
 .footer-brand img {
-  height: 2.75rem;
+  height: 3.15rem;
   width: auto;
-  max-width: min(11rem, 42vw);
+  max-width: min(12.5rem, 46vw);
   border-radius: 0;
   object-fit: contain;
+  background: var(--paper);
 }
 
 .brand span {
@@ -293,9 +294,9 @@ p {
 .screenshot-slot--hero {
   box-shadow: var(--shadow);
   aspect-ratio: 900 / 1600;
-  max-height: min(72vh, 560px);
+  max-height: min(78vh, 620px);
   margin-inline: auto;
-  max-width: min(100%, 420px);
+  max-width: min(100%, 460px);
 }
 
 .screenshot-slot--hero img {
@@ -385,7 +386,7 @@ p {
   display: grid;
   gap: 2.5rem;
   min-height: calc(100vh - 5.5rem);
-  align-items: center;
+  align-items: start;
   padding-top: 3rem;
 }
 
@@ -561,10 +562,10 @@ p {
 .testimonial-card {
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
+  gap: 0.85rem;
   aspect-ratio: 1;
   min-height: 15.5rem;
-  padding: 1.35rem;
+  padding: 1.15rem;
   border: 1px solid var(--line);
   border-radius: 24px;
   background: rgba(255, 253, 249, 0.82);
@@ -581,9 +582,9 @@ p {
   flex: 1;
   color: #4f4c48;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(0.98rem, 2.4vw, 1.08rem);
+  font-size: clamp(0.8rem, 1.85vw, 0.9rem);
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.42;
 }
 
 .testimonial-card--pending blockquote {
@@ -601,12 +602,12 @@ p {
 
 .testimonial-meta strong {
   color: var(--primary);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
 }
 
 .testimonial-meta span {
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
