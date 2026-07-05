@@ -338,17 +338,8 @@ p {
   min-width: 0;
 }
 
-.student-progress-card {
-  display: grid;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 2rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background:
-    radial-gradient(circle at 100% 0%, rgba(122, 155, 122, 0.16), transparent 42%),
-    rgba(255, 253, 249, 0.9);
-  box-shadow: var(--shadow);
+.student-progress-section {
+  width: min(1200px, calc(100% - 2rem));
 }
 
 .student-progress-heading {
@@ -357,23 +348,15 @@ p {
   margin-bottom: 1.75rem;
 }
 
-.student-progress-card--photo-only {
-  justify-items: center;
-  max-width: 52rem;
-  margin-inline: auto;
+.student-progress-section .screenshot-slot--progress {
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 18px 48px rgba(31, 78, 107, 0.12);
 }
 
-.student-progress-card--photo-only .screenshot-slot--progress img {
+.student-progress-section .screenshot-slot--progress img {
   width: 100%;
   height: auto;
-}
-
-.student-progress-copy p:last-of-type {
-  margin-bottom: 1rem;
-}
-
-.student-progress-copy .btn {
-  width: fit-content;
 }
 
 .section-shell {
@@ -1080,14 +1063,6 @@ p {
 
   .feature-grid.steps-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .student-progress-card {
-    grid-template-columns: minmax(200px, 0.85fr) minmax(0, 1fr);
-  }
-
-  .student-progress-copy .btn {
-    margin-top: 0.25rem;
   }
 
   .module-row {
