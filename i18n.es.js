@@ -153,7 +153,7 @@ SITE_LOCALES.es = {
     testimonials: {
       aria: "Testimonios",
       eyebrow: "Voces reales",
-      title: "Lo que dicen estudiantes y familias.",
+      title: "Lo que dicen<br>estudiantes y familias.",
       t1Quote:
         "Los paquetes son fantásticos para un primer acercamiento a la materia — se aprende con confianza y sin estrés. Cuando llegan a clase, pueden aprovechar casi al 100%, porque ya no es material nuevo.",
       t1Name: "Cristina Alberto",

@@ -152,7 +152,7 @@ SITE_LOCALES.pt = {
     testimonials: {
       aria: "Testemunhos",
       eyebrow: "Vozes reais",
-      title: "O que dizem estudantes e famílias.",
+      title: "O que dizem<br>estudantes e famílias.",
       t1Quote:
         "Os pacotes são fantásticos para uma primeira abordagem da matéria — para aprender com confiança e sem stress. Quando chegam às aulas, conseguem aproveitar quase a 100%, porque já não é matéria nova.",
       t1Name: "Cristina Alberto",

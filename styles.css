@@ -1100,6 +1100,10 @@ p {
   padding-top: 2rem;
 }
 
+.testimonials-section {
+  padding-top: 2rem;
+}
+
 .packages-section .screenshot-slot--wide {
   max-width: 820px;
   margin-right: auto;

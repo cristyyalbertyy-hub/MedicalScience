@@ -153,7 +153,7 @@ SITE_LOCALES.fr = {
     testimonials: {
       aria: "Témoignages",
       eyebrow: "Voix réelles",
-      title: "Ce que disent étudiants et familles.",
+      title: "Ce que disent<br>étudiants et familles.",
       t1Quote:
         "Les forfaits sont fantastiques pour une première approche de la matière — on apprend avec confiance et sans stress. En cours, les étudiants peuvent en profiter à presque 100 %, parce que ce n'est plus une matière nouvelle.",
       t1Name: "Cristina Alberto",

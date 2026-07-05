@@ -159,7 +159,7 @@ const SITE_LOCALES = {
       testimonials: {
         aria: "Testimonials",
         eyebrow: "Real voices",
-        title: "What students and families say.",
+        title: "What students and<br>families say.",
         t1Quote:
           "The packages are fantastic for a first approach to the subject — you learn with confidence and without stress. When students get to class, they can take almost full advantage, because the material is no longer new.",
         t1Name: "Cristina Alberto",
