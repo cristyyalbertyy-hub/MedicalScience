@@ -387,9 +387,12 @@ SITE_LOCALES.fr = {
       planSoon: "Bientôt disponible",
     },
     terms: {
+      modalTitle: "Avant d'acheter",
       labelHtml:
         'J\'ai lu et j\'accepte les <a href="../termos/">Conditions de vente</a> et la <a href="../privacidade/">Politique de confidentialité</a>. Je comprends que l\'accès est <strong>numérique</strong>, <strong>immédiat</strong> et <strong>valable 12 mois</strong> à partir de l\'achat ; <strong>aucun remboursement</strong> n\'est possible après confirmation du paiement. Je renonce expressément à mon droit de rétractation de 14 jours, le contenu numérique étant fourni immédiatement.',
       hint: "Vous devez accepter avant de continuer vers l'achat.",
+      confirmCta: "Continuer vers l'achat",
+      cancelCta: "Annuler",
     },
     faq: {
       eyebrow: "Questions rapides",

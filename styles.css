@@ -1318,19 +1318,6 @@ p {
   font-weight: 800;
 }
 
-.purchase-terms {
-  margin: 1.25rem 0 0;
-  padding: 1rem 1.15rem;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: rgba(255, 253, 249, 0.92);
-  text-align: left;
-}
-
-.purchase-terms--packages {
-  margin: 0 0 1.5rem;
-}
-
 .purchase-terms__label {
   display: flex;
   gap: 0.75rem;
@@ -1358,6 +1345,61 @@ p {
   margin: 0.55rem 0 0 1.75rem;
   font-size: 0.85rem;
   color: var(--muted);
+}
+
+.purchase-terms-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.purchase-terms-modal[hidden] {
+  display: none;
+}
+
+body.purchase-terms-modal-open {
+  overflow: hidden;
+}
+
+.purchase-terms-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(22, 28, 36, 0.48);
+}
+
+.purchase-terms-modal__panel {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 34rem);
+  max-height: min(90vh, 640px);
+  overflow: auto;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 253, 249, 0.98);
+  box-shadow: 0 24px 56px rgba(31, 78, 107, 0.18);
+}
+
+.purchase-terms-modal__panel h2 {
+  margin: 0 0 1rem;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.purchase-terms-modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+.purchase-terms-modal .purchase-terms__hint {
+  margin-bottom: 0;
 }
 
 a.btn.is-disabled,

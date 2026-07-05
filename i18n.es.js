@@ -386,9 +386,12 @@ SITE_LOCALES.es = {
       planSoon: "Próximamente",
     },
     terms: {
+      modalTitle: "Antes de comprar",
       labelHtml:
         'He leído y acepto las <a href="../termos/">Condiciones de venta</a> y la <a href="../privacidade/">Política de privacidad</a>. Entiendo que el acceso es <strong>digital</strong>, <strong>inmediato</strong> y <strong>válido durante 12 meses</strong> desde la compra; <strong>no hay reembolsos</strong> tras confirmar el pago. Renuncio expresamente al derecho de desistimiento de 14 días, ya que el contenido digital se entrega de inmediato.',
       hint: "Debe aceptar antes de continuar con la compra.",
+      confirmCta: "Continuar con la compra",
+      cancelCta: "Cancelar",
     },
     faq: {
       eyebrow: "Preguntas rápidas",

@@ -386,9 +386,12 @@ SITE_LOCALES.pt = {
       planSoon: "Em breve",
     },
     terms: {
+      modalTitle: "Antes de comprar",
       labelHtml:
         'Li e aceito os <a href="../termos/">Termos de venda</a> e a <a href="../privacidade/">Política de privacidade</a>. Confirmo que o acesso é <strong>digital</strong>, <strong>imediato</strong> e <strong>válido por 12 meses</strong> a partir da compra; <strong>não há reembolsos</strong> após a confirmação do pagamento. Renuncio expressamente ao direito de desistência de 14 dias, uma vez que o conteúdo é disponibilizado de imediato.',
       hint: "Tem de aceitar antes de continuar para a compra.",
+      confirmCta: "Continuar para a compra",
+      cancelCta: "Cancelar",
     },
     faq: {
       eyebrow: "Perguntas rápidas",

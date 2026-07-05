@@ -386,9 +386,12 @@ SITE_LOCALES.it = {
       planSoon: "In arrivo",
     },
     terms: {
+      modalTitle: "Prima di acquistare",
       labelHtml:
         'Ho letto e accetto le <a href="../termos/">Condizioni di vendita</a> e l\'<a href="../privacidade/">Informativa sulla privacy</a>. Comprendo che l\'accesso è <strong>digitale</strong>, <strong>immediato</strong> e <strong>valido per 12 mesi</strong> dall\'acquisto; <strong>non sono previsti rimborsi</strong> dopo la conferma del pagamento. Rinuncio espressamente al diritto di recesso di 14 giorni, poiché il contenuto digitale viene fornito immediatamente.',
       hint: "Devi accettare prima di procedere all'acquisto.",
+      confirmCta: "Continua verso l'acquisto",
+      cancelCta: "Annulla",
     },
     faq: {
       eyebrow: "Domande rapide",

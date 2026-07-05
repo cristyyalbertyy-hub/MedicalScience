@@ -330,7 +330,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   } else if (purchasable) {
     statusClass = "is-live is-pilot-purchase";
     statusLabel = packageText("packagesUi.purchasable");
-    action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""} is-disabled" data-purchase-terms-gate href="${escapeHtml(sitePath("conta/"))}" aria-disabled="true">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
+    action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
   } else {
     statusClass = "is-live is-open-access";
     statusLabel = free
@@ -642,46 +642,124 @@ function setPurchaseTermsAccepted(value) {
   }
 }
 
-function applyPurchaseTermsGates(accepted) {
-  document.querySelectorAll("[data-purchase-terms-gate]").forEach((el) => {
-    if (!el.dataset.termsHref && el.getAttribute("href")) {
-      el.dataset.termsHref = el.getAttribute("href");
-    }
+/** Dev/test helper: add ?terms=reset to the URL to clear stored acceptance. */
+function maybeResetPurchaseTermsFromUrl() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("terms") !== "reset") return;
 
-    if (accepted) {
-      el.classList.remove("is-disabled");
-      el.removeAttribute("aria-disabled");
-      if (el.dataset.termsHref) el.setAttribute("href", el.dataset.termsHref);
-      return;
-    }
+    setPurchaseTermsAccepted(false);
+    params.delete("terms");
+    const query = params.toString();
+    const cleanUrl = `${window.location.pathname}${query ? `?${query}` : ""}${window.location.hash}`;
+    window.history.replaceState(null, "", cleanUrl);
+    console.info("[Studio9] Purchase terms acceptance cleared (?terms=reset).");
+  } catch {
+    /* ignore */
+  }
+}
 
-    el.classList.add("is-disabled");
-    el.setAttribute("aria-disabled", "true");
-    if (el.hasAttribute("href")) {
-      if (!el.dataset.termsHref) el.dataset.termsHref = el.getAttribute("href");
-      el.removeAttribute("href");
-    }
+let purchaseTermsPendingUrl = null;
+let purchaseTermsClickBound = false;
+
+function closePurchaseTermsModal() {
+  const modal = document.querySelector("[data-purchase-terms-modal]");
+  if (modal) modal.hidden = true;
+  document.body.classList.remove("purchase-terms-modal-open");
+  purchaseTermsPendingUrl = null;
+}
+
+function ensurePurchaseTermsModal() {
+  let modal = document.querySelector("[data-purchase-terms-modal]");
+  if (modal) return modal;
+
+  modal = document.createElement("div");
+  modal.className = "purchase-terms-modal";
+  modal.dataset.purchaseTermsModal = "";
+  modal.hidden = true;
+  modal.innerHTML = `
+    <div class="purchase-terms-modal__backdrop" data-purchase-terms-dismiss tabindex="-1"></div>
+    <div class="purchase-terms-modal__panel" role="dialog" aria-modal="true" aria-labelledby="purchase-terms-modal-title">
+      <h2 id="purchase-terms-modal-title" data-i18n="precos.terms.modalTitle">Before you purchase</h2>
+      <label class="purchase-terms__label">
+        <input type="checkbox" data-purchase-terms-modal-checkbox />
+        <span data-i18n-html="precos.terms.labelHtml"></span>
+      </label>
+      <p class="purchase-terms__hint" data-i18n="precos.terms.hint"></p>
+      <div class="purchase-terms-modal__actions">
+        <button type="button" class="btn btn-secondary" data-purchase-terms-dismiss data-i18n="precos.terms.cancelCta">Cancel</button>
+        <button type="button" class="btn btn-primary is-disabled" data-purchase-terms-confirm disabled data-i18n="precos.terms.confirmCta">Continue to purchase</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  refreshPurchaseTermsModalI18n();
+
+  const checkbox = modal.querySelector("[data-purchase-terms-modal-checkbox]");
+  const confirmBtn = modal.querySelector("[data-purchase-terms-confirm]");
+
+  checkbox.addEventListener("change", () => {
+    confirmBtn.disabled = !checkbox.checked;
+    confirmBtn.classList.toggle("is-disabled", !checkbox.checked);
   });
+
+  confirmBtn.addEventListener("click", () => {
+    if (!checkbox.checked) return;
+    setPurchaseTermsAccepted(true);
+    const target = purchaseTermsPendingUrl;
+    closePurchaseTermsModal();
+    if (target) window.location.href = target;
+  });
+
+  modal.querySelectorAll("[data-purchase-terms-dismiss]").forEach((el) => {
+    el.addEventListener("click", closePurchaseTermsModal);
+  });
+
+  return modal;
+}
+
+function openPurchaseTermsModal(url) {
+  purchaseTermsPendingUrl = url;
+  const modal = ensurePurchaseTermsModal();
+  const checkbox = modal.querySelector("[data-purchase-terms-modal-checkbox]");
+  const confirmBtn = modal.querySelector("[data-purchase-terms-confirm]");
+  checkbox.checked = false;
+  confirmBtn.disabled = true;
+  confirmBtn.classList.add("is-disabled");
+  modal.hidden = false;
+  document.body.classList.add("purchase-terms-modal-open");
+  checkbox.focus();
+}
+
+function refreshPurchaseTermsModalI18n() {
+  if (!window.SiteI18n) return;
+  const modal = document.querySelector("[data-purchase-terms-modal]");
+  if (modal) SiteI18n.applySiteTranslations(SiteI18n.getSiteLang());
 }
 
 function initPurchaseTerms() {
-  const acceptedStored = isPurchaseTermsAccepted();
+  maybeResetPurchaseTermsFromUrl();
+  refreshPurchaseTermsModalI18n();
 
-  document.querySelectorAll("[data-purchase-terms-checkbox]").forEach((checkbox) => {
-    checkbox.checked = acceptedStored;
-    if (checkbox.dataset.bound) return;
-    checkbox.dataset.bound = "1";
-    checkbox.addEventListener("change", () => {
-      const next = checkbox.checked;
-      setPurchaseTermsAccepted(next);
-      document.querySelectorAll("[data-purchase-terms-checkbox]").forEach((other) => {
-        other.checked = next;
-      });
-      applyPurchaseTermsGates(next);
-    });
+  if (purchaseTermsClickBound) return;
+  purchaseTermsClickBound = true;
+
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-purchase-action]");
+    if (!link) return;
+    if (isPurchaseTermsAccepted()) return;
+    event.preventDefault();
+    const href = link.getAttribute("href");
+    if (!href) return;
+    openPurchaseTermsModal(href);
   });
 
-  applyPurchaseTermsGates(acceptedStored);
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const modal = document.querySelector("[data-purchase-terms-modal]");
+    if (modal && !modal.hidden) closePurchaseTermsModal();
+  });
 }
 
 async function init() {

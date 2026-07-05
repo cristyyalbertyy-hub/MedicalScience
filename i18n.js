@@ -391,9 +391,12 @@ const SITE_LOCALES = {
         planSoon: "Coming soon",
       },
       terms: {
+        modalTitle: "Before you purchase",
         labelHtml:
           'I have read and accept the <a href="../termos/">Terms of Sale</a> and <a href="../privacidade/">Privacy Policy</a>. I understand that access is <strong>digital</strong>, <strong>immediate</strong>, and <strong>valid for 12 months</strong> from purchase; <strong>no refunds</strong> are available after payment is confirmed. I expressly waive my 14-day right of withdrawal as digital content is supplied immediately.',
         hint: "You must accept before continuing to purchase.",
+        confirmCta: "Continue to purchase",
+        cancelCta: "Cancel",
       },
       faq: {
         eyebrow: "Quick questions",
