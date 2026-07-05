@@ -404,6 +404,8 @@ SITE_LOCALES.pt = {
       a3: "Não. É um complemento para te ajudar a estudar de forma mais leve e eficiente. Os temas seguem o programa comum das ciências da saúde.",
       q4: "Posso pedir reembolso?",
       a4: "Não. Todas as vendas são finais. Cada módulo inclui 12 meses de acesso digital a partir da compra. Ao concluir o checkout aceita a entrega imediata e renuncia ao direito de desistência de 14 dias para conteúdo digital. Consulte os Termos de venda para detalhes completos.",
+      q5: "Onde encontro sugestões para aprofundar?",
+      a5: "Cada app Studio9 disponível inclui uma secção Further study na visão geral do curso — livros que aconselhamos quando queres ir mais além depois de uma lição. Apoiam a tua leitura pessoal em paralelo com a universidade; não substituem a bibliografia oficial do curso.",
     },
   },
   legal: {
@@ -541,6 +543,55 @@ SITE_LOCALES.pt = {
       title: "Sistema de Saúde Italiano",
       description:
         "Estrutura, financiamento e organização dos cuidados de saúde em Itália — regiões, serviços e contexto político.",
+    },
+    "human-anatomy-2": {
+      title: "Anatomia Humana II",
+      description:
+        "Sistemas cardiovascular, respiratório, digestivo, urinário e reprodutor em profundidade.",
+    },
+    "physiology-2": {
+      title: "Fisiologia II",
+      description:
+        "Fisiologia renal, digestiva, endócrina e reprodutiva para raciocínio clínico.",
+    },
+    immunology: {
+      title: "Imunologia",
+      description:
+        "Imunidade adaptativa, vacinas, hipersensibilidade, autoimunidade e imunologia clínica.",
+    },
+    microbiology: {
+      title: "Microbiologia",
+      description:
+        "Bactérias, vírus, fungos e parasitas — patogénese, diagnóstico e bases de tratamento.",
+    },
+    "pharmacology-1": {
+      title: "Farmacologia I",
+      description:
+        "Farmacocinética, farmacodinâmica e classes principais de fármacos para os sistemas nervoso e cardiovascular.",
+    },
+    epidemiology: {
+      title: "Epidemiologia",
+      description:
+        "Medidas de frequência, desenhos de estudo, rastreio e raciocínio em saúde populacional.",
+    },
+    "economics-health-policy": {
+      title: "Economia e Política de Saúde",
+      description:
+        "Sistemas de saúde, modelos de financiamento e o contexto social e político da medicina.",
+    },
+    "systemic-pathology": {
+      title: "Patologia Sistémica",
+      description:
+        "Patologia por sistemas de órgãos — coração, pulmão, rim, fígado e padrões clínicos associados.",
+    },
+    "clinical-medicine-1": {
+      title: "Medicina Clínica I",
+      description: "Semiologia básica, sintomas comuns e raciocínio clínico introdutório.",
+    },
+    "clinical-medicine-2": {
+      title: "Medicina Clínica II",
+      description:
+        "Condições comuns como hipertensão, diabetes, asma e infeções maiores.",
     },
   },
   mod: {

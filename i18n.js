@@ -409,6 +409,8 @@ const SITE_LOCALES = {
         a3: "No. It is a complement to help you study in a lighter and more efficient way. The topics follow the common health-sciences curriculum.",
         q4: "Can I get a refund?",
         a4: "No. All sales are final. Each module includes 12 months of digital access from purchase. By completing checkout you accept immediate delivery and waive the EU 14-day withdrawal right for digital content. See our Terms of Sale for full details.",
+        q5: "Where can I find further study suggestions?",
+        a5: "Each live Studio9 app includes a Further study section on the course overview — books we recommend when you want to go deeper after a lesson. They support your own reading alongside university; they do not replace your official programme bibliography.",
       },
     },
     legal: {
@@ -546,6 +548,55 @@ const SITE_LOCALES = {
         title: "Italian Health System",
         description:
           "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
+      },
+      "human-anatomy-2": {
+        title: "Human Anatomy II",
+        description:
+          "Cardiovascular, respiratory, digestive, urinary and reproductive systems in depth.",
+      },
+      "physiology-2": {
+        title: "Physiology II",
+        description:
+          "Renal, digestive, endocrine and reproductive physiology for clinical reasoning.",
+      },
+      immunology: {
+        title: "Immunology",
+        description:
+          "Adaptive immunity, vaccines, hypersensitivity, autoimmunity and clinical immunology.",
+      },
+      microbiology: {
+        title: "Microbiology",
+        description:
+          "Bacteria, viruses, fungi and parasites — pathogenesis, diagnosis and treatment basics.",
+      },
+      "pharmacology-1": {
+        title: "Pharmacology I",
+        description:
+          "Pharmacokinetics, pharmacodynamics, and core drug classes for the nervous and cardiovascular systems.",
+      },
+      epidemiology: {
+        title: "Epidemiology",
+        description:
+          "Frequency measures, study designs, screening and population health reasoning.",
+      },
+      "economics-health-policy": {
+        title: "Economics and Health Policy",
+        description:
+          "Health systems, funding models, and the social and political context of medicine.",
+      },
+      "systemic-pathology": {
+        title: "Systemic Pathology",
+        description:
+          "Organ-system pathology spanning heart, lung, kidney, liver and related clinical patterns.",
+      },
+      "clinical-medicine-1": {
+        title: "Clinical Medicine I",
+        description: "Basic semiology, common symptoms and introductory clinical reasoning.",
+      },
+      "clinical-medicine-2": {
+        title: "Clinical Medicine II",
+        description:
+          "Common conditions such as hypertension, diabetes, asthma and major infections.",
       },
     },
     mod: {

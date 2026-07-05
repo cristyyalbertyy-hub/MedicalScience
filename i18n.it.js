@@ -404,6 +404,8 @@ SITE_LOCALES.it = {
       a3: "No. È un complemento per aiutarti a studiare in modo più leggero ed efficiente. Gli argomenti seguono il programma comune delle scienze della salute.",
       q4: "Posso chiedere un rimborso?",
       a4: "No. Tutte le vendite sono definitive. Ogni modulo include 12 mesi di accesso digitale dall'acquisto. Completando il checkout accetti la consegna immediata e rinunci al diritto di recesso di 14 giorni per i contenuti digitali. Consulta le Condizioni di vendita per i dettagli completi.",
+      q5: "Dove trovo suggerimenti per approfondire?",
+      a5: "Ogni app Studio9 disponibile include una sezione Further study nella panoramica del corso — libri che consigliamo quando vuoi andare oltre dopo una lezione. Supportano la tua lettura personale accanto all'università; non sostituiscono la bibliografia ufficiale del corso.",
     },
   },
   legal: {
@@ -541,6 +543,55 @@ SITE_LOCALES.it = {
       title: "Sistema Sanitario Italiano",
       description:
         "Struttura, finanziamento e organizzazione dell'assistenza sanitaria in Italia — regioni, servizi e contesto normativo.",
+    },
+    "human-anatomy-2": {
+      title: "Anatomia Umana II",
+      description:
+        "Sistemi cardiovascolare, respiratorio, digestivo, urinario e riproduttivo in profondità.",
+    },
+    "physiology-2": {
+      title: "Fisiologia II",
+      description:
+        "Fisiologia renale, digestiva, endocrina e riproduttiva per il ragionamento clinico.",
+    },
+    immunology: {
+      title: "Immunologia",
+      description:
+        "Immunità adattativa, vaccini, ipersensibilità, autoimmunità e immunologia clinica.",
+    },
+    microbiology: {
+      title: "Microbiologia",
+      description:
+        "Batteri, virus, funghi e parassiti — patogenesi, diagnosi e basi del trattamento.",
+    },
+    "pharmacology-1": {
+      title: "Farmacologia I",
+      description:
+        "Farmacocinetica, farmacodinamica e principali classi di farmaci per i sistemi nervoso e cardiovascolare.",
+    },
+    epidemiology: {
+      title: "Epidemiologia",
+      description:
+        "Misure di frequenza, disegni di studio, screening e ragionamento in salute di popolazione.",
+    },
+    "economics-health-policy": {
+      title: "Economia e Politica Sanitaria",
+      description:
+        "Sistemi sanitari, modelli di finanziamento e contesto sociale e politico della medicina.",
+    },
+    "systemic-pathology": {
+      title: "Patologia Sistemica",
+      description:
+        "Patologia per sistemi di organi — cuore, polmone, rene, fegato e schemi clinici correlati.",
+    },
+    "clinical-medicine-1": {
+      title: "Medicina Clinica I",
+      description: "Semiologia di base, sintomi comuni e ragionamento clinico introduttivo.",
+    },
+    "clinical-medicine-2": {
+      title: "Medicina Clinica II",
+      description:
+        "Condizioni comuni come ipertensione, diabete, asma e infezioni importanti.",
     },
   },
   mod: {

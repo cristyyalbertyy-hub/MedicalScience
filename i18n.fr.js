@@ -405,6 +405,8 @@ SITE_LOCALES.fr = {
       a3: "Non. C'est un complément pour vous aider à étudier de façon plus légère et efficace. Les sujets suivent le programme commun des sciences de la santé.",
       q4: "Puis-je obtenir un remboursement ?",
       a4: "Non. Toutes les ventes sont finales. Chaque module comprend 12 mois d'accès numérique à partir de l'achat. En finalisant le checkout, vous acceptez la livraison immédiate et renoncez au droit de rétractation de 14 jours pour le contenu numérique. Voir nos Conditions de vente pour les détails complets.",
+      q5: "Où trouver des suggestions pour approfondir ?",
+      a5: "Chaque app Studio9 disponible inclut une section Further study dans la vue d'ensemble du cours — des ouvrages que nous conseillons lorsque vous voulez aller plus loin après une leçon. Ils soutiennent votre lecture personnelle en parallèle de l'université ; ils ne remplacent pas la bibliographie officielle du programme.",
     },
   },
   legal: {
@@ -542,6 +544,55 @@ SITE_LOCALES.fr = {
       title: "Système de Santé Italien",
       description:
         "Structure, financement et organisation des soins en Italie — régions, services et contexte politique.",
+    },
+    "human-anatomy-2": {
+      title: "Anatomie Humaine II",
+      description:
+        "Systèmes cardiovasculaire, respiratoire, digestif, urinaire et reproducteur en profondeur.",
+    },
+    "physiology-2": {
+      title: "Physiologie II",
+      description:
+        "Physiologie rénale, digestive, endocrinienne et reproductive pour le raisonnement clinique.",
+    },
+    immunology: {
+      title: "Immunologie",
+      description:
+        "Immunité adaptative, vaccins, hypersensibilité, auto-immunité et immunologie clinique.",
+    },
+    microbiology: {
+      title: "Microbiologie",
+      description:
+        "Bactéries, virus, champignons et parasites — pathogenèse, diagnostic et bases thérapeutiques.",
+    },
+    "pharmacology-1": {
+      title: "Pharmacologie I",
+      description:
+        "Pharmacocinétique, pharmacodynamie et principales classes de médicaments pour les systèmes nerveux et cardiovasculaire.",
+    },
+    epidemiology: {
+      title: "Épidémiologie",
+      description:
+        "Mesures de fréquence, plans d'étude, dépistage et raisonnement en santé populationnelle.",
+    },
+    "economics-health-policy": {
+      title: "Économie et Politique de Santé",
+      description:
+        "Systèmes de santé, modèles de financement et contexte social et politique de la médecine.",
+    },
+    "systemic-pathology": {
+      title: "Pathologie Systémique",
+      description:
+        "Pathologie des systèmes d'organes — cœur, poumon, rein, foie et schémas cliniques associés.",
+    },
+    "clinical-medicine-1": {
+      title: "Médecine Clinique I",
+      description: "Sémiologie de base, symptômes courants et raisonnement clinique introductif.",
+    },
+    "clinical-medicine-2": {
+      title: "Médecine Clinique II",
+      description:
+        "Affections courantes comme l'hypertension, le diabète, l'asthme et les infections majeures.",
     },
   },
   mod: {
