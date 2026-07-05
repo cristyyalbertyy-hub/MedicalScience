@@ -139,14 +139,22 @@ p {
   text-decoration: none;
 }
 
-.brand img,
-.footer-brand img {
+.brand img {
   height: 3.15rem;
   width: auto;
   max-width: min(12.5rem, 46vw);
   border-radius: 0;
   object-fit: contain;
   background: var(--paper);
+}
+
+.footer-brand img {
+  height: 3.35rem;
+  width: auto;
+  max-width: min(14rem, 58vw);
+  border-radius: 0;
+  object-fit: contain;
+  background: transparent;
 }
 
 .brand span {
