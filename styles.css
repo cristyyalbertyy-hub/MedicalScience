@@ -139,15 +139,7 @@ p {
   text-decoration: none;
 }
 
-.brand img {
-  height: 3.15rem;
-  width: auto;
-  max-width: min(12.5rem, 46vw);
-  border-radius: 0;
-  object-fit: contain;
-  background: var(--paper);
-}
-
+.brand img,
 .footer-brand img {
   height: 3.35rem;
   width: auto;
