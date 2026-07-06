@@ -168,9 +168,10 @@ const SITE_LOCALES = {
           "Studio9 has been the perfect tool for my daughter. She puts tremendous effort into her studies and sometimes feels completely overwhelmed. This app gives her clarity and guidance on challenging subjects — she knows exactly how to tackle each topic. Plus, she can listen to the podcasts while commuting to university or walking between classes, which makes every moment count. It's been a game-changer for her confidence and routine.",
         t2Name: "Patricia Moreira",
         t2Role: "Mother of a university student",
-        pendingQuote: "Testimonial coming soon.",
-        t3Name: "Student",
-        t3Role: "University · coming soon",
+        t3Quote:
+          "This program has been an excellent tool to help me with my studies. It allowed me to rapidly review subjects as well as listen to informative podcasts when I am busy doing housework or commuting. It gives good clarity and is easy to understand even if I haven't learnt the subject yet — which is excellent to prepare me to understand even more, both in lectures and outside them. All in all, this is a 10/10. Thank you for creating this.",
+        t3Name: "Henrique",
+        t3Role: "University student",
       },
       aiCredit: {
         aria: "AI partnership acknowledgment",
@@ -393,7 +394,7 @@ const SITE_LOCALES = {
       terms: {
         modalTitle: "Before you purchase",
         labelHtml:
-          'I have read and accept the <a href="../termos/">Terms of Sale</a> and <a href="../privacidade/">Privacy Policy</a>. I understand that access is <strong>digital</strong>, <strong>immediate</strong>, and <strong>valid for 12 months</strong> from purchase; <strong>no refunds</strong> are available after payment is confirmed. I expressly waive my 14-day right of withdrawal as digital content is supplied immediately.',
+          'I have read and accept the <a href="../termos/">Terms of Sale</a> and <a href="../privacidade/">Privacy Policy</a>. I understand that access is <strong>digital</strong>, <strong>immediate</strong>, and <strong>valid for 12 months</strong> from purchase.',
         hint: "You must accept before continuing to purchase.",
         confirmCta: "Continue to purchase",
         cancelCta: "Cancel",

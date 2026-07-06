@@ -161,9 +161,10 @@ SITE_LOCALES.pt = {
         "O Studio9 tem sido a ferramenta perfeita para a minha filha. Ela dedica um esforço enorme aos estudos e por vezes sente-se completamente sobrecarregada. Esta app dá-lhe clareza e orientação nas matérias mais exigentes — sabe exactamente como abordar cada tópico. Além disso, pode ouvir os podcasts a caminho da universidade ou entre aulas, o que faz valer cada momento. Foi uma mudança decisiva para a confiança e a rotina dela.",
       t2Name: "Patricia Moreira",
       t2Role: "Mãe de estudante universitária",
-      pendingQuote: "Testemunho em breve.",
-      t3Name: "Estudante",
-      t3Role: "Universidade · em breve",
+      t3Quote:
+        "Este programa tem sido uma excelente ferramenta para me ajudar nos estudos. Permite-me rever matérias rapidamente e ouvir podcasts informativos quando estou ocupado com tarefas em casa ou a deslocar-me. Dá-me clareza e é fácil de entender mesmo quando ainda não vi a matéria — o que me prepara para compreender ainda mais, tanto nas aulas como fora delas. No conjunto, é um 10/10. Obrigado por o terem criado.",
+      t3Name: "Henrique",
+      t3Role: "Estudante universitário",
     },
     aiCredit: {
       aria: "Reconhecimento da parceria com IA",
@@ -388,7 +389,7 @@ SITE_LOCALES.pt = {
     terms: {
       modalTitle: "Antes de comprar",
       labelHtml:
-        'Li e aceito os <a href="../termos/">Termos de venda</a> e a <a href="../privacidade/">Política de privacidade</a>. Confirmo que o acesso é <strong>digital</strong>, <strong>imediato</strong> e <strong>válido por 12 meses</strong> a partir da compra; <strong>não há reembolsos</strong> após a confirmação do pagamento. Renuncio expressamente ao direito de desistência de 14 dias, uma vez que o conteúdo é disponibilizado de imediato.',
+        'Li e aceito os <a href="../termos/">Termos de venda</a> e a <a href="../privacidade/">Política de privacidade</a>. Confirmo que o acesso é <strong>digital</strong>, <strong>imediato</strong> e <strong>válido por 12 meses</strong> a partir da compra.',
       hint: "Tem de aceitar antes de continuar para a compra.",
       confirmCta: "Continuar para a compra",
       cancelCta: "Cancelar",

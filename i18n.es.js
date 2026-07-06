@@ -162,9 +162,10 @@ SITE_LOCALES.es = {
         "Studio9 ha sido la herramienta perfecta para mi hija. Se esfuerza muchísimo en los estudios y a veces se siente completamente abrumada. Esta app le da claridad y orientación en las asignaturas más exigentes — sabe exactamente cómo abordar cada tema. Además, puede escuchar los podcasts de camino a la universidad o entre clases, lo que aprovecha cada momento. Ha sido un cambio decisivo para su confianza y su rutina.",
       t2Name: "Patricia Moreira",
       t2Role: "Madre de estudiante universitaria",
-      pendingQuote: "Testimonio próximamente.",
-      t3Name: "Estudiante",
-      t3Role: "Universidad · próximamente",
+      t3Quote:
+        "Este programa ha sido una herramienta excelente para ayudarme con mis estudios. Me ha permitido repasar materias rápidamente y escuchar podcasts informativos cuando estoy ocupado con las tareas del hogar o desplazándome. Ofrece buena claridad y es fácil de entender incluso si aún no he visto la materia — lo cual me prepara para comprender aún más, tanto en clase como fuera de ella. En conjunto, es un 10/10. Gracias por crearlo.",
+      t3Name: "Henrique",
+      t3Role: "Estudiante universitario",
     },
     aiCredit: {
       aria: "Reconocimiento de la colaboración con IA",
@@ -388,7 +389,7 @@ SITE_LOCALES.es = {
     terms: {
       modalTitle: "Antes de comprar",
       labelHtml:
-        'He leído y acepto las <a href="../termos/">Condiciones de venta</a> y la <a href="../privacidade/">Política de privacidad</a>. Entiendo que el acceso es <strong>digital</strong>, <strong>inmediato</strong> y <strong>válido durante 12 meses</strong> desde la compra; <strong>no hay reembolsos</strong> tras confirmar el pago. Renuncio expresamente al derecho de desistimiento de 14 días, ya que el contenido digital se entrega de inmediato.',
+        'He leído y acepto las <a href="../termos/">Condiciones de venta</a> y la <a href="../privacidade/">Política de privacidad</a>. Entiendo que el acceso es <strong>digital</strong>, <strong>inmediato</strong> y <strong>válido durante 12 meses</strong> desde la compra.',
       hint: "Debe aceptar antes de continuar con la compra.",
       confirmCta: "Continuar con la compra",
       cancelCta: "Cancelar",

@@ -162,9 +162,10 @@ SITE_LOCALES.it = {
         "Studio9 è stato lo strumento perfetto per mia figlia. Si impegna moltissimo negli studi e a volte si sente completamente sopraffatta. Questa app le dà chiarezza e guida sulle materie più impegnative — sa esattamente come affrontare ogni argomento. Inoltre, può ascoltare i podcast mentre va all'università o tra una lezione e l'altra, sfruttando ogni momento. È stato un cambiamento decisivo per la sua fiducia e la sua routine.",
       t2Name: "Patricia Moreira",
       t2Role: "Madre di studentessa universitaria",
-      pendingQuote: "Testimonianza in arrivo.",
-      t3Name: "Studente",
-      t3Role: "Università · in arrivo",
+      t3Quote:
+        "Questo programma è stato uno strumento eccellente per aiutarmi negli studi. Mi ha permesso di ripassare rapidamente le materie e di ascoltare podcast informativi quando sono occupato con le faccende di casa o in spostamento. Offre chiarezza ed è facile da capire anche se non ho ancora visto la materia — il che mi prepara a capire ancora di più, sia a lezione sia fuori. Nel complesso, è un 10/10. Grazie per averlo creato.",
+      t3Name: "Henrique",
+      t3Role: "Studente universitario",
     },
     aiCredit: {
       aria: "Riconoscimento della collaborazione con l'IA",
@@ -388,7 +389,7 @@ SITE_LOCALES.it = {
     terms: {
       modalTitle: "Prima di acquistare",
       labelHtml:
-        'Ho letto e accetto le <a href="../termos/">Condizioni di vendita</a> e l\'<a href="../privacidade/">Informativa sulla privacy</a>. Comprendo che l\'accesso è <strong>digitale</strong>, <strong>immediato</strong> e <strong>valido per 12 mesi</strong> dall\'acquisto; <strong>non sono previsti rimborsi</strong> dopo la conferma del pagamento. Rinuncio espressamente al diritto di recesso di 14 giorni, poiché il contenuto digitale viene fornito immediatamente.',
+        'Ho letto e accetto le <a href="../termos/">Condizioni di vendita</a> e l\'<a href="../privacidade/">Informativa sulla privacy</a>. Comprendo che l\'accesso è <strong>digitale</strong>, <strong>immediato</strong> e <strong>valido per 12 mesi</strong> dall\'acquisto.',
       hint: "Devi accettare prima di procedere all'acquisto.",
       confirmCta: "Continua verso l'acquisto",
       cancelCta: "Annulla",

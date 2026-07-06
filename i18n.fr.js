@@ -162,9 +162,10 @@ SITE_LOCALES.fr = {
         "Studio9 a été l'outil parfait pour ma fille. Elle met un effort considérable dans ses études et se sent parfois complètement dépassée. Cette app lui apporte clarté et repères sur les matières exigeantes — elle sait exactement comment aborder chaque sujet. De plus, elle peut écouter les podcasts en allant à l'université ou entre les cours, ce qui valorise chaque instant. Cela a transformé sa confiance et sa routine.",
       t2Name: "Patricia Moreira",
       t2Role: "Mère d'étudiante universitaire",
-      pendingQuote: "Témoignage bientôt disponible.",
-      t3Name: "Étudiant",
-      t3Role: "Université · bientôt",
+      t3Quote:
+        "Ce programme a été un excellent outil pour m'aider dans mes études. Il m'a permis de réviser rapidement les matières et d'écouter des podcasts informatifs lorsque je suis occupé avec les tâches ménagères ou en me déplaçant. Il apporte une bonne clarté et reste facile à comprendre même si je n'ai pas encore vu la matière — ce qui me prépare à mieux comprendre, en cours comme en dehors. Bref, c'est un 10/10. Merci de l'avoir créé.",
+      t3Name: "Henrique",
+      t3Role: "Étudiant universitaire",
     },
     aiCredit: {
       aria: "Reconnaissance du partenariat avec l'IA",
@@ -389,7 +390,7 @@ SITE_LOCALES.fr = {
     terms: {
       modalTitle: "Avant d'acheter",
       labelHtml:
-        'J\'ai lu et j\'accepte les <a href="../termos/">Conditions de vente</a> et la <a href="../privacidade/">Politique de confidentialité</a>. Je comprends que l\'accès est <strong>numérique</strong>, <strong>immédiat</strong> et <strong>valable 12 mois</strong> à partir de l\'achat ; <strong>aucun remboursement</strong> n\'est possible après confirmation du paiement. Je renonce expressément à mon droit de rétractation de 14 jours, le contenu numérique étant fourni immédiatement.',
+        'J\'ai lu et j\'accepte les <a href="../termos/">Conditions de vente</a> et la <a href="../privacidade/">Politique de confidentialité</a>. Je comprends que l\'accès est <strong>numérique</strong>, <strong>immédiat</strong> et <strong>valable 12 mois</strong> à partir de l\'achat.',
       hint: "Vous devez accepter avant de continuer vers l'achat.",
       confirmCta: "Continuer vers l'achat",
       cancelCta: "Annuler",
