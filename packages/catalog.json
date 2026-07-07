@@ -123,5 +123,12 @@
       "enabled": false,
       "lifetime": true
     }
+  },
+  "lemonSqueezy": {
+    "productsByName": {
+      "Medical Biology": "medical-biology",
+      "Genetics": "genetics"
+    },
+    "variants": {}
   }
 }
