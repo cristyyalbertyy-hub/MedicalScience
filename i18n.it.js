@@ -82,6 +82,7 @@ SITE_LOCALES.it = {
     loginSoonHint: "L'accesso tramite account è in attivazione per questo modulo.",
     purchasable: "Acquisto disponibile",
     openViaAccount: "Apri via account",
+    buyNow: "Acquista {title}",
     openAccess: "Accesso libero",
     viewContents: "Vedi contenuti inclusi",
     syllabusNotePurchase:
@@ -497,10 +498,12 @@ SITE_LOCALES.it = {
       title: "Biologia Medica",
       description:
         "Biologia cellulare, tessuti, metabolismo e le basi necessarie prima degli anni clinici.",
+      buyCta: "Acquista Biologia Medica",
     },
     genetics: {
       title: "Genetica",
       description: "Ereditarietà mendeliana, mutazioni, alberi genealogici e scenari di genetica clinica.",
+      buyCta: "Acquista Genetica",
     },
     physics: {
       title: "Fisica",

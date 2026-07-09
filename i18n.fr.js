@@ -82,6 +82,7 @@ SITE_LOCALES.fr = {
     loginSoonHint: "La connexion par compte est en cours d'activation pour ce module.",
     purchasable: "Achat disponible",
     openViaAccount: "Ouvrir via le compte",
+    buyNow: "Acheter {title}",
     openAccess: "Accès libre",
     viewContents: "Voir le contenu inclus",
     syllabusNotePurchase:
@@ -498,10 +499,12 @@ SITE_LOCALES.fr = {
       title: "Biologie Médicale",
       description:
         "Biologie cellulaire, tissus, métabolisme et les fondements nécessaires avant les années cliniques.",
+      buyCta: "Acheter Biologie Médicale",
     },
     genetics: {
       title: "Génétique",
       description: "Hérédité mendélienne, mutations, pedigrees et scénarios de génétique clinique.",
+      buyCta: "Acheter Génétique",
     },
     physics: {
       title: "Physique",

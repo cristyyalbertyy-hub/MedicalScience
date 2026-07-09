@@ -24,13 +24,15 @@
       "title": "Medical Biology",
       "url": "https://biology-genetics.vercel.app/",
       "loginReady": true,
-      "progressUrl": "https://progress-azure-five.vercel.app/?package=medical-biology"
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=medical-biology",
+      "checkoutUrl": "https://studionine.lemonsqueezy.com/checkout/buy/e9fb6c31-00b8-442e-a257-94facf465056?embed=1"
     },
     "genetics": {
       "title": "Genetics",
       "url": "https://medica-genetics.vercel.app/",
       "loginReady": true,
-      "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics"
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics",
+      "checkoutUrl": "https://studionine.lemonsqueezy.com/checkout/buy/7c8aa8d6-f028-435e-ae30-b91e7b1269a0?embed=1"
     },
     "physics": {
       "title": "Physics",
@@ -129,6 +131,9 @@
       "Medical Biology": "medical-biology",
       "Genetics": "genetics"
     },
-    "variants": {}
+    "variants": {
+      "e9fb6c31-00b8-442e-a257-94facf465056": "medical-biology",
+      "7c8aa8d6-f028-435e-ae30-b91e7b1269a0": "genetics"
+    }
   }
 }

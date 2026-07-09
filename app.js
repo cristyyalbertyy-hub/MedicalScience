@@ -249,6 +249,19 @@ function isPurchasablePackage(id, catalog) {
   return (catalog.purchasablePackageIds ?? []).includes(id);
 }
 
+function getCheckoutUrl(pkgId, catalog) {
+  return catalog.packageMeta?.[pkgId]?.checkoutUrl ?? null;
+}
+
+function ensureLemonSqueezyScript() {
+  if (document.querySelector("script[data-lemon-squeezy]")) return;
+  const script = document.createElement("script");
+  script.src = "https://assets.lemonsqueezy.com/lemon.js";
+  script.defer = true;
+  script.dataset.lemonSqueezy = "";
+  document.head.appendChild(script);
+}
+
 function isFreePackage(id, catalog) {
   return (catalog.freePackageIds ?? []).includes(id);
 }
@@ -330,7 +343,17 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   } else if (purchasable) {
     statusClass = "is-live is-pilot-purchase";
     statusLabel = packageText("packagesUi.purchasable");
-    action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
+    const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
+    const checkoutUrl = getCheckoutUrl(pkg.id, catalog);
+    const buyLabel = packageText(
+      `pkg.${pkg.id}.buyCta`,
+      packageText("packagesUi.buyNow", `Buy ${title}`),
+    );
+    if (checkoutUrl) {
+      action = `<a class="btn btn-pilot-purchase lemonsqueezy-button${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(checkoutUrl)}">${escapeHtml(buyLabel)}</a>`;
+    } else {
+      action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
+    }
   } else {
     statusClass = "is-live is-open-access";
     statusLabel = free
@@ -339,7 +362,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
     action = `<a class="btn btn-open-access${compact ? " btn-secondary" : ""}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`;
   }
 
-  const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
+  const cardTitle = packageText(`pkg.${pkg.id}.title`, pkg.title);
   const description = packageText(`pkg.${pkg.id}.description`, pkg.description);
   const syllabus = renderSyllabusBlock(pkg, catalog, manifest);
   const tierBadge =
@@ -354,7 +377,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
         <span class="package-status">${escapeHtml(statusLabel)}</span>
       </div>
       ${tierBadge}
-      <h3>${escapeHtml(title)}</h3>
+      <h3>${escapeHtml(cardTitle)}</h3>
       <p>${escapeHtml(description)}</p>
       ${syllabus}
       <div class="package-card-action">${action}</div>
@@ -659,14 +682,14 @@ function maybeResetPurchaseTermsFromUrl() {
   }
 }
 
-let purchaseTermsPendingUrl = null;
+let purchaseTermsPendingLink = null;
 let purchaseTermsClickBound = false;
 
 function closePurchaseTermsModal() {
   const modal = document.querySelector("[data-purchase-terms-modal]");
   if (modal) modal.hidden = true;
   document.body.classList.remove("purchase-terms-modal-open");
-  purchaseTermsPendingUrl = null;
+  purchaseTermsPendingLink = null;
 }
 
 function ensurePurchaseTermsModal() {
@@ -707,9 +730,9 @@ function ensurePurchaseTermsModal() {
   confirmBtn.addEventListener("click", () => {
     if (!checkbox.checked) return;
     setPurchaseTermsAccepted(true);
-    const target = purchaseTermsPendingUrl;
+    const link = purchaseTermsPendingLink;
     closePurchaseTermsModal();
-    if (target) window.location.href = target;
+    if (link) link.click();
   });
 
   modal.querySelectorAll("[data-purchase-terms-dismiss]").forEach((el) => {
@@ -719,8 +742,8 @@ function ensurePurchaseTermsModal() {
   return modal;
 }
 
-function openPurchaseTermsModal(url) {
-  purchaseTermsPendingUrl = url;
+function openPurchaseTermsModal(link) {
+  purchaseTermsPendingLink = link;
   const modal = ensurePurchaseTermsModal();
   const checkbox = modal.querySelector("[data-purchase-terms-modal-checkbox]");
   const confirmBtn = modal.querySelector("[data-purchase-terms-confirm]");
@@ -750,9 +773,7 @@ function initPurchaseTerms() {
     if (!link) return;
     if (isPurchaseTermsAccepted()) return;
     event.preventDefault();
-    const href = link.getAttribute("href");
-    if (!href) return;
-    openPurchaseTermsModal(href);
+    openPurchaseTermsModal(link);
   });
 
   document.addEventListener("keydown", (event) => {
@@ -778,6 +799,9 @@ async function init() {
   }
 
   const [catalog, manifest] = await Promise.all([loadPackageCatalog(), loadProgressManifest()]);
+  if ((catalog.purchasablePackageIds ?? []).some((id) => getCheckoutUrl(id, catalog))) {
+    ensureLemonSqueezyScript();
+  }
   document.querySelectorAll("[data-packages-root]").forEach((root) => {
     renderPackages(root, catalog, manifest);
   });

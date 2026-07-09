@@ -87,6 +87,7 @@ const SITE_LOCALES = {
       loginSoonHint: "Account login is being rolled out for this module.",
       purchasable: "Available to buy",
       openViaAccount: "Open via account",
+      buyNow: "Buy {title}",
       openAccess: "Free access",
       viewContents: "View included content",
       syllabusNotePurchase:
@@ -502,10 +503,12 @@ const SITE_LOCALES = {
         title: "Medical Biology",
         description:
           "Cell biology, tissues, metabolism and the core foundations for health-sciences study.",
+        buyCta: "Buy Medical Biology",
       },
       genetics: {
         title: "Genetics",
         description: "Mendelian inheritance, mutations, pedigrees and clinical genetics scenarios.",
+        buyCta: "Buy Genetics",
       },
       physics: {
         title: "Physics",

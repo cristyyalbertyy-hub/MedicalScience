@@ -80,6 +80,7 @@ SITE_LOCALES.pt = {
     loginSoonHint: "O login por conta está a ser activado neste módulo.",
     purchasable: "Compra disponível",
     openViaAccount: "Abrir via conta",
+    buyNow: "Comprar {title}",
     openAccess: "Acesso livre",
     viewContents: "Ver conteúdo incluído",
     syllabusNotePurchase:
@@ -497,10 +498,12 @@ SITE_LOCALES.pt = {
       title: "Biologia Médica",
       description:
         "Biologia celular, tecidos, metabolismo e as bases necessárias antes dos anos clínicos.",
+      buyCta: "Comprar Biologia Médica",
     },
     genetics: {
       title: "Genética",
       description: "Herança mendeliana, mutações, pedigrees e cenários de genética clínica.",
+      buyCta: "Comprar Genética",
     },
     physics: {
       title: "Física",
