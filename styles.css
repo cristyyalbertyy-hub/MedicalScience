@@ -396,6 +396,20 @@ p {
   margin-top: 1.8rem;
 }
 
+.hero-free-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.hero-free-cta__hint {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

@@ -121,6 +121,8 @@ SITE_LOCALES.it = {
       lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
       ctaDisciplines: "Vedi tutte le discipline",
       ctaHow: "Scopri come funziona",
+      ctaFreeItalian: "Prova Italian Health System — gratis",
+      ctaFreeHint: "Gratis · senza pagamento · senza account",
       mediaAria: "App Studio9 con panoramica di un corso, capitoli e programma",
     },
     audience: {

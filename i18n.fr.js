@@ -121,6 +121,8 @@ SITE_LOCALES.fr = {
       lead: "Étudiez l'anatomie, la physiologie, la génétique et bien plus encore. En courtes vidéos, podcasts pour le bus et exercices interactifs. Le tout dans l'app Studio9.",
       ctaDisciplines: "Voir toutes les disciplines",
       ctaHow: "Voir comment ça marche",
+      ctaFreeItalian: "Essayer Italian Health System — gratuit",
+      ctaFreeHint: "Gratuit · sans paiement · sans compte",
       mediaAria: "App Studio9 affichant la vue d'ensemble d'un cours, les chapitres et le programme",
     },
     audience: {
