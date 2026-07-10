@@ -455,6 +455,9 @@ const SITE_LOCALES = {
       modalSuccessBody: "Thank you for writing to us. We usually reply within 2–3 business days.",
       modalErrorTitle: "Could not send",
       modalErrorBody: "Something went wrong. Please try again or email us at studio9.alex@gmail.com.",
+      modalActivationTitle: "Almost ready",
+      modalActivationBody:
+        "The contact form still needs to be activated. Check studio9.alex@gmail.com for an activation email from FormSubmit and click the link — then try again.",
       modalClose: "OK",
     },
     legal: {

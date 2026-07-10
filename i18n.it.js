@@ -450,6 +450,9 @@ SITE_LOCALES.it = {
     modalSuccessBody: "Grazie per averci scritto. Di solito rispondiamo entro 2–3 giorni lavorativi.",
     modalErrorTitle: "Invio non riuscito",
     modalErrorBody: "Qualcosa è andato storto. Riprova o scrivi a studio9.alex@gmail.com.",
+    modalActivationTitle: "Quasi pronto",
+    modalActivationBody:
+      "Il modulo deve ancora essere attivato. Controlla studio9.alex@gmail.com — dovresti trovare un'email di attivazione da FormSubmit. Clicca sul link e riprova.",
     modalClose: "OK",
   },
   legal: {

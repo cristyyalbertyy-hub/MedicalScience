@@ -450,6 +450,9 @@ SITE_LOCALES.es = {
     modalSuccessBody: "Gracias por escribirnos. Solemos responder en 2–3 días laborables.",
     modalErrorTitle: "No se pudo enviar",
     modalErrorBody: "Algo falló. Inténtalo de nuevo o escribe a studio9.alex@gmail.com.",
+    modalActivationTitle: "Casi listo",
+    modalActivationBody:
+      "El formulario aún debe activarse. Revisa studio9.alex@gmail.com — busca un email de activación de FormSubmit, haz clic en el enlace e inténtalo de nuevo.",
     modalClose: "OK",
   },
   legal: {

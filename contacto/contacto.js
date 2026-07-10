@@ -1,4 +1,4 @@
-const CONTACT_EMAIL = "studio9.alex@gmail.com";
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/studio9.alex@gmail.com";
 
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("contact-status");
@@ -24,6 +24,10 @@ function topicLabel(value) {
     other: "contactPage.topicOther",
   };
   return t(map[value] ?? "contactPage.topicOther");
+}
+
+function isSubmitSuccess(data) {
+  return data?.success === true || data?.success === "true";
 }
 
 function setStatus(message, type = "") {
@@ -78,29 +82,47 @@ form?.addEventListener("submit", async (event) => {
     setStatus(t("contactPage.errorRequired"), "error");
     return;
   }
+  if (honey) return;
 
   setStatus("", "");
   setSending(true);
 
   try {
-    const response = await fetch("/api/contact", {
+    const response = await fetch(FORM_ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
       body: JSON.stringify({
         name,
         email,
         topic: topicLabel(topic),
         message,
-        _honey: honey,
+        _subject: `Studio9 — ${topicLabel(topic)}`,
+        _replyto: email,
+        _template: "table",
+        _captcha: "false",
       }),
     });
 
-    if (response.ok) {
+    const result = await response.json().catch(() => ({}));
+
+    if (response.ok && isSubmitSuccess(result)) {
       form.reset();
+      modal.dataset.reason = "";
       openModal("contactPage.modalSuccessTitle", "contactPage.modalSuccessBody", "ok");
       return;
     }
 
+    const detail = typeof result?.message === "string" ? result.message.toLowerCase() : "";
+    if (detail.includes("activate") || detail.includes("confirm")) {
+      modal.dataset.reason = "activation";
+      openModal("contactPage.modalActivationTitle", "contactPage.modalActivationBody", "error");
+      return;
+    }
+
+    modal.dataset.reason = "";
     openModal("contactPage.modalErrorTitle", "contactPage.modalErrorBody", "error");
   } catch {
     openModal("contactPage.modalErrorTitle", "contactPage.modalErrorBody", "error");
@@ -118,10 +140,23 @@ document.addEventListener("site:langchange", () => {
   }
   if (modal && !modal.hidden && modalTitle && modalBody) {
     const variant = modal.dataset.variant === "error" ? "error" : "ok";
-    openModal(
-      variant === "error" ? "contactPage.modalErrorTitle" : "contactPage.modalSuccessTitle",
-      variant === "error" ? "contactPage.modalErrorBody" : "contactPage.modalSuccessBody",
-      variant,
-    );
+    const titleKey =
+      modal.dataset.reason === "activation"
+        ? "contactPage.modalActivationTitle"
+        : variant === "error"
+          ? "contactPage.modalErrorTitle"
+          : "contactPage.modalSuccessTitle";
+    const bodyKey =
+      modal.dataset.reason === "activation"
+        ? "contactPage.modalActivationBody"
+        : variant === "error"
+          ? "contactPage.modalErrorBody"
+          : "contactPage.modalSuccessBody";
+    if (modal.dataset.reason === "activation") {
+      modalTitle.textContent = t(titleKey);
+      modalBody.textContent = t(bodyKey);
+    } else {
+      openModal(titleKey, bodyKey, variant);
+    }
   }
 });
