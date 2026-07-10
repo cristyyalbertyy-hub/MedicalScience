@@ -131,6 +131,8 @@ const SITE_LOCALES = {
         lead: "Study anatomy, physiology, genetics and much more. In short videos, podcasts for the bus, and interactive exercises. All inside the Studio9 app.",
         ctaDisciplines: "Browse all disciplines",
         ctaHow: "See how it works",
+        ctaFreeIntro:
+          "Try a module for free. Explore the videos, podcasts, infographics and questionnaires.",
         ctaFreeItalian: "Try Italian Health System — free",
         ctaFreeHint: "Free · no payment · no account",
         mediaAria: "Studio9 app showing a course overview with chapters and syllabus",

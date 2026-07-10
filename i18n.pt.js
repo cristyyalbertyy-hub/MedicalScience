@@ -124,6 +124,8 @@ SITE_LOCALES.pt = {
       lead: "Estuda anatomia, fisiologia, genética e muito mais. Em vídeos curtos, podcasts para o autocarro e exercícios interativos. Tudo dentro da app Studio9.",
       ctaDisciplines: "Ver todas as disciplinas",
       ctaHow: "Ver como funciona",
+      ctaFreeIntro:
+        "Experimenta um módulo grátis. Explora os vídeos, podcasts, infográficos e questionários.",
       ctaFreeItalian: "Experimentar Italian Health System — grátis",
       ctaFreeHint: "Grátis · sem pagamento · sem conta",
       mediaAria: "App Studio9 com visão geral de um curso, capítulos e resumo do programa",

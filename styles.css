@@ -400,8 +400,17 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.45rem;
-  margin-top: 1rem;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+  max-width: 34rem;
+}
+
+.hero-free-cta__intro {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink);
+  font-weight: 600;
 }
 
 .hero-free-cta__hint {
