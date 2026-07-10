@@ -1,4 +1,4 @@
-import { initializeApp } from "https://esm.sh/firebase@12.15.0/app";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
 import {
   getAuth,
   onAuthStateChanged,
@@ -8,7 +8,7 @@ import {
   isSignInWithEmailLink,
   signInWithEmailLink,
   signOut,
-} from "https://esm.sh/firebase@12.15.0/auth";
+} from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
 
 const EMAIL_KEY = "studio9.emailForSignIn";
 const LAST_EMAIL_KEY = "studio9.lastSignedInEmail";
