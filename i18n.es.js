@@ -37,6 +37,11 @@ SITE_LOCALES.es = {
       description:
         "Política de privacidad de Studio9 Medical Science — cómo recopilamos y usamos sus datos.",
     },
+    contacto: {
+      title: "Contacto · Medical Science · Studio9",
+      description:
+        "Contacte con Studio9 Medical Science — estamos aquí para ayudar con acceso, compras y dudas de estudio.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - inicio", name: "Studio9" },
   lang: { label: "Idioma" },
@@ -412,6 +417,35 @@ SITE_LOCALES.es = {
       a5: "Cada app Studio9 disponible incluye una sección Further study en la vista general del curso — libros que recomendamos cuando quieres ir más allá después de una lección. Apoyan tu lectura personal junto a la universidad; no sustituyen la bibliografía oficial del grado.",
     },
   },
+  contactPage: {
+    eyebrow: "Estamos aquí para ti",
+    title: "Contacto",
+    lead: "Estudiar ciencias de la salud exige mucho — no tienes que resolver el acceso o los pagos solo/a. Escríbenos y te ayudamos.",
+    formTitle: "Envíanos un mensaje",
+    formIntro:
+      "Cuéntanos qué necesitas. Si tu consulta es sobre acceso tras la compra, incluye el email del checkout.",
+    nameLabel: "Tu nombre",
+    emailLabel: "Tu email",
+    topicLabel: "Asunto",
+    topicPlaceholder: "Elige un asunto…",
+    topicAccess: "Mi cuenta / acceso tras la compra",
+    topicPurchase: "Pago o pedido",
+    topicTechnical: "App o problema técnico",
+    topicOther: "Otro asunto",
+    messageLabel: "Mensaje",
+    messagePlaceholder: "¿Cómo podemos ayudarte?",
+    submit: "Enviar mensaje",
+    submitNote: "Se abrirá tu app de correo con el mensaje listo para enviar.",
+    directTitle: "Email directo",
+    directText: "¿Prefieres escribir desde tu propio correo? Leemos todos los mensajes.",
+    responseTime: "Solemos responder en 2–3 días laborables.",
+    helpTitle: "Ayuda rápida",
+    helpAccount: 'Acceso tras la compra → <a href="../conta/">Mi cuenta</a>',
+    helpBuy: 'Comprar un módulo → <a href="../packages/">Disciplinas</a>',
+    helpFaq: 'Cómo funciona → <a href="../precos/#faq">FAQ</a>',
+    errorRequired: "Rellena todos los campos.",
+    success: "Gracias — debería abrirse tu app de correo. Si no, escribe a studio9.alex@gmail.com.",
+  },
   legal: {
     termos: {
       eyebrow: "Legal",
@@ -452,7 +486,7 @@ SITE_LOCALES.es = {
         "Los precios se muestran en USD o la moneda indicada en el checkout. Podemos corregir errores manifiestos de precio antes de confirmar el pedido.",
       s12Title: "12. Contacto",
       s12Body:
-        'Preguntas sobre acceso o pagos: <a href="mailto:hello@studio9.example">hello@studio9.example</a>. Consulte también nuestra <a href="../privacidade/">Política de privacidad</a>.',
+        'Preguntas sobre acceso o pagos: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>. Consulte también nuestra <a href="../privacidade/">Política de privacidad</a>.',
       s13Title: "13. Ley aplicable",
       s13Body:
         "Estas condiciones se rigen por la ley portuguesa, sin perjuicio de la protección obligatoria del consumidor en su país de residencia dentro de la Unión Europea.",
@@ -463,7 +497,7 @@ SITE_LOCALES.es = {
       updated: "Última actualización: julio de 2026",
       s01Title: "1. Responsable del tratamiento",
       s01Body:
-        'Studio9 es responsable de los datos personales tratados en los sitios y apps Medical Science. Contacto: <a href="mailto:hello@studio9.example">hello@studio9.example</a>.',
+        'Studio9 es responsable de los datos personales tratados en los sitios y apps Medical Science. Contacto: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>.',
       s02Title: "2. Datos que recopilamos",
       s02Body:
         "Dirección de email (inicio de sesión y compra), identificador de usuario Firebase, registros de compra y derechos de acceso, datos opcionales de progreso de estudio (p. ej. vídeos completados) y registros técnicos básicos (navegador, región aproximada, páginas visitadas) al usar el sitio o las apps.",

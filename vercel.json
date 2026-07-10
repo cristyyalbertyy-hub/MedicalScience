@@ -5,6 +5,8 @@
     { "source": "/acesso", "destination": "/conta/index.html" },
     { "source": "/acesso/", "destination": "/conta/index.html" },
     { "source": "/conta", "destination": "/conta/index.html" },
+    { "source": "/contacto", "destination": "/contacto/index.html" },
+    { "source": "/contacto/", "destination": "/contacto/index.html" },
     { "source": "/curriculo", "destination": "/packages/" },
     { "source": "/curriculo/", "destination": "/packages/" }
   ],

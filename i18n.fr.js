@@ -37,6 +37,11 @@ SITE_LOCALES.fr = {
       description:
         "Politique de confidentialité de Studio9 Medical Science — comment nous collectons et utilisons vos données.",
     },
+    contacto: {
+      title: "Contact · Medical Science · Studio9",
+      description:
+        "Contactez Studio9 Medical Science — nous sommes là pour l'accès, les achats et vos questions d'étude.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - accueil", name: "Studio9" },
   lang: { label: "Langue" },
@@ -413,6 +418,35 @@ SITE_LOCALES.fr = {
       a5: "Chaque app Studio9 disponible inclut une section Further study dans la vue d'ensemble du cours — des ouvrages que nous conseillons lorsque vous voulez aller plus loin après une leçon. Ils soutiennent votre lecture personnelle en parallèle de l'université ; ils ne remplacent pas la bibliographie officielle du programme.",
     },
   },
+  contactPage: {
+    eyebrow: "Nous sommes là pour vous",
+    title: "Contact",
+    lead: "Étudier les sciences de la santé demande beaucoup — vous n'avez pas à gérer seul/e l'accès ou les paiements. Écrivez-nous, nous vous aidons.",
+    formTitle: "Envoyez-nous un message",
+    formIntro:
+      "Dites-nous ce dont vous avez besoin. Pour l'accès après achat, indiquez l'email utilisé au checkout.",
+    nameLabel: "Votre nom",
+    emailLabel: "Votre email",
+    topicLabel: "Sujet",
+    topicPlaceholder: "Choisissez un sujet…",
+    topicAccess: "Mon compte / accès après achat",
+    topicPurchase: "Paiement ou commande",
+    topicTechnical: "App ou problème technique",
+    topicOther: "Autre sujet",
+    messageLabel: "Message",
+    messagePlaceholder: "Comment pouvons-nous vous aider ?",
+    submit: "Envoyer le message",
+    submitNote: "Votre application mail s'ouvrira avec le message prêt à envoyer.",
+    directTitle: "Email direct",
+    directText: "Vous préférez écrire depuis votre boîte mail ? Nous lisons chaque message.",
+    responseTime: "Nous répondons en général sous 2–3 jours ouvrés.",
+    helpTitle: "Aide rapide",
+    helpAccount: 'Accès après achat → <a href="../conta/">Mon compte</a>',
+    helpBuy: 'Acheter un module → <a href="../packages/">Disciplines</a>',
+    helpFaq: 'Comment ça marche → <a href="../precos/#faq">FAQ</a>',
+    errorRequired: "Veuillez remplir tous les champs.",
+    success: "Merci — votre application mail devrait s'ouvrir. Sinon, écrivez à studio9.alex@gmail.com.",
+  },
   legal: {
     termos: {
       eyebrow: "Legal",
@@ -453,7 +487,7 @@ SITE_LOCALES.fr = {
         "Les prix sont affichés en USD ou dans la devise indiquée au checkout. Nous pouvons corriger des erreurs manifestes de prix avant confirmation de la commande.",
       s12Title: "12. Contact",
       s12Body:
-        'Questions sur l\'accès ou les paiements : <a href="mailto:hello@studio9.example">hello@studio9.example</a>. Voir aussi notre <a href="../privacidade/">Politique de confidentialité</a>.',
+        'Questions sur l\'accès ou les paiements : <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>. Voir aussi notre <a href="../privacidade/">Politique de confidentialité</a>.',
       s13Title: "13. Droit applicable",
       s13Body:
         "Ces conditions sont régies par le droit portugais, sans préjudice de la protection impérative du consommateur dans votre pays de résidence au sein de l'Union européenne.",
@@ -464,7 +498,7 @@ SITE_LOCALES.fr = {
       updated: "Dernière mise à jour : juillet 2026",
       s01Title: "1. Responsable du traitement",
       s01Body:
-        'Studio9 est responsable des données personnelles traitées via les sites et apps Medical Science. Contact : <a href="mailto:hello@studio9.example">hello@studio9.example</a>.',
+        'Studio9 est responsable des données personnelles traitées via les sites et apps Medical Science. Contact : <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>.',
       s02Title: "2. Données collectées",
       s02Body:
         "Adresse email (connexion et achat), identifiant utilisateur Firebase, enregistrements d'achat et de droits d'accès, données optionnelles de progression (p. ex. vidéos terminées) et journaux techniques de base (navigateur, région approximative, pages visitées) lors de l'utilisation du site ou des apps.",

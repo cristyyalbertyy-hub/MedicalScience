@@ -37,6 +37,11 @@ SITE_LOCALES.it = {
       description:
         "Informativa sulla privacy di Studio9 Medical Science — come raccogliamo e utilizziamo i tuoi dati.",
     },
+    contacto: {
+      title: "Contatti · Medical Science · Studio9",
+      description:
+        "Contatta Studio9 Medical Science — siamo qui per accesso, acquisti e domande di studio.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
   lang: { label: "Lingua" },
@@ -412,6 +417,35 @@ SITE_LOCALES.it = {
       a5: "Ogni app Studio9 disponibile include una sezione Further study nella panoramica del corso — libri che consigliamo quando vuoi andare oltre dopo una lezione. Supportano la tua lettura personale accanto all'università; non sostituiscono la bibliografia ufficiale del corso.",
     },
   },
+  contactPage: {
+    eyebrow: "Siamo qui per te",
+    title: "Contatti",
+    lead: "Studiare le scienze della salute richiede molto — non devi risolvere da solo/a accesso o pagamenti. Scrivici e ti aiutiamo.",
+    formTitle: "Inviaci un messaggio",
+    formIntro:
+      "Dicci di cosa hai bisogno. Se la domanda riguarda l'accesso dopo l'acquisto, includi l'email usata al checkout.",
+    nameLabel: "Il tuo nome",
+    emailLabel: "La tua email",
+    topicLabel: "Argomento",
+    topicPlaceholder: "Scegli un argomento…",
+    topicAccess: "Il mio account / accesso dopo l'acquisto",
+    topicPurchase: "Pagamento o ordine",
+    topicTechnical: "App o problema tecnico",
+    topicOther: "Altro",
+    messageLabel: "Messaggio",
+    messagePlaceholder: "Come possiamo aiutarti?",
+    submit: "Invia messaggio",
+    submitNote: "Si aprirà la tua app email con il messaggio pronto da inviare.",
+    directTitle: "Email diretta",
+    directText: "Preferisci scrivere dalla tua casella? Leggiamo ogni messaggio.",
+    responseTime: "Di solito rispondiamo entro 2–3 giorni lavorativi.",
+    helpTitle: "Aiuto rapido",
+    helpAccount: 'Accesso dopo l\'acquisto → <a href="../conta/">Il mio account</a>',
+    helpBuy: 'Acquista un modulo → <a href="../packages/">Discipline</a>',
+    helpFaq: 'Come funziona → <a href="../precos/#faq">FAQ</a>',
+    errorRequired: "Compila tutti i campi.",
+    success: "Grazie — l'app email dovrebbe aprirsi ora. Altrimenti scrivi a studio9.alex@gmail.com.",
+  },
   legal: {
     termos: {
       eyebrow: "Legal",
@@ -452,7 +486,7 @@ SITE_LOCALES.it = {
         "I prezzi sono mostrati in USD o nella valuta indicata al checkout. Possiamo correggere errori manifesti di prezzo prima della conferma dell'ordine.",
       s12Title: "12. Contatti",
       s12Body:
-        'Domande su accesso o pagamenti: <a href="mailto:hello@studio9.example">hello@studio9.example</a>. Vedi anche la nostra <a href="../privacidade/">Informativa sulla privacy</a>.',
+        'Domande su accesso o pagamenti: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>. Vedi anche la nostra <a href="../privacidade/">Informativa sulla privacy</a>.',
       s13Title: "13. Legge applicabile",
       s13Body:
         "Queste condizioni sono regolate dalla legge portoghese, fatti salvi i diritti inderogabili del consumatore nel tuo paese di residenza nell'Unione europea.",
@@ -463,7 +497,7 @@ SITE_LOCALES.it = {
       updated: "Ultimo aggiornamento: luglio 2026",
       s01Title: "1. Titolare del trattamento",
       s01Body:
-        'Studio9 è responsabile dei dati personali trattati tramite i siti e le app Medical Science. Contatto: <a href="mailto:hello@studio9.example">hello@studio9.example</a>.',
+        'Studio9 è responsabile dei dati personali trattati tramite i siti e le app Medical Science. Contatto: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>.',
       s02Title: "2. Dati che raccogliamo",
       s02Body:
         "Indirizzo email (accesso e acquisto), identificativo utente Firebase, registri di acquisto e diritti di accesso, dati opzionali di progresso (es. video completati) e log tecnici di base (browser, regione approssimativa, pagine visitate) quando usi il sito o le app.",

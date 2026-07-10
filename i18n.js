@@ -44,6 +44,11 @@ const SITE_LOCALES = {
         description:
           "Privacy policy for Studio9 Medical Science — how we collect and use your data.",
       },
+      contacto: {
+        title: "Contact · Medical Science · Studio9",
+        description:
+          "Contact Studio9 Medical Science — we are here to help with access, purchases and study questions.",
+      },
     },
     brand: { aria: "Studio9 Medical Science - home", name: "Studio9" },
     lang: { label: "Language" },
@@ -417,6 +422,35 @@ const SITE_LOCALES = {
         a5: "Each live Studio9 app includes a Further study section on the course overview — books we recommend when you want to go deeper after a lesson. They support your own reading alongside university; they do not replace your official programme bibliography.",
       },
     },
+    contactPage: {
+      eyebrow: "We are here for you",
+      title: "Contact",
+      lead: "Studying health sciences is demanding — you should not have to figure out access or payments alone. Write to us and we will help.",
+      formTitle: "Send us a message",
+      formIntro:
+        "Tell us what you need. Include your checkout email if your question is about access after a purchase.",
+      nameLabel: "Your name",
+      emailLabel: "Your email",
+      topicLabel: "Topic",
+      topicPlaceholder: "Choose a topic…",
+      topicAccess: "My account / access after purchase",
+      topicPurchase: "Payment or order question",
+      topicTechnical: "App or technical issue",
+      topicOther: "Something else",
+      messageLabel: "Message",
+      messagePlaceholder: "How can we help?",
+      submit: "Send message",
+      submitNote: "Your email app will open with your message ready to send.",
+      directTitle: "Email us directly",
+      directText: "Prefer to write from your own inbox? We read every message.",
+      responseTime: "We usually reply within 2–3 business days.",
+      helpTitle: "Quick help",
+      helpAccount: 'Access after purchase → <a href="../conta/">My account</a>',
+      helpBuy: 'Buy a module → <a href="../packages/">Disciplines</a>',
+      helpFaq: 'How it works → <a href="../precos/#faq">FAQ</a>',
+      errorRequired: "Please fill in all fields.",
+      success: "Thank you — your email app should open now. If it does not, write to studio9.alex@gmail.com.",
+    },
     legal: {
       termos: {
         eyebrow: "Legal",
@@ -457,7 +491,7 @@ const SITE_LOCALES = {
           "Prices are shown in USD or the currency indicated at checkout. We may correct obvious pricing errors before an order is confirmed.",
         s12Title: "12. Contact",
         s12Body:
-          'Questions about access or payments: <a href="mailto:hello@studio9.example">hello@studio9.example</a>. See also our <a href="../privacidade/">Privacy Policy</a>.',
+          'Questions about access or payments: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>. See also our <a href="../privacidade/">Privacy Policy</a>.',
         s13Title: "13. Governing law",
         s13Body:
           "These terms are governed by the laws of Portugal, without prejudice to mandatory consumer protection in your country of residence within the European Union.",
@@ -468,7 +502,7 @@ const SITE_LOCALES = {
         updated: "Last updated: July 2026",
         s01Title: "1. Data controller",
         s01Body:
-          'Studio9 is responsible for personal data processed through Medical Science websites and apps. Contact: <a href="mailto:hello@studio9.example">hello@studio9.example</a>.',
+          'Studio9 is responsible for personal data processed through Medical Science websites and apps. Contact: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>.',
         s02Title: "2. Data we collect",
         s02Body:
           "Email address (sign-in and purchase), Firebase user identifier, purchase and entitlement records, optional study-progress data (e.g. videos completed), and basic technical logs (browser, approximate region, pages visited) when you use the site or apps.",

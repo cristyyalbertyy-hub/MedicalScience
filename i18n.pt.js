@@ -37,6 +37,11 @@ SITE_LOCALES.pt = {
       description:
         "Política de privacidade da Studio9 Medical Science — como recolhemos e usamos os seus dados.",
     },
+    contacto: {
+      title: "Contacto · Medical Science · Studio9",
+      description:
+        "Contacte a Studio9 Medical Science — estamos aqui para ajudar com acesso, compras e dúvidas de estudo.",
+    },
   },
   brand: { aria: "Studio9 Medical Science - início", name: "Studio9" },
   lang: { label: "Idioma" },
@@ -412,6 +417,35 @@ SITE_LOCALES.pt = {
       a5: "Cada app Studio9 disponível inclui uma secção Further study na visão geral do curso — livros que aconselhamos quando queres ir mais além depois de uma lição. Apoiam a tua leitura pessoal em paralelo com a universidade; não substituem a bibliografia oficial do curso.",
     },
   },
+  contactPage: {
+    eyebrow: "Estamos aqui para si",
+    title: "Contacto",
+    lead: "Estudar ciências da saúde exige muito — não precisa de resolver acesso ou pagamentos sozinho/a. Escreva-nos e ajudamos.",
+    formTitle: "Envie-nos uma mensagem",
+    formIntro:
+      "Diga-nos o que precisa. Se a questão for acesso após compra, inclua o email usado no checkout.",
+    nameLabel: "O seu nome",
+    emailLabel: "O seu email",
+    topicLabel: "Assunto",
+    topicPlaceholder: "Escolha um assunto…",
+    topicAccess: "A minha conta / acesso após compra",
+    topicPurchase: "Pagamento ou encomenda",
+    topicTechnical: "App ou problema técnico",
+    topicOther: "Outro assunto",
+    messageLabel: "Mensagem",
+    messagePlaceholder: "Como podemos ajudar?",
+    submit: "Enviar mensagem",
+    submitNote: "A sua app de email abrirá com a mensagem pronta a enviar.",
+    directTitle: "Email directo",
+    directText: "Prefere escrever do seu próprio email? Lemos todas as mensagens.",
+    responseTime: "Normalmente respondemos em 2–3 dias úteis.",
+    helpTitle: "Ajuda rápida",
+    helpAccount: 'Acesso após compra → <a href="../conta/">A minha conta</a>',
+    helpBuy: 'Comprar um módulo → <a href="../packages/">Disciplinas</a>',
+    helpFaq: 'Como funciona → <a href="../precos/#faq">FAQ</a>',
+    errorRequired: "Preencha todos os campos.",
+    success: "Obrigado — a app de email deve abrir agora. Se não abrir, escreva para studio9.alex@gmail.com.",
+  },
   legal: {
     termos: {
       eyebrow: "Legal",
@@ -452,7 +486,7 @@ SITE_LOCALES.pt = {
         "Os preços são apresentados em USD ou na moeda indicada no checkout. Podemos corrigir erros manifestos de preço antes da confirmação da encomenda.",
       s12Title: "12. Contacto",
       s12Body:
-        'Questões sobre acesso ou pagamentos: <a href="mailto:hello@studio9.example">hello@studio9.example</a>. Consulte também a nossa <a href="../privacidade/">Política de privacidade</a>.',
+        'Questões sobre acesso ou pagamentos: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>. Consulte também a nossa <a href="../privacidade/">Política de privacidade</a>.',
       s13Title: "13. Lei aplicável",
       s13Body:
         "Estes termos regem-se pela lei portuguesa, sem prejuízo da protecção obrigatória do consumidor no seu país de residência dentro da União Europeia.",
@@ -463,7 +497,7 @@ SITE_LOCALES.pt = {
       updated: "Última actualização: julho de 2026",
       s01Title: "1. Responsável pelo tratamento",
       s01Body:
-        'A Studio9 é responsável pelos dados pessoais tratados nos sites e apps Medical Science. Contacto: <a href="mailto:hello@studio9.example">hello@studio9.example</a>.',
+        'A Studio9 é responsável pelos dados pessoais tratados nos sites e apps Medical Science. Contacto: <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>.',
       s02Title: "2. Dados que recolhemos",
       s02Body:
         "Endereço de email (login e compra), identificador de utilizador Firebase, registos de compra e entitlements, dados opcionais de progresso de estudo (ex.: vídeos concluídos) e registos técnicos básicos (browser, região aproximada, páginas visitadas) quando usa o site ou as apps.",
