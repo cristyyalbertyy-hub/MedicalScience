@@ -440,7 +440,8 @@ const SITE_LOCALES = {
       messageLabel: "Message",
       messagePlaceholder: "How can we help?",
       submit: "Send message",
-      submitNote: "Your email app will open with your message ready to send.",
+      sending: "Sending…",
+      submitNote: "We send your message directly — no need to open your email app.",
       directTitle: "Email us directly",
       directText: "Prefer to write from your own inbox? We read every message.",
       responseTime: "We usually reply within 2–3 business days.",
@@ -450,6 +451,11 @@ const SITE_LOCALES = {
       helpFaq: 'How it works → <a href="../precos/#faq">FAQ</a>',
       errorRequired: "Please fill in all fields.",
       success: "Thank you — your email app should open now. If it does not, write to studio9.alex@gmail.com.",
+      modalSuccessTitle: "Message sent",
+      modalSuccessBody: "Thank you for writing to us. We usually reply within 2–3 business days.",
+      modalErrorTitle: "Could not send",
+      modalErrorBody: "Something went wrong. Please try again or email us at studio9.alex@gmail.com.",
+      modalClose: "OK",
     },
     legal: {
       termos: {

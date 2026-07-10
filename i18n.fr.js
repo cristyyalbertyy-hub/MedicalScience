@@ -436,7 +436,8 @@ SITE_LOCALES.fr = {
     messageLabel: "Message",
     messagePlaceholder: "Comment pouvons-nous vous aider ?",
     submit: "Envoyer le message",
-    submitNote: "Votre application mail s'ouvrira avec le message prêt à envoyer.",
+    sending: "Envoi…",
+    submitNote: "Nous envoyons votre message directement — pas besoin d'ouvrir votre application mail.",
     directTitle: "Email direct",
     directText: "Vous préférez écrire depuis votre boîte mail ? Nous lisons chaque message.",
     responseTime: "Nous répondons en général sous 2–3 jours ouvrés.",
@@ -446,6 +447,11 @@ SITE_LOCALES.fr = {
     helpFaq: 'Comment ça marche → <a href="../precos/#faq">FAQ</a>',
     errorRequired: "Veuillez remplir tous les champs.",
     success: "Merci — votre application mail devrait s'ouvrir. Sinon, écrivez à studio9.alex@gmail.com.",
+    modalSuccessTitle: "Message envoyé",
+    modalSuccessBody: "Merci de nous avoir écrit. Nous répondons en général sous 2–3 jours ouvrés.",
+    modalErrorTitle: "Envoi impossible",
+    modalErrorBody: "Une erreur s'est produite. Réessayez ou écrivez à studio9.alex@gmail.com.",
+    modalClose: "OK",
   },
   legal: {
     termos: {

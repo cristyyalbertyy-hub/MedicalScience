@@ -435,7 +435,8 @@ SITE_LOCALES.it = {
     messageLabel: "Messaggio",
     messagePlaceholder: "Come possiamo aiutarti?",
     submit: "Invia messaggio",
-    submitNote: "Si aprirà la tua app email con il messaggio pronto da inviare.",
+    sending: "Invio…",
+    submitNote: "Inviamo il messaggio direttamente — non serve aprire l'app email.",
     directTitle: "Email diretta",
     directText: "Preferisci scrivere dalla tua casella? Leggiamo ogni messaggio.",
     responseTime: "Di solito rispondiamo entro 2–3 giorni lavorativi.",
@@ -445,6 +446,11 @@ SITE_LOCALES.it = {
     helpFaq: 'Come funziona → <a href="../precos/#faq">FAQ</a>',
     errorRequired: "Compila tutti i campi.",
     success: "Grazie — l'app email dovrebbe aprirsi ora. Altrimenti scrivi a studio9.alex@gmail.com.",
+    modalSuccessTitle: "Messaggio inviato",
+    modalSuccessBody: "Grazie per averci scritto. Di solito rispondiamo entro 2–3 giorni lavorativi.",
+    modalErrorTitle: "Invio non riuscito",
+    modalErrorBody: "Qualcosa è andato storto. Riprova o scrivi a studio9.alex@gmail.com.",
+    modalClose: "OK",
   },
   legal: {
     termos: {

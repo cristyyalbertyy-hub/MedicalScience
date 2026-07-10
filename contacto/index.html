@@ -88,9 +88,17 @@
               <span data-i18n="contactPage.messageLabel">Message</span>
               <textarea name="message" rows="6" required data-i18n-attr="placeholder" data-i18n="contactPage.messagePlaceholder" placeholder="How can we help?"></textarea>
             </label>
+            <input
+              type="text"
+              name="_honey"
+              class="contact-honey"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
             <button type="submit" class="btn btn-primary" data-i18n="contactPage.submit">Send message</button>
             <p class="contact-form-note" data-i18n="contactPage.submitNote">
-              Your email app will open with your message ready to send.
+              We send your message directly — no need to open your email app.
             </p>
             <p id="contact-status" class="contact-status" role="status" hidden></p>
           </form>
@@ -128,6 +136,24 @@
       </div>
     </main>
 
+    <div id="contact-modal" class="contact-modal" hidden>
+      <div class="contact-modal__backdrop" data-contact-modal-dismiss tabindex="-1"></div>
+      <div
+        class="contact-modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="contact-modal-title"
+      >
+        <h2 id="contact-modal-title"></h2>
+        <p id="contact-modal-body"></p>
+        <div class="contact-modal__actions">
+          <button type="button" class="btn btn-primary" id="contact-modal-close" data-i18n="contactPage.modalClose">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+
     <footer class="site-footer">
       <div class="footer-brand">
         <img class="brand-logo" src="../public/Studio9BackTransp.PNG" alt="Studio9" width="152" height="53" />
@@ -159,6 +185,6 @@
     <script src="../i18n.it.js?v=4"></script>
     <script src="../i18n.pt.js?v=4"></script>
     <script src="../app.js?v=44"></script>
-    <script type="module" src="contacto.js?v=1"></script>
+    <script type="module" src="contacto.js?v=2"></script>
   </body>
 </html>
