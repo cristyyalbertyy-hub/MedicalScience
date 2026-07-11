@@ -304,9 +304,15 @@ SITE_LOCALES.fr = {
     eyebrow: "Compte Studio9",
     title: "Mon compte",
     leadHtml:
-      "Ouvrez vos forfaits ici. Si ce navigateur vous connaît déjà, la session se charge automatiquement — <strong>sans nouvel email</strong>.",
+      "Ouvrez vos forfaits ici. Connectez-vous avec Google — <strong>un clic</strong>, même email que l'achat.",
     signInTitle: "Se connecter",
     sessionTitle: "Votre session",
+    googleSignIn: "Continuer avec Google",
+    googleSignInNote: "Utilisez le même compte Google que l'email de l'achat.",
+    signingInGoogle: "Connexion avec Google…",
+    googleSignInError: "Connexion Google impossible. Réessayez.",
+    emailLinkToggle: "Utiliser un lien par email",
+    signInNoteFallback: "Pour les adresses non Google uniquement. Limite quotidienne d'emails possible.",
     emailLabel: "Email",
     emailPlaceholder: "l'email utilisé lors de l'achat",
     sendLink: "Envoyer le lien de connexion",
@@ -319,17 +325,17 @@ SITE_LOCALES.fr = {
     sessionLabel: "Session :",
     signOut: "Se déconnecter",
     signedInSubtitle:
-      "Compte actif dans ce navigateur. Utilisez Ouvrir pour accéder à vos forfaits sans nouvel email.",
+      "Compte actif dans ce navigateur. Utilisez Ouvrir pour accéder à vos forfaits.",
     signedOutSubtitle:
-      "Entrez l'email utilisé lors de l'achat pour recevoir un lien de connexion.",
+      "Connectez-vous avec Google — même compte que l'email de l'achat.",
     signedOutReturningSubtitle:
-      "Bon retour. Aucune session active dans ce navigateur — envoyez un lien pour vous reconnecter.",
+      "Bon retour. Connectez-vous avec Google pour ouvrir vos forfaits.",
     linkPendingSubtitle:
       "Nous avons envoyé un lien à {email}. Ouvrez-le dans ce navigateur avant d'en demander un autre.",
     linkPendingNote:
       "Vérifiez les spams. Pour économiser le quota d'emails, attendez le lien au lieu de renvoyer.",
     myPackages: "Mes forfaits",
-    packagesIntro: "Cliquez sur Ouvrir — entrez dans le forfait sans nouveau magic link.",
+    packagesIntro: "Cliquez sur Ouvrir — entrez dans le forfait tout de suite.",
     emptyTitle: "Vous n'avez pas encore de modules sur ce compte.",
     emptySignedInHint:
       "Connecté en tant que {email}. Si l'accès a été accordé dans l'admin, l'email doit correspondre — puis cliquez sur Actualiser l'accès.",
@@ -379,7 +385,7 @@ SITE_LOCALES.fr = {
         "Chaque module est tarifé par taille — Small, Medium ou Large — selon le nombre de thèmes inclus.",
       s2Title: "Accédez-y dans l'app Studio9",
       s2Text:
-        "Après l'achat, vous recevez un magic link par email — sans mot de passe. Connectez-vous sur mobile ou ordinateur ; l'accès reste actif pendant 1 an.",
+        "Après l'achat, connectez-vous sur studio9medical.com/conta/ avec Google — même email que l'achat. L'accès reste actif pendant 1 an.",
       s3Title: "Étudiez à votre rythme",
       s3Text: "Vidéos quand vous êtes concentré. Podcasts en déplacement. Exercices pour vous tester.",
       s4Title: "Suivez votre progression",
@@ -488,7 +494,7 @@ SITE_LOCALES.fr = {
         "Sauf indication contraire au checkout, chaque module payant comprend 12 mois (365 jours) d'accès à partir de la confirmation du paiement. À l'expiration, l'accès prend fin automatiquement. Vous pouvez racheter si le module est encore proposé.",
       s04Title: "4. Livraison immédiate",
       s04Body:
-        "Après paiement confirmé, vous recevez un email avec les instructions d'accès (magic link). L'accès peut commencer immédiatement.",
+        "Après paiement confirmé, connectez-vous sur studio9medical.com/conta/ avec Google (même email que l'achat). L'accès peut commencer immédiatement.",
       s05Title: "5. Aucun remboursement",
       s05Body:
         "Toutes les ventes sont finales. Nous n'offrons pas de remboursements — y compris si vous n'utilisez pas le contenu, si l'accès expire après 12 mois, si vous changez de filière ou d'université, ou en cas d'incompatibilité de l'appareil (sous réserve des exigences minimales indiquées sur le site). Exceptions uniquement lorsque la loi l'exige (p. ex. double facturation prouvée) ou selon la politique de litiges de Lemon Squeezy.",

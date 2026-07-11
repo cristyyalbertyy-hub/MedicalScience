@@ -7,6 +7,10 @@ import {
   sendSignInLinkToEmail,
   isSignInWithEmailLink,
   signInWithEmailLink,
+  signInWithPopup,
+  signInWithRedirect,
+  getRedirectResult,
+  GoogleAuthProvider,
   signOut,
 } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
 
@@ -18,6 +22,9 @@ const authPanel = document.getElementById("auth-panel");
 const packagesPanel = document.getElementById("packages-panel");
 const signinForm = document.getElementById("signin-form");
 const linkConfirmForm = document.getElementById("link-confirm-form");
+const googleSigninBlock = document.getElementById("google-signin-block");
+const googleSigninBtn = document.getElementById("google-signin-btn");
+const emailLinkFallback = document.getElementById("email-link-fallback");
 const signedInPanel = document.getElementById("signed-in-panel");
 const signedInEmail = document.getElementById("signed-in-email");
 const authStatus = document.getElementById("auth-status");
@@ -34,6 +41,8 @@ const packagesEmptyHint = document.getElementById("packages-empty-hint");
 const packagesFootnote = document.getElementById("packages-footnote");
 const packagesProgressEntry = document.getElementById("packages-progress");
 const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
+const googleProvider = new GoogleAuthProvider();
+googleProvider.setCustomParameters({ prompt: "select_account" });
 
 /** @type {import('firebase/app').FirebaseApp | null} */
 let app = null;
@@ -90,10 +99,10 @@ function configureSignInForm() {
 
   if (lastEmail) {
     authSubtitle.textContent = t("accountPage.signedOutReturningSubtitle");
-    if (signinNote) signinNote.textContent = t("accountPage.signInNoteReturning");
+    if (signinNote) signinNote.textContent = t("accountPage.signInNoteFallback");
   } else {
     authSubtitle.textContent = t("accountPage.signedOutSubtitle");
-    if (signinNote) signinNote.textContent = t("accountPage.signInNote");
+    if (signinNote) signinNote.textContent = t("accountPage.signInNoteFallback");
   }
 
   if (sendLinkBtn) sendLinkBtn.textContent = t("accountPage.sendLink");
@@ -133,6 +142,64 @@ function refreshStatusMessage() {
     : t(lastStatus.key ?? "", lastStatus.vars ?? {});
 }
 
+function isMobileBrowser() {
+  return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+}
+
+function setGoogleSignInBusy(active) {
+  if (!(googleSigninBtn instanceof HTMLButtonElement)) return;
+  googleSigninBtn.disabled = active;
+}
+
+async function handleGoogleRedirectResult() {
+  if (!auth) return;
+  try {
+    const result = await getRedirectResult(auth);
+    if (result?.user) {
+      rememberSignedInEmail(result.user.email ?? "");
+      setStatus("", "");
+    }
+  } catch (err) {
+    const message = err instanceof Error ? err.message : t("accountPage.googleSignInError");
+    setStatus(message, "error");
+  }
+}
+
+async function signInWithGoogle() {
+  if (!auth) return;
+  setStatusKey("accountPage.signingInGoogle");
+  setGoogleSignInBusy(true);
+  try {
+    if (isMobileBrowser()) {
+      await signInWithRedirect(auth, googleProvider);
+      return;
+    }
+    await signInWithPopup(auth, googleProvider);
+    setStatus("", "");
+  } catch (err) {
+    const code = err && typeof err === "object" && "code" in err ? String(err.code) : "";
+    if (code === "auth/popup-closed-by-user") {
+      setStatus("", "");
+      return;
+    }
+    if (code === "auth/popup-blocked" || code === "auth/cancelled-popup-request") {
+      try {
+        await signInWithRedirect(auth, googleProvider);
+        return;
+      } catch (redirectErr) {
+        const message =
+          redirectErr instanceof Error ? redirectErr.message : t("accountPage.googleSignInError");
+        setStatus(message, "error");
+        return;
+      }
+    }
+    const message = err instanceof Error ? err.message : t("accountPage.googleSignInError");
+    setStatus(message, "error");
+  } finally {
+    setGoogleSignInBusy(false);
+  }
+}
+
 function continueUrl(email = "") {
   const host = window.location.hostname.replace(/^www\./, "");
   const url = new URL(`${window.location.protocol}//${host}/conta/`);
@@ -155,7 +222,8 @@ function resolveEmailForSignInLink() {
 function showLinkConfirmForm(prefillEmail = "") {
   if (!linkConfirmForm) return;
   linkConfirmPending = true;
-  signinForm.hidden = true;
+  if (googleSigninBlock) googleSigninBlock.hidden = true;
+  if (emailLinkFallback) emailLinkFallback.hidden = true;
   linkConfirmForm.hidden = false;
   if (authLoading) authLoading.hidden = true;
   setAuthPanelMode("signed-out");
@@ -401,19 +469,27 @@ function showSignedOut() {
   packagesPanel.hidden = true;
 
   if (!authResolved) {
-    signinForm.hidden = true;
+    if (googleSigninBlock) googleSigninBlock.hidden = true;
+    if (emailLinkFallback) emailLinkFallback.hidden = true;
+    if (linkConfirmForm) linkConfirmForm.hidden = true;
     if (authLoading) authLoading.hidden = false;
     authSubtitle.textContent = t("accountPage.checkingSession");
     return;
   }
 
   if (authLoading) authLoading.hidden = true;
+
   if (linkConfirmPending) {
-    signinForm.hidden = true;
+    if (googleSigninBlock) googleSigninBlock.hidden = true;
+    if (emailLinkFallback) emailLinkFallback.hidden = true;
     if (linkConfirmForm) linkConfirmForm.hidden = false;
+    setAuthPanelMode("signed-out");
     return;
   }
-  signinForm.hidden = false;
+
+  if (googleSigninBlock) googleSigninBlock.hidden = false;
+  if (emailLinkFallback) emailLinkFallback.hidden = false;
+  if (linkConfirmForm) linkConfirmForm.hidden = true;
   setAuthPanelMode("signed-out");
   configureSignInForm();
 }
@@ -444,6 +520,10 @@ signinForm?.addEventListener("submit", async (event) => {
       setStatus(message.includes("accountPage.") ? t(message) : message, "error");
     }
   }
+});
+
+googleSigninBtn?.addEventListener("click", () => {
+  void signInWithGoogle();
 });
 
 linkConfirmForm?.addEventListener("submit", async (event) => {
@@ -534,7 +614,8 @@ async function bootstrap() {
   });
   authPanel.hidden = false;
   if (authLoading) authLoading.hidden = false;
-  signinForm.hidden = true;
+  if (googleSigninBlock) googleSigninBlock.hidden = true;
+  if (emailLinkFallback) emailLinkFallback.hidden = true;
   authSubtitle.textContent = t("accountPage.checkingSession");
 
   if (!configured()) {
@@ -547,10 +628,11 @@ async function bootstrap() {
   auth = getAuth(app);
   await setPersistence(auth, browserLocalPersistence);
 
+  await handleGoogleRedirectResult();
+  await completeEmailLinkSignIn();
+
   catalogData = await loadCatalog();
   packageMeta = catalogData.packageMeta ?? {};
-
-  await completeEmailLinkSignIn();
 
   onAuthStateChanged(auth, (user) => {
     authResolved = true;

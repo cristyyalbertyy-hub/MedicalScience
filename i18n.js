@@ -310,9 +310,15 @@ const SITE_LOCALES = {
       eyebrow: "Studio9 account",
       title: "My account",
       leadHtml:
-        "Open your packages from here. If this browser already knows you, your session loads automatically — <strong>no new email</strong>.",
+        "Open your packages from here. Sign in with Google — <strong>one click</strong>, same email as checkout.",
       signInTitle: "Sign in",
       sessionTitle: "Your session",
+      googleSignIn: "Continue with Google",
+      googleSignInNote: "Use the same Google account as your checkout email.",
+      signingInGoogle: "Signing in with Google…",
+      googleSignInError: "Could not sign in with Google. Try again.",
+      emailLinkToggle: "Use email link instead",
+      signInNoteFallback: "For non-Google addresses only. Daily email limits may apply.",
       emailLabel: "Email",
       emailPlaceholder: "the email used at checkout",
       sendLink: "Send sign-in link",
@@ -325,15 +331,15 @@ const SITE_LOCALES = {
       sessionLabel: "Session:",
       signOut: "Sign out",
       signedInSubtitle:
-        "Account active in this browser. Use Open to enter your packages without a new email.",
-      signedOutSubtitle: "Enter the email you used at checkout to receive a sign-in link.",
+        "Account active in this browser. Use Open to enter your packages.",
+      signedOutSubtitle: "Sign in with Google — use the same account as your checkout email.",
       signedOutReturningSubtitle:
-        "Welcome back. No active session in this browser — send a link to sign in again.",
+        "Welcome back. Sign in with Google to open your packages.",
       linkPendingSubtitle: "We sent a link to {email}. Open it in this browser before requesting another.",
       linkPendingNote:
         "Check your spam folder. To save email quota, wait for the link instead of sending again.",
       myPackages: "My packages",
-      packagesIntro: "Click Open — enter the package without a new magic link.",
+      packagesIntro: "Click Open — enter the package right away.",
       emptyTitle: "You don't have any modules on this account yet.",
       emptySignedInHint:
         "Signed in as {email} (UID: {uid}). If access was granted in admin, use the same email — Gmail dots count (studio9.cris ≠ studio9cris as separate accounts). Then click Refresh access.",
@@ -383,7 +389,7 @@ const SITE_LOCALES = {
         s1Text: "Each module is priced by size — Small, Medium or Large — based on how many topics it includes.",
         s2Title: "Access them in the Studio9 app",
         s2Text:
-          "After purchase you receive a magic link by email — no password. Sign in on your phone or computer; access stays active for 1 year.",
+          "After purchase, sign in at studio9medical.com/conta/ with Google — same email as checkout. Access stays active for 1 year.",
         s3Title: "Study at your own pace",
         s3Text: "Videos when you are focused. Podcasts when you are moving. Exercises to test yourself.",
         s4Title: "Track your progress",
@@ -492,7 +498,7 @@ const SITE_LOCALES = {
           "Unless stated otherwise at checkout, each paid module includes 12 months (365 days) of access from the date payment is confirmed. When it expires, access ends automatically. You may purchase again if the module is still offered.",
         s04Title: "4. Immediate delivery",
         s04Body:
-          "After confirmed payment you receive an email with access instructions (magic link). Access may begin immediately.",
+          "After confirmed payment, sign in at studio9medical.com/conta/ with Google (same email as checkout). Access may begin immediately.",
         s05Title: "5. No refunds",
         s05Body:
           "All sales are final. We do not offer refunds — including if you do not use the content, if access expires after 12 months, if you change course or university, or due to device incompatibility (provided your device meets minimum requirements stated on the site). Exceptions apply only where required by law (e.g. proven duplicate charge) or under Lemon Squeezy’s dispute policy as payment processor.",

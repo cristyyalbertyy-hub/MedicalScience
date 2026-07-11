@@ -303,9 +303,15 @@ SITE_LOCALES.pt = {
     eyebrow: "Conta Studio9",
     title: "A minha conta",
     leadHtml:
-      "Abra os pacotes a partir daqui. Se este browser já o conhece, a sessão carrega automaticamente — <strong>sem novo email</strong>.",
+      "Abra os pacotes a partir daqui. Entre com Google — <strong>um clique</strong>, mesmo email da compra.",
     signInTitle: "Entrar",
     sessionTitle: "A tua sessão",
+    googleSignIn: "Continuar com Google",
+    googleSignInNote: "Use a mesma conta Google do email da compra.",
+    signingInGoogle: "A entrar com Google…",
+    googleSignInError: "Não foi possível entrar com Google. Tente outra vez.",
+    emailLinkToggle: "Usar link por email",
+    signInNoteFallback: "Só para emails que não são Google. Pode haver limite diário de emails.",
     emailLabel: "Email",
     emailPlaceholder: "o email usado na compra",
     sendLink: "Enviar link de entrada",
@@ -318,16 +324,16 @@ SITE_LOCALES.pt = {
     sessionLabel: "Sessão:",
     signOut: "Terminar sessão",
     signedInSubtitle:
-      "Conta activa neste browser. Use «Abrir» para entrar nos pacotes sem novo email.",
-    signedOutSubtitle: "Introduza o email usado na compra para receber um link de entrada.",
+      "Conta activa neste browser. Use «Abrir» para entrar nos pacotes.",
+    signedOutSubtitle: "Entre com Google — use a mesma conta do email da compra.",
     signedOutReturningSubtitle:
-      "Bem-vinda de volta. Sem sessão activa neste browser — envie um link para entrar outra vez.",
+      "Bem-vinda de volta. Entre com Google para abrir os pacotes.",
     linkPendingSubtitle:
       "Enviámos um link para {email}. Abra-o neste browser antes de pedir outro.",
     linkPendingNote:
       "Verifique a pasta de spam. Para poupar quota de email, aguarde pelo link em vez de reenviar.",
     myPackages: "Os meus pacotes",
-    packagesIntro: "Clique em Abrir — entra no pacote sem novo magic link.",
+    packagesIntro: "Clique em Abrir — entra no pacote de imediato.",
     emptyTitle: "Ainda não tens módulos disponíveis nesta conta.",
     emptySignedInHint:
       "Sessão: {email} (UID: {uid}). Se o admin concedeu acesso, usa o mesmo email — no Gmail, studio9.cris e studio9cris são contas diferentes. Depois clica Actualizar acesso.",
@@ -378,7 +384,7 @@ SITE_LOCALES.pt = {
         "Cada módulo tem preço por tamanho — Small, Medium ou Large — consoante o número de temas incluídos.",
       s2Title: "Acede na app Studio9",
       s2Text:
-        "Após a compra recebes um magic link por email — sem palavra-passe. Entra no telemóvel ou no computador; o acesso mantém-se activo durante 1 ano.",
+        "Após a compra, entre em studio9medical.com/conta/ com Google — mesmo email da compra. O acesso mantém-se activo durante 1 ano.",
       s3Title: "Estuda ao teu ritmo",
       s3Text: "Vídeos quando estás concentrado. Podcasts em movimento. Exercícios para te testares.",
       s4Title: "Acompanha o teu progresso",
@@ -487,7 +493,7 @@ SITE_LOCALES.pt = {
         "Salvo indicação contrária no checkout, cada módulo pago inclui 12 meses (365 dias) de acesso a partir da confirmação do pagamento. Ao expirar, o acesso termina automaticamente. Pode voltar a comprar se o módulo continuar disponível.",
       s04Title: "4. Entrega imediata",
       s04Body:
-        "Após pagamento confirmado recebe email com instruções de acesso (magic link). O acesso pode começar de imediato.",
+        "Após pagamento confirmado, entre em studio9medical.com/conta/ com Google (mesmo email da compra). O acesso pode começar de imediato.",
       s05Title: "5. Sem reembolsos",
       s05Body:
         "Todas as vendas são finais. Não efectuamos reembolsos — incluindo se não utilizar o conteúdo, se o acesso expirar após 12 meses, se mudar de curso ou universidade, ou por incompatibilidade do dispositivo (desde que cumpra os requisitos mínimos indicados no site). Excepções apenas quando exigidas por lei (ex.: cobrança duplicada comprovada) ou na política de disputas da Lemon Squeezy como processador de pagamentos.",
