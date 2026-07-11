@@ -131,7 +131,17 @@ function refreshStatusMessage() {
 }
 
 function continueUrl() {
-  return `${window.location.origin}${window.location.pathname}`;
+  const host = window.location.hostname.replace(/^www\./, "");
+  return `${window.location.protocol}//${host}/conta/`;
+}
+
+function resolveEmailForSignInLink() {
+  const pending = getStoredEmail(EMAIL_KEY);
+  if (pending) return pending.toLowerCase();
+  const last = getStoredEmail(LAST_EMAIL_KEY);
+  if (last) return last.toLowerCase();
+  const prompted = window.prompt(t("accountPage.confirmEmail"));
+  return prompted?.trim().toLowerCase() ?? "";
 }
 
 function cleanEmailLinkFromUrl() {
@@ -145,16 +155,20 @@ function cleanEmailLinkFromUrl() {
 }
 
 async function completeEmailLinkSignIn() {
-  if (!auth || !isSignInWithEmailLink(auth, window.location.href)) return;
-  let email = window.localStorage.getItem(EMAIL_KEY);
-  if (!email) {
-    email = window.prompt(t("accountPage.confirmEmail"));
+  if (!auth || !isSignInWithEmailLink(auth, window.location.href)) return false;
+  const email = resolveEmailForSignInLink();
+  if (!email) return false;
+  try {
+    await signInWithEmailLink(auth, email, window.location.href);
+    rememberSignedInEmail(email);
+    window.localStorage.removeItem(EMAIL_KEY);
+    cleanEmailLinkFromUrl();
+    return true;
+  } catch (err) {
+    const message = err instanceof Error ? err.message : t("accountPage.sendError");
+    setStatus(message, "error");
+    return false;
   }
-  if (!email) return;
-  await signInWithEmailLink(auth, email, window.location.href);
-  rememberSignedInEmail(email);
-  window.localStorage.removeItem(EMAIL_KEY);
-  cleanEmailLinkFromUrl();
 }
 
 async function loadCatalog() {
@@ -374,7 +388,7 @@ signinForm?.addEventListener("submit", async (event) => {
       url: continueUrl(),
       handleCodeInApp: true,
     });
-    window.localStorage.setItem(EMAIL_KEY, email);
+    window.localStorage.setItem(EMAIL_KEY, email.toLowerCase());
     setStatusKey("accountPage.linkSent", { email }, "ok");
     configureSignInForm();
   } catch (err) {
@@ -482,8 +496,7 @@ async function bootstrap() {
   catalogData = await loadCatalog();
   packageMeta = catalogData.packageMeta ?? {};
 
-  await completeEmailLinkSignIn().catch(() => undefined);
-  cleanEmailLinkFromUrl();
+  await completeEmailLinkSignIn();
 
   onAuthStateChanged(auth, (user) => {
     authResolved = true;
