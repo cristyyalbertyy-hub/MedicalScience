@@ -306,7 +306,7 @@ const SITE_LOCALES = {
       },
     },
     accountPage: {
-      back: "← Medical Science site",
+      back: "← Back to site",
       eyebrow: "Studio9 account",
       title: "My account",
       leadHtml:

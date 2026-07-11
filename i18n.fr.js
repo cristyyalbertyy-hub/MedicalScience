@@ -300,7 +300,7 @@ SITE_LOCALES.fr = {
     },
   },
   accountPage: {
-    back: "← Site Medical Science",
+    back: "← Retour au site",
     eyebrow: "Compte Studio9",
     title: "Mon compte",
     leadHtml:

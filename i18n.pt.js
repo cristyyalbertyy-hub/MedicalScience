@@ -299,7 +299,7 @@ SITE_LOCALES.pt = {
     },
   },
   accountPage: {
-    back: "← Site Medical Science",
+    back: "← Voltar ao site",
     eyebrow: "Conta Studio9",
     title: "A minha conta",
     leadHtml:
