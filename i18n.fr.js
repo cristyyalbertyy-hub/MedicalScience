@@ -457,14 +457,14 @@ SITE_LOCALES.fr = {
     helpBuy: 'Acheter un module → <a href="../packages/">Disciplines</a>',
     helpFaq: 'Comment ça marche → <a href="../precos/#faq">FAQ</a>',
     errorRequired: "Veuillez remplir tous les champs.",
-    success: "Merci — votre application mail devrait s'ouvrir. Sinon, écrivez à studio9.alex@gmail.com.",
+    success: "Merci — votre application mail devrait s'ouvrir. Sinon, écrivez à hello@studio9medical.com.",
     modalSuccessTitle: "Message envoyé",
     modalSuccessBody: "Merci de nous avoir écrit. Pour l'instant, nous répondons sous 24 heures.",
     modalErrorTitle: "Envoi impossible",
-    modalErrorBody: "Une erreur s'est produite. Réessayez ou écrivez à studio9.alex@gmail.com.",
+    modalErrorBody: "Une erreur s'est produite. Réessayez ou écrivez à hello@studio9medical.com.",
     modalActivationTitle: "Presque prêt",
     modalActivationBody:
-      "Le formulaire doit encore être activé. Vérifiez studio9.alex@gmail.com — un email d'activation de FormSubmit devrait s'y trouver. Cliquez sur le lien et réessayez.",
+      "Le formulaire doit encore être activé. Vérifiez hello@studio9medical.com — un email d'activation de FormSubmit devrait s'y trouver. Cliquez sur le lien et réessayez.",
     modalClose: "OK",
   },
   legal: {
@@ -507,7 +507,7 @@ SITE_LOCALES.fr = {
         "Les prix sont affichés en USD ou dans la devise indiquée au checkout. Nous pouvons corriger des erreurs manifestes de prix avant confirmation de la commande.",
       s12Title: "12. Contact",
       s12Body:
-        'Questions sur l\'accès ou les paiements : <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>. Voir aussi notre <a href="../privacidade/">Politique de confidentialité</a>.',
+        'Questions sur l\'accès ou les paiements : <a href="mailto:hello@studio9medical.com">hello@studio9medical.com</a>. Voir aussi notre <a href="../privacidade/">Politique de confidentialité</a>.',
       s13Title: "13. Droit applicable",
       s13Body:
         "Ces conditions sont régies par le droit portugais, sans préjudice de la protection impérative du consommateur dans votre pays de résidence au sein de l'Union européenne.",
@@ -518,7 +518,7 @@ SITE_LOCALES.fr = {
       updated: "Dernière mise à jour : juillet 2026",
       s01Title: "1. Responsable du traitement",
       s01Body:
-        'Studio9 est responsable des données personnelles traitées via les sites et apps Medical Science. Contact : <a href="mailto:studio9.alex@gmail.com">studio9.alex@gmail.com</a>.',
+        'Studio9 est responsable des données personnelles traitées via les sites et apps Medical Science. Contact : <a href="mailto:hello@studio9medical.com">hello@studio9medical.com</a>.',
       s02Title: "2. Données collectées",
       s02Body:
         "Adresse email (connexion et achat), identifiant utilisateur Firebase, enregistrements d'achat et de droits d'accès, données optionnelles de progression (p. ex. vidéos terminées) et journaux techniques de base (navigateur, région approximative, pages visitées) lors de l'utilisation du site ou des apps.",

@@ -1,4 +1,4 @@
-const FORM_ENDPOINT = "https://formsubmit.co/ajax/studio9.alex@gmail.com";
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/hello@studio9medical.com";
 
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("contact-status");
