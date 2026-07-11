@@ -349,6 +349,11 @@ SITE_LOCALES.es = {
     free: "gratis",
     active: "activo",
     confirmEmail: "Confirma el email usado para solicitar el enlace",
+    linkConfirmSubtitle: "Casi listo — confirma el email usado en la compra para terminar el acceso.",
+    linkConfirmBtn: "Completar acceso",
+    linkConfirmNote:
+      "Abre el enlace del email en este navegador y confirma el mismo email usado en la compra.",
+    completingLink: "Completando acceso…",
     catalogError: "Catálogo no disponible.",
     firebaseError: "Cuenta no disponible — Firebase no configurado en este despliegue.",
     sendingLink: "Enviando enlace…",

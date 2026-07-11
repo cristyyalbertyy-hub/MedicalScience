@@ -355,6 +355,11 @@ const SITE_LOCALES = {
       free: "free",
       active: "active",
       confirmEmail: "Confirm the email used to request the link",
+      linkConfirmSubtitle: "Almost there — confirm the email you used at checkout to finish signing in.",
+      linkConfirmBtn: "Complete sign-in",
+      linkConfirmNote:
+        "Open the email link in this browser, then confirm the same email you used at checkout.",
+      completingLink: "Completing sign-in…",
       catalogError: "Catalog unavailable.",
       firebaseError: "Account unavailable — Firebase not configured on this deploy.",
       sendingLink: "Sending link…",

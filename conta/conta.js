@@ -17,6 +17,7 @@ const cfg = window.STUDIO9_FIREBASE ?? {};
 const authPanel = document.getElementById("auth-panel");
 const packagesPanel = document.getElementById("packages-panel");
 const signinForm = document.getElementById("signin-form");
+const linkConfirmForm = document.getElementById("link-confirm-form");
 const signedInPanel = document.getElementById("signed-in-panel");
 const signedInEmail = document.getElementById("signed-in-email");
 const authStatus = document.getElementById("auth-status");
@@ -48,6 +49,8 @@ let catalogData = null;
 let lastStatus = null;
 /** @type {boolean} */
 let authResolved = false;
+/** @type {boolean} */
+let linkConfirmPending = false;
 
 function getStoredEmail(key) {
   try {
@@ -130,18 +133,42 @@ function refreshStatusMessage() {
     : t(lastStatus.key ?? "", lastStatus.vars ?? {});
 }
 
-function continueUrl() {
+function continueUrl(email = "") {
   const host = window.location.hostname.replace(/^www\./, "");
-  return `${window.location.protocol}//${host}/conta/`;
+  const url = new URL(`${window.location.protocol}//${host}/conta/`);
+  const normalized = email.trim().toLowerCase();
+  if (normalized) url.searchParams.set("studio9_email", normalized);
+  return url.toString();
 }
 
 function resolveEmailForSignInLink() {
+  const params = new URL(window.location.href).searchParams;
+  const fromUrl = params.get("studio9_email")?.trim().toLowerCase() ?? "";
+  if (fromUrl) return fromUrl;
   const pending = getStoredEmail(EMAIL_KEY);
   if (pending) return pending.toLowerCase();
   const last = getStoredEmail(LAST_EMAIL_KEY);
   if (last) return last.toLowerCase();
-  const prompted = window.prompt(t("accountPage.confirmEmail"));
-  return prompted?.trim().toLowerCase() ?? "";
+  return "";
+}
+
+function showLinkConfirmForm(prefillEmail = "") {
+  if (!linkConfirmForm) return;
+  linkConfirmPending = true;
+  signinForm.hidden = true;
+  linkConfirmForm.hidden = false;
+  if (authLoading) authLoading.hidden = true;
+  setAuthPanelMode("signed-out");
+  authSubtitle.textContent = t("accountPage.linkConfirmSubtitle");
+  const emailInput = linkConfirmForm.email;
+  if (emailInput instanceof HTMLInputElement && prefillEmail) {
+    emailInput.value = prefillEmail;
+  }
+}
+
+function hideLinkConfirmForm() {
+  linkConfirmPending = false;
+  if (linkConfirmForm) linkConfirmForm.hidden = true;
 }
 
 function cleanEmailLinkFromUrl() {
@@ -151,24 +178,36 @@ function cleanEmailLinkFromUrl() {
   url.searchParams.delete("oobCode");
   url.searchParams.delete("mode");
   url.searchParams.delete("lang");
+  url.searchParams.delete("studio9_email");
   window.history.replaceState(null, "", `${url.pathname}${url.search}`);
+}
+
+async function attemptEmailLinkSignIn(email) {
+  try {
+    setStatusKey("accountPage.completingLink");
+    await signInWithEmailLink(auth, email, window.location.href);
+    rememberSignedInEmail(email);
+    window.localStorage.removeItem(EMAIL_KEY);
+    hideLinkConfirmForm();
+    cleanEmailLinkFromUrl();
+    setStatus("", "");
+    return true;
+  } catch (err) {
+    const message = err instanceof Error ? err.message : t("accountPage.sendError");
+    setStatus(message, "error");
+    showLinkConfirmForm(email);
+    return false;
+  }
 }
 
 async function completeEmailLinkSignIn() {
   if (!auth || !isSignInWithEmailLink(auth, window.location.href)) return false;
   const email = resolveEmailForSignInLink();
-  if (!email) return false;
-  try {
-    await signInWithEmailLink(auth, email, window.location.href);
-    rememberSignedInEmail(email);
-    window.localStorage.removeItem(EMAIL_KEY);
-    cleanEmailLinkFromUrl();
-    return true;
-  } catch (err) {
-    const message = err instanceof Error ? err.message : t("accountPage.sendError");
-    setStatus(message, "error");
+  if (!email) {
+    showLinkConfirmForm();
     return false;
   }
+  return attemptEmailLinkSignIn(email);
 }
 
 async function loadCatalog() {
@@ -339,6 +378,7 @@ async function openPackage(packageId, meta, button) {
 }
 
 async function showSignedIn(user, catalog) {
+  hideLinkConfirmForm();
   signinForm.hidden = true;
   signedInPanel.hidden = false;
   if (authLoading) authLoading.hidden = true;
@@ -368,6 +408,11 @@ function showSignedOut() {
   }
 
   if (authLoading) authLoading.hidden = true;
+  if (linkConfirmPending) {
+    signinForm.hidden = true;
+    if (linkConfirmForm) linkConfirmForm.hidden = false;
+    return;
+  }
   signinForm.hidden = false;
   setAuthPanelMode("signed-out");
   configureSignInForm();
@@ -385,7 +430,7 @@ signinForm?.addEventListener("submit", async (event) => {
   setStatusKey("accountPage.sendingLink");
   try {
     await sendSignInLinkToEmail(auth, email, {
-      url: continueUrl(),
+      url: continueUrl(email),
       handleCodeInApp: true,
     });
     window.localStorage.setItem(EMAIL_KEY, email.toLowerCase());
@@ -399,6 +444,15 @@ signinForm?.addEventListener("submit", async (event) => {
       setStatus(message.includes("accountPage.") ? t(message) : message, "error");
     }
   }
+});
+
+linkConfirmForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  if (!auth) return;
+  const form = event.currentTarget;
+  const email = form.email.value.trim().toLowerCase();
+  if (!email) return;
+  await attemptEmailLinkSignIn(email);
 });
 
 document.getElementById("signout-btn")?.addEventListener("click", () => {

@@ -349,6 +349,11 @@ SITE_LOCALES.it = {
     free: "gratuito",
     active: "attivo",
     confirmEmail: "Conferma l'email usata per richiedere il link",
+    linkConfirmSubtitle: "Ci siamo quasi — conferma l'email usata al checkout per completare l'accesso.",
+    linkConfirmBtn: "Completa accesso",
+    linkConfirmNote:
+      "Apri il link dell'email in questo browser e conferma la stessa email usata al checkout.",
+    completingLink: "Completamento accesso…",
     catalogError: "Catalogo non disponibile.",
     firebaseError: "Account non disponibile — Firebase non configurato in questo deploy.",
     sendingLink: "Invio del link…",

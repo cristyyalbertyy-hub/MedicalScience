@@ -349,6 +349,11 @@ SITE_LOCALES.pt = {
     free: "grátis",
     active: "activo",
     confirmEmail: "Confirme o email usado para pedir o link",
+    linkConfirmSubtitle: "Quase lá — confirme o email usado na compra para concluir a entrada.",
+    linkConfirmBtn: "Concluir entrada",
+    linkConfirmNote:
+      "Abra o link do email neste browser e confirme o mesmo email usado na compra.",
+    completingLink: "A concluir entrada…",
     catalogError: "Catálogo indisponível.",
     firebaseError: "Conta indisponível — Firebase não configurado neste deploy.",
     sendingLink: "A enviar link…",

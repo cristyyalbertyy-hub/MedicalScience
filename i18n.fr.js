@@ -350,6 +350,11 @@ SITE_LOCALES.fr = {
     free: "gratuit",
     active: "actif",
     confirmEmail: "Confirmez l'email utilisé pour demander le lien",
+    linkConfirmSubtitle: "Presque terminé — confirmez l'email utilisé à l'achat pour finir la connexion.",
+    linkConfirmBtn: "Terminer la connexion",
+    linkConfirmNote:
+      "Ouvrez le lien reçu par email dans ce navigateur, puis confirmez le même email utilisé à l'achat.",
+    completingLink: "Connexion en cours…",
     catalogError: "Catalogue indisponible.",
     firebaseError: "Compte indisponible — Firebase non configuré sur ce déploiement.",
     sendingLink: "Envoi du lien…",
