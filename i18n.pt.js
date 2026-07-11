@@ -87,6 +87,7 @@ SITE_LOCALES.pt = {
     openViaAccount: "Abrir via conta",
     buyNow: "Comprar {title}",
     openAccess: "Acesso livre",
+    tryFree: "Experimentar grátis",
     viewContents: "Ver conteúdo incluído",
     syllabusNotePurchase:
       "Índice completo — acesso a vídeos, podcasts e exercícios após a compra.",
@@ -246,6 +247,14 @@ SITE_LOCALES.pt = {
       text: "22 disciplinas de ciências da saúde — 12 apps disponíveis hoje, 10 em breve. Compra só o que precisas.",
     },
     sectionAria: "Disciplinas de ciências da saúde",
+    freeSpotlight: {
+      aria: "Módulo grátis para experimentar",
+      eyebrow: "Experimenta grátis",
+      intro:
+        "Experimenta um módulo grátis. Explora os vídeos, podcasts, infográficos e questionários.",
+      cta: "Experimentar Italian Health System — grátis",
+      hint: "Grátis · sem pagamento · sem conta",
+    },
   },
   tomatoTimePage: {
     hero: {
@@ -594,6 +603,7 @@ SITE_LOCALES.pt = {
       title: "Sistema de Saúde Italiano",
       description:
         "Estrutura, financiamento e organização dos cuidados de saúde em Itália — regiões, serviços e contexto político.",
+      freeCta: "Experimentar grátis",
     },
     "human-anatomy-2": {
       title: "Anatomia Humana II",

@@ -355,11 +355,14 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
       action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
     }
   } else {
-    statusClass = "is-live is-open-access";
+    statusClass = free ? "is-live is-open-access is-free-module" : "is-live is-open-access";
     statusLabel = free
-      ? packageText("packagesUi.live")
+      ? packageText("packagesUi.priceFree", "Free")
       : packageText("packagesUi.openAccess");
-    action = `<a class="btn btn-open-access${compact ? " btn-secondary" : ""}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(packageText("packagesUi.openApp"))}</a>`;
+    const openLabel = free
+      ? packageText(`pkg.${pkg.id}.freeCta`, packageText("packagesUi.tryFree", "Try free"))
+      : packageText("packagesUi.openApp");
+    action = `<a class="btn btn-open-access${compact ? " btn-secondary" : ""}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(openLabel)}</a>`;
   }
 
   const cardTitle = packageText(`pkg.${pkg.id}.title`, pkg.title);

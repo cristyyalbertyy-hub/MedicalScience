@@ -94,6 +94,7 @@ const SITE_LOCALES = {
       openViaAccount: "Open via account",
       buyNow: "Buy {title}",
       openAccess: "Free access",
+      tryFree: "Try free",
       viewContents: "View included content",
       syllabusNotePurchase:
         "Full index — access to videos, podcasts and exercises after purchase.",
@@ -253,6 +254,14 @@ const SITE_LOCALES = {
         text: "22 health-science subjects — 12 live apps today, 10 coming soon. Buy only what you need.",
       },
       sectionAria: "Health science disciplines",
+      freeSpotlight: {
+        aria: "Free module to try",
+        eyebrow: "Try for free",
+        intro:
+          "Try a module for free. Explore the videos, podcasts, infographics and questionnaires.",
+        cta: "Try Italian Health System — free",
+        hint: "Free · no payment · no account",
+      },
     },
     tomatoTimePage: {
       hero: {
@@ -599,6 +608,7 @@ const SITE_LOCALES = {
         title: "Italian Health System",
         description:
           "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
+        freeCta: "Try free",
       },
       "human-anatomy-2": {
         title: "Human Anatomy II",

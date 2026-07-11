@@ -89,6 +89,7 @@ SITE_LOCALES.it = {
     openViaAccount: "Apri via account",
     buyNow: "Acquista {title}",
     openAccess: "Accesso libero",
+    tryFree: "Prova gratis",
     viewContents: "Vedi contenuti inclusi",
     syllabusNotePurchase:
       "Indice completo — accesso a video, podcast ed esercizi dopo l'acquisto.",
@@ -247,6 +248,14 @@ SITE_LOCALES.it = {
       text: "Dodici pacchetti — tutte e dodici le app sono già online.",
     },
     sectionAria: "Pacchetti di apprendimento pronti all'uso",
+    freeSpotlight: {
+      aria: "Modulo gratuito da provare",
+      eyebrow: "Provalo gratis",
+      intro:
+        "Prova un modulo gratis. Esplora video, podcast, infografiche e questionari.",
+      cta: "Prova Italian Health System — gratis",
+      hint: "Gratis · senza pagamento · senza account",
+    },
   },
   tomatoTimePage: {
     hero: {
@@ -594,6 +603,7 @@ SITE_LOCALES.it = {
       title: "Sistema Sanitario Italiano",
       description:
         "Struttura, finanziamento e organizzazione dell'assistenza sanitaria in Italia — regioni, servizi e contesto normativo.",
+      freeCta: "Prova gratis",
     },
     "human-anatomy-2": {
       title: "Anatomia Umana II",
