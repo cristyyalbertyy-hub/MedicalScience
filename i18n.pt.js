@@ -473,7 +473,7 @@ SITE_LOCALES.pt = {
       updated: "Última actualização: julho de 2026",
       s01Title: "1. Quem somos",
       s01Body:
-        "A Studio9 (“nós”, “Studio9”) vende acesso online a módulos de estudo em ciências da saúde através de medical-science-lilac.vercel.app e apps associadas. Os pagamentos são processados pela Lemon Squeezy como merchant of record.",
+        "A Studio9 (“nós”, “Studio9”) vende acesso online a módulos de estudo em ciências da saúde através de studio9medical.com e apps associadas. Os pagamentos são processados pela Lemon Squeezy como merchant of record.",
       s02Title: "2. O que está a comprar",
       s02Body:
         "Licença de acesso pessoal e não transferível a conteúdos digitais (vídeos, podcasts, infográficos, exercícios, resumos) do(s) módulo(s) seleccionado(s). Não adquire software para download permanente nem bens físicos.",
