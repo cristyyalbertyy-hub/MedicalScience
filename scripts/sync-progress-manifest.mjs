@@ -319,7 +319,6 @@ const packages = {
         ["PH_JEN", "Edward Jenner and Vaccines"],
         ["PH_SEM", "Ignaz Semmelweis"],
         ["PH_MGE", "Medical Geography"],
-        ["PH_SNO", "John Snow and Cholera"],
       ]),
     ],
   },
