@@ -218,11 +218,6 @@ export async function listActiveEntitlements(userId, email = null) {
       );
     }
 
-    if (!packageIds.size && emailKey?.endsWith("@gmail.com")) {
-      const all = await db.collection("entitlements").get();
-      await collectEmailMatches(all);
-    }
-
     if (pendingMigration) {
       await batch.commit();
     }
