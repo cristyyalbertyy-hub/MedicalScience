@@ -110,6 +110,7 @@ SITE_LOCALES.pt = {
     partOfApp: "Parte da app {app} · {chapters}",
     chapterCount: "{count} capítulos",
     bundleComplete: "Pacote completo",
+    buyBundle: "Comprar pacote completo",
   },
   screenshots: {
     hero: { alt: "Visão geral do curso Medical Statistics na app Studio9 — capítulos, temas e infográfico do programa" },

@@ -440,18 +440,23 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   if (isSoon) {
     action = `<span class="package-soon">${escapeHtml(packageText("packagesUi.launchingSoon"))}</span>`;
   } else if (purchasable) {
-    statusClass = "is-live is-pilot-purchase";
-    statusLabel = packageText("packagesUi.purchasable");
+    statusClass = isBundle ? "is-live is-bundle" : "is-live is-pilot-purchase";
+    statusLabel = isBundle
+      ? packageText("packagesUi.bundleComplete", "Complete bundle")
+      : packageText("packagesUi.purchasable");
     const title = packageText(`pkg.${pkg.id}.title`, pkg.title);
     const checkoutUrl = getCheckoutUrl(pkg.id, catalog);
-    const buyLabel = packageText(
-      `pkg.${pkg.id}.buyCta`,
-      packageText("packagesUi.buyNow", `Buy ${title}`),
-    ).replace(/\{title\}/g, title);
+    const buyBtnClass = isBundle ? "btn-bundle-purchase" : "btn-pilot-purchase";
+    const buyLabel = isBundle
+      ? packageText(`pkg.${pkg.id}.buyCta`, packageText("packagesUi.buyBundle", "Buy complete bundle"))
+      : packageText(
+          `pkg.${pkg.id}.buyCta`,
+          packageText("packagesUi.buyNow", `Buy ${title}`),
+        ).replace(/\{title\}/g, title);
     if (checkoutUrl) {
-      action = `<a class="btn btn-pilot-purchase lemonsqueezy-button${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(checkoutUrl)}">${escapeHtml(buyLabel)}</a>`;
+      action = `<a class="btn ${buyBtnClass} lemonsqueezy-button${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(checkoutUrl)}">${escapeHtml(buyLabel)}</a>`;
     } else {
-      action = `<a class="btn btn-pilot-purchase${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
+      action = `<a class="btn ${buyBtnClass}${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(sitePath("conta/"))}">${escapeHtml(packageText("packagesUi.openViaAccount"))}</a>`;
     }
   } else {
     statusClass = free ? "is-live is-open-access is-free-module" : "is-live is-open-access";
@@ -464,10 +469,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
     action = `<a class="btn btn-open-access${compact ? " btn-secondary" : ""}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(openLabel)}</a>`;
   }
 
-  if (isBundle) {
-    statusClass += " is-bundle";
-    statusLabel = packageText("packagesUi.bundleComplete", "Complete bundle");
-  } else if (pkg.parentApp) {
+  if (pkg.parentApp && !isBundle) {
     statusClass += " is-part";
   }
 

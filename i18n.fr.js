@@ -112,6 +112,7 @@ SITE_LOCALES.fr = {
     partOfApp: "Partie de l'app {app} · {chapters}",
     chapterCount: "{count} chapitres",
     bundleComplete: "Forfait complet",
+    buyBundle: "Acheter le forfait complet",
   },
   screenshots: {
     hero: { alt: "Vue d'ensemble du cours Medical Statistics dans l'app Studio9 — chapitres, thèmes et infographie du programme" },

@@ -117,6 +117,7 @@ const SITE_LOCALES = {
       partOfApp: "Part of the {app} app · {chapters}",
       chapterCount: "{count} chapters",
       bundleComplete: "Complete bundle",
+      buyBundle: "Buy complete bundle",
     },
     screenshots: {
       hero: { alt: "Studio9 app course overview for Medical Statistics with chapters and syllabus infographic" },

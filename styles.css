@@ -1303,6 +1303,18 @@ p {
   color: #fff;
 }
 
+.btn-bundle-purchase {
+  background: linear-gradient(180deg, #2a6589, var(--primary));
+  border-color: rgba(31, 78, 107, 0.55);
+  color: #fff;
+  box-shadow: 0 14px 26px rgba(31, 78, 107, 0.28);
+}
+
+.btn-bundle-purchase:hover {
+  background: linear-gradient(180deg, #327499, #255f82);
+  color: #fff;
+}
+
 .btn-open-access {
   background: linear-gradient(180deg, #8fb08f, var(--sage));
   border-color: rgba(122, 155, 122, 0.55);
