@@ -619,13 +619,7 @@ function getPricingConfig(catalog = packageCatalog ?? {}) {
         m: { label: "Medium", minTopics: 10, maxTopics: 19, priceFromUsd: 9.99, priceToUsd: 12.99, priceUsd: 11.99 },
         l: { label: "Large", minTopics: 20, maxTopics: null, priceFromUsd: 13.99, priceToUsd: 18.99, priceUsd: 14.99 },
       },
-      volumeDiscounts: [
-        { minPackages: 3, percentOff: 5 },
-        { minPackages: 5, percentOff: 10 },
-        { minPackages: 8, percentOff: 12 },
-        { minPackages: 15, percentOff: 15 },
-        { minPackages: 22, percentOff: 20 },
-      ],
+      volumeDiscounts: [],
     }
   );
 }

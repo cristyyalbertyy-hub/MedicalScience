@@ -209,13 +209,7 @@
         "priceUsd": 14.99
       }
     },
-    "volumeDiscounts": [
-      { "minPackages": 3, "percentOff": 5 },
-      { "minPackages": 5, "percentOff": 10 },
-      { "minPackages": 8, "percentOff": 12 },
-      { "minPackages": 15, "percentOff": 15 },
-      { "minPackages": 22, "percentOff": 20 }
-    ]
+    "volumeDiscounts": [],
   },
   "plans": {
     "single": {
