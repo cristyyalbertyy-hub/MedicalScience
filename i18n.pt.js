@@ -214,7 +214,7 @@ SITE_LOCALES.pt = {
         "Testa o que aprendeste. O feedback instantâneo mostra onde te enganaste e explica outra vez.",
     },
     final: {
-      title: "Desde $6.99 por módulo. Poupa até 20% quando compras mais.",
+      title: "Desde $5.99 por módulo. Poupa até 20% quando compras mais.",
       text: "E um curso completo que não te vai deixar maluco.",
       cta: "Ver preços e começar",
     },

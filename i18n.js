@@ -221,7 +221,7 @@ const SITE_LOCALES = {
           "Test what you learned. Instant feedback shows where you went wrong and explains it again.",
       },
       final: {
-        title: "From $6.99 per module. Save up to 20% when you buy more.",
+        title: "From $5.99 per module. Save up to 20% when you buy more.",
         text: "And a complete course that will not drive you mad.",
         cta: "See pricing and start",
       },

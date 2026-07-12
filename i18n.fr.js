@@ -215,7 +215,7 @@ SITE_LOCALES.fr = {
         "Testez ce que vous avez appris. Le retour instantané montre vos erreurs et réexplique.",
     },
     final: {
-      title: "À partir de $6.99 par module. Économisez jusqu'à 20% en achetant plus.",
+      title: "À partir de $5.99 par module. Économisez jusqu'à 20% en achetant plus.",
       text: "Et un cursus complet qui ne vous rendra pas fou.",
       cta: "Voir les tarifs et commencer",
     },

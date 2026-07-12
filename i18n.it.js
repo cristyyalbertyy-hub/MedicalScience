@@ -215,7 +215,7 @@ SITE_LOCALES.it = {
         "Metti alla prova ciò che hai imparato. Il feedback immediato mostra gli errori e spiega di nuovo.",
     },
     final: {
-      title: "Da $6.99 a modulo. Risparmia fino al 20% acquistando di più.",
+      title: "Da $5.99 a modulo. Risparmia fino al 20% acquistando di più.",
       text: "E un corso completo che non ti farà impazzire.",
       cta: "Vedi i prezzi e inizia",
     },

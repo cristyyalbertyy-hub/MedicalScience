@@ -493,12 +493,12 @@ function planAmount(amountUsd, currency) {
 function getPricingConfig(catalog = packageCatalog ?? {}) {
   return (
     catalog.pricing ?? {
-      minPriceUsd: 6.99,
-      maxPriceUsd: 17.99,
+      minPriceUsd: 5.99,
+      maxPriceUsd: 18.99,
       tiers: {
-        s: { label: "Small", minTopics: 1, maxTopics: 9, priceFromUsd: 6.99, priceToUsd: 9.99, priceUsd: 9.99 },
+        s: { label: "Small", minTopics: 1, maxTopics: 9, priceFromUsd: 5.99, priceToUsd: 9.99, priceUsd: 9.99 },
         m: { label: "Medium", minTopics: 10, maxTopics: 19, priceFromUsd: 9.99, priceToUsd: 12.99, priceUsd: 11.99 },
-        l: { label: "Large", minTopics: 20, maxTopics: null, priceFromUsd: 13.99, priceToUsd: 17.99, priceUsd: 14.99 },
+        l: { label: "Large", minTopics: 20, maxTopics: null, priceFromUsd: 13.99, priceToUsd: 18.99, priceUsd: 14.99 },
       },
       volumeDiscounts: [
         { minPackages: 3, percentOff: 5 },

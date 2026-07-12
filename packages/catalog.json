@@ -32,7 +32,7 @@
     "genetics": {
       "title": "Genetics",
       "url": "https://medica-genetics.vercel.app/",
-      "priceUsd": 9.99,
+      "priceUsd": 8.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics",
       "checkoutUrl": "https://studionine.lemonsqueezy.com/checkout/buy/7c8aa8d6-f028-435e-ae30-b91e7b1269a0?embed=1"
@@ -45,12 +45,12 @@
     "information-processing": {
       "title": "Information Processing",
       "url": "https://informatics-theta.vercel.app/",
-      "priceUsd": 7.99
+      "priceUsd": 6.99
     },
     "statistics": {
       "title": "Statistics",
       "url": "https://statistics-nu-eight.vercel.app/",
-      "priceUsd": 17.99
+      "priceUsd": 18.99
     },
     "histology-embryology": {
       "title": "Histology and Embryology",
@@ -60,22 +60,22 @@
     "chemistry-introductory-biochemistry": {
       "title": "Chemistry and Introductory Biochemistry",
       "url": "https://chemistry-roan.vercel.app/",
-      "priceUsd": 16.99
+      "priceUsd": 17.99
     },
     "history-of-medicine": {
       "title": "History of Medicine",
       "url": "https://history-medicine.vercel.app/",
-      "priceUsd": 10.99
+      "priceUsd": 9.99
     },
     "moral-philosophy": {
       "title": "Moral Philosophy",
       "url": "https://moral-philosophy.vercel.app/",
-      "priceUsd": 10.99
+      "priceUsd": 9.99
     },
     "health-technology-assessments": {
       "title": "Health Technology Assessments",
       "url": "https://health-technology-assessments.vercel.app/",
-      "priceUsd": 6.99
+      "priceUsd": 5.99
     },
     "italian-health-system": {
       "title": "Italian Health System",
@@ -84,14 +84,14 @@
     }
   },
   "pricing": {
-    "minPriceUsd": 6.99,
-    "maxPriceUsd": 17.99,
+    "minPriceUsd": 5.99,
+    "maxPriceUsd": 18.99,
     "tiers": {
       "s": {
         "label": "Small",
         "minTopics": 1,
         "maxTopics": 9,
-        "priceFromUsd": 6.99,
+        "priceFromUsd": 5.99,
         "priceToUsd": 9.99,
         "priceUsd": 9.99
       },
@@ -108,7 +108,7 @@
         "minTopics": 20,
         "maxTopics": null,
         "priceFromUsd": 13.99,
-        "priceToUsd": 17.99,
+        "priceToUsd": 18.99,
         "priceUsd": 14.99
       }
     },
