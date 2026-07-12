@@ -333,6 +333,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   const pricingConfig = getPricingConfig(catalog);
   const topicCount = manifest?.packages?.[pkg.id]?.topics?.length ?? 0;
   const tierId = topicCount > 0 ? resolvePackageTier(topicCount, pricingConfig) : null;
+  const priceUsd = getPackagePriceUsd(pkg.id, catalog, topicCount);
 
   let statusClass = "is-soon";
   let statusLabel = packageText("packagesUi.comingSoon");
@@ -370,7 +371,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   const syllabus = renderSyllabusBlock(pkg, catalog, manifest);
   const tierBadge =
     tierId != null
-      ? `<div class="package-tier-row">${renderTierPriceBadge(tierId, pricingConfig, { free, topicCount })}</div>`
+      ? `<div class="package-tier-row">${renderTierPriceBadge(tierId, pricingConfig, { free, topicCount, priceUsd })}</div>`
       : "";
 
   return `
@@ -492,10 +493,12 @@ function planAmount(amountUsd, currency) {
 function getPricingConfig(catalog = packageCatalog ?? {}) {
   return (
     catalog.pricing ?? {
+      minPriceUsd: 6.99,
+      maxPriceUsd: 17.99,
       tiers: {
-        s: { label: "Small", minTopics: 1, maxTopics: 9, priceUsd: 9.99 },
-        m: { label: "Medium", minTopics: 10, maxTopics: 19, priceUsd: 11.99 },
-        l: { label: "Large", minTopics: 20, maxTopics: null, priceUsd: 14.99 },
+        s: { label: "Small", minTopics: 1, maxTopics: 9, priceFromUsd: 6.99, priceToUsd: 9.99, priceUsd: 9.99 },
+        m: { label: "Medium", minTopics: 10, maxTopics: 19, priceFromUsd: 9.99, priceToUsd: 12.99, priceUsd: 11.99 },
+        l: { label: "Large", minTopics: 20, maxTopics: null, priceFromUsd: 13.99, priceToUsd: 17.99, priceUsd: 14.99 },
       },
       volumeDiscounts: [
         { minPackages: 4, percentOff: 10 },
@@ -505,6 +508,14 @@ function getPricingConfig(catalog = packageCatalog ?? {}) {
       ],
     }
   );
+}
+
+function getPackagePriceUsd(pkgId, catalog = packageCatalog ?? {}, topicCount = 0) {
+  const meta = catalog?.packageMeta?.[pkgId];
+  if (meta?.priceUsd != null) return meta.priceUsd;
+  const pricingConfig = getPricingConfig(catalog);
+  const tierId = resolvePackageTier(topicCount, pricingConfig);
+  return tierPriceUsd(tierId, pricingConfig);
 }
 
 function resolvePackageTier(topicCount, pricingConfig = getPricingConfig()) {
@@ -531,14 +542,20 @@ function formatTierTopicsRange(tierId, pricingConfig = getPricingConfig()) {
     .replace("{max}", String(max));
 }
 
-function renderTierPriceBadge(tierId, pricingConfig, { free = false, topicCount = null } = {}) {
+function formatPriceRange(fromUsd, toUsd) {
+  const from = formatPlanAmount(planAmount(fromUsd, pricingCurrency), pricingCurrency);
+  const to = formatPlanAmount(planAmount(toUsd, pricingCurrency), pricingCurrency);
+  return `${from} – ${to}`;
+}
+
+function renderTierPriceBadge(tierId, pricingConfig, { free = false, topicCount = null, priceUsd = null } = {}) {
   if (free) {
     return `<span class="package-tier-price package-tier-price--s">${escapeHtml(packageText("packagesUi.priceFree", "Free"))}</span>`;
   }
 
   const tierKey = tierId === "s" || tierId === "m" || tierId === "l" ? tierId : "s";
   const letter = tierKey.toUpperCase();
-  const usd = tierPriceUsd(tierKey, pricingConfig);
+  const usd = priceUsd ?? tierPriceUsd(tierKey, pricingConfig);
   const formatted = formatPlanAmount(planAmount(usd, pricingCurrency), pricingCurrency);
   const label = packageText(`packagesUi.tier${letter}`, letter);
   const topics =
@@ -557,6 +574,17 @@ function renderPlanPrices() {
     const usd = Number(el.dataset.tierPriceUsd);
     if (!Number.isFinite(usd)) return;
     el.textContent = formatPlanAmount(planAmount(usd, pricingCurrency), pricingCurrency);
+  });
+
+  document.querySelectorAll("[data-tier-price-range]").forEach((el) => {
+    const fromUsd = Number(el.dataset.tierPriceFromUsd);
+    const toUsd = Number(el.dataset.tierPriceToUsd);
+    if (!Number.isFinite(fromUsd) || !Number.isFinite(toUsd)) return;
+    el.textContent = formatPriceRange(fromUsd, toUsd);
+  });
+
+  document.querySelectorAll("[data-module-price-table]").forEach((root) => {
+    renderModulePriceTable(root, packageCatalog ?? {}, progressManifest ?? {});
   });
 
   document.querySelectorAll(".plan-price[data-price-usd]").forEach((el) => {
@@ -631,6 +659,52 @@ function initPricingCurrency() {
   });
 
   applyPricingCurrency(pricingCurrency);
+}
+
+function renderModulePriceTable(root, catalog = packageCatalog ?? {}, manifest = progressManifest ?? {}) {
+  if (!root) return;
+  const paidIds = catalog.paidPackageIds ?? [];
+  const rows = paidIds
+    .map((id) => {
+      const meta = catalog.packageMeta?.[id] ?? {};
+      const topicCount = manifest?.packages?.[id]?.topics?.length ?? 0;
+      const title = packageText(`pkg.${id}.title`, meta.title ?? id);
+      const priceUsd = getPackagePriceUsd(id, catalog, topicCount);
+      const price = formatPlanAmount(planAmount(priceUsd, pricingCurrency), pricingCurrency);
+      const topics = packageText("packagesUi.tierTopicCount", `${topicCount} topics`).replace(
+        "{count}",
+        String(topicCount),
+      );
+      return { title, topics, price, topicCount };
+    })
+    .sort((a, b) => a.topicCount - b.topicCount || a.title.localeCompare(b.title));
+
+  const moduleCol = packageText("precos.pricing.moduleTableModule", "Module");
+  const topicsCol = packageText("precos.pricing.moduleTableTopics", "Topics");
+  const priceCol = packageText("precos.pricing.moduleTablePrice", "Price");
+
+  root.innerHTML = `
+    <table class="module-price-table">
+      <thead>
+        <tr>
+          <th scope="col">${escapeHtml(moduleCol)}</th>
+          <th scope="col">${escapeHtml(topicsCol)}</th>
+          <th scope="col">${escapeHtml(priceCol)}</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${rows
+          .map(
+            (row) => `
+          <tr>
+            <td>${escapeHtml(row.title)}</td>
+            <td>${escapeHtml(row.topics)}</td>
+            <td>${escapeHtml(row.price)}</td>
+          </tr>`,
+          )
+          .join("")}
+      </tbody>
+    </table>`;
 }
 
 function initPricingPlans(catalog = packageCatalog ?? {}) {
@@ -797,6 +871,9 @@ async function init() {
       initTomatoTimeLinks();
       renderPlanPrices();
       initPricingPlans(packageCatalog ?? {});
+      document.querySelectorAll("[data-module-price-table]").forEach((root) => {
+        renderModulePriceTable(root, packageCatalog ?? {}, progressManifest ?? {});
+      });
       initPurchaseTerms();
     });
   }

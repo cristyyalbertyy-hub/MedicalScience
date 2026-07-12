@@ -1381,6 +1381,40 @@ p {
   margin-top: 0.35rem;
 }
 
+.module-price-table-wrap {
+  margin: 2rem 0 2.5rem;
+}
+
+.module-price-table-wrap h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.module-price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.module-price-table th,
+.module-price-table td {
+  border: 1px solid var(--line);
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.module-price-table th {
+  background: var(--paper-warm);
+  font-weight: 600;
+}
+
+.module-price-table td:last-child,
+.module-price-table th:last-child {
+  white-space: nowrap;
+}
+
 .volume-discounts {
   margin-top: 2rem;
   padding: 1.5rem;

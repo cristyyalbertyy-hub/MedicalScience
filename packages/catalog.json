@@ -18,11 +18,13 @@
   "packageMeta": {
     "human-anatomy-1": {
       "title": "Human Anatomy I",
-      "url": "https://human-anatomy1.vercel.app/"
+      "url": "https://human-anatomy1.vercel.app/",
+      "priceUsd": 14.99
     },
     "medical-biology": {
       "title": "Medical Biology",
       "url": "https://biology-genetics.vercel.app/",
+      "priceUsd": 12.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=medical-biology",
       "checkoutUrl": "https://studionine.lemonsqueezy.com/checkout/buy/e9fb6c31-00b8-442e-a257-94facf465056?embed=1"
@@ -30,41 +32,50 @@
     "genetics": {
       "title": "Genetics",
       "url": "https://medica-genetics.vercel.app/",
+      "priceUsd": 9.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics",
       "checkoutUrl": "https://studionine.lemonsqueezy.com/checkout/buy/7c8aa8d6-f028-435e-ae30-b91e7b1269a0?embed=1"
     },
     "physics": {
       "title": "Physics",
-      "url": "https://physics-tau-five.vercel.app/"
+      "url": "https://physics-tau-five.vercel.app/",
+      "priceUsd": 13.99
     },
     "information-processing": {
       "title": "Information Processing",
-      "url": "https://informatics-theta.vercel.app/"
+      "url": "https://informatics-theta.vercel.app/",
+      "priceUsd": 7.99
     },
     "statistics": {
       "title": "Statistics",
-      "url": "https://statistics-nu-eight.vercel.app/"
+      "url": "https://statistics-nu-eight.vercel.app/",
+      "priceUsd": 17.99
     },
     "histology-embryology": {
       "title": "Histology and Embryology",
-      "url": "https://histology-embryology.vercel.app/"
+      "url": "https://histology-embryology.vercel.app/",
+      "priceUsd": 15.99
     },
     "chemistry-introductory-biochemistry": {
       "title": "Chemistry and Introductory Biochemistry",
-      "url": "https://chemistry-roan.vercel.app/"
+      "url": "https://chemistry-roan.vercel.app/",
+      "priceUsd": 16.99
     },
     "history-of-medicine": {
       "title": "History of Medicine",
-      "url": "https://history-medicine.vercel.app/"
+      "url": "https://history-medicine.vercel.app/",
+      "priceUsd": 10.99
     },
     "moral-philosophy": {
       "title": "Moral Philosophy",
-      "url": "https://moral-philosophy.vercel.app/"
+      "url": "https://moral-philosophy.vercel.app/",
+      "priceUsd": 10.99
     },
     "health-technology-assessments": {
       "title": "Health Technology Assessments",
-      "url": "https://health-technology-assessments.vercel.app/"
+      "url": "https://health-technology-assessments.vercel.app/",
+      "priceUsd": 6.99
     },
     "italian-health-system": {
       "title": "Italian Health System",
@@ -73,23 +84,31 @@
     }
   },
   "pricing": {
+    "minPriceUsd": 6.99,
+    "maxPriceUsd": 17.99,
     "tiers": {
       "s": {
         "label": "Small",
         "minTopics": 1,
         "maxTopics": 9,
+        "priceFromUsd": 6.99,
+        "priceToUsd": 9.99,
         "priceUsd": 9.99
       },
       "m": {
         "label": "Medium",
         "minTopics": 10,
         "maxTopics": 19,
+        "priceFromUsd": 9.99,
+        "priceToUsd": 12.99,
         "priceUsd": 11.99
       },
       "l": {
         "label": "Large",
         "minTopics": 20,
         "maxTopics": null,
+        "priceFromUsd": 13.99,
+        "priceToUsd": 17.99,
         "priceUsd": 14.99
       }
     },

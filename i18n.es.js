@@ -215,7 +215,7 @@ SITE_LOCALES.es = {
         "Pon a prueba lo aprendido. El feedback instantáneo muestra dónde te equivocaste y te lo explica de nuevo.",
     },
     final: {
-      title: "Desde $9.99 por módulo. Ahorra hasta un 30% cuando compras más.",
+      title: "Desde $6.99 por módulo. Ahorra hasta un 30% cuando compras más.",
       text: "Y un curso completo que no te volverá loco.",
       cta: "Ver precios y empezar",
     },
@@ -412,7 +412,11 @@ SITE_LOCALES.es = {
       volume12: "12 módulos — 20% de descuento",
       volume22: "Los 22 módulos — 30% de descuento",
       volumeNote:
-        "El descuento se aplica al total combinado en el checkout. Cada módulo se precia por tamaño (S, M o L).",
+        "El descuento se aplica al total combinado en el checkout. Cada módulo se precia por número de temas — consulta la tabla arriba.",
+      moduleTableTitle: "Precio por módulo",
+      moduleTableModule: "Módulo",
+      moduleTableTopics: "Temas",
+      moduleTablePrice: "Precio",
       chooseCta: "Elegir disciplinas →",
       planSoon: "Próximamente",
     },

@@ -221,7 +221,7 @@ const SITE_LOCALES = {
           "Test what you learned. Instant feedback shows where you went wrong and explains it again.",
       },
       final: {
-        title: "From $9.99 per module. Save up to 30% when you buy more.",
+        title: "From $6.99 per module. Save up to 30% when you buy more.",
         text: "And a complete course that will not drive you mad.",
         cta: "See pricing and start",
       },
@@ -417,7 +417,11 @@ const SITE_LOCALES = {
         volume12: "12 modules — 20% off",
         volume22: "All 22 modules — 30% off",
         volumeNote:
-          "Discount applies to the combined total at checkout. Each module is priced by its size (S, M or L).",
+          "Discount applies to the combined total at checkout. Each module is priced by its topic count — see the table above.",
+        moduleTableTitle: "Price by module",
+        moduleTableModule: "Module",
+        moduleTableTopics: "Topics",
+        moduleTablePrice: "Price",
         chooseCta: "Choose your disciplines →",
         planSoon: "Coming soon",
       },

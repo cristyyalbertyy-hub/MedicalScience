@@ -215,7 +215,7 @@ SITE_LOCALES.fr = {
         "Testez ce que vous avez appris. Le retour instantané montre vos erreurs et réexplique.",
     },
     final: {
-      title: "À partir de $9.99 par module. Économisez jusqu'à 30% en achetant plus.",
+      title: "À partir de $6.99 par module. Économisez jusqu'à 30% en achetant plus.",
       text: "Et un cursus complet qui ne vous rendra pas fou.",
       cta: "Voir les tarifs et commencer",
     },
@@ -413,7 +413,11 @@ SITE_LOCALES.fr = {
       volume12: "12 modules — 20% de réduction",
       volume22: "Les 22 modules — 30% de réduction",
       volumeNote:
-        "La réduction s'applique au total combiné au checkout. Chaque module est tarifé par taille (S, M ou L).",
+        "La réduction s'applique au total combiné au checkout. Chaque module est tarifé selon le nombre de thèmes — voir le tableau ci-dessus.",
+      moduleTableTitle: "Prix par module",
+      moduleTableModule: "Module",
+      moduleTableTopics: "Thèmes",
+      moduleTablePrice: "Prix",
       chooseCta: "Choisir vos disciplines →",
       planSoon: "Bientôt disponible",
     },

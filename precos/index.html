@@ -105,7 +105,7 @@
             <span class="tier-card-letter" aria-hidden="true">S</span>
             <p class="tier-card-label" data-i18n="precos.pricing.tierSLabel">Small</p>
             <p class="tier-card-range" data-i18n="precos.pricing.tierSRange">1–9 topics</p>
-            <p class="tier-card-price" data-tier-price-usd="9.99">$9.99</p>
+            <p class="tier-card-price" data-tier-price-range data-tier-price-from-usd="6.99" data-tier-price-to-usd="9.99">$6.99 – $9.99</p>
             <ul>
               <li data-i18n="precos.pricing.tierItem1">40–60h of study</li>
               <li data-i18n="precos.pricing.tierItem2">Immediate access (1 year)</li>
@@ -117,7 +117,7 @@
             <span class="tier-card-letter" aria-hidden="true">M</span>
             <p class="tier-card-label" data-i18n="precos.pricing.tierMLabel">Medium</p>
             <p class="tier-card-range" data-i18n="precos.pricing.tierMRange">10–19 topics</p>
-            <p class="tier-card-price" data-tier-price-usd="11.99">$11.99</p>
+            <p class="tier-card-price" data-tier-price-range data-tier-price-from-usd="9.99" data-tier-price-to-usd="12.99">$9.99 – $12.99</p>
             <ul>
               <li data-i18n="precos.pricing.tierItem1">40–60h of study</li>
               <li data-i18n="precos.pricing.tierItem2">Immediate access (1 year)</li>
@@ -129,13 +129,18 @@
             <span class="tier-card-letter" aria-hidden="true">L</span>
             <p class="tier-card-label" data-i18n="precos.pricing.tierLLabel">Large</p>
             <p class="tier-card-range" data-i18n="precos.pricing.tierLRange">20+ topics</p>
-            <p class="tier-card-price" data-tier-price-usd="14.99">$14.99</p>
+            <p class="tier-card-price" data-tier-price-range data-tier-price-from-usd="13.99" data-tier-price-to-usd="17.99">$13.99 – $17.99</p>
             <ul>
               <li data-i18n="precos.pricing.tierItem1">40–60h of study</li>
               <li data-i18n="precos.pricing.tierItem2">Immediate access (1 year)</li>
               <li data-i18n="precos.pricing.tierItem3">Videos + podcasts + exercises + summary</li>
             </ul>
           </article>
+        </div>
+
+        <div class="module-price-table-wrap">
+          <h3 data-i18n="precos.pricing.moduleTableTitle">Price by module</h3>
+          <div data-module-price-table></div>
         </div>
 
         <div class="volume-discounts">
@@ -147,7 +152,7 @@
             <li data-i18n="precos.pricing.volume22">All 22 modules — 30% off</li>
           </ul>
           <p class="volume-discount-note" data-i18n="precos.pricing.volumeNote">
-            Discount applies to the combined total at checkout. Each module is priced by its size (S, M or L).
+            Discount applies to the combined total at checkout. Each module is priced by its topic count — see the table above.
           </p>
           <a
             class="btn btn-primary"
@@ -230,6 +235,6 @@
     <script src="../i18n.fr.js?v=4"></script>
     <script src="../i18n.it.js?v=4"></script>
     <script src="../i18n.pt.js?v=4"></script>
-    <script src="../app.js?v=43"></script>
+    <script src="../app.js?v=44"></script>
   </body>
 </html>
