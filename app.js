@@ -447,7 +447,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
     const buyLabel = packageText(
       `pkg.${pkg.id}.buyCta`,
       packageText("packagesUi.buyNow", `Buy ${title}`),
-    );
+    ).replace(/\{title\}/g, title);
     if (checkoutUrl) {
       action = `<a class="btn btn-pilot-purchase lemonsqueezy-button${compact ? " btn-secondary" : ""}" data-purchase-action href="${escapeHtml(checkoutUrl)}">${escapeHtml(buyLabel)}</a>`;
     } else {
