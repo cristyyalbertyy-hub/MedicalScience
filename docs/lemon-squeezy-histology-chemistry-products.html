@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Studio9 — Lemon Squeezy: Histology &amp; Chemistry (6 products)</title>
+  <style>
+    body { font-family: "Segoe UI", Calibri, Arial, sans-serif; color: #1a1a2e; line-height: 1.55; font-size: 11pt; max-width: 820px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: 20pt; color: #14213d; border-bottom: 2px solid #14213d; padding-bottom: 10px; }
+    h2 { font-size: 13pt; color: #14213d; margin: 28px 0 10px; page-break-before: always; }
+    h2:first-of-type { page-break-before: avoid; }
+    h3 { font-size: 11pt; color: #2d4636; margin: 16px 0 8px; }
+    p { margin: 0 0 10px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 10.5pt; }
+    th, td { border: 1px solid #c8c8c8; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f4f4f0; }
+    .box { background: #f7f5ef; border: 1px solid #e0ddd4; padding: 10px 14px; margin: 8px 0 14px; font-size: 10pt; white-space: pre-wrap; }
+    .note { background: #eef6ff; border-left: 4px solid #14213d; padding: 10px 14px; margin: 16px 0; font-size: 10pt; }
+    code { background: #eee; padding: 1px 5px; border-radius: 3px; }
+    .checklist { margin: 0; padding-left: 22px; }
+    .checklist li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <h1>Lemon Squeezy — 6 novos produtos</h1>
+  <p><strong>Histology / Embryology / Chemistry</strong> · Fase 3 · Julho 2026</p>
+
+  <div class="note">
+    <strong>Antes de começar:</strong> O nome do produto no LS deve ser <strong>exactamente</strong> o indicado em cada secção — o webhook usa <code>product_name</code> como fallback se ainda não tiveres o variant UUID no <code>catalog.json</code>.
+  </div>
+
+  <h2>Configuração comum (todos os 6)</h2>
+  <table>
+    <tr><th>Campo</th><th>Valor</th></tr>
+    <tr><td>Tipo</td><td>Digital product · <strong>One-time payment</strong> (não subscrição)</td></tr>
+    <tr><td>Moeda</td><td>USD</td></tr>
+    <tr><td>Acesso</td><td>12 months online access</td></tr>
+    <tr><td>Confirmation modal — Button URL</td><td><code>studio9medical.com/conta/</code></td></tr>
+    <tr><td>Confirmation modal — Button text</td><td><code>Open My Account</code></td></tr>
+    <tr><td>Email receipt — Button URL</td><td><code>studio9medical.com/conta/</code></td></tr>
+    <tr><td>Email receipt — Button text</td><td><code>Open My Account</code></td></tr>
+    <tr><td>Login</td><td>Google Sign-In at My account (same email as checkout)</td></tr>
+    <tr><td>Suporte</td><td>hello@studio9medical.com</td></tr>
+  </table>
+
+  <p><strong>Confirmation modal — Title (todos):</strong></p>
+  <div class="box">Thank you — your access is ready</div>
+
+  <h3>Após criar cada produto</h3>
+  <ol class="checklist">
+    <li>Copiar o <strong>Variant ID</strong> (UUID) do LS</li>
+    <li>Copiar o <strong>Checkout URL</strong> (<code>…/checkout/buy/VARIANT_UUID?embed=1</code>)</li>
+    <li>Enviar os 6 pares ao dev para actualizar <code>packages/catalog.json</code></li>
+    <li>Testar: compra → email → Google em <code>/conta/</code> → app abre com capítulos correctos</li>
+  </ol>
+
+  <!-- PRODUCT 1 -->
+  <h2>1. Histology</h2>
+  <table>
+    <tr><th>package_id</th><td><code>histology</code></td></tr>
+    <tr><th>Product name (LS)</th><td><strong>Histology</strong></td></tr>
+    <tr><th>Price</th><td>$10.99</td></tr>
+    <tr><th>Topics</th><td>11 (Cytology + Histology tissues)</td></tr>
+    <tr><th>App URL</th><td>histology-embryology.vercel.app</td></tr>
+    <tr><th>Unlocks chapters</th><td><code>cy</code>, <code>hi</code> only</td></tr>
+    <tr><th>Variant ID</th><td><em>(preencher após criar)</em></td></tr>
+    <tr><th>Cover image</th><td><code>public/lemon-squeezy/histology.png</code></td></tr>
+  </table>
+  <p><strong>Short description (store):</strong></p>
+  <div class="box">Cytology and fundamental tissues — epithelia, connective tissue, muscle and nervous tissue. Video, podcast, infographic and quiz per topic. 12 months access.</div>
+  <p><strong>Full description:</strong></p>
+  <div class="box">Studio9 Histology covers Elements of Cytology and Histology · Tissues (11 topics). Each topic includes a short video, podcast, infographic and practice questions — study on phone, tablet or laptop.
+
+This is the partial Histology module. Embryology and Organogenesis require a separate purchase or the complete Histology and Embryology bundle.
+
+After purchase, sign in at studio9medical.com/conta/ with Google (same email as checkout). Access lasts 12 months. Study supplement — not a university degree.</div>
+  <p><strong>Confirmation / receipt — replace [MODULE NAME]:</strong> <code>Histology</code></p>
+
+  <!-- PRODUCT 2 -->
+  <h2>2. Embryology</h2>
+  <table>
+    <tr><th>package_id</th><td><code>embryology</code></td></tr>
+    <tr><th>Product name (LS)</th><td><strong>Embryology</strong></td></tr>
+    <tr><th>Price</th><td>$11.99</td></tr>
+    <tr><th>Topics</th><td>15 (Gametogenesis, early development, organogenesis)</td></tr>
+    <tr><th>App URL</th><td>histology-embryology.vercel.app</td></tr>
+    <tr><th>Unlocks chapters</th><td><code>em</code>, <code>or</code> only</td></tr>
+    <tr><th>Variant ID</th><td><em>(preencher após criar)</em></td></tr>
+    <tr><th>Cover image</th><td><code>public/lemon-squeezy/embryology.png</code></td></tr>
+  </table>
+  <p><strong>Short description:</strong></p>
+  <div class="box">Gametogenesis, early development and organogenesis — correlated with anatomy. Video, podcast, infographic and quiz per topic. 12 months access.</div>
+  <p><strong>Full description:</strong></p>
+  <div class="box">Studio9 Embryology covers gametogenesis, weeks 1–4, stem cells, placenta and organogenesis (15 topics). Each topic includes video, podcast, infographic and practice questions.
+
+This is the partial Embryology module. Cytology and Histology require a separate purchase or the complete Histology and Embryology bundle.
+
+Sign in at studio9medical.com/conta/ with Google after purchase. 12 months access.</div>
+  <p><strong>Confirmation / receipt — [MODULE NAME]:</strong> <code>Embryology</code></p>
+
+  <!-- PRODUCT 3 -->
+  <h2>3. Histology and Embryology (bundle)</h2>
+  <table>
+    <tr><th>package_id</th><td><code>histology-embryology</code></td></tr>
+    <tr><th>Product name (LS)</th><td><strong>Histology and Embryology</strong></td></tr>
+    <tr><th>Price</th><td>$15.99</td></tr>
+    <tr><th>Topics</th><td>26 (complete discipline)</td></tr>
+    <tr><th>Unlocks chapters</th><td>All: <code>cy</code>, <code>hi</code>, <code>em</code>, <code>or</code></td></tr>
+    <tr><th>Variant ID</th><td><em>(preencher após criar)</em></td></tr>
+    <tr><th>Cover image</th><td><code>public/lemon-squeezy/histology-embryology.png</code> (já existe)</td></tr>
+  </table>
+  <p><strong>Short description:</strong></p>
+  <div class="box">Complete Histology and Embryology — cytology, tissues, development and organogenesis. All 26 topics. Best value vs buying both parts separately ($22.98).</div>
+  <p><strong>Full description:</strong></p>
+  <div class="box">The complete Histology and Embryology module: Elements of Cytology, Histology · Tissues, Embryology and Organogenesis (26 topics). Full access to every chapter in the app.
+
+Each topic: video, podcast, infographic and practice questions. 12 months online access. Sign in at studio9medical.com/conta/ with Google (same email as checkout).</div>
+  <p><strong>Confirmation / receipt — [MODULE NAME]:</strong> <code>Histology and Embryology</code></p>
+
+  <!-- PRODUCT 4 -->
+  <h2>4. Chemistry</h2>
+  <table>
+    <tr><th>package_id</th><td><code>chemistry</code></td></tr>
+    <tr><th>Product name (LS)</th><td><strong>Chemistry</strong></td></tr>
+    <tr><th>Price</th><td>$14.99</td></tr>
+    <tr><th>Topics</th><td>26 (General + Organic Chemistry)</td></tr>
+    <tr><th>App URL</th><td>chemistry-roan.vercel.app</td></tr>
+    <tr><th>Unlocks chapters</th><td><code>gc</code>, <code>oc</code> only</td></tr>
+    <tr><th>Variant ID</th><td><em>(preencher após criar)</em></td></tr>
+    <tr><th>Cover image</th><td><code>public/lemon-squeezy/chemistry.png</code></td></tr>
+  </table>
+  <p><strong>Short description:</strong></p>
+  <div class="box">General and organic chemistry — atomic structure, bonding, equilibrium, functional groups. Video, podcast, infographic and quiz per topic.</div>
+  <p><strong>Full description:</strong></p>
+  <div class="box">Studio9 Chemistry covers General Chemistry (atomic structure, thermodynamics, solutions, electrolytes) and Organic Chemistry (hydrocarbons, functional groups, stereochemistry) — 26 topics.
+
+Partial module: Introductory Biochemistry is sold separately or in the complete Chemistry and Biochemistry bundle.
+
+12 months access · studio9medical.com/conta/ · Google Sign-In.</div>
+  <p><strong>Confirmation / receipt — [MODULE NAME]:</strong> <code>Chemistry</code></p>
+
+  <!-- PRODUCT 5 -->
+  <h2>5. Introductory Biochemistry</h2>
+  <table>
+    <tr><th>package_id</th><td><code>introductory-biochemistry</code></td></tr>
+    <tr><th>Product name (LS)</th><td><strong>Introductory Biochemistry</strong></td></tr>
+    <tr><th>Price</th><td>$6.99</td></tr>
+    <tr><th>Topics</th><td>4</td></tr>
+    <tr><th>Unlocks chapters</th><td><code>ib</code> only</td></tr>
+    <tr><th>Variant ID</th><td><em>(preencher após criar)</em></td></tr>
+    <tr><th>Cover image</th><td><code>public/lemon-squeezy/introductory-biochemistry.png</code></td></tr>
+  </table>
+  <p><strong>Short description:</strong></p>
+  <div class="box">Carbohydrates, proteins, lipids and nucleotides — molecular foundations for health sciences. 4 topics, 12 months access.</div>
+  <p><strong>Full description:</strong></p>
+  <div class="box">Studio9 Introductory Biochemistry: carbohydrates, amino acids and proteins, lipids and biomembranes, nitrogen bases and nucleotides (4 topics).
+
+Partial module — General and Organic Chemistry sold separately or in the complete bundle.
+
+Sign in at studio9medical.com/conta/ after purchase.</div>
+  <p><strong>Confirmation / receipt — [MODULE NAME]:</strong> <code>Introductory Biochemistry</code></p>
+
+  <!-- PRODUCT 6 -->
+  <h2>6. Chemistry and Introductory Biochemistry (bundle)</h2>
+  <table>
+    <tr><th>package_id</th><td><code>chemistry-introductory-biochemistry</code></td></tr>
+    <tr><th>Product name (LS)</th><td><strong>Chemistry and Introductory Biochemistry</strong></td></tr>
+    <tr><th>Price</th><td>$17.99</td></tr>
+    <tr><th>Topics</th><td>30 (complete discipline)</td></tr>
+    <tr><th>Unlocks chapters</th><td>All: <code>gc</code>, <code>oc</code>, <code>ib</code></td></tr>
+    <tr><th>Variant ID</th><td><em>(preencher após criar)</em></td></tr>
+    <tr><th>Cover image</th><td><code>public/lemon-squeezy/chemistry-biochemistry.png</code> (já existe)</td></tr>
+  </table>
+  <p><strong>Short description:</strong></p>
+  <div class="box">Complete chemistry and introductory biochemistry — all 30 topics. Best value vs buying both parts separately ($21.98).</div>
+  <p><strong>Full description:</strong></p>
+  <div class="box">The complete Chemistry and Introductory Biochemistry module: general chemistry, organic chemistry and introductory biochemistry (30 topics). Full access to every chapter in the app.
+
+12 months online access. Sign in at studio9medical.com/conta/ with Google.</div>
+  <p><strong>Confirmation / receipt — [MODULE NAME]:</strong> <code>Chemistry and Introductory Biochemistry</code></p>
+
+  <h2>Textos partilhados — Confirmation modal &amp; Email receipt</h2>
+  <p>Use section 12 of <code>studio9-marketing-checklist.html</code> — substituir <code>[MODULE NAME]</code> pelo nome de cada produto acima.</p>
+
+  <h2>catalog.json — depois de criar</h2>
+  <p>Para cada produto, adicionar ao <code>packages/catalog.json</code>:</p>
+  <div class="box">// lemonSqueezy.variants
+"VARIANT_UUID_AQUI": "histology",
+
+// packageMeta.histology
+"checkoutUrl": "https://studionine.lemonsqueezy.com/checkout/buy/VARIANT_UUID_AQUI?embed=1",
+"loginReady": true
+
+// Quando estiverem prontos para venda pública:
+// adicionar o package_id a purchasablePackageIds</div>
+
+  <h2>Teste recomendado (por produto)</h2>
+  <ol class="checklist">
+    <li>Comprar com cartão de teste LS</li>
+    <li>Verificar email de recibo + botão My Account</li>
+    <li>Login Google em <code>studio9medical.com/conta/</code></li>
+    <li>Firestore: entitlement com <code>package_id</code> correcto</li>
+    <li>Abrir app — só os capítulos comprados desbloqueados</li>
+  </ol>
+
+  <p><strong>Suporte:</strong> hello@studio9medical.com · <a href="https://studio9medical.com/precos/">studio9medical.com/precos/</a></p>
+</body>
+</html>

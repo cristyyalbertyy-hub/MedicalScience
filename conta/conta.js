@@ -350,12 +350,175 @@ async function refreshAccountAccess() {
   }
 }
 
-function renderPackages(catalog) {
-  packagesList.replaceChildren();
-  const ownedIds = [
+function formatOwnedFamilyDetail(ownedIds, group, catalog) {
+  const bundleId = group.bundleId;
+  if (bundleId && ownedIds.includes(bundleId)) {
+    return t("accountPage.bundleOwned");
+  }
+  return ownedIds
+    .map((id) => {
+      const meta = packageMeta[id] ?? catalog.packageMeta?.[id] ?? {};
+      return t(`pkg.${id}.title`, meta.title ?? id);
+    })
+    .join(" · ");
+}
+
+function getChapterPrefixCount(catalog, parentAppId, packageId) {
+  const access = catalog.packageAccess?.[parentAppId];
+  return access?.chaptersByPackageId?.[packageId]?.length ?? 0;
+}
+
+function getMergedChapterPrefixCount(catalog, parentAppId, ownedIds) {
+  const access = catalog.packageAccess?.[parentAppId];
+  if (!access) return 0;
+  const merged = new Set();
+  for (const id of ownedIds) {
+    for (const prefix of access.chaptersByPackageId?.[id] ?? []) {
+      merged.add(prefix);
+    }
+  }
+  return merged.size;
+}
+
+function formatChapterAccessDetail(catalog, parentAppId, ownedIds, bundleId) {
+  const total = getChapterPrefixCount(catalog, parentAppId, bundleId);
+  const unlocked = getMergedChapterPrefixCount(catalog, parentAppId, ownedIds);
+  if (!total) return "";
+  if (unlocked >= total) return t("accountPage.chaptersFull");
+  return t("accountPage.chaptersPartial", {
+    unlocked: String(unlocked),
+    total: String(total),
+  });
+}
+
+function resolveBestOpenPackageId(ownedIds, group, catalog) {
+  const bundleId = group.bundleId;
+  if (bundleId && ownedIds.includes(bundleId)) return bundleId;
+
+  let bestId = ownedIds[0];
+  let bestCount = getChapterPrefixCount(catalog, bundleId, bestId);
+  for (const id of ownedIds) {
+    const count = getChapterPrefixCount(catalog, bundleId, id);
+    if (count > bestCount) {
+      bestId = id;
+      bestCount = count;
+    }
+  }
+  return bestId;
+}
+
+function getGroupedPackageIdSet(catalog) {
+  const groups = catalog.pricingTableGroups ?? [];
+  return new Set(groups.flatMap((group) => group.packageIds ?? []));
+}
+
+function buildOwnedRenderPlan(catalog, ownedSet) {
+  const groups = catalog.pricingTableGroups ?? [];
+  const groupedIds = getGroupedPackageIdSet(catalog);
+  const catalogOrder = [
     ...catalog.paidPackageIds,
     ...catalog.freePackageIds.filter((id) => !catalog.paidPackageIds.includes(id)),
-  ].filter((id) => activePackageIds.has(id));
+  ];
+  const items = [];
+
+  for (const id of catalogOrder) {
+    if (id === "history-of-medicine") {
+      for (const group of groups) {
+        const ownedInGroup = (group.packageIds ?? []).filter((packageId) => ownedSet.has(packageId));
+        if (ownedInGroup.length) {
+          items.push({ type: "family", group, ownedIds: ownedInGroup });
+        }
+      }
+    }
+    if (groupedIds.has(id)) continue;
+    if (ownedSet.has(id)) {
+      items.push({ type: "standalone", id });
+    }
+  }
+
+  return items;
+}
+
+function createPackageActions(packageId, meta) {
+  const actions = document.createElement("div");
+  actions.className = "acesso-package__actions";
+
+  if (meta.url) {
+    const openBtn = document.createElement("button");
+    openBtn.type = "button";
+    openBtn.className = meta.loginReady ? "btn btn-pilot-purchase" : "btn btn-open-access";
+    openBtn.textContent = t("accountPage.open");
+    openBtn.addEventListener("click", () => void openPackage(packageId, meta, openBtn));
+    actions.appendChild(openBtn);
+  } else {
+    actions.innerHTML = `<span class="acesso-muted">${t("accountPage.soon")}</span>`;
+  }
+
+  return actions;
+}
+
+function appendStandalonePackageRow(list, id) {
+  const meta = packageMeta[id] ?? { title: id };
+  const li = document.createElement("li");
+  li.className = `acesso-package is-active${meta.free ? " is-free" : ""}`;
+
+  const info = document.createElement("div");
+  info.className = "acesso-package__meta";
+  const title = t(`pkg.${id}.title`, meta.title ?? id);
+  const freeLabel = meta.free ? ` · ${t("accountPage.free")}` : "";
+  info.innerHTML = `<strong>${title}</strong><small>${id}${freeLabel} · ${t("accountPage.active")}</small>`;
+
+  li.append(info, createPackageActions(id, meta));
+  list.appendChild(li);
+}
+
+function appendFamilyGroupRow(list, group, ownedIds, catalog) {
+  const parentAppId = group.bundleId;
+  const openId = resolveBestOpenPackageId(ownedIds, group, catalog);
+  const parentMeta = packageMeta[parentAppId] ?? catalog.packageMeta?.[parentAppId] ?? {};
+  const openMeta = {
+    ...parentMeta,
+    ...(packageMeta[openId] ?? catalog.packageMeta?.[openId] ?? {}),
+    url: parentMeta.url ?? packageMeta[openId]?.url,
+  };
+
+  const familyTitle = t(group.titleKey ?? "", group.title ?? group.id);
+  const ownedDetail = formatOwnedFamilyDetail(ownedIds, group, catalog);
+  const chapterDetail = formatChapterAccessDetail(catalog, parentAppId, ownedIds, parentAppId);
+  const subtitle = chapterDetail ? `${ownedDetail} · ${chapterDetail}` : ownedDetail;
+
+  const wrapper = document.createElement("li");
+  wrapper.className = "acesso-packages-family";
+
+  const heading = document.createElement("h3");
+  heading.className = "acesso-packages-family__title";
+  heading.textContent = familyTitle;
+
+  const innerList = document.createElement("ul");
+  innerList.className = "acesso-packages-family__list";
+
+  const card = document.createElement("li");
+  card.className = "acesso-package is-active is-family-app";
+
+  const info = document.createElement("div");
+  info.className = "acesso-package__meta";
+  const appTitle = t(`pkg.${parentAppId}.title`, parentMeta.title ?? familyTitle);
+  info.innerHTML = `<strong>${appTitle}</strong><small>${subtitle}</small>`;
+
+  card.append(info, createPackageActions(openId, openMeta));
+  innerList.appendChild(card);
+  wrapper.append(heading, innerList);
+  list.appendChild(wrapper);
+}
+
+function renderPackages(catalog) {
+  packagesList.replaceChildren();
+  const ownedSet = new Set(
+    [
+      ...catalog.paidPackageIds,
+      ...catalog.freePackageIds.filter((id) => !catalog.paidPackageIds.includes(id)),
+    ].filter((id) => activePackageIds.has(id)),
+  );
 
   if (packagesEmptyHint && auth?.currentUser?.email) {
     packagesEmptyHint.textContent = t("accountPage.emptySignedInHint", {
@@ -364,7 +527,7 @@ function renderPackages(catalog) {
     });
   }
 
-  if (!ownedIds.length) {
+  if (!ownedSet.size) {
     packagesList.hidden = true;
     packagesIntro.hidden = true;
     packagesEmpty.hidden = false;
@@ -379,32 +542,13 @@ function renderPackages(catalog) {
   packagesFootnote.hidden = false;
   if (packagesProgressEntry) packagesProgressEntry.hidden = false;
 
-  for (const id of ownedIds) {
-    const meta = packageMeta[id] ?? { title: id };
-    const li = document.createElement("li");
-    li.className = `acesso-package is-active${meta.free ? " is-free" : ""}`;
-
-    const info = document.createElement("div");
-    info.className = "acesso-package__meta";
-    const freeLabel = meta.free ? ` · ${t("accountPage.free")}` : "";
-    info.innerHTML = `<strong>${meta.title}</strong><small>${id}${freeLabel} · ${t("accountPage.active")}</small>`;
-
-    const actions = document.createElement("div");
-    actions.className = "acesso-package__actions";
-
-    if (meta.url) {
-      const openBtn = document.createElement("button");
-      openBtn.type = "button";
-      openBtn.className = meta.loginReady ? "btn btn-pilot-purchase" : "btn btn-open-access";
-      openBtn.textContent = t("accountPage.open");
-      openBtn.addEventListener("click", () => void openPackage(id, meta, openBtn));
-      actions.appendChild(openBtn);
+  const plan = buildOwnedRenderPlan(catalog, ownedSet);
+  for (const item of plan) {
+    if (item.type === "family") {
+      appendFamilyGroupRow(packagesList, item.group, item.ownedIds, catalog);
     } else {
-      actions.innerHTML = `<span class="acesso-muted">${t("accountPage.soon")}</span>`;
+      appendStandalonePackageRow(packagesList, item.id);
     }
-
-    li.append(info, actions);
-    packagesList.appendChild(li);
   }
 }
 

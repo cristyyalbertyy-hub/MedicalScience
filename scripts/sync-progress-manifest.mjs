@@ -19,6 +19,98 @@ function chapterTopics(chapter, leaves) {
   return leaves.map(([id, title]) => topic(id, `${chapter} · ${title}`));
 }
 
+const HISTOLOGY_TOPICS = [
+  ...chapterTopics("Elements of Cytology", [
+    ["cy-eco", "Eukaryotic cell organization"],
+    ["cy-om", "Organelles and membranes"],
+    ["cy-nc", "Nucleus and chromatin"],
+    ["cy-cd", "Cell cycle and death"],
+  ]),
+  ...chapterTopics("Histology · Tissues", [
+    ["hi-eg", "Epithelia and Glands"],
+    ["hi-ct", "Connective Tissues and ECM"],
+    ["hi-cb", "Cartilage and Bone"],
+    ["hi-bh", "Blood and Hemopoiesis"],
+    ["hi-il", "Immune and Lymphatic organs"],
+    ["hi-mt", "Muscle Tissues"],
+    ["hi-nt", "Nervous Tissue"],
+  ]),
+];
+
+const EMBRYOLOGY_TOPICS = [
+  ...chapterTopics("Embryology · Gametogenesis", [
+    ["em-sp", "Spermatogenesis"],
+    ["em-og", "Oogenesis"],
+    ["em-hc", "Hormonal control"],
+  ]),
+  ...chapterTopics("Embryology · Early Development", [
+    ["em-fe", "Fertilization"],
+    ["em-w14", "Weeks 1–4"],
+    ["em-pl", "Primitive layers"],
+    ["em-ef", "Embryonic folding"],
+  ]),
+  topic("em/em-sr", "Embryology · Stem Cells and Regeneration"),
+  topic("em/em-pm", "Embryology · Placenta and Membranes"),
+  ...chapterTopics("Organogenesis", [
+    ["or-in", "Integumentary system"],
+    ["or-hn", "Head, neck, and oropharyngeal"],
+    ["or-gr", "Gut and Respiratory"],
+    ["or-ug", "Urogenital"],
+    ["or-sm", "Skeleton and Muscle"],
+    ["or-nc", "Nervous and Cardiovascular"],
+  ]),
+];
+
+const CHEMISTRY_TOPICS = [
+  ...chapterTopics("General Chemistry · Atomic Structure", [
+    ["AS_API", "Atomic particles and isotopes"],
+    ["AS_QMM", "Quantum mechanical model"],
+    ["AS_QNO", "Quantum numbers and orbitals"],
+    ["AS_CB", "Chemical bonds"],
+  ]),
+  ...chapterTopics("General Chemistry · Matter and Thermodynamics", [
+    ["MT_GIGL", "Gases and their properties"],
+    ["MT_LVP", "Liquid-vapor pressure"],
+    ["MT_SC", "Solids classification"],
+    ["MT_EEFE", "Entropy, Energy and Free energy"],
+  ]),
+  ...chapterTopics("General Chemistry · Solutions and Equilibrium", [
+    ["SE_CD", "Concentration and Dilution"],
+    ["SE_KEL", "Kinetics and Energy Laws"],
+    ["SE_EC", "Equilibrium constants"],
+    ["SE_LCF", "Le Chatelier's Principle"],
+  ]),
+  ...chapterTopics("General Chemistry · Electrolytes and Kinetics", [
+    ["EK_ABT", "Acid-base theories"],
+    ["EK_PB", "pH and Buffers"],
+    ["EK_CP", "Colligative properties"],
+    ["EK_AE", "Activation energy"],
+    ["EK_RR", "Redox reactions"],
+  ]),
+  ...chapterTopics("Organic Chemistry · Hydrocarbons", [
+    ["H_CH", "Carbon hybridization"],
+    ["H_AC", "Alkanes and Cycloalkanes"],
+    ["H_AA", "Alkenes and Alkynes"],
+    ["H_ACB", "Aromatic compounds and Benzene"],
+  ]),
+  ...chapterTopics("Organic Chemistry · Functional Groups", [
+    ["FG_APT", "Alcohols, Phenols and Ethers"],
+    ["FG_AK", "Aldehydes and Ketones"],
+    ["FG_CAE", "Carboxylic acids and Esters"],
+    ["FG_AA", "Amines and Amides"],
+  ]),
+  topic("OC_SC", "Organic Chemistry · Stereochemistry and Chirality"),
+];
+
+const INTRODUCTORY_BIOCHEMISTRY_TOPICS = [
+  ...chapterTopics("Introductory Biochemistry", [
+    ["IB_CM", "Carbohydrates and Monosaccharides"],
+    ["IB_AP", "Amino acids and Proteins"],
+    ["IB_LSP", "Lipids and Biomembranes"],
+    ["IB_NBN", "Nitrogen Bases and Nucleotides"],
+  ]),
+];
+
 const packages = {
   "human-anatomy-1": {
     title: "Human Anatomy I",
@@ -210,95 +302,29 @@ const packages = {
       ]),
     ],
   },
+  histology: {
+    title: "Histology",
+    topics: HISTOLOGY_TOPICS,
+  },
+  embryology: {
+    title: "Embryology",
+    topics: EMBRYOLOGY_TOPICS,
+  },
   "histology-embryology": {
     title: "Histology and Embryology",
-    topics: [
-      ...chapterTopics("Elements of Cytology", [
-        ["cy-eco", "Eukaryotic cell organization"],
-        ["cy-om", "Organelles and membranes"],
-        ["cy-nc", "Nucleus and chromatin"],
-        ["cy-cd", "Cell cycle and death"],
-      ]),
-      ...chapterTopics("Histology · Tissues", [
-        ["hi-eg", "Epithelia and Glands"],
-        ["hi-ct", "Connective Tissues and ECM"],
-        ["hi-cb", "Cartilage and Bone"],
-        ["hi-bh", "Blood and Hemopoiesis"],
-        ["hi-il", "Immune and Lymphatic organs"],
-        ["hi-mt", "Muscle Tissues"],
-        ["hi-nt", "Nervous Tissue"],
-      ]),
-      ...chapterTopics("Embryology · Gametogenesis", [
-        ["em-sp", "Spermatogenesis"],
-        ["em-og", "Oogenesis"],
-        ["em-hc", "Hormonal control"],
-      ]),
-      ...chapterTopics("Embryology · Early Development", [
-        ["em-fe", "Fertilization"],
-        ["em-w14", "Weeks 1–4"],
-        ["em-pl", "Primitive layers"],
-        ["em-ef", "Embryonic folding"],
-      ]),
-      topic("em/em-sr", "Embryology · Stem Cells and Regeneration"),
-      topic("em/em-pm", "Embryology · Placenta and Membranes"),
-      ...chapterTopics("Organogenesis", [
-        ["or-in", "Integumentary system"],
-        ["or-hn", "Head, neck, and oropharyngeal"],
-        ["or-gr", "Gut and Respiratory"],
-        ["or-ug", "Urogenital"],
-        ["or-sm", "Skeleton and Muscle"],
-        ["or-nc", "Nervous and Cardiovascular"],
-      ]),
-    ],
+    topics: [...HISTOLOGY_TOPICS, ...EMBRYOLOGY_TOPICS],
+  },
+  chemistry: {
+    title: "Chemistry",
+    topics: CHEMISTRY_TOPICS,
+  },
+  "introductory-biochemistry": {
+    title: "Introductory Biochemistry",
+    topics: INTRODUCTORY_BIOCHEMISTRY_TOPICS,
   },
   "chemistry-introductory-biochemistry": {
     title: "Chemistry and Introductory Biochemistry",
-    topics: [
-      ...chapterTopics("General Chemistry · Atomic Structure", [
-        ["AS_API", "Atomic particles and isotopes"],
-        ["AS_QMM", "Quantum mechanical model"],
-        ["AS_QNO", "Quantum numbers and orbitals"],
-        ["AS_CB", "Chemical bonds"],
-      ]),
-      ...chapterTopics("General Chemistry · Matter and Thermodynamics", [
-        ["MT_GIGL", "Gases and their properties"],
-        ["MT_LVP", "Liquid-vapor pressure"],
-        ["MT_SC", "Solids classification"],
-        ["MT_EEFE", "Entropy, Energy and Free energy"],
-      ]),
-      ...chapterTopics("General Chemistry · Solutions and Equilibrium", [
-        ["SE_CD", "Concentration and Dilution"],
-        ["SE_KEL", "Kinetics and Energy Laws"],
-        ["SE_EC", "Equilibrium constants"],
-        ["SE_LCF", "Le Chatelier's Principle"],
-      ]),
-      ...chapterTopics("General Chemistry · Electrolytes and Kinetics", [
-        ["EK_ABT", "Acid-base theories"],
-        ["EK_PB", "pH and Buffers"],
-        ["EK_CP", "Colligative properties"],
-        ["EK_AE", "Activation energy"],
-        ["EK_RR", "Redox reactions"],
-      ]),
-      ...chapterTopics("Organic Chemistry · Hydrocarbons", [
-        ["H_CH", "Carbon hybridization"],
-        ["H_AC", "Alkanes and Cycloalkanes"],
-        ["H_AA", "Alkenes and Alkynes"],
-        ["H_ACB", "Aromatic compounds and Benzene"],
-      ]),
-      ...chapterTopics("Organic Chemistry · Functional Groups", [
-        ["FG_APT", "Alcohols, Phenols and Ethers"],
-        ["FG_AK", "Aldehydes and Ketones"],
-        ["FG_CAE", "Carboxylic acids and Esters"],
-        ["FG_AA", "Amines and Amides"],
-      ]),
-      topic("OC_SC", "Organic Chemistry · Stereochemistry and Chirality"),
-      ...chapterTopics("Introductory Biochemistry", [
-        ["IB_CM", "Carbohydrates and Monosaccharides"],
-        ["IB_AP", "Amino acids and Proteins"],
-        ["IB_LSP", "Lipids and Biomembranes"],
-        ["IB_NBN", "Nitrogen Bases and Nucleotides"],
-      ]),
-    ],
+    topics: [...CHEMISTRY_TOPICS, ...INTRODUCTORY_BIOCHEMISTRY_TOPICS],
   },
   "history-of-medicine": {
     title: "History of Medicine",

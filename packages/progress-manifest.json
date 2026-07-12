@@ -1157,6 +1157,276 @@
         }
       ]
     },
+    "histology": {
+      "title": "Histology",
+      "topics": [
+        {
+          "id": "cy-eco",
+          "label": "Elements of Cytology · Eukaryotic cell organization",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "cy-om",
+          "label": "Elements of Cytology · Organelles and membranes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "cy-nc",
+          "label": "Elements of Cytology · Nucleus and chromatin",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "cy-cd",
+          "label": "Elements of Cytology · Cell cycle and death",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "hi-eg",
+          "label": "Histology · Tissues · Epithelia and Glands",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "hi-ct",
+          "label": "Histology · Tissues · Connective Tissues and ECM",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "hi-cb",
+          "label": "Histology · Tissues · Cartilage and Bone",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "hi-bh",
+          "label": "Histology · Tissues · Blood and Hemopoiesis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "hi-il",
+          "label": "Histology · Tissues · Immune and Lymphatic organs",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "hi-mt",
+          "label": "Histology · Tissues · Muscle Tissues",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "hi-nt",
+          "label": "Histology · Tissues · Nervous Tissue",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        }
+      ]
+    },
+    "embryology": {
+      "title": "Embryology",
+      "topics": [
+        {
+          "id": "em-sp",
+          "label": "Embryology · Gametogenesis · Spermatogenesis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em-og",
+          "label": "Embryology · Gametogenesis · Oogenesis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em-hc",
+          "label": "Embryology · Gametogenesis · Hormonal control",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em-fe",
+          "label": "Embryology · Early Development · Fertilization",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em-w14",
+          "label": "Embryology · Early Development · Weeks 1–4",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em-pl",
+          "label": "Embryology · Early Development · Primitive layers",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em-ef",
+          "label": "Embryology · Early Development · Embryonic folding",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em/em-sr",
+          "label": "Embryology · Stem Cells and Regeneration",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "em/em-pm",
+          "label": "Embryology · Placenta and Membranes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "or-in",
+          "label": "Organogenesis · Integumentary system",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "or-hn",
+          "label": "Organogenesis · Head, neck, and oropharyngeal",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "or-gr",
+          "label": "Organogenesis · Gut and Respiratory",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "or-ug",
+          "label": "Organogenesis · Urogenital",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "or-sm",
+          "label": "Organogenesis · Skeleton and Muscle",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "or-nc",
+          "label": "Organogenesis · Nervous and Cardiovascular",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        }
+      ]
+    },
     "histology-embryology": {
       "title": "Histology and Embryology",
       "topics": [
@@ -1413,6 +1683,316 @@
         {
           "id": "or-nc",
           "label": "Organogenesis · Nervous and Cardiovascular",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        }
+      ]
+    },
+    "chemistry": {
+      "title": "Chemistry",
+      "topics": [
+        {
+          "id": "AS_API",
+          "label": "General Chemistry · Atomic Structure · Atomic particles and isotopes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "AS_QMM",
+          "label": "General Chemistry · Atomic Structure · Quantum mechanical model",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "AS_QNO",
+          "label": "General Chemistry · Atomic Structure · Quantum numbers and orbitals",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "AS_CB",
+          "label": "General Chemistry · Atomic Structure · Chemical bonds",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MT_GIGL",
+          "label": "General Chemistry · Matter and Thermodynamics · Gases and their properties",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MT_LVP",
+          "label": "General Chemistry · Matter and Thermodynamics · Liquid-vapor pressure",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MT_SC",
+          "label": "General Chemistry · Matter and Thermodynamics · Solids classification",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MT_EEFE",
+          "label": "General Chemistry · Matter and Thermodynamics · Entropy, Energy and Free energy",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SE_CD",
+          "label": "General Chemistry · Solutions and Equilibrium · Concentration and Dilution",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SE_KEL",
+          "label": "General Chemistry · Solutions and Equilibrium · Kinetics and Energy Laws",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SE_EC",
+          "label": "General Chemistry · Solutions and Equilibrium · Equilibrium constants",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SE_LCF",
+          "label": "General Chemistry · Solutions and Equilibrium · Le Chatelier's Principle",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EK_ABT",
+          "label": "General Chemistry · Electrolytes and Kinetics · Acid-base theories",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EK_PB",
+          "label": "General Chemistry · Electrolytes and Kinetics · pH and Buffers",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EK_CP",
+          "label": "General Chemistry · Electrolytes and Kinetics · Colligative properties",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EK_AE",
+          "label": "General Chemistry · Electrolytes and Kinetics · Activation energy",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EK_RR",
+          "label": "General Chemistry · Electrolytes and Kinetics · Redox reactions",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "H_CH",
+          "label": "Organic Chemistry · Hydrocarbons · Carbon hybridization",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "H_AC",
+          "label": "Organic Chemistry · Hydrocarbons · Alkanes and Cycloalkanes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "H_AA",
+          "label": "Organic Chemistry · Hydrocarbons · Alkenes and Alkynes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "H_ACB",
+          "label": "Organic Chemistry · Hydrocarbons · Aromatic compounds and Benzene",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "FG_APT",
+          "label": "Organic Chemistry · Functional Groups · Alcohols, Phenols and Ethers",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "FG_AK",
+          "label": "Organic Chemistry · Functional Groups · Aldehydes and Ketones",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "FG_CAE",
+          "label": "Organic Chemistry · Functional Groups · Carboxylic acids and Esters",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "FG_AA",
+          "label": "Organic Chemistry · Functional Groups · Amines and Amides",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "OC_SC",
+          "label": "Organic Chemistry · Stereochemistry and Chirality",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        }
+      ]
+    },
+    "introductory-biochemistry": {
+      "title": "Introductory Biochemistry",
+      "topics": [
+        {
+          "id": "IB_CM",
+          "label": "Introductory Biochemistry · Carbohydrates and Monosaccharides",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IB_AP",
+          "label": "Introductory Biochemistry · Amino acids and Proteins",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IB_LSP",
+          "label": "Introductory Biochemistry · Lipids and Biomembranes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IB_NBN",
+          "label": "Introductory Biochemistry · Nitrogen Bases and Nucleotides",
           "resources": [
             "V",
             "P",

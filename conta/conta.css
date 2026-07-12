@@ -223,6 +223,39 @@
   color: var(--primary);
 }
 
+.acesso-packages-family {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.acesso-packages-family__title {
+  margin: 0.15rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--primary);
+}
+
+.acesso-packages-family__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.acesso-package.is-family-app {
+  border-color: rgba(31, 78, 107, 0.28);
+  background: rgba(255, 253, 249, 0.95);
+}
+
+.acesso-package.is-family-app .acesso-package__meta small {
+  line-height: 1.4;
+}
+
 .acesso-package {
   display: flex;
   align-items: center;

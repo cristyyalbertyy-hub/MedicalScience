@@ -72,24 +72,6 @@ const READY_PACKAGES = [
     status: "live",
   },
   {
-    id: "histology-embryology",
-    number: "07",
-    title: "Histology and Embryology",
-    description:
-      "Microscopy, fundamental tissues, early development, and correlation with anatomy.",
-    url: "https://histology-embryology.vercel.app/",
-    status: "live",
-  },
-  {
-    id: "chemistry-introductory-biochemistry",
-    number: "08",
-    title: "Chemistry and Introductory Biochemistry",
-    description:
-      "Atomic structure, chemical bonding, proteins, enzymes, metabolism and the molecular foundations for health sciences.",
-    url: "https://chemistry-roan.vercel.app/",
-    status: "live",
-  },
-  {
     id: "history-of-medicine",
     number: "09",
     title: "History of Medicine",
@@ -212,6 +194,62 @@ const SOON_PACKAGES = [
 
 const ALL_PACKAGES = [...READY_PACKAGES, ...SOON_PACKAGES];
 
+/** Family groups (H&E, Chem/Biochem) render before this curriculum slot. */
+const PACKAGE_GROUPS_BEFORE_ID = "history-of-medicine";
+
+const PACKAGE_GROUP_NUMBERS = {
+  histology: "07a",
+  embryology: "07b",
+  "histology-embryology": "07",
+  chemistry: "08a",
+  "introductory-biochemistry": "08b",
+  "chemistry-introductory-biochemistry": "08",
+};
+
+const SPLIT_PACKAGE_FALLBACK = {
+  histology: {
+    title: "Histology",
+    description:
+      "Cytology and fundamental tissues — epithelia, connective tissue, muscle and nervous tissue.",
+    url: "https://histology-embryology.vercel.app/",
+    parentApp: "histology-embryology",
+  },
+  embryology: {
+    title: "Embryology",
+    description:
+      "Gametogenesis, early development, organogenesis and correlation with anatomy.",
+    url: "https://histology-embryology.vercel.app/",
+    parentApp: "histology-embryology",
+  },
+  "histology-embryology": {
+    title: "Histology and Embryology",
+    description:
+      "Microscopy, fundamental tissues, early development, and correlation with anatomy.",
+    url: "https://histology-embryology.vercel.app/",
+    bundleOf: ["histology", "embryology"],
+  },
+  chemistry: {
+    title: "Chemistry",
+    description: "General and organic chemistry — structure, bonding, equilibrium and functional groups.",
+    url: "https://chemistry-roan.vercel.app/",
+    parentApp: "chemistry-introductory-biochemistry",
+  },
+  "introductory-biochemistry": {
+    title: "Introductory Biochemistry",
+    description:
+      "Carbohydrates, proteins, lipids and nucleotides — the molecular foundations for health sciences.",
+    url: "https://chemistry-roan.vercel.app/",
+    parentApp: "chemistry-introductory-biochemistry",
+  },
+  "chemistry-introductory-biochemistry": {
+    title: "Chemistry and Introductory Biochemistry",
+    description:
+      "Atomic structure, chemical bonding, proteins, enzymes, metabolism and the molecular foundations for health sciences.",
+    url: "https://chemistry-roan.vercel.app/",
+    bundleOf: ["chemistry", "introductory-biochemistry"],
+  },
+};
+
 function escapeHtml(value) {
   const node = document.createElement("div");
   node.textContent = value;
@@ -326,7 +364,67 @@ function renderSyllabusBlock(pkg, catalog, manifest) {
     </details>`;
 }
 
+function getPackageChapterCount(id, catalog = packageCatalog ?? {}) {
+  for (const access of Object.values(catalog?.packageAccess ?? {})) {
+    const chapters = access.chaptersByPackageId?.[id];
+    if (chapters) return chapters.length;
+  }
+  return 0;
+}
+
+function isBundlePackage(id, catalog = packageCatalog ?? {}) {
+  const bundleOf = catalog?.packageMeta?.[id]?.bundleOf ?? SPLIT_PACKAGE_FALLBACK[id]?.bundleOf;
+  return Array.isArray(bundleOf) && bundleOf.length > 0;
+}
+
+function buildCatalogPackage(id, catalog = packageCatalog ?? {}) {
+  const meta = catalog?.packageMeta?.[id] ?? {};
+  const fallback = SPLIT_PACKAGE_FALLBACK[id] ?? {};
+  const parentApp = meta.parentApp ?? fallback.parentApp ?? null;
+  return {
+    id,
+    number: PACKAGE_GROUP_NUMBERS[id] ?? "",
+    title: meta.title ?? fallback.title ?? id,
+    description: fallback.description ?? "",
+    url: meta.url ?? fallback.url ?? "",
+    status: meta.url || fallback.url ? "live" : "soon",
+    parentApp,
+    isBundle: isBundlePackage(id, catalog),
+  };
+}
+
+function renderPartOfAppHint(pkg, catalog = packageCatalog ?? {}) {
+  if (!pkg.parentApp || pkg.isBundle) return "";
+  const parentTitle = packageText(`pkg.${pkg.parentApp}.title`, pkg.parentApp);
+  const chapterCount = getPackageChapterCount(pkg.id, catalog);
+  const chaptersLabel = packageText("packagesUi.chapterCount", "{count} chapters").replace(
+    "{count}",
+    String(chapterCount),
+  );
+  const hint = packageText("packagesUi.partOfApp", "Part of the {app} app · {chapters}")
+    .replace("{app}", parentTitle)
+    .replace("{chapters}", chaptersLabel);
+  return `<p class="package-part-of">${escapeHtml(hint)}</p>`;
+}
+
+function renderPackageFamilyGroup(group, catalog = packageCatalog ?? {}, manifest = progressManifest ?? {}, { compact = false } = {}) {
+  const title = packageText(group.titleKey ?? "", group.title ?? group.id ?? "");
+  const cards = (group.packageIds ?? [])
+    .map((id) => {
+      const pkg = buildCatalogPackage(id, catalog);
+      return renderPackageCard(pkg, { compact, catalog, manifest });
+    })
+    .join("");
+
+  return `
+    <section class="packages-family-group" aria-labelledby="family-${escapeHtml(group.id)}">
+      <h2 class="packages-family-group__title" id="family-${escapeHtml(group.id)}">${escapeHtml(title)}</h2>
+      <div class="packages-family-group__grid">${cards}</div>
+    </section>`;
+}
+
 function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} } = {}) {
+  const isBundle = pkg.isBundle ?? isBundlePackage(pkg.id, catalog);
   const isSoon = pkg.status !== "live" || !pkg.url;
   const free = isFreePackage(pkg.id, catalog);
   const purchasable = isPurchasablePackage(pkg.id, catalog);
@@ -366,8 +464,16 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
     action = `<a class="btn btn-open-access${compact ? " btn-secondary" : ""}" href="${escapeHtml(pkg.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(openLabel)}</a>`;
   }
 
+  if (isBundle) {
+    statusClass += " is-bundle";
+    statusLabel = packageText("packagesUi.bundleComplete", "Complete bundle");
+  } else if (pkg.parentApp) {
+    statusClass += " is-part";
+  }
+
   const cardTitle = packageText(`pkg.${pkg.id}.title`, pkg.title);
   const description = packageText(`pkg.${pkg.id}.description`, pkg.description);
+  const partHint = renderPartOfAppHint({ ...pkg, isBundle }, catalog);
   const syllabus = renderSyllabusBlock(pkg, catalog, manifest);
   const tierBadge =
     tierId != null
@@ -382,6 +488,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
       </div>
       ${tierBadge}
       <h3>${escapeHtml(cardTitle)}</h3>
+      ${partHint}
       <p>${escapeHtml(description)}</p>
       ${syllabus}
       <div class="package-card-action">${action}</div>
@@ -391,9 +498,19 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
 function renderPackages(root, catalog = packageCatalog ?? {}, manifest = progressManifest ?? {}) {
   if (!root) return;
   const compact = root.dataset.packagesCompact === "true";
-  root.innerHTML = ALL_PACKAGES.map((pkg) =>
-    renderPackageCard(pkg, { compact, catalog, manifest }),
-  ).join("");
+  const groups = catalog?.pricingTableGroups ?? [];
+  const parts = [];
+
+  for (const pkg of ALL_PACKAGES) {
+    if (pkg.id === PACKAGE_GROUPS_BEFORE_ID) {
+      for (const group of groups) {
+        parts.push(renderPackageFamilyGroup(group, catalog, manifest, { compact }));
+      }
+    }
+    parts.push(renderPackageCard(pkg, { compact, catalog, manifest }));
+  }
+
+  root.innerHTML = parts.join("");
 }
 
 function initTomatoTimeLinks() {
@@ -504,7 +621,7 @@ function getPricingConfig(catalog = packageCatalog ?? {}) {
         { minPackages: 3, percentOff: 5 },
         { minPackages: 5, percentOff: 10 },
         { minPackages: 8, percentOff: 12 },
-        { minPackages: 11, percentOff: 15 },
+        { minPackages: 15, percentOff: 15 },
         { minPackages: 22, percentOff: 20 },
       ],
     }
@@ -662,27 +779,74 @@ function initPricingCurrency() {
   applyPricingCurrency(pricingCurrency);
 }
 
+function buildModulePriceRow(id, catalog, manifest) {
+  const meta = catalog.packageMeta?.[id] ?? {};
+  const topicCount = manifest?.packages?.[id]?.topics?.length ?? 0;
+  const title = packageText(`pkg.${id}.title`, meta.title ?? id);
+  const priceUsd = getPackagePriceUsd(id, catalog, topicCount);
+  const price = formatPlanAmount(planAmount(priceUsd, pricingCurrency), pricingCurrency);
+  const topics = packageText("packagesUi.tierTopicCount", `${topicCount} topics`).replace(
+    "{count}",
+    String(topicCount),
+  );
+  return { id, title, topics, price, topicCount };
+}
+
 function renderModulePriceTable(root, catalog = packageCatalog ?? {}, manifest = progressManifest ?? {}) {
   if (!root) return;
   const paidIds = catalog.paidPackageIds ?? [];
-  const rows = paidIds
-    .map((id) => {
-      const meta = catalog.packageMeta?.[id] ?? {};
-      const topicCount = manifest?.packages?.[id]?.topics?.length ?? 0;
-      const title = packageText(`pkg.${id}.title`, meta.title ?? id);
-      const priceUsd = getPackagePriceUsd(id, catalog, topicCount);
-      const price = formatPlanAmount(planAmount(priceUsd, pricingCurrency), pricingCurrency);
-      const topics = packageText("packagesUi.tierTopicCount", `${topicCount} topics`).replace(
-        "{count}",
-        String(topicCount),
-      );
-      return { title, topics, price, topicCount };
-    })
+  const groups = catalog.pricingTableGroups ?? [];
+  const groupedIds = new Set(groups.flatMap((group) => group.packageIds ?? []));
+  const standaloneIds = paidIds.filter((id) => !groupedIds.has(id));
+
+  const standaloneRows = standaloneIds
+    .map((id) => buildModulePriceRow(id, catalog, manifest))
     .sort((a, b) => a.topicCount - b.topicCount || a.title.localeCompare(b.title));
 
   const moduleCol = packageText("precos.pricing.moduleTableModule", "Module");
   const topicsCol = packageText("precos.pricing.moduleTableTopics", "Topics");
   const priceCol = packageText("precos.pricing.moduleTablePrice", "Price");
+  const bundleBadge = packageText("precos.pricing.moduleTableBundle", "Complete bundle");
+
+  const renderDataRow = (row, { isBundle = false, isPart = false } = {}) => {
+    const classes = [
+      isBundle ? "module-price-table__bundle" : "",
+      isPart ? "module-price-table__part" : "",
+    ]
+      .filter(Boolean)
+      .join(" ");
+    const title = isBundle
+      ? `${escapeHtml(row.title)} <span class="module-price-table__badge">${escapeHtml(bundleBadge)}</span>`
+      : escapeHtml(row.title);
+    return `
+          <tr${classes ? ` class="${classes}"` : ""}>
+            <td>${title}</td>
+            <td>${escapeHtml(row.topics)}</td>
+            <td>${escapeHtml(row.price)}</td>
+          </tr>`;
+  };
+
+  const groupRows = groups
+    .map((group) => {
+      const groupLabel = packageText(
+        group.titleKey ?? "",
+        group.title ?? group.id ?? "",
+      );
+      const partRows = (group.packageIds ?? [])
+        .filter((id) => id !== group.bundleId)
+        .map((id) => renderDataRow(buildModulePriceRow(id, catalog, manifest), { isPart: true }))
+        .join("");
+      const bundleRow = group.bundleId
+        ? renderDataRow(buildModulePriceRow(group.bundleId, catalog, manifest), { isBundle: true })
+        : "";
+      return `
+        <tr class="module-price-table__group">
+          <td colspan="3">${escapeHtml(groupLabel)}</td>
+        </tr>
+        ${partRows}
+        ${bundleRow}`;
+    })
+    .join("");
 
   root.innerHTML = `
     <table class="module-price-table">
@@ -694,16 +858,8 @@ function renderModulePriceTable(root, catalog = packageCatalog ?? {}, manifest =
         </tr>
       </thead>
       <tbody>
-        ${rows
-          .map(
-            (row) => `
-          <tr>
-            <td>${escapeHtml(row.title)}</td>
-            <td>${escapeHtml(row.topics)}</td>
-            <td>${escapeHtml(row.price)}</td>
-          </tr>`,
-          )
-          .join("")}
+        ${standaloneRows.map((row) => renderDataRow(row)).join("")}
+        ${groupRows}
       </tbody>
     </table>`;
 }

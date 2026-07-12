@@ -114,6 +114,9 @@ const SITE_LOCALES = {
       tierTopicsPlus: "{min}+ topics",
       tierTopicCount: "{count} topics",
       priceFree: "Free",
+      partOfApp: "Part of the {app} app · {chapters}",
+      chapterCount: "{count} chapters",
+      bundleComplete: "Complete bundle",
     },
     screenshots: {
       hero: { alt: "Studio9 app course overview for Medical Statistics with chapters and syllabus infographic" },
@@ -360,6 +363,9 @@ const SITE_LOCALES = {
       soon: "Coming soon",
       free: "free",
       active: "active",
+      bundleOwned: "Complete bundle",
+      chaptersFull: "All chapter groups unlocked",
+      chaptersPartial: "{unlocked} of {total} chapter groups unlocked",
       confirmEmail: "Confirm the email used to request the link",
       linkConfirmSubtitle: "Almost there — confirm the email you used at checkout to finish signing in.",
       linkConfirmBtn: "Complete sign-in",
@@ -400,7 +406,7 @@ const SITE_LOCALES = {
         eyebrow: "No surprises",
         title: "Simple pricing.",
         pilotNotice:
-          "During the pilot, online purchase is available for Medical Biology and Genetics only. Other modules will follow soon.",
+          "All 15 paid modules are available for online purchase. Choose only what you need.",
         currencyLabel: "Currency",
         tierSLabel: "Small",
         tierSRange: "1–9 topics",
@@ -415,7 +421,7 @@ const SITE_LOCALES = {
         volume3: "3 modules — 5% off",
         volume5: "5 modules — 10% off",
         volume8: "8 modules — 12% off",
-        volume11: "All 11 paid modules — 15% off",
+        volume15: "All 15 paid modules — 15% off",
         volume22: "All 22 modules — 20% off",
         volumeNote:
           "Discount applies to the combined total at checkout when you use the matching bundle code. Each module is priced by its topic count — see the table above.",
@@ -423,6 +429,9 @@ const SITE_LOCALES = {
         moduleTableModule: "Module",
         moduleTableTopics: "Topics",
         moduleTablePrice: "Price",
+        moduleTableBundle: "Complete bundle",
+        groupHistologyEmbryology: "Histology & Embryology",
+        groupChemistryBiochemistry: "Chemistry & Biochemistry",
         chooseCta: "Choose your disciplines →",
         planSoon: "Coming soon",
       },
@@ -601,10 +610,26 @@ const SITE_LOCALES = {
         description:
           "Microscopy, fundamental tissues, early development, and correlation with anatomy.",
       },
+      histology: {
+        title: "Histology",
+        description: "Cytology and fundamental tissues — epithelia, connective tissue, muscle and nervous tissue.",
+      },
+      embryology: {
+        title: "Embryology",
+        description: "Gametogenesis, early development, organogenesis and correlation with anatomy.",
+      },
       "chemistry-introductory-biochemistry": {
         title: "Chemistry and Introductory Biochemistry",
         description:
           "Atomic structure, chemical bonding, proteins, enzymes, metabolism and the molecular foundations for health sciences.",
+      },
+      chemistry: {
+        title: "Chemistry",
+        description: "General and organic chemistry — structure, bonding, equilibrium and functional groups.",
+      },
+      "introductory-biochemistry": {
+        title: "Introductory Biochemistry",
+        description: "Carbohydrates, proteins, lipids and nucleotides — the molecular foundations for health sciences.",
       },
       "history-of-medicine": {
         title: "History of Medicine",

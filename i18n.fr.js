@@ -109,6 +109,9 @@ SITE_LOCALES.fr = {
     tierTopicsPlus: "{min}+ thèmes",
     tierTopicCount: "{count} thèmes",
     priceFree: "Gratuit",
+    partOfApp: "Partie de l'app {app} · {chapters}",
+    chapterCount: "{count} chapitres",
+    bundleComplete: "Forfait complet",
   },
   screenshots: {
     hero: { alt: "Vue d'ensemble du cours Medical Statistics dans l'app Studio9 — chapitres, thèmes et infographie du programme" },
@@ -355,6 +358,9 @@ SITE_LOCALES.fr = {
     soon: "Bientôt",
     free: "gratuit",
     active: "actif",
+    bundleOwned: "Forfait complet",
+    chaptersFull: "Tous les groupes de chapitres débloqués",
+    chaptersPartial: "{unlocked} sur {total} groupes de chapitres débloqués",
     confirmEmail: "Confirmez l'email utilisé pour demander le lien",
     linkConfirmSubtitle: "Presque terminé — confirmez l'email utilisé à l'achat pour finir la connexion.",
     linkConfirmBtn: "Terminer la connexion",
@@ -395,8 +401,8 @@ SITE_LOCALES.fr = {
     pricing: {
       eyebrow: "Sans surprise",
       title: "Tarifs simples.",
-      pilotNotice:
-        "Pendant le pilote, l'achat en ligne est disponible uniquement pour Medical Biology et Genetics. Les autres modules suivront bientôt.",
+        pilotNotice:
+          "Les 15 modules payants sont disponibles à l'achat en ligne. Choisissez uniquement ce dont vous avez besoin.",
       currencyLabel: "Devise",
       tierSLabel: "Small",
       tierSRange: "1–9 thèmes",
@@ -411,7 +417,7 @@ SITE_LOCALES.fr = {
       volume3: "3 modules — 5% de réduction",
       volume5: "5 modules — 10% de réduction",
       volume8: "8 modules — 12% de réduction",
-      volume11: "Les 11 modules payants — 15% de réduction",
+      volume15: "Les 15 modules payants — 15% de réduction",
       volume22: "Les 22 modules — 20% de réduction",
       volumeNote:
         "La réduction s'applique au total combiné au checkout avec le code bundle correspondant. Chaque module est tarifé selon le nombre de thèmes — voir le tableau ci-dessus.",
@@ -419,6 +425,9 @@ SITE_LOCALES.fr = {
       moduleTableModule: "Module",
       moduleTableTopics: "Thèmes",
       moduleTablePrice: "Prix",
+      moduleTableBundle: "Forfait complet",
+      groupHistologyEmbryology: "Histologie et Embryologie",
+      groupChemistryBiochemistry: "Chimie et Biochimie",
       chooseCta: "Choisir vos disciplines →",
       planSoon: "Bientôt disponible",
     },
@@ -597,10 +606,26 @@ SITE_LOCALES.fr = {
       description:
         "Microscopie, tissus fondamentaux, développement précoce et corrélation avec l'anatomie.",
     },
+    histology: {
+      title: "Histologie",
+      description: "Cytologie et tissus fondamentaux — épithélia, tissu conjonctif, muscle et tissu nerveux.",
+    },
+    embryology: {
+      title: "Embryologie",
+      description: "Gamétogenèse, développement précoce, organogenèse et corrélation avec l'anatomie.",
+    },
     "chemistry-introductory-biochemistry": {
       title: "Chimie et Biochimie Introductive",
       description:
         "Structure atomique, liaisons chimiques, protéines, enzymes, métabolisme et fondements moléculaires pour les sciences de la santé.",
+    },
+    chemistry: {
+      title: "Chimie",
+      description: "Chimie générale et organique — structure, liaisons, équilibre et groupes fonctionnels.",
+    },
+    "introductory-biochemistry": {
+      title: "Biochimie Introductive",
+      description: "Glucides, protéines, lipides et nucléotides — fondements moléculaires pour les sciences de la santé.",
     },
     "history-of-medicine": {
       title: "Histoire de la Médecine",

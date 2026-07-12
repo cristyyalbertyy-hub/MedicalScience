@@ -88,6 +88,32 @@ export function expiresAtForPlan(plan) {
   return expires;
 }
 
+export function getPackageBundles() {
+  return catalog.packageBundles ?? {};
+}
+
+export function getBundlePackageIds(bundleId) {
+  return catalog.packageBundles?.[bundleId] ?? [];
+}
+
+export function isBundlePackageId(id) {
+  return Object.prototype.hasOwnProperty.call(catalog.packageBundles ?? {}, id);
+}
+
+export function getParentAppPackageId(id) {
+  return catalog.packageMeta?.[id]?.parentApp ?? id;
+}
+
+export function getPackageAccessConfig(parentAppId) {
+  return catalog.packageAccess?.[parentAppId] ?? null;
+}
+
+export function getChapterPrefixesForPackageId(id) {
+  const parentAppId = getParentAppPackageId(id);
+  const access = getPackageAccessConfig(parentAppId);
+  return access?.chaptersByPackageId?.[id] ?? null;
+}
+
 function parsePackageIds(raw) {
   if (!raw) return [];
   if (Array.isArray(raw)) {
