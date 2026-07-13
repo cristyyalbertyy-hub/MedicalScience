@@ -574,6 +574,9 @@ async function openPackage(packageId, meta, button) {
 
     const target = new URL(meta.url, window.location.origin);
     target.searchParams.set("studio9_handoff", data.custom_token);
+    if (auth.currentUser.email) {
+      target.searchParams.set("studio9_email", auth.currentUser.email);
+    }
     if ((data.package_ids ?? []).includes(packageId)) {
       target.searchParams.set("studio9_open", packageId);
     }
