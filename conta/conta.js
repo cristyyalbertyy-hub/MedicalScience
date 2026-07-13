@@ -558,10 +558,7 @@ async function openPackage(packageId, meta, button) {
     return;
   }
 
-  if (!meta.loginReady && meta.url) {
-    window.open(meta.url, "_blank", "noopener,noreferrer");
-    return;
-  }
+  if (!meta.url) return;
 
   button.disabled = true;
   button.textContent = t("accountPage.opening");
@@ -580,13 +577,14 @@ async function openPackage(packageId, meta, button) {
     if ((data.package_ids ?? []).includes(packageId)) {
       target.searchParams.set("studio9_open", packageId);
     }
-    window.location.href = target.toString();
+    window.open(target.toString(), "_blank", "noopener,noreferrer");
   } catch (err) {
     const message =
       err instanceof Error && err.message !== t("accountPage.openError")
         ? err.message
         : t("accountPage.openError");
     setStatus(message, "error");
+  } finally {
     button.disabled = false;
     button.textContent = t("accountPage.open");
   }
