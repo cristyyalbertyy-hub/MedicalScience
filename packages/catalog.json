@@ -169,7 +169,7 @@
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/8a6bd132-16a6-428f-bc7f-a5a91d7f3c74?embed=1"
     },
     "health-technology-assessments": {
-      "title": "Health Technology Assessments",
+      "title": "Health Technology Assessments (EU)",
       "url": "https://health-technology-assessments.vercel.app/",
       "priceUsd": 5.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/8eed3ddf-83a1-4712-a652-ac688f856742?embed=1"
@@ -258,7 +258,8 @@
       "History of Medicine": "history-of-medicine",
       "Moral Philosophy": "moral-philosophy",
       "Health Technology Accessment": "health-technology-assessments",
-      "Health Technology Assessments": "health-technology-assessments"
+      "Health Technology Assessments": "health-technology-assessments",
+      "Health Technology Assessments (EU)": "health-technology-assessments"
     },
     "variants": {
       "bab797ec-5572-49cd-8f4b-50435d9bc1c0": "human-anatomy-1",

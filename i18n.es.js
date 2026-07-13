@@ -632,9 +632,9 @@ SITE_LOCALES.es = {
         "Marcos éticos para el consentimiento, la confidencialidad, los cuidados al final de la vida y la conducta profesional.",
     },
     "health-technology-assessments": {
-      title: "Evaluaciones de Tecnologías Sanitarias",
+      title: "Evaluación de Tecnologías Sanitarias (UE)",
       description:
-        "Métodos HTA, evaluación de evidencias y toma de decisiones sobre fármacos, dispositivos e intervenciones sanitarias.",
+        "Enfoque en la Unión Europea — métodos HTA, evaluación de evidencias y toma de decisiones sobre fármacos, dispositivos e intervenciones sanitarias.",
     },
     "italian-health-system": {
       title: "Sistema Sanitario Italiano",

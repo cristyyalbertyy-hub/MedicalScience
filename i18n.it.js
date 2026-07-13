@@ -632,9 +632,9 @@ SITE_LOCALES.it = {
         "Quadri etici per consenso, riservatezza, cure di fine vita e condotta professionale.",
     },
     "health-technology-assessments": {
-      title: "Valutazioni delle Tecnologie Sanitarie",
+      title: "Valutazione delle tecnologie sanitarie (UE)",
       description:
-        "Metodi HTA, valutazione delle evidenze e processo decisionale su farmaci, dispositivi e interventi sanitari.",
+        "Contesto Unione Europea — metodi HTA, valutazione delle evidenze e processo decisionale su farmaci, dispositivi e interventi sanitari.",
     },
     "italian-health-system": {
       title: "Sistema Sanitario Italiano",

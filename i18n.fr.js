@@ -633,9 +633,9 @@ SITE_LOCALES.fr = {
         "Cadres éthiques pour le consentement, la confidentialité, les soins de fin de vie et la conduite professionnelle.",
     },
     "health-technology-assessments": {
-      title: "Évaluations des Technologies de Santé",
+      title: "Évaluation des technologies de santé (UE)",
       description:
-        "Méthodes HTA, évaluation des preuves et prise de décision pour les médicaments, dispositifs et interventions de santé.",
+        "Contexte Union européenne — méthodes HTA, évaluation des preuves et prise de décision pour les médicaments, dispositifs et interventions de santé.",
     },
     "italian-health-system": {
       title: "Système de Santé Italien",

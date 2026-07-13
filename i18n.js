@@ -637,9 +637,9 @@ const SITE_LOCALES = {
           "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
       },
       "health-technology-assessments": {
-        title: "Health Technology Assessments",
+        title: "Health Technology Assessments (EU)",
         description:
-          "HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
+          "European Union focus — HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
       },
       "italian-health-system": {
         title: "Italian Health System",

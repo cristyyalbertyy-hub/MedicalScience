@@ -371,7 +371,7 @@ const packages = {
     ],
   },
   "health-technology-assessments": {
-    title: "Health Technology Assessments",
+    title: "Health Technology Assessments (EU)",
     topics: [
       topic("ER", "European Regulations in Health Technology Assessment"),
       topic("CCA", "Cost Consequences Approach"),

@@ -92,9 +92,9 @@ const READY_PACKAGES = [
   {
     id: "health-technology-assessments",
     number: "11",
-    title: "Health Technology Assessments",
+    title: "Health Technology Assessments (EU)",
     description:
-      "HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
+      "European Union focus — HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
     url: "https://health-technology-assessments.vercel.app/",
     status: "live",
   },

@@ -632,9 +632,9 @@ SITE_LOCALES.pt = {
         "Quadros éticos para consentimento, confidencialidade, cuidados de fim de vida e conduta profissional.",
     },
     "health-technology-assessments": {
-      title: "Avaliações de Tecnologias de Saúde",
+      title: "Avaliações de Tecnologias de Saúde (UE)",
       description:
-        "Métodos HTA, avaliação de evidência e tomada de decisão sobre medicamentos, dispositivos e intervenções de saúde.",
+        "Foco na União Europeia — métodos HTA, avaliação de evidência e tomada de decisão sobre medicamentos, dispositivos e intervenções de saúde.",
     },
     "italian-health-system": {
       title: "Sistema de Saúde Italiano",
