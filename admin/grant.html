@@ -14,8 +14,9 @@
         <p class="eyebrow">Studio9 · uso interno</p>
         <h1>Conceder acesso a um aluno</h1>
         <p class="admin-lead">
-          Cria entitlements no Firebase para um email — sem pagamento. A pessoa
-          usa o mesmo email para pedir magic link nas apps.
+          Cria entitlements no Firebase para um email — sem pagamento. Concede o
+          <strong>package_id</strong> exacto: sub-pacotes (ex. histology) desbloqueiam
+          só parte da app; bundles desbloqueiam tudo na mesma app.
         </p>
       </header>
 
@@ -38,7 +39,7 @@
         <fieldset class="admin-packages">
           <legend>Pacotes</legend>
           <div class="admin-packages__actions">
-            <button type="button" class="btn btn-secondary" id="select-all-paid">Todos os pagos (11)</button>
+            <button type="button" class="btn btn-secondary" id="select-all-paid">Todos os pagos</button>
             <button type="button" class="btn btn-secondary" id="clear-all">Limpar</button>
           </div>
           <div id="packages-root" class="admin-packages__grid"></div>

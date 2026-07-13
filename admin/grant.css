@@ -64,6 +64,33 @@
   gap: 0.45rem;
 }
 
+.admin-packages-family {
+  display: grid;
+  gap: 0.45rem;
+  margin-bottom: 0.65rem;
+}
+
+.admin-packages-family__title {
+  margin: 0.15rem 0 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.admin-packages-family__grid {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.admin-package.is-bundle {
+  border-color: rgba(31, 78, 107, 0.35);
+  background: rgba(31, 78, 107, 0.04);
+}
+
+.admin-package.is-part {
+  border-style: dashed;
+}
+
 .admin-package {
   display: flex;
   align-items: flex-start;
