@@ -80,8 +80,7 @@ const SITE_LOCALES = {
       tiktok: "TikTok",
       facebook: "Facebook",
       instagram: "Instagram",
-      aiNote:
-        "Content, design, and code developed with AI support under human academic direction.",
+      threads: "Threads",
     },
     packagesUi: {
       live: "Live",

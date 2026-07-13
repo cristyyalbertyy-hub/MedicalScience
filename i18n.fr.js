@@ -75,8 +75,7 @@ SITE_LOCALES.fr = {
     tiktok: "TikTok",
     facebook: "Facebook",
     instagram: "Instagram",
-    aiNote:
-      "Contenu, design et code développés avec le soutien de l'IA sous direction académique humaine.",
+    threads: "Threads",
   },
   packagesUi: {
     live: "En ligne",

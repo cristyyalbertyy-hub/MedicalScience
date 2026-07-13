@@ -73,8 +73,7 @@ SITE_LOCALES.pt = {
     tiktok: "TikTok",
     facebook: "Facebook",
     instagram: "Instagram",
-    aiNote:
-      "Conteúdo, design e código desenvolvidos com apoio de IA sob direcção académica humana.",
+    threads: "Threads",
   },
   packagesUi: {
     live: "Disponível",

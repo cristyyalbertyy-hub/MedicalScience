@@ -75,8 +75,7 @@ SITE_LOCALES.es = {
     tiktok: "TikTok",
     facebook: "Facebook",
     instagram: "Instagram",
-    aiNote:
-      "Contenido, diseño y código desarrollados con apoyo de IA bajo dirección académica humana.",
+    threads: "Threads",
   },
   packagesUi: {
     live: "Disponible",
