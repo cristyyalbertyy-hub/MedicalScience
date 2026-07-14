@@ -477,56 +477,43 @@ function isFamilyBundleFullyOwned(ownedIds, group) {
   return Boolean(bundleId && ownedIds.includes(bundleId));
 }
 
-function appendFamilyGroupRow(list, group, ownedIds, catalog) {
-  const parentAppId = group.bundleId;
-  const openId = resolveBestOpenPackageId(ownedIds, group, catalog);
+function appendFamilyPackageCard(list, packageId, parentAppId, catalog, isBundle) {
   const parentMeta = packageMeta[parentAppId] ?? catalog.packageMeta?.[parentAppId] ?? {};
+  const packageMetaEntry = packageMeta[packageId] ?? catalog.packageMeta?.[packageId] ?? {};
   const openMeta = {
     ...parentMeta,
-    ...(packageMeta[openId] ?? catalog.packageMeta?.[openId] ?? {}),
-    url: parentMeta.url ?? packageMeta[openId]?.url,
+    ...packageMetaEntry,
+    url: parentMeta.url ?? packageMetaEntry.url,
   };
 
-  const familyTitle = t(group.titleKey ?? "", group.title ?? group.id);
-  const ownedDetail = formatOwnedFamilyDetail(ownedIds, group, catalog);
-  const chapterDetail = formatChapterAccessDetail(catalog, parentAppId, ownedIds, parentAppId);
-  const fullBundle = isFamilyBundleFullyOwned(ownedIds, group);
-  const appTitle = t(`pkg.${parentAppId}.title`, parentMeta.title ?? familyTitle);
+  const cardTitle = isBundle
+    ? t(`pkg.${parentAppId}.title`, parentMeta.title ?? parentAppId)
+    : t(`pkg.${packageId}.title`, packageMetaEntry.title ?? packageId);
 
-  const wrapper = document.createElement("li");
-  wrapper.className = "acesso-packages-family";
-
-  const heading = document.createElement("h3");
-  heading.className = "acesso-packages-family__title";
-
-  const innerList = document.createElement("ul");
-  innerList.className = "acesso-packages-family__list";
-
-  const card = document.createElement("li");
-  card.className = "acesso-package is-active is-family-app";
+  const li = document.createElement("li");
+  li.className = "acesso-package is-active is-family-app";
 
   const info = document.createElement("div");
   info.className = "acesso-package__meta";
+  info.innerHTML = `<strong>${cardTitle}</strong><small>${packageId} · ${t("accountPage.active")}</small>`;
 
-  let cardTitle;
-  let cardSubtitle;
+  li.append(info, createPackageActions(packageId, openMeta));
+  list.appendChild(li);
+}
+
+function appendFamilyGroupRow(list, group, ownedIds, catalog) {
+  const parentAppId = group.bundleId;
+  const fullBundle = isFamilyBundleFullyOwned(ownedIds, group);
+
   if (fullBundle) {
-    heading.textContent = familyTitle;
-    cardTitle = appTitle;
-    cardSubtitle = chapterDetail ? `${ownedDetail} · ${chapterDetail}` : ownedDetail;
-  } else {
-    heading.hidden = true;
-    cardTitle = ownedDetail;
-    cardSubtitle = chapterDetail;
+    appendFamilyPackageCard(list, parentAppId, parentAppId, catalog, true);
+    return;
   }
 
-  const subtitleHtml = cardSubtitle ? `<small>${cardSubtitle}</small>` : "";
-  info.innerHTML = `<strong>${cardTitle}</strong>${subtitleHtml}`;
-
-  card.append(info, createPackageActions(openId, openMeta));
-  innerList.appendChild(card);
-  wrapper.append(heading, innerList);
-  list.appendChild(wrapper);
+  for (const id of group.packageIds ?? []) {
+    if (!ownedIds.includes(id) || id === parentAppId) continue;
+    appendFamilyPackageCard(list, id, parentAppId, catalog, false);
+  }
 }
 
 function renderPackages(catalog) {
@@ -595,9 +582,7 @@ async function openPackage(packageId, meta, button) {
     if (auth.currentUser.email) {
       target.searchParams.set("studio9_email", auth.currentUser.email);
     }
-    if ((data.package_ids ?? []).includes(packageId)) {
-      target.searchParams.set("studio9_open", packageId);
-    }
+    target.searchParams.set("studio9_open", packageId);
     window.open(target.toString(), "_blank", "noopener,noreferrer");
   } catch (err) {
     const message =

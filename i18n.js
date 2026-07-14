@@ -623,7 +623,7 @@ const SITE_LOCALES = {
         description: "General and organic chemistry — structure, bonding, equilibrium and functional groups.",
       },
       "introductory-biochemistry": {
-        title: "Introductory Biochemistry",
+        title: "Introduction to Biochemistry",
         description: "Carbohydrates, proteins, lipids and nucleotides — the molecular foundations for health sciences.",
       },
       "history-of-medicine": {

@@ -618,7 +618,7 @@ SITE_LOCALES.pt = {
       description: "Química geral e orgânica — estrutura, ligações, equilíbrio e grupos funcionais.",
     },
     "introductory-biochemistry": {
-      title: "Bioquímica Introdutória",
+      title: "Introdução à Bioquímica",
       description: "Hidratos de carbono, proteínas, lípidos e nucleótidos — fundamentos moleculares para ciências da saúde.",
     },
     "history-of-medicine": {
