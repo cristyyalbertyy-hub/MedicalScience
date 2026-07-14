@@ -472,6 +472,11 @@ function appendStandalonePackageRow(list, id) {
   list.appendChild(li);
 }
 
+function isFamilyBundleFullyOwned(ownedIds, group) {
+  const bundleId = group.bundleId;
+  return Boolean(bundleId && ownedIds.includes(bundleId));
+}
+
 function appendFamilyGroupRow(list, group, ownedIds, catalog) {
   const parentAppId = group.bundleId;
   const openId = resolveBestOpenPackageId(ownedIds, group, catalog);
@@ -485,14 +490,14 @@ function appendFamilyGroupRow(list, group, ownedIds, catalog) {
   const familyTitle = t(group.titleKey ?? "", group.title ?? group.id);
   const ownedDetail = formatOwnedFamilyDetail(ownedIds, group, catalog);
   const chapterDetail = formatChapterAccessDetail(catalog, parentAppId, ownedIds, parentAppId);
-  const subtitle = chapterDetail ? `${ownedDetail} · ${chapterDetail}` : ownedDetail;
+  const fullBundle = isFamilyBundleFullyOwned(ownedIds, group);
+  const appTitle = t(`pkg.${parentAppId}.title`, parentMeta.title ?? familyTitle);
 
   const wrapper = document.createElement("li");
   wrapper.className = "acesso-packages-family";
 
   const heading = document.createElement("h3");
   heading.className = "acesso-packages-family__title";
-  heading.textContent = familyTitle;
 
   const innerList = document.createElement("ul");
   innerList.className = "acesso-packages-family__list";
@@ -502,8 +507,21 @@ function appendFamilyGroupRow(list, group, ownedIds, catalog) {
 
   const info = document.createElement("div");
   info.className = "acesso-package__meta";
-  const appTitle = t(`pkg.${parentAppId}.title`, parentMeta.title ?? familyTitle);
-  info.innerHTML = `<strong>${appTitle}</strong><small>${subtitle}</small>`;
+
+  let cardTitle;
+  let cardSubtitle;
+  if (fullBundle) {
+    heading.textContent = familyTitle;
+    cardTitle = appTitle;
+    cardSubtitle = chapterDetail ? `${ownedDetail} · ${chapterDetail}` : ownedDetail;
+  } else {
+    heading.hidden = true;
+    cardTitle = ownedDetail;
+    cardSubtitle = chapterDetail;
+  }
+
+  const subtitleHtml = cardSubtitle ? `<small>${cardSubtitle}</small>` : "";
+  info.innerHTML = `<strong>${cardTitle}</strong>${subtitleHtml}`;
 
   card.append(info, createPackageActions(openId, openMeta));
   innerList.appendChild(card);
