@@ -3,15 +3,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/write-firebase-config.js",
+    "build": "node scripts/write-firebase-config.js && node scripts/build-analytics.mjs",
     "optimize:images": "node scripts/optimize-images.mjs",
+    "stats:report": "node scripts/admin-stats-report.mjs",
     "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes",
     "deploy:rules:npx": "npx firebase-tools deploy --only firestore:rules,firestore:indexes --project studio9-medical"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "firebase-admin": "^13.6.0"
   },
   "devDependencies": {
+    "esbuild": "^0.25.0",
     "sharp": "^0.35.3"
   }
 }

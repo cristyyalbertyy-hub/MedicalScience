@@ -559,7 +559,7 @@ SITE_LOCALES.fr = {
         "En vertu du RGPD, vous pouvez demander l'accès, la rectification, l'effacement, la limitation ou la portabilité de vos données, et vous opposer à certains traitements. Contactez-nous à l'email ci-dessus. Vous pouvez aussi saisir votre autorité locale de protection des données.",
       s08Title: "8. Cookies et stockage local",
       s08Body:
-        "Nous utilisons le stockage local pour la langue, l'état de connexion et l'acceptation des conditions d'achat. Firebase peut utiliser des cookies ou technologies similaires pour l'authentification. Pas de trackers publicitaires tiers sur le site Medical Science principal.",
+        "Nous utilisons le stockage local pour la langue, l'état de connexion et l'acceptation des conditions d'achat. Firebase peut utiliser des cookies ou technologies similaires pour l'authentification. Nous utilisons Vercel Web Analytics (agrégé, sans cookies publicitaires) pour les pages du site principal. Pas de trackers publicitaires tiers sur le site Medical Science principal.",
       s09Title: "9. Modifications",
       s09Body:
         'Nous pouvons mettre à jour cette politique ; la date en tête changera. L\'utilisation continue après mise à jour vaut acceptation lorsque la loi le permet. Voir aussi nos <a href="../termos/">Conditions de vente</a>.',

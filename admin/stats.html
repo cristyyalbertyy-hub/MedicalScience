@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Estatísticas · Studio9 Admin</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="grant.css" />
+    <link rel="stylesheet" href="stats.css" />
+  </head>
+  <body>
+    <main class="admin-shell admin-shell--wide">
+      <header class="admin-header">
+        <p class="eyebrow">Studio9 · uso interno</p>
+        <h1>Estatísticas da plataforma</h1>
+        <p class="admin-lead">
+          Utilizadores registados, acessos activos por disciplina, progresso de estudo e encomendas.
+          Tráfego do site: <strong>Vercel Dashboard → Analytics</strong>.
+        </p>
+        <nav class="admin-nav">
+          <a href="grant.html">Conceder acesso</a>
+          <a href="stats.html" aria-current="page">Estatísticas</a>
+        </nav>
+      </header>
+
+      <form id="stats-form" class="admin-card admin-stats-form">
+        <label class="admin-field">
+          <span>Chave de admin</span>
+          <input type="password" name="secret" required autocomplete="current-password" placeholder="ADMIN_GRANT_SECRET" />
+        </label>
+        <button type="submit" class="btn btn-primary">Carregar estatísticas</button>
+        <p id="stats-status" class="admin-status" role="status" hidden></p>
+      </form>
+
+      <section id="stats-results" class="admin-stats-results" hidden>
+        <p id="stats-generated" class="admin-stats-generated"></p>
+
+        <div class="admin-stats-grid" id="summary-cards"></div>
+
+        <div class="admin-card">
+          <h2>Por disciplina / pacote</h2>
+          <div class="admin-table-wrap">
+            <table class="admin-table" id="packages-table">
+              <thead>
+                <tr>
+                  <th>Disciplina</th>
+                  <th>package_id</th>
+                  <th>Activos</th>
+                  <th>Expirados</th>
+                  <th>Users</th>
+                  <th>Progresso</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="admin-card">
+          <h2>Fontes de entitlements</h2>
+          <ul id="sources-list" class="admin-sources"></ul>
+        </div>
+
+        <div class="admin-card admin-notes">
+          <h2>Notas</h2>
+          <ul id="notes-list"></ul>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="stats.js"></script>
+  </body>
+</html>

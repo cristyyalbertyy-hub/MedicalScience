@@ -6,6 +6,7 @@
 Thumbs.db
 *.log
 node_modules/
+reports/
 assets/source/*.png
 assets/source/*.jpeg
 assets/source/*.jpg

@@ -558,7 +558,7 @@ SITE_LOCALES.es = {
         "Según el RGPD puede solicitar acceso, rectificación, supresión, limitación o portabilidad de sus datos, y oponerse a ciertos tratamientos. Contáctenos en el email indicado. También puede presentar una reclamación ante su autoridad local de protección de datos.",
       s08Title: "8. Cookies y almacenamiento local",
       s08Body:
-        "Usamos almacenamiento local para preferencia de idioma, estado de sesión y aceptación de términos de compra. Firebase puede usar cookies o tecnologías similares para autenticación. No usamos rastreadores publicitarios de terceros en el sitio principal Medical Science.",
+        "Usamos almacenamiento local para preferencia de idioma, estado de sesión y aceptación de términos de compra. Firebase puede usar cookies o tecnologías similares para autenticación. Usamos Vercel Web Analytics (agregado, sin cookies publicitarias) para visitas a las páginas del sitio principal. No usamos rastreadores publicitarios de terceros en el sitio principal Medical Science.",
       s09Title: "9. Cambios",
       s09Body:
         'Podemos actualizar esta política; la fecha superior cambiará. El uso continuado tras actualizaciones constituye aceptación cuando la ley lo permita. Consulte también nuestras <a href="../termos/">Condiciones de venta</a>.',

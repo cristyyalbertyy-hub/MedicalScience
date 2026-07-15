@@ -558,7 +558,7 @@ SITE_LOCALES.it = {
         "Ai sensi del GDPR puoi richiedere accesso, rettifica, cancellazione, limitazione o portabilità dei dati, e opporti a certi trattamenti. Contattaci all'email sopra. Puoi anche reclamare presso l'autorità locale per la protezione dei dati.",
       s08Title: "8. Cookie e archiviazione locale",
       s08Body:
-        "Usiamo archiviazione locale per lingua, stato di accesso e accettazione termini di acquisto. Firebase può usare cookie o tecnologie simili per l'autenticazione. Non usiamo tracker pubblicitari di terze parti sul sito Medical Science principale.",
+        "Usiamo archiviazione locale per lingua, stato di accesso e accettazione termini di acquisto. Firebase può usare cookie o tecnologie simili per l'autenticazione. Usiamo Vercel Web Analytics (aggregato, senza cookie pubblicitari) per le visite alle pagine del sito principale. Non usiamo tracker pubblicitari di terze parti sul sito Medical Science principale.",
       s09Title: "9. Modifiche",
       s09Body:
         'Possiamo aggiornare questa informativa; la data in alto cambierà. L\'uso continuato dopo gli aggiornamenti costituisce accettazione ove consentito dalla legge. Vedi anche le nostre <a href="../termos/">Condizioni di vendita</a>.',

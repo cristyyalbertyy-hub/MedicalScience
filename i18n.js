@@ -563,7 +563,7 @@ const SITE_LOCALES = {
           "Under GDPR you may request access, correction, deletion, restriction or portability of your data, and object to certain processing. Contact us at the email above. You may also lodge a complaint with your local data-protection authority.",
         s08Title: "8. Cookies and local storage",
         s08Body:
-          "We use local storage for language preference, sign-in state and purchase-term acceptance. Firebase may use cookies or similar technologies for authentication. We do not use third-party advertising trackers on the core Medical Science site.",
+          "We use local storage for language preference, sign-in state and purchase-term acceptance. Firebase may use cookies or similar technologies for authentication. We use privacy-friendly Vercel Web Analytics for aggregated page views on the main site (no advertising cookies). We do not use third-party advertising trackers on the core Medical Science site.",
         s09Title: "9. Changes",
         s09Body:
           'We may update this policy; the date at the top will change. Continued use after updates constitutes acceptance where permitted by law. See also our <a href="../termos/">Terms of Sale</a>.',
