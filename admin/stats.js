@@ -6,6 +6,11 @@ const packagesTableBody = document.querySelector("#packages-table tbody");
 const sourcesList = document.getElementById("sources-list");
 const notesList = document.getElementById("notes-list");
 const generatedEl = document.getElementById("stats-generated");
+const trafficPeriodEl = document.getElementById("traffic-period");
+const trafficStatusEl = document.getElementById("traffic-status");
+const trafficCards = document.getElementById("traffic-cards");
+const countriesTableBody = document.querySelector("#countries-table tbody");
+const pagesTableBody = document.querySelector("#pages-table tbody");
 
 function setStatus(message, type = "") {
   statusEl.hidden = !message;
@@ -79,6 +84,68 @@ function renderNotes(notes) {
   }
 }
 
+function renderTraffic(traffic) {
+  trafficCards.replaceChildren();
+  countriesTableBody.replaceChildren();
+  pagesTableBody.replaceChildren();
+  trafficStatusEl.hidden = true;
+  trafficStatusEl.className = "admin-traffic-status";
+
+  if (!traffic?.configured) {
+    trafficPeriodEl.textContent = "";
+    trafficStatusEl.hidden = false;
+    trafficStatusEl.textContent = traffic?.message ?? "Tráfego Vercel não configurado.";
+    return;
+  }
+
+  trafficPeriodEl.textContent = traffic.period?.label ?? "";
+
+  if (traffic.error) {
+    trafficStatusEl.hidden = false;
+    trafficStatusEl.className = "admin-traffic-status is-error";
+    trafficStatusEl.textContent = traffic.error;
+    return;
+  }
+
+  const card = document.createElement("article");
+  card.className = "admin-stat-card";
+  card.innerHTML = `<span class="admin-stat-card__value">${formatNumber(traffic.pageviews)}</span><span class="admin-stat-card__label">Pageviews (total)</span>`;
+  trafficCards.appendChild(card);
+
+  const countries = traffic.countries ?? [];
+  if (!countries.length) {
+    const row = document.createElement("tr");
+    row.innerHTML = `<td colspan="3">Sem dados de países no período.</td>`;
+    countriesTableBody.appendChild(row);
+  } else {
+    for (const entry of countries) {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${escapeHtml(entry.country_name ?? entry.country_code ?? entry.country)}</td>
+        <td><code>${escapeHtml(entry.country_code ?? entry.country ?? "")}</code></td>
+        <td>${formatNumber(entry.pageviews)}</td>
+      `;
+      countriesTableBody.appendChild(row);
+    }
+  }
+
+  const pages = traffic.top_pages ?? [];
+  if (!pages.length) {
+    const row = document.createElement("tr");
+    row.innerHTML = `<td colspan="2">Sem dados de páginas no período.</td>`;
+    pagesTableBody.appendChild(row);
+  } else {
+    for (const entry of pages) {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td><code>${escapeHtml(entry.path)}</code></td>
+        <td>${formatNumber(entry.pageviews)}</td>
+      `;
+      pagesTableBody.appendChild(row);
+    }
+  }
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -107,6 +174,7 @@ form.addEventListener("submit", async (event) => {
 
     generatedEl.textContent = `Actualizado: ${new Date(data.generated_at).toLocaleString("pt-PT")}`;
     renderSummary(data.summary);
+    renderTraffic(data.traffic);
     renderPackages(data.packages);
     renderSources(data.summary.entitlement_sources);
     renderNotes(data.notes);

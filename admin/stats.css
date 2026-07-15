@@ -116,3 +116,35 @@
   color: var(--primary);
   font-size: 1.05rem;
 }
+
+.admin-card h3 {
+  margin: 0 0 0.65rem;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.admin-stats-grid--compact {
+  margin-bottom: 1rem;
+}
+
+.admin-traffic-period {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.admin-traffic-status {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.admin-traffic-status.is-error {
+  color: #b42318;
+}
+
+.admin-traffic-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}

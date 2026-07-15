@@ -1,5 +1,6 @@
 import { getAuth, getFirestore } from "./firebase.js";
 import { getCatalog } from "./catalog.js";
+import { fetchVercelAnalytics } from "./vercel-analytics.js";
 
 function isActiveEntitlement(data, nowMs) {
   const expires = new Date(data.expires_at).getTime();
@@ -30,11 +31,12 @@ export async function collectAdminStats() {
 
   const totalUsers = await countAuthUsers();
 
-  const [entSnap, progSnap, ordersSnap, grantsSnap] = await Promise.all([
+  const [entSnap, progSnap, ordersSnap, grantsSnap, traffic] = await Promise.all([
     db.collection("entitlements").get(),
     db.collection("progress").get(),
     db.collection("orders_processed").get(),
     db.collection("admin_grants").get(),
+    fetchVercelAnalytics(),
   ]);
 
   const entitlementsByPackage = {};
@@ -122,9 +124,13 @@ export async function collectAdminStats() {
       entitlement_sources: sources,
     },
     packages,
+    traffic,
     notes: {
-      traffic:
-        "Visitas ao site: Vercel Dashboard → Analytics (activar Web Analytics no projecto se ainda não estiver activo).",
+      traffic: traffic.configured
+        ? traffic.error
+          ? `Tráfego Vercel indisponível: ${traffic.error}`
+          : `Tráfego Vercel (${traffic.period?.label ?? "produção"}): ${traffic.pageviews ?? 0} pageviews.`
+        : traffic.message,
       progress:
         "Progresso Firestore está activo sobretudo em medical-biology e genetics; outras disciplinas podem mostrar 0 até integração completa.",
     },

@@ -57,6 +57,24 @@ async function main() {
   console.log(`  Utilizadores com progresso: ${stats.summary.users_with_progress}`);
   console.log(`  Encomendas processadas (LS): ${stats.summary.orders_processed}`);
   console.log("");
+  if (stats.traffic?.configured && !stats.traffic.error) {
+    console.log(`Tráfego Vercel (${stats.traffic.period?.label ?? "produção"})`);
+    console.log(`  Pageviews: ${stats.traffic.pageviews ?? 0}`);
+    if (stats.traffic.countries?.length) {
+      console.log("  Top países:");
+      for (const entry of stats.traffic.countries.slice(0, 10)) {
+        const label = entry.country_name ?? entry.country_code ?? entry.country;
+        console.log(`    ${label}: ${entry.pageviews}`);
+      }
+    }
+    console.log("");
+  } else if (stats.traffic?.message) {
+    console.log(stats.traffic.message);
+    console.log("");
+  } else if (stats.traffic?.error) {
+    console.log(`Tráfego Vercel: ${stats.traffic.error}`);
+    console.log("");
+  }
   console.log("Por disciplina (activos / users / progresso)");
   for (const pkg of stats.packages) {
     if (

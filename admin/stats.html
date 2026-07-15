@@ -15,8 +15,7 @@
         <p class="eyebrow">Studio9 · uso interno</p>
         <h1>Estatísticas da plataforma</h1>
         <p class="admin-lead">
-          Utilizadores registados, acessos activos por disciplina, progresso de estudo e encomendas.
-          Tráfego do site: <strong>Vercel Dashboard → Analytics</strong>.
+          Utilizadores registados, acessos activos por disciplina, progresso de estudo, encomendas e tráfego do site (Vercel Analytics).
         </p>
         <nav class="admin-nav">
           <a href="grant.html">Conceder acesso</a>
@@ -37,6 +36,44 @@
         <p id="stats-generated" class="admin-stats-generated"></p>
 
         <div class="admin-stats-grid" id="summary-cards"></div>
+
+        <div class="admin-card" id="traffic-card">
+          <h2>Tráfego do site (Vercel Analytics)</h2>
+          <p id="traffic-period" class="admin-traffic-period"></p>
+          <p id="traffic-status" class="admin-traffic-status" hidden></p>
+          <div class="admin-stats-grid admin-stats-grid--compact" id="traffic-cards"></div>
+          <div class="admin-traffic-columns">
+            <div>
+              <h3>Visitas por país</h3>
+              <div class="admin-table-wrap">
+                <table class="admin-table" id="countries-table">
+                  <thead>
+                    <tr>
+                      <th>País</th>
+                      <th>Código</th>
+                      <th>Pageviews</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <h3>Páginas mais visitadas</h3>
+              <div class="admin-table-wrap">
+                <table class="admin-table" id="pages-table">
+                  <thead>
+                    <tr>
+                      <th>Caminho</th>
+                      <th>Pageviews</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="admin-card">
           <h2>Por disciplina / pacote</h2>
