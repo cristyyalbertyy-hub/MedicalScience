@@ -11,6 +11,8 @@ const trafficStatusEl = document.getElementById("traffic-status");
 const trafficCards = document.getElementById("traffic-cards");
 const countriesTableBody = document.querySelector("#countries-table tbody");
 const pagesTableBody = document.querySelector("#pages-table tbody");
+const devicesTableBody = document.querySelector("#devices-table tbody");
+const dailyChartEl = document.getElementById("daily-chart");
 
 function setStatus(message, type = "") {
   statusEl.hidden = !message;
@@ -88,6 +90,8 @@ function renderTraffic(traffic) {
   trafficCards.replaceChildren();
   countriesTableBody.replaceChildren();
   pagesTableBody.replaceChildren();
+  devicesTableBody.replaceChildren();
+  dailyChartEl.replaceChildren();
   trafficStatusEl.hidden = true;
   trafficStatusEl.className = "admin-traffic-status";
 
@@ -107,10 +111,17 @@ function renderTraffic(traffic) {
     return;
   }
 
-  const card = document.createElement("article");
-  card.className = "admin-stat-card";
-  card.innerHTML = `<span class="admin-stat-card__value">${formatNumber(traffic.pageviews)}</span><span class="admin-stat-card__label">Pageviews (total)</span>`;
-  trafficCards.appendChild(card);
+  for (const [value, label] of [
+    [traffic.pageviews, "Pageviews (total)"],
+    [traffic.unique_visitors, "Visitantes únicos"],
+  ]) {
+    const card = document.createElement("article");
+    card.className = "admin-stat-card";
+    card.innerHTML = `<span class="admin-stat-card__value">${formatNumber(value)}</span><span class="admin-stat-card__label">${label}</span>`;
+    trafficCards.appendChild(card);
+  }
+
+  renderDailyChart(traffic.daily ?? []);
 
   const countries = traffic.countries ?? [];
   if (!countries.length) {
@@ -143,6 +154,50 @@ function renderTraffic(traffic) {
       `;
       pagesTableBody.appendChild(row);
     }
+  }
+
+  const devices = traffic.devices ?? [];
+  if (!devices.length) {
+    const row = document.createElement("tr");
+    row.innerHTML = `<td colspan="2">Sem dados de dispositivos no período.</td>`;
+    devicesTableBody.appendChild(row);
+  } else {
+    for (const entry of devices) {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${escapeHtml(entry.device_label ?? entry.device_type)}</td>
+        <td>${formatNumber(entry.pageviews)}</td>
+      `;
+      devicesTableBody.appendChild(row);
+    }
+  }
+}
+
+function renderDailyChart(daily) {
+  if (!daily.length) {
+    dailyChartEl.innerHTML = `<p class="admin-daily-empty">Sem dados diários no período.</p>`;
+    return;
+  }
+
+  const max = Math.max(...daily.map((entry) => entry.pageviews), 1);
+  const formatter = new Intl.DateTimeFormat("pt-PT", {
+    day: "numeric",
+    month: "short",
+  });
+
+  for (const entry of daily) {
+    const row = document.createElement("div");
+    row.className = "admin-daily-row";
+    const label = formatter.format(new Date(`${entry.date}T12:00:00`));
+    const width = Math.max(4, Math.round((entry.pageviews / max) * 100));
+    row.innerHTML = `
+      <span class="admin-daily-row__label">${escapeHtml(label)}</span>
+      <div class="admin-daily-row__track" aria-hidden="true">
+        <div class="admin-daily-row__fill" style="width: ${width}%"></div>
+      </div>
+      <span class="admin-daily-row__value">${formatNumber(entry.pageviews)}</span>
+    `;
+    dailyChartEl.appendChild(row);
   }
 }
 

@@ -42,6 +42,10 @@
           <p id="traffic-period" class="admin-traffic-period"></p>
           <p id="traffic-status" class="admin-traffic-status" hidden></p>
           <div class="admin-stats-grid admin-stats-grid--compact" id="traffic-cards"></div>
+          <div class="admin-traffic-daily">
+            <h3>Pageviews por dia</h3>
+            <div id="daily-chart" class="admin-daily-chart"></div>
+          </div>
           <div class="admin-traffic-columns">
             <div>
               <h3>Visitas por país</h3>
@@ -65,6 +69,20 @@
                   <thead>
                     <tr>
                       <th>Caminho</th>
+                      <th>Pageviews</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <h3>Dispositivos</h3>
+              <div class="admin-table-wrap">
+                <table class="admin-table" id="devices-table">
+                  <thead>
+                    <tr>
+                      <th>Dispositivo</th>
                       <th>Pageviews</th>
                     </tr>
                   </thead>

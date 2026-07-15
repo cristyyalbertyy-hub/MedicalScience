@@ -60,6 +60,19 @@ async function main() {
   if (stats.traffic?.configured && !stats.traffic.error) {
     console.log(`Tráfego Vercel (${stats.traffic.period?.label ?? "produção"})`);
     console.log(`  Pageviews: ${stats.traffic.pageviews ?? 0}`);
+    console.log(`  Visitantes únicos: ${stats.traffic.unique_visitors ?? 0}`);
+    if (stats.traffic.daily?.length) {
+      console.log("  Por dia:");
+      for (const entry of stats.traffic.daily) {
+        console.log(`    ${entry.date}: ${entry.pageviews}`);
+      }
+    }
+    if (stats.traffic.devices?.length) {
+      console.log("  Dispositivos:");
+      for (const entry of stats.traffic.devices) {
+        console.log(`    ${entry.device_label ?? entry.device_type}: ${entry.pageviews}`);
+      }
+    }
     if (stats.traffic.countries?.length) {
       console.log("  Top países:");
       for (const entry of stats.traffic.countries.slice(0, 10)) {

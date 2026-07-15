@@ -129,7 +129,7 @@ export async function collectAdminStats() {
       traffic: traffic.configured
         ? traffic.error
           ? `Tráfego Vercel indisponível: ${traffic.error}`
-          : `Tráfego Vercel (${traffic.period?.label ?? "produção"}): ${traffic.pageviews ?? 0} pageviews.`
+          : `Tráfego Vercel (${traffic.period?.label ?? "produção"}): ${traffic.pageviews ?? 0} pageviews, ${traffic.unique_visitors ?? 0} visitantes únicos.`
         : traffic.message,
       progress:
         "Progresso Firestore está activo sobretudo em medical-biology e genetics; outras disciplinas podem mostrar 0 até integração completa.",
