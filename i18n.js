@@ -87,7 +87,6 @@ const SITE_LOCALES = {
         aria: "Launch promotion",
         eyebrow: "Launch offer · 10% off",
         title: "Limited-time launch discount on every paid module",
-        hint: "Enter the code in the discount field at Lemon Squeezy checkout before you pay.",
         codeLabel: "Promo code",
         copy: "Copy",
         copied: "Copied!",

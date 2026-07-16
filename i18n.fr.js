@@ -82,7 +82,6 @@ SITE_LOCALES.fr = {
       aria: "Promotion de lancement",
       eyebrow: "Offre de lancement · 10 % de réduction",
       title: "Réduction de lancement limitée sur tous les modules payants",
-      hint: "Saisissez le code dans le champ réduction au checkout Lemon Squeezy avant de payer.",
       codeLabel: "Code promo",
       copy: "Copier",
       copied: "Copié !",

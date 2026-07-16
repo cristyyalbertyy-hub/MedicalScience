@@ -80,7 +80,6 @@ SITE_LOCALES.pt = {
       aria: "Campanha de lançamento",
       eyebrow: "Campanha de lançamento · 10% de desconto",
       title: "Desconto de lançamento por tempo limitado em todos os módulos pagos",
-      hint: "Introduz o código no campo de desconto no checkout Lemon Squeezy antes de pagar.",
       codeLabel: "Código promocional",
       copy: "Copiar",
       copied: "Copiado!",

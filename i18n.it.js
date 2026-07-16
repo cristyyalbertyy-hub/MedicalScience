@@ -82,7 +82,6 @@ SITE_LOCALES.it = {
       aria: "Promozione di lancio",
       eyebrow: "Offerta di lancio · 10% di sconto",
       title: "Sconto di lancio a tempo limitato su tutti i moduli a pagamento",
-      hint: "Inserisci il codice nel campo sconto al checkout Lemon Squeezy prima di pagare.",
       codeLabel: "Codice promozionale",
       copy: "Copia",
       copied: "Copiato!",

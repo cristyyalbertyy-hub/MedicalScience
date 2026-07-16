@@ -47,7 +47,6 @@ function buildLaunchPromoBanner() {
       <div class="promo-banner__copy">
         <p class="promo-banner__eyebrow" data-promo-i18n="promo.launch.eyebrow"></p>
         <p class="promo-banner__title" data-promo-i18n="promo.launch.title"></p>
-        <p class="promo-banner__hint" data-promo-i18n="promo.launch.hint"></p>
       </div>
       <div class="promo-banner__code-wrap">
         <span class="promo-banner__code-label" data-promo-i18n="promo.launch.codeLabel"></span>

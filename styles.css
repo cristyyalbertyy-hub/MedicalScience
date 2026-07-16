@@ -1764,7 +1764,6 @@ a.is-disabled[aria-disabled="true"] {
   line-height: 1.25;
 }
 
-.promo-banner__hint,
 .promo-banner__until {
   margin: 0.35rem 0 0;
   font-size: 0.88rem;
