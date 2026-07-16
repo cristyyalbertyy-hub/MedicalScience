@@ -77,6 +77,21 @@ SITE_LOCALES.it = {
     instagram: "Instagram",
     threads: "Threads",
   },
+  promo: {
+    launch: {
+      aria: "Promozione di lancio",
+      eyebrow: "Offerta di lancio · 10% di sconto",
+      title: "Sconto di lancio a tempo limitato su tutti i moduli a pagamento",
+      hint: "Inserisci il codice nel campo sconto al checkout Lemon Squeezy prima di pagare.",
+      codeLabel: "Codice promozionale",
+      copy: "Copia",
+      copied: "Copiato!",
+      until: "Valido fino al 24 luglio 2026",
+      cta: "Vedi prezzi →",
+      volumeNote:
+        "Offerta di lancio attiva: 10% di sconto con il codice U5NZA4MW al checkout Lemon Squeezy fino al 24 luglio 2026.",
+    },
+  },
   packagesUi: {
     live: "Online",
     comingSoon: "In arrivo",

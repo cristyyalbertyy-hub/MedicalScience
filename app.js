@@ -1044,6 +1044,7 @@ async function init() {
   initTomatoTimeLinks();
   initNavigation();
   initPricingCurrency();
+  if (window.Studio9LaunchPromo) Studio9LaunchPromo.initLaunchPromo();
 }
 
 document.addEventListener("DOMContentLoaded", init);

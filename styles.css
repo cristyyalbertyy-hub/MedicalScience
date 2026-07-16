@@ -1721,6 +1721,118 @@ a.is-disabled[aria-disabled="true"] {
   color: var(--muted);
 }
 
+.launch-promo-volume-note {
+  padding: 0.75rem 0.9rem;
+  border-radius: 14px;
+  border: 1px solid rgba(217, 122, 62, 0.35);
+  background: rgba(217, 122, 62, 0.08);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.promo-banner {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0.65rem auto 0;
+}
+
+.promo-banner__inner {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1rem 1.1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(217, 122, 62, 0.35);
+  background:
+    linear-gradient(135deg, rgba(217, 122, 62, 0.12), rgba(31, 78, 107, 0.07)),
+    rgba(255, 253, 249, 0.95);
+  box-shadow: 0 10px 28px rgba(31, 78, 107, 0.08);
+}
+
+.promo-banner__eyebrow {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+.promo-banner__title {
+  margin: 0.2rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.25;
+}
+
+.promo-banner__hint,
+.promo-banner__until {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.promo-banner__code-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.promo-banner__code-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.promo-banner__code {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  background: #fff;
+  border: 1px dashed rgba(31, 78, 107, 0.28);
+  border-radius: 12px;
+  padding: 0.45rem 0.75rem;
+}
+
+.promo-banner__copy {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--primary);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 0.45rem 0.85rem;
+}
+
+.promo-banner__copy:hover {
+  background: var(--primary-soft);
+}
+
+.promo-banner__cta {
+  justify-self: start;
+  white-space: nowrap;
+}
+
+@media (min-width: 760px) {
+  .promo-banner__inner {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 1rem 1.25rem;
+  }
+
+  .promo-banner__cta {
+    justify-self: end;
+  }
+}
+
 .contact-page {
   max-width: 56rem;
   padding-top: 2rem;

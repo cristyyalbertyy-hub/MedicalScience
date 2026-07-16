@@ -82,6 +82,21 @@ const SITE_LOCALES = {
       instagram: "Instagram",
       threads: "Threads",
     },
+    promo: {
+      launch: {
+        aria: "Launch promotion",
+        eyebrow: "Launch offer · 10% off",
+        title: "Limited-time launch discount on every paid module",
+        hint: "Enter the code in the discount field at Lemon Squeezy checkout before you pay.",
+        codeLabel: "Promo code",
+        copy: "Copy",
+        copied: "Copied!",
+        until: "Valid until 24 July 2026",
+        cta: "See pricing →",
+        volumeNote:
+          "Launch offer active: 10% off with code U5NZA4MW at Lemon Squeezy checkout until 24 July 2026.",
+      },
+    },
     packagesUi: {
       live: "Live",
       comingSoon: "Coming soon",

@@ -75,6 +75,21 @@ SITE_LOCALES.pt = {
     instagram: "Instagram",
     threads: "Threads",
   },
+  promo: {
+    launch: {
+      aria: "Campanha de lançamento",
+      eyebrow: "Campanha de lançamento · 10% de desconto",
+      title: "Desconto de lançamento por tempo limitado em todos os módulos pagos",
+      hint: "Introduz o código no campo de desconto no checkout Lemon Squeezy antes de pagar.",
+      codeLabel: "Código promocional",
+      copy: "Copiar",
+      copied: "Copiado!",
+      until: "Válido até 24 de julho de 2026",
+      cta: "Ver preços →",
+      volumeNote:
+        "Campanha de lançamento activa: 10% de desconto com o código U5NZA4MW no checkout Lemon Squeezy até 24 de julho de 2026.",
+    },
+  },
   packagesUi: {
     live: "Disponível",
     comingSoon: "Em breve",
