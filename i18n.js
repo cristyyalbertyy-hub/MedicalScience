@@ -19,7 +19,7 @@ const SITE_LOCALES = {
       },
       packages: {
         title: "All disciplines · Medical Science · Studio9",
-        description: "22 health-science disciplines — 12 live Studio9 apps and 10 coming soon.",
+        description: "22 health-science disciplines — 15 live Studio9 apps and 7 coming soon.",
       },
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
@@ -158,9 +158,9 @@ const SITE_LOCALES = {
         eyebrow: "All disciplines",
         title: "22 subjects — pick the ones you need.",
         intro:
-          "Twelve interactive Studio9 apps are live today. Ten more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
-        liveCount: "12 apps live now",
-        soonCount: "10 more coming soon",
+          "Fifteen interactive Studio9 apps are live today. Seven more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
+        liveCount: "15 apps live now",
+        soonCount: "7 more coming soon",
         hours: "40–60 hours per module",
         cta: "See all disciplines →",
       },
@@ -168,7 +168,7 @@ const SITE_LOCALES = {
         eyebrow: "Interactive catalogue",
         title: "All disciplines.",
         intro:
-          'Twelve apps are live today — the rest are on the way. <a href="packages/">See the full list →</a>',
+          'Fifteen apps are live today — the rest are on the way. <a href="packages/">See the full list →</a>',
       },
       testimonials: {
         aria: "Testimonials",
@@ -254,7 +254,7 @@ const SITE_LOCALES = {
       hero: {
         eyebrow: "Interactive · catalogue",
         title: "All disciplines.",
-        text: "22 health-science subjects — 12 live apps today, 10 coming soon. Buy only what you need.",
+        text: "22 health-science subjects — 15 live apps today, 7 coming soon. Buy only what you need.",
       },
       sectionAria: "Health science disciplines",
       freeSpotlight: {

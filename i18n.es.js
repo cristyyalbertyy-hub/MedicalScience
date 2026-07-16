@@ -12,7 +12,7 @@ SITE_LOCALES.es = {
     },
     packages: {
       title: "Pacotes prontos · Medical Science · Studio9",
-      description: "Paquetes Studio9: doce módulos, las doce apps ya disponibles.",
+      description: "Paquetes Studio9: quince módulos, quince apps ya disponibles, 7 en camino.",
     },
     precos: {
       title: "Como funciona + Preços · Medical Science · Studio9",
@@ -153,16 +153,16 @@ SITE_LOCALES.es = {
       eyebrow: "Todas las disciplinas",
       title: "22 asignaturas — elige las que necesitas.",
       intro:
-        "Doce apps Studio9 ya están disponibles. Diez disciplinas llegarán pronto. Cada módulo incluye 40–60 horas de estudio — vídeos, podcasts, infografías y cuestionarios.",
-      liveCount: "12 apps disponibles",
-      soonCount: "10 más en camino",
+        "Quince apps Studio9 ya están disponibles. Siete disciplinas llegarán pronto. Cada módulo incluye 40–60 horas de estudio — vídeos, podcasts, infografías y cuestionarios.",
+      liveCount: "15 apps disponibles",
+      soonCount: "7 más en camino",
       hours: "40–60 horas por módulo",
       cta: "Ver todas las disciplinas →",
     },
     packages: {
       eyebrow: "Ya disponibles",
       title: "Paquetes listos para usar.",
-      intro: 'Doce paquetes Studio9 — las doce apps ya están disponibles. <a href="packages/">Ver todos los paquetes →</a>',
+      intro: 'Quince paquetes Studio9 — quince apps ya disponibles, siete en camino. <a href="packages/">Ver todos los paquetes →</a>',
     },
     testimonials: {
       aria: "Testimonios",
@@ -248,7 +248,7 @@ SITE_LOCALES.es = {
     hero: {
       eyebrow: "Interactivo · listo para usar",
       title: "Paquetes listos para usar.",
-      text: "Doce paquetes — las doce apps ya están disponibles.",
+      text: "22 asignaturas de ciencias de la salud — 15 apps disponibles hoy, 7 en camino. Compra solo lo que necesitas.",
     },
     sectionAria: "Paquetes de aprendizaje listos para usar",
     freeSpotlight: {
