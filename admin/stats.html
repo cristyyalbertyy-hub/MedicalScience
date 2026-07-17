@@ -46,6 +46,29 @@
             <h3>Pageviews por dia</h3>
             <div id="daily-chart" class="admin-daily-chart"></div>
           </div>
+          <div class="admin-traffic-combo">
+            <div class="admin-combo-chart-header">
+              <h3>Visitantes vs vendas (por dia)</h3>
+              <div class="admin-combo-chart-controls" aria-label="Zoom do gráfico">
+                <button type="button" id="combo-zoom-out" class="admin-combo-zoom-btn" title="Mais compacto">−</button>
+                <span id="combo-zoom-label" class="admin-combo-zoom-label">100%</span>
+                <button type="button" id="combo-zoom-in" class="admin-combo-zoom-btn" title="Mais largo">+</button>
+              </div>
+            </div>
+            <p id="combo-chart-status" class="admin-combo-chart-status" hidden></p>
+            <div id="combo-chart-scroll" class="admin-combo-chart-scroll">
+              <div
+                id="combo-chart"
+                class="admin-combo-chart"
+                role="img"
+                aria-label="Gráfico de barras verticais: visitantes e vendas por dia"
+              ></div>
+            </div>
+            <div class="admin-combo-legend">
+              <span class="admin-combo-legend__item admin-combo-legend__item--visitors">Visitantes (azul)</span>
+              <span class="admin-combo-legend__item admin-combo-legend__item--sales">Vendas (vermelho)</span>
+            </div>
+          </div>
           <div class="admin-traffic-columns">
             <div>
               <h3>Visitas por país</h3>

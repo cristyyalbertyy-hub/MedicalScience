@@ -7,6 +7,61 @@ function isActiveEntitlement(data, nowMs) {
   return !Number.isNaN(expires) && expires > nowMs && data.package_id;
 }
 
+function dayKeyFromIso(iso) {
+  const text = String(iso ?? "").trim();
+  if (text.length >= 10) return text.slice(0, 10);
+  return null;
+}
+
+function enumerateDays(startIso, endIso) {
+  const start = new Date(startIso);
+  const end = new Date(endIso);
+  if (Number.isNaN(start.getTime()) || Number.isNaN(end.getTime())) return [];
+
+  const days = [];
+  const cursor = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth(), start.getUTCDate()));
+  const endDay = new Date(Date.UTC(end.getUTCFullYear(), end.getUTCMonth(), end.getUTCDate()));
+
+  while (cursor <= endDay) {
+    days.push(cursor.toISOString().slice(0, 10));
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+
+  return days;
+}
+
+function buildDailySalesMap(ordersSnap) {
+  const salesByDay = new Map();
+  ordersSnap.forEach((doc) => {
+    const day = dayKeyFromIso(doc.data().processed_at);
+    if (!day) return;
+    salesByDay.set(day, (salesByDay.get(day) ?? 0) + 1);
+  });
+  return salesByDay;
+}
+
+function buildVisitorsVsSalesSeries(traffic, ordersSnap) {
+  const salesByDay = buildDailySalesMap(ordersSnap);
+  const visitorsByDay = new Map(
+    (traffic.daily_visitors ?? []).map((entry) => [entry.date, entry.pageviews ?? 0]),
+  );
+
+  let periodDays;
+  if (traffic.period?.start && traffic.period?.end) {
+    periodDays = enumerateDays(traffic.period.start, traffic.period.end);
+  } else {
+    const end = new Date();
+    const start = new Date(end.getTime() - 7 * 24 * 60 * 60 * 1000);
+    periodDays = enumerateDays(start.toISOString(), end.toISOString());
+  }
+
+  return periodDays.map((date) => ({
+    date,
+    visitors: visitorsByDay.get(date) ?? 0,
+    sales: salesByDay.get(date) ?? 0,
+  }));
+}
+
 async function countAuthUsers() {
   const auth = getAuth();
   let total = 0;
@@ -110,6 +165,8 @@ export async function collectAdminStats() {
 
   packages.sort((a, b) => b.active_entitlements - a.active_entitlements);
 
+  const visitors_vs_sales = buildVisitorsVsSalesSeries(traffic, ordersSnap);
+
   return {
     generated_at: new Date().toISOString(),
     summary: {
@@ -124,7 +181,10 @@ export async function collectAdminStats() {
       entitlement_sources: sources,
     },
     packages,
-    traffic,
+    traffic: {
+      ...traffic,
+      visitors_vs_sales,
+    },
     notes: {
       traffic: traffic.configured
         ? traffic.error

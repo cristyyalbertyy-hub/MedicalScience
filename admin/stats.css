@@ -196,3 +196,165 @@
   color: var(--primary);
   text-align: right;
 }
+
+.admin-traffic-combo {
+  margin-bottom: 1.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.admin-combo-chart-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.admin-combo-chart-header h3 {
+  margin: 0;
+}
+
+.admin-combo-chart-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.admin-combo-zoom-btn {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.admin-combo-zoom-btn:hover {
+  background: var(--paper-warm);
+}
+
+.admin-combo-zoom-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.admin-combo-zoom-label {
+  min-width: 3.25rem;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.admin-combo-chart-status {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.admin-combo-chart-scroll {
+  overflow-x: auto;
+  padding-bottom: 0.35rem;
+}
+
+.admin-combo-chart {
+  --combo-zoom: 1;
+  --combo-day-width: calc(3.4rem * var(--combo-zoom));
+  --combo-chart-height: calc(9.5rem * min(1.35, max(0.75, var(--combo-zoom))));
+  display: flex;
+  align-items: flex-end;
+  gap: calc(0.55rem * var(--combo-zoom));
+  min-height: var(--combo-chart-height);
+  padding: 0.35rem 0.15rem 0;
+}
+
+.admin-combo-day {
+  flex: 0 0 var(--combo-day-width);
+  min-width: var(--combo-day-width);
+  display: grid;
+  gap: 0.35rem;
+  justify-items: center;
+}
+
+.admin-combo-bars {
+  width: 100%;
+  height: var(--combo-chart-height);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: calc(0.2rem * var(--combo-zoom));
+}
+
+.admin-combo-bar {
+  flex: 1 1 0;
+  max-width: calc(1.35rem * var(--combo-zoom));
+  min-width: calc(0.65rem * var(--combo-zoom));
+  border-radius: 6px 6px 2px 2px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 2px;
+}
+
+.admin-combo-bar--visitors {
+  background: linear-gradient(180deg, #5b8def 0%, #2563eb 100%);
+}
+
+.admin-combo-bar--sales {
+  background: linear-gradient(180deg, #f87171 0%, #dc2626 100%);
+}
+
+.admin-combo-bar__value {
+  position: absolute;
+  top: -1.15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.admin-combo-day__label {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.15;
+}
+
+.admin-combo-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.admin-combo-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.admin-combo-legend__item::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 3px;
+}
+
+.admin-combo-legend__item--visitors::before {
+  background: #2563eb;
+}
+
+.admin-combo-legend__item--sales::before {
+  background: #dc2626;
+}

@@ -230,6 +230,7 @@ export async function fetchVercelAnalytics() {
       pageviews: row.pageviews,
     }));
     const daily = parseDailySeries(totals);
+    const daily_visitors = parseDailySeries(uniqueVisitors, ROLLUP_UNIQUE);
 
     return {
       configured: true,
@@ -242,6 +243,7 @@ export async function fetchVercelAnalytics() {
       pageviews: extractTotal(totals, ROLLUP_SUM),
       unique_visitors: extractTotal(uniqueVisitors, ROLLUP_UNIQUE),
       daily,
+      daily_visitors,
       countries,
       top_pages: topPages,
       devices,

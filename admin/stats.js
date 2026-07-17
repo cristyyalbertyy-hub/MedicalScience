@@ -13,6 +13,15 @@ const countriesTableBody = document.querySelector("#countries-table tbody");
 const pagesTableBody = document.querySelector("#pages-table tbody");
 const devicesTableBody = document.querySelector("#devices-table tbody");
 const dailyChartEl = document.getElementById("daily-chart");
+const comboChartEl = document.getElementById("combo-chart");
+const comboChartScrollEl = document.getElementById("combo-chart-scroll");
+const comboChartStatusEl = document.getElementById("combo-chart-status");
+const comboZoomInBtn = document.getElementById("combo-zoom-in");
+const comboZoomOutBtn = document.getElementById("combo-zoom-out");
+const comboZoomLabelEl = document.getElementById("combo-zoom-label");
+
+const COMBO_ZOOM_LEVELS = [0.5, 0.75, 1, 1.25, 1.5, 2];
+let comboZoomIndex = COMBO_ZOOM_LEVELS.indexOf(1);
 
 function setStatus(message, type = "") {
   statusEl.hidden = !message;
@@ -201,6 +210,67 @@ function renderDailyChart(daily) {
   }
 }
 
+function applyComboZoom() {
+  const zoom = COMBO_ZOOM_LEVELS[comboZoomIndex] ?? 1;
+  comboChartEl.style.setProperty("--combo-zoom", String(zoom));
+  comboZoomLabelEl.textContent = `${Math.round(zoom * 100)}%`;
+  comboZoomOutBtn.disabled = comboZoomIndex <= 0;
+  comboZoomInBtn.disabled = comboZoomIndex >= COMBO_ZOOM_LEVELS.length - 1;
+}
+
+function renderVisitorsSalesChart(series, traffic) {
+  comboChartEl.replaceChildren();
+  comboChartStatusEl.hidden = true;
+
+  if (!series?.length) {
+    comboChartStatusEl.hidden = false;
+    comboChartStatusEl.textContent = traffic?.configured
+      ? "Sem dados diários de visitantes ou vendas no período."
+      : "Visitantes requerem Vercel Analytics; vendas vêm das encomendas Lemon Squeezy processadas.";
+    applyComboZoom();
+    return;
+  }
+
+  const maxVisitors = Math.max(...series.map((entry) => entry.visitors), 1);
+  const maxSales = Math.max(...series.map((entry) => entry.sales), 1);
+  const formatter = new Intl.DateTimeFormat("pt-PT", {
+    day: "numeric",
+    month: "short",
+  });
+
+  for (const entry of series) {
+    const col = document.createElement("div");
+    col.className = "admin-combo-day";
+    const label = formatter.format(new Date(`${entry.date}T12:00:00`));
+    const visitorHeight = Math.max(2, Math.round((entry.visitors / maxVisitors) * 100));
+    const salesHeight = Math.max(2, Math.round((entry.sales / maxSales) * 100));
+
+    col.innerHTML = `
+      <div class="admin-combo-bars" aria-hidden="true">
+        <div
+          class="admin-combo-bar admin-combo-bar--visitors"
+          style="height: ${visitorHeight}%"
+          title="Visitantes: ${formatNumber(entry.visitors)}"
+        >
+          <span class="admin-combo-bar__value">${entry.visitors > 0 ? formatNumber(entry.visitors) : ""}</span>
+        </div>
+        <div
+          class="admin-combo-bar admin-combo-bar--sales"
+          style="height: ${salesHeight}%"
+          title="Vendas: ${formatNumber(entry.sales)}"
+        >
+          <span class="admin-combo-bar__value">${entry.sales > 0 ? formatNumber(entry.sales) : ""}</span>
+        </div>
+      </div>
+      <span class="admin-combo-day__label">${escapeHtml(label)}</span>
+    `;
+    comboChartEl.appendChild(col);
+  }
+
+  applyComboZoom();
+  comboChartScrollEl.scrollLeft = comboChartScrollEl.scrollWidth;
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -208,6 +278,18 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
 }
+
+comboZoomInBtn?.addEventListener("click", () => {
+  if (comboZoomIndex >= COMBO_ZOOM_LEVELS.length - 1) return;
+  comboZoomIndex += 1;
+  applyComboZoom();
+});
+
+comboZoomOutBtn?.addEventListener("click", () => {
+  if (comboZoomIndex <= 0) return;
+  comboZoomIndex -= 1;
+  applyComboZoom();
+});
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -230,6 +312,7 @@ form.addEventListener("submit", async (event) => {
     generatedEl.textContent = `Actualizado: ${new Date(data.generated_at).toLocaleString("pt-PT")}`;
     renderSummary(data.summary);
     renderTraffic(data.traffic);
+    renderVisitorsSalesChart(data.traffic?.visitors_vs_sales ?? [], data.traffic);
     renderPackages(data.packages);
     renderSources(data.summary.entitlement_sources);
     renderNotes(data.notes);
