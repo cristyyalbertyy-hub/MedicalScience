@@ -117,6 +117,8 @@
       "parentApp": "histology-embryology",
       "url": "https://histology-embryology.vercel.app/",
       "priceUsd": 10.99,
+      "loginReady": true,
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=histology",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/30dadd74-63df-4792-9e6b-87f0aa4e4606?embed=1"
     },
     "embryology": {
@@ -124,6 +126,8 @@
       "parentApp": "histology-embryology",
       "url": "https://histology-embryology.vercel.app/",
       "priceUsd": 11.99,
+      "loginReady": true,
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=embryology",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/61ba830b-04c2-441d-a182-30a292f7abcc?embed=1"
     },
     "histology-embryology": {
@@ -132,6 +136,8 @@
       "url": "https://histology-embryology.vercel.app/",
       "priceUsd": 15.99,
       "bundleOf": ["histology", "embryology"],
+      "loginReady": true,
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=histology-embryology",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/03e54c5f-614b-4638-9f02-a57cf635aa83?embed=1"
     },
     "chemistry": {
@@ -139,6 +145,8 @@
       "parentApp": "chemistry-introductory-biochemistry",
       "url": "https://chemistry-roan.vercel.app/",
       "priceUsd": 14.99,
+      "loginReady": true,
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=chemistry",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/a8e270a9-9e42-4396-9bfc-11f0203770bb?embed=1"
     },
     "introductory-biochemistry": {
@@ -146,6 +154,8 @@
       "parentApp": "chemistry-introductory-biochemistry",
       "url": "https://chemistry-roan.vercel.app/",
       "priceUsd": 6.99,
+      "loginReady": true,
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=introductory-biochemistry",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/ae69e9a5-9642-45ea-879b-1ef9a0c22b06?embed=1"
     },
     "chemistry-introductory-biochemistry": {
@@ -154,6 +164,8 @@
       "url": "https://chemistry-roan.vercel.app/",
       "priceUsd": 17.99,
       "bundleOf": ["chemistry", "introductory-biochemistry"],
+      "loginReady": true,
+      "progressUrl": "https://progress-azure-five.vercel.app/?package=chemistry-introductory-biochemistry",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/f1f7a764-6a20-484d-bb29-b8da4e75b450?embed=1"
     },
     "history-of-medicine": {

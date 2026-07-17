@@ -21,7 +21,16 @@ service cloud.firestore {
     }
 
     function allowedProgressPackage(packageId) {
-      return packageId in ['medical-biology', 'genetics'];
+      return packageId in [
+        'medical-biology',
+        'genetics',
+        'histology',
+        'embryology',
+        'histology-embryology',
+        'chemistry',
+        'introductory-biochemistry',
+        'chemistry-introductory-biochemistry'
+      ];
     }
 
     match /entitlements/{docId} {
