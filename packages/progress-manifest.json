@@ -2571,41 +2571,6 @@
           ]
         }
       ]
-    },
-    "italian-health-system": {
-      "title": "Italian Health System",
-      "topics": [
-        {
-          "id": "OS",
-          "label": "Organization Structure — Governance, regions and institutional roles",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
-        },
-        {
-          "id": "SS",
-          "label": "Supply Structure — Services, workforce and delivery networks",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
-        },
-        {
-          "id": "BC",
-          "label": "Budgeting and Costs — Financing, spending and cost control",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
-        }
-      ]
     }
   }
 }

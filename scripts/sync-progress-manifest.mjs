@@ -378,14 +378,6 @@ const packages = {
       topic("HTAS", "HTA Structure"),
     ],
   },
-  "italian-health-system": {
-    title: "Italian Health System",
-    topics: [
-      topic("OS", "Organization Structure — Governance, regions and institutional roles"),
-      topic("SS", "Supply Structure — Services, workforce and delivery networks"),
-      topic("BC", "Budgeting and Costs — Financing, spending and cost control"),
-    ],
-  },
 };
 
 const manifest = {

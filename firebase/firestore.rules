@@ -36,8 +36,7 @@ service cloud.firestore {
         'chemistry-introductory-biochemistry',
         'history-of-medicine',
         'moral-philosophy',
-        'health-technology-assessments',
-        'italian-health-system'
+        'health-technology-assessments'
       ];
     }
 
