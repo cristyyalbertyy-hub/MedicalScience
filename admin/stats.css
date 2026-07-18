@@ -263,8 +263,14 @@
   padding-bottom: 0.35rem;
 }
 
-.admin-combo-chart {
+.admin-combo-chart-inner {
   --combo-zoom: 1;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: min-content;
+}
+
+.admin-combo-chart {
   --combo-day-width: calc(3.4rem * var(--combo-zoom));
   --combo-chart-height: calc(9.5rem * min(1.35, max(0.75, var(--combo-zoom))));
   display: flex;
@@ -323,10 +329,44 @@
 }
 
 .admin-combo-day__label {
-  font-size: 0.72rem;
+  font-size: calc(0.72rem * min(1.1, max(0.85, var(--combo-zoom))));
   color: var(--muted);
   text-align: center;
   line-height: 1.15;
+}
+
+.admin-combo-day.is-today .admin-combo-day__label {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.admin-combo-day.is-future .admin-combo-day__label {
+  opacity: 0.35;
+}
+
+.admin-combo-bars--empty {
+  opacity: 0.15;
+}
+
+.admin-combo-month-band {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.2rem 0.15rem 0;
+  width: 100%;
+}
+
+.admin-combo-month-line {
+  height: 2px;
+  background: var(--line);
+  border-radius: 1px;
+  width: 100%;
+}
+
+.admin-combo-month-label {
+  text-align: center;
+  font-size: calc(0.82rem * min(1.15, max(0.85, var(--combo-zoom))));
+  font-weight: 700;
+  color: var(--muted);
 }
 
 .admin-combo-legend {

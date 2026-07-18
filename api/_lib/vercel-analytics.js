@@ -165,6 +165,32 @@ function extractTotal(response, rollupColumn) {
   );
 }
 
+export async function fetchMonthUniqueVisitors() {
+  const { token, teamId, projectId } = getConfig();
+
+  if (!token || !teamId || !projectId) {
+    return [];
+  }
+
+  const now = new Date();
+  const startTime = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1));
+  const endTime = now;
+
+  try {
+    const response = await queryMetrics({
+      token,
+      teamId,
+      projectId,
+      startTime,
+      endTime,
+      aggregation: AGGREGATION_UNIQUE,
+    });
+    return parseDailySeries(response, ROLLUP_UNIQUE);
+  } catch {
+    return [];
+  }
+}
+
 export async function fetchVercelAnalytics() {
   const { token, teamId, projectId, days } = getConfig();
 
