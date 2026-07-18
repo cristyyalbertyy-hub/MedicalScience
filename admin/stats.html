@@ -50,13 +50,16 @@
             <div class="admin-combo-chart-header">
               <h3>Visitantes únicos vs vendas (mês corrente)</h3>
               <div class="admin-combo-chart-controls" aria-label="Zoom do gráfico">
-                <button type="button" id="combo-zoom-out" class="admin-combo-zoom-btn" title="Mais compacto">−</button>
-                <span id="combo-zoom-label" class="admin-combo-zoom-label">100%</span>
-                <button type="button" id="combo-zoom-in" class="admin-combo-zoom-btn" title="Mais largo">+</button>
+                <button type="button" id="combo-zoom-out" class="admin-combo-zoom-btn" title="Ver mais dias (mês inteiro)">−</button>
+                <span id="combo-zoom-label" class="admin-combo-zoom-label">Mês</span>
+                <button type="button" id="combo-zoom-in" class="admin-combo-zoom-btn" title="Ver menos dias (mais detalhe)">+</button>
+                <button type="button" id="combo-zoom-reset" class="admin-combo-zoom-btn admin-combo-zoom-btn--reset" title="Ver mês inteiro">↺</button>
               </div>
             </div>
+            <p class="admin-combo-chart-hint">Arraste para mover · Shift+arrastar para ampliar uma zona · Duplo clique para reset</p>
             <p id="combo-chart-status" class="admin-combo-chart-status" hidden></p>
             <div id="combo-chart-viewport" class="admin-combo-chart-viewport">
+              <div id="combo-chart-brush" class="admin-combo-brush" hidden></div>
               <div id="combo-chart-scroll" class="admin-combo-chart-scroll">
                 <div id="combo-chart-inner" class="admin-combo-chart-inner">
                 <div

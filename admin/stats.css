@@ -1,5 +1,6 @@
 .admin-shell--wide {
   max-width: 980px;
+  overflow-x: hidden;
 }
 
 .admin-nav {
@@ -201,6 +202,20 @@
   margin-bottom: 1.25rem;
   padding-top: 0.25rem;
   border-top: 1px solid var(--line);
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+#traffic-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.admin-combo-chart-hint {
+  margin: -0.35rem 0 0.65rem;
+  font-size: 0.78rem;
+  color: var(--muted);
 }
 
 .admin-combo-chart-header {
@@ -244,8 +259,12 @@
   cursor: not-allowed;
 }
 
+.admin-combo-zoom-btn--reset {
+  font-size: 0.95rem;
+}
+
 .admin-combo-zoom-label {
-  min-width: 3.25rem;
+  min-width: 4.5rem;
   text-align: center;
   font-size: 0.82rem;
   font-weight: 700;
@@ -259,36 +278,60 @@
 }
 
 .admin-combo-chart-viewport {
+  position: relative;
   width: 100%;
+  max-width: 100%;
   height: 13.5rem;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
   overscroll-behavior: contain;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #fafbfc;
   padding: 0.35rem 0.25rem;
+  cursor: grab;
+  touch-action: pan-x;
+}
+
+.admin-combo-chart-viewport.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.admin-combo-chart-viewport.is-brushing {
+  cursor: crosshair;
+}
+
+.admin-combo-brush {
+  position: absolute;
+  top: 0.35rem;
+  bottom: 0.35rem;
+  left: 0;
+  background: rgba(37, 99, 235, 0.14);
+  border: 1px solid rgba(37, 99, 235, 0.5);
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .admin-combo-chart-scroll {
-  display: inline-block;
-  min-width: min-content;
-  vertical-align: top;
+  display: block;
+  width: max-content;
+  max-width: none;
 }
 
 .admin-combo-chart-inner {
-  --combo-zoom: 1;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  min-width: min-content;
-  transform-origin: top left;
 }
 
 .admin-combo-chart {
-  --combo-day-width: calc(2.75rem * var(--combo-zoom));
+  --combo-day-width: 2.75rem;
+  --combo-gap: 0.45rem;
   --combo-chart-height: 9.5rem;
   display: flex;
   align-items: flex-end;
-  gap: calc(0.45rem * var(--combo-zoom));
+  gap: var(--combo-gap);
   min-height: var(--combo-chart-height);
   padding: 0.15rem 0.1rem 0;
 }
@@ -307,19 +350,20 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: calc(0.2rem * var(--combo-zoom));
+  gap: 0.2rem;
 }
 
 .admin-combo-bar {
   flex: 1 1 0;
-  max-width: calc(1.35rem * var(--combo-zoom));
-  min-width: calc(0.65rem * var(--combo-zoom));
+  max-width: calc(var(--combo-day-width) * 0.44);
+  min-width: calc(var(--combo-day-width) * 0.2);
   border-radius: 6px 6px 2px 2px;
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   min-height: 2px;
+  overflow: hidden;
 }
 
 .admin-combo-bar--visitors {
@@ -331,18 +375,24 @@
 }
 
 .admin-combo-bar__value {
-  position: absolute;
-  top: -1.15rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.68rem;
+  position: relative;
+  z-index: 1;
+  font-size: 0.62rem;
   font-weight: 700;
-  color: var(--muted);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
   white-space: nowrap;
+  line-height: 1.1;
+  padding: 0 1px;
+  pointer-events: none;
+}
+
+.admin-combo-bar__value.is-hidden {
+  display: none;
 }
 
 .admin-combo-day__label {
-  font-size: calc(0.72rem * min(1.1, max(0.85, var(--combo-zoom))));
+  font-size: 0.72rem;
   color: var(--muted);
   text-align: center;
   line-height: 1.15;
@@ -377,7 +427,7 @@
 
 .admin-combo-month-label {
   text-align: center;
-  font-size: calc(0.82rem * min(1.15, max(0.85, var(--combo-zoom))));
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--muted);
 }
