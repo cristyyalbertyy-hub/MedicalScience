@@ -165,6 +165,32 @@ function extractTotal(response, rollupColumn) {
   );
 }
 
+export async function fetchRecentUniqueVisitors(days = 90) {
+  const { token, teamId, projectId } = getConfig();
+
+  if (!token || !teamId || !projectId) {
+    return [];
+  }
+
+  const windowDays = Math.max(1, Math.min(90, days));
+  const endTime = new Date();
+  const startTime = new Date(endTime.getTime() - windowDays * 24 * 60 * 60 * 1000);
+
+  try {
+    const response = await queryMetrics({
+      token,
+      teamId,
+      projectId,
+      startTime,
+      endTime,
+      aggregation: AGGREGATION_UNIQUE,
+    });
+    return parseDailySeries(response, ROLLUP_UNIQUE);
+  } catch {
+    return [];
+  }
+}
+
 export async function fetchVercelAnalytics() {
   const { token, teamId, projectId, days } = getConfig();
 

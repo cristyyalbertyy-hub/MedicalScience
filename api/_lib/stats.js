@@ -1,6 +1,7 @@
 import { getAuth, getFirestore } from "./firebase.js";
 import { getCatalog } from "./catalog.js";
-import { fetchVercelAnalytics } from "./vercel-analytics.js";
+import { fetchVercelAnalytics, fetchRecentUniqueVisitors } from "./vercel-analytics.js";
+import { syncVisitorsVsSalesChart } from "./stats-daily-chart.js";
 
 function isActiveEntitlement(data, nowMs) {
   const expires = new Date(data.expires_at).getTime();
@@ -110,6 +111,23 @@ export async function collectAdminStats() {
 
   packages.sort((a, b) => b.active_entitlements - a.active_entitlements);
 
+  let visitors_vs_sales = {
+    total_days: 0,
+    today: new Date().toISOString().slice(0, 10),
+    series: [],
+  };
+
+  try {
+    const dailyVisitors =
+      traffic.configured && !traffic.error ? await fetchRecentUniqueVisitors(90) : [];
+    visitors_vs_sales = await syncVisitorsVsSalesChart(db, dailyVisitors, ordersSnap);
+  } catch (err) {
+    visitors_vs_sales = {
+      ...visitors_vs_sales,
+      error: err instanceof Error ? err.message : "Falha ao sincronizar histórico diário.",
+    };
+  }
+
   return {
     generated_at: new Date().toISOString(),
     summary: {
@@ -125,6 +143,7 @@ export async function collectAdminStats() {
     },
     packages,
     traffic,
+    visitors_vs_sales,
     notes: {
       traffic: traffic.configured
         ? traffic.error

@@ -196,3 +196,133 @@
   color: var(--primary);
   text-align: right;
 }
+
+.admin-chart-meta {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+#visitors-sales-card {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.admin-chart-status {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.admin-vbars-viewport {
+  width: 100%;
+  max-width: 100%;
+  height: 11rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior: contain;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fafbfc;
+  padding: 0.45rem 0.35rem;
+}
+
+.admin-vbars-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.35rem;
+  min-height: 8.5rem;
+  width: max-content;
+}
+
+.admin-vbars-day {
+  flex: 0 0 2.5rem;
+  display: grid;
+  gap: 0.3rem;
+  justify-items: center;
+}
+
+.admin-vbars-day.is-today .admin-vbars-day__label {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.admin-vbars-bars {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.admin-vbars-bar {
+  flex: 1 1 0;
+  max-width: 0.95rem;
+  min-width: 0.45rem;
+  border-radius: 5px 5px 2px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2px;
+  overflow: hidden;
+}
+
+.admin-vbars-bar--visitors {
+  background: linear-gradient(180deg, #5b8def 0%, #2563eb 100%);
+}
+
+.admin-vbars-bar--sales {
+  background: linear-gradient(180deg, #f87171 0%, #dc2626 100%);
+}
+
+.admin-vbars-bar__value {
+  font-size: 0.58rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  line-height: 1.1;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.admin-vbars-bar__value.is-hidden {
+  display: none;
+}
+
+.admin-vbars-day__label {
+  font-size: 0.68rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.1;
+}
+
+.admin-vbars-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.admin-vbars-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.admin-vbars-legend__item::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 3px;
+}
+
+.admin-vbars-legend__item--visitors::before {
+  background: #2563eb;
+}
+
+.admin-vbars-legend__item--sales::before {
+  background: #dc2626;
+}

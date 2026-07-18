@@ -13,6 +13,10 @@ const countriesTableBody = document.querySelector("#countries-table tbody");
 const pagesTableBody = document.querySelector("#pages-table tbody");
 const devicesTableBody = document.querySelector("#devices-table tbody");
 const dailyChartEl = document.getElementById("daily-chart");
+const visitorsSalesChartEl = document.getElementById("visitors-sales-chart");
+const visitorsSalesViewportEl = document.getElementById("visitors-sales-viewport");
+const visitorsSalesMetaEl = document.getElementById("visitors-sales-meta");
+const visitorsSalesStatusEl = document.getElementById("visitors-sales-status");
 
 function setStatus(message, type = "") {
   statusEl.hidden = !message;
@@ -201,6 +205,92 @@ function renderDailyChart(daily) {
   }
 }
 
+function scrollVisitorsSalesToToday() {
+  if (!visitorsSalesViewportEl || !visitorsSalesChartEl) return;
+  const todayColumn = visitorsSalesChartEl.querySelector(".admin-vbars-day.is-today");
+  if (!todayColumn) {
+    visitorsSalesViewportEl.scrollLeft = Math.max(
+      0,
+      visitorsSalesViewportEl.scrollWidth - visitorsSalesViewportEl.clientWidth,
+    );
+    return;
+  }
+
+  const viewport = visitorsSalesViewportEl;
+  const columnRect = todayColumn.getBoundingClientRect();
+  const viewportRect = viewport.getBoundingClientRect();
+  const colCenter =
+    columnRect.left - viewportRect.left + viewport.scrollLeft + columnRect.width / 2;
+  viewport.scrollLeft = Math.max(0, colCenter - viewport.clientWidth / 2);
+}
+
+function renderVisitorsSalesChart(chartData) {
+  visitorsSalesChartEl.replaceChildren();
+  visitorsSalesStatusEl.hidden = true;
+
+  if (chartData?.error) {
+    visitorsSalesMetaEl.textContent = "";
+    visitorsSalesStatusEl.hidden = false;
+    visitorsSalesStatusEl.textContent = chartData.error;
+    return;
+  }
+
+  const series = chartData?.series ?? [];
+  const totalDays = chartData?.total_days ?? series.length;
+
+  if (!series.length) {
+    visitorsSalesMetaEl.textContent = "Histórico completo · sem registos ainda";
+    visitorsSalesStatusEl.hidden = false;
+    visitorsSalesStatusEl.textContent =
+      "Os dados aparecem aqui à medida que carregas estatísticas (visitantes Vercel + vendas Lemon Squeezy).";
+    return;
+  }
+
+  visitorsSalesMetaEl.textContent = `${formatNumber(totalDays)} dias registados · histórico completo`;
+
+  const maxVisitors = Math.max(...series.map((entry) => entry.visitors), 1);
+  const maxSales = Math.max(...series.map((entry) => entry.sales), 1);
+  const labelFormatter = new Intl.DateTimeFormat("pt-PT", {
+    day: "2-digit",
+    month: "2-digit",
+  });
+
+  for (const entry of series) {
+    const col = document.createElement("div");
+    col.className = "admin-vbars-day";
+    if (entry.is_today) col.classList.add("is-today");
+
+    const visitorHeight = Math.max(2, Math.round((entry.visitors / maxVisitors) * 100));
+    const salesHeight = Math.max(2, Math.round((entry.sales / maxSales) * 100));
+    const visitorValueClass = visitorHeight < 16 ? " is-hidden" : "";
+    const salesValueClass = salesHeight < 16 ? " is-hidden" : "";
+    const label = labelFormatter.format(new Date(`${entry.date}T12:00:00`));
+
+    col.innerHTML = `
+      <div class="admin-vbars-bars" aria-hidden="true">
+        <div
+          class="admin-vbars-bar admin-vbars-bar--visitors"
+          style="height: ${visitorHeight}%"
+          title="Visitantes únicos: ${formatNumber(entry.visitors)}"
+        >
+          <span class="admin-vbars-bar__value${visitorValueClass}">${entry.visitors > 0 ? formatNumber(entry.visitors) : ""}</span>
+        </div>
+        <div
+          class="admin-vbars-bar admin-vbars-bar--sales"
+          style="height: ${salesHeight}%"
+          title="Vendas: ${formatNumber(entry.sales)}"
+        >
+          <span class="admin-vbars-bar__value${salesValueClass}">${entry.sales > 0 ? formatNumber(entry.sales) : ""}</span>
+        </div>
+      </div>
+      <span class="admin-vbars-day__label">${escapeHtml(label)}</span>
+    `;
+    visitorsSalesChartEl.appendChild(col);
+  }
+
+  scrollVisitorsSalesToToday();
+}
+
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -230,6 +320,7 @@ form.addEventListener("submit", async (event) => {
     generatedEl.textContent = `Actualizado: ${new Date(data.generated_at).toLocaleString("pt-PT")}`;
     renderSummary(data.summary);
     renderTraffic(data.traffic);
+    renderVisitorsSalesChart(data.visitors_vs_sales);
     renderPackages(data.packages);
     renderSources(data.summary.entitlement_sources);
     renderNotes(data.notes);
