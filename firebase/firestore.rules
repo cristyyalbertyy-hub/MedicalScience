@@ -22,14 +22,22 @@ service cloud.firestore {
 
     function allowedProgressPackage(packageId) {
       return packageId in [
+        'human-anatomy-1',
         'medical-biology',
         'genetics',
+        'physics',
+        'information-processing',
+        'statistics',
         'histology',
         'embryology',
         'histology-embryology',
         'chemistry',
         'introductory-biochemistry',
-        'chemistry-introductory-biochemistry'
+        'chemistry-introductory-biochemistry',
+        'history-of-medicine',
+        'moral-philosophy',
+        'health-technology-assessments',
+        'italian-health-system'
       ];
     }
 
