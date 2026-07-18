@@ -97,8 +97,30 @@
           <h2>Visitantes únicos vs vendas</h2>
           <p id="visitors-sales-meta" class="admin-chart-meta"></p>
           <p id="visitors-sales-status" class="admin-chart-status" hidden></p>
-          <div id="visitors-sales-viewport" class="admin-vbars-viewport">
-            <div id="visitors-sales-chart" class="admin-vbars-chart" role="img" aria-label="Gráfico de barras verticais: visitantes únicos e vendas por dia"></div>
+          <div id="visitors-sales-carousel" class="admin-vbars-carousel" hidden>
+            <div id="visitors-sales-rail" class="admin-vbars-month-rail" aria-label="Meses ocultos"></div>
+            <div class="admin-vbars-month-panel">
+              <div class="admin-vbars-month-head">
+                <h3 id="visitors-sales-month-title" class="admin-vbars-month-title"></h3>
+                <button
+                  type="button"
+                  id="visitors-sales-month-nav"
+                  class="admin-vbars-month-nav admin-vbars-month-nav--visible"
+                  title="Arrastar: direita = mês seguinte · esquerda = mês anterior"
+                  aria-label="Navegar entre meses"
+                >
+                  ›
+                </button>
+              </div>
+              <div id="visitors-sales-viewport" class="admin-vbars-viewport">
+                <div
+                  id="visitors-sales-chart"
+                  class="admin-vbars-chart"
+                  role="img"
+                  aria-label="Gráfico de barras verticais por dia do mês"
+                ></div>
+              </div>
+            </div>
           </div>
           <div class="admin-vbars-legend">
             <span class="admin-vbars-legend__item admin-vbars-legend__item--visitors">Visitantes únicos (azul)</span>

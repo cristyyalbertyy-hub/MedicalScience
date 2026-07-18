@@ -214,6 +214,97 @@
   font-size: 0.92rem;
 }
 
+.admin-vbars-carousel {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fafbfc;
+  overflow: hidden;
+}
+
+.admin-vbars-month-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.45rem 0.3rem;
+  border-right: 1px solid var(--line);
+  background: #f3f5f8;
+}
+
+.admin-vbars-month-rail:empty {
+  display: none;
+}
+
+.admin-vbars-month-tab {
+  width: 0.85rem;
+  height: 0.85rem;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background: #dc2626;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.admin-vbars-month-tab:hover {
+  filter: brightness(0.92);
+}
+
+.admin-vbars-month-tab:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.admin-vbars-month-panel {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  gap: 0;
+}
+
+.admin-vbars-month-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.65rem 0.35rem;
+}
+
+.admin-vbars-month-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.admin-vbars-month-nav {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.admin-vbars-month-nav--visible {
+  background: #16a34a;
+  color: #fff;
+}
+
+.admin-vbars-month-nav.is-dragging {
+  cursor: grabbing;
+}
+
 .admin-vbars-viewport {
   width: 100%;
   max-width: 100%;
@@ -221,10 +312,7 @@
   overflow-x: auto;
   overflow-y: hidden;
   overscroll-behavior: contain;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: #fafbfc;
-  padding: 0.45rem 0.35rem;
+  padding: 0.15rem 0.45rem 0.45rem;
 }
 
 .admin-vbars-chart {
@@ -242,9 +330,12 @@
   justify-items: center;
 }
 
-.admin-vbars-day.is-today .admin-vbars-day__label {
-  font-weight: 800;
-  color: var(--primary);
+.admin-vbars-day.is-future .admin-vbars-day__label {
+  opacity: 0.35;
+}
+
+.admin-vbars-bars--empty {
+  opacity: 0.12;
 }
 
 .admin-vbars-bars {
@@ -295,6 +386,11 @@
   color: var(--muted);
   text-align: center;
   line-height: 1.1;
+}
+
+.admin-vbars-day.is-today .admin-vbars-day__label {
+  font-weight: 800;
+  color: var(--primary);
 }
 
 .admin-vbars-legend {

@@ -15,8 +15,20 @@ const devicesTableBody = document.querySelector("#devices-table tbody");
 const dailyChartEl = document.getElementById("daily-chart");
 const visitorsSalesChartEl = document.getElementById("visitors-sales-chart");
 const visitorsSalesViewportEl = document.getElementById("visitors-sales-viewport");
+const visitorsSalesCarouselEl = document.getElementById("visitors-sales-carousel");
+const visitorsSalesRailEl = document.getElementById("visitors-sales-rail");
+const visitorsSalesMonthTitleEl = document.getElementById("visitors-sales-month-title");
+const visitorsSalesMonthNavEl = document.getElementById("visitors-sales-month-nav");
 const visitorsSalesMetaEl = document.getElementById("visitors-sales-meta");
 const visitorsSalesStatusEl = document.getElementById("visitors-sales-status");
+
+const MONTH_LABEL = new Intl.DateTimeFormat("pt-PT", { month: "long", timeZone: "UTC" });
+
+let visitorsSalesMonths = [];
+let visitorsSalesActiveIndex = 0;
+let visitorsSalesNavReady = false;
+let visitorsSalesDragActive = false;
+let visitorsSalesDragStartX = 0;
 
 function setStatus(message, type = "") {
   statusEl.hidden = !message;
@@ -205,14 +217,47 @@ function renderDailyChart(daily) {
   }
 }
 
+function capitalizeMonthLabel(label) {
+  if (!label) return "";
+  return label.charAt(0).toUpperCase() + label.slice(1);
+}
+
+function buildMonthsFromSeries(series, todayKey) {
+  const byDate = new Map(series.map((entry) => [entry.date, entry]));
+  const monthKeys = new Set(series.map((entry) => entry.date.slice(0, 7)));
+  monthKeys.add(todayKey.slice(0, 7));
+
+  return [...monthKeys].sort().map((monthKey) => {
+    const [year, month] = monthKey.split("-").map(Number);
+    const daysInMonth = new Date(Date.UTC(year, month, 0)).getUTCDate();
+    const days = [];
+
+    for (let day = 1; day <= daysInMonth; day += 1) {
+      const date = `${monthKey}-${String(day).padStart(2, "0")}`;
+      const stored = byDate.get(date);
+      days.push({
+        date,
+        day,
+        visitors: stored?.visitors ?? 0,
+        sales: stored?.sales ?? 0,
+        is_today: date === todayKey,
+        is_future: date > todayKey,
+      });
+    }
+
+    const monthLabel = capitalizeMonthLabel(
+      MONTH_LABEL.format(new Date(Date.UTC(year, month - 1, 1))),
+    );
+
+    return { monthKey, monthLabel, days };
+  });
+}
+
 function scrollVisitorsSalesToToday() {
   if (!visitorsSalesViewportEl || !visitorsSalesChartEl) return;
   const todayColumn = visitorsSalesChartEl.querySelector(".admin-vbars-day.is-today");
   if (!todayColumn) {
-    visitorsSalesViewportEl.scrollLeft = Math.max(
-      0,
-      visitorsSalesViewportEl.scrollWidth - visitorsSalesViewportEl.clientWidth,
-    );
+    visitorsSalesViewportEl.scrollLeft = 0;
     return;
   }
 
@@ -224,9 +269,140 @@ function scrollVisitorsSalesToToday() {
   viewport.scrollLeft = Math.max(0, colCenter - viewport.clientWidth / 2);
 }
 
+function renderVisitorsSalesMonthChart(month) {
+  visitorsSalesChartEl.replaceChildren();
+  if (!month) return;
+
+  const pastDays = month.days.filter((entry) => !entry.is_future);
+  const maxVisitors = Math.max(...pastDays.map((entry) => entry.visitors), 1);
+  const maxSales = Math.max(...pastDays.map((entry) => entry.sales), 1);
+
+  for (const entry of month.days) {
+    const col = document.createElement("div");
+    col.className = "admin-vbars-day";
+    if (entry.is_today) col.classList.add("is-today");
+    if (entry.is_future) col.classList.add("is-future");
+
+    let barsHtml = `<div class="admin-vbars-bars admin-vbars-bars--empty" aria-hidden="true"></div>`;
+
+    if (!entry.is_future) {
+      const visitorHeight = Math.max(2, Math.round((entry.visitors / maxVisitors) * 100));
+      const salesHeight = Math.max(2, Math.round((entry.sales / maxSales) * 100));
+      const visitorValueClass = visitorHeight < 16 ? " is-hidden" : "";
+      const salesValueClass = salesHeight < 16 ? " is-hidden" : "";
+      barsHtml = `
+        <div class="admin-vbars-bars" aria-hidden="true">
+          <div
+            class="admin-vbars-bar admin-vbars-bar--visitors"
+            style="height: ${visitorHeight}%"
+            title="Visitantes únicos: ${formatNumber(entry.visitors)}"
+          >
+            <span class="admin-vbars-bar__value${visitorValueClass}">${entry.visitors > 0 ? formatNumber(entry.visitors) : ""}</span>
+          </div>
+          <div
+            class="admin-vbars-bar admin-vbars-bar--sales"
+            style="height: ${salesHeight}%"
+            title="Vendas: ${formatNumber(entry.sales)}"
+          >
+            <span class="admin-vbars-bar__value${salesValueClass}">${entry.sales > 0 ? formatNumber(entry.sales) : ""}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    col.innerHTML = `
+      ${barsHtml}
+      <span class="admin-vbars-day__label">${entry.day}</span>
+    `;
+    visitorsSalesChartEl.appendChild(col);
+  }
+
+  scrollVisitorsSalesToToday();
+}
+
+function renderVisitorsSalesRail() {
+  visitorsSalesRailEl.replaceChildren();
+
+  for (let index = 0; index < visitorsSalesMonths.length; index += 1) {
+    if (index === visitorsSalesActiveIndex) continue;
+
+    const month = visitorsSalesMonths[index];
+    const tab = document.createElement("button");
+    tab.type = "button";
+    tab.className = "admin-vbars-month-tab";
+    tab.title = `Mostrar ${month.monthLabel}`;
+    tab.setAttribute("aria-label", `Mostrar ${month.monthLabel}`);
+    tab.addEventListener("click", () => {
+      visitorsSalesActiveIndex = index;
+      renderVisitorsSalesMonthView();
+    });
+    visitorsSalesRailEl.appendChild(tab);
+  }
+}
+
+function renderVisitorsSalesMonthView() {
+  const month = visitorsSalesMonths[visitorsSalesActiveIndex];
+  if (!month) return;
+
+  visitorsSalesMonthTitleEl.textContent = month.monthLabel;
+  visitorsSalesMonthNavEl.classList.toggle(
+    "admin-vbars-month-nav--visible",
+    visitorsSalesMonths.length > 1,
+  );
+  visitorsSalesMonthNavEl.hidden = visitorsSalesMonths.length <= 1;
+  renderVisitorsSalesRail();
+  renderVisitorsSalesMonthChart(month);
+}
+
+function setVisitorsSalesActiveMonth(monthKey) {
+  const index = visitorsSalesMonths.findIndex((month) => month.monthKey === monthKey);
+  if (index >= 0) visitorsSalesActiveIndex = index;
+}
+
+function shiftVisitorsSalesMonth(delta) {
+  if (!visitorsSalesMonths.length) return;
+  visitorsSalesActiveIndex = Math.max(
+    0,
+    Math.min(visitorsSalesMonths.length - 1, visitorsSalesActiveIndex + delta),
+  );
+  renderVisitorsSalesMonthView();
+}
+
+function setupVisitorsSalesMonthNav() {
+  if (!visitorsSalesMonthNavEl || visitorsSalesNavReady) return;
+  visitorsSalesNavReady = true;
+
+  visitorsSalesMonthNavEl.addEventListener("click", () => {
+    shiftVisitorsSalesMonth(1);
+  });
+
+  visitorsSalesMonthNavEl.addEventListener("mousedown", (event) => {
+    if (event.button !== 0) return;
+    visitorsSalesDragActive = true;
+    visitorsSalesDragStartX = event.clientX;
+    visitorsSalesMonthNavEl.classList.add("is-dragging");
+    event.preventDefault();
+  });
+
+  window.addEventListener("mousemove", (event) => {
+    if (!visitorsSalesDragActive) return;
+    const delta = event.clientX - visitorsSalesDragStartX;
+    if (Math.abs(delta) < 36) return;
+    shiftVisitorsSalesMonth(delta > 0 ? 1 : -1);
+    visitorsSalesDragStartX = event.clientX;
+  });
+
+  window.addEventListener("mouseup", () => {
+    visitorsSalesDragActive = false;
+    visitorsSalesMonthNavEl?.classList.remove("is-dragging");
+  });
+}
+
 function renderVisitorsSalesChart(chartData) {
   visitorsSalesChartEl.replaceChildren();
+  visitorsSalesRailEl.replaceChildren();
   visitorsSalesStatusEl.hidden = true;
+  visitorsSalesCarouselEl.hidden = true;
 
   if (chartData?.error) {
     visitorsSalesMetaEl.textContent = "";
@@ -237,6 +413,7 @@ function renderVisitorsSalesChart(chartData) {
 
   const series = chartData?.series ?? [];
   const totalDays = chartData?.total_days ?? series.length;
+  const todayKey = chartData?.today ?? new Date().toISOString().slice(0, 10);
 
   if (!series.length) {
     visitorsSalesMetaEl.textContent = "Histórico completo · sem registos ainda";
@@ -246,49 +423,13 @@ function renderVisitorsSalesChart(chartData) {
     return;
   }
 
-  visitorsSalesMetaEl.textContent = `${formatNumber(totalDays)} dias registados · histórico completo`;
+  visitorsSalesMonths = buildMonthsFromSeries(series, todayKey);
+  setVisitorsSalesActiveMonth(todayKey.slice(0, 7));
+  visitorsSalesMetaEl.textContent = `${formatNumber(visitorsSalesMonths.length)} meses · ${formatNumber(totalDays)} dias registados`;
+  visitorsSalesCarouselEl.hidden = false;
 
-  const maxVisitors = Math.max(...series.map((entry) => entry.visitors), 1);
-  const maxSales = Math.max(...series.map((entry) => entry.sales), 1);
-  const labelFormatter = new Intl.DateTimeFormat("pt-PT", {
-    day: "2-digit",
-    month: "2-digit",
-  });
-
-  for (const entry of series) {
-    const col = document.createElement("div");
-    col.className = "admin-vbars-day";
-    if (entry.is_today) col.classList.add("is-today");
-
-    const visitorHeight = Math.max(2, Math.round((entry.visitors / maxVisitors) * 100));
-    const salesHeight = Math.max(2, Math.round((entry.sales / maxSales) * 100));
-    const visitorValueClass = visitorHeight < 16 ? " is-hidden" : "";
-    const salesValueClass = salesHeight < 16 ? " is-hidden" : "";
-    const label = labelFormatter.format(new Date(`${entry.date}T12:00:00`));
-
-    col.innerHTML = `
-      <div class="admin-vbars-bars" aria-hidden="true">
-        <div
-          class="admin-vbars-bar admin-vbars-bar--visitors"
-          style="height: ${visitorHeight}%"
-          title="Visitantes únicos: ${formatNumber(entry.visitors)}"
-        >
-          <span class="admin-vbars-bar__value${visitorValueClass}">${entry.visitors > 0 ? formatNumber(entry.visitors) : ""}</span>
-        </div>
-        <div
-          class="admin-vbars-bar admin-vbars-bar--sales"
-          style="height: ${salesHeight}%"
-          title="Vendas: ${formatNumber(entry.sales)}"
-        >
-          <span class="admin-vbars-bar__value${salesValueClass}">${entry.sales > 0 ? formatNumber(entry.sales) : ""}</span>
-        </div>
-      </div>
-      <span class="admin-vbars-day__label">${escapeHtml(label)}</span>
-    `;
-    visitorsSalesChartEl.appendChild(col);
-  }
-
-  scrollVisitorsSalesToToday();
+  setupVisitorsSalesMonthNav();
+  renderVisitorsSalesMonthView();
 }
 
 function escapeHtml(value) {
