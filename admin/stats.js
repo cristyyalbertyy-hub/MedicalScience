@@ -17,7 +17,7 @@ const comboChartEl = document.getElementById("combo-chart");
 const comboChartInnerEl = document.getElementById("combo-chart-inner");
 const comboChartMonthEl = document.getElementById("combo-chart-month");
 const comboChartMonthLabelEl = document.getElementById("combo-chart-month-label");
-const comboChartScrollEl = document.getElementById("combo-chart-scroll");
+const comboChartViewportEl = document.getElementById("combo-chart-viewport");
 const comboChartStatusEl = document.getElementById("combo-chart-status");
 const comboZoomInBtn = document.getElementById("combo-zoom-in");
 const comboZoomOutBtn = document.getElementById("combo-zoom-out");
@@ -213,12 +213,27 @@ function renderDailyChart(daily) {
   }
 }
 
+function scrollComboToColumn(column) {
+  if (!column || !comboChartViewportEl) return;
+  const viewport = comboChartViewportEl;
+  const columnRect = column.getBoundingClientRect();
+  const viewportRect = viewport.getBoundingClientRect();
+  const colCenter =
+    columnRect.left - viewportRect.left + viewport.scrollLeft + columnRect.width / 2;
+  viewport.scrollLeft = Math.max(0, colCenter - viewport.clientWidth / 2);
+}
+
 function applyComboZoom() {
   const zoom = COMBO_ZOOM_LEVELS[comboZoomIndex] ?? 1;
   comboChartInnerEl.style.setProperty("--combo-zoom", String(zoom));
   comboZoomLabelEl.textContent = `${Math.round(zoom * 100)}%`;
   comboZoomOutBtn.disabled = comboZoomIndex <= 0;
   comboZoomInBtn.disabled = comboZoomIndex >= COMBO_ZOOM_LEVELS.length - 1;
+
+  const todayColumn = comboChartEl.querySelector(".admin-combo-day.is-today");
+  if (todayColumn) {
+    scrollComboToColumn(todayColumn);
+  }
 }
 
 function renderVisitorsSalesChart(chartData, traffic) {
@@ -243,16 +258,11 @@ function renderVisitorsSalesChart(chartData, traffic) {
   const maxVisitors = Math.max(...pastDays.map((entry) => entry.visitors), 1);
   const maxSales = Math.max(...pastDays.map((entry) => entry.sales), 1);
 
-  let todayColumn = null;
-
   for (const entry of series) {
     const col = document.createElement("div");
     col.className = "admin-combo-day";
     if (entry.is_future) col.classList.add("is-future");
-    if (entry.is_today) {
-      col.classList.add("is-today");
-      todayColumn = col;
-    }
+    if (entry.is_today) col.classList.add("is-today");
 
     const label = String(entry.day);
     let barsHtml = `<div class="admin-combo-bars admin-combo-bars--empty" aria-hidden="true"></div>`;
@@ -289,10 +299,11 @@ function renderVisitorsSalesChart(chartData, traffic) {
 
   applyComboZoom();
 
+  const todayColumn = comboChartEl.querySelector(".admin-combo-day.is-today");
   if (todayColumn) {
-    todayColumn.scrollIntoView({ inline: "center", block: "nearest" });
-  } else {
-    comboChartScrollEl.scrollLeft = comboChartScrollEl.scrollWidth;
+    scrollComboToColumn(todayColumn);
+  } else if (comboChartViewportEl) {
+    comboChartViewportEl.scrollLeft = comboChartViewportEl.scrollWidth;
   }
 }
 
@@ -315,6 +326,22 @@ comboZoomOutBtn?.addEventListener("click", () => {
   comboZoomIndex -= 1;
   applyComboZoom();
 });
+
+comboChartViewportEl?.addEventListener(
+  "wheel",
+  (event) => {
+    if (!event.ctrlKey) return;
+    event.preventDefault();
+    if (event.deltaY < 0 && comboZoomIndex < COMBO_ZOOM_LEVELS.length - 1) {
+      comboZoomIndex += 1;
+      applyComboZoom();
+    } else if (event.deltaY > 0 && comboZoomIndex > 0) {
+      comboZoomIndex -= 1;
+      applyComboZoom();
+    }
+  },
+  { passive: false },
+);
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
