@@ -165,32 +165,6 @@ function extractTotal(response, rollupColumn) {
   );
 }
 
-export async function fetchMonthUniqueVisitors() {
-  const { token, teamId, projectId } = getConfig();
-
-  if (!token || !teamId || !projectId) {
-    return [];
-  }
-
-  const now = new Date();
-  const startTime = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1));
-  const endTime = now;
-
-  try {
-    const response = await queryMetrics({
-      token,
-      teamId,
-      projectId,
-      startTime,
-      endTime,
-      aggregation: AGGREGATION_UNIQUE,
-    });
-    return parseDailySeries(response, ROLLUP_UNIQUE);
-  } catch {
-    return [];
-  }
-}
-
 export async function fetchVercelAnalytics() {
   const { token, teamId, projectId, days } = getConfig();
 
@@ -256,7 +230,6 @@ export async function fetchVercelAnalytics() {
       pageviews: row.pageviews,
     }));
     const daily = parseDailySeries(totals);
-    const daily_visitors = parseDailySeries(uniqueVisitors, ROLLUP_UNIQUE);
 
     return {
       configured: true,
@@ -269,7 +242,6 @@ export async function fetchVercelAnalytics() {
       pageviews: extractTotal(totals, ROLLUP_SUM),
       unique_visitors: extractTotal(uniqueVisitors, ROLLUP_UNIQUE),
       daily,
-      daily_visitors,
       countries,
       top_pages: topPages,
       devices,

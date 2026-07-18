@@ -1,7 +1,6 @@
 import { getAuth, getFirestore } from "./firebase.js";
 import { getCatalog } from "./catalog.js";
-import { syncVisitorsVsSalesChart } from "./stats-daily-chart.js";
-import { fetchMonthUniqueVisitors, fetchVercelAnalytics } from "./vercel-analytics.js";
+import { fetchVercelAnalytics } from "./vercel-analytics.js";
 
 function isActiveEntitlement(data, nowMs) {
   const expires = new Date(data.expires_at).getTime();
@@ -111,15 +110,6 @@ export async function collectAdminStats() {
 
   packages.sort((a, b) => b.active_entitlements - a.active_entitlements);
 
-  const monthDailyVisitors =
-    traffic.configured && !traffic.error ? await fetchMonthUniqueVisitors() : [];
-
-  const visitors_vs_sales = await syncVisitorsVsSalesChart(
-    db,
-    monthDailyVisitors,
-    ordersSnap,
-  );
-
   return {
     generated_at: new Date().toISOString(),
     summary: {
@@ -134,10 +124,7 @@ export async function collectAdminStats() {
       entitlement_sources: sources,
     },
     packages,
-    traffic: {
-      ...traffic,
-      visitors_vs_sales,
-    },
+    traffic,
     notes: {
       traffic: traffic.configured
         ? traffic.error
