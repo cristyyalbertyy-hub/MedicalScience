@@ -75,6 +75,7 @@ SITE_LOCALES.it = {
     tiktok: "TikTok",
     facebook: "Facebook",
     instagram: "Instagram",
+    youtube: "YouTube",
     threads: "Threads",
   },
   promo: {

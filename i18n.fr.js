@@ -75,6 +75,7 @@ SITE_LOCALES.fr = {
     tiktok: "TikTok",
     facebook: "Facebook",
     instagram: "Instagram",
+    youtube: "YouTube",
     threads: "Threads",
   },
   promo: {

@@ -80,6 +80,7 @@ const SITE_LOCALES = {
       tiktok: "TikTok",
       facebook: "Facebook",
       instagram: "Instagram",
+      youtube: "YouTube",
       threads: "Threads",
     },
     promo: {
