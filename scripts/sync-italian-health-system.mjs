@@ -15,7 +15,14 @@ if (!existsSync(join(appRoot, "package.json"))) {
 }
 
 console.log("Building Italian Health System…");
-execSync("npm run build", { cwd: appRoot, stdio: "inherit" });
+execSync("npm run build", {
+  cwd: appRoot,
+  stdio: "inherit",
+  env: {
+    ...process.env,
+    STUDIO9_SITE_BASE: "/italian-health-system/",
+  },
+});
 
 if (!existsSync(distDir)) {
   console.error("Build output missing:", distDir);
