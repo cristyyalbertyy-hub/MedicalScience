@@ -21,6 +21,7 @@ execSync("npm run build", {
   env: {
     ...process.env,
     STUDIO9_SITE_BASE: "/italian-health-system/",
+    VITE_MEDIA_ORIGIN: "https://italian-health-system.vercel.app/",
   },
 });
 
