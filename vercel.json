@@ -8,7 +8,8 @@
     { "source": "/contacto", "destination": "/contacto/index.html" },
     { "source": "/contacto/", "destination": "/contacto/index.html" },
     { "source": "/curriculo", "destination": "/packages/" },
-    { "source": "/curriculo/", "destination": "/packages/" }
+    { "source": "/curriculo/", "destination": "/packages/" },
+    { "source": "/italian-health-system", "destination": "/italian-health-system/" }
   ],
   "headers": [
     {

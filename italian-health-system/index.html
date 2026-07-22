@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <title>Italian Health System · Studio9 Medical Science</title>
+    <meta
+      name="description"
+      content="Free Studio9 module: organisation, supply and budgeting in the Italian health system."
+    />
+    <meta name="theme-color" content="#1F4E6B" />
+    <link rel="icon" type="image/png" href="../StudioNine.png" />
+    <style>
+      :root {
+        color-scheme: light;
+        --primary: #1f4e6b;
+        --line: rgba(31, 78, 107, 0.16);
+        --muted: #52606d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #f7f9fb;
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      .app-shell {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        min-height: 100%;
+        height: 100dvh;
+      }
+
+      .app-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        padding: 0.55rem 0.85rem;
+        border-bottom: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(8px);
+      }
+
+      .app-bar__brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        min-width: 0;
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 0.86rem;
+        font-weight: 700;
+      }
+
+      .app-bar__brand img {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+      }
+
+      .app-bar__brand span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .app-bar__back {
+        flex-shrink: 0;
+        color: var(--primary);
+        text-decoration: none;
+        font-size: 0.82rem;
+        font-weight: 700;
+        padding: 0.42rem 0.75rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+      }
+
+      .app-frame-wrap {
+        position: relative;
+        min-height: 0;
+      }
+
+      .app-frame {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background: #fff;
+      }
+
+      .app-loading {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        gap: 0.65rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+        background: #f7f9fb;
+        transition: opacity 0.2s ease;
+      }
+
+      .app-loading.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-bar">
+        <a class="app-bar__brand" href="../packages/">
+          <img src="../StudioNine.png" alt="" width="28" height="28" />
+          <span>Italian Health System · Studio9</span>
+        </a>
+        <a class="app-bar__back" href="../packages/">← All disciplines</a>
+      </header>
+      <div class="app-frame-wrap">
+        <p class="app-loading" id="app-loading">Loading Italian Health System…</p>
+        <iframe
+          id="app-frame"
+          class="app-frame"
+          title="Italian Health System app"
+          src="https://italian-health-system.vercel.app/"
+          loading="eager"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="fullscreen"
+        ></iframe>
+      </div>
+    </div>
+    <script>
+      const frame = document.getElementById("app-frame");
+      const loading = document.getElementById("app-loading");
+      frame.addEventListener("load", () => loading.classList.add("is-hidden"));
+    </script>
+  </body>
+</html>

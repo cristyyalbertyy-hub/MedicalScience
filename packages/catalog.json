@@ -188,7 +188,7 @@
     },
     "italian-health-system": {
       "title": "Italian Health System",
-      "url": "https://italian-health-system.vercel.app/",
+      "url": "/italian-health-system/",
       "free": true
     }
   },

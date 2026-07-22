@@ -104,7 +104,7 @@ const READY_PACKAGES = [
     title: "Italian Health System",
     description:
       "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
-    url: "https://italian-health-system.vercel.app/",
+    url: "/italian-health-system/",
     status: "live",
   },
 ];
