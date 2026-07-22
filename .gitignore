@@ -7,6 +7,7 @@ Thumbs.db
 *.log
 node_modules/
 reports/
+italian-health-system/IHS*
 assets/source/*.png
 assets/source/*.jpeg
 assets/source/*.jpg
