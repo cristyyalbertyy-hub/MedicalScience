@@ -1,0 +1,66 @@
+{
+  "human-anatomy-1": {
+    "title": "Human Anatomy I",
+    "embedUrl": "https://human-anatomy1.vercel.app/"
+  },
+  "medical-biology": {
+    "title": "Medical Biology",
+    "embedUrl": "https://biology-genetics.vercel.app/"
+  },
+  "genetics": {
+    "title": "Genetics",
+    "embedUrl": "https://medica-genetics.vercel.app/"
+  },
+  "physics": {
+    "title": "Physics",
+    "embedUrl": "https://physics-tau-five.vercel.app/"
+  },
+  "information-processing": {
+    "title": "Information Processing",
+    "embedUrl": "https://informatics-theta.vercel.app/"
+  },
+  "statistics": {
+    "title": "Statistics",
+    "embedUrl": "https://statistics-nu-eight.vercel.app/"
+  },
+  "histology": {
+    "title": "Histology",
+    "embedUrl": "https://histology-embryology.vercel.app/"
+  },
+  "embryology": {
+    "title": "Embryology",
+    "embedUrl": "https://histology-embryology.vercel.app/"
+  },
+  "histology-embryology": {
+    "title": "Histology and Embryology",
+    "embedUrl": "https://histology-embryology.vercel.app/"
+  },
+  "chemistry": {
+    "title": "Chemistry",
+    "embedUrl": "https://chemistry-roan.vercel.app/"
+  },
+  "introductory-biochemistry": {
+    "title": "Introductory Biochemistry",
+    "embedUrl": "https://chemistry-roan.vercel.app/"
+  },
+  "chemistry-introductory-biochemistry": {
+    "title": "Chemistry and Introductory Biochemistry",
+    "embedUrl": "https://chemistry-roan.vercel.app/"
+  },
+  "history-of-medicine": {
+    "title": "History of Medicine",
+    "embedUrl": "https://history-medicine.vercel.app/"
+  },
+  "moral-philosophy": {
+    "title": "Moral Philosophy",
+    "embedUrl": "https://moral-philosophy.vercel.app/"
+  },
+  "health-technology-assessments": {
+    "title": "Health Technology Assessments (EU)",
+    "embedUrl": "https://health-technology-assessments.vercel.app/"
+  },
+  "italian-health-system": {
+    "title": "Italian Health System",
+    "embedUrl": "https://italian-health-system.vercel.app/"
+  }
+}

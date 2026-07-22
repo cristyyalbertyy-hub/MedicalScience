@@ -23,7 +23,7 @@ const READY_PACKAGES = [
     title: "Human Anatomy I",
     description:
       "Skeletal, muscular and nervous systems — the base for clinical study and dissection-ready terminology.",
-    url: "https://human-anatomy1.vercel.app/",
+    url: "/human-anatomy-1/",
     status: "live",
   },
   {
@@ -32,7 +32,7 @@ const READY_PACKAGES = [
     title: "Medical Biology",
     description:
       "Cell biology, tissues, metabolism and the core foundations for health-sciences study.",
-    url: "https://biology-genetics.vercel.app/",
+    url: "/medical-biology/",
     status: "live",
   },
   {
@@ -41,7 +41,7 @@ const READY_PACKAGES = [
     title: "Genetics",
     description:
       "Mendelian inheritance, mutations, pedigrees and clinical genetics scenarios.",
-    url: "https://medica-genetics.vercel.app/",
+    url: "/genetics/",
     status: "live",
   },
   {
@@ -50,7 +50,7 @@ const READY_PACKAGES = [
     title: "Physics",
     description:
       "Physical principles applied to the human body, imaging, forces and measurement in medicine.",
-    url: "https://physics-tau-five.vercel.app/",
+    url: "/physics/",
     status: "live",
   },
   {
@@ -59,7 +59,7 @@ const READY_PACKAGES = [
     title: "Information Processing",
     description:
       "Data literacy and digital tools for evidence-based study — classes, videos, podcasts and questions.",
-    url: "https://informatics-theta.vercel.app/",
+    url: "/information-processing/",
     status: "live",
   },
   {
@@ -68,7 +68,7 @@ const READY_PACKAGES = [
     title: "Statistics",
     description:
       "Descriptive and inferential statistics for health sciences.",
-    url: "https://statistics-nu-eight.vercel.app/",
+    url: "/statistics/",
     status: "live",
   },
   {
@@ -77,7 +77,7 @@ const READY_PACKAGES = [
     title: "History of Medicine",
     description:
       "Key discoveries, figures and turning points that shaped modern health sciences.",
-    url: "https://history-medicine.vercel.app/",
+    url: "/history-of-medicine/",
     status: "live",
   },
   {
@@ -86,7 +86,7 @@ const READY_PACKAGES = [
     title: "Moral Philosophy",
     description:
       "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
-    url: "https://moral-philosophy.vercel.app/",
+    url: "/moral-philosophy/",
     status: "live",
   },
   {
@@ -95,7 +95,7 @@ const READY_PACKAGES = [
     title: "Health Technology Assessments (EU)",
     description:
       "European Union focus — HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
-    url: "https://health-technology-assessments.vercel.app/",
+    url: "/health-technology-assessments/",
     status: "live",
   },
   {
@@ -211,41 +211,41 @@ const SPLIT_PACKAGE_FALLBACK = {
     title: "Histology",
     description:
       "Cytology and fundamental tissues — epithelia, connective tissue, muscle and nervous tissue.",
-    url: "https://histology-embryology.vercel.app/",
+    url: "/histology/",
     parentApp: "histology-embryology",
   },
   embryology: {
     title: "Embryology",
     description:
       "Gametogenesis, early development, organogenesis and correlation with anatomy.",
-    url: "https://histology-embryology.vercel.app/",
+    url: "/embryology/",
     parentApp: "histology-embryology",
   },
   "histology-embryology": {
     title: "Histology and Embryology",
     description:
       "Microscopy, fundamental tissues, early development, and correlation with anatomy.",
-    url: "https://histology-embryology.vercel.app/",
+    url: "/histology-embryology/",
     bundleOf: ["histology", "embryology"],
   },
   chemistry: {
     title: "Chemistry",
     description: "General and organic chemistry — structure, bonding, equilibrium and functional groups.",
-    url: "https://chemistry-roan.vercel.app/",
+    url: "/chemistry/",
     parentApp: "chemistry-introductory-biochemistry",
   },
   "introductory-biochemistry": {
     title: "Introductory Biochemistry",
     description:
       "Carbohydrates, proteins, lipids and nucleotides — the molecular foundations for health sciences.",
-    url: "https://chemistry-roan.vercel.app/",
+    url: "/introductory-biochemistry/",
     parentApp: "chemistry-introductory-biochemistry",
   },
   "chemistry-introductory-biochemistry": {
     title: "Chemistry and Introductory Biochemistry",
     description:
       "Atomic structure, chemical bonding, proteins, enzymes, metabolism and the molecular foundations for health sciences.",
-    url: "https://chemistry-roan.vercel.app/",
+    url: "/chemistry-introductory-biochemistry/",
     bundleOf: ["chemistry", "introductory-biochemistry"],
   },
 };

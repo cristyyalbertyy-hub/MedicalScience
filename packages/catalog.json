@@ -17,7 +17,9 @@
     "moral-philosophy",
     "health-technology-assessments"
   ],
-  "freePackageIds": ["italian-health-system"],
+  "freePackageIds": [
+    "italian-health-system"
+  ],
   "paidPackageIds": [
     "human-anatomy-1",
     "medical-biology",
@@ -36,24 +38,50 @@
     "health-technology-assessments"
   ],
   "packageBundles": {
-    "histology-embryology": ["histology", "embryology"],
-    "chemistry-introductory-biochemistry": ["chemistry", "introductory-biochemistry"]
+    "histology-embryology": [
+      "histology",
+      "embryology"
+    ],
+    "chemistry-introductory-biochemistry": [
+      "chemistry",
+      "introductory-biochemistry"
+    ]
   },
   "packageAccess": {
     "histology-embryology": {
       "appUrl": "https://histology-embryology.vercel.app/",
       "chaptersByPackageId": {
-        "histology": ["cy", "hi"],
-        "embryology": ["em", "or"],
-        "histology-embryology": ["cy", "hi", "em", "or"]
+        "histology": [
+          "cy",
+          "hi"
+        ],
+        "embryology": [
+          "em",
+          "or"
+        ],
+        "histology-embryology": [
+          "cy",
+          "hi",
+          "em",
+          "or"
+        ]
       }
     },
     "chemistry-introductory-biochemistry": {
       "appUrl": "https://chemistry-roan.vercel.app/",
       "chaptersByPackageId": {
-        "chemistry": ["gc", "oc"],
-        "introductory-biochemistry": ["ib"],
-        "chemistry-introductory-biochemistry": ["gc", "oc", "ib"]
+        "chemistry": [
+          "gc",
+          "oc"
+        ],
+        "introductory-biochemistry": [
+          "ib"
+        ],
+        "chemistry-introductory-biochemistry": [
+          "gc",
+          "oc",
+          "ib"
+        ]
       }
     }
   },
@@ -61,26 +89,34 @@
     {
       "id": "histology-embryology",
       "titleKey": "precos.pricing.groupHistologyEmbryology",
-      "packageIds": ["histology", "embryology", "histology-embryology"],
+      "packageIds": [
+        "histology",
+        "embryology",
+        "histology-embryology"
+      ],
       "bundleId": "histology-embryology"
     },
     {
       "id": "chemistry-biochemistry",
       "titleKey": "precos.pricing.groupChemistryBiochemistry",
-      "packageIds": ["chemistry", "introductory-biochemistry", "chemistry-introductory-biochemistry"],
+      "packageIds": [
+        "chemistry",
+        "introductory-biochemistry",
+        "chemistry-introductory-biochemistry"
+      ],
       "bundleId": "chemistry-introductory-biochemistry"
     }
   ],
   "packageMeta": {
     "human-anatomy-1": {
       "title": "Human Anatomy I",
-      "url": "https://human-anatomy1.vercel.app/",
+      "url": "/human-anatomy-1/",
       "priceUsd": 14.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/bab797ec-5572-49cd-8f4b-50435d9bc1c0?embed=1"
     },
     "medical-biology": {
       "title": "Medical Biology",
-      "url": "https://biology-genetics.vercel.app/",
+      "url": "/medical-biology/",
       "priceUsd": 12.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=medical-biology",
@@ -88,7 +124,7 @@
     },
     "genetics": {
       "title": "Genetics",
-      "url": "https://medica-genetics.vercel.app/",
+      "url": "/genetics/",
       "priceUsd": 8.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics",
@@ -96,26 +132,26 @@
     },
     "physics": {
       "title": "Physics",
-      "url": "https://physics-tau-five.vercel.app/",
+      "url": "/physics/",
       "priceUsd": 13.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/edd15588-c166-42cb-9614-9f91fce6dd4d?embed=1"
     },
     "information-processing": {
       "title": "Information Processing",
-      "url": "https://informatics-theta.vercel.app/",
+      "url": "/information-processing/",
       "priceUsd": 6.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/83648a24-754e-4c40-b55d-847dba7fcbd2?embed=1"
     },
     "statistics": {
       "title": "Statistics",
-      "url": "https://statistics-nu-eight.vercel.app/",
+      "url": "/statistics/",
       "priceUsd": 18.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/28ad6590-b686-4ee1-85f7-2fdd12d89335?embed=1"
     },
     "histology": {
       "title": "Histology",
       "parentApp": "histology-embryology",
-      "url": "https://histology-embryology.vercel.app/",
+      "url": "/histology/",
       "priceUsd": 10.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=histology",
@@ -124,7 +160,7 @@
     "embryology": {
       "title": "Embryology",
       "parentApp": "histology-embryology",
-      "url": "https://histology-embryology.vercel.app/",
+      "url": "/embryology/",
       "priceUsd": 11.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=embryology",
@@ -133,9 +169,12 @@
     "histology-embryology": {
       "title": "Histology and Embryology",
       "parentApp": "histology-embryology",
-      "url": "https://histology-embryology.vercel.app/",
+      "url": "/histology-embryology/",
       "priceUsd": 15.99,
-      "bundleOf": ["histology", "embryology"],
+      "bundleOf": [
+        "histology",
+        "embryology"
+      ],
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=histology-embryology",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/03e54c5f-614b-4638-9f02-a57cf635aa83?embed=1"
@@ -143,7 +182,7 @@
     "chemistry": {
       "title": "Chemistry",
       "parentApp": "chemistry-introductory-biochemistry",
-      "url": "https://chemistry-roan.vercel.app/",
+      "url": "/chemistry/",
       "priceUsd": 14.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=chemistry",
@@ -152,7 +191,7 @@
     "introductory-biochemistry": {
       "title": "Introductory Biochemistry",
       "parentApp": "chemistry-introductory-biochemistry",
-      "url": "https://chemistry-roan.vercel.app/",
+      "url": "/introductory-biochemistry/",
       "priceUsd": 6.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=introductory-biochemistry",
@@ -161,28 +200,31 @@
     "chemistry-introductory-biochemistry": {
       "title": "Chemistry and Introductory Biochemistry",
       "parentApp": "chemistry-introductory-biochemistry",
-      "url": "https://chemistry-roan.vercel.app/",
+      "url": "/chemistry-introductory-biochemistry/",
       "priceUsd": 17.99,
-      "bundleOf": ["chemistry", "introductory-biochemistry"],
+      "bundleOf": [
+        "chemistry",
+        "introductory-biochemistry"
+      ],
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=chemistry-introductory-biochemistry",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/f1f7a764-6a20-484d-bb29-b8da4e75b450?embed=1"
     },
     "history-of-medicine": {
       "title": "History of Medicine",
-      "url": "https://history-medicine.vercel.app/",
+      "url": "/history-of-medicine/",
       "priceUsd": 9.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/2d743817-b578-4c6e-af1b-d5ea1272dc81?embed=1"
     },
     "moral-philosophy": {
       "title": "Moral Philosophy",
-      "url": "https://moral-philosophy.vercel.app/",
+      "url": "/moral-philosophy/",
       "priceUsd": 9.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/8a6bd132-16a6-428f-bc7f-a5a91d7f3c74?embed=1"
     },
     "health-technology-assessments": {
       "title": "Health Technology Assessments (EU)",
-      "url": "https://health-technology-assessments.vercel.app/",
+      "url": "/health-technology-assessments/",
       "priceUsd": 5.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/8eed3ddf-83a1-4712-a652-ac688f856742?embed=1"
     },
