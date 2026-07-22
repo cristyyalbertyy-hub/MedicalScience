@@ -6,6 +6,7 @@
     "build": "node scripts/write-firebase-config.js && node scripts/build-analytics.mjs",
     "optimize:images": "node scripts/optimize-images.mjs",
     "stats:report": "node scripts/admin-stats-report.mjs",
+    "sync:italian-health-system": "node scripts/sync-italian-health-system.mjs",
     "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes",
     "deploy:rules:npx": "npx firebase-tools deploy --only firestore:rules,firestore:indexes --project studio9-medical"
   },

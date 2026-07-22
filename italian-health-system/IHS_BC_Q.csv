@@ -1,0 +1,50 @@
+What fundamental principle governs the decentralization of health care provision to regions in the Italian health system?,The subsidiarity principle.
+"In 1997, which central institution was established in Italy to support regional health services and coordination?",The National Agency for Regional Health Care Services (ASSR).
+"In 2007, what specific mandate was given to the ASSR regarding Health Technology Assessment (HTA)?",To promote and support regional HTA activities and produce HTA reports for the Italian context.
+Why is the structural closeness between HTA assessors and managers in Italian hospital-based units considered beneficial?,It increases HTA's responsiveness to contextual factors and enhances its impact on decision-making.
+What is the primary objective of the Italian HTA network established in 2003?,To identify organizational and methodological standards based on best practices for the national health service.
+"How do Italian university hospitals, such as Agostino Gemelli, utilize HTA as a 'signaling effect' for clinicians?",By involving local clinicians in assessments to diffuse a culture of evaluation throughout the institution.
+Definition: Economic evaluation in health care.,The comparative analysis of alternative courses of action in terms of both their costs and consequences.
+"In applied economics, what do 'consequences' represent in an economic evaluation?",The overall health benefits expected to be received from a specific intervention.
+What does the concept of 'opportunity cost' represent when selecting a new health technology?,The foregone advantages resulting from the non-selection of alternative options.
+Which specific tool evaluates the sustainability or economic acceptability of a health intervention based on its impact on a fixed budget?,Budget Impact Analysis (BIA).
+Under what specific condition is a cost-minimization analysis (CMA) appropriate?,When the alternative treatments are statistically demonstrated to achieve equivalent outcomes.
+"In a Cost-Effectiveness Analysis (CEA), how are health outcomes typically measured?","In physical or natural units, such as life years gained (LYG) or days of disability prevented."
+Concept: Cost-Utility Analysis (CUA).,A form of economic evaluation that measures health outcomes in terms of Quality-Adjusted Life Years (QALYs).
+The Incremental Cost-Effectiveness Ratio (ICER) is defined as the ratio between the difference in costs and the _____.,Difference in effectiveness between two alternatives.
+Formula: Incremental Cost-Effectiveness Ratio (ICER).,ICER = \frac{Cost_A - Cost_B}{Effectiveness_A - Effectiveness_B}
+Why must future costs in health care be discounted to present values?,Because resources could be invested elsewhere to provide a positive rate of return over time.
+"In economic evaluation, what is represented by the variable r?",The discount rate that reflects real rates of return.
+How does a 'payer perspective' differ from a 'societal perspective' in cost estimation?,The payer perspective only includes costs falling on the specific budget holder's accounts.
+What are Diagnosis-Related Groups (DRGs) used for in hospital costing?,To provide reasonable approximations for the costs of treating different categories of patients.
+"Which costing category includes specific items like physician fees, laboratory tests, and drugs used directly for a program?",Directly allocatable costs.
+"In hospital accounting, what is the term for the measure used to distribute overhead items, such as square meters for housekeeping?",An allocation basis.
+What term refers to the range of services or products reimbursed within a publicly funded health system?,The benefit basket.
+"In a Bismarckian (Social Health Insurance) system like those seen in parts of Europe, coverage decisions define explicit _____.",Individual entitlements.
+What is a 'Pareto improvement' in the context of resource allocation?,An alternative that improves the welfare of some without reducing the welfare of anyone else.
+What does the threshold k represent in health care decision rules?,"The health opportunity cost, or the rate at which the system can turn resources into health."
+"If the consumption value of health v is greater than the system's threshold k (v > k), what does this suggest about health spending?",The current budget or level of health care expenditure is likely too low.
+"In a scenario with a fixed budget, efficiency requires replacing programs with small net benefits with programs that have _____.",Larger net benefits.
+Why is it insufficient to only have benefit data for a new program when operating under a fixed budget?,Because the opportunity cost of what existing programs will be displaced must also be known.
+Which Italian entity manages the level of reimbursement for health insurance providers (UNCAM)?,Union Nationale des Caisses d’Assurance Maladie.
+"At the macro level of national executives, health policy-making is most closely related to the process of _____.",Legislation.
+How does the 'signaling effect' of hospital-based HTA impact clinical staff?,It encourages the diffusion of a culture of assessment and rational resource use among clinicians.
+What are the two primary organizational features common to most European HTA institutions?,A not-for-profit orientation and a reliance on public money as the main funding source.
+"In the Agostino Gemelli University Hospital, what tool does management use to produce a priority list for technology investments?",An ad hoc assessment grid incorporating strategic goals and rational economic approaches.
+Which costing method involves collecting and analyzing variations at the micro-level for international comparisons?,The HealthBASKET project methodology.
+Why must cost estimates be updated beyond simple inflation adjustments if recent technological advances have occurred?,"Dramatic changes in treatment costs (e.g., new drug classes) can render historical cost data obsolete."
+"In economic evaluation, what is the 'friction cost method' used to measure?","Indirect costs of disease, specifically productivity losses."
+What is the primary rationale for including a sensitivity analysis in hospital cost estimations?,To determine how sensitive the choice between programs is to the values derived from crude allocation methods.
+"In the Italian HTA context, what is the role of the Agostino Gemelli University Hospital's Medical Directorate unit?",To support the general directorate in selecting technologies using a multidisciplinary staff.
+What distinguishes 'Cost-Benefit Analysis' (CBA) from 'Cost-Effectiveness Analysis' (CEA)?,CBA values both costs and consequences in monetary units.
+The process of 'appraisal' in HTA differs from 'assessment' because it involves making a _____.,Policy recommendation or decision based on the evidence provided.
+Which Italian body is responsible for pricing negotiations for drugs and devices with manufacturers?,Comité Économique des Produits de Santé (CEPS).
+"In HTA, what is the 'meso level' of decision-making typically concerned with?",The organization and delivery of specific technologies at the institutional or regional level.
+What is the main drawback of using 'gut feelings' or 'educated guesses' instead of economic evaluation for health care choices?,"They result in implicit decisions based on opaque judgments rather than explicit, scrutinizable evidence."
+"In the 'fixed budget scenario,' what is the primary data difficulty in applying efficiency criteria?","It requires data not just on the new program, but a rank ordering of the net benefits of all existing programs."
+How does 'Value-Based Insurance Design' use economic evaluation in multi-payer systems?,By linking the level of patient copayment to the cost-effectiveness of the medical product.
+What is the 'present value' of a cost incurred in the future?,The amount of current resources required to be set aside today to cover that future liability.
+"In Italian decentralized HTA, what is the benefit of integrating HTA staff into the institution they support?",It increases the impact of the HTA message by overcoming scientific and organizational barriers locally.
+"Which document or framework defines the principles shared by European health care systems, such as equity and solidarity?","European Union legislation or Council Conclusions (e.g., 2006)."
+"In the context of hospital costing, what does the 'step-down' method involve?",Allocating overhead department costs to other departments based on usage measures before reaching the final program cost.
+Why is the identification of health opportunity costs necessary when there are restrictions on health care expenditure?,To ensure that the health gained from a new investment is greater than the health lost by displacing other services.

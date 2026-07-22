@@ -9,8 +9,9 @@
     { "source": "/contacto/", "destination": "/contacto/index.html" },
     { "source": "/curriculo", "destination": "/packages/" },
     { "source": "/curriculo/", "destination": "/packages/" },
+    { "source": "/italian-health-system", "destination": "/italian-health-system/" },
     {
-      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry|history-of-medicine|moral-philosophy|health-technology-assessments|italian-health-system)/?",
+      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry|history-of-medicine|moral-philosophy|health-technology-assessments)/?",
       "destination": "/apps/launcher.html"
     }
   ],
