@@ -176,19 +176,15 @@ export async function fetchRecentUniqueVisitors(days = 90) {
   const endTime = new Date();
   const startTime = new Date(endTime.getTime() - windowDays * 24 * 60 * 60 * 1000);
 
-  try {
-    const response = await queryMetrics({
-      token,
-      teamId,
-      projectId,
-      startTime,
-      endTime,
-      aggregation: AGGREGATION_UNIQUE,
-    });
-    return parseDailySeries(response, ROLLUP_UNIQUE);
-  } catch {
-    return [];
-  }
+  const response = await queryMetrics({
+    token,
+    teamId,
+    projectId,
+    startTime,
+    endTime,
+    aggregation: AGGREGATION_UNIQUE,
+  });
+  return parseDailySeries(response, ROLLUP_UNIQUE);
 }
 
 export async function fetchVercelAnalytics() {
@@ -204,15 +200,25 @@ export async function fetchVercelAnalytics() {
 
   const endTime = new Date();
   const startTime = new Date(endTime.getTime() - days * 24 * 60 * 60 * 1000);
+  const chartDays = Math.max(days, Math.min(90, Number(process.env.VERCEL_ANALYTICS_CHART_DAYS) || 90));
+  const chartStartTime = new Date(endTime.getTime() - chartDays * 24 * 60 * 60 * 1000);
 
   try {
-    const [totals, uniqueVisitors, byCountry, byPath, byDevice] = await Promise.all([
+    const [totals, uniqueVisitors, chartUnique, byCountry, byPath, byDevice] = await Promise.all([
       queryMetrics({ token, teamId, projectId, startTime, endTime }),
       queryMetrics({
         token,
         teamId,
         projectId,
         startTime,
+        endTime,
+        aggregation: AGGREGATION_UNIQUE,
+      }),
+      queryMetrics({
+        token,
+        teamId,
+        projectId,
+        startTime: chartStartTime,
         endTime,
         aggregation: AGGREGATION_UNIQUE,
       }),
@@ -256,6 +262,7 @@ export async function fetchVercelAnalytics() {
       pageviews: row.pageviews,
     }));
     const daily = parseDailySeries(totals);
+    const daily_unique_chart = parseDailySeries(chartUnique, ROLLUP_UNIQUE);
 
     return {
       configured: true,
@@ -268,6 +275,7 @@ export async function fetchVercelAnalytics() {
       pageviews: extractTotal(totals, ROLLUP_SUM),
       unique_visitors: extractTotal(uniqueVisitors, ROLLUP_UNIQUE),
       daily,
+      daily_unique_chart,
       countries,
       top_pages: topPages,
       devices,

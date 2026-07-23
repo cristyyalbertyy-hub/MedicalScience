@@ -127,6 +127,19 @@ function renderTraffic(traffic) {
     return;
   }
 
+  const hasMetrics =
+    (traffic.pageviews ?? 0) > 0 ||
+    (traffic.unique_visitors ?? 0) > 0 ||
+    (traffic.daily?.length ?? 0) > 0 ||
+    (traffic.countries?.length ?? 0) > 0;
+
+  if (!hasMetrics) {
+    trafficStatusEl.hidden = false;
+    trafficStatusEl.className = "admin-traffic-status is-error";
+    trafficStatusEl.textContent =
+      "A Vercel respondeu mas sem dados de tráfego. Confirme VERCEL_ACCESS_TOKEN, VERCEL_TEAM_ID e VERCEL_PROJECT_ID, faça redeploy e verifique se Web Analytics está activo no projecto medical-science.";
+  }
+
   for (const [value, label] of [
     [traffic.pageviews, "Pageviews (total)"],
     [traffic.unique_visitors, "Visitantes únicos"],
@@ -422,6 +435,10 @@ function renderVisitorsSalesChart(chartData, traffic) {
     visitorsSalesStatusEl.className = "admin-chart-status is-error";
     visitorsSalesStatusEl.textContent =
       `Visitantes não estão a actualizar: ${traffic.error} Corrija VERCEL_ACCESS_TOKEN nas variáveis de ambiente do projecto Vercel (vercel.com/account/tokens) e volte a carregar.`;
+  } else if (chartData?.sync_warning) {
+    visitorsSalesStatusEl.hidden = false;
+    visitorsSalesStatusEl.className = "admin-chart-status is-error";
+    visitorsSalesStatusEl.textContent = chartData.sync_warning;
   }
 
   if (!series.length) {

@@ -1,6 +1,6 @@
 import { getAuth, getFirestore } from "./firebase.js";
 import { getCatalog } from "./catalog.js";
-import { fetchVercelAnalytics, fetchRecentUniqueVisitors } from "./vercel-analytics.js";
+import { fetchVercelAnalytics } from "./vercel-analytics.js";
 import { syncVisitorsVsSalesChart } from "./stats-daily-chart.js";
 
 function isActiveEntitlement(data, nowMs) {
@@ -119,8 +119,17 @@ export async function collectAdminStats() {
 
   try {
     const dailyVisitors =
-      traffic.configured && !traffic.error ? await fetchRecentUniqueVisitors(90) : [];
+      traffic.configured && !traffic.error ? (traffic.daily_unique_chart ?? []) : [];
     visitors_vs_sales = await syncVisitorsVsSalesChart(db, dailyVisitors, ordersSnap);
+
+    if (traffic.configured && !traffic.error && !dailyVisitors.length) {
+      if ((traffic.unique_visitors ?? 0) > 0 || (traffic.pageviews ?? 0) > 0) {
+        visitors_vs_sales.sync_warning =
+          "A Vercel devolveu totais mas não visitantes por dia — o gráfico pode estar desactualizado.";
+      }
+    } else if (traffic?.error) {
+      visitors_vs_sales.sync_warning = traffic.error;
+    }
   } catch (err) {
     visitors_vs_sales = {
       ...visitors_vs_sales,
