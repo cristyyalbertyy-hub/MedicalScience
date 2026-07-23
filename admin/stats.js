@@ -398,15 +398,17 @@ function setupVisitorsSalesMonthNav() {
   });
 }
 
-function renderVisitorsSalesChart(chartData) {
+function renderVisitorsSalesChart(chartData, traffic) {
   visitorsSalesChartEl.replaceChildren();
   visitorsSalesRailEl.replaceChildren();
   visitorsSalesStatusEl.hidden = true;
+  visitorsSalesStatusEl.className = "admin-chart-status";
   visitorsSalesCarouselEl.hidden = true;
 
   if (chartData?.error) {
     visitorsSalesMetaEl.textContent = "";
     visitorsSalesStatusEl.hidden = false;
+    visitorsSalesStatusEl.className = "admin-chart-status is-error";
     visitorsSalesStatusEl.textContent = chartData.error;
     return;
   }
@@ -414,6 +416,13 @@ function renderVisitorsSalesChart(chartData) {
   const series = chartData?.series ?? [];
   const totalDays = chartData?.total_days ?? series.length;
   const todayKey = chartData?.today ?? new Date().toISOString().slice(0, 10);
+
+  if (traffic?.error) {
+    visitorsSalesStatusEl.hidden = false;
+    visitorsSalesStatusEl.className = "admin-chart-status is-error";
+    visitorsSalesStatusEl.textContent =
+      `Visitantes não estão a actualizar: ${traffic.error} Corrija VERCEL_ACCESS_TOKEN nas variáveis de ambiente do projecto Vercel (vercel.com/account/tokens) e volte a carregar.`;
+  }
 
   if (!series.length) {
     visitorsSalesMetaEl.textContent = "Histórico completo · sem registos ainda";
@@ -461,7 +470,7 @@ form.addEventListener("submit", async (event) => {
     generatedEl.textContent = `Actualizado: ${new Date(data.generated_at).toLocaleString("pt-PT")}`;
     renderSummary(data.summary);
     renderTraffic(data.traffic);
-    renderVisitorsSalesChart(data.visitors_vs_sales);
+    renderVisitorsSalesChart(data.visitors_vs_sales, data.traffic);
     renderPackages(data.packages);
     renderSources(data.summary.entitlement_sources);
     renderNotes(data.notes);

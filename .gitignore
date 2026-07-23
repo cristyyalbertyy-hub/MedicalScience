@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+.env.vercel.local
 .DS_Store
 Thumbs.db
 *.log
