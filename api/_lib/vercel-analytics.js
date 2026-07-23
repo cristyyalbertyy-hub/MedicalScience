@@ -5,6 +5,8 @@ const AGGREGATION_UNIQUE = "unique/visitor_id";
 const ROLLUP_SUM = "vercel_analytics_pageview_count_sum";
 const ROLLUP_UNIQUE = "vercel_analytics_pageview_count_unique_visitor_id";
 const PRODUCTION_FILTER = "environment eq 'production'";
+/** Vercel Hobby plan observability API limit */
+const HOBBY_MAX_DAYS = 31;
 
 const countryNames =
   typeof Intl !== "undefined" && Intl.DisplayNames
@@ -22,9 +24,13 @@ function getConfig() {
   const token = process.env.VERCEL_ACCESS_TOKEN || process.env.VERCEL_TOKEN;
   const teamId = process.env.VERCEL_TEAM_ID;
   const projectId = process.env.VERCEL_PROJECT_ID;
-  const days = Math.max(1, Math.min(90, Number(process.env.VERCEL_ANALYTICS_DAYS) || 7));
+  const days = Math.max(1, Math.min(HOBBY_MAX_DAYS, Number(process.env.VERCEL_ANALYTICS_DAYS) || 7));
+  const chartDays = Math.max(
+    days,
+    Math.min(HOBBY_MAX_DAYS, Number(process.env.VERCEL_ANALYTICS_CHART_DAYS) || HOBBY_MAX_DAYS),
+  );
 
-  return { token, teamId, projectId, days };
+  return { token, teamId, projectId, days, chartDays };
 }
 
 function formatCountry(code) {
@@ -165,14 +171,14 @@ function extractTotal(response, rollupColumn) {
   );
 }
 
-export async function fetchRecentUniqueVisitors(days = 90) {
+export async function fetchRecentUniqueVisitors(days = HOBBY_MAX_DAYS) {
   const { token, teamId, projectId } = getConfig();
 
   if (!token || !teamId || !projectId) {
     return [];
   }
 
-  const windowDays = Math.max(1, Math.min(90, days));
+  const windowDays = Math.max(1, Math.min(HOBBY_MAX_DAYS, days));
   const endTime = new Date();
   const startTime = new Date(endTime.getTime() - windowDays * 24 * 60 * 60 * 1000);
 
@@ -188,7 +194,7 @@ export async function fetchRecentUniqueVisitors(days = 90) {
 }
 
 export async function fetchVercelAnalytics() {
-  const { token, teamId, projectId, days } = getConfig();
+  const { token, teamId, projectId, days, chartDays } = getConfig();
 
   if (!token || !teamId || !projectId) {
     return {
@@ -200,25 +206,16 @@ export async function fetchVercelAnalytics() {
 
   const endTime = new Date();
   const startTime = new Date(endTime.getTime() - days * 24 * 60 * 60 * 1000);
-  const chartDays = Math.max(days, Math.min(90, Number(process.env.VERCEL_ANALYTICS_CHART_DAYS) || 90));
   const chartStartTime = new Date(endTime.getTime() - chartDays * 24 * 60 * 60 * 1000);
 
   try {
-    const [totals, uniqueVisitors, chartUnique, byCountry, byPath, byDevice] = await Promise.all([
+    const [totals, uniqueVisitors, byCountry, byPath, byDevice] = await Promise.all([
       queryMetrics({ token, teamId, projectId, startTime, endTime }),
       queryMetrics({
         token,
         teamId,
         projectId,
         startTime,
-        endTime,
-        aggregation: AGGREGATION_UNIQUE,
-      }),
-      queryMetrics({
-        token,
-        teamId,
-        projectId,
-        startTime: chartStartTime,
         endTime,
         aggregation: AGGREGATION_UNIQUE,
       }),
@@ -251,6 +248,24 @@ export async function fetchVercelAnalytics() {
       }),
     ]);
 
+    let daily_unique_chart = parseDailySeries(uniqueVisitors, ROLLUP_UNIQUE);
+
+    if (chartDays > days) {
+      try {
+        const chartUnique = await queryMetrics({
+          token,
+          teamId,
+          projectId,
+          startTime: chartStartTime,
+          endTime,
+          aggregation: AGGREGATION_UNIQUE,
+        });
+        daily_unique_chart = parseDailySeries(chartUnique, ROLLUP_UNIQUE);
+      } catch {
+        // Keep the shorter-window series if the extended chart query fails.
+      }
+    }
+
     const countries = parseGroupedRows(byCountry, "country");
     const topPages = parseGroupedRows(byPath, "request_path").map((row) => ({
       path: row.request_path,
@@ -262,7 +277,6 @@ export async function fetchVercelAnalytics() {
       pageviews: row.pageviews,
     }));
     const daily = parseDailySeries(totals);
-    const daily_unique_chart = parseDailySeries(chartUnique, ROLLUP_UNIQUE);
 
     return {
       configured: true,
