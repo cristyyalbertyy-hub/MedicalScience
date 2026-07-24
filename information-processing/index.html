@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/information-processing/favicon.svg" />
+    <title>Information Processing</title>
+    <link rel="stylesheet" href="/information-processing/styles.css" />
+  </head>
+  <body>
+    <div id="auth-gate" class="auth-layout" hidden></div>
+
+    <div id="app-shell" class="app-shell is-mobile-menu" hidden>
+      <header class="app-header" id="app-header">
+        <button type="button" class="home-overview-btn" id="homeBtn" aria-label="Back to course overview">
+          <span class="home-overview-btn__media">
+            <img src="" alt="" />
+            <span class="home-overview-btn__fallback" aria-hidden>⊕</span>
+          </span>
+          <span class="home-overview-btn__label">Course overview</span>
+        </button>
+        <h1>Information Processing</h1>
+      </header>
+
+      <div class="mobile-lesson-bar" id="mobileBar" hidden>
+        <button type="button" class="mobile-menu-back" id="mobileMenuBack">← Menu</button>
+        <div class="mobile-lesson-bar__text">
+          <span class="mobile-lesson-bar__chapter" id="mobileChapter"></span>
+          <span class="mobile-lesson-bar__sub" id="mobileSub"></span>
+        </div>
+      </div>
+
+      <main class="layout">
+        <div class="sidebar-column">
+          <aside class="tree-panel" aria-label="Classes">
+            <nav id="tree" class="tree"></nav>
+          </aside>
+        </div>
+
+        <section class="content-panel" aria-live="polite">
+          <div id="content" class="content-card">
+            <div class="overview-panel">
+              <div class="overview-intro">
+                <p class="overview-lead">
+                  Five classes on health information systems, records, privacy, databases and data
+                  mining — each with video, podcast, infographic and questions.
+                </p>
+                <ul class="overview-systems" id="overviewList" aria-label="Course classes"></ul>
+              </div>
+              <p class="overview-hint">
+                Open a coloured class on the left, then choose the resource you want to view.
+              </p>
+              <button type="button" class="mobile-browse-btn" id="mobileBrowseBtn">Browse classes →</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/information-processing/config.public.js"></script>
+    <script type="module" src="/information-processing/main.js"></script>
+  <script>(function(){window.setTimeout(function(){var shell=document.getElementById('app-shell');var gate=document.getElementById('auth-gate');var loaded=(shell&&!shell.hidden)||(gate&&!gate.hidden&&gate.childElementCount);if(!loaded){document.body.innerHTML='<div style="font-family:system-ui,sans-serif;max-width:32rem;margin:3rem auto;padding:0 1.25rem;color:#14213d;line-height:1.5"><h1 style="font-size:1.25rem;margin:0 0 0.75rem">Information Processing</h1><p style="margin:0 0 0.75rem">The app did not load — usually an outdated cached file in your browser.</p><p style="margin:0"><strong>Try:</strong> hard refresh (Ctrl+Shift+R) or open in a private window.</p></div>';}},4500);})();</script></body>
+</html>

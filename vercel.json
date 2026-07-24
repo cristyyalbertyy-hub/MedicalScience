@@ -13,12 +13,13 @@
     { "source": "/moral-philosophy", "destination": "/moral-philosophy/" },
     { "source": "/health-technology-assessments", "destination": "/health-technology-assessments/" },
     { "source": "/history-of-medicine", "destination": "/history-of-medicine/" },
+    { "source": "/information-processing", "destination": "/information-processing/" },
     {
-      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
+      "source": "/(human-anatomy-1|medical-biology|genetics|physics|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
       "destination": "/apps/launcher.html"
     },
     {
-      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
+      "source": "/(human-anatomy-1|medical-biology|genetics|physics|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
       "destination": "/apps/launcher.html"
     }
   ],
@@ -41,6 +42,10 @@
     },
     {
       "source": "/history-of-medicine/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/information-processing/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
     },
     {
