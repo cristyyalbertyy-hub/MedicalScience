@@ -9,6 +9,12 @@ Thumbs.db
 node_modules/
 reports/
 italian-health-system/IHS*
+moral-philosophy/*_V.mp4
+moral-philosophy/*_P.m4a
+moral-philosophy/*_I.png
+moral-philosophy/*_Q.csv
+moral-philosophy/MPA.png
+moral-philosophy/MP.png
 assets/source/*.png
 assets/source/*.jpeg
 assets/source/*.jpg
