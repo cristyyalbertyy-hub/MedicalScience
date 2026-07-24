@@ -8,6 +8,7 @@
     "stats:report": "node scripts/admin-stats-report.mjs",
     "sync:italian-health-system": "node scripts/sync-italian-health-system.mjs",
     "sync:moral-philosophy": "node scripts/sync-moral-philosophy.mjs",
+    "sync:health-technology-assessments": "node scripts/sync-health-technology-assessments.mjs",
     "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes",
     "deploy:rules:npx": "npx firebase-tools deploy --only firestore:rules,firestore:indexes --project studio9-medical"
   },
