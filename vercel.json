@@ -12,12 +12,13 @@
     { "source": "/italian-health-system", "destination": "/italian-health-system/" },
     { "source": "/moral-philosophy", "destination": "/moral-philosophy/" },
     { "source": "/health-technology-assessments", "destination": "/health-technology-assessments/" },
+    { "source": "/history-of-medicine", "destination": "/history-of-medicine/" },
     {
-      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry|history-of-medicine)",
+      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
       "destination": "/apps/launcher.html"
     },
     {
-      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry|history-of-medicine)/",
+      "source": "/(human-anatomy-1|medical-biology|genetics|physics|information-processing|statistics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
       "destination": "/apps/launcher.html"
     }
   ],
@@ -36,6 +37,10 @@
     },
     {
       "source": "/health-technology-assessments/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/history-of-medicine/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
     },
     {
