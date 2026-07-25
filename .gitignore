@@ -27,6 +27,8 @@ human-anatomy-1/LS_*
 human-anatomy-1/CLS_*
 human-anatomy-1/RSC_*
 human-anatomy-1/HumanAnatomyA.png
+medical-biology/media/**
+medical-biology/BiologyVertical.png
 assets/source/*.png
 assets/source/*.jpeg
 assets/source/*.jpg

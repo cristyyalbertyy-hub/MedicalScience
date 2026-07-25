@@ -13,6 +13,7 @@
     "sync:information-processing": "node scripts/sync-information-processing.mjs",
     "sync:statistics": "node scripts/sync-statistics.mjs",
     "sync:human-anatomy-1": "node scripts/sync-human-anatomy-1.mjs",
+    "sync:medical-biology": "node scripts/sync-medical-biology.mjs",
     "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes",
     "deploy:rules:npx": "npx firebase-tools deploy --only firestore:rules,firestore:indexes --project studio9-medical"
   },
