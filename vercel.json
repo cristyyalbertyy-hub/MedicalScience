@@ -17,12 +17,13 @@
     { "source": "/statistics", "destination": "/statistics/" },
     { "source": "/human-anatomy-1", "destination": "/human-anatomy-1/" },
     { "source": "/medical-biology", "destination": "/medical-biology/" },
+    { "source": "/genetics", "destination": "/genetics/" },
     {
-      "source": "/(genetics|physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
+      "source": "/(physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
       "destination": "/apps/launcher.html"
     },
     {
-      "source": "/(genetics|physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
+      "source": "/(physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
       "destination": "/apps/launcher.html"
     }
   ],
@@ -61,6 +62,10 @@
     },
     {
       "source": "/medical-biology/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/genetics/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
     },
     {
