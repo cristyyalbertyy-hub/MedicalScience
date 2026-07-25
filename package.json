@@ -15,6 +15,7 @@
     "sync:human-anatomy-1": "node scripts/sync-human-anatomy-1.mjs",
     "sync:medical-biology": "node scripts/sync-medical-biology.mjs",
     "sync:genetics": "node scripts/sync-genetics.mjs",
+    "sync:physics": "node scripts/sync-physics.mjs",
     "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes",
     "deploy:rules:npx": "npx firebase-tools deploy --only firestore:rules,firestore:indexes --project studio9-medical"
   },

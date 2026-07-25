@@ -30,6 +30,12 @@ human-anatomy-1/HumanAnatomyA.png
 medical-biology/media/**
 medical-biology/BiologyVertical.png
 genetics/public/**
+physics/*.mp4
+physics/*.m4a
+physics/*.mp3
+physics/*.png
+physics/*.csv
+physics/Physics_I.png
 assets/source/*.png
 assets/source/*.jpeg
 assets/source/*.jpg
