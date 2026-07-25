@@ -20,6 +20,9 @@ history-of-medicine/AF_*
 history-of-medicine/SA_*
 history-of-medicine/PH_*
 information-processing/Public/*
+statistics/content/**
+statistics/StatisticsA.png
+statistics/M_S_I.png
 assets/source/*.png
 assets/source/*.jpeg
 assets/source/*.jpg
