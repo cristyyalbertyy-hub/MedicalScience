@@ -1,0 +1,71 @@
+What type of compound consists exclusively of carbon and hydrogen atoms?,Hydrocarbon
+How are hydrocarbons classified if they contain no benzene rings in their structure?,Aliphatic hydrocarbons
+What term describes a hydrocarbon that contains only single carbon-carbon bonds?,Saturated hydrocarbon
+What is the general term for saturated aliphatic hydrocarbons?,Alkanes
+"What was the historical Latin-derived name for alkanes, meaning 'little affinity'?",Paraffins
+What is the general molecular formula for open-chain alkanes?,C_nH_{2n+2}
+What is the orbital hybridization of carbon atoms in an alkane?,sp^3
+What is the ideal bond angle between atoms in a tetrahedral alkane structure?,109.5^{\circ}
+The first member of the alkane series is _____.,Methane (CH_4)
+What is the name and formula for a two-carbon alkane?,Ethane (C_2H_6)
+What is the name and formula for a three-carbon alkane?,Propane (C_3H_8)
+What is the name and formula for a four-carbon alkane?,Butane (C_4H_{10})
+"What name is given to a series of compounds where each member differs from the next by a constant group, such as -CH_2-?",Homologous series
+What is the name for a five-carbon alkane?,Pentane
+What is the name for a six-carbon alkane?,Hexane
+What is the name for an eight-carbon alkane?,Octane
+What is the name for a ten-carbon alkane?,Decane
+What is the name for a twelve-carbon alkane?,Dodecane
+What is the general molecular formula for an alkyl group?,C_nH_{2n+1}
+What is the name of the alkyl group derived from methane (CH_3-)?,Methyl
+What is the name of the alkyl group derived from ethane (CH_3CH_2-)?,Ethyl
+Formula: (CH_3)_2CH-,Isopropyl group
+Formula: (CH_3)_3C-,tert-butyl (or tertiary butyl) group
+"In IUPAC nomenclature, what is the first step in naming a branched alkane?",Select the longest continuous chain of carbon atoms as the parent compound.
+"In IUPAC naming, how are carbon atoms in the parent chain numbered?",Start from the end closest to the first substituent.
+"If the same alkyl group appears multiple times as a substituent, what prefixes are used to indicate this?","di-, tri-, tetra-, etc."
+"When listing multiple different alkyl substituents in a name, in what order are they arranged?",Alphabetical order
+What term defines compounds that have the same molecular formula but different structural arrangements?,Isomers (specifically structural/constitutional isomers)
+Which two alkanes are structural isomers of C_4H_{10}?,Butane and 2-methylpropane
+What type of hydrocarbon contains carbon atoms arranged in a ring and only single bonds?,Cycloalkane
+What is the general molecular formula for a cycloalkane?,C_nH_{2n}
+Name: Cyclopropane,Formula: C_3H_6
+Name: Cyclohexane,Formula: C_6H_{12}
+What is the dominant intermolecular force between nonpolar alkane molecules?,London forces (dispersion forces)
+How does increasing the molar mass of an unbranched alkane affect its boiling point?,The boiling point increases.
+How does branching affect the boiling point of alkanes compared to their unbranched isomers?,Branching decreases the boiling point.
+Why do branched alkanes have lower boiling points than unbranched isomers?,They have a smaller surface area for London force interactions.
+Describe the solubility of alkanes in water.,They are insoluble.
+How does the density of liquid alkanes compare to that of water?,They are less dense (they float on water).
+What are the two primary chemical products of the complete combustion of an alkane?,Carbon dioxide (CO_2) and water (H_2O)
+What type of reaction involves replacing a hydrogen atom in an alkane with another atom or group?,Substitution reaction
+What is the term for the process of introducing reactive groups of atoms into alkane molecules?,Functionalization
+What are stereoisomers that differ in the arrangement of atoms above and below the ring of a cycloalkane?,Geometrical isomers
+"In geometrical isomerism, what prefix indicates that two substituents are on the same side of a ring?",cis-
+"In geometrical isomerism, what prefix indicates that two substituents are on opposite sides of a ring?",trans-
+Why is cyclopropane less stable than other alkanes?,Severe bond angle strain (bond angles are 60^{\circ} instead of the ideal 109.5^{\circ}).
+What is the IUPAC name for (CH_3)_2CHCH_2CH_3?,2-methylbutane
+What is the IUPAC name for CH_3C(CH_3)_2CH_2CH_3?,"2,2-dimethylbutane"
+Which physical property of gasoline measures its ability to burn smoothly without knocking?,Octane rating
+What isomer of octane is assigned an octane rating of 100?,"2,2,4-trimethylpentane (isooctane)"
+What industrial process converts straight-chain hydrocarbons into branched-chain isomers to improve fuel quality?,Isomerization
+Structural isomers have the same _____ but different _____.,Molecular formula; connectivity (or structural arrangement)
+What is the state of matter at room temperature for the lightest alkanes (methane through butane)?,Gas
+What is the primary natural source for alkanes?,Petroleum (crude oil)
+"In a line structure, what does each vertex or end of a line segment represent?",A carbon atom
+A zigzag line in organic chemistry structures represents a chain of carbons joined by _____ bonds.,Single
+What is the chemical formula for cyclohexane?,C_6H_{12}
+"If two carbon chains of equal length are present in a molecule, which one is selected as the parent chain?",The chain with the larger number of substituents.
+What punctuation separates two numbers in an IUPAC name?,A comma
+What punctuation separates a number from a word in an IUPAC name?,A hyphen
+What is the IUPAC name for the substituent group CH_3CH_2CH_2CH_2-?,Butyl
+How many hydrogen atoms are in an unbranched alkane with 7 carbon atoms?,16 (2 \times 7 + 2 = 16)
+Isomerism: Structural vs. Stereoisomerism,Structural isomers have different bonding connectivity; stereoisomers have the same connectivity but different spatial orientation.
+How does the molar mass of an alkane correlate with its melting point?,Melting point generally increases with molar mass.
+Alkanes are generally unreactive because they contain strong carbon-carbon and carbon-hydrogen _____ bonds.,Single (sigma)
+What is the approximate bond enthalpy of a C-H bond in an alkane?,412 kJ \cdot mol^{-1}
+What is the approximate bond enthalpy of a C-C bond in an alkane?,348 kJ \cdot mol^{-1}
+Under what condition does the reaction between methane and chlorine typically occur to produce chloromethane?,Presence of ultraviolet light or high temperature.
+Alkanes are referred to as 'saturated' because they contain the _____ possible number of hydrogen atoms per carbon.,Maximum
+What is the general molecular formula for an unbranched alkane with 11 carbons?,C_{11}H_{24} (Undecane)
+Why do unbranched alkanes pack together more closely than branched isomers?,Their tubelike/linear shapes allow for greater contact surface area.

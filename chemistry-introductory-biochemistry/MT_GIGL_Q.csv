@@ -1,0 +1,80 @@
+What is the defining characteristic of a gas regarding its shape and volume?,A gas has no definite shape or volume and completely fills any container it occupies.
+Term: Compression,"Definition: The act of reducing the volume of a sample of matter, such as a gas."
+"According to the kinetic-molecular theory (KMT), how do gas molecules move between collisions?",Gas molecules are assumed to move in straight lines.
+"In the kinetic-molecular theory, the volume of individual gas molecules is assumed to be _____ compared to the total volume of the gas.",negligible
+What type of collisions are assumed to occur between ideal gas molecules in the kinetic model?,"The collisions are assumed to be perfectly elastic, meaning no kinetic energy is lost."
+"According to the kinetic-molecular theory, how are attractive or repulsive forces between ideal gas molecules characterized?",Ideal gas molecules are assumed to exert no forces on each other except during collisions.
+How is pressure defined mathematically in the context of gas behavior?,Pressure is defined as force divided by the area over which that force is exerted (P = F/A).
+How many millimeters of mercury (\text{mmHg}) are equivalent to exactly 1 \text{ atmosphere}?,760 \text{ mmHg} is equal to 1 \text{ atm}.
+How many torrs are equivalent to exactly 1 \text{ atmosphere}?,760 \text{ torr} is equal to 1 \text{ atm}.
+What is the SI unit for pressure?,"The pascal (\text{Pa}), where 1 \text{ Pa} = 1 \text{ kg} \cdot \text{m}^{-1} \cdot \text{s}^{-2}."
+What is the relationship between the volume and pressure of a gas in Boyle's Law at constant temperature?,The volume of a fixed amount of gas is inversely proportional to its pressure.
+Formula: Boyle's Law,P_1 V_1 = P_2 V_2 at constant temperature and amount of gas.
+"In Charles's Law, what is the relationship between the volume of a gas and its absolute temperature at constant pressure?",The volume of a fixed amount of gas is directly proportional to its absolute temperature.
+Formula: Charles's Law,\frac{V_1}{T_1} = \frac{V_2}{T_2} at constant pressure and amount of gas.
+What temperature scale must be used for all gas law calculations?,The Kelvin scale (T in kelvins) must always be used.
+"Gay-Lussac's Law states that at constant volume, the pressure of a gas is directly proportional to its _____.",absolute temperature
+Which principle states that equal volumes of gases at the same temperature and pressure contain equal numbers of molecules?,Avogadro's principle.
+Formula: The Combined Gas Law,\frac{P_1 V_1}{T_1} = \frac{P_2 V_2}{T_2} for a fixed amount of gas.
+Equation: The Ideal Gas Law,"PV = nRT, where n is the number of moles and R is the gas constant."
+What is the numerical value of the gas constant R in units of \text{L} \cdot \text{atm} \cdot \text{K}^{-1} \cdot \text{mol}^{-1}?,0.08206 \text{ L} \cdot \text{atm} \cdot \text{K}^{-1} \cdot \text{mol}^{-1}.
+What is the value of the gas constant R in SI units of \text{J} \cdot \text{K}^{-1} \cdot \text{mol}^{-1}?,8.314 \text{ J} \cdot \text{K}^{-1} \cdot \text{mol}^{-1}.
+Term: Ideal Gas,A hypothetical gas that perfectly obeys the ideal gas law under all conditions.
+Under what condition is the ideal gas law strictly valid for real gases?,It is strictly valid as the pressure approaches zero (P \to 0).
+What specific temperature and pressure define Standard Temperature and Pressure (STP)?,0^\circ\text{C} (273.15 \text{ K}) and 1 \text{ atm}.
+What specific temperature and pressure define Standard Ambient Temperature and Pressure (SATP)?,25^\circ\text{C} (298.15 \text{ K}) and 1 \text{ bar}.
+What is the molar volume of an ideal gas at STP?,22.41 \text{ L} \cdot \text{mol}^{-1}.
+What is the molar volume of an ideal gas at SATP?,24.79 \text{ L} \cdot \text{mol}^{-1}.
+Formula: Gas density (d) using the Ideal Gas Law,"d = \frac{MP}{RT}, where M is the molar mass."
+"According to Dalton's Law, how is the total pressure of a mixture of non-reacting gases calculated?",The total pressure is the sum of the partial pressures of all the gases in the mixture.
+Term: Partial Pressure,The pressure a gas in a mixture would exert if it were the only gas present in the container.
+How is the partial pressure of a gas (P_i) related to its mole fraction (X_i) in a mixture?,P_i = X_i P_{total}.
+Term: Diffusion,"The spreading of one substance through another, such as gas molecules moving from a region of high concentration to low concentration."
+Term: Effusion,The process in which a gas escapes from a container through a tiny hole into an evacuated space.
+Graham's Law states that the rate of effusion of a gas is inversely proportional to the _____,square root of its molar mass.
+What causes the pressure exerted by a gas according to the kinetic model?,Pressure results from the impact of gas molecules striking the walls of the container.
+The average kinetic energy of gas molecules depends only on the _____ of the gas.,absolute temperature
+Formula: Root mean square speed (v_{rms}) of gas molecules,v_{rms} = \sqrt{\frac{3RT}{M}}.
+How does increasing the temperature of a gas affect the range of molecular speeds described by the Maxwell distribution?,Increasing the temperature shifts the peak speed higher and broadens the range of speeds.
+Under what physical conditions do real gases deviate most significantly from ideal behavior?,Deviations are most significant at high pressures and low temperatures.
+"In the van der Waals equation, what does the constant 'a' represent?",The constant 'a' represents the strength of the attractive intermolecular forces.
+"In the van der Waals equation, what does the constant 'b' represent?","The constant 'b' represents the excluded volume, or the finite size of the gas molecules."
+Equation: The van der Waals equation for one mole of gas,\left(P + \frac{a}{V_m^2}\right)(V_m - b) = RT.
+Formula: Thermodynamic work (w) for gas expansion against a constant external pressure (P_{ex}),w = -P_{ex} \Delta V.
+Term: Isothermal Process,A process that takes place at a constant temperature.
+"Formula: Work for the reversible, isothermal expansion of an ideal gas",w = -nRT \ln\left(\frac{V_{final}}{V_{initial}}\right).
+Why is the change in internal energy (\Delta U) zero for the isothermal expansion of an ideal gas?,"Internal energy of an ideal gas depends only on temperature, which is constant during an isothermal process."
+How does the molar entropy (S_m) of an ideal gas change when its volume increases at constant temperature?,The molar entropy increases as the gas expands into a larger volume.
+Concept: The First Law of Thermodynamics applied to gases,"\Delta U = q + w, where q is heat added and w is work done on the system."
+How does the density of a gas change if it is compressed at constant temperature?,The density increases as the mass remains constant while the volume decreases.
+Which molecular speed is higher at a given temperature: hydrogen gas (M \approx 2 \text{ g/mol}) or oxygen gas (M \approx 32 \text{ g/mol})?,Hydrogen gas molecules have a higher speed because they have a lower molar mass.
+What is the relationship between 1 \text{ bar} and 1 \text{ atmosphere} in terms of pressure?,1 \text{ atm} = 1.01325 \text{ bar}.
+Formula: Calculating the mole fraction of gas A (X_A) in a mixture,X_A = \frac{n_A}{n_{total}}.
+"In thermodynamics, what is the convention for the sign of work (w) when a gas expands against its surroundings?",Work is negative (w < 0) because the system loses energy to do the expansion.
+"According to the kinetic model, why does pressure increase if the volume of a gas is decreased at constant temperature?","Compression increases the number of molecules per unit volume, leading to more frequent collisions with the walls."
+"What does a ""limiting law"" imply about the accuracy of the Ideal Gas Law?",It implies the law is only strictly accurate in the limit of zero pressure.
+Formula: Enthalpy (H) of a substance,H = U + PV.
+How many pascals are in one kilopascal (\text{kPa})?,1000 \text{ pascals} make up 1 \text{ kilopascal}.
+Term: Equation of State,"An algebraic expression that relates the pressure, volume, temperature, and amount of a substance."
+"In an adiabatic process involving a gas, how much heat (q) is exchanged with the surroundings?",Zero heat is exchanged (q = 0).
+"According to the second law of thermodynamics, what happens to the total entropy of the system and surroundings in a spontaneous expansion?",The total entropy must increase.
+How does the root mean square speed (v_{rms}) of a gas change if its absolute temperature is quadrupled?,The root mean square speed doubles (v_{rms} \propto \sqrt{T}).
+Which van der Waals parameter is generally larger for more polar molecules: 'a' or 'b'?,The constant 'a' is generally larger due to stronger intermolecular attractions.
+Term: Molar Volume (V_m),The volume occupied by one mole of a substance (V_m = V/n).
+What happens to the pressure of a gas if the absolute temperature is halved while the volume is held constant?,The pressure is halved.
+How much work is done when a gas expands into a vacuum (free expansion)?,Zero work is done because the external pressure is zero.
+"According to Graham's Law, if Gas X effuses four times slower than Gas Y, what is the ratio of their molar masses (M_X/M_Y)?",The molar mass of Gas X is 16 times greater than that of Gas Y.
+"In a mixture of oxygen and nitrogen at 1 \text{ atm}, if oxygen makes up 20\% of the molecules, what is its partial pressure?",The partial pressure of oxygen is 0.20 \text{ atm}.
+Formula: The relationship between enthalpy change (\Delta H) and internal energy change (\Delta U) for reactions involving gases,"\Delta H = \Delta U + \Delta n_{gas} RT, where \Delta n_{gas} is the change in moles of gas."
+Why is the entropy of a gas higher than the entropy of the same substance in its liquid phase?,Gas molecules are much more disordered and have a greater range of possible positions.
+What is the physical meaning of a large value for the van der Waals constant 'b'?,It indicates that the molecules of the gas have a large physical size.
+How does the frequency of molecular collisions with the container walls change if a gas is heated at constant pressure?,The frequency of collisions decreases because the volume increases.
+What is the value of one atmosphere in pascals (\text{Pa})?,"101,325 \text{ Pa}."
+Formula: Relationship between Celsius (t) and Kelvin (T) temperature,T = t + 273.15.
+"In the context of the Ideal Gas Law, what does the variable 'n' represent?",The number of moles of the gas.
+Why do heavier gases effuse more slowly than lighter gases at the same temperature?,Heavier molecules have lower average speeds at the same kinetic energy (temperature).
+What happens to the volume of an ideal gas as the temperature approaches absolute zero (0 \text{ K}) at constant pressure?,The volume theoretically approaches zero.
+Concept: Mole Fraction,The ratio of the number of moles of one component to the total number of moles in a mixture.
+"According to the kinetic model, what property of a gas increases as the average speed of its molecules increases?",The temperature of the gas increases.
+What is the sign of work (w) when surroundings compress a gas?,Work is positive (w > 0) because energy is being added to the system.
+How is the most probable speed (v_p) of a gas related to its temperature?,The most probable speed increases as the temperature increases.

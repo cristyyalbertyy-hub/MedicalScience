@@ -1,0 +1,89 @@
+"In the context of cell renewal, what are 'static cell populations'?","Cells that no longer divide, such as those in the central nervous system or skeletal muscle."
+Which type of cell population consists of cells that divide slowly and episodicallly to maintain tissue structure but can be stimulated by injury?,Stable cell populations.
+Give an example of a 'rapidly renewing' cell population.,Blood cells or the epithelial cells of the skin.
+The cell cycle is divided into two principal phases: mitosis and _____.,Interphase.
+Which subphase of interphase is characterized by the replication of DNA?,S phase (synthesis phase).
+What is the primary activity of a cell during the G_{1} phase?,Gathering nutrients and synthesizing RNA and proteins for DNA synthesis.
+The 'point of no return' in the cell cycle where a cell self-evaluates its replicative potential is called the _____.,Restriction point.
+Which protein complex mediates the restriction point by interacting with transcription factors (E2F)?,Retinoblastoma susceptibility protein (pRb).
+What state does a cell enter if it leaves the cell cycle in the G_{1} phase to undergo terminal differentiation?,G_{0} phase.
+Which checkpoint monitors the integrity of newly replicated DNA during the G_{1} phase?,G_{1} DNA-damage checkpoint.
+What tumor-suppressing protein is detected at high levels if the G_{1} DNA-damage checkpoint identifies irreparable DNA damage?,p53.
+What is the function of the 'unreplicated-DNA checkpoint' during the G_{2} phase?,It prevents entry into M phase before DNA synthesis is complete.
+"The M phase of the cell cycle consists of nuclear division (karyokinesis) and cytoplasmic division, known as _____.",Cytokinesis.
+Which M-phase checkpoint prevents premature entry into anaphase?,Spindle-assembly checkpoint.
+What is the consequence of 'mitotic catastrophe'?,Failure to arrest the cell cycle results in aberrant chromosome segregation and potentially tumor development.
+How are cells with abnormal chromosome numbers produced by malfunction of cell-cycle checkpoints described?,Aneuploid cells.
+Which two-protein complex powers cells through cell-cycle checkpoints?,Cyclin and a cyclin-dependent kinase (Cdk).
+"What was the first protein identified to control the initiation of mitosis, later found to be a cyclin-Cdk complex?",Maturation promoting factor (MPF).
+Which mechanism controls the levels of cyclins during the cell cycle?,Ubiquitin-mediated degradation.
+"At the end of the S phase of mitosis, what is the DNA content of the cell compared to the chromosome number?",DNA content is 4d while chromosome number remains 2n.
+During which phase of mitosis do replicated chromosomes condense and become visible?,Prophase.
+What protein ring holds sister chromatids together during early prophase?,Cohesins.
+What is the specialized protein complex located on each chromatid that serves as an attachment point for microtubules?,Kinetochore.
+Which type of mitotic spindle microtubule is nucleated from \gamma-tubulin rings and forms a starlike array around the MTOC?,Astral microtubules.
+What event marks the beginning of anaphase in mitosis?,The separation of sister chromatids as cohesins break down.
+Which molecular motor is responsible for pulling chromatids toward the MTOC poles during anaphase?,Dyneins.
+What structural components form the contractile ring during cytokinesis?,Actin filaments and myosin II molecules.
+How many functional gametes are produced from a single primary spermatocyte in meiosis?,Four.
+How many functional gametes are produced from a single primary oocyte?,One.
+At what specific stage of meiosis is the human oocyte arrested before ovulation?,Metaphase II.
+What term describes the programmed cell death that is a physiologic process for eliminating unwanted cells?,Apoptosis.
+Which form of cell death is a pathologic process caused by acute injury and results in cell lysis and inflammation?,Necrosis.
+"During necrosis, what causes damage to neighboring tissue and an inflammatory response?",The release of lysosomal enzymes and cytoplasmic contents into the extracellular space.
+What irreversible event in the nucleus commits a cell to apoptosis?,DNA fragmentation by nuclear endonucleases.
+Which organelle initiates apoptosis by releasing cytochrome c into the cytoplasm?,Mitochondrion.
+What family of proteins regulates the release of cytochrome c from the mitochondrial intermembrane space?,Bcl-2 family.
+What is the name for the cascade of proteolytic enzymes responsible for dismantling the cell during apoptosis?,Caspases.
+What morphological feature of the plasma membrane occurs in apoptosis without the loss of membrane integrity?,Membrane blebbing.
+What are the membrane-bounded vesicles formed at the final step of apoptosis called?,Apoptotic bodies.
+The tumor necrosis factor (TNF) receptor is often called the _____ because it triggers apoptosis when activated.,Death receptor.
+Which form of programmed cell death involves the lysosomal degradation of the cell's own components?,Autophagy.
+Which form of cell death is mediated by mitogen-activated protein kinases (MAPKs) rather than caspases?,Paraptosis.
+Which form of cell death is dependent on the enzyme Caspase-1 and generates an intense inflammatory reaction?,Pyroptosis.
+Necroptosis is a regulated cell death mechanism that is independent of which specific enzyme group?,Caspases.
+What is 'karyolysis' in a dying cell?,The disappearance of nuclei due to complete dissolution of DNA by DNAase.
+What is 'pyknosis' in a dying cell?,Condensation of chromatin leading to shrinkage of the nuclei into dense basophilic masses.
+What is 'karyorrhexis' in a dying cell?,Fragmentation of the nucleus.
+"In the liver, which zone of cells is the first to show ischemic necrosis (centrilobular necrosis)?",Zone 3.
+What specialized form of apoptosis occurs in epidermal cells of the skin?,Terminal differentiation (keratinization).
+What happens to sperm mitochondria after fertilization?,They are eliminated from the cytoplasm of the zygote.
+Which protein complex degrades short-lived regulatory proteins like mitotic cyclins?,Proteasome.
+How does 'blebbing' occur during acute cell injury?,The plasma membrane detaches from the underlying actin filaments of the cell cytoskeleton.
+Which phase of the cell cycle is typically the longest and most variable?,G_{1} phase.
+What is the function of the 'chromosome-segregation checkpoint' in the M phase?,It prevents cytokinesis until all chromosomes have been correctly separated.
+Which cyclin-Cdk complex is essential for entry into the S phase?,Cyclin E-Cdk2.
+Which protein is responsible for initiating the duplication of centrioles after phosphorylation by Cyclin E-Cdk2?,Nucleophosmin/B23.
+At what stage of the cell cycle are cilia typically disassembled?,Before the cell enters the M phase.
+What is the characteristic appearance of necrotic cell DNA on a gel compared to apoptotic cell DNA?,"Necrotic DNA shows random degradation (smear), while apoptotic DNA shows oligonucleosomal fragmentation (ladder)."
+Which specific Caspase is uniquely required for pyroptosis?,Caspase-1.
+"In meiosis I, do centromeres split during anaphase I?",No (sister chromatids remain held together).
+What process occurs during prophase I of meiosis that contributes to genetic diversity?,Crossing over (recombination).
+Which cyclin-Cdk complex regulates progression through the G_{1} phase?,Cyclin D-Cdk4/6.
+Which checkpoint ensures that the cell has reached a sufficient size before proceeding?,Restriction checkpoint (G_{1}).
+What is the fate of 'stable cell populations' like those in the liver after significant tissue loss?,They are restored by stimulated mitotic activity of the healthy remaining tissue.
+Which cytoplasmic change is characteristic of apoptosis: cell swelling or cell shrinkage?,Cell shrinkage.
+"What molecule is translocated from the inner to the outer leaflet of the plasma membrane during apoptosis, acting as a signal for phagocytes?",Phosphatidylserine.
+The process of chromosome segregation and nuclear division is technically termed _____.,Karyokinesis.
+"In the cell cycle, what does the 'unreplicated-DNA checkpoint' monitor?",It ensures DNA replication is complete before the cell enters mitosis.
+Which type of cells enter meiotic arrest as primary oocytes during fetal development?,Oogonia.
+Which biological 'engine' is based on the cyclic synthesis and degradation of specific proteins?,The cell-cycle engine (regulated by cyclins).
+A cell that has 2n chromosomes and 2d DNA content is described as _____.,Diploid.
+A mature sperm cell with 1n chromosomes and 1d DNA content is described as _____.,Haploid.
+Which phase of mitosis involves the alignment of chromosomes along the equatorial plate?,Metaphase.
+What is the primary role of polar microtubules in the mitotic spindle?,They originate from the MTOC and interact to help push the poles apart.
+What is the name for the period of meiotic arrest in human primary oocytes that lasts until puberty?,Dictyotene (or dormant prophase I).
+Which protein is the main internal decision-maker for initiating apoptosis by acting on the mitochondria?,Bcl-2 family proteins.
+What happens to the nuclear envelope during prometaphase of mitosis?,It disintegrates into small transport vesicles.
+Which checkpoint uses p53 to block the cell cycle if DNA is damaged?,G_{1} DNA-damage checkpoint.
+What is the average duration of the M phase in rapidly dividing human cells?,Approximately 1 hour.
+Which cell death mechanism is often induced by growth factor receptors like IGF-1?,Paraptosis.
+How does the size of apoptotic cells change compared to necrotic cells?,"Apoptotic cells shrink, while necrotic cells swell."
+What is the significance of 'annexin V' staining in studying cell death? (Context: membrane changes),It binds to phosphatidylserine on the outer membrane of apoptotic cells.
+Which meiotic division is known as the 'reductional division'?,Meiosis I.
+Which meiotic division is known as the 'equatorial division'?,Meiosis II.
+The study of the number of times the normal DNA content of a cell is multiplied is called _____.,Ploidy analysis.
+What technique is used to quantify nuclear DNA in isolated cells flowing past a sensor?,Flow cytometry.
+Which phase of the cell cycle is considered a gap in DNA synthesis following mitosis?,G_{1} phase.
+What determines if the rate of cell division is higher than cell death in an organism?,"A disorder of cell accumulation (e.g., cancer or hyperplasia)."
+Which cell death process involves the formation of an autophagosome?,Autophagy.

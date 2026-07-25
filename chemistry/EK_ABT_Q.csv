@@ -1,0 +1,53 @@
+"According to the Arrhenius theory, what defines an acid?",A hydrogen-containing substance that dissociates to produce hydrogen ions (H^+) in aqueous solution.
+"According to the Arrhenius theory, what defines a base?",A hydroxide-containing substance that dissociates to produce hydroxide ions (OH^-) in aqueous solution.
+What is the primary limitation of the Arrhenius definitions of acids and bases?,They are specific only to reactions occurring in water as the solvent.
+"In the Br\phinsted-Lowry theory, an acid is defined as a(n) _____.",Proton (H^+) donor
+"In the Br\phinsted-Lowry theory, a base is defined as a(n) _____.",Proton (H^+) acceptor
+What chemical species is formed when a hydrogen ion (H^+) bonds to a water molecule?,Hydronium ion (H_3O^+)
+What defines a 'conjugate base' in a Br\phinsted-Lowry reaction?,The species that remains after an acid has donated a proton.
+What defines a 'conjugate acid' in a Br\phinsted-Lowry reaction?,The species formed after a base has accepted a proton.
+"According to Lewis theory, an acid is defined as a(n) _____.",Electron pair acceptor
+"According to Lewis theory, a base is defined as a(n) _____.",Electron pair donor
+"What term describes a substance, like water, that can act as both a Br\phinsted acid and a Br\phinsted base?",Amphiprotic (or amphoteric)
+How does a 'strong electrolyte' differ from a 'weak electrolyte' in aqueous solution?,"A strong electrolyte ionizes or dissociates completely, while a weak electrolyte only partially ionizes."
+Why is methanol (CH_3OH) classified as a nonelectrolyte despite containing an -OH group?,It does not dissociate into ions when dissolved in water.
+What is the 'autoprotolysis' of water?,The reaction in which two water molecules transfer a proton to form H_3O^+ and OH^-.
+State the mathematical expression for the ion product constant of water (K_w).,K_w = [H_3O^+][OH^-] (or [H^+][OH^-])
+What is the value of K_w at 25 ^\circ C?,1.0 \times 10^{-14}
+How does an increase in temperature affect the value of the autoprotolysis constant (K_w)?,K_w increases with temperature because the autoprotolysis reaction is endothermic.
+What is the mathematical definition of pH?,pH = -\log[H_3O^+] (or -\log[H^+])
+What is the mathematical definition of pOH?,pOH = -\log[OH^-]
+"In any aqueous solution at 25 ^\circ C, the sum of pH and pOH must equal _____.",14.00
+What characterizes a 'neutral' solution in terms of ion concentrations?,The concentrations of hydronium ions and hydroxide ions are equal ([H_3O^+] = [OH^-]).
+What provides a quantitative measure of the strength of a weak acid (HA) at equilibrium?,"The acidity constant (K_a), defined as \frac{[H_3O^+][A^-]}{[HA]}."
+What provides a quantitative measure of the strength of a weak base (B) at equilibrium?,"The basicity constant (K_b), defined as \frac{[BH^+][OH^-]}{[B]}."
+How is the strength of an acid related to the strength of its conjugate base?,"They are inversely related; the stronger the acid, the weaker its conjugate base."
+"For a conjugate acid-base pair, what is the relationship between K_a, K_b, and K_w?",K_a \times K_b = K_w
+"In the context of chemical kinetics, how does a catalyst affect a reaction at equilibrium?","It increases the rate of both forward and reverse reactions equally, reaching equilibrium faster without changing the equilibrium position."
+What happens to the percent ionization of a weak acid as the solution is diluted?,The percent ionization increases with dilution.
+What condition defines 'dynamic equilibrium' in a weak electrolyte solution?,The rate of the forward ionization reaction equals the rate of the reverse recombination reaction.
+State Le Ch\u00e2telier's principle.,"When a stress is applied to a system at equilibrium, the system adjusts to minimize the effect of that stress."
+How does the addition of a common ion affect the solubility of a sparingly soluble salt?,It decreases the solubility (the common ion effect).
+"In the Lewis theory, what chemical species acts as the acid in the reaction between BF_3 and NH_3?",BF_3 (it accepts the electron pair from the nitrogen in NH_3).
+What is the 'leveling effect' observed in strong acids dissolved in water?,All strong acids appear to have the same strength because they all react completely to form H_3O^+ ions.
+How does a catalyst like an enzyme affect the activation energy (E_a) of a biochemical reaction?,"It lowers the activation energy, thereby increasing the reaction rate."
+What is the mathematical relationship between pK_a and K_a?,pK_a = -\log K_a
+"If Acid A has a higher pK_a than Acid B, which acid is stronger?",Acid B is stronger (lower pK_a corresponds to higher K_a).
+What term describes the non-equilibrium state maintained by living organisms to keep internal conditions constant?,Homeostasis (or steady state)
+How do 'activities' differ from 'molarities' in electrolyte solutions?,"Activities account for intermolecular and interionic interactions that occur over long distances, which molarities ignore."
+What is the 'ion product of water' constant (K_w) specifically at standard conditions (25 ^\circ C)?,1.0 \times 10^{-14}
+Which Arrhenius species is always produced by a base in water?,The hydroxide ion (OH^-)
+Which Br\phinsted-Lowry species is always the 'proton' being transferred?,The hydrogen ion (H^+)
+Name one example of a 'strong' acid mentioned in the text.,HCl (Hydrochloric acid) or HNO_3 (Nitric acid).
+Name one example of a 'weak' acid mentioned in the text.,CH_3COOH (Acetic acid) or HF (Hydrofluoric acid).
+What identifies an 'acidic' oxide?,A nonmetal oxide that reacts with water to produce a Br\phinsted acid.
+"In terms of rates, what is true when a reaction is 'at equilibrium'?",Rate_{forward} = Rate_{reverse}
+What is the net ionic equation for the reaction between any strong acid and any strong soluble hydroxide base?,H^+(aq) + OH^-(aq) \rightarrow H_2O(l)
+Why is ammonia (NH_3) considered a Br\phinsted base but not an Arrhenius base in its pure gas form?,It can accept a proton (H^+) but does not contain a hydroxide group (OH^-) to dissociate.
+What defines a 'radical' in chemical bonding?,A species with at least one unpaired electron.
+How does the 'autoprotolysis equilibrium' behave like a seesaw?,"If the concentration of H_3O^+ increases, the concentration of OH^- must decrease to keep K_w constant."
+What is the purpose of an acid-base 'indicator'?,To change color at a specific pH range to signal the progress or endpoint of a reaction.
+"In a Br\phinsted-Lowry acid-base reaction, how many conjugate pairs are involved?",Two
+What is the pH of a solution where [H_3O^+] = 1.0 \times 10^{-7} M?,7.0
+What thermodynamic quantity is used to calculate the equilibrium constant K?,Standard reaction Gibbs free energy (\Delta G^\circ)
+Term: Electrolyte,Definition: A substance that dissolves in water to yield a solution that conducts electricity. Example: NaCl.

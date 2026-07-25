@@ -1,0 +1,63 @@
+"In thermodynamics, what term describes the sum of a system and its surroundings?",The universe
+Which type of thermodynamic system can exchange both matter and energy with its surroundings?,An open system
+"A(n) _____ system is one that can exchange energy, but not matter, with its surroundings.",closed
+Which thermodynamic property is defined as the total energy of a system?,Internal energy (U)
+What is the mathematical expression for the First Law of Thermodynamics regarding the change in internal energy (\\Delta U)?,"\Delta U = q + w (or \Delta U = q - w, depending on the sign convention for work done by the system)"
+Concept: State Function,"Definition: A property whose value depends only on the current state of the system, not on how it reached that state. Examples: U, H, S, G."
+Which two common thermodynamic quantities are considered path functions rather than state functions?,Heat (q) and work (w)
+Formula: Enthalpy (H),H = U + PV
+Under what specific condition is the change in enthalpy (\\Delta H) equal to the heat (q) transferred?,Constant pressure (with no nonexpansion work)
+A chemical reaction that releases heat to the surroundings is classified as _____.,exothermic
+"In a(n) _____ reaction, the enthalpy of the products is higher than the enthalpy of the reactants.",endothermic
+What is the sign of \\Delta H for an endothermic process?,Positive (\Delta H > 0)
+The heat required to break a specific covalent bond at constant pressure is known as the _____.,bond enthalpy
+Why are all bond enthalpies expressed as positive values?,Because heat must always be supplied (energy absorbed) to break a chemical bond.
+The standard enthalpy of _____ is the enthalpy change per mole of a substance burned in oxygen under standard conditions.,combustion
+How is the enthalpy of freezing related to the enthalpy of fusion?,It is the negative of the enthalpy of fusion (-\Delta H_{fus})
+Which thermodynamic quantity serves as a measure of the disorder or randomness of a system?,Entropy (S)
+What does the Second Law of Thermodynamics state regarding spontaneous processes in an isolated system?,The entropy of an isolated system increases in the course of any spontaneous change.
+Formula: Boltzmann definition of Entropy,"S = k \ln W, where k is Boltzmann's constant and W is the number of microstates."
+"In the context of statistical entropy, what is a 'microstate' (W)?",A specific arrangement of atoms or molecules that gives rise to a particular total energy.
+The disorder arising from the thermal motion of molecules is known as _____ disorder.,thermal
+What is the mathematical definition for the change in entropy (\\Delta S) of a system at constant temperature?,\Delta S = \frac{q_{rev}}{T}
+"According to the Second Law, a process is spontaneous if the change in total entropy (\\Delta S_{tot}) is _____.",positive (\Delta S_{tot} > 0)
+How does increasing the temperature of a system affect its entropy?,It increases entropy by increasing the thermal motion (disorder) of the molecules.
+Why is the entropy change for a given transfer of heat larger at low temperatures than at high temperatures?,The arriving energy creates a more noticeable increase in disorder in a relatively quiet (cool) system than in a vigorously moving (hot) one.
+Formula: Gibbs Free Energy (G),G = H - TS
+What is the primary thermodynamic criterion for a spontaneous process at constant temperature and pressure?,A decrease in Gibbs free energy (\Delta G < 0)
+A process that occurs with a negative change in Gibbs free energy is called _____.,exergonic
+Concept: Endergonic Process,Definition: A non-spontaneous process characterized by a positive change in Gibbs free energy (\Delta G > 0) that requires an input of free energy to occur.
+What is the value of \\Delta G for a system at equilibrium?,Zero (\Delta G = 0)
+Under what conditions of enthalpy change (\\Delta H) and entropy change (\\Delta S) is a reaction spontaneous at all temperatures?,When \Delta H is negative (exothermic) and \Delta S is positive (increasing disorder).
+"If a reaction is endothermic (\\Delta H > 0) and results in an increase in entropy (\\Delta S > 0), when does it become spontaneous?",At high temperatures (specifically when T\Delta S > \Delta H)
+A reaction that is exothermic (\\Delta H < 0) but decreases entropy (\\Delta S < 0) is spontaneous only at _____ temperatures.,low (specifically when |T\Delta S| < |\Delta H|)
+What is the sign of \\Delta G for a process that is both enthalpically and entropically opposed?,Positive at all temperatures (non-spontaneous)
+The change in Gibbs free energy (\\Delta G) at constant temperature and pressure represents the maximum amount of _____ work a process can perform.,nonexpansion (or 'extra')
+Give two examples of 'nonexpansion work' found in biological systems.,"Muscular activity, protein synthesis, or nerve signal transmission."
+What is the 'standard state' pressure for a gas in general chemistry thermodynamics?,1\text{ bar} (or 1\text{ atm} in older conventions)
+Formula: Relationship between \\Delta G and the reaction quotient (Q),\Delta G = \Delta G^\circ + RT \ln Q
+How is the standard Gibbs free energy of reaction (\\Delta G^\\circ) related to the equilibrium constant (K)?,\Delta G^\circ = -RT \ln K
+"If a reaction has a large negative \\Delta G, does this guarantee it will occur at a fast rate?","No; the rate depends on the reaction mechanism (kinetics), while \Delta G only indicates thermodynamic spontaneity."
+"In biochemistry, the 'biochemical standard state' specifies a pH of _____.",7.0
+How can a non-spontaneous (uphill) biochemical reaction be driven forward in a living cell?,By coupling it to a second reaction that is highly exergonic (downhill).
+Which thermodynamic law allows us to determine absolute entropies by stating the entropy of a perfectly crystalline substance at 0\text{ K} is zero?,The Third Law of Thermodynamics
+The spreading of molecules of a gas into a larger volume is an example of _____ disorder.,positional
+What is 'chemical potential' (\mu or \bar{G})?,The partial molar free energy of a substance.
+"In an exothermic reaction, why does the entropy of the surroundings increase?",Because the heat released by the system increases the thermal motion of the molecules in the surroundings.
+What term refers to the change in enthalpy per mole for the formation of a compound from its elements in their most stable forms?,Standard enthalpy of formation (\Delta H_f^\circ)
+Why can an endothermic reaction still be spontaneous?,If the increase in the system's entropy is large enough to overcome the decrease in the surroundings' entropy caused by heat absorption.
+The standard set of conditions for chemists usually includes a temperature of _____.,298.15\text{ K} (or 25^\circ\text{C})
+Is the enthalpy of a system a measure of the energy it 'possesses' in a fundamental sense like internal energy?,No; it is a bookkeeping device to account for expansion work during heat transfers at constant pressure.
+Formula: Entropy of the universe,\Delta S_{universe} = \Delta S_{system} + \Delta S_{surroundings}
+What happens to the spontaneity of an endothermic reaction as temperature increases?,The reaction becomes more likely to be spontaneous as T\Delta S becomes larger than \Delta H.
+"In information theory, what has 'information' been described as in relation to entropy?",Negative entropy (or 'negentropy')
+The constantTransactions between a biological system and its surroundings allow organisms to create _____ within themselves while obeying the Second Law.,order
+Which constant relates the gas constant (R) to the Boltzmann constant (k)?,"Avogadro's constant (N_A), where R = k N_A"
+"If \\Delta G^\\circ for a reaction is positive, what does this imply about the equilibrium constant K?",K < 1 (the reactants are favored at equilibrium)
+What is the sign of \\Delta S for the melting of ice?,Positive (randomness increases as solid becomes liquid)
+The process of achieving motion against an opposing force is the definition of _____.,work
+True or False: A large negative value of \\Delta G means the reaction will happen instantly.,"False; it only indicates the reaction is thermodynamically favorable, not its speed."
+"In a reversible process, how must the temperature of the system and surroundings differ?",By an infinitesimal amount.
+What is the standard molar entropy of a pure element in its stable state at 298\text{ K}?,"It is a positive value (unlike enthalpy of formation, which is zero)."
+Which thermodynamic quantity approximately reflects the number and kinds of chemical bonds broken and formed in a reaction?,Enthalpy (H)
+What is the relationship between \\Delta G_{vap} and the standard vapor pressure of a liquid at equilibrium?,"At equilibrium, \Delta G_{vap} = 0, which links the vapor pressure to \Delta G_{vap}^\circ via \Delta G_{vap}^\circ = -RT \ln(P/P^\circ)."

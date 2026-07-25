@@ -1,0 +1,70 @@
+What property defines a chiral molecule or complex?,It is not able to be superimposed on its own mirror image.
+What is the term for a carbon atom that is bonded to four different substituents?,Asymmetric center (or chiral center).
+"The property of chirality is derived from the Greek word 'cheir', which means _____.",Hand
+What is the specific name for stereoisomers that are non-superimposable mirror images of each other?,Enantiomers
+Why is the amino acid glycine considered achiral?,"It has two hydrogen atoms attached to its \alpha-carbon, making it superimposable on its mirror image."
+What device is used to measure the optical rotation of a substance?,Polarimeter
+What is a 'racemic mixture'?,A mixture containing equal proportions of two enantiomers.
+"According to the 2^n rule, how many stereoisomers are possible for a molecule with n chiral centers?",2^n
+What distinguishes structural isomers from geometrical isomers?,"Structural isomers have atoms linked to different neighbors, whereas geometrical isomers have the same links but different spatial arrangements."
+"If a chiral molecule rotates the plane of polarized light clockwise, it is termed _____.",Dextrorotatory
+What is the term for a chiral molecule that rotates the plane of polarization in a counter-clockwise direction?,Levorotatory
+"In the context of thermodynamics, how does positional disorder in isomers affect residual molar entropy?",Statistical disorder in the positions of atoms increases the residual molar entropy of the crystal.
+Which isomer of an octahedral complex MX_2Y_4 would generally be expected to have higher residual entropy: cis or trans?,"The cis isomer, due to having more possible disordered orientations in the crystal lattice."
+What convention is commonly used to represent the three-dimensional structures of chiral monosaccharides on a two-dimensional surface?,Fischer projection
+What is the significance of the RS system in organic chemistry?,It provides a nomenclature for unambiguously specifying the absolute configuration of a chiral center.
+"In biochemistry, why is the 'fit' between a substrate and an enzyme described as stereospecific?",Because the three-dimensional structures of the molecules must be complementary for the interaction to occur.
+What tragic historical example illustrates the different biological effects of two enantiomers of a drug?,"Thalidomide, where one enantiomer was a sedative and the other caused birth defects."
+"In molecular conformations, a torsion angle of 60^{\circ} or 180^{\circ} typically corresponds to a _____ conformation.",Staggered
+At what torsion angles does the energy of a molecule like ethane reach its maximum?,At 0^{\circ} and 120^{\circ} (fully eclipsed conformations).
+Why can eclipsed and staggered forms of a molecule usually not be separately isolated at room temperature?,The energy differences are small enough to allow rapid interconversion millions of times per second.
+True or False: Enantiomers have identical chemical properties when reacting with achiral reagents.,True
+What physical property differs between two pure enantiomers?,The direction in which they rotate plane-polarized light.
+An organic compound with the formula C_6H_{14} that yields only two structural isomers upon chlorination is likely _____.,"2,3-dimethylbutane"
+Is 2-butanol a structural isomer of methyl propyl ether?,Yes
+Which specific atom in Ibuprofen is the chiral center?,"The carbon atom in the propionic acid side chain that is bonded to the methyl, carboxyl, hydrogen, and isobutylphenyl groups."
+What is the term for isomers that differ in configuration at only one of several chiral centers?,Epimers
+"In carbohydrates, the creation of a new chiral center upon ring closure generates cyclic stereoisomers called _____.",Anomers
+The spontaneous change in the optical rotation of a solution of a pure anomer as it reaches equilibrium is known as _____.,Mutarotation
+How many chiral centers are present in a keto-hexose like fructose?,Three
+Is glycerol (C_3H_8O_3) optically active?,No (it is achiral).
+"In wedge-and-dash notation, what does a dashed wedge-shaped bond signify?","The bond is directed into the page, away from the viewer."
+"In wedge-and-dash notation, what does a solid wedge-shaped bond represent?","The bond is directed out of the page, toward the viewer."
+Identify the chiral carbon in 1-bromo-2-chloropropane.,The second carbon (C_2).
+Is CH_3CH_2CHCl_2 an optical isomer?,"No, it contains no chiral carbon atoms."
+Explain why 2-bromo-2-methylpropane is achiral.,"The central carbon is bonded to three identical methyl groups, failing the requirement for four different substituents."
+How many chiral centers does the amino acid threonine possess?,Two
+What is the structural significance of the observed optical activity in a synthesized organic compound?,It indicates the presence of a chiral molecule that is not a racemic mixture.
+What is the difference between configuration and conformation?,"Configuration refers to the fixed spatial arrangement of atoms (requires breaking bonds to change), while conformation refers to spatial arrangements produced by rotation about single bonds."
+Almost all naturally occurring amino acids in animal proteins have which specific 'handedness'?,L-configuration
+What is the relationship between D-glucose and D-galactose?,They are epimers (differing only at C_4).
+Why does a racemic mixture show no net optical rotation?,The equal and opposite rotations of the two enantiomers cancel each other out.
+Is the molecule CH_3CHFCl chiral?,"Yes (the carbon is bonded to H, CH_3, F, and Cl)."
+Identify the chiral carbon in CH_3CH(OH)CH_2CH_3.,The second carbon (C_2).
+What is the term for stereoisomers that are not mirror images of each other?,Diastereomers
+Can structural isomers have the same boiling point?,Rarely; they usually have different physical properties due to different molecular shapes and intermolecular forces.
+What is the hybridization of a chiral carbon atom in a typical saturated organic molecule?,sp^3
+"In a Fischer projection, where are the most oxidized carbons typically placed?",At or toward the top.
+How many stereoisomers are possible for a ketopentose?,"4 (it has 2 chiral centers, and 2^2 = 4)."
+"In the context of the RS system, what does the 'R' stand for?",Rectus (Latin for right).
+"In the context of the RS system, what does the 'S' stand for?",Sinister (Latin for left).
+Which isomer of propranolol is used as a contraceptive?,(R)-propranolol
+Which isomer of propranolol is used to treat hypertension?,(S)-propranolol
+What is an asymmetric center in a coordination complex?,The central metal atom when it is bonded to a set of ligands in a non-superimposable arrangement.
+Give an example of a chiral inorganic complex mentioned in the text.,[Co(en)_3]^{3+}
+What is the term for a process that produces a mixture of enantiomers in equal proportions?,Racemization (or synthesis yielding a racemic mixture).
+Why are biological interactions like hormone-receptor binding sensitive to chirality?,The receptor site is itself chiral and can only accommodate one specific enantiomer of the hormone.
+"Is 1,2-dichloropentane a chiral molecule?",Yes (the second carbon is a chiral center).
+"Identify the chiral centers in 2,3-dimethylpentane.",The second and third carbons (C_2 and C_3).
+What happens to the angle of rotation if the concentration of a chiral substance in a polarimeter is doubled?,The angle of rotation doubles.
+"If a molecule has a plane of symmetry, is it chiral or achiral?",Achiral
+What is the main requirement for a molecule to be 'optically active'?,It must be chiral (and not a racemic mixture).
+How does the molar mass of enantiomers compare?,They have identical molar masses.
+"In Fischer projections, horizontal bonds are understood to point _____ the viewer.",Toward
+"In Fischer projections, vertical bonds are understood to point _____ the viewer.",Away from
+What is the relationship between D-fructose and L-fructose?,They are enantiomers.
+Are D-sorbose and D-fructose epimers?,Yes (they differ in configuration at C_3).
+"In a crystal of C_6H_4F_2, which isomer (ortho, meta, or para) would have the least residual molar entropy if the positions are statistically disordered?",The para isomer (due to its higher symmetry reducing the number of distinguishable disordered orientations).
+What is the relationship between propanal and propanone?,They are structural isomers (functional group isomers).
+How many chiral centers are in the open-chain form of D-glucose?,Four
+True or False: Chiral molecules are always organic.,False (many inorganic coordination complexes are chiral).

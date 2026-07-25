@@ -1,0 +1,65 @@
+The process by which molecules with greater-than-average kinetic energy escape from the surface of a liquid to become a gas is called _____.,Evaporation (or Vaporization)
+How does evaporation affect the temperature of the remaining liquid?,It cools the liquid because high-energy molecules are removed.
+What term describes the process of gaseous molecules returning to the liquid state?,Condensation
+"In a closed container, what state is reached when the rate of evaporation equals the rate of condensation?",Dynamic equilibrium
+Term: Vapor Pressure,Definition: The pressure exerted by a vapor in dynamic equilibrium with its liquid (or solid) at a fixed temperature.
+Why is the equilibrium between a liquid and its vapor described as 'dynamic'?,Both evaporation and condensation occur simultaneously at equal rates.
+How does increasing the temperature of a liquid affect its vapor pressure?,The vapor pressure increases.
+Liquids that have a high vapor pressure at ordinary temperatures are described as _____.,Volatile
+What is the relationship between the strength of intermolecular forces and a liquid's vapor pressure?,Stronger intermolecular forces result in a lower vapor pressure.
+Why does ethanol have a lower vapor pressure than dimethyl ether at the same temperature despite having the same molecular formula?,"Ethanol can form hydrogen bonds, which are stronger than the forces in dimethyl ether."
+How does a high enthalpy of vaporization ( \Delta H_{vap} ) relate to the volatility of a liquid?,A high  \Delta H_{vap}  indicates low volatility (stronger intermolecular forces).
+What is the specific temperature at which the vapor pressure of a liquid equals the external (atmospheric) pressure?,Boiling point
+The temperature at which a liquid boils when the external pressure is exactly  1 \text{ atm}  is the _____.,Normal boiling point
+How does the vapor pressure of a liquid at its normal boiling point compare to standard atmospheric pressure?,It is exactly equal to  1 \text{ atm}  (or  760 \text{ Torr} ).
+Formula: Clausius–Clapeyron equation (two-point form), \ln\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{vap}}{R} \left(\frac{1}{T_2} - \frac{1}{T_1}\right) 
+"In the Clausius–Clapeyron equation, what does the constant  R  represent?",The gas constant
+"On a phase diagram, what does the boundary line between the liquid and vapor regions represent?",The variation of vapor pressure with temperature.
+What thermodynamic condition is met when two phases are in dynamic equilibrium at a constant temperature and pressure?,The Gibbs free energy change ( \Delta G ) is zero.
+Formula: Raoult's Law for a solvent in a solution, P = x_{solvent} P_{pure} 
+How does the addition of a nonvolatile solute affect the vapor pressure of a solvent?,It lowers the vapor pressure.
+"According to Raoult's Law, the vapor pressure of a solvent is directly proportional to its _____ in the solution.",Mole fraction ( x_{solvent} )
+Why does a nonvolatile solute cause boiling-point elevation?,"The solute lowers the vapor pressure, requiring a higher temperature to reach atmospheric pressure."
+What is 'sublimation'?,The process where a solid vaporizes directly into a gas without passing through the liquid phase.
+Concept: Trouton's Rule,The entropy of vaporization ( \Delta S_{vap} ) is approximately  85 \text{ J}\cdot\text{K}^{-1}\cdot\text{mol}^{-1}  for many liquids.
+Why do liquids like water have a higher entropy of vaporization than predicted by Trouton's Rule?,Water molecules are highly ordered due to extensive hydrogen bonding in the liquid state.
+How does the vapor pressure of a solid compare to its liquid form at the same temperature?,It is usually much lower because molecules are held more tightly in the solid.
+What happens to the rate of evaporation as the surface area of a liquid increases?,"The rate increases, though the vapor pressure remains the same."
+Is the vapor pressure of a pure liquid dependent on the volume of the liquid present?,"No, it is independent of the amount of liquid as long as some is present."
+"In a mercury barometer experiment, how is the vapor pressure of an injected liquid measured?",By the decrease in the height of the mercury column.
+"What is the vapor pressure of water at its normal boiling point ( 100 \, ^\circ\text{C} )?", 760 \text{ Torr}  (or  1 \text{ atm} ).
+How does decreasing external pressure affect the boiling point of a liquid?,It decreases the boiling point.
+A liquid that remains in the liquid state at a temperature below its freezing point is called _____.,Supercooled
+"On a phase diagram, what is the point where the solid, liquid, and vapor phases all coexist in equilibrium?",Triple point
+What happens to the distinction between liquid and vapor at the critical temperature ( T_c )?,The phases become indistinguishable as their densities become equal.
+"Which has a higher vapor pressure at  25 \, ^\circ\text{C} : water or mercury?",Water ( 23.8 \text{ Torr}  vs  0.0017 \text{ Torr} ).
+Why do bubbles form throughout a liquid during boiling but only at the surface during evaporation?,"In boiling, the vapor pressure is high enough to overcome external atmospheric pressure internally."
+What is the effect of doubling the mole fraction of a solvent on the vapor pressure of the solution (assuming Raoult's Law)?,The vapor pressure of the solvent doubles.
+"In the context of intermolecular forces, why does  \text{CCl}_4  have a higher vapor pressure than  \text{CBr}_4 ?", \text{CCl}_4  has weaker London dispersion forces due to fewer electrons.
+What property of a liquid determines the 'escaping tendency' of its molecules into the gas phase?,Vapor pressure
+The molar Gibbs free energy of vaporization ( \Delta G_{vap} ) is defined as the difference between the molar Gibbs free energy of the _____ and the _____.,Vapor; liquid
+"Formula: Relationship between  \Delta G_{vap} ,  \Delta H_{vap} , and  \Delta S_{vap} ", \Delta G_{vap} = \Delta H_{vap} - T\Delta S_{vap} 
+How does the slope of the vapor pressure curve change as temperature increases?,The slope increases (becomes steeper).
+What is 'volatile' in terms of vapor pressure at room temperature?,Having a relatively high vapor pressure.
+Does vapor pressure depend on the surface area of the liquid?,"No, it is independent of surface area."
+"According to the Clausius–Clapeyron equation, a plot of  \ln(P)  versus  1/T  yields a straight line with what slope?", -\Delta H_{vap} / R 
+"In a solution of a nonvolatile solute, what phase's molar Gibbs free energy is primarily lowered?",The liquid solvent phase
+Why is the boiling point of a solution higher than that of the pure solvent?,"The solute increases the entropy of the liquid, lowering its Gibbs free energy and shifting the equilibrium with the vapor to a higher temperature."
+"What is the vapor pressure of benzene at  25 \, ^\circ\text{C}  if its value is  94.6 \text{ Torr} ?", 94.6 \text{ Torr} 
+The normal boiling point is found on a phase diagram where the liquid-vapor boundary intersects the  P = \dots  line., 1 \text{ atm}  (or  101.325 \text{ kPa} )
+How does the density of vapor change along the liquid-vapor boundary as temperature increases?,The density of the vapor increases because the pressure increases.
+"Which liquid is more volatile at  20 \, ^\circ\text{C} : Methanol ( 98 \text{ Torr} ) or Mercury ( 1.4 \text{ mTorr} )?",Methanol
+"At equilibrium in a closed system, if the volume of the vapor space is increased, what happens to the vapor pressure (at constant T)?",It remains constant (more liquid evaporates to restore the pressure).
+What happens to the rate of condensation if the concentration of molecules in the vapor phase increases?,The rate of condensation increases.
+Why do substances with strong intermolecular forces typically have low vapor pressures?,Fewer molecules have enough kinetic energy to overcome the strong attractions and escape the liquid.
+"In the Clausius-Clapeyron equation, temperature must always be expressed in units of _____.",Kelvins ( \text{K} )
+How is the 'normal melting point' defined in terms of pressure?,The temperature at which a solid melts at  1 \text{ atm} .
+"If the mole fraction of a solvent in a solution is  0.9 , the vapor pressure of the solvent in that solution will be _____ % of the pure solvent's vapor pressure.", 90 
+Which type of intermolecular force usually results in the lowest vapor pressures for substances of similar molar mass?,Hydrogen bonding
+"At the boiling point, what is the value of the 'internal pressure' of the liquid relative to the 'external pressure'?",They are equal.
+Term: Sublimation Vapor Pressure,Definition: The pressure exerted by a vapor in dynamic equilibrium with its solid phase.
+Does the vapor pressure of a liquid depend on the volume of the container?,"No, it is independent of the container volume."
+"How does the vapor pressure of water at  100 \, ^\circ\text{C}  compare to the vapor pressure of diethyl ether at  100 \, ^\circ\text{C} ?",Diethyl ether's vapor pressure is higher (it reaches  1 \text{ atm}  at a lower temperature).
+The standard entropy of vaporization ( \Delta S_{vap}^\circ ) for water is typically greater than  85 \text{ J}\cdot\text{K}^{-1}\cdot\text{mol}^{-1}  because of _____.,Extensive hydrogen bonding (high liquid-state order).
+What describes the equilibrium state  \text{H}_2\text{O}(l) \rightleftharpoons \text{H}_2\text{O}(g) ?,A dynamic equilibrium where the rates of evaporation and condensation are equal.
+"What is the significance of the triple point of water ( 0.01 \, ^\circ\text{C} ,  4.6 \text{ Torr} ) in metrology?",It is used to define the size of the Kelvin unit.

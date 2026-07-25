@@ -1,0 +1,65 @@
+Define pH in terms of the molar concentration of hydronium ions.,pH = -\log [H_3O^+]
+"What is the mathematical expression for the autoprotolysis constant of water, K_w?",K_w = [H_3O^+][OH^-]
+What is the value of K_w in pure water at 25\ ^\circ C?,1.0 \times 10^{-14}
+"According to the Brønsted-Lowry definition, what is an acid?",A proton donor.
+"According to the Brønsted-Lowry definition, what is a base?",A proton acceptor.
+What is the Lewis definition of an acid?,An electron pair acceptor.
+What is the Lewis definition of a base?,An electron pair donor.
+The process of a molecule or ion gaining a proton is known as _____.,Protonation
+The process of a molecule or ion losing a proton is known as _____.,Deprotonation
+How is a strong acid characterized in terms of its behavior in aqueous solution?,It is essentially fully deprotonated in solution.
+How is a weak acid characterized in terms of its behavior in aqueous solution?,It is only partially deprotonated in solution.
+"In the reaction HA + H_2O \rightleftharpoons H_3O^+ + A^-, what is the species A^- called relative to HA?",The conjugate base.
+"In the reaction B + H_2O \rightleftharpoons BH^+ + OH^-, what is the species BH^+ called relative to B?",The conjugate acid.
+What is the definition of pOH?,pOH = -\log [OH^-]
+"At 25\ ^\circ C, what is the sum of pH and pOH for any aqueous solution?",14.00
+The equilibrium constant for the deprotonation of a weak acid in water is called the _____.,Acidity constant (K_a)
+The equilibrium constant for the protonation of a weak base in water is called the _____.,Basicity constant (K_b)
+How is the pK_a of an acid defined mathematically?,pK_a = -\log K_a
+What is the relationship between the strength of an acid and its pK_a value?,"The stronger the acid, the smaller its pK_a."
+How does the pH of a neutral solution change as the temperature increases?,"The pH decreases because the autoprotolysis of water is endothermic, increasing K_w."
+What is the Henderson-Hasselbalch equation for a weak acid system?,pH = pK_a + \log \frac{[A^-]}{[HA]}
+Define a 'buffer solution' in terms of its function.,A solution that resists changes in pH when small amounts of acid or base are added.
+What are the two typical components of an acidic buffer?,A weak acid and its conjugate base.
+Under what condition is the pH of a buffer solution exactly equal to the pK_a of its weak acid component?,When the concentrations of the weak acid and its conjugate base are equal ([HA] = [A^-]).
+What is 'buffer capacity'?,The amount of acid or base a buffer can neutralize before the pH begins to change appreciably.
+"In general chemistry kinetics, what does the Arrhenius equation k = Ae^{-E_a/RT} describe?",The temperature dependence of the reaction rate constant k.
+"In the Arrhenius equation, what does E_a represent?",The activation energy.
+How does a catalyst affect the activation energy (E_a) of a reaction?,It provides a reaction pathway with a lower activation energy.
+The difference in energy between the ground state of reactants and the transition state is the _____.,Activation energy (\Delta G^\ddagger)
+What is the 'pre-exponential factor' (A) in the Arrhenius equation?,A constant that represents the frequency and orientation of molecular collisions.
+How is the rate enhancement factor of a catalyst related to the change in activation energy (\Delta \Delta G^\ddagger)?,Rate enhancement \approx e^{\Delta \Delta G^\ddagger / RT}
+"According to collision theory, what must occur for a collision between reactant molecules to result in a reaction?",The molecules must collide with sufficient energy and correct orientation.
+A plot of \ln k versus 1/T (where T is absolute temperature) results in a straight line with what slope?,-E_a / R
+Which theory describes the precise point of bond breakage and formation as the 'transition state'?,Transition state theory
+Why does increasing temperature generally increase the rate of a chemical reaction?,It increases the fraction of molecules with kinetic energy equal to or greater than the activation energy.
+Define 'autoprotolysis'.,"A proton transfer reaction between two molecules of the same substance, such as water."
+What does 'material balance' refer to in the context of solving complex pH problems?,The requirement that the total concentration of all forms of a solute must equal its initial concentration.
+What is the 'charge-balance equation' for an aqueous solution?,An equation stating that the sum of the molar concentrations of positive charges must equal the sum of the molar concentrations of negative charges.
+"For a strong base like NaOH, how is the concentration of hydroxide ions related to the initial concentration of the base?",They are equal ([OH^-] = [NaOH]_{initial}) because the base dissociates completely.
+How is the percentage deprotonation of a weak acid calculated?,Percentage deprotonation = \frac{[A^-]_{equilibrium}}{[HA]_{initial}} \times 100\%
+Which equation relates the equilibrium constant (K) of a reaction to its standard Gibbs free energy change (\Delta G^\circ)?,\Delta G^\circ = -RT \ln K
+"In kinetics, what is an 'elementary reaction'?",A reaction that occurs in a single step at the molecular level.
+How is the rate constant k of an elementary reaction related to its activation free energy (\Delta G^\ddagger) in transition state theory?,k = \frac{k_B T}{h} e^{-\Delta G^\ddagger / RT}
+An oxide that reacts with water to form a solution of a Brønsted acid is called an _____.,Acidic oxide
+An oxide that reacts with water to form a solution of a Brønsted base is called a _____.,Basic oxide
+Why is pure water a poor conductor of electricity?,Because the concentrations of H_3O^+ and OH^- ions from autoprotolysis are extremely low.
+"In the context of electrolytes, what defines a 'weak electrolyte'?",A substance that is only partially ionized in solution.
+What is the relationship between the acidity constant (K_a) and the basicity constant (K_b) for a conjugate acid-base pair in water?,K_a \times K_b = K_w
+What is the relationship between pK_a and pK_b for a conjugate pair at 25\ ^\circ C?,pK_a + pK_b = 14.00
+"If an acid has a very large K_a, what can be said about the strength of its conjugate base?",The conjugate base is very weak (the 'conjugate seesaw').
+What is the primary role of physiological buffers in human blood?,To maintain a slightly basic pH (near 7.4) essential for biological function.
+How does the 'like-dissolves-like' rule apply to electrolytes?,Ionic and polar solutes tend to dissolve in polar solvents like water.
+Define 'volumetric analysis' in the context of acid-base chemistry.,The use of the volume of a reagent of known concentration to determine the concentration of an unknown solution.
+What is the significance of the 'equivalence point' in a titration?,The point at which the amount of added titrant is stoichiometrically equivalent to the amount of analyte.
+What is an 'amphoteric' substance?,A substance that can act as either an acid or a base.
+"In kinetics, what does the Boltzmann constant (k_B) relate?",Thermal energy to temperature at the molecular level.
+How does the activation energy (E_a) determine the temperature sensitivity of a reaction?,Reactions with high activation energies are more sensitive to temperature changes.
+"For a reaction to show 'Arrhenius behavior,' what must be true about its \ln k vs 1/T plot?",The plot must be a straight line.
+What is 'autoprotolysis of water' also commonly called?,Autoionization or ion product constant of water.
+How does the presence of a strong electrolyte affect the solubility of a weak electrolyte via the 'common-ion effect'?,It typically decreases the solubility by shifting the equilibrium toward the undissociated form.
+"In a buffer system, what happens to the [A^-]/[HA] ratio when a small amount of strong acid is added?",The ratio decreases as A^- reacts with H^+ to form more HA.
+What is the pOH of a neutral solution at 25\ ^\circ C?,7.00
+"In the context of kinetics, what is the 'frequency factor' (A)?","The pre-exponential factor in the Arrhenius equation, representing collision frequency."
+Why are pH values outside the 1 to 14 range possible?,Because molar concentrations of H_3O^+ can be greater than 1.0\ M or less than 10^{-14}\ M.
+What is the specific name of the equilibrium constant for the dissolving of an ionic solid?,Solubility product (K_{sp})

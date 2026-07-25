@@ -1,0 +1,60 @@
+"In organic chemistry, what is an alcohol?",An organic compound containing a hydroxyl group bonded to a carbon atom that is not part of a carbonyl group or an aromatic ring.
+What is the specific name of the functional group represented by -OH?,The hydroxyl group.
+What is the general formula used to represent alcohols?,R-OH
+How is a primary (1^{\circ}) alcohol defined?,The carbon atom attached to the hydroxyl group is bonded to exactly one other carbon atom.
+What characterizes a secondary (2^{\circ}) alcohol?,The hydroxyl-bearing carbon is bonded to two other carbon atoms.
+What defines a tertiary (3^{\circ}) alcohol?,The carbon atom to which the -OH group is attached is bonded to three other carbon atoms.
+Which specific alcohol is commonly referred to as 'wood alcohol'?,Methanol (CH_3OH)
+What is the common name for ethanol (CH_3CH_2OH)?,Grain alcohol.
+What is the IUPAC name for 'isopropyl alcohol'?,2-propanol
+What is a 'polyhydroxy alcohol'?,An alcohol that contains more than one hydroxyl group per molecule.
+What is the IUPAC name for ethylene glycol?,"1,2-ethanediol"
+"What is the common name for the trihydroxy alcohol 1,2,3-propanetriol?",Glycerol (or glycerine).
+"In the IUPAC system, what suffix is added to the parent alkane chain to name an alcohol?",-ol
+"When the -OH group is named as a substituent, what prefix is used?",hydroxy-
+Why do alcohols have much lower vapor pressures than hydrocarbons of similar molar mass?,The presence of intermolecular hydrogen bonds increases the energy required for molecules to escape into the gas phase.
+How does the solubility of alcohols in water change as the carbon chain length increases?,Solubility decreases as the nonpolar hydrocarbon portion becomes more dominant.
+What defines a phenol?,A compound in which a hydroxyl group is attached directly to an aromatic (benzene) ring.
+What is the molecular formula for the parent compound phenol?,C_6H_5OH
+How do phenols differ from alcohols regarding their acidity in water?,"Phenols are weak acids, whereas simple alcohols are generally not acidic in water."
+Why is phenol a stronger acid than ethanol?,"Resonance delocalizes the negative charge on the phenoxide ion, stabilizing the conjugate base."
+Why is phenylmethanol (C_6H_5CH_2OH) classified as an alcohol rather than a phenol?,The hydroxyl group is attached to a CH_2 group instead of being directly bonded to the benzene ring.
+"In electrophilic aromatic substitution, what effect does the -OH group have on the benzene ring?",It activates the ring and directs substitution to the ortho and para positions.
+What is a thiol?,An organic compound in which the oxygen atom of an alcohol is replaced by a sulfur atom.
+What is the name of the -SH functional group found in thiols?,The sulfhydryl group.
+What is the general formula for a thiol?,R-SH
+Which amino acid is unique for having a thiol group in its side chain?,Cysteine
+What structural feature is formed when two thiol groups are oxidized?,A disulfide bond (R-S-S-R)
+"Which three amino acids contain an aromatic ring, with one specifically bearing a phenolic hydroxyl group?","Phenylalanine, tryptophan, and tyrosine (the one with the phenolic group)."
+Which amino acids are classified as having uncharged polar side chains containing hydroxyl groups?,Serine and Threonine.
+What wavelength of light do tryptophan and tyrosine residues characteristically absorb?,280\text{ nm}
+How does the electronegativity of sulfur affect the hydrogen bonding capability of thiols compared to alcohols?,Thiols form much weaker hydrogen bonds than alcohols because sulfur is less electronegative than oxygen.
+What compound is produced when a thiol reacts with a carboxylic acid?,A thioester.
+"In biochemistry, what determines the ionization state of amino acid side chains like those in tyrosine or cysteine?",The pH of the surrounding environment.
+What is the color change associated with the phenol derivative indicator phenolphthalein?,It changes from colorless in acidic solution to pink in basic solution.
+What is the pK_{In} of phenolphthalein?,9.4
+What organic compound class is represented by the formula Ar-OH?,Phenols
+Why is methanol grouped with primary alcohols even though it lacks a second carbon?,It is the simplest member of the homologous series and follows the reaction patterns of primary alcohols.
+What bond type connects the hydroxyl group to the carbon atom in an alcohol?,A covalent bond.
+What is 'rubbing alcohol'?,A 70\% solution of 2-propanol (isopropyl alcohol).
+How does the acidity of cysteine compare to that of oxygen-containing polar amino acids?,Cysteine is a weak acid due to the sulfhydryl group.
+"What is the common use for 1,2-ethanediol?",Automobile antifreeze.
+How are the positions of hydroxyl groups denoted in polyhydroxy alcohols?,By numbering the carbon chain to give the lowest possible numbers to the carbons attached to -OH groups.
+Which specific enzyme is responsible for the conversion of glucose to ethanol during fermentation?,Zymase
+What is the primary industrial source for the parent compound phenol today?,Synthesis from benzene.
+"In NMR spectroscopy, why does ethanol show three distinct groups of lines?","Protons are in three different environments: methyl (CH_3), methylene (CH_2), and hydroxyl (OH)."
+What happens to the volatility of a liquid when its molecules can form intermolecular hydrogen bonds?,The volatility decreases (vapor pressure lowers).
+Why do phenols dissolve in basic aqueous solutions even if they are otherwise insoluble in water?,They react with the base to form soluble phenoxide salts.
+Which amino acid side chain contains a thioether group (C-S-C) rather than a thiol?,Methionine
+Identify the classification of 2-methyl-2-propanol.,Tertiary alcohol.
+What is the result of 'denaturing' ethyl alcohol?,Adding substances to make it unfit for consumption as a beverage.
+What term describes a molecule with two hydroxyl groups bonded to different carbons?,A diol.
+The compound CH_3CH(OH)CH_2CH_3 is named _____.,2-butanol
+Phenol is a resonance hybrid where the formal negative charge in the base form is located on the _____ and _____ positions.,ortho; para
+Alcohols differ from metal hydroxides because they do not _____ in water.,dissociate (or ionize)
+The thiol group of cysteine is unique because it can form a _____ bond with another cysteine.,disulfide
+"Low molar mass alcohols are _____ at room temperature, while alkanes of similar mass are often gases.",liquids
+The parent name for a benzene ring acting as a substituent is the _____ group.,phenyl
+"In the IUPAC name 1,2,3-propanetriol, the 'triol' indicates the presence of _____ hydroxyl groups.",three
+Concept: Secondary Alcohol,Definition: An alcohol where the -OH carbon is bonded to two other carbons. Example: 2-propanol.
+Concept: Thiol (Thioalcohol),Definition: An organic compound with a sulfhydryl group (-SH). Example: Cysteine residue.

@@ -1,0 +1,60 @@
+"According to Le Chatelier's principle, what happens when a stress is applied to a system in dynamic equilibrium?",The equilibrium adjusts to minimize the effect of the stress.
+What is the effect on the equilibrium position when the concentration of a reactant is increased?,The equilibrium shifts toward the right (products).
+How does an equilibrium system respond to the removal of a product?,It shifts toward the right to generate more product.
+What is the result of increasing the concentration of a product in an equilibrium mixture?,The equilibrium shifts toward the left (reactants).
+In which direction does the equilibrium shift if the concentration of a reactant is decreased?,It shifts toward the left (the side of the decreased reactant).
+How does a decrease in container volume affect a gaseous equilibrium system?,It shifts toward the side with the smaller number of gas molecules.
+What effect does an increase in container volume have on a gaseous equilibrium?,It shifts toward the side with the larger number of gas molecules.
+"If a gaseous reaction has the same number of molecules on both sides, what is the effect of changing the volume?",Changing the volume has no effect on the equilibrium position.
+"Under Le Chatelier's principle, why does a system shift toward fewer molecules when compressed?",Reducing the number of molecules helps to minimize the resulting increase in pressure.
+How does raising the temperature affect the equilibrium position of an exothermic reaction?,The equilibrium shifts toward the left (reactants).
+How does raising the temperature affect the equilibrium position of an endothermic reaction?,The equilibrium shifts toward the right (products).
+"In an exothermic reaction, heat can be treated as a _____.",Product
+"In an endothermic reaction, heat can be treated as a _____.",Reactant
+What is the effect of lowering the temperature on the equilibrium of an exothermic reaction?,The equilibrium shifts toward the right (products).
+What is the effect of lowering the temperature on the equilibrium of an endothermic reaction?,The equilibrium shifts toward the left (reactants).
+Which specific factor is the only one capable of changing the numerical value of the equilibrium constant K?,Temperature
+What is the effect of a catalyst on the position of a chemical equilibrium?,A catalyst does not shift the equilibrium position.
+"If a catalyst does not shift equilibrium, what is its primary function in a reversible reaction?",It increases the speed at which equilibrium is reached.
+How does a catalyst influence the forward and reverse reaction rates?,It speeds up both the forward and the reverse reactions to the same extent.
+Why does a catalyst have no effect on the value of the equilibrium constant K?,It does not change the standard Gibbs free energy of reaction (\Delta G_r^\circ).
+What happens to the equilibrium composition if an inert gas is added at constant volume?,The equilibrium composition remains unaffected.
+Why does adding an inert gas at constant volume fail to shift the equilibrium?,The partial pressures and molar concentrations of the reacting gases remain unchanged.
+The decrease in solubility of a salt caused by adding an ion already present in the solution is called the _____.,Common-ion effect
+How does adding OH^- ions to a saturated solution of a heavy metal hydroxide affect its solubility?,"It reduces the solubility, causing more hydroxide to precipitate."
+"In the Haber process, N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g) + \text{heat}, what pressure condition favors ammonia production?",High pressure favors the side with fewer gas molecules (ammonia).
+"In the Haber process, N_2(g) + 3 H_2(g) \rightleftharpoons 2 NH_3(g) + \text{heat}, how does cooling the system affect the yield?",Cooling favors the product because the reaction is exothermic.
+"For an endothermic reaction, does the equilibrium constant K increase or decrease as temperature rises?",It increases.
+"For an exothermic reaction, does the equilibrium constant K increase or decrease as temperature rises?",It decreases.
+What equation quantitatively relates the change in the equilibrium constant to a change in temperature?,The van 't Hoff equation
+Concept: Dynamic Equilibrium,"Definition: A state where forward and reverse processes continue at matching rates, resulting in no net change in composition."
+What is the spontaneous direction of change for a reaction mixture with Q < K at constant temperature and pressure?,The forward direction (toward more products).
+What is the spontaneous direction of change for a reaction mixture with Q > K at constant temperature and pressure?,The reverse direction (toward more reactants).
+"In a reaction mixture at equilibrium, what is the value of the Gibbs free energy change (\Delta G)?",Zero (\Delta G = 0).
+How does the activation energy of the forward reaction compare to the reverse in an endothermic process?,The activation energy is higher for the forward direction than for the reverse direction.
+Why is the forward rate of an endothermic reaction more sensitive to temperature increases than the reverse rate?,Because the forward reaction has a higher activation energy.
+Why is the reverse rate of an exothermic reaction more sensitive to temperature increases than the forward rate?,Because the reverse reaction has a higher activation energy in an exothermic process.
+What happens to the amount of I_2(g) in the equilibrium I_2(g) \rightleftharpoons 2 I(g) when the system is expanded?,The amount of I_2 decreases as the equilibrium shifts toward more gas molecules.
+How does adding a solid reactant or product affect the position of a chemical equilibrium?,Adding a solid typically has no effect on the equilibrium position.
+"If \Delta H_r^\circ is negative, how will the ratio K_2/K_1 behave if T_2 > T_1?",The ratio will be less than 1 (K decreases).
+"If \Delta H_r^\circ is positive, how will the ratio K_2/K_1 behave if T_2 > T_1?",The ratio will be greater than 1 (K increases).
+"In the context of Le Chatelier's principle, 'stress' refers to a change in concentration, pressure, volume, or _____.",Temperature
+Does a catalyst change the energies of the reactants or products?,"No, it only lowers the activation energy by providing a different pathway."
+"In a system of only gases, why does decreasing volume shift equilibrium to the side with fewer moles?",To reduce the number of gas molecules and counteract the increased pressure.
+How does the presence of an iron catalyst affect the equilibrium yield of ammonia in the industrial Haber process?,It has no effect on the equilibrium yield; it only speeds up the reaction.
+"For the equilibrium 2 SO_2(g) + O_2(g) \rightleftharpoons 2 SO_3(g) + 198 \text{ kJ}, what happens if heat is added?",The equilibrium shifts to the left (reactants).
+"For the equilibrium H_2(g) + I_2(g) + 51.9 \text{ kJ} \rightleftharpoons 2 HI(g), what happens if the temperature is increased?",The equilibrium shifts to the right (products).
+Why do industrial processes often operate far from equilibrium?,"By continuously removing products, the reaction is forced to continue generating more substance."
+What happens to the concentration of Cl^-(aq) if NaCl(s) is added to a saturated solution of NaCl?,It remains unchanged because the solution is already saturated and at equilibrium with the solid.
+"If a system at equilibrium has \Delta G_r^\circ > 0, are reactants or products favored?",Reactants are favored (K < 1).
+"If a system at equilibrium has \Delta G_r^\circ < 0, are reactants or products favored?",Products are favored (K > 1).
+"In the equilibrium CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g), how does adding more CO_2(g) affect the amount of CaCO_3(s)?",The amount of CaCO_3(s) increases as the equilibrium shifts to the left.
+What is the effect of increasing the concentration of SCN^- in the equilibrium Fe^{3+}(aq) + SCN^-(aq) \rightleftharpoons Fe(SCN)^{2+}(aq)?,"The equilibrium shifts to the right, increasing the concentration of the red complex Fe(SCN)^{2+}."
+"How does adding Ag^+ to a solution of Fe(SCN)^{2+} affect the color, given Ag^+ precipitates SCN^-?",The red color lightens as the equilibrium shifts left to replace removed SCN^-.
+"In an aqueous equilibrium, does adding pure liquid water usually shift the equilibrium?",It can shift the equilibrium if it changes the molar concentrations of the solutes.
+"When considering the effect of volume on equilibrium, why are solids and liquids often ignored?",Because their concentrations/densities are nearly independent of pressure and change very little with volume.
+"According to the Boltzmann distribution, what factor in the rate constant formula is most sensitive to temperature change?",The exponential factor e^{-E_{min}/RT}.
+"If a reaction is exothermic, will the reverse activation energy be higher or lower than the forward activation energy?",The reverse activation energy will be higher.
+"For the equilibrium CO(g) + H_2O(g) \rightleftharpoons CO_2(g) + H_2(g), how does increasing the partial pressure of CO_2 affect H_2?",The partial pressure of H_2 will decrease.
+"For the equilibrium PCl_5(g) \rightleftharpoons PCl_3(g) + Cl_2(g), how does decreasing the volume affect the amount of PCl_5?",The amount of PCl_5 increases.
+What is the relationship between the equilibrium constant K and the rate constants of the forward (k_f) and reverse (k_r) reactions?,K = k_f / k_r

@@ -1,0 +1,86 @@
+What is the primary thermodynamic reason that a chemical bond forms between two atoms?,The resulting arrangement of nuclei and electrons has a lower total energy than the separate atoms.
+Which type of chemical bond is characterized by the complete transfer of one or more electrons from one atom to another?,Ionic bond
+A _____ bond is formed when two atoms achieve a lower energy state by sharing a pair of electrons.,Covalent
+"In a metallic bond, what holds the large number of cations together?",A shared sea of electrons
+Which specific electrons in an atom are primarily responsible for the formation of chemical bonds?,Valence electrons
+"The _____ rule states that atoms tend to gain, lose, or share electrons until they are surrounded by eight valence electrons.",Octet
+Which group of elements serves as the model for the octet rule due to their stable electron configurations?,Noble gases
+"What type of solid consists of cations and anions stacked together in a regular, three-dimensional array?",Ionic solid (or crystalline solid)
+Binary compounds formed between a metallic element and a nonmetallic element typically exhibit _____ bonding.,Ionic
+Binary compounds formed between two nonmetals are generally classified as _____ compounds.,Molecular (or covalent)
+"In a Lewis structure, what does a single line between two atom symbols represent?",A single covalent bond (one shared pair of electrons)
+How many shared electron pairs constitute a double bond?,Two
+"What is the bond order for a triple bond, such as that found in ethyne (C_2H_2)?",3
+The number of electron pair bonds that link a specific pair of atoms is called the _____.,Bond order
+Which specific Period 2 elements obey the octet rule rigorously in almost all of their stable compounds?,"Carbon, nitrogen, oxygen, and fluorine"
+What term describes a molecule or ion that possesses an odd number of electrons?,Radical
+Elements in which period of the periodic table (and beyond) can accommodate more than eight electrons in their valence shell?,Period 3
+What is the name for the concept where the actual electronic structure is an average of two or more possible Lewis structures?,Resonance
+The _____ is a value calculated for an atom in a Lewis structure to help identify the most likely (lowest energy) arrangement of atoms.,Formal charge
+How is the 'best' Lewis structure identified using formal charges?,It is the structure where formal charges are closest to zero.
+Which property measures the power of an atom to attract shared electrons to itself in a covalent bond?,Electronegativity
+A covalent bond between two atoms with different electronegativities is described as _____.,Polar
+What happens to the electron density in a polar covalent bond?,It is shifted toward the more electronegative atom.
+"In the context of the ionic model, what is 'polarizability'?",The ease with which an anion's electron cloud is distorted by a cation.
+Compounds composed of highly polarizing cations and highly polarizable anions tend to have significant _____ character.,Covalent
+The distance between the centers of two atoms joined by a covalent bond is the _____.,Bond length
+What is 'bond dissociation energy'?,The energy required to separate two bonded atoms to an infinite distance.
+"As the bond order between two specific atoms increases, how does the bond strength typically change?",The bond strength increases.
+"As the bond order between two specific atoms increases, how does the bond length typically change?",The bond length decreases.
+How does increasing atomic radius generally affect the strength of a covalent bond?,Increasing atomic radius decreases bond strength.
+The VSEPR model predicts molecular shape based on the _____ between regions of high electron density.,Repulsion
+"According to VSEPR theory, what is the geometric arrangement of four electron pairs around a central atom?",Tetrahedral
+What is the predicted bond angle in a molecule with a linear electron-pair arrangement?,180^\circ
+A central atom with three bonding pairs and one lone pair (like NH_3) results in a _____ molecular shape.,Trigonal pyramidal
+Why is the bond angle in water (H_2O) less than the ideal tetrahedral angle of 109.5^\circ?,Lone pair-lone pair repulsions are greater than bonding pair-bonding pair repulsions.
+Which theory describes a covalent bond as the result of the overlap of atomic orbitals from two different atoms?,Valence-bond theory
+A covalent bond formed by the head-on overlap of orbitals with cylindrical symmetry is called a _____ bond.,\sigma (sigma)
+A covalent bond formed by the side-by-side overlap of atomic p-orbitals is called a _____ bond.,\pi (pi)
+What is 'orbital hybridization'?,The mixing of atomic orbitals on the same atom to form new orbitals for bonding.
+What type of hybrid orbitals are formed to produce a tetrahedral molecular geometry?,sp^3
+Which hybridization scheme corresponds to a trigonal planar arrangement of electron pairs?,sp^2
+"In sp hybridization, how many p-orbitals remain unhybridized on the central atom?",Two
+Which theory treats electrons in molecules as occupying orbitals that spread over the entire molecule rather than being localized between atoms?,Molecular orbital theory
+What is the name for a molecular orbital that has a lower energy than the atomic orbitals from which it was formed?,Bonding orbital
+An _____ molecular orbital has a higher energy than the parent atomic orbitals and contains a node between the nuclei.,Antibonding
+"In molecular orbital theory, what happens to the bond as electrons are added to antibonding orbitals?",The bond is weakened (bond order decreases).
+What is the formula for calculating bond order in molecular orbital theory?,\frac{1}{2} \times (\text{number of bonding electrons} - \text{number of antibonding electrons})
+A diatomic molecule built from atoms of two different elements is called a _____ diatomic molecule.,Heteronuclear
+Why is hydrogen bonding particularly strong compared to other dipole-dipole interactions?,"The small size of the hydrogen atom allows for very close approach of the electronegative atoms (N, O, F)."
+Which specific atoms must hydrogen be covalently bonded to for hydrogen bonding to occur?,"Nitrogen, oxygen, or fluorine"
+What are London dispersion forces?,"Weak attractions resulting from the interaction of instantaneous, fluctuating dipoles in atoms or molecules."
+The _____ is the contribution an individual atom makes to the total length of a covalent bond.,Covalent radius
+"In the VSEPR model, how are double and triple bonds treated when predicting molecular shape?",As a single region of high electron density (or a single 'electron group').
+What is the bond angle in a trigonal planar molecule such as BF_3?,120^\circ
+What molecular shape is adopted by a molecule with two bonding pairs and two lone pairs on the central atom?,Bent (or V-shaped)
+What is the principal quantum number (n) of the valence shell for elements in Period 3?,3
+Why does electronegativity generally increase from left to right across a period?,"The effective nuclear charge increases, attracting electrons more strongly."
+"According to the Pauli exclusion principle, how must the spins of two electrons in the same orbital be related?",They must have opposite spins.
+Which type of bond is found in solid NaCl?,Ionic bond
+Lewis structure of N_2 involves a _____ bond between the two nitrogen atoms.,Triple
+"Elements in Group 13, such as boron and aluminum, often form compounds with _____ octets.",Incomplete
+How does the size of a cation typically compare to its parent neutral atom?,The cation is smaller.
+"In a _____ bond, both electrons in the shared pair originate from the same atom.",Coordinate covalent (or dative)
+The potential energy minimum on a plot of energy versus internuclear distance for two atoms corresponds to the _____.,Bond length
+What type of hybridization is associated with a linear molecular geometry?,sp
+A molecule with zero electric dipole moment is called a _____ molecule.,Nonpolar
+How many \sigma and \pi bonds are present in a triple bond?,One \sigma bond and two \pi bonds.
+Which subatomic particle was discovered by J. J. Thomson using cathode rays?,The electron
+The region in space around a nucleus where there is a high probability of finding an electron is called an _____.,Orbital
+"According to the building-up principle, which orbital is filled after the 1s orbital?",2s
+What is the bond order of the O_2 molecule?,2
+An atom that has lost one or more electrons is called a _____.,Cation
+An atom that has gained one or more electrons is called an _____.,Anion
+The attractive force between an atom and the shared electrons in a bond is its _____.,Electronegativity
+Which type of compound is H_2O classified as?,Binary molecular compound
+What is the approximate bond angle in a tetrahedral molecule?,109.5^\circ
+What is the term for the average distance between the nuclei of two bonded atoms?,Bond length
+"In molecular orbital theory, the \sigma_{1s} orbital is a _____ orbital, while the \sigma^*_{1s} orbital is an _____ orbital.",Bonding; antibonding
+The property of an atom to be easily distorted by an external electric field is its _____.,Polarizability
+What hybridization is present in the carbon atoms of ethene (C_2H_4)?,sp^2
+What hybridization is present in the carbon atoms of ethyne (C_2H_2)?,sp
+The 'sea of electrons' model is used to explain the properties of _____.,Metals
+"In the context of bonding, what does the term 'resonance hybrid' represent?",The actual structure that is an average of all contributing resonance forms.
+Which interaction is generally the strongest among noncovalent bonds in biomolecules?,Ionic interaction (or salt bridge)
+A covalent bond between two atoms of the same element is always _____.,Nonpolar
+What describes the situation where an atom in a molecule has fewer than eight valence electrons?,Incomplete octet

@@ -1,0 +1,60 @@
+What is the characteristic pressure exerted by a vapor when it is in dynamic equilibrium with its liquid phase at a fixed temperature?,Vapor pressure
+"According to the molecular model of equilibrium, evaporation occurs when molecules leave the _____ of a liquid.",Surface
+A dynamic equilibrium is reached when the rate of evaporation exactly equals the rate of _____.,Condensation
+Formula: Raoult's Law for the vapor pressure of a solvent in a solution,P = x_{\text{solvent}} P_{\text{pure}}
+"In Raoult's Law, what does the term x_{\text{solvent}} represent?",The mole fraction of the solvent in the solution.
+A solution that obeys Raoult's Law across all concentrations is known as a(n) _____ solution.,Ideal
+"Under what condition are the intermolecular interactions A-A, B-B, and A-B considered equal?",In an ideal solution.
+What is the value of the enthalpy of solution (\Delta H_{\text{sol}}) for an ideal solution?,Zero
+Raoult's Law is considered a _____ law because it becomes increasingly valid as the solute concentration approaches zero.,Limiting
+A solution that does not obey Raoult's Law at a specific concentration is termed a(n) _____ solution.,Nonideal
+Nonelectrolyte solutions typically behave nearly ideally at concentrations below _____ m.,0.1
+Electrolyte solutions typically behave nearly ideally at concentrations below _____ m.,0.01
+Why does the presence of a nonvolatile solute lower the vapor pressure of a solvent?,"It increases the entropy of the liquid phase, reducing the tendency of molecules to escape."
+Formula: Total vapor pressure of an ideal binary mixture of two volatile liquids A and B,P_{\text{total}} = x_A P_A^* + x_B P_B^*
+"In a mixture of benzene and toluene, why is the mole fraction of benzene higher in the vapor than in the liquid?",Benzene is more volatile than toluene.
+Formula: Mole fraction of component A in the vapor phase (x_A(g)) of a binary mixture,x_A(g) = \frac{P_A}{P_{\text{total}}}
+What type of deviation from Raoult's Law occurs when attractive forces between solute and solvent are weaker than those in the pure components?,Positive deviation
+A solution with a positive deviation from Raoult's Law will have a _____ boiling point than predicted.,Lower
+What type of deviation from Raoult's Law occurs when attractive forces between solute and solvent are stronger than those in the pure components?,Negative deviation
+Term: Minimum-boiling azeotrope,Definition: A mixture whose boiling point is lower than that of either pure constituent.
+Why can the components of an azeotropic mixture not be separated by fractional distillation?,The vapor has the same composition as the liquid at the azeotropic point.
+Formula: Henry's Law for gas solubility,s = k_H P
+"According to Henry's Law, the solubility of a gas is _____ proportional to its partial pressure.",Directly
+What are the three factors that Henry's constant (k_H) depends upon?,"The identity of the gas, the solvent, and the temperature."
+Why are nonpolar gases like O_2 and N_2 poorly soluble in water?,The lack of strong attractive forces between the nonpolar gas molecules and the polar water molecules.
+How does increasing temperature generally affect the solubility of gases in water?,It decreases solubility.
+Concept: Dynamic Equilibrium,"Definition: A state where forward and reverse processes continue at matching rates, resulting in no net change."
+"In chemical thermodynamics, what is the value of the total entropy change (\Delta S_{\text{tot}}) at equilibrium?",Zero
+The law of _____ action states that the composition of a reaction mixture at equilibrium can be expressed as a constant K.,Mass
+Pure liquids and pure solids are excluded from the equilibrium constant expression because their _____ is defined as 1.,Activity
+Formula: Relationship between standard reaction Gibbs free energy and the equilibrium constant,\Delta G_r^\circ = -RT \ln K
+What does a negative value of \Delta G_r^\circ imply about the equilibrium constant K?,"K > 1, meaning products are favored at equilibrium."
+What does a positive value of \Delta G_r^\circ imply about the equilibrium constant K?,"K < 1, meaning reactants are favored at equilibrium."
+"At equilibrium, what is the value of the Gibbs free energy of reaction (\Delta G_r)?",Zero
+Formula: Reaction quotient Q for the reaction aA + bB \rightarrow cC + dD,Q = \frac{a_C^c a_D^d}{a_A^a a_B^b}
+How is the activity (a_J) of a solute in an ideal solution calculated?,"a_J = \frac{[J]}{c^\circ}, where c^\circ = 1 \text{ mol} \cdot \text{L}^{-1}"
+How is the activity (a_J) of an ideal gas calculated?,"a_J = \frac{P_J}{P^\circ}, where P^\circ = 1 \text{ bar}"
+What is the term for a solution that has reached its limit of solubility for a given solute?,Saturated solution
+The standard state for a solute in a liquid solution is defined as a concentration of _____.,1 mol/L
+How does the molar Gibbs free energy of a gas vary with pressure (P_J)?,G_m(J) = G_m^\circ(J) + RT \ln \left( \frac{P_J}{P^\circ} \right)
+What effect does adding a nonvolatile solute have on the entropy of the liquid solvent?,It increases the entropy of the liquid phase.
+"In an ideal binary mixture, if the mole fraction of component A is 0.75, what is the mole fraction of component B?",0.25
+"If the vapor pressure of pure water is 17.54 Torr at 20 ^\circ\text{C}, what is the vapor pressure of water in a solution where its mole fraction is 0.90?",15.79 Torr
+"According to the common-ion effect, the solubility of a salt _____ when a second salt providing a shared ion is added.",Decreases
+Term: Heterogeneous equilibrium,Definition: An equilibrium in which the reactants and products are in different phases.
+Term: Homogeneous equilibrium,Definition: An equilibrium in which all reactants and products are in the same phase.
+What thermodynamic state corresponds to the concentration of a saturated solution?,The state of lowest Gibbs free energy for the system.
+How is the vapor pressure of a pure solid or liquid related to its activity in equilibrium calculations?,"The activity is set to 1, as long as it is in its pure standard state."
+"If a reaction quotient Q is less than the equilibrium constant K, in which direction will the reaction proceed?",The forward direction (toward products).
+"If a reaction quotient Q is greater than the equilibrium constant K, in which direction will the reaction proceed?",The reverse direction (toward reactants).
+"In the context of Henry's Law, what happens to the solubility of oxygen in water if the partial pressure of oxygen is halved?",The solubility is halved.
+The parameter a in the van der Waals equation represents _____ forces between real gas molecules.,Attractive
+The parameter b in the van der Waals equation represents _____ forces between real gas molecules.,Repulsive
+What is the standard state pressure for gases in modern chemical tables?,1 bar
+"The process of a solute coming out of solution rapidly, forming a finely divided powder, is called _____.",Precipitation
+"The process of a solute slowly coming out of solution to form large, regular solids is called _____.",Crystallization
+A mixture of two volatile liquids that shows a large negative deviation from Raoult's Law will form a(n) _____ azeotrope.,Maximum-boiling
+"In a maximum-boiling azeotrope, are the A-B interactions stronger or weaker than the A-A and B-B interactions?",Stronger
+"According to the virial equation, real gases deviate from ideality due to _____ between molecules.",Interactions
+What is the molality of a solute defined as?,The amount of solute (in moles) divided by the mass of the solvent (in kilograms).

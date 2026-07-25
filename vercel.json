@@ -19,14 +19,12 @@
     { "source": "/medical-biology", "destination": "/medical-biology/" },
     { "source": "/genetics", "destination": "/genetics/" },
     { "source": "/physics", "destination": "/physics/" },
-    {
-      "source": "/(histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
-      "destination": "/apps/launcher.html"
-    },
-    {
-      "source": "/(histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
-      "destination": "/apps/launcher.html"
-    }
+    { "source": "/histology", "destination": "/histology/" },
+    { "source": "/embryology", "destination": "/embryology/" },
+    { "source": "/histology-embryology", "destination": "/histology-embryology/" },
+    { "source": "/chemistry", "destination": "/chemistry/" },
+    { "source": "/introductory-biochemistry", "destination": "/introductory-biochemistry/" },
+    { "source": "/chemistry-introductory-biochemistry", "destination": "/chemistry-introductory-biochemistry/" }
   ],
   "headers": [
     {
@@ -71,6 +69,30 @@
     },
     {
       "source": "/physics/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/histology/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/embryology/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/histology-embryology/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/chemistry/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/introductory-biochemistry/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/chemistry-introductory-biochemistry/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
     },
     {

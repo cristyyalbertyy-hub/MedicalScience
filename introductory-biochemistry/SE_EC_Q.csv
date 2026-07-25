@@ -1,0 +1,65 @@
+"What state is reached when the forward and reverse reaction rates are exactly equal, resulting in no net change in composition?",Dynamic Equilibrium
+"According to the Law of Mass Action for the reaction aA + bB \rightleftharpoons cC + dD, what is the expression for the equilibrium constant K?",K = \frac{[C]^c [D]^d}{[A]^a [B]^b}
+"In an equilibrium constant expression, why are pure liquids and solids omitted?",Their activities are constant and defined as 1.
+Formula: The relationship between the standard Gibbs free energy of reaction (\Delta G_{r}^{\circ}) and the equilibrium constant K.,\Delta G_{r}^{\circ} = -RT \ln K
+"If the reaction quotient Q is less than the equilibrium constant K (Q < K), in which direction will the reaction proceed?",The forward direction (toward products).
+"If the reaction quotient Q is greater than the equilibrium constant K (Q > K), in which direction will the reaction proceed?",The reverse direction (toward reactants).
+What is the relationship between the equilibrium constant of a forward reaction (K) and its reverse reaction (K')?,K' = \frac{1}{K}
+How is the overall equilibrium constant K_{total} calculated if a reaction is the sum of component reactions with constants K_1 and K_2?,K_{total} = K_1 \times K_2
+The equilibrium constant specifically expressed using partial pressures is denoted as _____.,K_p
+The equilibrium constant specifically expressed using molar concentrations is denoted as _____.,K_c
+Formula: The relationship between K (based on partial pressures) and K_c (based on molar concentrations).,K = K_c \left( \frac{c^{\circ}RT}{P^{\circ}} \right)^{\Delta n_r}
+"In the conversion between K and K_c, what does the term \Delta n_r represent?",The difference between the stoichiometric coefficients of gas-phase products and gas-phase reactants.
+Under what condition does the numerical value of the equilibrium constant K equal K_c?,When there is no change in the number of moles of gas during the reaction (\Delta n_r = 0).
+"What is the numerical value of the ion product constant for water (K_w) at 25 \, ^\circ C?",1.0 \times 10^{-14}
+Term: Solubility Product Constant (K_{sp}),Definition: The equilibrium constant for the dissolution of a solid ionic compound into its constituent ions in solution.
+Term: Acid Ionization Constant (K_a),Definition: A special equilibrium constant that measures the strength of an acid in aqueous solution.
+"According to Le Châtelier's principle, how does increasing the concentration of a reactant affect a system at equilibrium?",The equilibrium shifts toward the products to reduce the concentration of the added reactant.
+How does decreasing the volume of a reaction vessel affect a gas-phase equilibrium system?,The equilibrium shifts toward the side of the reaction with the smaller number of moles of gas.
+"For an exothermic reaction, what is the effect of increasing the temperature on the equilibrium constant K?",The value of K decreases.
+"For an endothermic reaction, what is the effect of increasing the temperature on the equilibrium constant K?",The value of K increases.
+Which equation relates the equilibrium constants K_1 and K_2 at two different temperatures T_1 and T_2?,The van 't Hoff equation: \ln \left( \frac{K_2}{K_1} \right) = \frac{\Delta H^{\circ}}{R} \left( \frac{1}{T_1} - \frac{1}{T_2} \right)
+What effect does adding a catalyst have on the numerical value of the equilibrium constant K?,A catalyst has no effect on the value of K.
+How does the addition of an inert gas at constant volume affect the composition of a gas-phase equilibrium mixture?,It has no effect because the partial pressures and molar concentrations of the reacting gases remain unchanged.
+A very large equilibrium constant (K \gg 1) implies that the equilibrium mixture consists primarily of _____.,Products
+A very small equilibrium constant (K \ll 1) implies that the equilibrium mixture consists primarily of _____.,Reactants
+What is the equilibrium expression for the dissociation of a weak acid HA into H_3O^+ and A^-?,K_a = \frac{[H_3O^+][A^-]}{[HA]}
+"What is the relationship between K_w, K_a, and K_b for a conjugate acid-base pair in water?",K_w = K_a \times K_b
+"In coordination chemistry, what does the formation constant (K_f) represent?",The equilibrium constant for the formation of a complex ion from a metal ion and its ligands.
+How are the activities of solutes in dilute solutions typically approximated for equilibrium calculations?,By using the numerical value of their molar concentrations ([M]).
+How are the activities of gases typically approximated for equilibrium calculations in terms of pressure?,By using the numerical value of their partial pressures in bar.
+"If the stoichiometric coefficients of a balanced chemical equation are doubled, how is the new equilibrium constant K_{new} related to the original K?",K_{new} = K^2
+What is the total entropy change (\Delta S_{tot}) for a reaction mixture that has reached chemical equilibrium?,Zero (\Delta S_{tot} = 0)
+What is the value of the Gibbs free energy of reaction (\Delta G_r) at the point of chemical equilibrium?,Zero (\Delta G_r = 0)
+The ratio of product activities to reactant activities at any non-equilibrium stage of a reaction is the _____.,Reaction Quotient (Q)
+"In the context of Le Châtelier's principle, heat is treated as a _____ in endothermic reactions.",Reactant
+"In the context of Le Châtelier's principle, heat is treated as a _____ in exothermic reactions.",Product
+The equilibrium constant for the self-ionization of water is known as the _____ constant.,Autoprotolysis (or Ion Product)
+"At 25 \, ^\circ C, if the concentration of H_3O^+ is 1.0 \times 10^{-4} \, M, what is the concentration of OH^-?","1.0 \times 10^{-10} \, M"
+Term: Homogeneous Equilibrium,Definition: A chemical equilibrium in which all participating reactants and products are in the same phase.
+Term: Heterogeneous Equilibrium,Definition: A chemical equilibrium in which the participating species exist in more than one phase.
+What are the three essential rows in an ICE table used for equilibrium calculations?,"Initial concentrations, Change in concentrations, and Equilibrium concentrations."
+When is the approximation 0.100 - x \approx 0.100 valid in equilibrium calculations?,When the value of x is less than 5% of the initial concentration.
+"If the standard Gibbs free energy of reaction (\Delta G_{r}^{\circ}) is zero, what is the value of the equilibrium constant K?",One (K = 1)
+"According to the conjugate seesaw principle, a large K_a for an acid implies a _____ K_b for its conjugate base.",Small
+"In the context of gases, K is unitless because each partial pressure P_J is divided by the standard pressure P^{\circ} of _____.","1 \, bar"
+The measure of the distance of a chemical system from its equilibrium position is represented by the _____.,Free-energy change (\Delta G)
+"In biochemistry, the equilibrium constant for the hydrolysis of glucose-1-phosphate is calculated using the _____ free-energy change.",Standard (\Delta G^{\circ \prime})
+How is the basicity constant K_b for a weak base B defined in water?,K_b = \frac{[BH^+][OH^-]}{[B]}
+"If K_{eq} for the reaction H_2 + I_2 \rightleftharpoons 2HI is 54 at a given temperature, what is K_{eq} for the reaction HI \rightleftharpoons \frac{1}{2}H_2 + \frac{1}{2}I_2?",\frac{1}{\sqrt{54}} (approximately 0.136)
+"For the reaction CaCO_3(s) \rightleftharpoons CaO(s) + CO_2(g), what is the simplified equilibrium constant expression?",K = P_{CO_2}
+What is the relationship between the rate constants for the forward (k_a) and reverse (k_d) reactions and the association constant K_a in protein binding?,K_a = \frac{k_a}{k_d}
+Why does raising the temperature of an endothermic reaction shift the equilibrium toward the products?,"The added thermal energy acts as a reactant, favoring the heat-absorbing direction."
+The numerical value of K_w _____ as temperature increases.,Increases
+What effect does increasing the total pressure of a gas-phase system by reducing volume have on an equilibrium where \Delta n_r = 0?,It has no effect on the equilibrium composition.
+"If a reaction goes essentially to completion, the value of K is expected to be very _____.",Large
+Which law states that the composition of a reaction mixture at equilibrium can be expressed by a constant ratio of products to reactants?,The Law of Mass Action
+"In an aqueous solution, if the concentration of OH^- increases, what must happen to the concentration of H_3O^+?",It must decrease to maintain the constant value of K_w.
+Term: K_{eq} in Biochemistry,Definition: The ratio of the product concentrations to reactant concentrations at the point where forward and reverse reaction rates are equal.
+How is K calculated from \Delta G_{r}^{\circ} at a specific temperature T?,K = e^{-\Delta G_{r}^{\circ} / RT}
+What is the equilibrium constant for the reverse of the autoprotolysis of water?,"1/K_w (or 10^{14} at 25 \, ^\circ C)"
+A state of minimum Gibbs free energy in a closed chemical system corresponds to _____.,Chemical Equilibrium
+"In the van 't Hoff equation, a positive slope in a plot of \ln K vs 1/T indicates that the reaction is _____.",Exothermic
+"In the van 't Hoff equation, a negative slope in a plot of \ln K vs 1/T indicates that the reaction is _____.",Endothermic
+"If a reaction has K = 10^{10}, the equilibrium position lies far to the _____.",Right (toward products)
+What is the equilibrium constant K for a reaction where \Delta G_{r}^{\circ} is positive?,The equilibrium constant K is less than 1.

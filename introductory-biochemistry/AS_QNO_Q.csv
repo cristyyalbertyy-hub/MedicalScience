@@ -1,0 +1,64 @@
+"What does the principal quantum number, n, primarily specify about an atomic orbital?",It specifies the size and the energy level of the orbital (the shell).
+What range of values can the principal quantum number n take?,"It can be any positive integer: n = 1, 2, 3, \dots"
+The orbital angular momentum quantum number is represented by which symbol?,The symbol l.
+What physical property of an atomic orbital is determined by the quantum number l?,The shape of the orbital.
+"For a given value of n, what are the possible values for the orbital angular momentum quantum number l?",Values ranging from 0 to n - 1.
+What is the letter designation for a subshell with an angular momentum quantum number l = 0?,The letter s.
+An atomic orbital with l = 1 is designated by which letter?,The letter p.
+Which letter represents an orbital subshell where l = 2?,The letter d.
+What is the letter designation for a subshell with l = 3?,The letter f.
+What property of an orbital is specified by the magnetic quantum number m_l?,Its orientation in space.
+What is the range of allowed values for the magnetic quantum number m_l?,"Integers from -l to +l, including zero."
+How many individual orbitals are present in any p subshell (l = 1)?,Three orbitals.
+How many individual orbitals are contained within a d subshell (l = 2)?,Five orbitals.
+What is the total number of orbitals found in any f subshell (l = 3)?,Seven orbitals.
+What formula defines the total number of orbitals in a shell with principal quantum number n?,Total orbitals = n^2.
+What does the spin magnetic quantum number m_s indicate about an electron?,The direction of the electron's intrinsic spin.
+What are the two allowed values for the spin magnetic quantum number m_s?,Values of +\frac{1}{2} and -\frac{1}{2}.
+Concept: Atomic Orbital,Definition: A wavefunction that describes the distribution of an electron in an atom. Example: A 1s orbital.
+"What is the physical interpretation of the square of the wavefunction, \psi^2?",It represents the probability density of finding an electron at a specific point.
+A region in an orbital where the probability of finding an electron is exactly zero is called a(n) _____.,Node
+How many angular nodes (nodal surfaces) are present in any p orbital?,One angular node.
+How many angular nodes (nodal surfaces) are found in any d orbital?,Two angular nodes.
+"In the context of atomic structure, how is a 'shell' defined?",The set of all orbitals that share the same principal quantum number n.
+"In the context of atomic structure, how is a 'subshell' defined?",A group of orbitals within a shell that share the same orbital angular momentum quantum number l.
+State the Pauli Exclusion Principle regarding quantum numbers.,No two electrons in the same atom can have the same set of four quantum numbers.
+"According to the Pauli Exclusion Principle, what is the maximum number of electrons that can occupy a single orbital?",Two electrons.
+"If two electrons occupy the same atomic orbital, their spin quantum numbers must be _____.",Opposite
+What is the maximum electron capacity of any d subshell?,Ten electrons.
+What is the maximum electron capacity of any p subshell?,Six electrons.
+"In many-electron atoms, the energy of an orbital depends on which two quantum numbers?",The principal quantum number (n) and the orbital angular momentum quantum number (l).
+"In a one-electron hydrogen atom, the energy of an orbital depends solely on which quantum number?",The principal quantum number (n).
+Term: Degenerate Orbitals,Definition: Orbitals that possess the same energy level. Example: The three 2p orbitals in a hydrogen atom.
+What is the name of the principle stating that electrons fill the lowest-energy orbitals available first?,The building-up principle (or Aufbau principle).
+"Which rule states that for degenerate orbitals, the lowest energy is achieved when the number of electrons with parallel spins is maximized?",Hund's rule.
+What is the characteristic geometric shape of any s orbital?,Spherical.
+How many total orbitals are available in the n = 3 shell?,Nine orbitals.
+Identify the subshell notation for an electron with n = 4 and l = 1.,The 4p subshell.
+How many radial nodes are found in a 2s orbital?,One radial node.
+What is the formula for the total number of nodes (radial plus angular) in any orbital?,Total nodes = n - 1.
+The number of angular nodes in an atomic orbital is always equal to the value of which quantum number?,The orbital angular momentum quantum number l.
+Formula: Number of radial nodes in an orbital,n - l - 1
+Why is a 2s orbital lower in energy than a 2p orbital in many-electron atoms?,Because 2s electrons penetrate closer to the nucleus and are less shielded than 2p electrons.
+What is 'shielding' in the context of many-electron atoms?,The repulsion of outer electrons by inner electrons which reduces the net attraction from the nucleus.
+Define 'Effective Nuclear Charge' (Z_{eff}).,"The net positive charge experienced by an electron, accounting for both the nuclear charge and shielding by other electrons."
+"In the building-up principle, which subshell is filled immediately after 3p but before 3d?",The 4s subshell.
+"How many electrons in a single atom can have the specific set of quantum numbers n = 3, l = 2, m_l = 0?",Two electrons (with opposite spins).
+What is the subshell notation for an orbital with n = 5 and l = 3?,The 5f subshell.
+"How many orbitals are in a g subshell, where l = 4?",Nine orbitals.
+Which specific d orbital is characterized by two lobes along the z-axis and a donut-shaped ring (torus) in the xy-plane?,The d_{z^2} orbital.
+What happens to the energy of an orbital as the effective nuclear charge (Z_{eff}) increases?,The energy decreases (the orbital becomes more stable/lower in energy).
+The 'azimuthal quantum number' is another name for which quantum number?,The orbital angular momentum quantum number l.
+How many radial nodes and how many angular nodes are in a 3p orbital?,One radial node and one angular node.
+What is the maximum number of electrons that can be accommodated in the n = 4 shell?,32 electrons.
+Which quantum number distinguishes the three different p orbitals within a subshell?,The magnetic quantum number m_l.
+Term: Boundary Surface,Definition: A surface enclosing the region of space where there is a high probability (often 90%) of finding an electron. Example: The sphere representing a 1s orbital.
+Under what condition can an orbital have the quantum number l = 2?,Only if the principal quantum number n is 3 or greater (n \ge 3).
+How do 1s and 2s orbitals compare in terms of their physical extent?,The 2s orbital is larger and extends further from the nucleus than the 1s orbital.
+"What are the quantum numbers (n, l, m_l) for the ground-state electron in a hydrogen atom?","n = 1, l = 0, m_l = 0."
+"According to the building-up principle, which orbital follows 4s in the sequence of increasing energy?",The 3d orbital.
+How many d orbitals within a subshell have a four-lobed 'cloverleaf' shape?,Four orbitals (all except d_{z^2}).
+What symbols are commonly used to distinguish the orientations of the three p orbitals?,"The subscripts x, y, and z."
+How many electrons can occupy the n = 1 principal energy level?,Two electrons.
+What is the total number of orbitals in the n = 2 shell?,Four orbitals (one 2s and three 2p).
+An electron moves from a 1s orbital to a 2p orbital. How does the value of its orbital angular momentum quantum number l change?,It increases from 0 to 1.

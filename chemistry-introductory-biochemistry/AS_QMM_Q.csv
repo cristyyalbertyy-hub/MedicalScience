@@ -1,0 +1,63 @@
+What equation relates the energy of a photon to its frequency according to Planck's hypothesis?,E = h\nu
+What is the physical significance of the constant h in the equation E = h\nu?,"It is Planck's constant, which relates energy to frequency."
+The discrete packets of energy into which electromagnetic radiation is quantized are called _____.,photons
+What phenomenon provides experimental evidence for the particulate nature of electromagnetic radiation?,The photoelectric effect
+The experimental observation of _____ patterns provides evidence for the wavelike properties of matter.,diffraction
+What equation expresses the de Broglie relation between the wavelength and momentum of a particle?,\lambda = \frac{h}{p}
+"According to the de Broglie relation, how does the wavelength of a particle change if its momentum increases?",The wavelength decreases.
+What is the mathematical expression for the Heisenberg uncertainty principle regarding position and momentum?,\Delta p \Delta x \ge \frac{1}{2}\hbar
+Why is it impossible to specify a definite trajectory for an electron in an atom?,The wave-particle duality of matter prevents simultaneous precise knowledge of position and momentum.
+"In quantum mechanics, the precise trajectory of a particle is replaced by a mathematical function called a _____.",wavefunction (or \psi)
+What does the Born interpretation state about the value of \psi^2 at a specific point in space?,It represents the probability density of finding the particle at that point.
+A point where the wavefunction passes through zero and the probability density is zero is called a _____.,node
+The minimum energy that a particle in a box must possess according to quantum mechanics is called _____.,zero-point energy
+What is the formula for the energy levels of a particle of mass m in a one-dimensional box of length L?,E_n = \frac{n^2 h^2}{8mL^2}
+What are the allowed integer values for the principal quantum number n in a hydrogen atom?,"n = 1, 2, 3, \dots"
+Which quantum number primarily determines the size and energy of an atomic orbital in a one-electron system?,The principal quantum number (n)
+What range of values can the orbital angular momentum quantum number l take for a given value of n?,"l = 0, 1, 2, \dots, n-1"
+An atomic orbital with l = 0 is designated as what type of orbital?,s-orbital
+An atomic orbital with l = 1 is designated as what type of orbital?,p-orbital
+An atomic orbital with l = 2 is designated as what type of orbital?,d-orbital
+An atomic orbital with l = 3 is designated as what type of orbital?,f-orbital
+What property of an orbital is determined by the magnetic quantum number m_l?,Its orientation in space
+How many individual orbitals are contained in a subshell with l = 1?,Three
+How many individual orbitals are contained in a subshell with l = 2?,Five
+What are the two possible values for the spin magnetic quantum number m_s?,+\frac{1}{2} and -\frac{1}{2}
+The state of lowest energy for an atom is referred to as its _____.,ground state
+"Which principle states that no more than two electrons may occupy a single orbital, and they must have paired spins?",The Pauli exclusion principle
+"According to the Pauli exclusion principle, what is the maximum number of electrons that can have the same set of four quantum numbers?",One
+"The rule stating that for degenerate orbitals, electrons occupy them singly with parallel spins before pairing is _____.",Hund's rule
+What term describes orbitals that possess the same energy level?,Degenerate orbitals
+"In a many-electron atom, why does a 2s orbital have a lower energy than a 2p orbital?",The 2s electron penetrates closer to the nucleus and experiences less shielding.
+What is the term for the reduction in the nuclear attraction experienced by an electron due to the presence of other electrons?,Shielding
+The net positive charge experienced by an electron in a many-electron atom is called the _____.,effective nuclear charge (Z_{eff})
+What is the total number of orbitals in the n = 3 shell?,"Nine (one 3s, three 3p, five 3d)"
+A region of zero probability density that depends on the distance from the nucleus is a _____ node.,radial
+A region of zero probability density that is a plane or a cone passing through the nucleus is an _____ node.,angular
+"For an orbital with quantum numbers n and l, how many angular nodes are present?",l
+"For an orbital with quantum numbers n and l, how many radial nodes are present?",n - l - 1
+What is the total number of nodes (radial plus angular) in any orbital specified by n?,n - 1
+"In the ground-state electron configuration of Carbon (Z = 6), how many electrons are unpaired according to Hund's rule?",Two
+Which subshell begins filling immediately after the 4s subshell is complete in the building-up principle?,The 3d subshell
+The process of an electron leaving an atom completely is known as _____.,ionization
+What is the physical meaning of the Bohr radius (a_0)?,"It is the radius of the circular orbit in Bohr's model for the ground state of hydrogen, approximately 52.9\text{ pm}."
+What kind of spherical symmetry do all s-orbitals possess?,They are spherically symmetric (independent of direction).
+What is the general shape of a p-orbital?,Two lobes on opposite sides of the nucleus (often described as a dumbbell).
+The Bohr frequency condition relates the frequency of emitted light to what change in an atom?,The difference between two energy levels (h\nu = E_{upper} - E_{lower})
+"According to the building-up principle, what is the electron configuration of Helium (Z = 2)?",1s^2
+What term is used for a shell that contains the maximum number of electrons allowed by the exclusion principle?,Closed shell
+"The electrons in the outermost shell of an atom, which are primarily involved in chemical bonding, are _____ electrons.",valence
+"In the context of the quantum-mechanical model, what is a 'subshell'?",A group of orbitals in a shell with the same value of the quantum number l.
+How does the energy of hydrogen atom orbitals depend on l compared to many-electron atoms?,"In hydrogen, orbitals with the same n but different l are degenerate; in many-electron atoms, they have different energies."
+Which experimental method can be used to measure the energies of molecular or atomic orbitals by ejecting electrons with photons?,Photoelectron spectroscopy (PES)
+The function P(r) = 4\pi r^2 \psi^2 used for s-orbitals is known as the _____.,radial distribution function
+"According to the building-up principle, what is the ground-state configuration of Lithium (Z = 3)?",1s^2 2s^1 (or [\text{He}] 2s^1)
+Which quantum number identifies a specific spin state of an electron?,Spin magnetic quantum number (m_s)
+What range of values can the magnetic quantum number m_l take for l = 2?,"m_l = -2, -1, 0, +1, +2"
+What is the maximum number of electrons that can occupy a d subshell?,Ten
+What is the maximum number of electrons that can occupy a p subshell?,Six
+Which scientist proposed that light consists of packets of energy called photons to explain the photoelectric effect?,Albert Einstein
+The constant R in the Rydberg formula for hydrogen energy levels is the _____.,Rydberg constant
+How many f orbitals are there in a single shell where n \ge 4?,Seven
+"In the notation 3p^4, what does the '4' represent?",The number of electrons occupying that specific subshell.
+Why does the probability density of an electron in a 1s orbital never truly reach zero as distance from the nucleus increases?,The wavefunction decays exponentially but only approaches zero at infinity.

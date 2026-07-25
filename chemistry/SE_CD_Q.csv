@@ -1,0 +1,70 @@
+"How is molar concentration (c), or molarity, defined mathematically?","c = \frac{n}{V}, where n is the amount of solute in moles and V is the volume of solution in liters."
+What are the standard units for reporting molarity?,"The units are moles per liter (mol \cdot L^{-1}), often denoted by the symbol M."
+What is the relationship between the units 1\ mol \cdot L^{-1} and mmol \cdot mL^{-1}?,They are equivalent concentrations.
+How is the molality (b) of a solute calculated?,It is the amount of solute in moles divided by the mass of the solvent in kilograms (b = \frac{n_{solute}}{m_{solvent}}).
+"Why do some texts, like Atkins, prefer the symbol b over m for molality?",To avoid confusion with the symbol m used for mass.
+What are the units for molality?,"The units are moles of solute per kilogram of solvent (mol \cdot kg^{-1}), often referred to as ""molal."""
+Term: Mass Percent,"Definition: The mass of solute divided by the total mass of the solution, multiplied by 100."
+What is the formula for calculating concentration in parts per million (ppm)?,"ppm = \frac{mass\ solute}{mass\ solution} \times 1,000,000."
+How is volume percent typically defined in the beverage industry?,"It is the volume of solute (e.g., alcohol) in milliliters per 100\ mL of solution."
+"In the context of solution concentration, what does the term ""proof"" represent?",It is twice the volume percent of alcohol.
+"What is the primary difference between a ""dilute"" and a ""concentrated"" solution?","A dilute solution has a relatively small amount of dissolved solute, while a concentrated solution has a large amount."
+"When a solution is diluted by adding pure solvent, which quantity remains constant?",The total amount (moles) of solute in the solution remains the same.
+What formula is used to calculate the volume or molarity changes during a dilution?,c_{initial}V_{initial} = c_{final}V_{final} (or M_1V_1 = M_2V_2).
+What is the first procedural step in calculating the volume of stock solution needed for a specific dilution?,"Calculate the amount of solute (n) required in the final, dilute solution using n = c_{final}V_{final}."
+"To find the mass (m) of solute needed to prepare a solution of known molarity (c) and volume (V), what equation is used?",m = c \times V \times M_{molar\ mass}.
+Concept: Mole Fraction (x),Definition: The ratio of the moles of one component to the total moles of all components in a mixture (x_{solute} = \frac{n_{solute}}{n_{solute} + n_{solvent}}).
+"In a dynamic equilibrium, how do the rates of the forward and reverse processes compare?",The forward and reverse processes occur at exactly matching rates.
+What is the net change in reactant and product concentrations when a system reaches chemical equilibrium?,There is no net change in the concentrations.
+How is the equilibrium constant (K_{eq}) defined for the general reaction aA + bB \rightleftharpoons cC + dD?,"K_{eq} = \frac{[C]^c [D]^d}{[A]^a [B]^b}, where concentrations are measured at equilibrium."
+"Strictly speaking, what should be used in the equilibrium constant expression instead of molar concentrations?",Activities (effective concentrations in nonideal solutions).
+What are the units for an equilibrium constant (K)?,Equilibrium constants are dimensionless.
+"According to Le Chatelier's principle, how does an equilibrium shift if more reactant is added?",The equilibrium shifts to the right (toward the products) to reduce the concentration of the added reactant.
+What happens to the equilibrium position if a product is removed from the reaction mixture?,The equilibrium shifts to the right to produce more of that product.
+"In a gas-phase equilibrium, what is the effect of reducing the volume (compression) on the reaction direction?",The equilibrium tends to shift in the direction that minimizes the resulting increase in pressure (fewer moles of gas).
+Term: Common-Ion Effect,Definition: The decrease in the solubility of an ionic compound caused by the addition of a soluble salt that shares an ion with the compound.
+How does the addition of excess OH^- ions affect the solubility of heavy metal hydroxides?,"It reduces their solubility, often causing them to precipitate out of the solution."
+What is the term for the numerical value of the molar concentration of a saturated solution?,Molar solubility (s).
+What is the first step in treating equilibria between species in solution?,Identify the specific solute species present in the solution.
+"In a titration, how is the molarity of unreacted H_3O^+ calculated after adding some titrant?",Divide the remaining moles of H_3O^+ by the total volume of the combined solutions (V_{analyte} + V_{titrant}).
+What is the relationship between the reaction quotient (Q) and the equilibrium constant (K) after a perturbation?,The reaction occurs in the direction that restores the value of Q to match K.
+Which concentration unit is defined as the amount of solute per liter of solution?,Molarity (M).
+"When calculating the molarity of a solution from mass percent and density, what is the first step?",Calculate the total mass of 1\ L of solution using its density (m_{solution} = d \times 10^3\ mL).
+The _____ expresses the concentration of the solution as the percent of solute in a given mass of solution.,Mass percent method
+Formula: Molar mass (M),Purpose: Used to convert the mass of a solute (m) into the amount in moles (n) using n = \frac{m}{M}.
+What determines the direction of a reaction according to thermodynamics?,"The Gibbs free-energy change (\Delta G), which depends on the concentrations or partial pressures of reactants and products."
+Why is it advisable to perform successive dilutions rather than weighing out a very small mass for very dilute solutions?,To minimize errors associated with weighing extremely small quantities or measuring tiny volumes of stock.
+What does a 10\% sodium hydroxide solution mean in terms of mass composition?,Every 100\ g of solution contains 10\ g of NaOH and 90\ g of water.
+A solution that contains a relatively large amount of dissolved solute is described as _____.,concentrated
+What is the concentration of H_3O^+ in a neutral aqueous solution at 25\ ^{\circ}C?,1.0 \times 10^{-7}\ mol \cdot L^{-1}.
+What laboratory tool is specifically calibrated to deliver a precisely measured volume of liquid for dilutions or titrations?,A pipet or a buret.
+The curved top surface of a liquid in a graduated cylinder or volumetric flask is called the _____.,meniscus
+"In the context of Le Chatelier's principle, what is a ""stress"" on a system?","A change in concentration, pressure, or temperature that disturbs the equilibrium state."
+"If the rate of product formation equals the rate of product conversion to reactant, the system is at _____.",equilibrium
+What happens to the concentration of reactants if the equilibrium shifts to the left?,The concentration of reactants increases.
+Term: Solubility Product Constant (K_{sp}),Definition: The equilibrium constant for the dissolution of a slightly soluble salt in water.
+How does the presence of a catalyst affect the final equilibrium concentration of a solute?,It does not affect the equilibrium concentrations; it only increases the rate at which equilibrium is reached.
+"What is the definition of a ""molar solution""?",A solution containing 1 mole of solute per liter of solution.
+Why is mass percent independent of the chemical formula of the solute?,"Because it is based solely on the mass of the substances, not the number of moles."
+How does the addition of a shared ion affect the molar solubility of a precipitate?,It decreases the molar solubility.
+"In the dilution equation M_1V_1 = M_2V_2, what does the product M \times V represent?",The total amount of solute in moles (n).
+What is the concentration of a solution prepared by dissolving 40.00\ g of NaOH and diluting to 1\ L?,1.0\ M.
+The quantity of a substance in a given volume is its _____.,concentration
+What is the relationship between molarity (c) and the number of molecules in a fixed volume?,They are directly proportional; a higher molarity means more molecules per unit volume.
+How is the total volume of a solution calculated at the stoichiometric point of a titration?,V_{final} = V_{initial} + V_{added\ titrant}.
+Which concentration unit is defined by the mass of solute per mass of solution multiplied by 100?,Mass percent (% m/m).
+"In chemical kinetics, how does reactant concentration typically affect the reaction rate?",Higher concentrations generally increase the rate of reaction because they increase the frequency of molecular collisions.
+What is the name for a solution where the solvent is water?,An aqueous solution.
+How do you find the mass of solvent in 1\ L of solution if you know the total mass of the solution and the mass of the solute?,m_{solvent} = m_{solution} - m_{solute}.
+Formula: Reaction Quotient (Q),"Name: Q = \frac{[C]^c [D]^d}{[A]^a [B]^b} (calculated at any point in time, not necessarily equilibrium)."
+"If Q < K, in which direction will the reaction proceed?",The reaction will proceed to the right (toward the products).
+What is the concentration of a 100\% pure liquid in the expression for K_{eq}?,Pure liquids (and solids) have an activity of 1 and are effectively excluded from the expression.
+How many moles of carbon atoms are in 100\ mL of 0.06\ M\ C_6H_{12}O_6?,0.036\ moles (Calculation: 0.1\ L \times 0.06\ mol/L \times 6\ C/molecule).
+Term: Solute,"Definition: The substance that is dissolved, or the least abundant component in a solution."
+Term: Solvent,"Definition: The dissolving agent, or the most abundant component in a solution."
+What is the effect of adding more of a pure solid reactant to an equilibrium system?,"There is no effect on the equilibrium position, as the concentration of a pure solid is constant."
+Which concentration unit is preferred when studying properties that depend on temperature?,"Molality (b), because it is based on mass, which does not change with temperature."
+How does the dilution of a weak acid solution affect its degree of ionization?,Dilution typically increases the percent ionization of a weak acid (Le Chatelier's principle applied to the dissociation equilibrium).
+What concentration unit is defined as \frac{moles\ solute}{L\ solution}?,Molarity (M).
+A solution that is in equilibrium with undissolved solute is called a _____ solution.,saturated
+What is the primary theme of Chapter 13 in the Atkins text regarding dissolved ions?,The concentrations of dissolved ions satisfy the equilibrium constants for the reactions in which they participate.

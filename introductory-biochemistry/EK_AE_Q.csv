@@ -1,0 +1,65 @@
+What term defines the minimum energy required to initiate a chemical reaction?,Activation energy (E_a).
+"In transition state theory, what does the symbol \ddagger represent?",The transition state or activated complex.
+Where is the transition state located on a reaction coordinate diagram?,At the point of maximum potential energy between reactants and products.
+What mathematical equation relates the rate constant k to the activation energy E_a and temperature T?,The Arrhenius equation (k = A e^{-E_a/RT}).
+"In the Arrhenius equation, what does the pre-exponential factor A represent?",The frequency of collisions and the requirement for correct molecular orientation.
+How does a catalyst increase the rate of a chemical reaction?,By providing an alternative reaction pathway with a lower activation energy.
+"According to collision theory, a reaction only occurs if a collision has kinetic energy at least equal to _____.",The activation energy (E_a).
+What is the effect of increasing temperature on the fraction of molecules able to overcome the activation barrier?,The fraction of molecules with sufficient energy increases.
+Reactions with high activation energies show a _____ (stronger/weaker) dependence on temperature compared to those with low E_a.,Stronger.
+What is the slope of a plot of \ln k versus \frac{1}{T} in an Arrhenius analysis?,-\frac{E_a}{R}.
+True or False: An enzyme changes the equilibrium constant (K_{eq}) of a reaction.,False.
+The difference in free energy between the transition state and the reactants is called the _____.,Free energy of activation (\Delta G^\ddagger).
+"In an exothermic reaction profile, are the products at a higher or lower potential energy than the reactants?",Lower.
+What is an 'activated complex'?,An unstable arrangement of atoms at the peak of the activation energy barrier.
+How do enzymes lower the activation energy of a reaction using 'binding energy' (\Delta G_B)?,Weak noncovalent interactions between the enzyme and the transition state release energy that offsets the cost of reaching the barrier.
+A substance that dissolves in water to produce a solution that conducts electricity is called an _____.,Electrolyte.
+Why do aqueous solutions of electrolytes conduct electricity?,Because the solute dissociates into mobile ions.
+What defines a 'strong electrolyte'?,A substance that dissociates or ionizes almost completely in solution.
+Give an example of a common nonelectrolyte mentioned in the text.,Sucrose (or acetone).
+The step in a multi-step reaction with the highest transition state free energy is known as the _____.,Rate-determining step.
+What is the relationship between the equilibrium constant K and the rate constants of an elementary reaction?,K = \frac{k_{forward}}{k_{reverse}}.
+"In transition state theory, what is the 'transmission coefficient' (\kappa)?",The probability that the assembly of atoms at the transition state will proceed to products.
+What physical constant is approximately 8.3145\ J \cdot K^{-1} \cdot mol^{-1} in kinetics calculations?,The gas constant (R).
+The path of minimum free energy for the progress of a reaction is called the _____.,Reaction coordinate.
+How does the Nernst equation relate cell potential to the reaction quotient Q?,E_{cell} = E_{cell}^\circ - \frac{RT}{nF} \ln Q.
+What units are typically used for a first-order rate constant?,s^{-1} (reciprocal seconds).
+What units are typically used for a second-order rate constant?,M^{-1} \cdot s^{-1}.
+The time required for the concentration of a reactant to fall to half its initial value is the _____.,Half-life (t_{1/2}).
+"For a first-order reaction, how does the half-life relate to the initial concentration?",The half-life is independent of the initial concentration.
+"According to Arrhenius, what must happen to bonds in reactants to create a transition state?",Existing bonds must be distorted or partially broken.
+"In an electrochemical cell, where does reduction take place?",At the cathode.
+"In an electrochemical cell, where does oxidation take place?",At the anode.
+What happens to the rate constant of a reaction if the activation energy is lowered at a constant temperature?,The rate constant increases exponentially.
+What biological molecules act as catalysts to selectively lower activation energies?,Enzymes.
+Which equation relates the standard free-energy change (\Delta G^\circ) to the equilibrium constant K?,\Delta G^\circ = -RT \ln K.
+"In the context of kinetics, what does 'molecularity' refer to?",The number of molecules that must simultaneously collide in an elementary reaction.
+What type of reaction order is a bimolecular elementary reaction?,Second-order.
+"Why do some thermodynamically spontaneous reactions, like the combustion of wood, not occur at room temperature?",They have a high activation energy that cannot be overcome by the available thermal energy.
+How can the activation energy of a reaction be calculated if rate constants are known at two different temperatures?,Using the formula \ln\left(\frac{k_2}{k_1}\right) = \frac{E_a}{R}\left(\frac{1}{T_1} - \frac{1}{T_2}\right).
+"True or False: In a net ionic equation, spectator ions are included because they affect the rate constant.",False.
+What defines a 'weak electrolyte' in terms of conductivity?,It forms a solution that is a poor conductor because the solute is only partly dissociated into ions.
+The proportionality constant between reaction velocity and reactant concentrations is the _____.,Rate constant (k).
+Concept: Reaction Profile,Definition: A diagram showing the changes in potential energy as reactants are converted to products.
+What is the relationship between the energy of activation and the stability of the transition state?,A higher activation energy indicates a less stable (higher energy) transition state.
+What is the value of the pre-exponential factor A related to in collision theory?,The total frequency of collisions per unit time.
+The study of the rates of chemical reactions is called _____.,Chemical kinetics.
+"In an endothermic reaction, is the activation energy for the forward reaction larger or smaller than the \Delta H of the reaction?",Larger.
+"According to the Arrhenius equation, as T approaches infinity, what value does k approach?",The pre-exponential factor A.
+What does a 'nonelectrolyte' solution lack that prevents it from conducting electricity?,Ions.
+How does the presence of a catalyst affect the reaction enthalpy (\Delta H)?,It does not affect the reaction enthalpy.
+The transition state is assumed to be in a state of _____ with the reactants in transition state theory.,Rapid equilibrium.
+What is the 'frequency factor' in the context of the Arrhenius equation?,Another name for the pre-exponential factor A.
+"If a reaction is first-order with respect to [A], what happens to the rate if [A] is doubled?",The rate doubles.
+What name is given to the 'energy hill' that reactants must climb to become products?,Activation barrier.
+"In biochemistry, what does the term 'velocity' (v) of a reaction refer to?",The instantaneous rate of disappearance of reactant or appearance of product.
+Which constant in the transition state rate equation (k = \frac{k_B T}{h} e^{-\Delta G^\ddagger / RT}) represents the available thermal energy?,k_B T (Boltzmann constant times temperature).
+A single-step reaction that shows the actual molecular collision is called an _____.,Elementary reaction.
+What happens to the kinetic energy of reactants as they 'climb' the activation barrier?,It is converted into potential energy.
+"If the forward reaction is exothermic, will the activation energy for the reverse reaction be higher or lower than that of the forward reaction?",Higher.
+What determines the direction of a spontaneous chemical process according to thermodynamics?,The sign of the free-energy change (\Delta G).
+How does 'induced fit' in enzymes relate to activation energy?,"The enzyme changes shape to better complement the transition state, maximizing binding energy to lower E_a."
+The sum of the exponents of the concentration terms in a rate law is the _____.,Overall reaction order.
+What is the unit of the Boltzmann constant (k_B)?,J \cdot K^{-1}.
+"In the Arrhenius equation, what does R represent?",The molar gas constant.
+Why is the concentration of the transition state in a reacting system typically very small?,Because it is highly unstable and exists for a very short duration (10^{-13} to 10^{-14} seconds).

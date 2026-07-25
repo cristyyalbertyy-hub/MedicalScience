@@ -1,0 +1,65 @@
+"In terms of electron transfer, what occurs during an oxidation process?",A species loses one or more electrons.
+"In terms of electron transfer, what occurs during a reduction process?",A species gains one or more electrons.
+The mnemonic 'LEO says GER' stands for 'Loss of Electrons is Oxidation' and '_____'.,Gain of Electrons is Reduction
+"What is the oxidation number of an atom in its elemental form (e.g., Na(s) or Cl_2(g))?",0
+"In most compounds, what is the oxidation number assigned to Oxygen?",-2
+What is the common oxidation number of Hydrogen when it is bonded to nonmetals?,+1
+Term: Oxidizing Agent,Definition: The substance that accepts electrons in a redox reaction and is itself reduced.
+Term: Reducing Agent,Definition: The substance that provides electrons in a redox reaction and is itself oxidized.
+"In a redox reaction, a decrease in the oxidation number of an element signifies that the element has been _____.",reduced
+What device uses a spontaneous chemical reaction to generate an electric current?,A galvanic (or voltaic) cell.
+At which electrode does oxidation always occur in an electrochemical cell?,The anode.
+At which electrode does reduction always occur in an electrochemical cell?,The cathode.
+What is the primary function of a salt bridge in a galvanic cell?,To maintain electrical neutrality by allowing ions to flow between half-cells.
+"In a galvanic cell, in which direction do electrons flow through the external circuit?",From the anode to the cathode.
+"In galvanic cell notation (e.g., Zn(s)|Zn^{2+}(aq)||Cu^{2+}(aq)|Cu(s)), what does the double vertical line (||) represent?",The salt bridge (or porous barrier) separating the two half-cells.
+Concept: Cell Potential (E_{cell}),"Definition: The potential difference between the cathode and the anode, measuring the 'push' on electrons."
+What is the mathematical relationship between the standard reaction Gibbs free energy (\Delta G^\circ) and the standard cell potential (E^\circ)?,\Delta G^\circ = -nFE^\circ
+"In the context of electrochemistry, what does the constant F represent?","Faraday's constant, the magnitude of charge per mole of electrons (approx. 96,485\ C \cdot mol^{-1})."
+A spontaneous redox reaction is characterized by a _____ (positive/negative) cell potential.,positive
+How does multiplying the coefficients of a redox half-reaction affect its standard reduction potential (E^\circ)?,The standard reduction potential remains unchanged because it is an intensive property.
+"Under standard conditions, the stronger oxidizing agent is the species with the more _____ (positive/negative) standard reduction potential.",positive
+What equation relates the cell potential to the standard cell potential and the reaction quotient Q?,The Nernst equation: E = E^\circ - \frac{RT}{nF} \ln Q
+"At 25 ^\circ C, the Nernst equation can be simplified using the base-10 logarithm as E = E^\circ - \frac{0.0592 V}{n} \log _____.",Q
+What is the value of the cell potential (E_{cell}) when a redox reaction has reached chemical equilibrium?,0
+Term: Concentration Cell,Definition: A galvanic cell in which both half-cells contain the same components but at different concentrations.
+"In a concentration cell, reduction occurs in the half-cell with the _____ (higher/lower) concentration of the metal ion.",higher
+What is the relationship between the standard cell potential (E^\circ_{cell}) and the equilibrium constant (K) at 25 ^\circ C?,\ln K = \frac{nFE^\circ}{RT} (or \log K = \frac{nE^\circ}{0.0592 V})
+What type of electrochemical cell uses an external electrical source to drive a nonspontaneous chemical reaction?,An electrolytic cell.
+"During the electrolysis of molten NaCl, which element is produced at the anode?",Chlorine gas (Cl_2).
+"In an electrolytic cell, the anode is assigned a _____ (positive/negative) charge.",positive
+What term describes the additional voltage required beyond the theoretical potential to drive an electrolytic reaction at a measurable rate?,Overpotential
+"When several reducible species are present in an electrolytic solution, which species is reduced preferentially at the cathode?",The species with the most positive (highest) reduction potential.
+Term: Electrolyte,"Definition: A substance that, when dissolved in water, results in a solution that can conduct electricity."
+How does a strong electrolyte differ from a weak electrolyte in terms of ionization?,"A strong electrolyte ionizes completely, while a weak electrolyte ionizes only partially."
+The change in the concentration of a reactant or product per unit time is defined as the _____.,reaction rate
+Formula: Reaction Rate,Expression: Rate = -\frac{1}{a} \frac{\Delta [A]}{\Delta t} = \frac{1}{c} \frac{\Delta [C]}{\Delta t} for the reaction aA \to cC.
+What equation relates the rate of reaction to the rate constant k and the concentrations of reactants raised to specific powers?,"The rate law (e.g., Rate = k[A]^m[B]^n)."
+What are the units of the rate constant k for a first-order reaction?,s^{-1} (or time^{-1})
+How does the half-life of a first-order reaction depend on the initial concentration of the reactant?,The half-life of a first-order reaction is independent of the initial concentration.
+Formula: First-order half-life,t_{1/2} = \frac{\ln 2}{k} \approx \frac{0.693}{k}
+"According to collision theory, what two criteria must a molecular collision meet to result in a reaction?",Correct orientation and sufficient energy to overcome the activation energy barrier.
+Term: Activation Energy (E_a),Definition: The minimum amount of energy required to initiate a chemical reaction.
+"According to the Arrhenius equation, how does increasing the temperature affect the rate constant k?",It increases the rate constant exponentially.
+What is the role of a catalyst in a chemical reaction?,It increases the reaction rate by providing an alternative pathway with a lower activation energy.
+Term: Intermediate,Definition: A species produced in one elementary step of a reaction mechanism and consumed in a subsequent step.
+"In a multi-step reaction mechanism, which step determines the overall rate of the reaction?",The slowest elementary step (the rate-determining step).
+Term: Enzyme,"Definition: A biological catalyst, usually a protein, that speeds up biochemical reactions."
+"In biological systems, what coenzyme serves as a common electron carrier by being reversibly reduced to NADH?",NAD^+ (Nicotinamide adenine dinucleotide)
+How many electrons are transferred to NAD^+ during its reduction to NADH?,Two electrons.
+What is the biological standard state for pH used in calculating biological standard potentials (E^{\circ'})?,pH 7.0
+"Between glucose and hexanoate (a fatty acid), which substance releases more energy per gram upon complete combustion to CO_2 and H_2O?",Hexanoate (because its carbons are in a more reduced state).
+A higher (more positive) reduction potential means a substance has a _____ (greater/lesser) tendency to accept electrons.,greater
+Term: Disproportionation,Definition: A redox reaction in which the same element is simultaneously oxidized and reduced.
+"In an electrolytic cell used for electroplating, the object to be plated is placed at the _____ (anode/cathode).",cathode
+"During the discharge of a lead-acid car battery, the density of the electrolyte _____ (increases/decreases).",decreases
+What type of electrolyte is HCl in aqueous solution?,A strong electrolyte.
+"In the Arrhenius equation k = Ae^{-E_a/RT}, what does the symbol A represent?",The frequency factor (or pre-exponential factor).
+Concept: Homogeneous Catalyst,Definition: A catalyst that exists in the same phase as the reacting molecules.
+The total order of a reaction is found by _____ the individual orders of all reactants in the rate law.,summing
+"For a zero-order reaction, the rate is _____ (proportional/independent) of the concentration of the reactant.",independent
+"In a reaction profile (potential energy vs. reaction coordinate), what represents the highest energy point of an elementary step?",The activated complex (or transition state).
+The sum of the oxidation numbers of all atoms in a polyatomic ion must equal the _____ of the ion.,charge
+What is the oxidation number of Fluorine in all of its compounds?,-1
+"In the electrolysis of aqueous AgNO_3, what is produced at the cathode?",Silver metal (Ag(s)).
+What physical property of the carbon atoms in a fuel determines the amount of energy released during its oxidation to CO_2?,Their initial oxidation state (more reduced carbons release more energy).
