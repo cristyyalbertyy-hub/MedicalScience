@@ -15,12 +15,13 @@
     { "source": "/history-of-medicine", "destination": "/history-of-medicine/" },
     { "source": "/information-processing", "destination": "/information-processing/" },
     { "source": "/statistics", "destination": "/statistics/" },
+    { "source": "/human-anatomy-1", "destination": "/human-anatomy-1/" },
     {
-      "source": "/(human-anatomy-1|medical-biology|genetics|physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
+      "source": "/(medical-biology|genetics|physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)",
       "destination": "/apps/launcher.html"
     },
     {
-      "source": "/(human-anatomy-1|medical-biology|genetics|physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
+      "source": "/(medical-biology|genetics|physics|histology|embryology|histology-embryology|chemistry|introductory-biochemistry|chemistry-introductory-biochemistry)/",
       "destination": "/apps/launcher.html"
     }
   ],
@@ -51,6 +52,10 @@
     },
     {
       "source": "/statistics/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/human-anatomy-1/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
     },
     {

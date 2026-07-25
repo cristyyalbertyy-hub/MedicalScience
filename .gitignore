@@ -23,6 +23,10 @@ information-processing/Public/*
 statistics/content/**
 statistics/StatisticsA.png
 statistics/M_S_I.png
+human-anatomy-1/LS_*
+human-anatomy-1/CLS_*
+human-anatomy-1/RSC_*
+human-anatomy-1/HumanAnatomyA.png
 assets/source/*.png
 assets/source/*.jpeg
 assets/source/*.jpg
