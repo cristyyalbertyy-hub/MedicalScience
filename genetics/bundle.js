@@ -30091,16 +30091,9 @@ async function runAccessGate() {
     if (!header || header.querySelector(".auth-account")) return;
     const wrap2 = document.createElement("div");
     wrap2.className = "auth-account";
-    wrap2.innerHTML = `<span class="auth-account__email" title="${escapeHtml(email)}">${escapeHtml(email)}</span><button type="button" class="btn-ghost">Sair</button>`;
+    wrap2.innerHTML = `<span class="auth-account__email" title="${escapeHtml(email)}">${escapeHtml(email)}</span><button type="button" class="btn-ghost">Minha conta</button>`;
     wrap2.querySelector("button")?.addEventListener("click", () => {
-      studio9Session = null;
-      accessGranted = false;
-      sessionStorage.removeItem("studio9_from_conta");
-      sessionStorage.removeItem("studio9_open_package");
-      sessionStorage.removeItem("studio9.displayEmail");
-      void signOut(auth).then(() => {
-        window.location.assign(ACCOUNT_URL);
-      });
+      window.location.assign(ACCOUNT_URL);
     });
     const actions = document.createElement("div");
     actions.className = "app-header__actions";
