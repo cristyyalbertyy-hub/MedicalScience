@@ -12,7 +12,7 @@ const topics = [
     color: "#14213d",
     aliases: ["HIP", "HIS"],
     files: {
-      V: ["HIS_V.mp4", "HIS_V2.mp4", "HIS_V3.mp4"],
+      V: "HIS_V.mp4",
       P: "HIS_P.m4a",
       I: "HIS_I.png",
       Q: "HIS_Q.csv",
