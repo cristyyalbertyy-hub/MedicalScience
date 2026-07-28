@@ -11,6 +11,7 @@ const topics = [
     code: "HIS",
     color: "#14213d",
     aliases: ["HIP", "HIS"],
+    extraVideos: ["HIS_V2.mp4", "HIS_V3.mp4"],
     files: {
       V: "HIS_V.mp4",
       P: "HIS_P.m4a",
@@ -511,6 +512,25 @@ function attachPlaybackProgress(root, topic, resourceType) {
   });
 }
 
+function getExtraVideoPaths(topic) {
+  const extra = topic.extraVideos;
+  if (!Array.isArray(extra) || extra.length === 0) return [];
+  return extra.map((file) => publicMediaUrl(file));
+}
+
+function renderVideoElement(path, label = null) {
+  const extension = path.split(".").pop().toLowerCase();
+  const labelHtml = label ? `<p class="extra-video__label">${label}</p>` : "";
+
+  return `
+    ${labelHtml}
+    <video class="media" controls controlsList="nodownload" playsinline>
+      <source src="${path}" type="video/${extension}">
+      Your browser does not support HTML5 video.
+    </video>
+  `;
+}
+
 function renderMediaResource(topic, resource, path, backOptions = {}) {
   const extension = path.split(".").pop().toLowerCase();
   const title = `${topic.title} — ${resource.label}`;
@@ -520,12 +540,24 @@ function renderMediaResource(topic, resource, path, backOptions = {}) {
   let body = "";
 
   if (resource.type === "V") {
-    body = `
-      <video class="media" controls controlsList="nodownload" playsinline>
-        <source src="${path}" type="video/${extension}">
-        Your browser does not support HTML5 video.
-      </video>
-    `;
+    body = renderVideoElement(path);
+    const extraPaths = getExtraVideoPaths(topic);
+    if (extraPaths.length > 0) {
+      body += `
+        <section class="extra-videos" aria-label="Additional videos">
+          <h3 class="extra-videos__title">Additional videos</h3>
+          ${extraPaths
+            .map(
+              (extraPath, index) => `
+                <div class="extra-video">
+                  ${renderVideoElement(extraPath, `Video ${index + 2}`)}
+                </div>
+              `,
+            )
+            .join("")}
+        </section>
+      `;
+    }
   } else if (resource.type === "P") {
     body = `
       <audio class="media" controls controlsList="nodownload" src="${path}">
