@@ -298,11 +298,14 @@ async function openQuestions(topic) {
     return;
   }
 
-  contentElement.innerHTML = `
-    <p class="eyebrow">Questions</p>
-    <h2>Loading questions...</h2>
-    <p>Reading the questions file.</p>
-  `;
+  renderTopicShell(
+    topic,
+    "Q",
+    `
+      <p class="media-stage__status">Loading questions...</p>
+      <p class="media-stage__hint">Reading the questions file.</p>
+    `,
+  );
 
   try {
     const csv = await fetchFirstText(topic, "Q");
@@ -316,100 +319,99 @@ async function openQuestions(topic) {
 
     renderQuestion(topic);
   } catch (error) {
-    contentElement.innerHTML = `
-      ${renderBackButtonHtml()}
-      <p class="eyebrow">Questions</p>
-      <h2>Questions could not be opened</h2>
-      <div class="missing-resource">
-        <p>${error.message}</p>
-        <p>Please check that the questions file is available.</p>
-      </div>
-    `;
-    bindBackButton(topic);
+    renderTopicShell(
+      topic,
+      "Q",
+      `
+        <div class="missing-resource">
+          <h3>Questions could not be opened</h3>
+          <p>${error.message}</p>
+          <p>Please check that the questions file is available.</p>
+        </div>
+      `,
+    );
   }
 }
 
 function renderQuestionsFileModeMessage(topic) {
-  contentElement.innerHTML = `
-    ${renderBackButtonHtml()}
-    <p class="eyebrow">Questions</p>
-    <h2>Questions need the local server</h2>
-    <div class="missing-resource">
-      <p>
-        The question files are available, but the browser blocks CSV loading when
-        this page is opened directly from the file system.
-      </p>
-      <p>Open the app with <strong>start-app.bat</strong> and then use Questions again.</p>
-    </div>
-  `;
-
-  bindBackButton(topic);
+  renderTopicShell(
+    topic,
+    "Q",
+    `
+      <div class="missing-resource">
+        <h3>Questions need the local server</h3>
+        <p>
+          The question files are available, but the browser blocks CSV loading when
+          this page is opened directly from the file system.
+        </p>
+        <p>Open the app with <strong>start-app.bat</strong> and then use Questions again.</p>
+      </div>
+    `,
+  );
 }
 
 function renderQuestion(topic) {
   const current = state.questions[state.questionIndex];
   const total = state.questions.length;
   const currentNumber = state.questionIndex + 1;
-  state.mobileSubchapter = "Questions";
-  updateMobileBar(topic, "Questions");
 
-  contentElement.innerHTML = `
-    ${renderBackButtonHtml()}
-    <header class="subchapter-head">
-      <p class="eyebrow">Questions</p>
-      <h2>${topic.title}</h2>
-    </header>
-    <div class="questionnaire">
-      <p class="questionnaire__progress">Question ${currentNumber} of ${total}</p>
-      <div class="questionnaire__nav-row">
-        <button class="questionnaire__arrow" id="previousQuestion" type="button" aria-label="Previous question">←</button>
-        <div class="questionnaire__card">
-          <p class="questionnaire__question">${escapeHtml(current.question)}</p>
-          ${
-            state.answerRevealed
-              ? `<div class="questionnaire__answer"><span class="questionnaire__answer-label">Answer</span><p>${escapeHtml(current.answer)}</p></div>`
-              : ""
-          }
+  renderTopicShell(
+    topic,
+    "Q",
+    `
+      <div class="questionnaire">
+        <p class="questionnaire__progress">Question ${currentNumber} of ${total}</p>
+        <div class="questionnaire__nav-row">
+          <button class="questionnaire__arrow" id="previousQuestion" type="button" aria-label="Previous question">←</button>
+          <div class="questionnaire__card">
+            <p class="questionnaire__question">${escapeHtml(current.question)}</p>
+            ${
+              state.answerRevealed
+                ? `<div class="questionnaire__answer"><span class="questionnaire__answer-label">Answer</span><p>${escapeHtml(current.answer)}</p></div>`
+                : ""
+            }
+          </div>
+          <button class="questionnaire__arrow" id="nextQuestion" type="button" aria-label="Next question">→</button>
         </div>
-        <button class="questionnaire__arrow" id="nextQuestion" type="button" aria-label="Next question">→</button>
+        ${
+          state.answerRevealed
+            ? ""
+            : `<button class="questionnaire__reveal" id="revealAnswer" type="button">Show answer</button>`
+        }
       </div>
-      ${
-        state.answerRevealed
-          ? ""
-          : `<button class="questionnaire__reveal" id="revealAnswer" type="button">Show answer</button>`
-      }
-    </div>
-  `;
+    `,
+    {
+      onBind: () => {
+        const previousButton = document.querySelector("#previousQuestion");
+        const nextButton = document.querySelector("#nextQuestion");
+        const revealButton = document.querySelector("#revealAnswer");
 
-  bindBackButton(topic);
+        previousButton.disabled = state.questionIndex === 0;
+        nextButton.disabled = state.questionIndex === total - 1;
 
-  const previousButton = document.querySelector("#previousQuestion");
-  const nextButton = document.querySelector("#nextQuestion");
-  const revealButton = document.querySelector("#revealAnswer");
+        previousButton.addEventListener("click", () => {
+          if (state.questionIndex > 0) {
+            state.questionIndex -= 1;
+            state.answerRevealed = false;
+            renderQuestion(topic);
+          }
+        });
 
-  previousButton.disabled = state.questionIndex === 0;
-  nextButton.disabled = state.questionIndex === total - 1;
+        nextButton.addEventListener("click", () => {
+          if (state.questionIndex < total - 1) {
+            state.questionIndex += 1;
+            state.answerRevealed = false;
+            renderQuestion(topic);
+          }
+        });
 
-  previousButton.addEventListener("click", () => {
-    if (state.questionIndex > 0) {
-      state.questionIndex -= 1;
-      state.answerRevealed = false;
-      renderQuestion(topic);
-    }
-  });
-
-  nextButton.addEventListener("click", () => {
-    if (state.questionIndex < total - 1) {
-      state.questionIndex += 1;
-      state.answerRevealed = false;
-      renderQuestion(topic);
-    }
-  });
-
-  revealButton?.addEventListener("click", () => {
-    state.answerRevealed = true;
-    renderQuestion(topic);
-  });
+        revealButton?.addEventListener("click", () => {
+          state.answerRevealed = true;
+          renderQuestion(topic);
+        });
+      },
+    },
+  );
 }
 
 async function fetchFirstText(topic, type) {
@@ -512,6 +514,69 @@ function attachPlaybackProgress(root, topic, resourceType) {
   });
 }
 
+function renderResourceTabsHtml(activeType) {
+  return `
+    <div class="media-tabs" role="tablist" aria-label="Class resources">
+      ${resources
+        .map(
+          (resource) => `
+            <button
+              type="button"
+              class="media-tab${resource.type === activeType ? " active" : ""}"
+              role="tab"
+              aria-selected="${resource.type === activeType}"
+              data-resource="${resource.type}"
+            >
+              ${resource.label}
+            </button>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function bindResourceTabs(topic, activeType) {
+  contentElement.querySelectorAll(".media-tab[data-resource]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const type = button.dataset.resource;
+      if (type === activeType) return;
+      const resource = resources.find((item) => item.type === type);
+      if (resource) void openResource(topic, resource);
+    });
+  });
+}
+
+function renderTopicShell(topic, activeResourceType, bodyHtml, options = {}) {
+  const resource = resources.find((item) => item.type === activeResourceType);
+  state.mobileSubchapter = resource?.label || activeResourceType;
+  updateMobileBar(topic, state.mobileSubchapter);
+
+  const backHtml = options.backLabel ? renderBackButtonHtml(options.backLabel) : "";
+
+  contentElement.innerHTML = `
+    <header class="subchapter-head">
+      <p class="eyebrow">Class</p>
+      <h2>${topic.title}</h2>
+    </header>
+    ${renderResourceTabsHtml(activeResourceType)}
+    <div class="media-stage" role="tabpanel" aria-label="${resource?.label || ""}">
+      ${backHtml}
+      ${bodyHtml}
+    </div>
+  `;
+
+  bindResourceTabs(topic, activeResourceType);
+
+  if (options.backLabel) {
+    bindBackButton(topic, options.onBack);
+  }
+
+  if (options.onBind) {
+    options.onBind();
+  }
+}
+
 function getExtraVideoPaths(topic) {
   const extra = topic.extraVideos;
   if (!Array.isArray(extra) || extra.length === 0) return [];
@@ -534,8 +599,6 @@ function renderVideoElement(path, label = null) {
 function renderMediaResource(topic, resource, path, backOptions = {}) {
   const extension = path.split(".").pop().toLowerCase();
   const title = `${topic.title} — ${resource.label}`;
-  state.mobileSubchapter = resource.label;
-  updateMobileBar(topic, resource.label);
 
   let body = "";
 
@@ -570,27 +633,20 @@ function renderMediaResource(topic, resource, path, backOptions = {}) {
     body = `<iframe class="resource-frame" src="${path}" title="${title}"></iframe>`;
   }
 
-  contentElement.innerHTML = `
-    ${renderBackButtonHtml(backOptions.label)}
-    <header class="subchapter-head">
-      <p class="eyebrow">${resource.label}</p>
-      <h2>${title}</h2>
-    </header>
-    ${body}
-  `;
-
-  bindBackButton(topic, backOptions.onBack);
-  protectMediaDownloads(contentElement);
-  if (resource.type === "V" || resource.type === "P") {
-    attachPlaybackProgress(contentElement, topic, resource.type);
-  }
+  renderTopicShell(topic, resource.type, body, {
+    backLabel: backOptions.label,
+    onBack: backOptions.onBack,
+    onBind: () => {
+      protectMediaDownloads(contentElement);
+      if (resource.type === "V" || resource.type === "P") {
+        attachPlaybackProgress(contentElement, topic, resource.type);
+      }
+    },
+  });
 }
 
 function renderVideoChoices(topic, resource, paths) {
-  contentElement.innerHTML = `
-    ${renderBackButtonHtml()}
-    <p class="eyebrow">Video</p>
-    <h2>${topic.title}</h2>
+  const body = `
     <p>Choose the video you want to open.</p>
     <div class="resource-actions">
       ${paths
@@ -605,7 +661,7 @@ function renderVideoChoices(topic, resource, paths) {
     </div>
   `;
 
-  bindBackButton(topic);
+  renderTopicShell(topic, resource.type, body);
 
   contentElement.querySelectorAll("[data-video-index]").forEach((button) => {
     const path = paths[Number(button.dataset.videoIndex)];
@@ -619,15 +675,16 @@ function renderVideoChoices(topic, resource, paths) {
 }
 
 function renderMissingResource(topic, resource) {
-  contentElement.innerHTML = `
-    ${renderBackButtonHtml()}
-    <p class="eyebrow">${resource.label}</p>
-    <h2>Resource not found</h2>
-    <div class="missing-resource">
-      <p>This resource could not be opened. Please check that the file is available.</p>
-    </div>
-  `;
-  bindBackButton(topic);
+  renderTopicShell(
+    topic,
+    resource.type,
+    `
+      <div class="missing-resource">
+        <h3>Resource not found</h3>
+        <p>This resource could not be opened. Please check that the file is available.</p>
+      </div>
+    `,
+  );
 }
 
 function renderBackButtonHtml(label = "Back to resources") {
