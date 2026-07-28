@@ -275,18 +275,8 @@ export async function runAccessGate() {
     wrap.className = "auth-account";
     wrap.innerHTML =
       `<span class="auth-account__email" title="${escapeHtml(displayEmail)}">${escapeHtml(displayEmail)}</span>` +
-      `<button type="button" class="btn-ghost">Sair</button>`;
+      `<button type="button" class="btn-ghost">Minha conta</button>`;
     wrap.querySelector("button")?.addEventListener("click", () => {
-      studio9Session = null;
-      accessGranted = false;
-      sessionStorage.removeItem("studio9.displayEmail");
-      sessionStorage.removeItem("studio9_from_conta");
-      if (auth) {
-        void signOut(auth).then(() => {
-          window.location.assign(ACCOUNT_URL);
-        });
-        return;
-      }
       window.location.assign(ACCOUNT_URL);
     });
 
