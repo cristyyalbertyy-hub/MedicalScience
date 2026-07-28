@@ -477,13 +477,22 @@ function isFamilyBundleFullyOwned(ownedIds, group) {
   return Boolean(bundleId && ownedIds.includes(bundleId));
 }
 
+function resolveFamilyAppUrl(packageId, parentAppId, catalog, isBundle) {
+  const parentMeta = packageMeta[parentAppId] ?? catalog.packageMeta?.[parentAppId] ?? {};
+  const packageMetaEntry = packageMeta[packageId] ?? catalog.packageMeta?.[packageId] ?? {};
+  if (isBundle) {
+    return parentMeta.url ?? packageMetaEntry.url;
+  }
+  return packageMetaEntry.url ?? parentMeta.url;
+}
+
 function appendFamilyPackageCard(list, packageId, parentAppId, catalog, isBundle) {
   const parentMeta = packageMeta[parentAppId] ?? catalog.packageMeta?.[parentAppId] ?? {};
   const packageMetaEntry = packageMeta[packageId] ?? catalog.packageMeta?.[packageId] ?? {};
   const openMeta = {
     ...parentMeta,
     ...packageMetaEntry,
-    url: parentMeta.url ?? packageMetaEntry.url,
+    url: resolveFamilyAppUrl(packageId, parentAppId, catalog, isBundle),
   };
 
   const cardTitle = isBundle

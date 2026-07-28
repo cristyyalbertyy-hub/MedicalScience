@@ -1,4 +1,12 @@
-import { cpSync, existsSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import {
+  cpSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execSync } from "node:child_process";
@@ -10,9 +18,17 @@ const distDir = join(appRoot, "dist");
 const mediaOrigin = "https://chemistry-roan.vercel.app/";
 
 const targets = [
-  { slug: "chemistry", base: "/chemistry/" },
-  { slug: "introductory-biochemistry", base: "/introductory-biochemistry/" },
-  { slug: "chemistry-introductory-biochemistry", base: "/chemistry-introductory-biochemistry/" },
+  { slug: "chemistry", base: "/chemistry/", title: "Chemistry" },
+  {
+    slug: "introductory-biochemistry",
+    base: "/introductory-biochemistry/",
+    title: "Introduction to Biochemistry",
+  },
+  {
+    slug: "chemistry-introductory-biochemistry",
+    base: "/chemistry-introductory-biochemistry/",
+    title: "Chemistry and Introductory Biochemistry",
+  },
 ];
 
 if (!existsSync(join(appRoot, "package.json"))) {
@@ -31,7 +47,19 @@ function syncDistTo(targetDir) {
   cpSync(distDir, targetDir, { recursive: true });
 }
 
-for (const { slug, base } of targets) {
+function patchIndexTitle(targetDir, title) {
+  const indexPath = join(targetDir, "index.html");
+  if (!existsSync(indexPath)) return;
+  let html = readFileSync(indexPath, "utf8");
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`);
+  html = html.replace(
+    /<h1 style="[^"]*">[^<]*<\/h1>/,
+    `<h1 style="font-size:1.25rem;margin:0 0 0.75rem">${title}</h1>`,
+  );
+  writeFileSync(indexPath, html, "utf8");
+}
+
+for (const { slug, base, title } of targets) {
   console.log(`Building Chemistry for ${slug}…`);
   execSync("npm run build", {
     cwd: appRoot,
@@ -50,5 +78,6 @@ for (const { slug, base } of targets) {
 
   const targetDir = join(siteRoot, slug);
   syncDistTo(targetDir);
+  patchIndexTitle(targetDir, title);
   console.log("Synced build to", targetDir);
 }

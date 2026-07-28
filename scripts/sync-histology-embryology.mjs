@@ -1,4 +1,12 @@
-import { cpSync, existsSync, mkdirSync, readdirSync, rmSync } from "node:fs";
+import {
+  cpSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  readdirSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execSync } from "node:child_process";
@@ -10,9 +18,13 @@ const distDir = join(appRoot, "dist");
 const mediaOrigin = "https://histology-embryology.vercel.app/";
 
 const targets = [
-  { slug: "histology", base: "/histology/" },
-  { slug: "embryology", base: "/embryology/" },
-  { slug: "histology-embryology", base: "/histology-embryology/" },
+  { slug: "histology", base: "/histology/", title: "Histology" },
+  { slug: "embryology", base: "/embryology/", title: "Embryology" },
+  {
+    slug: "histology-embryology",
+    base: "/histology-embryology/",
+    title: "Histology And Embryology",
+  },
 ];
 
 if (!existsSync(join(appRoot, "package.json"))) {
@@ -31,7 +43,19 @@ function syncDistTo(targetDir) {
   cpSync(distDir, targetDir, { recursive: true });
 }
 
-for (const { slug, base } of targets) {
+function patchIndexTitle(targetDir, title) {
+  const indexPath = join(targetDir, "index.html");
+  if (!existsSync(indexPath)) return;
+  let html = readFileSync(indexPath, "utf8");
+  html = html.replace(/<title>[^<]*<\/title>/, `<title>${title}</title>`);
+  html = html.replace(
+    /<h1 style="[^"]*">[^<]*<\/h1>/,
+    `<h1 style="font-size:1.25rem;margin:0 0 0.75rem">${title}</h1>`,
+  );
+  writeFileSync(indexPath, html, "utf8");
+}
+
+for (const { slug, base, title } of targets) {
   console.log(`Building Histology And Embryology for ${slug}…`);
   execSync("npm run build", {
     cwd: appRoot,
@@ -50,5 +74,6 @@ for (const { slug, base } of targets) {
 
   const targetDir = join(siteRoot, slug);
   syncDistTo(targetDir);
+  patchIndexTitle(targetDir, title);
   console.log("Synced build to", targetDir);
 }
