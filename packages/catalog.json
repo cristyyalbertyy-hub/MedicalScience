@@ -289,6 +289,35 @@
       "includes": "all_paid",
       "enabled": false,
       "lifetime": true
+    },
+    "subscription_monthly": {
+      "label": "Studio9 Pass — monthly",
+      "includes": "all_paid",
+      "durationDays": 31,
+      "enabled": true,
+      "billing": "monthly"
+    },
+    "subscription_annual": {
+      "label": "Studio9 Pass — annual",
+      "includes": "all_paid",
+      "durationDays": 365,
+      "enabled": true,
+      "billing": "annual"
+    }
+  },
+  "subscription": {
+    "enabled": true,
+    "id": "studio9-pass",
+    "monthly": {
+      "plan": "subscription_monthly",
+      "priceUsd": 14.99,
+      "checkoutUrl": ""
+    },
+    "annual": {
+      "plan": "subscription_annual",
+      "priceUsd": 99,
+      "checkoutUrl": "",
+      "equivalentMonthlyUsd": 8.25
     }
   },
   "lemonSqueezy": {
@@ -331,6 +360,7 @@
       "2d743817-b578-4c6e-af1b-d5ea1272dc81": "history-of-medicine",
       "8a6bd132-16a6-428f-bc7f-a5a91d7f3c74": "moral-philosophy",
       "8eed3ddf-83a1-4712-a652-ac688f856742": "health-technology-assessments"
-    }
+    },
+    "subscriptionVariants": {}
   }
 }

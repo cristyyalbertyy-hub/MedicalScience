@@ -20,10 +20,24 @@ function topicLabel(value) {
   const map = {
     access: "contactPage.topicAccess",
     purchase: "contactPage.topicPurchase",
+    subscription: "contactPage.topicSubscription",
     technical: "contactPage.topicTechnical",
     other: "contactPage.topicOther",
   };
   return t(map[value] ?? "contactPage.topicOther");
+}
+
+function prefillTopicFromUrl() {
+  try {
+    const topic = new URLSearchParams(window.location.search).get("topic");
+    if (!topic || !form) return;
+    const select = form.querySelector('select[name="topic"]');
+    if (!(select instanceof HTMLSelectElement)) return;
+    const option = [...select.options].find((opt) => opt.value === topic);
+    if (option) select.value = topic;
+  } catch {
+    /* ignore */
+  }
 }
 
 function isSubmitSuccess(data) {
@@ -160,3 +174,5 @@ document.addEventListener("site:langchange", () => {
     }
   }
 });
+
+prefillTopicFromUrl();

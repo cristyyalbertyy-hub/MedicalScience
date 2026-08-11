@@ -24,7 +24,7 @@ const SITE_LOCALES = {
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
         description:
-          "How the Studio9 Medical Science course works, with pricing plans for modules, bundles and the complete course.",
+          "How Studio9 Medical Science works — buy one module or unlock every discipline with Studio9 Pass.",
       },
       account: {
         title: "My account · Studio9 Medical Science",
@@ -239,8 +239,8 @@ const SITE_LOCALES = {
           "Test what you learned. Instant feedback shows where you went wrong and explains it again.",
       },
       final: {
-        title: "From $5.99 per module. Save up to 20% when you buy more.",
-        text: "And a complete course that will not drive you mad.",
+        title: "From $5.99 per module — or Studio9 Pass from $14.99/month.",
+        text: "Buy one discipline, or unlock all fifteen while you study the semester.",
         cta: "See pricing and start",
       },
     },
@@ -406,22 +406,60 @@ const SITE_LOCALES = {
         text: "A multimedia format for when you are focused, on the move, or only have ten minutes before bed.",
       },
       steps: {
-        s1Title: "Choose your modules",
-        s1Text: "Each module is priced by size — Small, Medium or Large — based on how many topics it includes.",
+        s1Title: "Choose how you buy",
+        s1Text:
+          "One module when you need a single subject — or Studio9 Pass when you need the whole semester.",
         s2Title: "Access them in the Studio9 app",
         s2Text:
-          "After purchase, sign in at studio9medical.com/conta/ with Google — same email as checkout. Access stays active for 1 year.",
+          "After purchase, sign in at studio9medical.com/conta/ with Google — same email as checkout. Module access stays active for 1 year; Pass stays active while you subscribe.",
         s3Title: "Study at your own pace",
         s3Text: "Videos when you are focused. Podcasts when you are moving. Exercises to test yourself.",
         s4Title: "Track your progress",
         s4Text:
           "See what you have completed and what is left, discipline by discipline.",
       },
+      paths: {
+        modulesLabel: "One discipline",
+        modulesPeriod: "once · 12 months access",
+        modulesLead: "Perfect when you only need one subject this term.",
+        modulesF1: "Priced by size (S / M / L)",
+        modulesF2: "Videos, podcasts, exercises, summary",
+        modulesF3: "12 months of access from purchase",
+        modulesF4: "No recurring charge",
+        modulesCta: "Choose a discipline →",
+        passLabel: "Studio9 Pass",
+        passPeriod: "per month · cancel anytime",
+        passLead: "For students juggling several disciplines in the same semester.",
+        passF1: "All 15 paid modules unlocked while active",
+        passF2: "Switch subjects as exams approach",
+        passF3: "Progress tracking across your semester",
+        passF4: "Content updates included — no 24/7 tutor required",
+        annualNote: "Annual option: {annual}/year (about {monthly}/mo).",
+        monthlyCta: "Start monthly Pass",
+        annualCta: "Get annual Pass",
+        waitlistCta: "Tell me when Pass opens →",
+      },
+      passWhy: {
+        eyebrow: "Why subscribe",
+        title: "One discipline is clear. A full semester needs a Pass.",
+        lead: "Packages stay the right choice for a single subject. Studio9 Pass is for the months when medicine asks you to carry several at once — without buying each module separately.",
+        c1Title: "Cheaper than stacking modules",
+        c1Text:
+          "Three medium modules already cost more than two months of Pass. If you study four or five subjects, subscription pays for itself.",
+        c2Title: "Access that follows the semester",
+        c2Text:
+          "Unlock everything while exams rotate. Pause or cancel when the term ends — you are not locked into a lifetime promise.",
+        c3Title: "Support without a 24/7 agent",
+        c3Text:
+          "Pass is built on continuous access, updates and progress — not a private tutor on call. Human help stays available by email within 24 hours.",
+      },
       pricing: {
         eyebrow: "No surprises",
         title: "Simple pricing.",
         pilotNotice:
-          "All 15 paid modules are available for online purchase. Choose only what you need.",
+          "Buy one discipline when you need it — or unlock everything with Studio9 Pass while you study the semester.",
+        modulesEyebrow: "Or buy à la carte",
+        modulesTitle: "Module prices by size.",
         currencyLabel: "Currency",
         tierSLabel: "Small",
         tierSRange: "1–9 topics",
@@ -466,6 +504,10 @@ const SITE_LOCALES = {
         a4: "No. All sales are final. Each module includes 12 months of digital access from purchase. By completing checkout you accept immediate delivery and waive the EU 14-day withdrawal right for digital content. See our Terms of Sale for full details.",
         q5: "Where can I find further study suggestions?",
         a5: "Each live Studio9 app includes a Further study section on the course overview — books we recommend when you want to go deeper after a lesson. They support your own reading alongside university; they do not replace your official programme bibliography.",
+        q6: "Should I buy a module or take Studio9 Pass?",
+        a6: "Buy a module if you only need one discipline. Choose Studio9 Pass if you will study several subjects in the same semester — you unlock all paid modules while the subscription is active, then cancel when the term ends.",
+        q7: "Does the Pass include a 24/7 tutor?",
+        a7: "No. Pass is continuous access to the full module library, progress tools and updates — not private tutoring. For account or study questions we reply by email within 24 hours.",
       },
     },
     contactPage: {
@@ -481,6 +523,7 @@ const SITE_LOCALES = {
       topicPlaceholder: "Choose a topic…",
       topicAccess: "My account / access after purchase",
       topicPurchase: "Payment or order question",
+      topicSubscription: "Studio9 Pass / subscription interest",
       topicTechnical: "App or technical issue",
       topicOther: "Something else",
       messageLabel: "Message",

@@ -752,6 +752,7 @@ async function applyPricingCurrency(next) {
   setPricingCurrency(next);
   if (next === "eur") await ensureUsdRate();
   renderPlanPrices();
+  renderSubscriptionPrices(packageCatalog ?? {});
 }
 
 function initPricingCurrency() {
@@ -876,6 +877,103 @@ function initPricingPlans(catalog = packageCatalog ?? {}) {
     cta.setAttribute("aria-disabled", "true");
     cta.textContent = packageText("precos.pricing.planSoon");
   });
+}
+
+function getSubscriptionConfig(catalog = packageCatalog ?? {}) {
+  return catalog.subscription ?? null;
+}
+
+function renderSubscriptionPrices(catalog = packageCatalog ?? {}) {
+  const sub = getSubscriptionConfig(catalog);
+  if (!sub) return;
+
+  const monthlyUsd = Number(sub.monthly?.priceUsd);
+  const annualUsd = Number(sub.annual?.priceUsd);
+  const equivUsd = Number(sub.annual?.equivalentMonthlyUsd);
+
+  document.querySelectorAll('[data-subscription-price="monthly"]').forEach((el) => {
+    if (!Number.isFinite(monthlyUsd)) return;
+    el.textContent = formatPlanAmount(planAmount(monthlyUsd, pricingCurrency), pricingCurrency);
+  });
+
+  document.querySelectorAll('[data-subscription-price="annual"]').forEach((el) => {
+    if (!Number.isFinite(annualUsd)) return;
+    el.textContent = formatPlanAmount(planAmount(annualUsd, pricingCurrency), pricingCurrency);
+  });
+
+  document.querySelectorAll("[data-subscription-annual-note]").forEach((el) => {
+    if (!Number.isFinite(annualUsd) || !Number.isFinite(equivUsd)) return;
+    const annual = formatPlanAmount(planAmount(annualUsd, pricingCurrency), pricingCurrency);
+    const monthly = formatPlanAmount(planAmount(equivUsd, pricingCurrency), pricingCurrency);
+    const template = packageText(
+      "precos.paths.annualNote",
+      "Or {annual}/year (about {monthly}/mo).",
+    );
+    el.textContent = template.replace("{annual}", annual).replace("{monthly}", monthly);
+  });
+}
+
+function buildSubscriptionCheckoutHref(url, planId) {
+  try {
+    const parsed = new URL(url, window.location.origin);
+    parsed.searchParams.set("embed", parsed.searchParams.get("embed") || "1");
+    parsed.searchParams.set("checkout[custom][plan]", planId);
+    return parsed.toString();
+  } catch {
+    return url;
+  }
+}
+
+function renderSubscriptionCtas(catalog = packageCatalog ?? {}) {
+  const root = document.querySelector("[data-subscription-cta]");
+  if (!root) return;
+
+  const sub = getSubscriptionConfig(catalog);
+  if (!sub || sub.enabled === false) {
+    root.innerHTML = `<span class="btn btn-disabled" aria-disabled="true">${escapeHtml(
+      packageText("precos.pricing.planSoon", "Coming soon"),
+    )}</span>`;
+    return;
+  }
+
+  const monthlyUrl = String(sub.monthly?.checkoutUrl ?? "").trim();
+  const annualUrl = String(sub.annual?.checkoutUrl ?? "").trim();
+  const monthlyPlan = sub.monthly?.plan || "subscription_monthly";
+  const annualPlan = sub.annual?.plan || "subscription_annual";
+  const waitlistHref = "../contacto/?topic=subscription";
+
+  const parts = [];
+
+  if (monthlyUrl) {
+    parts.push(
+      `<a class="btn btn-primary lemonsqueezy-button" data-purchase-action href="${escapeHtml(
+        buildSubscriptionCheckoutHref(monthlyUrl, monthlyPlan),
+      )}">${escapeHtml(packageText("precos.paths.monthlyCta", "Start monthly Pass"))}</a>`,
+    );
+  } else {
+    parts.push(
+      `<a class="btn btn-primary" href="${escapeHtml(waitlistHref)}">${escapeHtml(
+        packageText("precos.paths.waitlistCta", "Tell me when Pass opens →"),
+      )}</a>`,
+    );
+  }
+
+  if (annualUrl) {
+    parts.push(
+      `<a class="btn btn-secondary lemonsqueezy-button" data-purchase-action href="${escapeHtml(
+        buildSubscriptionCheckoutHref(annualUrl, annualPlan),
+      )}">${escapeHtml(packageText("precos.paths.annualCta", "Get annual Pass"))}</a>`,
+    );
+  }
+
+  root.innerHTML = parts.join("");
+
+  if (monthlyUrl || annualUrl) ensureLemonSqueezyScript();
+}
+
+function refreshSubscriptionUi(catalog = packageCatalog ?? {}) {
+  renderSubscriptionPrices(catalog);
+  renderSubscriptionCtas(catalog);
 }
 
 function isPurchaseTermsAccepted() {
@@ -1024,6 +1122,7 @@ async function init() {
       initTomatoTimeLinks();
       renderPlanPrices();
       initPricingPlans(packageCatalog ?? {});
+      refreshSubscriptionUi(packageCatalog ?? {});
       document.querySelectorAll("[data-module-price-table]").forEach((root) => {
         renderModulePriceTable(root, packageCatalog ?? {}, progressManifest ?? {});
       });
@@ -1039,6 +1138,7 @@ async function init() {
     renderPackages(root, catalog, manifest);
   });
   initPricingPlans(catalog);
+  refreshSubscriptionUi(catalog);
   initPurchaseTerms();
   initStudentProgressLinks();
   initTomatoTimeLinks();

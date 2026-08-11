@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Studio9 — Lemon Squeezy: Studio9 Pass (subscrição)</title>
+  <style>
+    body { font-family: "Segoe UI", Calibri, Arial, sans-serif; color: #1a1a2e; line-height: 1.55; font-size: 11pt; max-width: 820px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: 20pt; color: #14213d; border-bottom: 2px solid #14213d; padding-bottom: 10px; }
+    h2 { font-size: 13pt; color: #14213d; margin: 28px 0 10px; }
+    h3 { font-size: 11pt; color: #2d4636; margin: 16px 0 8px; }
+    p { margin: 0 0 10px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 10.5pt; }
+    th, td { border: 1px solid #c8c8c8; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f4f4f0; width: 34%; }
+    .box { background: #f7f5ef; border: 1px solid #e0ddd4; padding: 10px 14px; margin: 8px 0 14px; font-size: 10pt; white-space: pre-wrap; }
+    .note { background: #eef6ff; border-left: 4px solid #14213d; padding: 10px 14px; margin: 16px 0; font-size: 10pt; }
+    .warn { background: #fff6e8; border-left: 4px solid #d36b31; padding: 10px 14px; margin: 16px 0; font-size: 10pt; }
+    code { background: #eee; padding: 1px 5px; border-radius: 3px; font-size: 0.95em; }
+    .checklist { margin: 0 0 12px; padding-left: 22px; }
+    .checklist li { margin-bottom: 8px; }
+    .done { color: #2d4636; }
+  </style>
+</head>
+<body>
+  <h1>Lemon Squeezy — Studio9 Pass</h1>
+  <p><strong>Subscrição</strong> · checklist exacto para activar compra no site · Agosto 2026</p>
+
+  <div class="note">
+    Objectivo: 1 produto com <strong>2 variants</strong> (mensal + anual). Depois colar os UUIDs e checkout URLs em
+    <code>packages/catalog.json</code>. O site já está preparado — só falta o produto no LS.
+  </div>
+
+  <h2>1. Criar o produto no Lemon Squeezy</h2>
+  <ol class="checklist">
+    <li>Abrir a loja <strong>studio9medical</strong> → Products → <strong>New product</strong></li>
+    <li>Tipo: <strong>Subscription</strong> (não one-time)</li>
+    <li>Nome do produto (exacto): <code>Studio9 Pass</code></li>
+    <li>Moeda: <strong>USD</strong></li>
+    <li>Status: Draft até testares; depois Publish</li>
+  </ol>
+
+  <h3>Textos para colar no produto</h3>
+  <p><strong>Short description (2 linhas):</strong></p>
+  <div class="box">All 15 paid Medical Science modules unlocked while active.
+Cancel anytime · progress tracking · content updates · no 24/7 tutor.</div>
+
+  <p><strong>Full description:</strong></p>
+  <div class="box">Studio9 Pass unlocks every paid Medical Science module for as long as your subscription is active — ideal when you are studying several disciplines in the same semester.
+
+Includes videos, podcasts, infographics, quizzes and progress tracking across modules. Content updates are included. Human support by email within 24 hours — this is not private tutoring and not a 24/7 agent.
+
+After checkout, sign in at studio9medical.com/conta/ with Google (same email as checkout). Cancel anytime from your Lemon Squeezy customer portal / receipt email.
+
+Study supplement — not a university degree. All sales of digital access are final under our Terms of Sale.</div>
+
+  <h2>2. Criar as 2 variants</h2>
+  <table>
+    <tr><th>Campo</th><th>Variant mensal</th><th>Variant anual</th></tr>
+    <tr>
+      <td>Variant name</td>
+      <td><strong>Monthly</strong></td>
+      <td><strong>Annual</strong></td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td><strong>$14.99</strong></td>
+      <td><strong>$99.00</strong></td>
+    </tr>
+    <tr>
+      <td>Billing interval</td>
+      <td>Every <strong>1 month</strong></td>
+      <td>Every <strong>1 year</strong></td>
+    </tr>
+    <tr>
+      <td>Trial</td>
+      <td>None</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>plan (interno site)</td>
+      <td><code>subscription_monthly</code></td>
+      <td><code>subscription_annual</code></td>
+    </tr>
+  </table>
+
+  <div class="warn">
+    Guarda, para cada variant, o <strong>Variant ID</strong> (UUID) e o <strong>Share / Checkout link</strong>.
+    O UUID aparece no URL:
+    <code>https://studio9medical.lemonsqueezy.com/checkout/buy/<strong>VARIANT_UUID</strong></code>
+  </div>
+
+  <h3>Confirmation / receipt (iguais às disciplinas)</h3>
+  <table>
+    <tr><th>Campo</th><th>Valor</th></tr>
+    <tr><td>Confirmation modal — Title</td><td><code>Thank you — your Pass is ready</code></td></tr>
+    <tr><td>Confirmation modal — Button URL</td><td><code>https://studio9medical.com/conta/</code></td></tr>
+    <tr><td>Confirmation modal — Button text</td><td><code>Open My Account</code></td></tr>
+    <tr><td>Email receipt — Button URL</td><td><code>https://studio9medical.com/conta/</code></td></tr>
+    <tr><td>Email receipt — Button text</td><td><code>Open My Account</code></td></tr>
+    <tr><td>Suporte</td><td><code>hello@studio9medical.com</code></td></tr>
+  </table>
+
+  <h2>3. Custom data <code>plan</code> (obrigatório para o webhook)</h2>
+  <p>
+    O site já acrescenta isto aos links de checkout. Confirma que o URL final (ou o que colares no catálogo + o JS)
+    inclui:
+  </p>
+  <div class="box">Mensal:
+https://studio9medical.lemonsqueezy.com/checkout/buy/VARIANT_UUID_MENSAL?embed=1&amp;checkout[custom][plan]=subscription_monthly
+
+Anual:
+https://studio9medical.lemonsqueezy.com/checkout/buy/VARIANT_UUID_ANUAL?embed=1&amp;checkout[custom][plan]=subscription_annual</div>
+  <p>
+    No webhook, isto chega em <code>meta.custom_data.plan</code>. Sem isto, o sistema tenta adivinhar pelo intervalo
+    de facturação ou pelo mapa <code>subscriptionVariants</code>.
+  </p>
+
+  <h2>4. Colar no <code>packages/catalog.json</code></h2>
+  <p>Preenche estes campos (substitui os UUIDs reais):</p>
+  <div class="box">"subscription": {
+  "enabled": true,
+  "id": "studio9-pass",
+  "monthly": {
+    "plan": "subscription_monthly",
+    "priceUsd": 14.99,
+    "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/UUID_MENSAL?embed=1"
+  },
+  "annual": {
+    "plan": "subscription_annual",
+    "priceUsd": 99,
+    "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/UUID_ANUAL?embed=1",
+    "equivalentMonthlyUsd": 8.25
+  }
+},
+
+"lemonSqueezy": {
+  "subscriptionVariants": {
+    "UUID_MENSAL": "subscription_monthly",
+    "UUID_ANUAL": "subscription_annual"
+  }
+}</div>
+  <div class="note">
+    Nota: o mapa fiável é <code>subscriptionVariants</code> (variant UUID → plan).
+    O JS do site acrescenta <code>checkout[custom][plan]=…</code> automaticamente a partir de
+    <code>monthly.plan</code> / <code>annual.plan</code>. Não uses <code>productsByName</code> para o Pass
+    (esse mapa é só para módulos one-time → package_id).
+  </div>
+
+  <h2>5. Webhooks a activar no Lemon Squeezy</h2>
+  <p>Settings → Webhooks → o endpoint actual do site (o mesmo de <code>order_created</code>), e garante estes eventos:</p>
+  <ul class="checklist">
+    <li><code>order_created</code> <span class="done">(já tinhas — manter)</span></li>
+    <li><code>subscription_created</code></li>
+    <li><code>subscription_updated</code></li>
+    <li><code>subscription_payment_success</code></li>
+    <li><code>subscription_resumed</code></li>
+    <li><code>subscription_cancelled</code></li>
+    <li><code>subscription_expired</code></li>
+    <li><code>subscription_payment_failed</code></li>
+  </ul>
+  <p>
+    Com Pass activo → o webhook concede <strong>todos os módulos pagos</strong> (~31 dias mensal / ~365 dias anual, renovável).
+    Com cancel/expired/failed → o acesso termina (expires_at = agora).
+  </p>
+
+  <h2>6. Teste (modo Test mode do LS)</h2>
+  <ol class="checklist">
+    <li>Abrir <code>studio9medical.com/precos/#precos</code> — o botão do Pass deve dizer <strong>Start monthly Pass</strong> (já não “Avisem-me…”)</li>
+    <li>Checkout mensal com cartão de teste LS</li>
+    <li>Entrar em <code>/conta/</code> com Google — <strong>mesmo email</strong> do checkout</li>
+    <li>Confirmar que vários módulos pagos aparecem com acesso</li>
+    <li>Repetir com variant anual (opcional)</li>
+    <li>Cancelar no portal do cliente LS → confirmar que o acesso deixa de estar activo após o webhook</li>
+  </ol>
+
+  <h2>7. Folha rápida para copiar UUIDs</h2>
+  <table>
+    <tr><th>Variant</th><th>Variant UUID</th><th>Checkout URL</th></tr>
+    <tr><td>Monthly $14.99</td><td><em>(colar aqui)</em></td><td><em>(colar aqui)</em></td></tr>
+    <tr><td>Annual $99</td><td><em>(colar aqui)</em></td><td><em>(colar aqui)</em></td></tr>
+  </table>
+  <p>Quando tiveres os dois UUIDs, envia-os (ou cola nesta tabela) e actualizamos o <code>catalog.json</code> em 2 minutos.</p>
+
+  <p style="margin-top:2rem;color:#5c6b7a;font-size:10pt;">
+    Studio9 Medical · doc interno · <code>docs/lemon-squeezy-studio9-pass.html</code>
+  </p>
+</body>
+</html>

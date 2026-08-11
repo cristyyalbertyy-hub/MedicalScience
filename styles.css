@@ -959,10 +959,69 @@ p {
   margin-bottom: 1rem;
 }
 
-.pricing-grid {
+.pricing-path-grid {
   display: grid;
   gap: 1rem;
+  margin: 0 0 2.75rem;
 }
+
+.path-card-lead {
+  margin: -0.35rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.path-card-annual {
+  margin: 0 0 1rem;
+  color: #4f4c48;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.path-card-actions {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: auto;
+}
+
+.path-card-actions .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.path-card--pass {
+  position: relative;
+}
+
+.subscription-why {
+  margin: 0 0 3rem;
+  padding: 1.75rem 1.35rem;
+  border: 1px solid rgba(31, 78, 107, 0.14);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(31, 78, 107, 0.06), transparent 42%),
+    rgba(255, 253, 249, 0.9);
+}
+
+.subscription-why .section-heading {
+  margin-bottom: 1.25rem;
+}
+
+.subscription-why-grid {
+  margin-top: 0.5rem;
+}
+
+.pricing-modules-heading {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 760px) {
+  .pricing-path-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
 
 .price-plan {
   display: flex;

@@ -63,8 +63,8 @@
         <div class="feature-grid steps-grid">
           <article class="feature-card calm-card">
             <span class="step-number">1</span>
-            <h3 data-i18n="precos.steps.s1Title">Choose your modules</h3>
-            <p data-i18n="precos.steps.s1Text">Buy one module, a bundle of four, or more.</p>
+            <h3 data-i18n="precos.steps.s1Title">Choose how you buy</h3>
+            <p data-i18n="precos.steps.s1Text">One module when you need a single subject — or Studio9 Pass when you need the whole semester.</p>
           </article>
           <article class="feature-card calm-card">
             <span class="step-number">2</span>
@@ -92,13 +92,87 @@
           <h2 data-i18n="precos.pricing.title">Simple pricing.</h2>
         </div>
         <p class="pricing-pilot-notice" data-i18n="precos.pricing.pilotNotice">
-          All 15 paid modules are available for online purchase. Choose only what you need.
+          Buy one discipline when you need it — or unlock everything with Studio9 Pass while you study the semester.
         </p>
         <div class="pricing-currency-wrap">
           <div class="currency-selector" role="group" data-i18n-attr="aria-label" data-i18n="precos.pricing.currencyLabel">
             <button type="button" data-currency="usd" class="is-active" aria-pressed="true">$ USD</button>
             <button type="button" data-currency="eur" aria-pressed="false">€ EUR</button>
           </div>
+        </div>
+
+        <div class="pricing-path-grid" data-subscription-paths>
+          <article class="price-plan path-card path-card--modules" data-plan="single">
+            <p class="plan-label" data-i18n="precos.paths.modulesLabel">One discipline</p>
+            <h3>
+              <span data-sub-price data-tier-price-range data-tier-price-from-usd="5.99" data-tier-price-to-usd="18.99">$5.99 – $18.99</span>
+              <span data-i18n="precos.paths.modulesPeriod">once · 12 months access</span>
+            </h3>
+            <p class="path-card-lead" data-i18n="precos.paths.modulesLead">
+              Perfect when you only need one subject this term.
+            </p>
+            <ul>
+              <li data-i18n="precos.paths.modulesF1">Priced by size (S / M / L)</li>
+              <li data-i18n="precos.paths.modulesF2">Videos, podcasts, exercises, summary</li>
+              <li data-i18n="precos.paths.modulesF3">12 months of access from purchase</li>
+              <li data-i18n="precos.paths.modulesF4">No recurring charge</li>
+            </ul>
+            <a class="btn btn-secondary" href="../packages/" data-i18n="precos.paths.modulesCta">Choose a discipline →</a>
+          </article>
+
+          <article class="price-plan path-card path-card--pass featured-plan" data-plan="subscription_monthly">
+            <p class="plan-label" data-i18n="precos.paths.passLabel">Studio9 Pass</p>
+            <h3>
+              <span data-subscription-price="monthly">$14.99</span>
+              <span data-i18n="precos.paths.passPeriod">per month · cancel anytime</span>
+            </h3>
+            <p class="path-card-lead" data-i18n="precos.paths.passLead">
+              For students juggling several disciplines in the same semester.
+            </p>
+            <ul>
+              <li data-i18n="precos.paths.passF1">All 15 paid modules unlocked while active</li>
+              <li data-i18n="precos.paths.passF2">Switch subjects as exams approach</li>
+              <li data-i18n="precos.paths.passF3">Progress tracking across your semester</li>
+              <li data-i18n="precos.paths.passF4">Content updates included — no 24/7 tutor required</li>
+            </ul>
+            <p class="path-card-annual" data-subscription-annual-note></p>
+            <div class="path-card-actions" data-subscription-cta></div>
+          </article>
+        </div>
+
+        <section class="subscription-why" id="studio9-pass" aria-labelledby="subscription-why-title">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="precos.passWhy.eyebrow">Why subscribe</p>
+            <h2 id="subscription-why-title" data-i18n="precos.passWhy.title">One discipline is clear. A full semester needs a Pass.</h2>
+            <p data-i18n="precos.passWhy.lead">
+              Packages stay the right choice for a single subject. Studio9 Pass is for the months when medicine asks you to carry several at once — without buying each module separately.
+            </p>
+          </div>
+          <div class="feature-grid three subscription-why-grid">
+            <article class="feature-card calm-card">
+              <h3 data-i18n="precos.passWhy.c1Title">Cheaper than stacking modules</h3>
+              <p data-i18n="precos.passWhy.c1Text">
+                Three medium modules already cost more than two months of Pass. If you study four or five subjects, subscription pays for itself.
+              </p>
+            </article>
+            <article class="feature-card calm-card">
+              <h3 data-i18n="precos.passWhy.c2Title">Access that follows the semester</h3>
+              <p data-i18n="precos.passWhy.c2Text">
+                Unlock everything while exams rotate. Pause or cancel when the term ends — you are not locked into a lifetime promise.
+              </p>
+            </article>
+            <article class="feature-card calm-card">
+              <h3 data-i18n="precos.passWhy.c3Title">Support without a 24/7 agent</h3>
+              <p data-i18n="precos.passWhy.c3Text">
+                Pass is built on continuous access, updates and progress — not a private tutor on call. Human help stays available by email within 24 hours.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <div class="section-heading centered pricing-modules-heading">
+          <p class="eyebrow" data-i18n="precos.pricing.modulesEyebrow">Or buy à la carte</p>
+          <h2 data-i18n="precos.pricing.modulesTitle">Module prices by size.</h2>
         </div>
         <div class="pricing-grid tier-pricing-grid">
           <article class="tier-card tier-card--s">
@@ -201,6 +275,21 @@
               university; they do not replace your official programme bibliography.
             </p>
           </details>
+          <details>
+            <summary data-i18n="precos.faq.q6">Should I buy a module or take Studio9 Pass?</summary>
+            <p data-i18n="precos.faq.a6">
+              Buy a module if you only need one discipline. Choose Studio9 Pass if you will study several
+              subjects in the same semester — you unlock all paid modules while the subscription is active,
+              then cancel when the term ends.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="precos.faq.q7">Does the Pass include a 24/7 tutor?</summary>
+            <p data-i18n="precos.faq.a7">
+              No. Pass is continuous access to the full module library, progress tools and updates — not
+              private tutoring. For account or study questions we reply by email within 24 hours.
+            </p>
+          </details>
         </div>
       </section>
     </main>
@@ -229,13 +318,13 @@
       <p data-i18n="footer.copy">© 2026 Studio9 – learning without stress, really</p>
     </footer>
 
-    <script src="../i18n.js?v=9"></script>
-    <script src="../i18n.es.js?v=9"></script>
-    <script src="../i18n.fr.js?v=9"></script>
-    <script src="../i18n.it.js?v=9"></script>
-    <script src="../i18n.pt.js?v=9"></script>
+    <script src="../i18n.js?v=10"></script>
+    <script src="../i18n.es.js?v=10"></script>
+    <script src="../i18n.fr.js?v=10"></script>
+    <script src="../i18n.it.js?v=10"></script>
+    <script src="../i18n.pt.js?v=10"></script>
     <script src="../promo-campaign.js?v=1"></script>
-    <script src="../app.js?v=44"></script>
+    <script src="../app.js?v=51"></script>
     <script src="/analytics.js" defer></script>
   </body>
 </html>
