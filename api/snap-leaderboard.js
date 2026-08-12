@@ -48,7 +48,7 @@ export default async function handler(req, res) {
 
     if (!access.allowed) {
       return res.status(403).json({
-        error: "Snap requires an active Studio9 Pass or this package.",
+        error: "Snap is a Studio9 Pass bonus. An active Pass is required.",
         allowed: false,
       });
     }

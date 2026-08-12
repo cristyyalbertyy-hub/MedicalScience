@@ -645,7 +645,7 @@ function renderPackages(catalog) {
   packagesFootnote.hidden = false;
   if (packagesProgressEntry) packagesProgressEntry.hidden = false;
   if (packagesSnapEntry) {
-    packagesSnapEntry.hidden = !(activePass?.active || ownedSet.has("genetics"));
+    packagesSnapEntry.hidden = !activePass?.active;
   }
 
   const plan = buildOwnedRenderPlan(catalog, ownedSet);

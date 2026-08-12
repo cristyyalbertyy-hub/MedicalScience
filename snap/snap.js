@@ -333,7 +333,7 @@ async function refreshAccess(user) {
     setStatus(
       accessVia === "pass"
         ? "Studio9 Pass active — ranked Genetics Snap unlocked."
-        : "Genetics package active — ranked Snap unlocked.",
+        : "Ranked Genetics Snap unlocked.",
     );
     const board = await api("board");
     renderBoard(board);

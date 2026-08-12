@@ -405,7 +405,7 @@ SITE_LOCALES.fr = {
       "Résiliez à tout moment — l'accès continue jusqu'à la fin de la période de facturation en cours.",
     passManage: "Gérer l'abonnement",
     snapTitle: "Genetics Snap",
-    snapHint: "Jeu d'encastrement chronométré · classement hebdomadaire",
+    snapHint: "Bonus Pass · jeu chronométré · classement hebdomadaire",
     snapOpen: "Jouer",
   },
   precos: {

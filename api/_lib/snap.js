@@ -23,10 +23,8 @@ export async function userCanPlayPackage(userId, email, packageId) {
     listActiveEntitlements(userId, email),
     getActivePassForUser(userId, email),
   ]);
+  // Snap is a Pass-only bonus (package purchase alone does not unlock the game).
   if (pass?.active) return { allowed: true, via: "pass", pass, packages };
-  if (packages.includes(packageId)) {
-    return { allowed: true, via: "package", pass: null, packages };
-  }
   return { allowed: false, via: null, pass: null, packages };
 }
 
