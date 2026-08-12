@@ -159,8 +159,9 @@ https://studio9medical.lemonsqueezy.com/checkout/buy/VARIANT_UUID_ANUAL?embed=1&
     <li><code>subscription_payment_failed</code></li>
   </ul>
   <p>
-    Com Pass activo → o webhook concede <strong>todos os módulos pagos</strong> (~31 dias mensal / ~365 dias anual, renovável).
-    Com cancel/expired/failed → o acesso termina (expires_at = agora).
+    Com Pass activo → o webhook concede <strong>todos os módulos pagos</strong> e grava o registo da subscrição
+    (renovação, portal Lemon). Cancelamento mantém o acesso até <code>ends_at</code>; só
+    <code>subscription_expired</code> corta de imediato. Na conta aparece badge, data e «Gerir subscrição».
   </p>
 
   <h2>6. Teste (modo Test mode do LS)</h2>

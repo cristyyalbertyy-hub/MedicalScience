@@ -306,3 +306,60 @@
 .acesso-empty p {
   margin: 0;
 }
+
+.acesso-pass {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.05rem;
+  border-radius: 16px;
+  border: 1px solid rgba(217, 122, 62, 0.35);
+  background:
+    linear-gradient(135deg, rgba(217, 122, 62, 0.12), transparent 55%),
+    rgba(255, 253, 249, 0.95);
+}
+
+.acesso-pass[hidden] {
+  display: none !important;
+}
+
+.acesso-pass__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.7rem;
+  margin-bottom: 0.45rem;
+}
+
+.acesso-pass__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(217, 122, 62, 0.18);
+  color: #9a4f24;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.acesso-pass__billing {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.acesso-pass__renewal,
+.acesso-pass__cancel-note {
+  margin: 0 0 0.45rem;
+  color: #4f4c48;
+  font-size: 0.92rem;
+}
+
+.acesso-pass__actions {
+  margin-top: 0.65rem;
+}
+
+.acesso-pass__actions .btn[hidden] {
+  display: none !important;
+}
+

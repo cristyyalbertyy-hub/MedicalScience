@@ -392,6 +392,17 @@ SITE_LOCALES.es = {
     sendError: "Error al enviar.",
     genericError: "Algo salió mal.",
     startError: "No se pudo iniciar.",
+    passBadge: "Studio9 Pass activo",
+    passBillingMonthly: "Mensual",
+    passBillingAnnual: "Anual",
+    passRenewsOn: "Se renueva el {date}.",
+    passRenewsSoon: "Tu Pass se renueva automáticamente.",
+    passEndsOn: "El acceso continúa hasta el {date} (cancelación programada).",
+    passEndsSoon: "El acceso continúa hasta el final del periodo actual.",
+    passActiveFallback: "Todos los módulos de pago desbloqueados mientras el Pass esté activo.",
+    passCancelAnytime:
+      "Cancela cuando quieras: el acceso continúa hasta el final del periodo de facturación actual.",
+    passManage: "Gestionar suscripción",
   },
   precos: {
     hero: {

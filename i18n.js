@@ -398,6 +398,17 @@ const SITE_LOCALES = {
       sendError: "Could not send the link.",
       genericError: "Something went wrong.",
       startError: "Could not start.",
+      passBadge: "Studio9 Pass active",
+      passBillingMonthly: "Monthly",
+      passBillingAnnual: "Annual",
+      passRenewsOn: "Renews on {date}.",
+      passRenewsSoon: "Your Pass renews automatically.",
+      passEndsOn: "Access continues until {date} (cancellation scheduled).",
+      passEndsSoon: "Access continues until the end of the current period.",
+      passActiveFallback: "All paid modules unlocked while your Pass is active.",
+      passCancelAnytime:
+        "Cancel anytime — access continues until the end of the current billing period.",
+      passManage: "Manage subscription",
     },
     precos: {
       hero: {

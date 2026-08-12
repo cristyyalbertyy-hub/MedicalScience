@@ -4,6 +4,7 @@ import {
   grantEntitlements,
   isOrderProcessed,
   markOrderProcessed,
+  upsertSubscriptionRecord,
 } from "./_lib/entitlements.js";
 import {
   parseOrderEvent,
@@ -26,13 +27,25 @@ function readRawBody(req) {
   });
 }
 
-async function processGrant({ email, orderId, plan, packageIds }) {
+function resolveExpiresAt(plan, subscription) {
+  if (subscription?.endsAt) {
+    const ends = new Date(subscription.endsAt);
+    if (!Number.isNaN(ends.getTime())) return ends;
+  }
+  if (subscription?.renewsAt && !subscription.cancelAtPeriodEnd) {
+    const renews = new Date(subscription.renewsAt);
+    if (!Number.isNaN(renews.getTime())) return renews;
+  }
+  return expiresAtForPlan(plan);
+}
+
+async function processGrant({ email, orderId, plan, packageIds, subscription = null }) {
   if (await isOrderProcessed(orderId)) {
     return { ok: true, duplicate: true };
   }
 
   const resolvedIds = resolvePackageIds(plan, packageIds);
-  const expiresAt = expiresAtForPlan(plan);
+  const expiresAt = resolveExpiresAt(plan, subscription);
   const user = await getOrCreateUserByEmail(email);
 
   await grantEntitlements({
@@ -44,11 +57,20 @@ async function processGrant({ email, orderId, plan, packageIds }) {
     email,
   });
 
+  if (subscription) {
+    await upsertSubscriptionRecord({
+      userId: user.uid,
+      email,
+      subscription,
+    });
+  }
+
   await markOrderProcessed(orderId, {
     email,
     plan,
     package_ids: resolvedIds,
     user_id: user.uid,
+    subscription_id: subscription?.id ?? null,
   });
 
   return {
@@ -59,7 +81,7 @@ async function processGrant({ email, orderId, plan, packageIds }) {
   };
 }
 
-async function processSubscriptionEnd({ email, orderId, plan }) {
+async function processSubscriptionEnd({ email, orderId, plan, subscription = null }) {
   if (await isOrderProcessed(orderId)) {
     return { ok: true, duplicate: true };
   }
@@ -77,12 +99,25 @@ async function processSubscriptionEnd({ email, orderId, plan }) {
     email,
   });
 
+  if (subscription) {
+    await upsertSubscriptionRecord({
+      userId: user.uid,
+      email,
+      subscription: {
+        ...subscription,
+        status: subscription.status || "expired",
+        cancelAtPeriodEnd: true,
+      },
+    });
+  }
+
   await markOrderProcessed(orderId, {
     email,
     plan,
     package_ids: resolvedIds,
     user_id: user.uid,
     ended: true,
+    subscription_id: subscription?.id ?? null,
   });
 
   return {
@@ -145,12 +180,24 @@ export default async function handler(req, res) {
         email: event.email,
         orderId: event.orderId,
         plan: event.plan,
+        subscription: event.subscription ?? null,
       });
       return res.status(200).json(result);
     }
 
     if (event.status && event.status !== "paid" && event.status !== "active") {
-      return res.status(200).json({ ok: true, skipped: "not_paid" });
+      // Cancelled-but-still-in-period still grants until ends_at via processGrant.
+      if (!(event.subscription?.cancelAtPeriodEnd && event.subscription?.endsAt)) {
+        if (event.subscription) {
+          const user = await getOrCreateUserByEmail(event.email);
+          await upsertSubscriptionRecord({
+            userId: user.uid,
+            email: event.email,
+            subscription: event.subscription,
+          });
+        }
+        return res.status(200).json({ ok: true, skipped: "not_paid" });
+      }
     }
 
     const result = await processGrant({
@@ -158,6 +205,7 @@ export default async function handler(req, res) {
       orderId: event.orderId,
       plan: event.plan,
       packageIds: event.packageIds,
+      subscription: event.subscription ?? null,
     });
     return res.status(200).json(result);
   } catch (err) {

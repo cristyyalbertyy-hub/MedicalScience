@@ -127,6 +127,157 @@ export async function grantEntitlements({
   await batch.commit();
 }
 
+function isSubscriptionPlan(plan) {
+  return plan === "subscription_monthly" || plan === "subscription_annual";
+}
+
+export async function upsertSubscriptionRecord({
+  userId,
+  email,
+  subscription,
+  source = "lemonsqueezy",
+}) {
+  if (!subscription?.id) return null;
+
+  const db = getFirestore();
+  const now = new Date().toISOString();
+  const emailKey = entitlementEmailKey(email);
+  const ref = db.collection("subscriptions").doc(String(subscription.id));
+  const payload = {
+    subscription_id: String(subscription.id),
+    user_id: userId,
+    email,
+    email_key: emailKey,
+    plan: subscription.plan ?? null,
+    status: subscription.status ?? null,
+    billing_interval: subscription.billingInterval || null,
+    renews_at: subscription.renewsAt ?? null,
+    ends_at: subscription.endsAt ?? null,
+    cancel_at_period_end: Boolean(subscription.cancelAtPeriodEnd),
+    customer_portal_url: subscription.customerPortalUrl ?? null,
+    update_payment_url: subscription.updatePaymentUrl ?? null,
+    variant_id: subscription.variantId ?? null,
+    product_name: subscription.productName ?? "Studio9 Pass",
+    source,
+    updated_at: now,
+  };
+
+  const existing = await ref.get();
+  if (!existing.exists) {
+    payload.created_at = now;
+    await ref.set(payload);
+  } else {
+    await ref.set(payload, { merge: true });
+  }
+
+  return payload;
+}
+
+function subscriptionLooksActive(data, nowMs) {
+  const status = String(data.status ?? "").toLowerCase();
+  if (status === "expired" || status === "unpaid") return false;
+
+  if (status === "active" || status === "on_trial" || status === "paused") {
+    return true;
+  }
+
+  if (status === "cancelled" || data.cancel_at_period_end) {
+    const endsAt = data.ends_at ? new Date(data.ends_at).getTime() : NaN;
+    if (!Number.isNaN(endsAt)) return endsAt > nowMs;
+    const renewsAt = data.renews_at ? new Date(data.renews_at).getTime() : NaN;
+    return !Number.isNaN(renewsAt) && renewsAt > nowMs;
+  }
+
+  return false;
+}
+
+function toPassPayload(data) {
+  const billing =
+    data.billing_interval === "year" ||
+    data.billing_interval === "yearly" ||
+    data.billing_interval === "annual" ||
+    data.plan === "subscription_annual"
+      ? "annual"
+      : "monthly";
+
+  return {
+    active: true,
+    plan: data.plan ?? null,
+    billing,
+    status: data.status ?? null,
+    renews_at: data.renews_at ?? null,
+    ends_at: data.ends_at ?? null,
+    cancel_at_period_end: Boolean(data.cancel_at_period_end),
+    customer_portal_url: data.customer_portal_url ?? null,
+    update_payment_url: data.update_payment_url ?? null,
+    product_name: data.product_name ?? "Studio9 Pass",
+  };
+}
+
+export async function getActivePassForUser(userId, email = null) {
+  const db = getFirestore();
+  const nowMs = Date.now();
+  const normalizedEmail = email ? normalizeEmail(email) : null;
+  const emailKey = normalizedEmail ? entitlementEmailKey(normalizedEmail) : null;
+
+  async function firstActiveFromQuery(snap) {
+    let best = null;
+    snap.forEach((doc) => {
+      const data = doc.data();
+      if (!subscriptionLooksActive(data, nowMs)) return;
+      if (!best) {
+        best = data;
+        return;
+      }
+      const bestRenew = best.renews_at ? new Date(best.renews_at).getTime() : 0;
+      const nextRenew = data.renews_at ? new Date(data.renews_at).getTime() : 0;
+      if (nextRenew > bestRenew) best = data;
+    });
+    return best;
+  }
+
+  let snap = await db.collection("subscriptions").where("user_id", "==", userId).get();
+  let active = await firstActiveFromQuery(snap);
+  if (active) return toPassPayload(active);
+
+  if (normalizedEmail) {
+    snap = await db.collection("subscriptions").where("email", "==", normalizedEmail).get();
+    active = await firstActiveFromQuery(snap);
+    if (active) return toPassPayload(active);
+  }
+
+  if (emailKey && emailKey !== normalizedEmail) {
+    snap = await db.collection("subscriptions").where("email_key", "==", emailKey).get();
+    active = await firstActiveFromQuery(snap);
+    if (active) return toPassPayload(active);
+  }
+
+  // Fallback: infer Pass from entitlements granted with a subscription plan.
+  const packageIds = await listActiveEntitlements(userId, email);
+  if (!packageIds.length) return null;
+
+  for (const packageId of packageIds) {
+    const ent = await db.collection("entitlements").doc(`${userId}_${packageId}`).get();
+    if (!ent.exists) continue;
+    const data = ent.data();
+    if (!isSubscriptionPlan(data.plan)) continue;
+    return {
+      active: true,
+      plan: data.plan,
+      billing: data.plan === "subscription_annual" ? "annual" : "monthly",
+      status: "active",
+      renews_at: data.expires_at ?? null,
+      ends_at: null,
+      cancel_at_period_end: false,
+      customer_portal_url: null,
+      update_payment_url: null,
+      product_name: "Studio9 Pass",
+    };
+  }
+
+  return null;
+}
+
 export async function logAdminGrant(payload) {
   const db = getFirestore();
   await db.collection("admin_grants").add({

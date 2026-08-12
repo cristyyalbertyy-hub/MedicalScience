@@ -35,6 +35,10 @@ const signinNote = document.getElementById("signin-note");
 const packagesList = document.getElementById("packages-list");
 const packagesIntro = document.getElementById("packages-intro");
 const packagesEmpty = document.getElementById("packages-empty");
+const passBanner = document.getElementById("pass-banner");
+const passBilling = document.getElementById("pass-billing");
+const passRenewal = document.getElementById("pass-renewal");
+const passPortalLink = document.getElementById("pass-portal-link");
 const authTitle = document.getElementById("auth-title");
 const refreshAccessBtn = document.getElementById("refresh-access-btn");
 const packagesEmptyHint = document.getElementById("packages-empty-hint");
@@ -52,6 +56,8 @@ let auth = null;
 let packageMeta = {};
 /** @type {Set<string>} */
 let activePackageIds = new Set();
+/** @type {null | Record<string, unknown>} */
+let activePass = null;
 /** @type {Awaited<ReturnType<typeof loadCatalog>> | null} */
 let catalogData = null;
 /** @type {{ key?: string, raw?: string, vars?: Record<string, string>, type?: string } | null} */
@@ -300,6 +306,7 @@ let lastAccountUid = null;
 
 async function loadEntitlements(user) {
   activePackageIds = new Set();
+  activePass = null;
   const idToken = await user.getIdToken(true);
   let res;
   try {
@@ -329,9 +336,88 @@ async function loadEntitlements(user) {
   for (const id of data.package_ids ?? []) {
     activePackageIds.add(id);
   }
+
+  activePass = data.pass && data.pass.active ? data.pass : null;
+}
+
+function formatPassDate(iso) {
+  if (!iso) return "";
+  const date = new Date(iso);
+  if (Number.isNaN(date.getTime())) return "";
+  try {
+    const lang = window.SiteI18n?.getSiteLang?.() ?? "en";
+    const locale =
+      lang === "pt"
+        ? "pt-PT"
+        : lang === "es"
+          ? "es"
+          : lang === "fr"
+            ? "fr"
+            : lang === "it"
+              ? "it"
+              : "en-GB";
+    return new Intl.DateTimeFormat(locale, {
+      day: "numeric",
+      month: "short",
+      year: "numeric",
+    }).format(date);
+  } catch {
+    return date.toLocaleDateString();
+  }
+}
+
+function renderPassBanner() {
+  if (!passBanner) return;
+
+  if (!activePass) {
+    passBanner.hidden = true;
+    if (passPortalLink) {
+      passPortalLink.hidden = true;
+      passPortalLink.removeAttribute("href");
+    }
+    return;
+  }
+
+  passBanner.hidden = false;
+
+  if (passBilling) {
+    passBilling.textContent =
+      activePass.billing === "annual"
+        ? t("accountPage.passBillingAnnual")
+        : t("accountPage.passBillingMonthly");
+  }
+
+  if (passRenewal) {
+    if (activePass.cancel_at_period_end && activePass.ends_at) {
+      const when = formatPassDate(activePass.ends_at);
+      passRenewal.textContent = when
+        ? t("accountPage.passEndsOn", { date: when })
+        : t("accountPage.passEndsSoon");
+    } else if (activePass.renews_at) {
+      const when = formatPassDate(activePass.renews_at);
+      passRenewal.textContent = when
+        ? t("accountPage.passRenewsOn", { date: when })
+        : t("accountPage.passRenewsSoon");
+    } else {
+      passRenewal.textContent = t("accountPage.passActiveFallback");
+    }
+  }
+
+  if (passPortalLink) {
+    const portal = activePass.customer_portal_url || activePass.update_payment_url;
+    if (portal) {
+      passPortalLink.href = String(portal);
+      passPortalLink.hidden = false;
+    } else {
+      passPortalLink.hidden = true;
+      passPortalLink.removeAttribute("href");
+    }
+  }
 }
 
 function handleEntitlementsFailure(err, catalog) {
+  activePass = null;
+  renderPassBanner();
   renderPackages(catalog);
   const message =
     err instanceof Error && err.message ? err.message : t("accountPage.entitlementsError");
@@ -527,6 +613,7 @@ function appendFamilyGroupRow(list, group, ownedIds, catalog) {
 
 function renderPackages(catalog) {
   packagesList.replaceChildren();
+  renderPassBanner();
   const ownedSet = new Set(
     [
       ...catalog.paidPackageIds,

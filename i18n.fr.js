@@ -393,6 +393,17 @@ SITE_LOCALES.fr = {
     sendError: "Impossible d'envoyer le lien.",
     genericError: "Une erreur s'est produite.",
     startError: "Impossible de démarrer.",
+    passBadge: "Studio9 Pass actif",
+    passBillingMonthly: "Mensuel",
+    passBillingAnnual: "Annuel",
+    passRenewsOn: "Renouvellement le {date}.",
+    passRenewsSoon: "Votre Pass se renouvelle automatiquement.",
+    passEndsOn: "L'accès continue jusqu'au {date} (résiliation planifiée).",
+    passEndsSoon: "L'accès continue jusqu'à la fin de la période en cours.",
+    passActiveFallback: "Tous les modules payants débloqués tant que le Pass est actif.",
+    passCancelAnytime:
+      "Résiliez à tout moment — l'accès continue jusqu'à la fin de la période de facturation en cours.",
+    passManage: "Gérer l'abonnement",
   },
   precos: {
     hero: {

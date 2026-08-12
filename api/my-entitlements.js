@@ -1,5 +1,8 @@
 import { getAuth } from "./_lib/firebase.js";
-import { listActiveEntitlements } from "./_lib/entitlements.js";
+import {
+  listActiveEntitlements,
+  getActivePassForUser,
+} from "./_lib/entitlements.js";
 import { parseJsonBody } from "./_lib/request.js";
 import { applyStudio9Cors, handleStudio9CorsPreflight } from "./_lib/cors.js";
 
@@ -20,15 +23,17 @@ export default async function handler(req, res) {
 
   try {
     const decoded = await getAuth().verifyIdToken(idToken);
-    const packageIds = await listActiveEntitlements(
-      decoded.uid,
-      decoded.email ?? null,
-    );
+    const email = decoded.email ?? null;
+    const [packageIds, pass] = await Promise.all([
+      listActiveEntitlements(decoded.uid, email),
+      getActivePassForUser(decoded.uid, email),
+    ]);
     return res.status(200).json({
       ok: true,
       user_id: decoded.uid,
-      email: decoded.email ?? null,
+      email,
       package_ids: packageIds,
+      pass,
     });
   } catch (err) {
     console.error("my-entitlements", err);

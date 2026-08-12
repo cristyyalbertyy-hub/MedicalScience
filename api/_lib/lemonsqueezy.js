@@ -112,14 +112,11 @@ export function parseSubscriptionEvent(body) {
     "subscription_updated",
     "subscription_payment_success",
     "subscription_resumed",
-  ]);
-  const endEvents = new Set([
-    "subscription_expired",
     "subscription_cancelled",
-    "subscription_payment_failed",
   ]);
+  const endEvents = new Set(["subscription_expired"]);
 
-  if (!grantEvents.has(eventName) && !endEvents.has(eventName)) {
+  if (!grantEvents.has(eventName) && !endEvents.has(eventName) && eventName !== "subscription_payment_failed") {
     return { handled: false, eventName };
   }
 
@@ -138,7 +135,21 @@ export function parseSubscriptionEvent(body) {
   const subscriptionId = String(body?.data?.id ?? attrs.identifier ?? "");
   const orderId = `sub_${subscriptionId}_${eventName}_${attrs.updated_at ?? attrs.created_at ?? Date.now()}`;
   const plan = resolveSubscriptionPlan(custom, attrs);
-  const status = String(attrs.status ?? "").toLowerCase();
+  const attrsStatus = String(attrs.status ?? "").toLowerCase();
+  const billingInterval = String(
+    attrs.variant_interval ?? attrs.billing_interval ?? "",
+  ).toLowerCase();
+
+  const cancelAtPeriodEnd = Boolean(
+    attrs.cancelled ||
+      attrsStatus === "cancelled" ||
+      eventName === "subscription_cancelled",
+  );
+
+  const endsAccess =
+    eventName === "subscription_expired" ||
+    attrsStatus === "expired" ||
+    (eventName === "subscription_payment_failed" && attrsStatus === "expired");
 
   return {
     handled: true,
@@ -147,7 +158,28 @@ export function parseSubscriptionEvent(body) {
     orderId,
     plan,
     packageIds: "",
-    status: grantEvents.has(eventName) && status !== "expired" ? "paid" : status,
-    endsAccess: endEvents.has(eventName) || status === "expired" || status === "cancelled",
+    status: endsAccess ? attrsStatus || "expired" : "paid",
+    endsAccess,
+    subscription: {
+      id: subscriptionId,
+      plan,
+      status: attrsStatus || (endsAccess ? "expired" : "active"),
+      billingInterval,
+      renewsAt: attrs.renews_at ?? null,
+      endsAt: attrs.ends_at ?? null,
+      customerPortalUrl:
+        attrs.urls?.customer_portal ||
+        attrs.urls?.customer_portal_update_subscription ||
+        null,
+      updatePaymentUrl: attrs.urls?.update_payment_method || null,
+      variantId:
+        attrs.variant_id != null
+          ? String(attrs.variant_id)
+          : attrs.first_order_item?.variant_id != null
+            ? String(attrs.first_order_item.variant_id)
+            : null,
+      productName: String(attrs.product_name ?? "").trim() || null,
+      cancelAtPeriodEnd,
+    },
   };
 }
