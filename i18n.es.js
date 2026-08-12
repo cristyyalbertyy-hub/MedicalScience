@@ -403,6 +403,9 @@ SITE_LOCALES.es = {
     passCancelAnytime:
       "Cancela cuando quieras: el acceso continúa hasta el final del periodo de facturación actual.",
     passManage: "Gestionar suscripción",
+    snapTitle: "Genetics Snap",
+    snapHint: "Juego de encaje con tiempo · ranking semanal",
+    snapOpen: "Jugar",
   },
   precos: {
     hero: {

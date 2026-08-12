@@ -1,0 +1,247 @@
+.snap-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(920px, calc(100% - 2rem));
+  margin: 1rem auto 0;
+}
+
+.snap-shell {
+  width: min(920px, calc(100% - 2rem));
+  margin: 1rem auto 2.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.snap-card {
+  padding: 1.35rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 253, 249, 0.92);
+  box-shadow: 0 16px 40px rgba(31, 78, 107, 0.08);
+}
+
+.snap-card h1,
+.snap-card h2 {
+  margin: 0.2rem 0 0.65rem;
+  color: var(--primary);
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.snap-lead,
+.snap-note,
+.snap-hint {
+  color: var(--muted);
+  margin: 0 0 0.85rem;
+}
+
+.snap-status {
+  min-height: 1.25rem;
+  margin: 0 0 0.75rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.snap-status.is-error {
+  color: #9a4f24;
+}
+
+.snap-auth,
+.snap-ready,
+.snap-locked {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.snap-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.snap-nick {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.snap-nick input {
+  font: inherit;
+  padding: 0.7rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.snap-hud {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.snap-hud-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.snap-timer-wrap {
+  grid-column: span 1;
+}
+
+.snap-timer-bar {
+  height: 0.55rem;
+  margin-top: 0.35rem;
+  border-radius: 999px;
+  background: rgba(31, 78, 107, 0.12);
+  overflow: hidden;
+}
+
+.snap-timer-bar i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7a9b7a, #d97a3e);
+  transform-origin: left center;
+  transition: transform 0.1s linear;
+}
+
+.snap-topic {
+  margin: 0 0 0.55rem;
+  color: #9a4f24;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.snap-block {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.75rem;
+  padding: 1.1rem 1rem;
+  border: 2px dashed rgba(31, 78, 107, 0.35);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(31, 78, 107, 0.08), transparent 70%),
+    #fff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: grab;
+  box-shadow: 0 10px 28px rgba(31, 78, 107, 0.1);
+}
+
+.snap-block:active {
+  cursor: grabbing;
+}
+
+.snap-block.is-spent {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.snap-slots {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.snap-slot {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.88);
+  font: inherit;
+  font-weight: 650;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.12s ease;
+}
+
+.snap-slot:hover,
+.snap-slot.is-dragover {
+  border-color: rgba(31, 78, 107, 0.45);
+  background: var(--primary-soft);
+  transform: translateY(-1px);
+}
+
+.snap-slot.is-correct {
+  border-color: rgba(122, 155, 122, 0.7);
+  background: rgba(122, 155, 122, 0.16);
+}
+
+.snap-slot.is-wrong {
+  border-color: rgba(217, 122, 62, 0.55);
+  background: rgba(217, 122, 62, 0.12);
+}
+
+.snap-feedback {
+  min-height: 1.4rem;
+  margin: 0.85rem 0 0;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.snap-board-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.snap-week {
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.snap-board {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.snap-board li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr auto;
+  gap: 0.55rem;
+  align-items: center;
+  padding: 0.55rem 0.65rem;
+  border-radius: 12px;
+  background: rgba(31, 78, 107, 0.04);
+}
+
+.snap-board li.is-you {
+  background: rgba(217, 122, 62, 0.14);
+  font-weight: 700;
+}
+
+.snap-board-empty {
+  display: block !important;
+  color: var(--muted);
+  background: transparent !important;
+}
+
+.snap-you {
+  margin: 0.75rem 0 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .snap-hud {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .snap-timer-wrap {
+    grid-column: span 2;
+  }
+}

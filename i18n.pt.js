@@ -403,6 +403,9 @@ SITE_LOCALES.pt = {
     passCancelAnytime:
       "Cancela quando quiseres — o acesso continua até ao fim do período de faturação actual.",
     passManage: "Gerir subscrição",
+    snapTitle: "Genetics Snap",
+    snapHint: "Jogo de encaixe com tempo · ranking semanal",
+    snapOpen: "Jogar",
   },
   precos: {
     hero: {

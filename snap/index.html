@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genetics Snap · Studio9</title>
+    <meta
+      name="description"
+      content="Snap — timed block-matching game for Genetics. Climb the weekly ranking with Studio9 Pass."
+    />
+    <meta name="theme-color" content="#1F4E6B" />
+    <link rel="icon" type="image/png" href="../StudioNine.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="snap.css" />
+  </head>
+  <body data-page="snap">
+    <a class="skip-link" href="#snap-main">Skip to content</a>
+
+    <header class="snap-top">
+      <a class="btn btn-secondary" href="../conta/">← My account</a>
+      <img class="brand-logo" src="../public/Studio9BackTransp.PNG" alt="Studio9" width="120" height="42" />
+    </header>
+
+    <main id="snap-main" class="snap-shell">
+      <section id="snap-gate" class="snap-card">
+        <p class="eyebrow">Studio9 Snap</p>
+        <h1>Genetics · Block Match</h1>
+        <p class="snap-lead">
+          A prompt flies in. Snap it onto the right answer before time runs out. Climb this week’s Genetics ranking.
+        </p>
+        <p id="snap-status" class="snap-status" role="status"></p>
+        <div id="snap-auth" class="snap-auth" hidden>
+          <button type="button" id="snap-google" class="btn btn-google">
+            <span>Continue with Google</span>
+          </button>
+          <p class="snap-note">Use the same Google account as your checkout email.</p>
+        </div>
+        <div id="snap-locked" class="snap-locked" hidden>
+          <p>Snap for Genetics needs an active <strong>Studio9 Pass</strong> or the Genetics package.</p>
+          <div class="snap-actions">
+            <a class="btn btn-primary" href="../precos/#studio9-pass">See Studio9 Pass</a>
+            <a class="btn btn-secondary" href="../packages/#package-genetics">Genetics package</a>
+          </div>
+        </div>
+        <div id="snap-ready" class="snap-ready" hidden>
+          <label class="snap-nick">
+            <span>Nickname on the board</span>
+            <input id="snap-nickname" type="text" maxlength="24" autocomplete="nickname" />
+          </label>
+          <button type="button" id="snap-start" class="btn btn-primary">Play 10 snaps</button>
+          <p class="snap-note">Best score today updates your weekly Genetics rank.</p>
+        </div>
+      </section>
+
+      <section id="snap-play" class="snap-card snap-play" hidden>
+        <div class="snap-hud">
+          <div>
+            <span class="snap-hud-label">Round</span>
+            <strong id="snap-round">1 / 10</strong>
+          </div>
+          <div>
+            <span class="snap-hud-label">Score</span>
+            <strong id="snap-score">0</strong>
+          </div>
+          <div>
+            <span class="snap-hud-label">Streak</span>
+            <strong id="snap-streak">0</strong>
+          </div>
+          <div class="snap-timer-wrap">
+            <span class="snap-hud-label">Time</span>
+            <div class="snap-timer-bar"><i id="snap-timer-fill"></i></div>
+          </div>
+        </div>
+        <p id="snap-topic" class="snap-topic"></p>
+        <button type="button" id="snap-block" class="snap-block" draggable="true"></button>
+        <p class="snap-hint">Drag or tap the matching answer</p>
+        <div id="snap-slots" class="snap-slots"></div>
+        <p id="snap-feedback" class="snap-feedback" aria-live="polite"></p>
+      </section>
+
+      <section id="snap-result" class="snap-card" hidden>
+        <p class="eyebrow">Session complete</p>
+        <h2>Your score: <span id="snap-final-score">0</span></h2>
+        <p id="snap-result-note" class="snap-lead"></p>
+        <div class="snap-actions">
+          <button type="button" id="snap-again" class="btn btn-primary">Play again</button>
+          <button type="button" id="snap-show-board" class="btn btn-secondary">Weekly ranking</button>
+        </div>
+      </section>
+
+      <section id="snap-board-card" class="snap-card">
+        <div class="snap-board-head">
+          <h2>Genetics · this week</h2>
+          <span id="snap-week" class="snap-week"></span>
+        </div>
+        <ol id="snap-board" class="snap-board">
+          <li class="snap-board-empty">Sign in to load the ranking.</li>
+        </ol>
+        <p id="snap-you" class="snap-you" hidden></p>
+      </section>
+    </main>
+
+    <script src="../conta/firebase-config.js"></script>
+    <script type="module" src="snap.js"></script>
+    <script src="/analytics.js" defer></script>
+  </body>
+</html>

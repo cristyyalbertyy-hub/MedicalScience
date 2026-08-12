@@ -409,6 +409,9 @@ const SITE_LOCALES = {
       passCancelAnytime:
         "Cancel anytime — access continues until the end of the current billing period.",
       passManage: "Manage subscription",
+      snapTitle: "Genetics Snap",
+      snapHint: "Timed block-match game · weekly ranking",
+      snapOpen: "Play",
     },
     precos: {
       hero: {

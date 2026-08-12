@@ -44,6 +44,7 @@ const refreshAccessBtn = document.getElementById("refresh-access-btn");
 const packagesEmptyHint = document.getElementById("packages-empty-hint");
 const packagesFootnote = document.getElementById("packages-footnote");
 const packagesProgressEntry = document.getElementById("packages-progress");
+const packagesSnapEntry = document.getElementById("packages-snap");
 const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: "select_account" });
@@ -634,6 +635,7 @@ function renderPackages(catalog) {
     packagesEmpty.hidden = false;
     packagesFootnote.hidden = true;
     if (packagesProgressEntry) packagesProgressEntry.hidden = true;
+    if (packagesSnapEntry) packagesSnapEntry.hidden = true;
     return;
   }
 
@@ -642,6 +644,9 @@ function renderPackages(catalog) {
   packagesEmpty.hidden = true;
   packagesFootnote.hidden = false;
   if (packagesProgressEntry) packagesProgressEntry.hidden = false;
+  if (packagesSnapEntry) {
+    packagesSnapEntry.hidden = !(activePass?.active || ownedSet.has("genetics"));
+  }
 
   const plan = buildOwnedRenderPlan(catalog, ownedSet);
   for (const item of plan) {

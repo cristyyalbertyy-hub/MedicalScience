@@ -404,6 +404,9 @@ SITE_LOCALES.fr = {
     passCancelAnytime:
       "Résiliez à tout moment — l'accès continue jusqu'à la fin de la période de facturation en cours.",
     passManage: "Gérer l'abonnement",
+    snapTitle: "Genetics Snap",
+    snapHint: "Jeu d'encastrement chronométré · classement hebdomadaire",
+    snapOpen: "Jouer",
   },
   precos: {
     hero: {

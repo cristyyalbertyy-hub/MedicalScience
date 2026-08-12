@@ -1,0 +1,489 @@
+{
+  "packageId": "genetics",
+  "title": "Genetics",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "BG_MP_0",
+      "topic": "Mendelian principles",
+      "prompt": "Who is historically recognised as the 'father of genetics' for his experiments on garden peas?",
+      "answer": "Gregor Mendel"
+    },
+    {
+      "id": "BG_MP_1",
+      "topic": "Mendelian principles",
+      "prompt": "What is the term for a functional unit of inheritance that usually corresponds to a segment of DNA coding for a single protein?",
+      "answer": "Gene"
+    },
+    {
+      "id": "BG_MP_2",
+      "topic": "Mendelian principles",
+      "prompt": "What term refers to the alternative forms of a gene that can exist at a specific locus?",
+      "answer": "Alleles"
+    },
+    {
+      "id": "BG_MP_3",
+      "topic": "Mendelian principles",
+      "prompt": "The specific physical site of a gene on a chromosome is known as its _____.",
+      "answer": "Locus"
+    },
+    {
+      "id": "BG_MP_4",
+      "topic": "Mendelian principles",
+      "prompt": "What is the term for an individual's genetic constitution at a particular locus?",
+      "answer": "Genotype"
+    },
+    {
+      "id": "BG_MP_5",
+      "topic": "Mendelian principles",
+      "prompt": "What term describes the observable physical or clinical characteristics of an individual?",
+      "answer": "Phenotype"
+    },
+    {
+      "id": "BG_MP_6",
+      "topic": "Mendelian principles",
+      "prompt": "An individual possessing two identical alleles at a given locus is described as being _____.",
+      "answer": "Homozygous"
+    },
+    {
+      "id": "BG_MP_7",
+      "topic": "Mendelian principles",
+      "prompt": "An individual possessing two different alleles at a given locus is described as being _____.",
+      "answer": "Heterozygous"
+    },
+    {
+      "id": "BG_PG_58",
+      "topic": "Population genetics",
+      "prompt": "What term defines a change in the DNA sequence that serves as the ultimate source of all genetic variation?",
+      "answer": "Mutation"
+    },
+    {
+      "id": "BG_PG_59",
+      "topic": "Population genetics",
+      "prompt": "Which specific cells must a mutation affect to be transmitted from one generation to the next?",
+      "answer": "Germline cells"
+    },
+    {
+      "id": "BG_PG_60",
+      "topic": "Population genetics",
+      "prompt": "What is the term for the differing DNA sequences of a gene among individuals?",
+      "answer": "Alleles"
+    },
+    {
+      "id": "BG_PG_61",
+      "topic": "Population genetics",
+      "prompt": "Concept: Locus",
+      "answer": "Definition: The specific physical location of a gene on a chromosome"
+    },
+    {
+      "id": "BG_PG_62",
+      "topic": "Population genetics",
+      "prompt": "An individual possessing two identical alleles at a given locus is known as a _____.",
+      "answer": "Homozygote"
+    },
+    {
+      "id": "BG_PG_63",
+      "topic": "Population genetics",
+      "prompt": "An individual possessing two different alleles at a given locus is known as a _____.",
+      "answer": "Heterozygote"
+    },
+    {
+      "id": "BG_PG_64",
+      "topic": "Population genetics",
+      "prompt": "What term describes the combination of alleles present at a specific locus in an individual?",
+      "answer": "Genotype"
+    },
+    {
+      "id": "BG_PG_65",
+      "topic": "Population genetics",
+      "prompt": "What term refers to the proportion of each specific allele at a locus within a population?",
+      "answer": "Gene frequency (or allele frequency)"
+    },
+    {
+      "id": "BG_T_109",
+      "topic": "Transmission",
+      "prompt": "What is the fundamental unit of inheritance, typically corresponding to a DNA segment coding for a protein or RNA molecule?",
+      "answer": "Gene"
+    },
+    {
+      "id": "BG_T_110",
+      "topic": "Transmission",
+      "prompt": "The specific physical site of a gene on a chromosome is termed a _____.",
+      "answer": "Locus"
+    },
+    {
+      "id": "BG_T_111",
+      "topic": "Transmission",
+      "prompt": "What term describes the alternative forms of a gene at a specific locus?",
+      "answer": "Alleles"
+    },
+    {
+      "id": "BG_T_112",
+      "topic": "Transmission",
+      "prompt": "The specific set of alleles that form the genome of an individual is the _____.",
+      "answer": "Genotype"
+    },
+    {
+      "id": "BG_T_113",
+      "topic": "Transmission",
+      "prompt": "What term refers to the visible or functional characteristics of an individual, resulting from the interaction of genotype and environment?",
+      "answer": "Phenotype"
+    },
+    {
+      "id": "BG_T_114",
+      "topic": "Transmission",
+      "prompt": "An individual possessing two identical alleles at a particular locus is a _____.",
+      "answer": "Homozygote (or homozygous)"
+    },
+    {
+      "id": "BG_T_115",
+      "topic": "Transmission",
+      "prompt": "What is the term for an individual who has two different alleles at a specific locus?",
+      "answer": "Heterozygote (or heterozygous)"
+    },
+    {
+      "id": "BG_T_116",
+      "topic": "Transmission",
+      "prompt": "Cells that contain only one copy of each chromosome, such as gametes, are described as _____.",
+      "answer": "Haploid"
+    },
+    {
+      "id": "CA_GD_162",
+      "topic": "Genetic diagnosis",
+      "prompt": "Which specific group of disorders is the focus of newborn screening in the UK and Europe?",
+      "answer": "Inborn errors of metabolism"
+    },
+    {
+      "id": "CA_GD_163",
+      "topic": "Genetic diagnosis",
+      "prompt": "For which population is Tay–Sachs disease heterozygote screening typically performed?",
+      "answer": "The Ashkenazi Jewish population"
+    },
+    {
+      "id": "CA_GD_164",
+      "topic": "Genetic diagnosis",
+      "prompt": "Carrier screening for sickle-cell anaemia is commonly targeted at the _____ population.",
+      "answer": "African-American"
+    },
+    {
+      "id": "CA_GD_165",
+      "topic": "Genetic diagnosis",
+      "prompt": "Which form of genetic diagnosis uses markers like SNPs or STRs to track a disease gene through a family?",
+      "answer": "Linkage analysis (indirect diagnosis)"
+    },
+    {
+      "id": "CA_GD_166",
+      "topic": "Genetic diagnosis",
+      "prompt": "Which direct testing method is used to detect chromosome deletions in Williams syndrome?",
+      "answer": "Fluorescence in situ hybridisation (FISH)"
+    },
+    {
+      "id": "CA_GD_167",
+      "topic": "Genetic diagnosis",
+      "prompt": "Which method is specifically used to detect the single-base mutation responsible for sickle-cell anaemia?",
+      "answer": "Allele-specific oligonucleotide (ASO) hybridisation"
+    },
+    {
+      "id": "CA_GD_168",
+      "topic": "Genetic diagnosis",
+      "prompt": "What condition must be met for ASO hybridisation to be a viable diagnostic approach?",
+      "answer": "The exact DNA sequence of the disease-causing mutation must be known"
+    },
+    {
+      "id": "CA_GD_169",
+      "topic": "Genetic diagnosis",
+      "prompt": "Which direct testing method is standard for identifying mutations in familial breast and ovarian cancer?",
+      "answer": "Sanger DNA sequencing"
+    },
+    {
+      "id": "CA_PA_200",
+      "topic": "Pedigree analysis",
+      "prompt": "In a pedigree diagram, what gender is represented by a square symbol?",
+      "answer": "Male"
+    },
+    {
+      "id": "CA_PA_201",
+      "topic": "Pedigree analysis",
+      "prompt": "In a pedigree diagram, what gender is represented by a circle symbol?",
+      "answer": "Female"
+    },
+    {
+      "id": "CA_PA_202",
+      "topic": "Pedigree analysis",
+      "prompt": "What does a diamond symbol represent in standard pedigree notation?",
+      "answer": "An individual whose sex is not specified"
+    },
+    {
+      "id": "CA_PA_203",
+      "topic": "Pedigree analysis",
+      "prompt": "In a pedigree, what does a completely darkened square or circle indicate?",
+      "answer": "An individual affected by the disease or trait being studied"
+    },
+    {
+      "id": "CA_PA_204",
+      "topic": "Pedigree analysis",
+      "prompt": "What is the specific term for the first person diagnosed with a disease in a pedigree, often indicated by an arrow?",
+      "answer": "Proband (or index case/propositus)"
+    },
+    {
+      "id": "CA_PA_205",
+      "topic": "Pedigree analysis",
+      "prompt": "In pedigree notation, what is indicated by a double horizontal bar connecting a male and female?",
+      "answer": "A consanguineous mating (mating between blood relatives)"
+    },
+    {
+      "id": "CA_PA_206",
+      "topic": "Pedigree analysis",
+      "prompt": "How are different generations typically identified in a pedigree diagram?",
+      "answer": "Using Roman numerals (e.g., I, II, III)"
+    },
+    {
+      "id": "CA_PA_207",
+      "topic": "Pedigree analysis",
+      "prompt": "What does a diagonal line drawn through a pedigree symbol signify?",
+      "answer": "The individual is deceased"
+    },
+    {
+      "id": "CA_RC_243",
+      "topic": "Risk calculation",
+      "prompt": "In medical genetics, what is the specific term for the insertion of normal genes into patients to correct genetic disease?",
+      "answer": "Gene therapy"
+    },
+    {
+      "id": "CA_RC_244",
+      "topic": "Risk calculation",
+      "prompt": "What clinical process involves communicating information regarding risks, prognoses, and treatments to patients and families?",
+      "answer": "Genetic counselling"
+    },
+    {
+      "id": "CA_RC_245",
+      "topic": "Risk calculation",
+      "prompt": "What is the approximate lifetime prevalence of autosomal dominant disorders per 1000 persons?",
+      "answer": "3 to 9.5"
+    },
+    {
+      "id": "CA_RC_246",
+      "topic": "Risk calculation",
+      "prompt": "According to population data, what is the estimated lifetime prevalence of chromosome disorders per 1000 persons?",
+      "answer": "6 to 9"
+    },
+    {
+      "id": "CA_RC_247",
+      "topic": "Risk calculation",
+      "prompt": "What percentage of the population is likely to be diagnosed with a recognisable genetic disease at some point in life?",
+      "answer": "3\\% to 7\\%"
+    },
+    {
+      "id": "CA_RC_248",
+      "topic": "Risk calculation",
+      "prompt": "Which parental factor is strongly correlated with the probability of transmitting a single-gene mutation like Marfan syndrome?",
+      "answer": "Advanced paternal age"
+    },
+    {
+      "id": "CA_RC_249",
+      "topic": "Risk calculation",
+      "prompt": "In probability theory, which rule is used to estimate the likelihood that two independent events will occur together?",
+      "answer": "The multiplication rule"
+    },
+    {
+      "id": "CA_RC_250",
+      "topic": "Risk calculation",
+      "prompt": "Which probability rule is applied to determine the likelihood that one event or another will occur?",
+      "answer": "The addition rule"
+    },
+    {
+      "id": "IM_C_287",
+      "topic": "Chromosomes",
+      "prompt": "In most multicellular organisms, what is the primary mode of mitochondrial inheritance?",
+      "answer": "Maternal inheritance (uniparental)"
+    },
+    {
+      "id": "IM_C_288",
+      "topic": "Chromosomes",
+      "prompt": "What term describes the presence of a mixture of mutant and normal mtDNA within a single cell?",
+      "answer": "Heteroplasmy"
+    },
+    {
+      "id": "IM_C_289",
+      "topic": "Chromosomes",
+      "prompt": "What is the approximate size of the human mitochondrial genome in base pairs?",
+      "answer": "16,569 base pairs"
+    },
+    {
+      "id": "IM_C_290",
+      "topic": "Chromosomes",
+      "prompt": "How many protein-coding genes are found in the human mitochondrial genome?",
+      "answer": "13 genes"
+    },
+    {
+      "id": "IM_C_291",
+      "topic": "Chromosomes",
+      "prompt": "Mitochondrial DNA is arranged in what physical shape?",
+      "answer": "Double-stranded circular molecule"
+    },
+    {
+      "id": "IM_C_292",
+      "topic": "Chromosomes",
+      "prompt": "Which two types of RNA involved in translation are encoded by the mitochondrial genome?",
+      "answer": "Ribosomal RNA (rRNA) and transfer RNA (tRNA)"
+    },
+    {
+      "id": "IM_C_293",
+      "topic": "Chromosomes",
+      "prompt": "How many tRNA genes are contained within the human mitochondrial genome?",
+      "answer": "22 tRNA genes"
+    },
+    {
+      "id": "IM_C_294",
+      "topic": "Chromosomes",
+      "prompt": "True or False: Human mitochondrial genes contain introns.",
+      "answer": "False (unlike nuclear genes, mtDNA genes contain no introns)"
+    },
+    {
+      "id": "IM_Mi_342",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "What is the definition of a monogenic trait?",
+      "answer": "A trait or disorder attributable to a mutation in a single gene"
+    },
+    {
+      "id": "IM_Mi_343",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "Mendel's _____ states that for each characteristic, an organism inherits two copies of each gene, one from each parent.",
+      "answer": "Law of Segregation"
+    },
+    {
+      "id": "IM_Mi_344",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "Mendel's _____ states that genes at different loci are transmitted independently of one another.",
+      "answer": "Law of Independent Assortment"
+    },
+    {
+      "id": "IM_Mi_345",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "An individual possessing two identical alleles at a specific locus is said to be _____.",
+      "answer": "Homozygous"
+    },
+    {
+      "id": "IM_Mi_346",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "An individual possessing two different alleles at a specific locus is said to be _____.",
+      "answer": "Heterozygous"
+    },
+    {
+      "id": "IM_Mi_347",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "What inheritance pattern is characterised by a 'vertical' transmission of the disease phenotype through generations?",
+      "answer": "Autosomal dominant inheritance"
+    },
+    {
+      "id": "IM_Mi_348",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "In autosomal dominant inheritance, what is the recurrence risk for the offspring of one affected heterozygote and one unaffected parent?",
+      "answer": "50\\% (or \\frac{1}{2})"
+    },
+    {
+      "id": "IM_Mi_349",
+      "topic": "Mitochondrial inheritance",
+      "prompt": "True or False: In autosomal dominant inheritance, father-to-son transmission is impossible.",
+      "answer": "False"
+    },
+    {
+      "id": "IM_Mu_385",
+      "topic": "Multifactorial inheritance",
+      "prompt": "What term describes traits where variation is caused by the combined effects of multiple genes?",
+      "answer": "Polygenic"
+    },
+    {
+      "id": "IM_Mu_386",
+      "topic": "Multifactorial inheritance",
+      "prompt": "Traits resulting from the interaction of multiple genes and environmental factors are termed _____.",
+      "answer": "Multifactorial"
+    },
+    {
+      "id": "IM_Mu_387",
+      "topic": "Multifactorial inheritance",
+      "prompt": "What type of traits, such as blood pressure, are measured on a continuous numerical scale?",
+      "answer": "Quantitative traits"
+    },
+    {
+      "id": "IM_Mu_388",
+      "topic": "Multifactorial inheritance",
+      "prompt": "In a population, quantitative traits influenced by many additive genetic and environmental factors typically follow a _____ distribution.",
+      "answer": "Normal (or bell-shaped)"
+    },
+    {
+      "id": "IM_Mu_389",
+      "topic": "Multifactorial inheritance",
+      "prompt": "What model explains the inheritance of multifactorial diseases that are either present or absent rather than continuous?",
+      "answer": "The threshold model"
+    },
+    {
+      "id": "IM_Mu_390",
+      "topic": "Multifactorial inheritance",
+      "prompt": "In the threshold model, the range of genetic and environmental risk factors in a population is called the _____.",
+      "answer": "Liability distribution"
+    },
+    {
+      "id": "IM_Mu_391",
+      "topic": "Multifactorial inheritance",
+      "prompt": "What must be crossed for an individual to express a multifactorial disease according to the threshold model?",
+      "answer": "The threshold of liability"
+    },
+    {
+      "id": "IM_Mu_392",
+      "topic": "Multifactorial inheritance",
+      "prompt": "How does the recurrence risk for multifactorial diseases change if more than one family member is affected?",
+      "answer": "The recurrence risk increases"
+    },
+    {
+      "id": "IM_M_418",
+      "topic": "Mutation",
+      "prompt": "Term: Karyotype.",
+      "answer": "An ordered display of the full set of 46 human chromosomes"
+    },
+    {
+      "id": "IM_M_419",
+      "topic": "Mutation",
+      "prompt": "In a normal human male, which chromosome is inherited specifically from the father?",
+      "answer": "The Y chromosome"
+    },
+    {
+      "id": "IM_M_420",
+      "topic": "Mutation",
+      "prompt": "How many pairs of autosomes are found in a standard human somatic cell?",
+      "answer": "22 pairs"
+    },
+    {
+      "id": "IM_M_421",
+      "topic": "Mutation",
+      "prompt": "The process by which a diploid cell gives rise to four genetically distinct haploid gametes is called _____.",
+      "answer": "Meiosis"
+    },
+    {
+      "id": "IM_M_422",
+      "topic": "Mutation",
+      "prompt": "What physical structure marks the point where homologous chromosomes exchange genetic material during prophase I?",
+      "answer": "A chiasma (plural chiasmata)"
+    },
+    {
+      "id": "IM_M_423",
+      "topic": "Mutation",
+      "prompt": "Under what physical condition do two genes on the same chromosome tend to be inherited together as a unit?",
+      "answer": "When the genes lie very close to each other on the chromosome"
+    },
+    {
+      "id": "IM_M_424",
+      "topic": "Mutation",
+      "prompt": "The frequency with which two genes are separated by crossovers is used to construct a _____.",
+      "answer": "Genetic map"
+    },
+    {
+      "id": "IM_M_425",
+      "topic": "Mutation",
+      "prompt": "How many chromosomes are present in a somatic cell exhibiting trisomy?",
+      "answer": "47 chromosomes"
+    }
+  ]
+}

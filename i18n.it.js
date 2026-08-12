@@ -403,6 +403,9 @@ SITE_LOCALES.it = {
     passCancelAnytime:
       "Annulla quando vuoi: l'accesso continua fino alla fine del periodo di fatturazione corrente.",
     passManage: "Gestisci abbonamento",
+    snapTitle: "Genetics Snap",
+    snapHint: "Gioco di innesto a tempo · classifica settimanale",
+    snapOpen: "Gioca",
   },
   precos: {
     hero: {

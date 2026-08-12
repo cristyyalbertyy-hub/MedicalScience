@@ -2,6 +2,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".",
   "rewrites": [
+    { "source": "/snap", "destination": "/snap/index.html" },
+    { "source": "/snap/", "destination": "/snap/index.html" },
     { "source": "/acesso", "destination": "/conta/index.html" },
     { "source": "/acesso/", "destination": "/conta/index.html" },
     { "source": "/conta", "destination": "/conta/index.html" },
