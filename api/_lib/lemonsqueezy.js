@@ -16,13 +16,71 @@ export function verifySignature(rawBody, signatureHeader) {
   return crypto.timingSafeEqual(digest, signature);
 }
 
+function lemonConfig() {
+  return getCatalog().lemonSqueezy ?? {};
+}
+
+function firstOrderItem(attrs) {
+  return attrs.first_order_item ?? {};
+}
+
+function productNameFromAttrs(attrs) {
+  return String(attrs.product_name ?? firstOrderItem(attrs).product_name ?? "").trim();
+}
+
+function variantNameFromAttrs(attrs) {
+  return String(attrs.variant_name ?? firstOrderItem(attrs).variant_name ?? "").trim();
+}
+
+function variantIdFromAttrs(attrs) {
+  if (attrs.variant_id != null) return String(attrs.variant_id);
+  const item = firstOrderItem(attrs);
+  if (item.variant_id != null) return String(item.variant_id);
+  return "";
+}
+
+function isSubscriptionPlanId(plan) {
+  return plan === "subscription_monthly" || plan === "subscription_annual";
+}
+
+function isSubscriptionProductName(name) {
+  if (!name) return false;
+  const names = lemonConfig().subscriptionProductNames ?? ["Studio9 Pass"];
+  return names.some((entry) => String(entry).trim().toLowerCase() === name.toLowerCase());
+}
+
+function planFromVariantName(variantName) {
+  const key = variantName.trim().toLowerCase();
+  if (!key) return "";
+
+  const mapped = lemonConfig().subscriptionVariantNames?.[key];
+  if (mapped) return mapped;
+
+  if (key === "annual" || key === "yearly" || key === "year") {
+    return "subscription_annual";
+  }
+  if (key === "monthly" || key === "month") {
+    return "subscription_monthly";
+  }
+  return "";
+}
+
+function isSubscriptionPurchase(custom, attrs) {
+  const plan = String(custom.plan ?? custom.plan_type ?? "").trim();
+  if (isSubscriptionPlanId(plan)) return true;
+  if (isSubscriptionProductName(productNameFromAttrs(attrs))) return true;
+
+  const variantId = variantIdFromAttrs(attrs);
+  return Boolean(variantId && lemonConfig().subscriptionVariants?.[variantId]);
+}
+
 /** Custom data is optional on checkout URLs; fall back to LS product/variant mapping. */
 function resolvePackageIdsFromOrder(custom, attrs) {
   const direct = custom.package_ids ?? custom.packageIds ?? "";
   if (direct) return String(direct);
 
-  const lemonSqueezy = getCatalog().lemonSqueezy ?? {};
-  const item = attrs.first_order_item ?? {};
+  const lemonSqueezy = lemonConfig();
+  const item = firstOrderItem(attrs);
 
   const variantId = item.variant_id != null ? String(item.variant_id) : "";
   if (variantId && lemonSqueezy.variants?.[variantId]) {
@@ -39,19 +97,17 @@ function resolvePackageIdsFromOrder(custom, attrs) {
 
 function resolveSubscriptionPlan(custom, attrs) {
   const fromCustom = String(custom.plan ?? custom.plan_type ?? "").trim();
-  if (fromCustom) return fromCustom;
+  if (isSubscriptionPlanId(fromCustom)) return fromCustom;
 
-  const lemonSqueezy = getCatalog().lemonSqueezy ?? {};
-  const variantId =
-    attrs.variant_id != null
-      ? String(attrs.variant_id)
-      : attrs.first_order_item?.variant_id != null
-        ? String(attrs.first_order_item.variant_id)
-        : "";
+  const lemonSqueezy = lemonConfig();
+  const variantId = variantIdFromAttrs(attrs);
 
   if (variantId && lemonSqueezy.subscriptionVariants?.[variantId]) {
     return lemonSqueezy.subscriptionVariants[variantId];
   }
+
+  const fromVariantName = planFromVariantName(variantNameFromAttrs(attrs));
+  if (fromVariantName) return fromVariantName;
 
   const interval = String(
     attrs.variant_interval ?? attrs.billing_interval ?? "",
@@ -87,8 +143,12 @@ export function parseOrderEvent(body) {
   const orderId =
     String(body?.data?.id ?? attrs.identifier ?? attrs.order_number ?? "");
 
-  const plan = String(custom.plan ?? custom.plan_type ?? "single").trim();
-  const packageIds = resolvePackageIdsFromOrder(custom, attrs);
+  const plan = isSubscriptionPurchase(custom, attrs)
+    ? resolveSubscriptionPlan(custom, attrs)
+    : String(custom.plan ?? custom.plan_type ?? "single").trim();
+  const packageIds = isSubscriptionPlanId(plan)
+    ? ""
+    : resolvePackageIdsFromOrder(custom, attrs);
 
   return {
     handled: true,
@@ -136,9 +196,9 @@ export function parseSubscriptionEvent(body) {
   const orderId = `sub_${subscriptionId}_${eventName}_${attrs.updated_at ?? attrs.created_at ?? Date.now()}`;
   const plan = resolveSubscriptionPlan(custom, attrs);
   const attrsStatus = String(attrs.status ?? "").toLowerCase();
-  const billingInterval = String(
-    attrs.variant_interval ?? attrs.billing_interval ?? "",
-  ).toLowerCase();
+  const billingInterval =
+    String(attrs.variant_interval ?? attrs.billing_interval ?? "").toLowerCase() ||
+    (plan === "subscription_annual" ? "year" : "month");
 
   const cancelAtPeriodEnd = Boolean(
     attrs.cancelled ||

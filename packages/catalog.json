@@ -311,12 +311,12 @@
     "monthly": {
       "plan": "subscription_monthly",
       "priceUsd": 14.99,
-      "checkoutUrl": ""
+      "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/29e98717-8368-4f80-a6de-fdbe7744dfb3?embed=1"
     },
     "annual": {
       "plan": "subscription_annual",
       "priceUsd": 99,
-      "checkoutUrl": "",
+      "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/251a28c3-58b7-4a53-9660-023e9e4e1a9b?embed=1",
       "equivalentMonthlyUsd": 8.25
     }
   },
@@ -361,6 +361,16 @@
       "8a6bd132-16a6-428f-bc7f-a5a91d7f3c74": "moral-philosophy",
       "8eed3ddf-83a1-4712-a652-ac688f856742": "health-technology-assessments"
     },
-    "subscriptionVariants": {}
+    "subscriptionProductNames": ["Studio9 Pass"],
+    "subscriptionVariantNames": {
+      "monthly": "subscription_monthly",
+      "annual": "subscription_annual"
+    },
+    "subscriptionVariants": {
+      "29e98717-8368-4f80-a6de-fdbe7744dfb3": "subscription_monthly",
+      "2016855": "subscription_monthly",
+      "251a28c3-58b7-4a53-9660-023e9e4e1a9b": "subscription_annual",
+      "2016894": "subscription_annual"
+    }
   }
 }
