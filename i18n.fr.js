@@ -104,13 +104,14 @@ SITE_LOCALES.fr = {
     buyNow: "Acheter {title}",
     openAccess: "Accès libre",
     tryFree: "Essayer gratuitement",
-    viewContents: "Voir le contenu inclus",
+    viewContents: "Voir le contenu",
+    hideContents: "Masquer le contenu",
     syllabusNotePurchase:
       "Index complet — accès aux vidéos, podcasts et exercices après l'achat.",
     syllabusNoteBrowse: "Index complet du module — chaque thème inclut les formats ci-dessous.",
     syllabusPending: "Index complet bientôt disponible.",
     appMenuAria: "Menu des chapitres",
-    appMenuHint: "Tel qu'il apparaîtra dans l'app Studio9",
+    appMenuHint: "Tel qu'il apparaîtra dans l'app Studio9 — ouvrez un thème pour voir vidéo, podcast, infographie et questionnaire",
     resourceLegend: "V · Vidéo · P · Podcast · I · Infographie · Q · Questionnaire",
     resource: {
       V: "Vidéo",
@@ -735,9 +736,9 @@ SITE_LOCALES.fr = {
         "Physiologie endocrinienne, nerveuse, gastro-intestinale, sens spéciaux et reproductive.",
     },
     immunology: {
-      title: "Immunologie",
+      title: "Immunologie et Immunopathologie",
       description:
-        "Immunité adaptative, vaccins, hypersensibilité, auto-immunité et immunologie clinique.",
+        "Immunité innée et adaptative, puis hypersensibilité, auto-immunité, immunodéficience, transplantation et immunité tumorale.",
     },
     microbiology: {
       title: "Microbiologie",
@@ -812,8 +813,8 @@ SITE_LOCALES.fr = {
       desc: "Systèmes rénal, digestif, endocrinien et reproducteur",
     },
     y2imm: {
-      name: "Immunologie",
-      desc: "Immunité adaptative, vaccins, allergies, auto-immunité",
+      name: "Immunologie et Immunopathologie",
+      desc: "Immunologie de base, hypersensibilité, auto-immunité, immunodéficience",
     },
     y2micro: {
       name: "Microbiologie",

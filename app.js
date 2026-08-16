@@ -137,9 +137,9 @@ const SOON_PACKAGES = [
   {
     id: "immunology",
     number: "18",
-    title: "Immunology",
+    title: "Immunology and Immunopathology",
     description:
-      "Adaptive immunity, vaccines, hypersensitivity, autoimmunity and clinical immunology.",
+      "Innate and adaptive immunity, then hypersensitivity, autoimmunity, immunodeficiency, transplantation and tumour immunity.",
     status: "soon",
   },
   {
@@ -325,22 +325,6 @@ function packageText(key, fallback = "") {
   return fallback || key;
 }
 
-function renderResourceBadges(resources, resourceTypes = {}) {
-  return (resources ?? [])
-    .map((code) => {
-      const label = packageText(`packagesUi.resource.${code}`, resourceTypes[code] ?? code);
-      return `<span class="package-resource-badge" title="${escapeHtml(label)}">${code}</span>`;
-    })
-    .join("");
-}
-
-const APP_MENU_PREVIEW_IDS = new Set([
-  "immunology",
-  "microbiology",
-  "human-anatomy-2",
-  "physiology-1",
-  "physiology-2",
-]);
 const APP_MENU_CHAPTER_COLORS = ["#14213d", "#2d4636", "#d36b31"];
 
 function groupManifestTopicsByChapter(topics) {
@@ -362,6 +346,16 @@ function groupManifestTopicsByChapter(topics) {
   return groups;
 }
 
+function renderAppMenuResourcePills(resources) {
+  const codes = resources?.length ? resources : ["V", "P", "I", "Q"];
+  return codes
+    .map((code) => {
+      const label = packageText(`packagesUi.resource.${code}`, code);
+      return `<span class="package-app-menu__pill">${escapeHtml(label)}</span>`;
+    })
+    .join("");
+}
+
 function renderAppMenuPreview(topics) {
   const groups = groupManifestTopicsByChapter(topics);
   const aria = packageText("packagesUi.appMenuAria", "Chapter menu");
@@ -369,15 +363,21 @@ function renderAppMenuPreview(topics) {
   const branches = groups
     .map((group, index) => {
       const color = APP_MENU_CHAPTER_COLORS[index % APP_MENU_CHAPTER_COLORS.length];
-      const children = group.topics
-        .map(
-          (topic) => `
-            <div class="package-app-menu__child">
-              <span class="package-app-menu__child-title">${escapeHtml(topic.title)}</span>
-              <span class="package-app-menu__arrow" aria-hidden="true">›</span>
-            </div>`,
-        )
-        .join("");
+      const isFlat = group.topics.length === 1 && group.topics[0].title === group.label;
+      const children = isFlat
+        ? `<div class="package-app-menu__resources">${renderAppMenuResourcePills(group.topics[0].resources)}</div>`
+        : group.topics
+            .map(
+              (topic) => `
+            <details class="package-app-menu__lesson">
+              <summary class="package-app-menu__child">
+                <span class="package-app-menu__child-title">${escapeHtml(topic.title)}</span>
+                <span class="package-app-menu__arrow" aria-hidden="true">›</span>
+              </summary>
+              <div class="package-app-menu__resources">${renderAppMenuResourcePills(topic.resources)}</div>
+            </details>`,
+            )
+            .join("");
       return `
         <details class="package-app-menu__branch"${index === 0 ? " open" : ""}>
           <summary class="package-app-menu__parent" style="background-color: ${color}">
@@ -398,43 +398,30 @@ function renderAppMenuPreview(topics) {
 
 function renderSyllabusBlock(pkg, catalog, manifest) {
   const isSoon = pkg.status !== "live" || !pkg.url;
-  const purchasable = isPurchasablePackage(pkg.id, catalog);
   const topics = manifest?.packages?.[pkg.id]?.topics ?? [];
-  const summaryLabel = packageText("packagesUi.viewContents");
+  const showLabel = packageText("packagesUi.viewContents");
+  const hideLabel = packageText("packagesUi.hideContents", "Hide content");
 
   if (!topics.length) {
     if (!isSoon) return "";
     return `
       <details class="package-syllabus">
-        <summary>${escapeHtml(summaryLabel)}</summary>
+        <summary>
+          <span class="package-syllabus-toggle__show">${escapeHtml(showLabel)}</span>
+          <span class="package-syllabus-toggle__hide">${escapeHtml(hideLabel)}</span>
+        </summary>
         <p class="package-syllabus-empty">${escapeHtml(packageText("packagesUi.syllabusPending"))}</p>
       </details>`;
   }
 
-  if (APP_MENU_PREVIEW_IDS.has(pkg.id)) {
-    return renderAppMenuPreview(topics);
-  }
-
-  const note = purchasable
-    ? packageText("packagesUi.syllabusNotePurchase")
-    : packageText("packagesUi.syllabusNoteBrowse");
-
-  const list = topics
-    .map(
-      (topic) => `
-        <li class="package-syllabus-topic">
-          <span class="package-syllabus-label">${escapeHtml(topic.label)}</span>
-          <span class="package-syllabus-badges">${renderResourceBadges(topic.resources, manifest.resourceTypes)}</span>
-        </li>`,
-    )
-    .join("");
-
   return `
     <details class="package-syllabus">
-      <summary>${escapeHtml(summaryLabel)} <span class="package-syllabus-count">${topics.length}</span></summary>
-      <p class="package-syllabus-note">${escapeHtml(note)}</p>
-      <ul class="package-syllabus-list">${list}</ul>
-      <p class="package-syllabus-legend">${escapeHtml(packageText("packagesUi.resourceLegend"))}</p>
+      <summary>
+        <span class="package-syllabus-toggle__show">${escapeHtml(showLabel)}</span>
+        <span class="package-syllabus-toggle__hide">${escapeHtml(hideLabel)}</span>
+        <span class="package-syllabus-count">${topics.length}</span>
+      </summary>
+      ${renderAppMenuPreview(topics)}
     </details>`;
 }
 

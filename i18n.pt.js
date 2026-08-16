@@ -102,13 +102,14 @@ SITE_LOCALES.pt = {
     buyNow: "Comprar {title}",
     openAccess: "Acesso livre",
     tryFree: "Experimentar grátis",
-    viewContents: "Ver conteúdo incluído",
+    viewContents: "Ver conteúdo",
+    hideContents: "Esconder conteúdo",
     syllabusNotePurchase:
       "Índice completo — acesso a vídeos, podcasts e exercícios após a compra.",
     syllabusNoteBrowse: "Índice completo do módulo — cada tema inclui os formatos abaixo.",
     syllabusPending: "Índice completo em breve.",
     appMenuAria: "Menu de capítulos",
-    appMenuHint: "Como vai aparecer na app Studio9",
+    appMenuHint: "Como vai aparecer na app Studio9 — abre um tópico para ver vídeo, podcast, infográfico e questionário",
     resourceLegend: "V · Vídeo · P · Podcast · I · Infográfico · Q · Questionário",
     resource: {
       V: "Vídeo",
@@ -734,9 +735,9 @@ SITE_LOCALES.pt = {
         "Fisiologia endócrina, nervosa, gastrointestinal, sentidos especiais e reprodutiva.",
     },
     immunology: {
-      title: "Imunologia",
+      title: "Imunologia e Imunopatologia",
       description:
-        "Imunidade adaptativa, vacinas, hipersensibilidade, autoimunidade e imunologia clínica.",
+        "Imunidade inata e adaptativa, depois hipersensibilidade, autoimunidade, imunodeficiência, transplante e imunidade tumoral.",
     },
     microbiology: {
       title: "Microbiologia",
@@ -811,8 +812,8 @@ SITE_LOCALES.pt = {
       desc: "Sistemas renal, digestivo, endócrino e reprodutor",
     },
     y2imm: {
-      name: "Imunologia",
-      desc: "Imunidade adaptativa, vacinas, alergias, autoimunidade",
+      name: "Imunologia e Imunopatologia",
+      desc: "Imunologia de base, hipersensibilidade, autoimunidade, imunodeficiência",
     },
     y2micro: {
       name: "Microbiologia",

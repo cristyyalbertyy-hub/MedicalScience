@@ -104,13 +104,14 @@ SITE_LOCALES.it = {
     buyNow: "Acquista {title}",
     openAccess: "Accesso libero",
     tryFree: "Prova gratis",
-    viewContents: "Vedi contenuti inclusi",
+    viewContents: "Vedi contenuti",
+    hideContents: "Nascondi contenuti",
     syllabusNotePurchase:
       "Indice completo — accesso a video, podcast ed esercizi dopo l'acquisto.",
     syllabusNoteBrowse: "Indice completo del modulo — ogni argomento include i formati sotto.",
     syllabusPending: "Indice completo in arrivo.",
     appMenuAria: "Menu dei capitoli",
-    appMenuHint: "Come apparirà nell'app Studio9",
+    appMenuHint: "Come apparirà nell'app Studio9 — apri un argomento per vedere video, podcast, infografica e questionario",
     resourceLegend: "V · Video · P · Podcast · I · Infografica · Q · Questionario",
     resource: {
       V: "Video",
@@ -734,9 +735,9 @@ SITE_LOCALES.it = {
         "Fisiologia endocrina, nervosa, gastrointestinale, sensi speciali e riproduttiva.",
     },
     immunology: {
-      title: "Immunologia",
+      title: "Immunologia e Immunopatologia",
       description:
-        "Immunità adattativa, vaccini, ipersensibilità, autoimmunità e immunologia clinica.",
+        "Immunità innata e adattativa, poi ipersensibilità, autoimmunità, immunodeficienza, trapianto e immunità tumorale.",
     },
     microbiology: {
       title: "Microbiologia",
@@ -811,8 +812,8 @@ SITE_LOCALES.it = {
       desc: "Sistemi renale, digestivo, endocrino e riproduttivo",
     },
     y2imm: {
-      name: "Immunologia",
-      desc: "Immunità adattativa, vaccini, allergie, autoimmunità",
+      name: "Immunologia e Immunopatologia",
+      desc: "Immunologia di base, ipersensibilità, autoimmunità, immunodeficienza",
     },
     y2micro: {
       name: "Microbiologia",

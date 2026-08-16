@@ -2257,31 +2257,48 @@ body.contact-modal-open {
 
 .package-syllabus {
   margin: 0 0 1rem;
-  border: 1px solid rgba(31, 78, 107, 0.12);
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.72);
+  background: transparent;
 }
 
-.package-syllabus summary {
-  cursor: pointer;
-  font-weight: 700;
+.package-syllabus > summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(31, 78, 107, 0.18);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
   color: var(--primary);
-  padding: 0.75rem 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
   list-style: none;
 }
 
-.package-syllabus summary::-webkit-details-marker {
+.package-syllabus > summary::-webkit-details-marker {
   display: none;
 }
 
-.package-syllabus summary::before {
-  content: "▸ ";
-  display: inline-block;
-  transition: transform 0.15s ease;
+.package-syllabus > summary::marker {
+  content: "";
 }
 
-.package-syllabus[open] summary::before {
-  transform: rotate(90deg);
+.package-syllabus[open] > summary {
+  margin-bottom: 0.7rem;
+  background: rgba(31, 78, 107, 0.08);
+}
+
+.package-syllabus-toggle__hide {
+  display: none;
+}
+
+.package-syllabus[open] > summary .package-syllabus-toggle__show {
+  display: none;
+}
+
+.package-syllabus[open] > summary .package-syllabus-toggle__hide {
+  display: inline;
 }
 
 .package-syllabus-count {
@@ -2344,10 +2361,9 @@ body.contact-modal-open {
 .package-app-menu__hint {
   margin: 0 0 0.55rem;
   color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .package-app-menu__panel {
@@ -2409,12 +2425,19 @@ body.contact-modal-open {
   border-top: 3px solid #a8dadc;
 }
 
+.package-app-menu__lesson {
+  margin-bottom: 0.3rem;
+}
+
+.package-app-menu__lesson:last-child {
+  margin-bottom: 0;
+}
+
 .package-app-menu__child {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  margin-bottom: 0.3rem;
   padding: 0.62rem 0.72rem;
   border: 1px solid #b8c5bc;
   border-radius: 10px;
@@ -2422,11 +2445,17 @@ body.contact-modal-open {
   color: #1a1a1a;
   font-size: 0.88rem;
   font-weight: 600;
+  cursor: pointer;
+  list-style: none;
   box-shadow: 0 2px 14px rgba(20, 33, 61, 0.07);
 }
 
-.package-app-menu__child:last-child {
-  margin-bottom: 0;
+.package-app-menu__child::-webkit-details-marker {
+  display: none;
+}
+
+.package-app-menu__child::marker {
+  content: "";
 }
 
 .package-app-menu__child-title {
@@ -2438,6 +2467,28 @@ body.contact-modal-open {
   color: #5c6b63;
   font-size: 1.1rem;
   line-height: 1;
+  transition: transform 0.15s ease;
+}
+
+.package-app-menu__lesson[open] .package-app-menu__arrow {
+  transform: rotate(90deg);
+}
+
+.package-app-menu__resources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.4rem 0.15rem 0.2rem;
+}
+
+.package-app-menu__pill {
+  border: 1px solid #cfd9d2;
+  border-radius: 999px;
+  background: #f3f1ea;
+  color: #2f3e36;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.38rem 0.85rem;
 }
 
 .package-resource-badge {

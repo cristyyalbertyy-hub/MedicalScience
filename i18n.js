@@ -109,13 +109,14 @@ const SITE_LOCALES = {
       buyNow: "Buy {title}",
       openAccess: "Free access",
       tryFree: "Try free",
-      viewContents: "View included content",
+      viewContents: "View content",
+      hideContents: "Hide content",
       syllabusNotePurchase:
         "Full index — access to videos, podcasts and exercises after purchase.",
       syllabusNoteBrowse: "Full module index — each topic includes the formats below.",
       syllabusPending: "Full index coming soon.",
       appMenuAria: "Chapter menu",
-      appMenuHint: "As it will appear in the Studio9 app",
+      appMenuHint: "As it will appear in the Studio9 app — open a topic to see video, podcast, infographic and questions",
       resourceLegend: "V · Video · P · Podcast · I · Infographic · Q · Questions",
       resource: {
         V: "Video",
@@ -740,9 +741,9 @@ const SITE_LOCALES = {
           "Endocrine, nervous, gastrointestinal, special senses and reproductive physiology.",
       },
       immunology: {
-        title: "Immunology",
+        title: "Immunology and Immunopathology",
         description:
-          "Adaptive immunity, vaccines, hypersensitivity, autoimmunity and clinical immunology.",
+          "Innate and adaptive immunity, then hypersensitivity, autoimmunity, immunodeficiency, transplantation and tumour immunity.",
       },
       microbiology: {
         title: "Microbiology",
@@ -817,8 +818,8 @@ const SITE_LOCALES = {
         desc: "Renal, digestive, endocrine and reproductive systems",
       },
       y2imm: {
-        name: "Immunology",
-        desc: "Adaptive immunity, vaccines, allergies, autoimmunity",
+        name: "Immunology and Immunopathology",
+        desc: "Basic immunology, hypersensitivity, autoimmunity, immunodeficiency",
       },
       y2micro: {
         name: "Microbiology",
