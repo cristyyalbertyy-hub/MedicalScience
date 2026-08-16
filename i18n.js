@@ -19,7 +19,7 @@ const SITE_LOCALES = {
       },
       packages: {
         title: "All disciplines · Medical Science · Studio9",
-        description: "22 health-science disciplines — 15 live Studio9 apps and 7 coming soon.",
+        description: "22 health-science subjects - 14 live today, 8 coming soon.",
       },
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
@@ -173,9 +173,9 @@ const SITE_LOCALES = {
         eyebrow: "All disciplines",
         title: "22 subjects — pick the ones you need.",
         intro:
-          "Fifteen interactive Studio9 apps are live today. Seven more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
-        liveCount: "15 apps live now",
-        soonCount: "7 more coming soon",
+          "Fourteen interactive Studio9 apps are live today. Eight more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
+        liveCount: "14 apps live now",
+        soonCount: "8 more coming soon",
         hours: "40–60 hours per module",
         cta: "See all disciplines →",
       },
@@ -183,7 +183,7 @@ const SITE_LOCALES = {
         eyebrow: "Interactive catalogue",
         title: "All disciplines.",
         intro:
-          'Fifteen apps are live today — the rest are on the way. <a href="packages/">See the full list →</a>',
+          'Fourteen apps are live today — the rest are on the way. <a href="packages/">See the full list →</a>',
       },
       testimonials: {
         aria: "Testimonials",
@@ -269,7 +269,7 @@ const SITE_LOCALES = {
       hero: {
         eyebrow: "Interactive · catalogue",
         title: "All disciplines.",
-        text: "22 health-science subjects — 15 live apps today, 7 coming soon. Buy only what you need.",
+        text: "22 health-science subjects - 14 live today, 8 coming soon. Buy only what you need.",
       },
       sectionAria: "Health science disciplines",
       freeSpotlight: {

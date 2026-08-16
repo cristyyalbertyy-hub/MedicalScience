@@ -12,7 +12,7 @@ SITE_LOCALES.fr = {
     },
     packages: {
       title: "Forfaits prêts à l'emploi · Medical Science · Studio9",
-      description: "Forfaits Studio9 : quinze modules, quinze apps en ligne, 7 à venir.",
+      description: "22 disciplines de sciences de la santé - 14 en ligne aujourd'hui, 8 à venir.",
     },
     precos: {
       title: "Comment ça marche + Tarifs · Medical Science · Studio9",
@@ -168,16 +168,16 @@ SITE_LOCALES.fr = {
       eyebrow: "Toutes les disciplines",
       title: "22 matières — choisissez celles dont vous avez besoin.",
       intro:
-        "Quinze apps Studio9 sont déjà en ligne. Sept disciplines arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude — vidéos, podcasts, infographies et questionnaires.",
-      liveCount: "15 apps en ligne",
-      soonCount: "7 autres à venir",
+        "Quatorze apps Studio9 sont déjà en ligne. Huit disciplines arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude — vidéos, podcasts, infographies et questionnaires.",
+      liveCount: "14 apps en ligne",
+      soonCount: "8 autres à venir",
       hours: "40–60 heures par module",
       cta: "Voir toutes les disciplines →",
     },
     packages: {
       eyebrow: "Déjà disponibles",
       title: "Forfaits prêts à l'emploi.",
-      intro: 'Quinze forfaits Studio9 — quinze apps en ligne, sept à venir. <a href="packages/">Voir tous les forfaits →</a>',
+      intro: 'Quatorze apps Studio9 sont déjà en ligne — le reste arrive. <a href="packages/">Voir tous les forfaits →</a>',
     },
     testimonials: {
       aria: "Témoignages",
@@ -263,7 +263,7 @@ SITE_LOCALES.fr = {
     hero: {
       eyebrow: "Interactif · prêt à l'emploi",
       title: "Forfaits prêts à l'emploi.",
-      text: "22 disciplines de sciences de la santé — 15 apps en ligne aujourd'hui, 7 à venir. Achetez seulement ce dont vous avez besoin.",
+      text: "22 disciplines de sciences de la santé - 14 en ligne aujourd'hui, 8 à venir. Achetez seulement ce dont vous avez besoin.",
     },
     sectionAria: "Forfaits d'apprentissage prêts à l'emploi",
     freeSpotlight: {

@@ -12,7 +12,7 @@ SITE_LOCALES.pt = {
     },
     packages: {
       title: "Pacotes prontos · Medical Science · Studio9",
-      description: "Pacotes Studio9: quinze módulos, as quinze apps já disponíveis.",
+      description: "22 disciplinas de ciências da saúde - 14 disponíveis hoje, 8 em breve.",
     },
     precos: {
       title: "Como funciona + Preços · Medical Science · Studio9",
@@ -166,9 +166,9 @@ SITE_LOCALES.pt = {
       eyebrow: "Todas as disciplinas",
       title: "22 disciplinas — escolhe as que precisas.",
       intro:
-        "Quinze apps Studio9 já estão disponíveis. Sete disciplinas chegam em breve. Cada módulo inclui 40–60 horas de estudo — vídeos, podcasts, infográficos e questionários.",
-      liveCount: "15 apps disponíveis",
-      soonCount: "7 a caminho",
+        "Catorze apps Studio9 já estão disponíveis. Oito disciplinas chegam em breve. Cada módulo inclui 40–60 horas de estudo — vídeos, podcasts, infográficos e questionários.",
+      liveCount: "14 apps disponíveis",
+      soonCount: "8 a caminho",
       hours: "40–60 horas por módulo",
       cta: "Ver todas as disciplinas →",
     },
@@ -176,7 +176,7 @@ SITE_LOCALES.pt = {
       eyebrow: "Catálogo interactivo",
       title: "Todas as disciplinas.",
       intro:
-        'Quinze apps já estão online — o resto está a caminho. <a href="packages/">Ver a lista completa →</a>',
+        'Catorze apps já estão online — o resto está a caminho. <a href="packages/">Ver a lista completa →</a>',
     },
     testimonials: {
       aria: "Testemunhos",
@@ -262,7 +262,7 @@ SITE_LOCALES.pt = {
     hero: {
       eyebrow: "Interactivo · catálogo",
       title: "Todas as disciplinas.",
-      text: "22 disciplinas de ciências da saúde — 15 apps disponíveis hoje, 7 em breve. Compra só o que precisas.",
+      text: "22 disciplinas de ciências da saúde - 14 disponíveis hoje, 8 em breve. Compra só o que precisas.",
     },
     sectionAria: "Disciplinas de ciências da saúde",
     freeSpotlight: {

@@ -12,7 +12,7 @@ SITE_LOCALES.es = {
     },
     packages: {
       title: "Pacotes prontos · Medical Science · Studio9",
-      description: "Paquetes Studio9: quince módulos, quince apps ya disponibles, 7 en camino.",
+      description: "22 asignaturas de ciencias de la salud - 14 disponibles hoy, 8 en camino.",
     },
     precos: {
       title: "Como funciona + Preços · Medical Science · Studio9",
@@ -168,16 +168,16 @@ SITE_LOCALES.es = {
       eyebrow: "Todas las disciplinas",
       title: "22 asignaturas — elige las que necesitas.",
       intro:
-        "Quince apps Studio9 ya están disponibles. Siete disciplinas llegarán pronto. Cada módulo incluye 40–60 horas de estudio — vídeos, podcasts, infografías y cuestionarios.",
-      liveCount: "15 apps disponibles",
-      soonCount: "7 más en camino",
+        "Catorce apps Studio9 ya están disponibles. Ocho disciplinas llegarán pronto. Cada módulo incluye 40–60 horas de estudio — vídeos, podcasts, infografías y cuestionarios.",
+      liveCount: "14 apps disponibles",
+      soonCount: "8 más en camino",
       hours: "40–60 horas por módulo",
       cta: "Ver todas las disciplinas →",
     },
     packages: {
       eyebrow: "Ya disponibles",
       title: "Paquetes listos para usar.",
-      intro: 'Quince paquetes Studio9 — quince apps ya disponibles, siete en camino. <a href="packages/">Ver todos los paquetes →</a>',
+      intro: 'Catorce apps Studio9 ya disponibles — el resto está en camino. <a href="packages/">Ver todos los paquetes →</a>',
     },
     testimonials: {
       aria: "Testimonios",
@@ -263,7 +263,7 @@ SITE_LOCALES.es = {
     hero: {
       eyebrow: "Interactivo · listo para usar",
       title: "Paquetes listos para usar.",
-      text: "22 asignaturas de ciencias de la salud — 15 apps disponibles hoy, 7 en camino. Compra solo lo que necesitas.",
+      text: "22 asignaturas de ciencias de la salud - 14 disponibles hoy, 8 en camino. Compra solo lo que necesitas.",
     },
     sectionAria: "Paquetes de aprendizaje listos para usar",
     freeSpotlight: {
