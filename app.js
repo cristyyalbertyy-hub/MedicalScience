@@ -73,7 +73,7 @@ const READY_PACKAGES = [
   },
   {
     id: "history-of-medicine",
-    number: "09",
+    number: "11",
     title: "History of Medicine",
     description:
       "Key discoveries, figures and turning points that shaped modern health sciences.",
@@ -82,7 +82,7 @@ const READY_PACKAGES = [
   },
   {
     id: "moral-philosophy",
-    number: "10",
+    number: "12",
     title: "Moral Philosophy",
     description:
       "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
@@ -91,7 +91,7 @@ const READY_PACKAGES = [
   },
   {
     id: "health-technology-assessments",
-    number: "11",
+    number: "13",
     title: "Health Technology Assessments (EU)",
     description:
       "European Union focus — HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
@@ -100,7 +100,7 @@ const READY_PACKAGES = [
   },
   {
     id: "italian-health-system",
-    number: "12",
+    number: "14",
     title: "Italian Health System",
     description:
       "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
@@ -112,7 +112,7 @@ const READY_PACKAGES = [
 const SOON_PACKAGES = [
   {
     id: "human-anatomy-2",
-    number: "13",
+    number: "15",
     title: "Human Anatomy II",
     description:
       "Cardiovascular, respiratory, digestive, urinary and reproductive systems in depth.",
@@ -120,7 +120,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "physiology-2",
-    number: "14",
+    number: "16",
     title: "Physiology II",
     description:
       "Renal, digestive, endocrine and reproductive physiology for clinical reasoning.",
@@ -128,7 +128,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "immunology",
-    number: "15",
+    number: "17",
     title: "Immunology",
     description:
       "Adaptive immunity, vaccines, hypersensitivity, autoimmunity and clinical immunology.",
@@ -136,7 +136,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "microbiology",
-    number: "16",
+    number: "18",
     title: "Microbiology",
     description:
       "Bacteria, viruses, fungi and parasites — pathogenesis, diagnosis and treatment basics.",
@@ -144,7 +144,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "pharmacology-1",
-    number: "17",
+    number: "19",
     title: "Pharmacology I",
     description:
       "Pharmacokinetics, pharmacodynamics, and core drug classes for the nervous and cardiovascular systems.",
@@ -152,7 +152,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "epidemiology",
-    number: "18",
+    number: "20",
     title: "Epidemiology",
     description:
       "Frequency measures, study designs, screening and population health reasoning.",
@@ -160,7 +160,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "economics-health-policy",
-    number: "19",
+    number: "21",
     title: "Economics and Health Policy",
     description:
       "Health systems, funding models, and the social and political context of medicine.",
@@ -168,7 +168,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "systemic-pathology",
-    number: "20",
+    number: "22",
     title: "Systemic Pathology",
     description:
       "Organ-system pathology spanning heart, lung, kidney, liver and related clinical patterns.",
@@ -176,7 +176,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "clinical-medicine-1",
-    number: "21",
+    number: "23",
     title: "Clinical Medicine I",
     description:
       "Basic semiology, common symptoms and introductory clinical reasoning.",
@@ -184,7 +184,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "clinical-medicine-2",
-    number: "22",
+    number: "24",
     title: "Clinical Medicine II",
     description:
       "Common conditions such as hypertension, diabetes, asthma and major infections.",
@@ -198,12 +198,12 @@ const ALL_PACKAGES = [...READY_PACKAGES, ...SOON_PACKAGES];
 const PACKAGE_GROUPS_BEFORE_ID = "history-of-medicine";
 
 const PACKAGE_GROUP_NUMBERS = {
-  histology: "07a",
-  embryology: "07b",
-  "histology-embryology": "07",
-  chemistry: "08a",
-  "introductory-biochemistry": "08b",
-  "chemistry-introductory-biochemistry": "08",
+  histology: "07",
+  embryology: "08",
+  "histology-embryology": "07-08",
+  chemistry: "09",
+  "introductory-biochemistry": "10",
+  "chemistry-introductory-biochemistry": "09-10",
 };
 
 const SPLIT_PACKAGE_FALLBACK = {

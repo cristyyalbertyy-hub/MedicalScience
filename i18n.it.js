@@ -8,11 +8,11 @@ SITE_LOCALES.it = {
     curriculo: {
       title: "Programma completo · Medical Science · Studio9",
       description:
-        "Catalogo del corso Medical Science: 22 moduli con ore di studio e descrizione di ogni materia.",
+        "Catalogo del corso Medical Science: 24 moduli con ore di studio e descrizione di ogni materia.",
     },
     packages: {
       title: "Pacchetti pronti · Medical Science · Studio9",
-      description: "22 discipline di scienze della salute - 14 online oggi, 8 in arrivo.",
+      description: "24 discipline di scienze della salute - 14 online oggi, 10 in arrivo.",
     },
     precos: {
       title: "Come funziona + Prezzi · Medical Science · Studio9",
@@ -140,7 +140,7 @@ SITE_LOCALES.it = {
   },
   home: {
     hero: {
-      eyebrow: "Corso online · 22 moduli · App Studio9",
+      eyebrow: "Corso online · 24 moduli · App Studio9",
       title: "Medical Science — dove e quando vuoi.",
       lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
       ctaDisciplines: "Vedi tutte le discipline",
@@ -166,11 +166,11 @@ SITE_LOCALES.it = {
     },
     preview: {
       eyebrow: "Tutte le discipline",
-      title: "22 materie — scegli quelle che ti servono.",
+      title: "24 materie — scegli quelle che ti servono.",
       intro:
-        "Quattordici app Studio9 sono già online. Otto discipline arriveranno presto. Ogni modulo include 40–60 ore di studio — video, podcast, infografiche e questionari.",
+        "Quattordici app Studio9 sono già online. Dieci discipline arriveranno presto. Ogni modulo include 40–60 ore di studio — video, podcast, infografiche e questionari.",
       liveCount: "14 app online",
-      soonCount: "8 in arrivo",
+      soonCount: "10 in arrivo",
       hours: "40–60 ore per modulo",
       cta: "Vedi tutte le discipline →",
     },
@@ -240,9 +240,9 @@ SITE_LOCALES.it = {
   },
   curriculo: {
     hero: {
-      eyebrow: "22 moduli · App Studio9",
+      eyebrow: "24 moduli · App Studio9",
       title: "Catalogo completo · Medical Science",
-      text: "22 moduli. Ogni modulo = 40-60 ore di studio. Al tuo ritmo.",
+      text: "24 moduli. Ogni modulo = 40-60 ore di studio. Al tuo ritmo.",
       statModules: "moduli",
       statApps: "app live",
       mediaAria: "Panoramica dei pacchetti di apprendimento Studio9",
@@ -263,7 +263,7 @@ SITE_LOCALES.it = {
     hero: {
       eyebrow: "Interattivo · pronto all'uso",
       title: "Pacchetti pronti all'uso.",
-      text: "22 discipline di scienze della salute - 14 online oggi, 8 in arrivo. Acquista solo ciò che ti serve.",
+      text: "24 discipline di scienze della salute - 14 online oggi, 10 in arrivo. Acquista solo ciò che ti serve.",
     },
     sectionAria: "Pacchetti di apprendimento pronti all'uso",
     freeSpotlight: {

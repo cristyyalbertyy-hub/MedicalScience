@@ -15,11 +15,11 @@ const SITE_LOCALES = {
       curriculo: {
         title: "Full curriculum · Medical Science · Studio9",
         description:
-          "Medical Science course catalogue: 22 modules with study hours and a description for each subject.",
+          "Medical Science course catalogue: 24 modules with study hours and a description for each subject.",
       },
       packages: {
         title: "All disciplines · Medical Science · Studio9",
-        description: "22 health-science subjects - 14 live today, 8 coming soon.",
+        description: "24 health-science subjects - 14 live today, 10 coming soon.",
       },
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
@@ -145,7 +145,7 @@ const SITE_LOCALES = {
     },
     home: {
       hero: {
-        eyebrow: "Online course · 22 modules · Studio9 app",
+        eyebrow: "Online course · 24 modules · Studio9 app",
         title: "Medical Science — wherever and whenever you want.",
         lead: "Study anatomy, physiology, genetics and much more. In short videos, podcasts for the bus, and interactive exercises. All inside the Studio9 app.",
         ctaDisciplines: "Browse all disciplines",
@@ -171,11 +171,11 @@ const SITE_LOCALES = {
       },
       preview: {
         eyebrow: "All disciplines",
-        title: "22 subjects — pick the ones you need.",
+        title: "24 subjects — pick the ones you need.",
         intro:
-          "Fourteen interactive Studio9 apps are live today. Eight more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
+          "Fourteen interactive Studio9 apps are live today. Ten more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
         liveCount: "14 apps live now",
-        soonCount: "8 more coming soon",
+        soonCount: "10 more coming soon",
         hours: "40–60 hours per module",
         cta: "See all disciplines →",
       },
@@ -246,9 +246,9 @@ const SITE_LOCALES = {
     },
     curriculo: {
       hero: {
-        eyebrow: "22 modules · Studio9 apps",
+        eyebrow: "24 modules · Studio9 apps",
         title: "Full catalogue · Medical Science",
-        text: "22 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
+        text: "24 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
         statModules: "modules",
         statApps: "live apps",
         mediaAria: "Overview of Studio9 learning packages",
@@ -269,7 +269,7 @@ const SITE_LOCALES = {
       hero: {
         eyebrow: "Interactive · catalogue",
         title: "All disciplines.",
-        text: "22 health-science subjects - 14 live today, 8 coming soon. Buy only what you need.",
+        text: "24 health-science subjects - 14 live today, 10 coming soon. Buy only what you need.",
       },
       sectionAria: "Health science disciplines",
       freeSpotlight: {
