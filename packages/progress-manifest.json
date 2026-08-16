@@ -13,232 +13,117 @@
         {
           "id": "ls-at-sec",
           "label": "Locomotor System · Anatomical Terminology · Sections",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-at-loc",
           "label": "Locomotor System · Anatomical Terminology · Localization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-at-mt",
           "label": "Locomotor System · Anatomical Terminology · Movement terms",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-os-sk",
           "label": "Locomotor System · Osteology · Skull",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-os-as",
           "label": "Locomotor System · Osteology · Axial skeleton",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-os-aps",
           "label": "Locomotor System · Osteology · Appendicular skeleton",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-ar-jd",
           "label": "Locomotor System · Arthrology · Joint dynamics",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-ar-vc",
           "label": "Locomotor System · Arthrology · Vertebral column",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-ar-thx",
           "label": "Locomotor System · Arthrology · Thorax",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-ar-lim",
           "label": "Locomotor System · Arthrology · Limbs",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-my-ntm",
           "label": "Locomotor System · Myology · Neck and trunk muscles",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-my-cam",
           "label": "Locomotor System · Myology · Chest and abdomen muscles",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "ls-my-lm",
           "label": "Locomotor System · Myology · Limb muscles",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cls/cls-ph",
           "label": "Cardiovascular and Lymphatic Systems · Pericardium and heart",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cls/cls-cabv",
           "label": "Cardiovascular and Lymphatic Systems · Chest and abdomen blood vessels",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cls/cls-hnv",
           "label": "Cardiovascular and Lymphatic Systems · Head and neck vessels",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rs-oc-tt",
           "label": "Respiratory System and Cavities · Oral Cavity · Teeth and tongue",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rs-oc-sg",
           "label": "Respiratory System and Cavities · Oral Cavity · Salivary glands",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rs-oc-fm",
           "label": "Respiratory System and Cavities · Oral Cavity · Face muscles",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rs/rs-ncs",
           "label": "Respiratory System and Cavities · Nasal cavity and sinuses",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rs/rs-pl",
           "label": "Respiratory System and Cavities · Pharynx and larynx",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rs/rs-tl",
           "label": "Respiratory System and Cavities · Trachea and lungs",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rs/rs-pm",
           "label": "Respiratory System and Cavities · Pleura and mediastinum",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -248,192 +133,97 @@
         {
           "id": "cell-theory",
           "label": "Cell Fundamentals · Cell Theory",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "macromolecules",
           "label": "Cell Fundamentals · Macromolecules",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "prokaryotic-vs-eukaryotic",
           "label": "Cell Fundamentals · Prokaryotic vs Eukaryotic",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "viruses",
           "label": "Cell Fundamentals · Viruses",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "plasma-membrane",
           "label": "Cell Structure & Function · Plasma Membrane",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "organelles",
           "label": "Cell Structure & Function · Organelles",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cytoskeleton",
           "label": "Cell Structure & Function · Cytoskeleton",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "mitochondria",
           "label": "Cell Structure & Function · Mitochondria",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "dna-structure-duplication",
           "label": "Molecular Biology · DNA Structure & Duplication",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "rna-transcription",
           "label": "Molecular Biology · RNA & Transcription",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "protein-synthesis",
           "label": "Molecular Biology · Protein Synthesis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "gene-expression-control",
           "label": "Molecular Biology · Gene Expression Control",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cell-trafficking",
           "label": "Cellular Processes · Cell Trafficking",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "mitosis-meiosis",
           "label": "Cellular Processes · Mitosis & Meiosis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cell-death",
           "label": "Cellular Processes · Cell Death",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cell-signaling",
           "label": "Cellular Processes · Cell Signaling",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "tumour-transformation",
           "label": "Cancer Biology · Tumour Transformation",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "proto-oncogenes",
           "label": "Cancer Biology · Proto-oncogenes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "tumour-suppressors",
           "label": "Cancer Biology · Tumour Suppressors",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -443,102 +233,52 @@
         {
           "id": "BG/T",
           "label": "Basic Genetics · Terminology",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "BG/MP",
           "label": "Basic Genetics · Mendelian Principles",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "BG/PG",
           "label": "Basic Genetics · Population Genetics",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IM/M",
           "label": "Inheritance Models · Monogenic",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IM/C",
           "label": "Inheritance Models · Chromosomal",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IM/Mu",
           "label": "Inheritance Models · Multifactorial",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IM/Mi",
           "label": "Inheritance Models · Mitochondrial",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CA/PA",
           "label": "Clinical Application · Pedigree Analysis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CA/RC",
           "label": "Clinical Application · Risk Calculation",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CA/GD",
           "label": "Clinical Application · Genetic Diagnosis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -548,212 +288,107 @@
         {
           "id": "M/MU",
           "label": "Mechanics · Measurement and Units",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "M/K",
           "label": "Mechanics · Kinematics",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "M/NL",
           "label": "Mechanics · Newton's Laws",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "M/WE",
           "label": "Mechanics · Work and Energy",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "M/RM",
           "label": "Mechanics · Rotational Motion",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EM/ECF",
           "label": "Electricity & Magnetism · Electric Charge and Field",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EM/EP",
           "label": "Electricity & Magnetism · Electric Potential",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EM/ECDC",
           "label": "Electricity & Magnetism · Electric Currents and DC Circuits",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EM/M",
           "label": "Electricity & Magnetism · Magnetism",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EM/EI",
           "label": "Electricity & Magnetism · Electromagnetic Induction",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "VW/WMS",
           "label": "Vibrations & Waves · Wave Motion and Sound",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "VW/EW",
           "label": "Vibrations & Waves · Electromagnetic Waves",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "VW/LO",
           "label": "Vibrations & Waves · Light and Optics",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "VW/XRC",
           "label": "Vibrations & Waves · X-Rays and CT Scans",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "T/TK",
           "label": "Thermodynamics · Temperature and Kinetic Theory",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "T/HC",
           "label": "Thermodynamics · Heat and Calorimetry",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "T/TL",
           "label": "Thermodynamics · Thermodynamic Laws",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "N/R",
           "label": "Nuclear Physics · Radioactivity",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "N/NF",
           "label": "Nuclear Physics · Nuclear Forces",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "N/MN",
           "label": "Nuclear Physics · MRI and NMR",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "F/FL",
           "label": "Fluids · Properties, pressure, and flow",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -763,52 +398,27 @@
         {
           "id": "HIS",
           "label": "Health Information Systems",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EMR",
           "label": "Electronic Medical Records",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "PS",
           "label": "Privacy and Security",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "DS",
           "label": "DataBase and SQL",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "DM",
           "label": "Data Mining",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -818,342 +428,172 @@
         {
           "id": "populations-and-samples",
           "label": "Basics and Data · Populations and Samples",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "variable-types",
           "label": "Basics and Data · Variable Types",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "data-display",
           "label": "Basics and Data · Data Display",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "mean-sd-standard-error",
           "label": "Numerical Outcome Analysis · Mean, SD, and Standard Error",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "normal-distribution",
           "label": "Numerical Outcome Analysis · Normal Distribution",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "confidence-intervals-means",
           "label": "Numerical Outcome Analysis · Confidence Intervals of Means",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hypothesis-testing-p-values",
           "label": "Numerical Outcome Analysis · Hypothesis Testing and P-values",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "comparison-two-means-t-tests",
           "label": "Numerical Outcome Analysis · Comparison of Two Means (t-tests)",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "analysis-of-variance-anova",
           "label": "Numerical Outcome Analysis · Analysis of Variance (ANOVA)",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "linear-and-multiple-regression",
           "label": "Numerical Outcome Analysis · Linear and Multiple Regression",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "correlation-coefficients",
           "label": "Numerical Outcome Analysis · Correlation Coefficients",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "differences-risks-and-odds",
           "label": "Binary Outcome Analysis · Differences, Risks, and Odds",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "binomial-distribution",
           "label": "Binary Outcome Analysis · Binomial Distribution",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "comparing-proportions",
           "label": "Binary Outcome Analysis · Comparing Proportions",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "chi-squared-tests",
           "label": "Binary Outcome Analysis · Chi-squared Tests",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "confounding-and-stratification",
           "label": "Binary Outcome Analysis · Confounding and Stratification",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "logistic-regression",
           "label": "Binary Outcome Analysis · Logistic Regression",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "matching-studies",
           "label": "Binary Outcome Analysis · Matching Studies",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "odds-and-hazard-ratios",
           "label": "Longitudinal and Survival Analysis · Odds and Hazard Ratios",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "computing-risks",
           "label": "Longitudinal and Survival Analysis · Computing Risks",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "survival-analysis-kaplan-meier",
           "label": "Longitudinal and Survival Analysis · Survival Analysis (Kaplan-Meier)",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "regression-analysis-cox-hazards",
           "label": "Longitudinal and Survival Analysis · Regression Analysis (Cox Hazards)",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "standardization",
           "label": "Longitudinal and Survival Analysis · Standardization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "likelihood-theory",
           "label": "Statistical Modelling · Likelihood Theory",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "non-parametric-methods-ranking",
           "label": "Statistical Modelling · Non-parametric Methods (Ranking)",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "bayesian-methods",
           "label": "Statistical Modelling · Bayesian Methods",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "systematic-reviews-meta-analysis",
           "label": "Statistical Modelling · Systematic Reviews and Meta-Analysis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "diagnostic-test-analysis",
           "label": "Statistical Modelling · Diagnostic Test Analysis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "bootstrapping-and-jackknifing",
           "label": "Statistical Modelling · Bootstrapping and Jackknifing",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "sample-size-and-power-calculation",
           "label": "Study Design and Interpretation · Sample Size and Power Calculation",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "measurement-error-reproducibility",
           "label": "Study Design and Interpretation · Measurement Error and Reproducibility",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "measures-of-association-impact",
           "label": "Study Design and Interpretation · Measures of Association and Impact",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "analysis-of-bias",
           "label": "Study Design and Interpretation · Analysis of Bias",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "causal-inference-studies",
           "label": "Study Design and Interpretation · Causal Inference and Studies",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -1163,112 +603,57 @@
         {
           "id": "cy-eco",
           "label": "Elements of Cytology · Eukaryotic cell organization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cy-om",
           "label": "Elements of Cytology · Organelles and membranes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cy-nc",
           "label": "Elements of Cytology · Nucleus and chromatin",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cy-cd",
           "label": "Elements of Cytology · Cell cycle and death",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-eg",
           "label": "Histology · Tissues · Epithelia and Glands",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-ct",
           "label": "Histology · Tissues · Connective Tissues and ECM",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-cb",
           "label": "Histology · Tissues · Cartilage and Bone",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-bh",
           "label": "Histology · Tissues · Blood and Hemopoiesis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-il",
           "label": "Histology · Tissues · Immune and Lymphatic organs",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-mt",
           "label": "Histology · Tissues · Muscle Tissues",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-nt",
           "label": "Histology · Tissues · Nervous Tissue",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -1278,152 +663,77 @@
         {
           "id": "em-sp",
           "label": "Embryology · Gametogenesis · Spermatogenesis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-og",
           "label": "Embryology · Gametogenesis · Oogenesis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-hc",
           "label": "Embryology · Gametogenesis · Hormonal control",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-fe",
           "label": "Embryology · Early Development · Fertilization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-w14",
           "label": "Embryology · Early Development · Weeks 1–4",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-pl",
           "label": "Embryology · Early Development · Primitive layers",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-ef",
           "label": "Embryology · Early Development · Embryonic folding",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em/em-sr",
           "label": "Embryology · Stem Cells and Regeneration",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em/em-pm",
           "label": "Embryology · Placenta and Membranes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-in",
           "label": "Organogenesis · Integumentary system",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-hn",
           "label": "Organogenesis · Head, neck, and oropharyngeal",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-gr",
           "label": "Organogenesis · Gut and Respiratory",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-ug",
           "label": "Organogenesis · Urogenital",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-sm",
           "label": "Organogenesis · Skeleton and Muscle",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-nc",
           "label": "Organogenesis · Nervous and Cardiovascular",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -1433,262 +743,132 @@
         {
           "id": "cy-eco",
           "label": "Elements of Cytology · Eukaryotic cell organization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cy-om",
           "label": "Elements of Cytology · Organelles and membranes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cy-nc",
           "label": "Elements of Cytology · Nucleus and chromatin",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "cy-cd",
           "label": "Elements of Cytology · Cell cycle and death",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-eg",
           "label": "Histology · Tissues · Epithelia and Glands",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-ct",
           "label": "Histology · Tissues · Connective Tissues and ECM",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-cb",
           "label": "Histology · Tissues · Cartilage and Bone",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-bh",
           "label": "Histology · Tissues · Blood and Hemopoiesis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-il",
           "label": "Histology · Tissues · Immune and Lymphatic organs",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-mt",
           "label": "Histology · Tissues · Muscle Tissues",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "hi-nt",
           "label": "Histology · Tissues · Nervous Tissue",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-sp",
           "label": "Embryology · Gametogenesis · Spermatogenesis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-og",
           "label": "Embryology · Gametogenesis · Oogenesis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-hc",
           "label": "Embryology · Gametogenesis · Hormonal control",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-fe",
           "label": "Embryology · Early Development · Fertilization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-w14",
           "label": "Embryology · Early Development · Weeks 1–4",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-pl",
           "label": "Embryology · Early Development · Primitive layers",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em-ef",
           "label": "Embryology · Early Development · Embryonic folding",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em/em-sr",
           "label": "Embryology · Stem Cells and Regeneration",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "em/em-pm",
           "label": "Embryology · Placenta and Membranes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-in",
           "label": "Organogenesis · Integumentary system",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-hn",
           "label": "Organogenesis · Head, neck, and oropharyngeal",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-gr",
           "label": "Organogenesis · Gut and Respiratory",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-ug",
           "label": "Organogenesis · Urogenital",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-sm",
           "label": "Organogenesis · Skeleton and Muscle",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "or-nc",
           "label": "Organogenesis · Nervous and Cardiovascular",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -1698,262 +878,132 @@
         {
           "id": "AS_API",
           "label": "General Chemistry · Atomic Structure · Atomic particles and isotopes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AS_QMM",
           "label": "General Chemistry · Atomic Structure · Quantum mechanical model",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AS_QNO",
           "label": "General Chemistry · Atomic Structure · Quantum numbers and orbitals",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AS_CB",
           "label": "General Chemistry · Atomic Structure · Chemical bonds",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_GIGL",
           "label": "General Chemistry · Matter and Thermodynamics · Gases and their properties",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_LVP",
           "label": "General Chemistry · Matter and Thermodynamics · Liquid-vapor pressure",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_SC",
           "label": "General Chemistry · Matter and Thermodynamics · Solids classification",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_EEFE",
           "label": "General Chemistry · Matter and Thermodynamics · Entropy, Energy and Free energy",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_CD",
           "label": "General Chemistry · Solutions and Equilibrium · Concentration and Dilution",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_KEL",
           "label": "General Chemistry · Solutions and Equilibrium · Kinetics and Energy Laws",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_EC",
           "label": "General Chemistry · Solutions and Equilibrium · Equilibrium constants",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_LCF",
           "label": "General Chemistry · Solutions and Equilibrium · Le Chatelier's Principle",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_ABT",
           "label": "General Chemistry · Electrolytes and Kinetics · Acid-base theories",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_PB",
           "label": "General Chemistry · Electrolytes and Kinetics · pH and Buffers",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_CP",
           "label": "General Chemistry · Electrolytes and Kinetics · Colligative properties",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_AE",
           "label": "General Chemistry · Electrolytes and Kinetics · Activation energy",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_RR",
           "label": "General Chemistry · Electrolytes and Kinetics · Redox reactions",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_CH",
           "label": "Organic Chemistry · Hydrocarbons · Carbon hybridization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_AC",
           "label": "Organic Chemistry · Hydrocarbons · Alkanes and Cycloalkanes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_AA",
           "label": "Organic Chemistry · Hydrocarbons · Alkenes and Alkynes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_ACB",
           "label": "Organic Chemistry · Hydrocarbons · Aromatic compounds and Benzene",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_APT",
           "label": "Organic Chemistry · Functional Groups · Alcohols, Phenols and Ethers",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_AK",
           "label": "Organic Chemistry · Functional Groups · Aldehydes and Ketones",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_CAE",
           "label": "Organic Chemistry · Functional Groups · Carboxylic acids and Esters",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_AA",
           "label": "Organic Chemistry · Functional Groups · Amines and Amides",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "OC_SC",
           "label": "Organic Chemistry · Stereochemistry and Chirality",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -1963,42 +1013,22 @@
         {
           "id": "IB_CM",
           "label": "Introductory Biochemistry · Carbohydrates and Monosaccharides",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IB_AP",
           "label": "Introductory Biochemistry · Amino acids and Proteins",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IB_LSP",
           "label": "Introductory Biochemistry · Lipids and Biomembranes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IB_NBN",
           "label": "Introductory Biochemistry · Nitrogen Bases and Nucleotides",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -2008,302 +1038,152 @@
         {
           "id": "AS_API",
           "label": "General Chemistry · Atomic Structure · Atomic particles and isotopes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AS_QMM",
           "label": "General Chemistry · Atomic Structure · Quantum mechanical model",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AS_QNO",
           "label": "General Chemistry · Atomic Structure · Quantum numbers and orbitals",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AS_CB",
           "label": "General Chemistry · Atomic Structure · Chemical bonds",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_GIGL",
           "label": "General Chemistry · Matter and Thermodynamics · Gases and their properties",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_LVP",
           "label": "General Chemistry · Matter and Thermodynamics · Liquid-vapor pressure",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_SC",
           "label": "General Chemistry · Matter and Thermodynamics · Solids classification",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "MT_EEFE",
           "label": "General Chemistry · Matter and Thermodynamics · Entropy, Energy and Free energy",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_CD",
           "label": "General Chemistry · Solutions and Equilibrium · Concentration and Dilution",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_KEL",
           "label": "General Chemistry · Solutions and Equilibrium · Kinetics and Energy Laws",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_EC",
           "label": "General Chemistry · Solutions and Equilibrium · Equilibrium constants",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SE_LCF",
           "label": "General Chemistry · Solutions and Equilibrium · Le Chatelier's Principle",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_ABT",
           "label": "General Chemistry · Electrolytes and Kinetics · Acid-base theories",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_PB",
           "label": "General Chemistry · Electrolytes and Kinetics · pH and Buffers",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_CP",
           "label": "General Chemistry · Electrolytes and Kinetics · Colligative properties",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_AE",
           "label": "General Chemistry · Electrolytes and Kinetics · Activation energy",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "EK_RR",
           "label": "General Chemistry · Electrolytes and Kinetics · Redox reactions",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_CH",
           "label": "Organic Chemistry · Hydrocarbons · Carbon hybridization",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_AC",
           "label": "Organic Chemistry · Hydrocarbons · Alkanes and Cycloalkanes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_AA",
           "label": "Organic Chemistry · Hydrocarbons · Alkenes and Alkynes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "H_ACB",
           "label": "Organic Chemistry · Hydrocarbons · Aromatic compounds and Benzene",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_APT",
           "label": "Organic Chemistry · Functional Groups · Alcohols, Phenols and Ethers",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_AK",
           "label": "Organic Chemistry · Functional Groups · Aldehydes and Ketones",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_CAE",
           "label": "Organic Chemistry · Functional Groups · Carboxylic acids and Esters",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "FG_AA",
           "label": "Organic Chemistry · Functional Groups · Amines and Amides",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "OC_SC",
           "label": "Organic Chemistry · Stereochemistry and Chirality",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IB_CM",
           "label": "Introductory Biochemistry · Carbohydrates and Monosaccharides",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IB_AP",
           "label": "Introductory Biochemistry · Amino acids and Proteins",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IB_LSP",
           "label": "Introductory Biochemistry · Lipids and Biomembranes",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "IB_NBN",
           "label": "Introductory Biochemistry · Nitrogen Bases and Nucleotides",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -2313,112 +1193,57 @@
         {
           "id": "AF_MAG",
           "label": "Ancient Foundations · Medicine of Ancient Greece",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AF_HRM",
           "label": "Ancient Foundations · Hippocrates and Rational Medicine",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AF_THM",
           "label": "Ancient Foundations · Theory of Humors",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "AF_ARI",
           "label": "Ancient Foundations · Aristotle",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SA_SRE",
           "label": "Scientific Advancement · Scientific Revolution",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SA_VES",
           "label": "Scientific Advancement · Andreas Vesalius and Dissection",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SA_HAR",
           "label": "Scientific Advancement · William Harvey",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "SA_FLE",
           "label": "Scientific Advancement · Alexander Fleming",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "PH_JEN",
           "label": "Public Health · Edward Jenner and Vaccines",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "PH_SEM",
           "label": "Public Health · Ignaz Semmelweis",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "PH_MGE",
           "label": "Public Health · Medical Geography",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -2428,112 +1253,57 @@
         {
           "id": "TF/MS",
           "label": "Theoretical Foundations · Moral Systems",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "TF/PA",
           "label": "Theoretical Foundations · Philosophical Anthropology",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "TF/SER",
           "label": "Theoretical Foundations · Science and Ethics Relationship",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CE/PPR",
           "label": "Clinical Ethics · Patient–Physician Relationship",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CE/NM",
           "label": "Clinical Ethics · Narrative Medicine",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CE/E",
           "label": "Clinical Ethics · Empathy",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CE/EC",
           "label": "Clinical Ethics · Ethical Committees",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "GC/SDG",
           "label": "Global Context · Sustainable Development Goals 2030",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "GC/HD",
           "label": "Global Context · Health Diplomacy",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "GC/HRH",
           "label": "Global Context · Human Rights and Health",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "GC/TM",
           "label": "Global Context · Transcultural Medicine",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -2543,32 +1313,17 @@
         {
           "id": "ER",
           "label": "European Regulations in Health Technology Assessment",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "CCA",
           "label": "Cost Consequences Approach",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         },
         {
           "id": "HTAS",
           "label": "HTA Structure",
-          "resources": [
-            "V",
-            "P",
-            "I",
-            "Q"
-          ]
+          "resources": ["V", "P", "I", "Q"]
         }
       ]
     },
@@ -2743,6 +1498,356 @@
         {
           "id": "AM_AR",
           "label": "Antimicrobials · Antimicrobial resistance",
+          "resources": ["V", "P", "I", "Q"]
+        }
+      ]
+    },
+    "human-anatomy-2": {
+      "title": "Human Anatomy II",
+      "topics": [
+        {
+          "id": "SP_RS",
+          "label": "Splanchnology · Respiratory system and mediastinum",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SP_PC",
+          "label": "Splanchnology · Peritoneal cavity",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SP_DS",
+          "label": "Splanchnology · Digestive system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SP_AM",
+          "label": "Splanchnology · Abdomino-pelvic musculature and inguinal canal",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SP_LP",
+          "label": "Splanchnology · Liver and pancreas",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SP_US",
+          "label": "Splanchnology · Urinary system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SP_GS",
+          "label": "Splanchnology · Male and female genital system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SP_ES",
+          "label": "Splanchnology · Endocrine system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_MS",
+          "label": "Neuroanatomy · Microscopic structures of nervous system function",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_SM",
+          "label": "Neuroanatomy · Sensory and motor pathways",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_SC",
+          "label": "Neuroanatomy · Spinal cord",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_BS",
+          "label": "Neuroanatomy · Brain stem",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_CB",
+          "label": "Neuroanatomy · Cerebellum",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_DI",
+          "label": "Neuroanatomy · Diencephalon",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_TE",
+          "label": "Neuroanatomy · Telencephalon",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_FS",
+          "label": "Neuroanatomy · Functional systems",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_CN",
+          "label": "Neuroanatomy · Cranial nerve nuclei and plexuses",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_MC",
+          "label": "Neuroanatomy · Meninges and CSF system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_VX",
+          "label": "Neuroanatomy · CNS vascularization",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_AN",
+          "label": "Neuroanatomy · Autonomic nervous system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NA_PN",
+          "label": "Neuroanatomy · Peripheral nervous system",
+          "resources": ["V", "P", "I", "Q"]
+        }
+      ]
+    },
+    "physiology-1": {
+      "title": "Physiology I",
+      "topics": [
+        {
+          "id": "GP_MP",
+          "label": "General Physiology · Cell membrane potentials",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "GP_ST",
+          "label": "General Physiology · Synaptic transmission",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BL_PC",
+          "label": "Blood · Plasma composition",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BL_RBC",
+          "label": "Blood · Red blood cells: erythropoiesis and hemoglobin",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BL_WBC",
+          "label": "Blood · White blood cells",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BL_PL",
+          "label": "Blood · Platelets and hemostasis",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BL_BG",
+          "label": "Blood · Blood groups",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CV_CE",
+          "label": "Cardiovascular System · Cardiac cycle and EKG",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CV_CO",
+          "label": "Cardiovascular System · Cardiac output, stroke volume and Starling's law",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CV_HD",
+          "label": "Cardiovascular System · Hemodynamics: blood pressure, flow and resistance",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CV_RG",
+          "label": "Cardiovascular System · Regulation: baroreceptors and autonomic control",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "CV_MC",
+          "label": "Cardiovascular System · Microcirculation and capillary exchange",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RS_MV",
+          "label": "Respiratory System · Mechanics of ventilation",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RS_SP",
+          "label": "Respiratory System · Spirometry",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RS_GE",
+          "label": "Respiratory System · Gas exchange",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RS_TR",
+          "label": "Respiratory System · O2/CO2 transport in blood",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RS_RR",
+          "label": "Respiratory System · Regulation of respiration",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RS_AB",
+          "label": "Respiratory System · Acid-base balance",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "KD_GF",
+          "label": "Kidney and Body Fluids · Glomerular filtration",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "KD_TR",
+          "label": "Kidney and Body Fluids · Tubular reabsorption and secretion",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "KD_UC",
+          "label": "Kidney and Body Fluids · Urine concentration",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "KD_EC",
+          "label": "Kidney and Body Fluids · Regulation of ECF volume and osmolality",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "KD_EL",
+          "label": "Kidney and Body Fluids · Regulation of K+, Ca2+ and phosphate",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "KD_AB",
+          "label": "Kidney and Body Fluids · Renal acid-base regulation",
+          "resources": ["V", "P", "I", "Q"]
+        }
+      ]
+    },
+    "physiology-2": {
+      "title": "Physiology II",
+      "topics": [
+        {
+          "id": "EN_HP",
+          "label": "Endocrine System · Hypothalamus-pituitary axis",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "EN_TH",
+          "label": "Endocrine System · Thyroid hormones",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "EN_AC",
+          "label": "Endocrine System · Adrenal cortex",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "EN_AM",
+          "label": "Endocrine System · Adrenal medulla",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "EN_IG",
+          "label": "Endocrine System · Insulin and glucagon",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "EN_PT",
+          "label": "Endocrine System · Parathyroid hormone and calcitonin",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "EN_VD",
+          "label": "Endocrine System · Vitamin D",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NS_SS",
+          "label": "Nervous System · Sensory systems",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NS_MC",
+          "label": "Nervous System · Motor control",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NS_AN",
+          "label": "Nervous System · Autonomic nervous system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "NS_HF",
+          "label": "Nervous System · Higher functions",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "GI_MO",
+          "label": "Gastrointestinal Physiology · Motility",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "GI_SE",
+          "label": "Gastrointestinal Physiology · Secretion",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "GI_DA",
+          "label": "Gastrointestinal Physiology · Digestion and absorption",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "GI_EN",
+          "label": "Gastrointestinal Physiology · Enteric nervous system and GI hormones",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SS_VI",
+          "label": "Special Senses · Vision",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SS_HE",
+          "label": "Special Senses · Hearing",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SS_VE",
+          "label": "Special Senses · Vestibular system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SS_OL",
+          "label": "Special Senses · Olfaction",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "SS_GU",
+          "label": "Special Senses · Gustation",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RP_MA",
+          "label": "Reproductive Physiology · Male reproductive physiology",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "RP_FE",
+          "label": "Reproductive Physiology · Female reproductive physiology",
           "resources": ["V", "P", "I", "Q"]
         }
       ]

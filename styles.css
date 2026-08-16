@@ -2337,6 +2337,109 @@ body.contact-modal-open {
   flex-shrink: 0;
 }
 
+.package-app-menu {
+  margin: 0 0 1rem;
+}
+
+.package-app-menu__hint {
+  margin: 0 0 0.55rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.package-app-menu__panel {
+  background: linear-gradient(180deg, #fffdf9 0%, #faf8f3 100%);
+  border: 1px solid #b8c5bc;
+  border-radius: 16px;
+  padding: 0.45rem;
+  box-shadow: 0 10px 36px rgba(20, 33, 61, 0.11);
+}
+
+.package-app-menu__branch + .package-app-menu__branch {
+  margin-top: 0.35rem;
+}
+
+.package-app-menu__parent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.72rem 0.75rem;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.package-app-menu__parent::-webkit-details-marker {
+  display: none;
+}
+
+.package-app-menu__parent::marker {
+  content: "";
+}
+
+.package-app-menu__caret {
+  width: 1.25rem;
+  flex-shrink: 0;
+  font-size: 0.75rem;
+}
+
+.package-app-menu__caret::before {
+  content: "▶";
+}
+
+.package-app-menu__branch[open] > .package-app-menu__parent .package-app-menu__caret::before {
+  content: "▼";
+}
+
+.package-app-menu__parent:hover {
+  filter: brightness(1.06);
+}
+
+.package-app-menu__children {
+  margin: 0.35rem 0 0.15rem;
+  padding: 0.35rem;
+  border-radius: 0 0 12px 12px;
+  background: #f7f5ef;
+  border-top: 3px solid #a8dadc;
+}
+
+.package-app-menu__child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+  padding: 0.62rem 0.72rem;
+  border: 1px solid #b8c5bc;
+  border-radius: 10px;
+  background: #fffdf9;
+  color: #1a1a1a;
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 2px 14px rgba(20, 33, 61, 0.07);
+}
+
+.package-app-menu__child:last-child {
+  margin-bottom: 0;
+}
+
+.package-app-menu__child-title {
+  line-height: 1.35;
+}
+
+.package-app-menu__arrow {
+  flex-shrink: 0;
+  color: #5c6b63;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
 .package-resource-badge {
   display: inline-flex;
   align-items: center;

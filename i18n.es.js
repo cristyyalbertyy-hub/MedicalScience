@@ -8,11 +8,11 @@ SITE_LOCALES.es = {
     curriculo: {
       title: "Programa completo · Medical Science · Studio9",
       description:
-        "Catálogo del curso Medical Science: 24 módulos con horas de estudio y descripción de cada asignatura.",
+        "Catálogo del curso Medical Science: 25 módulos con horas de estudio y descripción de cada asignatura.",
     },
     packages: {
       title: "Pacotes prontos · Medical Science · Studio9",
-      description: "24 asignaturas de ciencias de la salud - 14 disponibles hoy, 10 en camino.",
+      description: "25 asignaturas de ciencias de la salud - 14 disponibles hoy, 11 en camino.",
     },
     precos: {
       title: "Como funciona + Preços · Medical Science · Studio9",
@@ -109,6 +109,8 @@ SITE_LOCALES.es = {
       "Índice completo — acceso a vídeos, podcasts y ejercicios tras la compra.",
     syllabusNoteBrowse: "Índice completo del módulo — cada tema incluye los formatos abajo.",
     syllabusPending: "Índice completo próximamente.",
+    appMenuAria: "Menú de capítulos",
+    appMenuHint: "Así aparecerá en la app Studio9",
     resourceLegend: "V · Vídeo · P · Podcast · I · Infografía · Q · Cuestionario",
     resource: {
       V: "Vídeo",
@@ -140,7 +142,7 @@ SITE_LOCALES.es = {
   },
   home: {
     hero: {
-      eyebrow: "Curso online · 24 módulos · App Studio9",
+      eyebrow: "Curso online · 25 módulos · App Studio9",
       title: "Medical Science — donde y cuando quieras.",
       lead: "Estudia anatomía, fisiología, genética y mucho más. En vídeos cortos, podcasts para el autobús y ejercicios interactivos. Todo dentro de la app Studio9.",
       ctaDisciplines: "Ver todas las disciplinas",
@@ -166,11 +168,11 @@ SITE_LOCALES.es = {
     },
     preview: {
       eyebrow: "Todas las disciplinas",
-      title: "24 asignaturas — elige las que necesitas.",
+      title: "25 asignaturas — elige las que necesitas.",
       intro:
-        "Catorce apps Studio9 ya están disponibles. Diez disciplinas llegarán pronto. Cada módulo incluye 40–60 horas de estudio — vídeos, podcasts, infografías y cuestionarios.",
+        "Catorce apps Studio9 ya están disponibles. Once disciplinas llegarán pronto. Cada módulo incluye 40–60 horas de estudio — vídeos, podcasts, infografías y cuestionarios.",
       liveCount: "14 apps disponibles",
-      soonCount: "10 más en camino",
+      soonCount: "11 más en camino",
       hours: "40–60 horas por módulo",
       cta: "Ver todas las disciplinas →",
     },
@@ -240,9 +242,9 @@ SITE_LOCALES.es = {
   },
   curriculo: {
     hero: {
-      eyebrow: "24 módulos · Apps Studio9",
+      eyebrow: "25 módulos · Apps Studio9",
       title: "Catálogo completo · Medical Science",
-      text: "24 módulos. Cada módulo = 40 a 60 horas de estudio. A tu ritmo.",
+      text: "25 módulos. Cada módulo = 40 a 60 horas de estudio. A tu ritmo.",
       statModules: "módulos",
       statApps: "apps live",
       mediaAria: "Vista general de los paquetes de aprendizaje Studio9",
@@ -263,7 +265,7 @@ SITE_LOCALES.es = {
     hero: {
       eyebrow: "Interactivo · listo para usar",
       title: "Paquetes listos para usar.",
-      text: "24 asignaturas de ciencias de la salud - 14 disponibles hoy, 10 en camino. Compra solo lo que necesitas.",
+      text: "25 asignaturas de ciencias de la salud - 14 disponibles hoy, 11 en camino. Compra solo lo que necesitas.",
     },
     sectionAria: "Paquetes de aprendizaje listos para usar",
     freeSpotlight: {
@@ -721,10 +723,15 @@ SITE_LOCALES.es = {
       description:
         "Sistemas cardiovascular, respiratorio, digestivo, urinario y reproductor en profundidad.",
     },
+    "physiology-1": {
+      title: "Fisiología I",
+      description:
+        "Fisiología general, sangre, cardiovascular, respiratoria y renal.",
+    },
     "physiology-2": {
       title: "Fisiología II",
       description:
-        "Fisiología renal, digestiva, endocrina y reproductiva para el razonamiento clínico.",
+        "Fisiología endocrina, nerviosa, gastrointestinal, sentidos especiales y reproductiva.",
     },
     immunology: {
       title: "Inmunología",

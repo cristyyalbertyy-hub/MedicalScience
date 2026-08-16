@@ -8,11 +8,11 @@ SITE_LOCALES.it = {
     curriculo: {
       title: "Programma completo · Medical Science · Studio9",
       description:
-        "Catalogo del corso Medical Science: 24 moduli con ore di studio e descrizione di ogni materia.",
+        "Catalogo del corso Medical Science: 25 moduli con ore di studio e descrizione di ogni materia.",
     },
     packages: {
       title: "Pacchetti pronti · Medical Science · Studio9",
-      description: "24 discipline di scienze della salute - 14 online oggi, 10 in arrivo.",
+      description: "25 discipline di scienze della salute - 14 online oggi, 11 in arrivo.",
     },
     precos: {
       title: "Come funziona + Prezzi · Medical Science · Studio9",
@@ -109,6 +109,8 @@ SITE_LOCALES.it = {
       "Indice completo — accesso a video, podcast ed esercizi dopo l'acquisto.",
     syllabusNoteBrowse: "Indice completo del modulo — ogni argomento include i formati sotto.",
     syllabusPending: "Indice completo in arrivo.",
+    appMenuAria: "Menu dei capitoli",
+    appMenuHint: "Come apparirà nell'app Studio9",
     resourceLegend: "V · Video · P · Podcast · I · Infografica · Q · Questionario",
     resource: {
       V: "Video",
@@ -140,7 +142,7 @@ SITE_LOCALES.it = {
   },
   home: {
     hero: {
-      eyebrow: "Corso online · 24 moduli · App Studio9",
+      eyebrow: "Corso online · 25 moduli · App Studio9",
       title: "Medical Science — dove e quando vuoi.",
       lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
       ctaDisciplines: "Vedi tutte le discipline",
@@ -166,11 +168,11 @@ SITE_LOCALES.it = {
     },
     preview: {
       eyebrow: "Tutte le discipline",
-      title: "24 materie — scegli quelle che ti servono.",
+      title: "25 materie — scegli quelle che ti servono.",
       intro:
-        "Quattordici app Studio9 sono già online. Dieci discipline arriveranno presto. Ogni modulo include 40–60 ore di studio — video, podcast, infografiche e questionari.",
+        "Quattordici app Studio9 sono già online. Undici discipline arriveranno presto. Ogni modulo include 40–60 ore di studio — video, podcast, infografiche e questionari.",
       liveCount: "14 app online",
-      soonCount: "10 in arrivo",
+      soonCount: "11 in arrivo",
       hours: "40–60 ore per modulo",
       cta: "Vedi tutte le discipline →",
     },
@@ -240,9 +242,9 @@ SITE_LOCALES.it = {
   },
   curriculo: {
     hero: {
-      eyebrow: "24 moduli · App Studio9",
+      eyebrow: "25 moduli · App Studio9",
       title: "Catalogo completo · Medical Science",
-      text: "24 moduli. Ogni modulo = 40-60 ore di studio. Al tuo ritmo.",
+      text: "25 moduli. Ogni modulo = 40-60 ore di studio. Al tuo ritmo.",
       statModules: "moduli",
       statApps: "app live",
       mediaAria: "Panoramica dei pacchetti di apprendimento Studio9",
@@ -263,7 +265,7 @@ SITE_LOCALES.it = {
     hero: {
       eyebrow: "Interattivo · pronto all'uso",
       title: "Pacchetti pronti all'uso.",
-      text: "24 discipline di scienze della salute - 14 online oggi, 10 in arrivo. Acquista solo ciò che ti serve.",
+      text: "25 discipline di scienze della salute - 14 online oggi, 11 in arrivo. Acquista solo ciò che ti serve.",
     },
     sectionAria: "Pacchetti di apprendimento pronti all'uso",
     freeSpotlight: {
@@ -721,10 +723,15 @@ SITE_LOCALES.it = {
       description:
         "Sistemi cardiovascolare, respiratorio, digestivo, urinario e riproduttivo in profondità.",
     },
+    "physiology-1": {
+      title: "Fisiologia I",
+      description:
+        "Fisiologia generale, sangue, cardiovascolare, respiratoria e renale.",
+    },
     "physiology-2": {
       title: "Fisiologia II",
       description:
-        "Fisiologia renale, digestiva, endocrina e riproduttiva per il ragionamento clinico.",
+        "Fisiologia endocrina, nervosa, gastrointestinale, sensi speciali e riproduttiva.",
     },
     immunology: {
       title: "Immunologia",

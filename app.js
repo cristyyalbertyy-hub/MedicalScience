@@ -119,16 +119,24 @@ const SOON_PACKAGES = [
     status: "soon",
   },
   {
-    id: "physiology-2",
+    id: "physiology-1",
     number: "16",
+    title: "Physiology I",
+    description:
+      "General physiology, blood, cardiovascular, respiratory and renal function.",
+    status: "soon",
+  },
+  {
+    id: "physiology-2",
+    number: "17",
     title: "Physiology II",
     description:
-      "Renal, digestive, endocrine and reproductive physiology for clinical reasoning.",
+      "Endocrine, nervous, gastrointestinal, special senses and reproductive physiology.",
     status: "soon",
   },
   {
     id: "immunology",
-    number: "17",
+    number: "18",
     title: "Immunology",
     description:
       "Adaptive immunity, vaccines, hypersensitivity, autoimmunity and clinical immunology.",
@@ -136,7 +144,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "microbiology",
-    number: "18",
+    number: "19",
     title: "Microbiology",
     description:
       "Bacteria, viruses, fungi and parasites — pathogenesis, diagnosis and treatment basics.",
@@ -144,7 +152,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "pharmacology-1",
-    number: "19",
+    number: "20",
     title: "Pharmacology I",
     description:
       "Pharmacokinetics, pharmacodynamics, and core drug classes for the nervous and cardiovascular systems.",
@@ -152,7 +160,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "epidemiology",
-    number: "20",
+    number: "21",
     title: "Epidemiology",
     description:
       "Frequency measures, study designs, screening and population health reasoning.",
@@ -160,7 +168,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "economics-health-policy",
-    number: "21",
+    number: "22",
     title: "Economics and Health Policy",
     description:
       "Health systems, funding models, and the social and political context of medicine.",
@@ -168,7 +176,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "systemic-pathology",
-    number: "22",
+    number: "23",
     title: "Systemic Pathology",
     description:
       "Organ-system pathology spanning heart, lung, kidney, liver and related clinical patterns.",
@@ -176,7 +184,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "clinical-medicine-1",
-    number: "23",
+    number: "24",
     title: "Clinical Medicine I",
     description:
       "Basic semiology, common symptoms and introductory clinical reasoning.",
@@ -184,7 +192,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "clinical-medicine-2",
-    number: "24",
+    number: "25",
     title: "Clinical Medicine II",
     description:
       "Common conditions such as hypertension, diabetes, asthma and major infections.",
@@ -326,6 +334,68 @@ function renderResourceBadges(resources, resourceTypes = {}) {
     .join("");
 }
 
+const APP_MENU_PREVIEW_IDS = new Set([
+  "immunology",
+  "microbiology",
+  "human-anatomy-2",
+  "physiology-1",
+  "physiology-2",
+]);
+const APP_MENU_CHAPTER_COLORS = ["#14213d", "#2d4636", "#d36b31"];
+
+function groupManifestTopicsByChapter(topics) {
+  const groups = [];
+  const byLabel = new Map();
+
+  for (const topic of topics) {
+    const sep = topic.label.indexOf(" · ");
+    const chapter = sep === -1 ? topic.label : topic.label.slice(0, sep);
+    const title = sep === -1 ? topic.label : topic.label.slice(sep + 3);
+    if (!byLabel.has(chapter)) {
+      const group = { label: chapter, topics: [] };
+      byLabel.set(chapter, group);
+      groups.push(group);
+    }
+    byLabel.get(chapter).topics.push({ ...topic, title });
+  }
+
+  return groups;
+}
+
+function renderAppMenuPreview(topics) {
+  const groups = groupManifestTopicsByChapter(topics);
+  const aria = packageText("packagesUi.appMenuAria", "Chapter menu");
+  const hint = packageText("packagesUi.appMenuHint", "As it will appear in the Studio9 app");
+  const branches = groups
+    .map((group, index) => {
+      const color = APP_MENU_CHAPTER_COLORS[index % APP_MENU_CHAPTER_COLORS.length];
+      const children = group.topics
+        .map(
+          (topic) => `
+            <div class="package-app-menu__child">
+              <span class="package-app-menu__child-title">${escapeHtml(topic.title)}</span>
+              <span class="package-app-menu__arrow" aria-hidden="true">›</span>
+            </div>`,
+        )
+        .join("");
+      return `
+        <details class="package-app-menu__branch"${index === 0 ? " open" : ""}>
+          <summary class="package-app-menu__parent" style="background-color: ${color}">
+            <span class="package-app-menu__caret" aria-hidden="true"></span>
+            <span>${escapeHtml(group.label)}</span>
+          </summary>
+          <div class="package-app-menu__children">${children}</div>
+        </details>`;
+    })
+    .join("");
+
+  return `
+    <nav class="package-app-menu" aria-label="${escapeHtml(aria)}">
+      <p class="package-app-menu__hint">${escapeHtml(hint)}</p>
+      <div class="package-app-menu__panel">${branches}</div>
+    </nav>`;
+}
+
 function renderSyllabusBlock(pkg, catalog, manifest) {
   const isSoon = pkg.status !== "live" || !pkg.url;
   const purchasable = isPurchasablePackage(pkg.id, catalog);
@@ -339,6 +409,10 @@ function renderSyllabusBlock(pkg, catalog, manifest) {
         <summary>${escapeHtml(summaryLabel)}</summary>
         <p class="package-syllabus-empty">${escapeHtml(packageText("packagesUi.syllabusPending"))}</p>
       </details>`;
+  }
+
+  if (APP_MENU_PREVIEW_IDS.has(pkg.id)) {
+    return renderAppMenuPreview(topics);
   }
 
   const note = purchasable

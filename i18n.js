@@ -15,11 +15,11 @@ const SITE_LOCALES = {
       curriculo: {
         title: "Full curriculum · Medical Science · Studio9",
         description:
-          "Medical Science course catalogue: 24 modules with study hours and a description for each subject.",
+          "Medical Science course catalogue: 25 modules with study hours and a description for each subject.",
       },
       packages: {
         title: "All disciplines · Medical Science · Studio9",
-        description: "24 health-science subjects - 14 live today, 10 coming soon.",
+        description: "25 health-science subjects - 14 live today, 11 coming soon.",
       },
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
@@ -114,6 +114,8 @@ const SITE_LOCALES = {
         "Full index — access to videos, podcasts and exercises after purchase.",
       syllabusNoteBrowse: "Full module index — each topic includes the formats below.",
       syllabusPending: "Full index coming soon.",
+      appMenuAria: "Chapter menu",
+      appMenuHint: "As it will appear in the Studio9 app",
       resourceLegend: "V · Video · P · Podcast · I · Infographic · Q · Questions",
       resource: {
         V: "Video",
@@ -145,7 +147,7 @@ const SITE_LOCALES = {
     },
     home: {
       hero: {
-        eyebrow: "Online course · 24 modules · Studio9 app",
+        eyebrow: "Online course · 25 modules · Studio9 app",
         title: "Medical Science — wherever and whenever you want.",
         lead: "Study anatomy, physiology, genetics and much more. In short videos, podcasts for the bus, and interactive exercises. All inside the Studio9 app.",
         ctaDisciplines: "Browse all disciplines",
@@ -171,11 +173,11 @@ const SITE_LOCALES = {
       },
       preview: {
         eyebrow: "All disciplines",
-        title: "24 subjects — pick the ones you need.",
+        title: "25 subjects — pick the ones you need.",
         intro:
-          "Fourteen interactive Studio9 apps are live today. Ten more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
+          "Fourteen interactive Studio9 apps are live today. Eleven more disciplines are coming soon. Each module includes 40–60 hours of study — videos, podcasts, infographics and quizzes.",
         liveCount: "14 apps live now",
-        soonCount: "10 more coming soon",
+        soonCount: "11 more coming soon",
         hours: "40–60 hours per module",
         cta: "See all disciplines →",
       },
@@ -246,9 +248,9 @@ const SITE_LOCALES = {
     },
     curriculo: {
       hero: {
-        eyebrow: "24 modules · Studio9 apps",
+        eyebrow: "25 modules · Studio9 apps",
         title: "Full catalogue · Medical Science",
-        text: "24 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
+        text: "25 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
         statModules: "modules",
         statApps: "live apps",
         mediaAria: "Overview of Studio9 learning packages",
@@ -269,7 +271,7 @@ const SITE_LOCALES = {
       hero: {
         eyebrow: "Interactive · catalogue",
         title: "All disciplines.",
-        text: "24 health-science subjects - 14 live today, 10 coming soon. Buy only what you need.",
+        text: "25 health-science subjects - 14 live today, 11 coming soon. Buy only what you need.",
       },
       sectionAria: "Health science disciplines",
       freeSpotlight: {
@@ -727,10 +729,15 @@ const SITE_LOCALES = {
         description:
           "Cardiovascular, respiratory, digestive, urinary and reproductive systems in depth.",
       },
+      "physiology-1": {
+        title: "Physiology I",
+        description:
+          "General physiology, blood, cardiovascular, respiratory and renal function.",
+      },
       "physiology-2": {
         title: "Physiology II",
         description:
-          "Renal, digestive, endocrine and reproductive physiology for clinical reasoning.",
+          "Endocrine, nervous, gastrointestinal, special senses and reproductive physiology.",
       },
       immunology: {
         title: "Immunology",
