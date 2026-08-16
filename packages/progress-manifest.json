@@ -2571,6 +2571,181 @@
           ]
         }
       ]
+    },
+    "immunology": {
+      "title": "Immunology",
+      "topics": [
+        {
+          "id": "BP_GIR",
+          "label": "Basic Principles · General characteristics of the immune response",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_II",
+          "label": "Basic Principles · Innate immunity",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_CT",
+          "label": "Basic Principles · Cells and tissues of the immune system",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_LM",
+          "label": "Basic Principles · Leukocyte migration",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_ARD",
+          "label": "Basic Principles · Antibodies and repertoire diversity",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_MA",
+          "label": "Basic Principles · Monoclonal antibodies",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_BLH",
+          "label": "Basic Principles · B lymphocyte development and humoral immunity",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_C",
+          "label": "Basic Principles · Complement",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_MHC",
+          "label": "Basic Principles · MHC and antigen presentation to T lymphocytes",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BP_TCM",
+          "label": "Basic Principles · T lymphocyte cell-mediated immunity",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IP_HD",
+          "label": "Immunopathology · Hypersensitivity disorders",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IP_ITA",
+          "label": "Immunopathology · Immunologic tolerance and autoimmunity",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IP_CAI",
+          "label": "Immunopathology · Congenital and acquired immunodeficiencies",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IP_TI",
+          "label": "Immunopathology · Transplantation immunology",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "IP_IT",
+          "label": "Immunopathology · Immunity to tumours",
+          "resources": ["V", "P", "I", "Q"]
+        }
+      ]
+    },
+    "microbiology": {
+      "title": "Microbiology",
+      "topics": [
+        {
+          "id": "GM_BS",
+          "label": "General Microbiology · Bacterial structure",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "GM_BG",
+          "label": "General Microbiology · Bacterial genetics",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "GM_MGC",
+          "label": "General Microbiology · Microbial growth and control",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BA_GP",
+          "label": "Bacteriology · Pathogenic Gram-positive bacteria",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BA_GN",
+          "label": "Bacteriology · Pathogenic Gram-negative bacteria",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "BA_AN",
+          "label": "Bacteriology · Anaerobic bacteria",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "VI_SCR",
+          "label": "Virology · Virus structure, classification and replication",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "VI_PV",
+          "label": "Virology · Pathogenic viruses",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "MY_PF",
+          "label": "Mycology · Pathogenic fungi",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "PA_PR",
+          "label": "Parasitology · Protozoa",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "PA_HE",
+          "label": "Parasitology · Helminths",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "HP_PV",
+          "label": "Host-Pathogen Interactions · Pathogenesis and virulence factors",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "HP_EE",
+          "label": "Host-Pathogen Interactions · Endotoxins and exotoxins",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "DM_SC",
+          "label": "Diagnostic Microbiology · Specimen collection and culture techniques",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "DM_SM",
+          "label": "Diagnostic Microbiology · Serological methods",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "DM_PCR",
+          "label": "Diagnostic Microbiology · Molecular (PCR) diagnostics",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "AM_MA",
+          "label": "Antimicrobials · Antibiotics, antivirals and antifungals",
+          "resources": ["V", "P", "I", "Q"]
+        },
+        {
+          "id": "AM_AR",
+          "label": "Antimicrobials · Antimicrobial resistance",
+          "resources": ["V", "P", "I", "Q"]
+        }
+      ]
     }
   }
 }
