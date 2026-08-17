@@ -275,7 +275,7 @@ export async function runAccessGate() {
     wrap.className = "auth-account";
     wrap.innerHTML =
       `<span class="auth-account__email" title="${escapeHtml(displayEmail)}">${escapeHtml(displayEmail)}</span>` +
-      `<button type="button" class="btn-ghost">Minha conta</button>`;
+      `<button type="button" class="btn-ghost">My account</button>`;
     wrap.querySelector("button")?.addEventListener("click", () => {
       window.location.assign(ACCOUNT_URL);
     });

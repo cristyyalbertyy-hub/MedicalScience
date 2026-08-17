@@ -30037,12 +30037,12 @@ function renderGate(root, view) {
     return;
   }
   if (view.type === "handoff-error") {
-    card.innerHTML = `<h1>${escapeHtml(APP_TITLE)}</h1><p class="form-error">${escapeHtml(view.message)}</p><div class="auth-actions"><a class="btn btn-primary" href="${escapeHtml(ACCOUNT_URL)}">Abrir pela Minha conta</a></div>`;
+    card.innerHTML = `<h1>${escapeHtml(APP_TITLE)}</h1><p class="form-error">${escapeHtml(view.message)}</p><div class="auth-actions"><a class="btn btn-primary" href="${escapeHtml(ACCOUNT_URL)}">Open from My account</a></div>`;
     root.appendChild(card);
     return;
   }
   if (view.type === "check-error") {
-    card.innerHTML = `<h1>${escapeHtml(APP_TITLE)}</h1><p class="form-error">${escapeHtml(view.message)}</p><div class="auth-actions"><button type="button" class="btn btn-secondary" data-action="refresh">Tentar novamente</button><a class="btn btn-primary" href="${escapeHtml(ACCOUNT_URL)}">Abrir pela Minha conta</a></div>`;
+    card.innerHTML = `<h1>${escapeHtml(APP_TITLE)}</h1><p class="form-error">${escapeHtml(view.message)}</p><div class="auth-actions"><button type="button" class="btn btn-secondary" data-action="refresh">Tentar novamente</button><a class="btn btn-primary" href="${escapeHtml(ACCOUNT_URL)}">Open from My account</a></div>`;
     card.querySelector('[data-action="refresh"]')?.addEventListener("click", view.onRefresh);
     root.appendChild(card);
     return;
@@ -30091,7 +30091,7 @@ async function runAccessGate() {
     if (!header || header.querySelector(".auth-account")) return;
     const wrap2 = document.createElement("div");
     wrap2.className = "auth-account";
-    wrap2.innerHTML = `<span class="auth-account__email" title="${escapeHtml(email)}">${escapeHtml(email)}</span><button type="button" class="btn-ghost">Minha conta</button>`;
+    wrap2.innerHTML = `<span class="auth-account__email" title="${escapeHtml(email)}">${escapeHtml(email)}</span><button type="button" class="btn-ghost">My account</button>`;
     wrap2.querySelector("button")?.addEventListener("click", () => {
       window.location.assign(ACCOUNT_URL);
     });
@@ -30141,7 +30141,7 @@ async function runAccessGate() {
       const message = error instanceof Error ? error.message : "N\xE3o foi poss\xEDvel iniciar sess\xE3o.";
       renderGate(gateEl, {
         type: "handoff-error",
-        message: message.includes("timeout") || message.includes("custom-token") || message.includes("expired") ? "A liga\xE7\xE3o expirou. Volte a abrir o Genetics pela Minha conta." : message
+        message: message.includes("timeout") || message.includes("custom-token") || message.includes("expired") ? "A liga\xE7\xE3o expirou. Open Genetics again from My account." : message
       });
       return false;
     }
@@ -30208,7 +30208,7 @@ async function runAccessGate() {
       const timedOut = error instanceof Error && error.message.includes("timeout");
       renderGate(gateEl, {
         type: "check-error",
-        message: timedOut ? "A verifica\xE7\xE3o demorou demasiado. Tente novamente ou abra pela Minha conta." : "N\xE3o foi poss\xEDvel confirmar o acesso. Tente novamente.",
+        message: timedOut ? "A verifica\xE7\xE3o demorou demasiado. Try again or open from My account." : "N\xE3o foi poss\xEDvel confirmar o acesso. Tente novamente.",
         onRefresh: () => void refreshEntitlementCheck()
       });
       return false;
@@ -30274,7 +30274,7 @@ async function runAccessGate() {
       unsubscribe();
       renderGate(gateEl, {
         type: "check-error",
-        message: "A verifica\xE7\xE3o demorou demasiado. Tente novamente ou abra pela Minha conta.",
+        message: "A verifica\xE7\xE3o demorou demasiado. Try again or open from My account.",
         onRefresh: () => window.location.reload()
       });
       resolve(false);
