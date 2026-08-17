@@ -310,7 +310,7 @@
     "id": "studio9-pass",
     "monthly": {
       "plan": "subscription_monthly",
-      "priceUsd": 14.99,
+      "priceUsd": 9.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/29e98717-8368-4f80-a6de-fdbe7744dfb3?embed=1"
     },
     "annual": {

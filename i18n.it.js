@@ -236,7 +236,7 @@ SITE_LOCALES.it = {
         "Metti alla prova ciò che hai imparato. Il feedback immediato mostra gli errori e spiega di nuovo.",
     },
     final: {
-      title: "Da $5.99 a modulo — o Studio9 Pass da $14.99/mese.",
+      title: "Da $5.99 a modulo — o Studio9 Pass da $9.99/mese.",
       text: "Compra una disciplina per studiare — o sblocca tutte e quindici più Studio9 Snap con il Pass.",
       cta: "Vedi i prezzi e inizia",
     },

@@ -242,7 +242,7 @@ const SITE_LOCALES = {
           "Test what you learned. Instant feedback shows where you went wrong and explains it again.",
       },
       final: {
-        title: "From $5.99 per module — or Studio9 Pass from $14.99/month.",
+        title: "From $5.99 per module — or Studio9 Pass from $9.99/month.",
         text: "Buy one discipline to study — or unlock all fifteen plus Studio9 Snap with Pass.",
         cta: "See pricing and start",
       },
