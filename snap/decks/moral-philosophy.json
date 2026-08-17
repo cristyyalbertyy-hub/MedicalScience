@@ -1,0 +1,429 @@
+{
+  "packageId": "moral-philosophy",
+  "title": "Moral Philosophy",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "CE_EC_0",
+      "topic": "Ethical Committees",
+      "prompt": "How long has France's national bioethics commission been established according to the text?",
+      "answer": "For more than a decade"
+    },
+    {
+      "id": "CE_EC_1",
+      "topic": "Ethical Committees",
+      "prompt": "What is the specific goal of Denmark's bioethics organization?",
+      "answer": "To inform the public about bioethics and seek its views"
+    },
+    {
+      "id": "CE_EC_2",
+      "topic": "Ethical Committees",
+      "prompt": "Who popularized the 'Four Principles' approach to medical ethics?",
+      "answer": "Tom Beauchamp and James Childress"
+    },
+    {
+      "id": "CE_EC_3",
+      "topic": "Ethical Committees",
+      "prompt": "What is the Latin phrase for the principle of Nonmaleficence?",
+      "answer": "Primum non nocere (First, do no harm)"
+    },
+    {
+      "id": "CE_EC_4",
+      "topic": "Ethical Committees",
+      "prompt": "The principle of _____ refers to a moral obligation to act for the benefit of others",
+      "answer": "Beneficence"
+    },
+    {
+      "id": "CE_EC_5",
+      "topic": "Ethical Committees",
+      "prompt": "What is the formal principle of Justice in healthcare ethics?",
+      "answer": "The requirement that like cases should be treated alike"
+    },
+    {
+      "id": "CE_EC_6",
+      "topic": "Ethical Committees",
+      "prompt": "In 15th-century Brussels, what was the composition of the board that licensed midwives?",
+      "answer": "Ecclesiastics, doctors, and midwives"
+    },
+    {
+      "id": "CE_EC_7",
+      "topic": "Ethical Committees",
+      "prompt": "What shift occurred in the 'test of death' due to the demands of organ transplantation?",
+      "answer": "The shift from cessation of breathing to 'brain death'"
+    },
+    {
+      "id": "CE_E_15",
+      "topic": "Empathy",
+      "prompt": "In the 'patient-as-a-person' movement, what specific clinical activity allowed doctors to establish an emotional rapport?",
+      "answer": "Long and careful history-taking during the consultation"
+    },
+    {
+      "id": "CE_E_16",
+      "topic": "Empathy",
+      "prompt": "William Houston (1936) argued that 'psychological treatment' distinguishes a doctor from what other profession?",
+      "answer": "A veterinarian"
+    },
+    {
+      "id": "CE_E_17",
+      "topic": "Empathy",
+      "prompt": "In the modern version of the Hippocratic Oath, what qualities are said to potentially 'outweigh the surgeon’s knife'?",
+      "answer": "Warmth, sympathy, and understanding"
+    },
+    {
+      "id": "CE_E_18",
+      "topic": "Empathy",
+      "prompt": "What is the meaning of the Greek word kline, from which 'clinical' is derived?",
+      "answer": "A couch or bed, referring to bedside medicine"
+    },
+    {
+      "id": "CE_E_19",
+      "topic": "Empathy",
+      "prompt": "What 'common root' do the words 'holiness' and 'healing' share?",
+      "answer": "The idea of wholeness (making whole)"
+    },
+    {
+      "id": "CE_E_20",
+      "topic": "Empathy",
+      "prompt": "What did Ivan Illich call the process where medicine allegedly puts all aspects of living into the hands of doctors?",
+      "answer": "The medicalization of life"
+    },
+    {
+      "id": "CE_NM_21",
+      "topic": "Narrative Medicine",
+      "prompt": "According to Dr. Francis Weld Peabody's 1927 lecture, what is the 'secret' of caring for the patient?",
+      "answer": "Caring for the patient"
+    },
+    {
+      "id": "CE_NM_22",
+      "topic": "Narrative Medicine",
+      "prompt": "What clinical school of ancient Greece focused on the classification of diseases rather than the whole patient?",
+      "answer": "The Cnidian School"
+    },
+    {
+      "id": "CE_NM_23",
+      "topic": "Narrative Medicine",
+      "prompt": "What clinical school of ancient Greece focused on the patient's environment and the body's inherent healing power?",
+      "answer": "The Coan (Hippocratic) School"
+    },
+    {
+      "id": "CE_NM_24",
+      "topic": "Narrative Medicine",
+      "prompt": "According to Hermann Nothnagel, what must a doctor be 'a friend to' to practice medicine in its truest sense?",
+      "answer": "The patient"
+    },
+    {
+      "id": "CE_NM_25",
+      "topic": "Narrative Medicine",
+      "prompt": "What concept describes the process where modern medicine converts normal life events and risks into 'diseases'?",
+      "answer": "Medicalization of life"
+    },
+    {
+      "id": "CE_NM_26",
+      "topic": "Narrative Medicine",
+      "prompt": "In the 'patient-as-a-person' movement, what serves as the 'therapeutic agent' when drugs are ineffective?",
+      "answer": "The personality of the doctor"
+    },
+    {
+      "id": "CE_NM_27",
+      "topic": "Narrative Medicine",
+      "prompt": "What term refers to the clinical approach that treats both the symptoms and the underlying causes of a patient's illness?",
+      "answer": "Integrative and Holistic medicine"
+    },
+    {
+      "id": "CE_NM_28",
+      "topic": "Narrative Medicine",
+      "prompt": "What does the Latin phrase Primum non nocere translate to in English?",
+      "answer": "First, do no harm"
+    },
+    {
+      "id": "CE_PPR_31",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "According to Dr. Francis Weld Peabody, what is the 'secret' to the care of the patient?",
+      "answer": "The secret is in caring for the patient"
+    },
+    {
+      "id": "CE_PPR_32",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "The Greek word for couch or bed from which the terms 'clinical' and 'clinic' are derived is _____",
+      "answer": "λ η (kline)"
+    },
+    {
+      "id": "CE_PPR_33",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "According to the Hippocratic text 'Epidemics', what is the physician's primary duty regarding harm?",
+      "answer": "To help, or at least to do no harm"
+    },
+    {
+      "id": "CE_PPR_34",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "The Latin translation of the Hippocratic maxim 'First, do no harm' is _____",
+      "answer": "Primum non nocere"
+    },
+    {
+      "id": "CE_PPR_35",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "William Osler stated that while the good physician treats the disease, the great physician treats _____",
+      "answer": "The patient who has the disease"
+    },
+    {
+      "id": "CE_PPR_36",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "What are the two primary conditions required for 'informed consent' to be ethically valid?",
+      "answer": "The consent must be voluntary and it must be informed"
+    },
+    {
+      "id": "CE_PPR_37",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "The 'voluntariness' condition of informed consent is violated if the patient is subjected to _____",
+      "answer": "Coercion or threats"
+    },
+    {
+      "id": "CE_PPR_38",
+      "topic": "Patient–Physician Relationship",
+      "prompt": "In the 'Four Principles' approach, the principle of 'beneficence' denotes the moral obligation to _____",
+      "answer": "Act for the benefit of others"
+    },
+    {
+      "id": "GC_HD_48",
+      "topic": "Health Diplomacy",
+      "prompt": "In 2006, which country became the first to define common objectives for health and foreign policy?",
+      "answer": "Switzerland"
+    },
+    {
+      "id": "GC_HD_49",
+      "topic": "Health Diplomacy",
+      "prompt": "Sustainable Development Goal _____ is specifically dedicated to ensuring healthy lives and promoting well-being for all at all ages",
+      "answer": "3"
+    },
+    {
+      "id": "GC_HD_50",
+      "topic": "Health Diplomacy",
+      "prompt": "Which 2015 international agreement acknowledges the 'right to health' in its preamble as a consideration for climate action?",
+      "answer": "The Paris Agreement"
+    },
+    {
+      "id": "GC_HD_51",
+      "topic": "Health Diplomacy",
+      "prompt": "What was the motto of Germany's G7 Presidency in 2015 regarding global health?",
+      "answer": "\"Think ahead. Act together.\""
+    },
+    {
+      "id": "GC_HD_52",
+      "topic": "Health Diplomacy",
+      "prompt": "According to the German G7 Presidency, which organization is the only one with 'universal political legitimacy' on global health matters?",
+      "answer": "World Health Organization (WHO)"
+    },
+    {
+      "id": "GC_HD_53",
+      "topic": "Health Diplomacy",
+      "prompt": "The _____ approach involves the human, veterinary, and agricultural sectors working together to address health threats like antimicrobial resistance (AMR)",
+      "answer": "One Health"
+    },
+    {
+      "id": "GC_HD_54",
+      "topic": "Health Diplomacy",
+      "prompt": "Which two professional worlds primarily meet at the interface of health diplomacy?",
+      "answer": "Public health professionals and diplomats"
+    },
+    {
+      "id": "GC_HD_55",
+      "topic": "Health Diplomacy",
+      "prompt": "What is the 'lingua franca' of city health diplomacy, used to facilitate strong bonds and alliances?",
+      "answer": "Health (as a universal language of well-being)"
+    },
+    {
+      "id": "GC_HRH_78",
+      "topic": "Human Rights and Health",
+      "prompt": "The principle that the right to health is inextricably linked to rights like education, housing, and work is known as _____",
+      "answer": "Indivisibility"
+    },
+    {
+      "id": "GC_HRH_79",
+      "topic": "Human Rights and Health",
+      "prompt": "What is the legal status of the right to health in countries that have ratified international human rights treaties?",
+      "answer": "It is a legally binding commitment"
+    },
+    {
+      "id": "GC_HRH_80",
+      "topic": "Human Rights and Health",
+      "prompt": "Which dimension of accessibility ensures that health information is provided in formats usable by all, including persons with disabilities?",
+      "answer": "Information accessibility"
+    },
+    {
+      "id": "GC_HRH_81",
+      "topic": "Human Rights and Health",
+      "prompt": "The requirement that health facilities and services respect medical ethics and be culturally appropriate is known as _____",
+      "answer": "Acceptability"
+    },
+    {
+      "id": "GC_HRH_82",
+      "topic": "Human Rights and Health",
+      "prompt": "Attribute of Quality: Effective",
+      "answer": "Providing evidence-based services to those who need them"
+    },
+    {
+      "id": "GC_HRH_83",
+      "topic": "Human Rights and Health",
+      "prompt": "Attribute of Quality: Timely",
+      "answer": "Reducing waiting times and harmful delays in care"
+    },
+    {
+      "id": "GC_HRH_84",
+      "topic": "Human Rights and Health",
+      "prompt": "Which human rights principle requires prioritizing the needs of those furthest behind to achieve health equity?",
+      "answer": "Non-discrimination and equality"
+    },
+    {
+      "id": "GC_HRH_85",
+      "topic": "Human Rights and Health",
+      "prompt": "Which treaty specifically addresses the right to health in the context of eliminating discrimination against women?",
+      "answer": "CEDAW (Articles 11, 12, and 14)"
+    },
+    {
+      "id": "GC_SDG_94",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "The 2030 Agenda for Sustainable Development comprises how many distinct Goals?",
+      "answer": "17"
+    },
+    {
+      "id": "GC_SDG_95",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "Across the 17 Sustainable Development Goals, how many specific targets are identified to measure progress?",
+      "answer": "169"
+    },
+    {
+      "id": "GC_SDG_96",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "Which specific Sustainable Development Goal is focused on ensuring healthy lives and promoting well-being for all at all ages?",
+      "answer": "Goal 3"
+    },
+    {
+      "id": "GC_SDG_97",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "The SDG principle of \"leaving no one behind\" is primarily based on which two moral values?",
+      "answer": "Equity and respect for human rights"
+    },
+    {
+      "id": "GC_SDG_98",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "In the context of the SDGs, what approach combines the strengths of multiple stakeholders to integrate health into all sectors of policy-making?",
+      "answer": "Intersectoral action"
+    },
+    {
+      "id": "GC_SDG_99",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "What is the primary aim of strengthening health systems within the framework of the SDGs?",
+      "answer": "To achieve Universal Health Coverage (UHC)"
+    },
+    {
+      "id": "GC_SDG_101",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "In moral philosophy, the view that there is a universally morally acceptable practice regardless of cultural diversity is known as _____",
+      "answer": "Universalism"
+    },
+    {
+      "id": "GC_SDG_102",
+      "topic": "Sustainable Development Goals 2030",
+      "prompt": "Which meta-ethical theory suggests that moral acceptability is relative to a specific culture or society?",
+      "answer": "Moral Relativism"
+    },
+    {
+      "id": "GC_TM_157",
+      "topic": "Transcultural Medicine",
+      "prompt": "What is the primary moral framework used in public health to identify and address unfair and remediable health disparities?",
+      "answer": "Equity"
+    },
+    {
+      "id": "GC_TM_158",
+      "topic": "Transcultural Medicine",
+      "prompt": "The right to the highest attainable standard of health is considered _____ from other human rights, such as food, housing, and work",
+      "answer": "Indivisible"
+    },
+    {
+      "id": "GC_TM_159",
+      "topic": "Transcultural Medicine",
+      "prompt": "The 'causes-of-causes' approach to population health refers to the study of the _____ of health",
+      "answer": "Social determinants"
+    },
+    {
+      "id": "GC_TM_160",
+      "topic": "Transcultural Medicine",
+      "prompt": "The 'Spirit Level' principle suggests that societies can only be healthy if they are _____",
+      "answer": "Equitable"
+    },
+    {
+      "id": "GC_TM_161",
+      "topic": "Transcultural Medicine",
+      "prompt": "The right to health requires addressing _____ determinants of health, such as poverty and stigma",
+      "answer": "Root"
+    },
+    {
+      "id": "TF_MS_162",
+      "topic": "Moral Systems",
+      "prompt": "The branch of ethics that investigates the meaning, nature, and linguistic status of moral judgments is known as _____",
+      "answer": "Meta-ethics"
+    },
+    {
+      "id": "TF_MS_163",
+      "topic": "Moral Systems",
+      "prompt": "The principle that one should be free to act as they wish provided they do not infringe upon others is often called the _____",
+      "answer": "Liberal Principle (or Harm Principle)"
+    },
+    {
+      "id": "TF_MS_164",
+      "topic": "Moral Systems",
+      "prompt": "The ethical principle that moral requirements are only valid if the agent is physically and mentally capable of fulfilling them is summarized by the phrase '...",
+      "answer": "Ought implies can"
+    },
+    {
+      "id": "TF_MS_165",
+      "topic": "Moral Systems",
+      "prompt": "In ethics, the 'naturalistic fallacy' refers to the error of deriving a _____ conclusion directly from purely descriptive premises",
+      "answer": "Normative (or moral)"
+    },
+    {
+      "id": "TF_MS_166",
+      "topic": "Moral Systems",
+      "prompt": "Which historical school of thought recommended 'soaring above worldly passions' to avoid disappointment?",
+      "answer": "Stoicism"
+    },
+    {
+      "id": "TF_MS_168",
+      "topic": "Moral Systems",
+      "prompt": "The Hippocratic theory of the 'four humors' identifies which four tangible substances in the body?",
+      "answer": "Blood, yellow bile, black bile, and phlegm"
+    },
+    {
+      "id": "TF_MS_169",
+      "topic": "Moral Systems",
+      "prompt": "In the Hippocratic system, the process where 'innate heat' ripens a raw noxious humor for expulsion is called _____",
+      "answer": "Pepsis (or coction)"
+    },
+    {
+      "id": "TF_MS_171",
+      "topic": "Moral Systems",
+      "prompt": "In deontology, 'side effects' are often distinguished from 'means' using the _____",
+      "answer": "Doctrine of Double Effect"
+    },
+    {
+      "id": "TF_PA_178",
+      "topic": "Philosophical Anthropology",
+      "prompt": "According to the Classical polarity, what relationship between mind and matter became cardinal to moral values?",
+      "answer": "The supremacy of mind over matter"
+    },
+    {
+      "id": "TF_PA_179",
+      "topic": "Philosophical Anthropology",
+      "prompt": "The view that every state of the universe is completely determined by a previous state is known as _____",
+      "answer": "Causal Determinism"
+    },
+    {
+      "id": "TF_PA_180",
+      "topic": "Philosophical Anthropology",
+      "prompt": "The 'ought implies can' principle states that a person is only morally obliged to perform an action if _____",
+      "answer": "The action is actually possible for them to perform"
+    }
+  ]
+}

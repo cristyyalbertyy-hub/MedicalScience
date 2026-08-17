@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Genetics Snap · Studio9</title>
+    <title>Studio9 Snap · Studio9</title>
     <meta
       name="description"
-      content="Snap — timed block-matching game for Genetics. Climb the weekly ranking with Studio9 Pass."
+      content="Studio9 Snap — timed block-matching games for live standalone modules. Climb the weekly ranking with Studio9 Pass."
     />
     <meta name="theme-color" content="#1F4E6B" />
     <link rel="icon" type="image/png" href="../StudioNine.png" />
@@ -23,16 +23,29 @@
     <a class="skip-link" href="#snap-main">Skip to content</a>
 
     <header class="snap-top">
-      <a class="btn btn-secondary" href="../conta/">← My account</a>
+      <div class="snap-top-nav">
+        <a class="btn btn-secondary" href="../conta/">← My account</a>
+        <a id="snap-subjects-link" class="btn btn-secondary" href="./" hidden>All subjects</a>
+      </div>
       <img class="brand-logo" src="../public/Studio9BackTransp.PNG" alt="Studio9" width="120" height="42" />
     </header>
 
     <main id="snap-main" class="snap-shell">
-      <section id="snap-gate" class="snap-card">
+      <section id="snap-hub" class="snap-card" hidden>
         <p class="eyebrow">Studio9 Snap</p>
-        <h1>Genetics · Block Match</h1>
+        <h1>Choose a subject</h1>
         <p class="snap-lead">
-          A prompt flies in. Snap it onto the right answer before time runs out. Climb this week’s Genetics ranking.
+          A Pass bonus: timed block-match with a weekly ranking per live standalone module.
+        </p>
+        <p id="snap-hub-status" class="snap-status" role="status"></p>
+        <div id="snap-hub-list" class="snap-hub-list"></div>
+      </section>
+
+      <section id="snap-gate" class="snap-card" hidden>
+        <p class="eyebrow">Studio9 Snap</p>
+        <h1 id="snap-heading">Block Match</h1>
+        <p id="snap-lead" class="snap-lead">
+          A prompt flies in. Snap it onto the right answer before time runs out.
         </p>
         <p id="snap-status" class="snap-status" role="status"></p>
         <div id="snap-auth" class="snap-auth" hidden>
@@ -42,7 +55,9 @@
           <p class="snap-note">Use the same Google account as your checkout email.</p>
         </div>
         <div id="snap-locked" class="snap-locked" hidden>
-          <p>Genetics Snap is a <strong>Studio9 Pass</strong> bonus — timed play and weekly rankings for subscribers.</p>
+          <p id="snap-locked-copy">
+            Studio9 Snap is a <strong>Studio9 Pass</strong> bonus — timed play and weekly rankings for subscribers.
+          </p>
           <div class="snap-actions">
             <a class="btn btn-primary" href="../precos/#studio9-pass">See Studio9 Pass</a>
             <a class="btn btn-secondary" href="../conta/">My account</a>
@@ -54,7 +69,7 @@
             <input id="snap-nickname" type="text" maxlength="24" autocomplete="nickname" />
           </label>
           <button type="button" id="snap-start" class="btn btn-primary">Play 10 snaps</button>
-          <p class="snap-note">Best score today updates your weekly Genetics rank.</p>
+          <p id="snap-ready-note" class="snap-note">Best score today updates your weekly rank.</p>
         </div>
       </section>
 
@@ -94,9 +109,9 @@
         </div>
       </section>
 
-      <section id="snap-board-card" class="snap-card">
+      <section id="snap-board-card" class="snap-card" hidden>
         <div class="snap-board-head">
-          <h2>Genetics · this week</h2>
+          <h2 id="snap-board-title">This week</h2>
           <span id="snap-week" class="snap-week"></span>
         </div>
         <ol id="snap-board" class="snap-board">
@@ -107,7 +122,7 @@
     </main>
 
     <script src="../conta/firebase-config.js"></script>
-    <script type="module" src="snap.js"></script>
+    <script type="module" src="snap.js?v=2"></script>
     <script src="/analytics.js" defer></script>
   </body>
 </html>

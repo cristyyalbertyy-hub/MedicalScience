@@ -1,0 +1,1029 @@
+{
+  "packageId": "statistics",
+  "title": "Statistics",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "BD_DD_0",
+      "topic": "Data display",
+      "prompt": "When constructing a histogram with unequal grouping intervals, what property of the rectangles must be proportional to the frequencies?",
+      "answer": "The area of the rectangles"
+    },
+    {
+      "id": "BD_DD_1",
+      "topic": "Data display",
+      "prompt": "In a cumulative frequency distribution, what is represented by a shallow gradient?",
+      "answer": "It represents a range where the data values are sparse"
+    },
+    {
+      "id": "BD_DD_2",
+      "topic": "Data display",
+      "prompt": "What is the mathematical formula for the position of the k^th percentile in a distribution with n observations?",
+      "answer": "k × (n+1)/100"
+    },
+    {
+      "id": "BD_DD_3",
+      "topic": "Data display",
+      "prompt": "Which measure of spread is calculated as the difference between the 75^th and 25^th percentiles?",
+      "answer": "The interquartile range"
+    },
+    {
+      "id": "BD_DD_4",
+      "topic": "Data display",
+      "prompt": "Which specific quantiles divide a dataset into five equally-sized groups?",
+      "answer": "Quintiles"
+    },
+    {
+      "id": "BD_PS_16",
+      "topic": "Populations and samples",
+      "prompt": "What specific term describes the phenomenon where different samples drawn from the same population yield varying results due to chance?",
+      "answer": "Sampling variation"
+    },
+    {
+      "id": "BD_PS_17",
+      "topic": "Populations and samples",
+      "prompt": "Which statistical concept refers to the entire group of interest, including potential future members, about which an investigator wishes to make inferences?",
+      "answer": "The target population"
+    },
+    {
+      "id": "BD_PS_18",
+      "topic": "Populations and samples",
+      "prompt": "The hypothetical frequency distribution that would be formed by the means of an infinite number of independent samples of size n is the _____",
+      "answer": "Sampling distribution of the mean"
+    },
+    {
+      "id": "BD_PS_19",
+      "topic": "Populations and samples",
+      "prompt": "Which measure quantifies the precision with which the sample mean estimates the population mean?",
+      "answer": "Standard error of the mean"
+    },
+    {
+      "id": "BD_PS_20",
+      "topic": "Populations and samples",
+      "prompt": "Formula: Theoretical standard error of the sample mean (x)",
+      "answer": "s.e. = σ/√(n)"
+    },
+    {
+      "id": "BD_VT_33",
+      "topic": "Variable types",
+      "prompt": "Categorical variables are also known by what alternative term?",
+      "answer": "Qualitative variables"
+    },
+    {
+      "id": "BD_VT_34",
+      "topic": "Variable types",
+      "prompt": "A 'binary variable' is a specific type of categorical variable with how many possible values?",
+      "answer": "Two"
+    },
+    {
+      "id": "BD_VT_35",
+      "topic": "Variable types",
+      "prompt": "Social class is frequently used as an example of which variable type?",
+      "answer": "Ordered categorical (ordinal) variable"
+    },
+    {
+      "id": "BD_VT_36",
+      "topic": "Variable types",
+      "prompt": "If a researcher groups 'age' into ten-year intervals, what type of variable is created?",
+      "answer": "An ordered categorical variable"
+    },
+    {
+      "id": "BD_VT_37",
+      "topic": "Variable types",
+      "prompt": "In an experiment, the 'exposure variable' is also commonly referred to by what name?",
+      "answer": "Independent variable (or x-variable)"
+    },
+    {
+      "id": "NOA_MSD_73",
+      "topic": "Mean and SD",
+      "prompt": "Formula: Arithmetic Mean (x)",
+      "answer": "x = x/n"
+    },
+    {
+      "id": "NOA_MSD_74",
+      "topic": "Mean and SD",
+      "prompt": "What measure of average is defined as the value that divides an ordered distribution in half?",
+      "answer": "The median"
+    },
+    {
+      "id": "NOA_MSD_75",
+      "topic": "Mean and SD",
+      "prompt": "In a dataset, what does the 'mode' represent?",
+      "answer": "The value that occurs most frequently"
+    },
+    {
+      "id": "NOA_MSD_76",
+      "topic": "Mean and SD",
+      "prompt": "Why is it impossible to average simple deviations from the mean (x - x) to measure variation?",
+      "answer": "The average of these deviations will always be zero"
+    },
+    {
+      "id": "NOA_MSD_77",
+      "topic": "Mean and SD",
+      "prompt": "What is the statistical term for the average of the squared deviations from the mean?",
+      "answer": "Variance (s^2)"
+    },
+    {
+      "id": "NOA_ND_111",
+      "topic": "Normal distribution",
+      "prompt": "What alternative name is frequently used for the Normal distribution in statistics?",
+      "answer": "Gaussian distribution"
+    },
+    {
+      "id": "NOA_ND_112",
+      "topic": "Normal distribution",
+      "prompt": "Which two specific parameters are required to define any Normal distribution?",
+      "answer": "The mean (μ) and the standard deviation (σ)"
+    },
+    {
+      "id": "NOA_ND_113",
+      "topic": "Normal distribution",
+      "prompt": "How is the shape of a Normal distribution frequency curve best described?",
+      "answer": "Symmetrical and bell-shaped"
+    },
+    {
+      "id": "NOA_ND_114",
+      "topic": "Normal distribution",
+      "prompt": "What specific values define the mean and standard deviation of the Standard Normal Distribution?",
+      "answer": "The mean is 0 and the standard deviation is 1"
+    },
+    {
+      "id": "NOA_ND_115",
+      "topic": "Normal distribution",
+      "prompt": "How is the Standard Normal Deviate (z) calculated for a variable x?",
+      "answer": "z = x - μ/σ"
+    },
+    {
+      "id": "NOA_CIM_137",
+      "topic": "Confidence intervals",
+      "prompt": "If multiple independent 95% confidence intervals are calculated from the same population, what percentage of them is expected to contain the true population ...",
+      "answer": "95%"
+    },
+    {
+      "id": "NOA_CIM_138",
+      "topic": "Confidence intervals",
+      "prompt": "Formula: Standard error (s.e.) of the sample mean (\barx)",
+      "answer": "s.e. = s/√(n)"
+    },
+    {
+      "id": "NOA_CIM_139",
+      "topic": "Confidence intervals",
+      "prompt": "Which statistical measure quantifies the precision with which the population mean is estimated by the sample mean?",
+      "answer": "The standard error"
+    },
+    {
+      "id": "NOA_CIM_140",
+      "topic": "Confidence intervals",
+      "prompt": "According to the text, what is the minimum sample size (n) typically required to use the normal distribution for calculating a confidence interval?",
+      "answer": "n > 60"
+    },
+    {
+      "id": "NOA_CIM_141",
+      "topic": "Confidence intervals",
+      "prompt": "In a large-sample 95% confidence interval for a mean, what is the standard multiplier for the standard error?",
+      "answer": "1.96"
+    },
+    {
+      "id": "NOA_HTPV_160",
+      "topic": "Hypothesis testing",
+      "prompt": "Which test statistic is calculated by dividing an estimate by its standard error (z = estimate / s.e.)?",
+      "answer": "The z-score or standard normal deviate"
+    },
+    {
+      "id": "NOA_HTPV_161",
+      "topic": "Hypothesis testing",
+      "prompt": "If a 95\\% confidence interval for a mean difference excludes the null value of 0, what can be inferred about the P-value?",
+      "answer": "The P-value must be less than 0.05"
+    },
+    {
+      "id": "NOA_HTPV_162",
+      "topic": "Hypothesis testing",
+      "prompt": "The probability of achieving a statistically significant result if a real effect exists is known as the _____ of the study",
+      "answer": "Power"
+    },
+    {
+      "id": "NOA_HTPV_163",
+      "topic": "Hypothesis testing",
+      "prompt": "Which statistical test is appropriate for comparing the means of two independent groups when the sample size is small?",
+      "answer": "The unpaired t-test"
+    },
+    {
+      "id": "NOA_HTPV_164",
+      "topic": "Hypothesis testing",
+      "prompt": "What is the formula for the degrees of freedom (d.f.) in an unpaired t-test comparing two groups of sizes n_1 and n_0?",
+      "answer": "d.f. = n_1 + n_0 - 2"
+    },
+    {
+      "id": "NOA_CTM_178",
+      "topic": "Comparison of two means",
+      "prompt": "How is the degrees of freedom (d.f.) calculated for an unpaired (two-sample) t-test?",
+      "answer": "The degrees of freedom is calculated as n_1 + n_0 - 2"
+    },
+    {
+      "id": "NOA_CTM_179",
+      "topic": "Comparison of two means",
+      "prompt": "Formula: What is the standard error of the difference between two independent means when the population standard deviations (σ) are known?",
+      "answer": "s.e. = √(σ_1^2)n_1 + σ_0^2/n_0"
+    },
+    {
+      "id": "NOA_CTM_180",
+      "topic": "Comparison of two means",
+      "prompt": "Formula: How is the standard error of the difference between means calculated when using a pooled standard deviation (s)?",
+      "answer": "s.e. = s √(1)n_1 + 1/n_0"
+    },
+    {
+      "id": "NOA_CTM_181",
+      "topic": "Comparison of two means",
+      "prompt": "The _____ measures how many standard errors the observed difference between means is from the null value of zero",
+      "answer": "test statistic (z or t)"
+    },
+    {
+      "id": "NOA_CTM_183",
+      "topic": "Comparison of two means",
+      "prompt": "How is the degrees of freedom (d.f.) determined for a paired t-test involving n pairs?",
+      "answer": "The degrees of freedom is n - 1"
+    },
+    {
+      "id": "NOA_AV_191",
+      "topic": "ANOVA",
+      "prompt": "One-way ANOVA partitions the total sum of squares into differences between the group means and the _____ sum of squares",
+      "answer": "residual"
+    },
+    {
+      "id": "NOA_AV_192",
+      "topic": "ANOVA",
+      "prompt": "In One-way ANOVA, how is the F statistic (variance-ratio) calculated?",
+      "answer": "F = Between-groups Mean Square/Within-groups Mean Square"
+    },
+    {
+      "id": "NOA_AV_193",
+      "topic": "ANOVA",
+      "prompt": "If the null hypothesis of no difference between groups is true, what is the expected approximate value of the F statistic?",
+      "answer": "1"
+    },
+    {
+      "id": "NOA_AV_194",
+      "topic": "ANOVA",
+      "prompt": "What are the degrees of freedom for the between-groups sum of squares in a One-way ANOVA with k groups?",
+      "answer": "k - 1"
+    },
+    {
+      "id": "NOA_AV_195",
+      "topic": "ANOVA",
+      "prompt": "In a One-way ANOVA with n total observations and k groups, how are the residual degrees of freedom calculated?",
+      "answer": "n - k"
+    },
+    {
+      "id": "NOA_LMR_201",
+      "topic": "Linear regression",
+      "prompt": "In simple linear regression, what does the parameter β_0 represent?",
+      "answer": "The intercept, or the value of y when x = 0"
+    },
+    {
+      "id": "NOA_LMR_202",
+      "topic": "Linear regression",
+      "prompt": "The method of _____ is used in linear regression to find the line that minimises the sum of squared vertical distances between the points and the line",
+      "answer": "least squares"
+    },
+    {
+      "id": "NOA_LMR_203",
+      "topic": "Linear regression",
+      "prompt": "In a regression analysis, the variable being predicted (usually on the vertical axis) is known as the _____ variable",
+      "answer": "outcome (or response)"
+    },
+    {
+      "id": "NOA_LMR_204",
+      "topic": "Linear regression",
+      "prompt": "In a regression analysis, the explanatory variable (usually on the horizontal axis) is known as the _____ variable",
+      "answer": "exposure"
+    },
+    {
+      "id": "NOA_LMR_205",
+      "topic": "Linear regression",
+      "prompt": "The proportion of total variation in the outcome variable explained by a linear regression is measured by _____",
+      "answer": "r^2 (the coefficient of determination)"
+    },
+    {
+      "id": "NOA_CC_238",
+      "topic": "Correlation",
+      "prompt": "In medical statistics, what does the symbol r represent?",
+      "answer": "The Pearson product moment correlation coefficient"
+    },
+    {
+      "id": "NOA_CC_239",
+      "topic": "Correlation",
+      "prompt": "What is the numerical range of the correlation coefficient r?",
+      "answer": "Between -1 and +1"
+    },
+    {
+      "id": "NOA_CC_240",
+      "topic": "Correlation",
+      "prompt": "What does a correlation coefficient of r = 0 indicate about the relationship between two variables?",
+      "answer": "There is no linear association between the variables"
+    },
+    {
+      "id": "NOA_CC_241",
+      "topic": "Correlation",
+      "prompt": "If high values of the exposure variable x tend to occur with high values of the outcome variable y, is the correlation coefficient positive or negative?",
+      "answer": "Positive"
+    },
+    {
+      "id": "NOA_CC_242",
+      "topic": "Correlation",
+      "prompt": "When the correlation coefficient r is exactly +1, where do the points on a scatter plot lie?",
+      "answer": "Exactly on a straight line with a positive slope"
+    },
+    {
+      "id": "BOA_DRO_271",
+      "topic": "Risks and odds",
+      "prompt": "How is the 'odds' of an event A defined in terms of probability?",
+      "answer": "Odds(A) = prob(A)/1 - prob(A)"
+    },
+    {
+      "id": "BOA_DRO_272",
+      "topic": "Risks and odds",
+      "prompt": "If the probability of an event is 0.5, what are the odds?",
+      "answer": "The odds are 1"
+    },
+    {
+      "id": "BOA_DRO_273",
+      "topic": "Risks and odds",
+      "prompt": "How do you calculate probability (p) when the odds are known?",
+      "answer": "p = Odds/1 + Odds"
+    },
+    {
+      "id": "BOA_DRO_274",
+      "topic": "Risks and odds",
+      "prompt": "What happens to the difference between odds and probability when the probability is less than 0.1?",
+      "answer": "The odds and the probability become very close in value"
+    },
+    {
+      "id": "BOA_DRO_275",
+      "topic": "Risks and odds",
+      "prompt": "What is the maximum possible value for the odds of an event?",
+      "answer": "Infinity ()"
+    },
+    {
+      "id": "BOA_BD_297",
+      "topic": "Binomial distribution",
+      "prompt": "Which statistical distribution describes the sampling distribution of a proportion?",
+      "answer": "The binomial distribution"
+    },
+    {
+      "id": "BOA_BD_298",
+      "topic": "Binomial distribution",
+      "prompt": "The binomial distribution is used to analyse outcomes that are categorised into how many alternatives?",
+      "answer": "Two alternatives (binary outcomes)"
+    },
+    {
+      "id": "BOA_BD_299",
+      "topic": "Binomial distribution",
+      "prompt": "In the context of the binomial distribution, what does the variable n denote?",
+      "answer": "The sample size"
+    },
+    {
+      "id": "BOA_BD_300",
+      "topic": "Binomial distribution",
+      "prompt": "Which assumption regarding individual outcomes must be met to apply the binomial distribution?",
+      "answer": "The outcomes must be independent of each other"
+    },
+    {
+      "id": "BOA_BD_302",
+      "topic": "Binomial distribution",
+      "prompt": "What is the general formula for the probability of observing exactly d events in a sample of size n?",
+      "answer": "Prob(d events) = n!/d!(n-d)! π^d (1-π)^n-d"
+    },
+    {
+      "id": "BOA_CP_337",
+      "topic": "Comparing proportions",
+      "prompt": "What is the alternative name for the Odds Ratio based on its calculation in a 2 × 2 table?",
+      "answer": "The cross-product ratio"
+    },
+    {
+      "id": "BOA_CP_338",
+      "topic": "Comparing proportions",
+      "prompt": "Formula: Standard Error of a single proportion (p)",
+      "answer": "√(p(1 - p))n, where n is the sample size"
+    },
+    {
+      "id": "BOA_CP_340",
+      "topic": "Comparing proportions",
+      "prompt": "To use the normal approximation for a proportion, what minimum value should np and n(1-p) each exceed?",
+      "answer": "They should each be greater than 10"
+    },
+    {
+      "id": "BOA_CP_341",
+      "topic": "Comparing proportions",
+      "prompt": "In a 2 × 2 contingency table, how many degrees of freedom are used for the Chi-squared (^2) test?",
+      "answer": "Exactly 1 degree of freedom"
+    },
+    {
+      "id": "BOA_CP_342",
+      "topic": "Comparing proportions",
+      "prompt": "What is the mathematical relationship between the z-statistic from a normal test and the ^2 statistic from a 2 × 2 table?",
+      "answer": "^2 = z^2, and both tests yield identical P-values"
+    },
+    {
+      "id": "BOA_CST_346",
+      "topic": "Chi-squared tests",
+      "prompt": "Formula for the chi-squared (^2) statistic comparing observed (O) and expected (E) frequencies",
+      "answer": "^2 = (O - E)^2/E"
+    },
+    {
+      "id": "BOA_CST_347",
+      "topic": "Chi-squared tests",
+      "prompt": "In a contingency table, how is the expected frequency (E) for a specific cell calculated?",
+      "answer": "E = column total × row total/overall total"
+    },
+    {
+      "id": "BOA_CST_348",
+      "topic": "Chi-squared tests",
+      "prompt": "How many degrees of freedom (d.f.) are associated with a 2 × 2 contingency table chi-squared test?",
+      "answer": "d.f. = 1"
+    },
+    {
+      "id": "BOA_CST_349",
+      "topic": "Chi-squared tests",
+      "prompt": "Formula for the degrees of freedom (d.f.) in an r × c contingency table",
+      "answer": "d.f. = (r - 1) × (c - 1)"
+    },
+    {
+      "id": "BOA_CST_350",
+      "topic": "Chi-squared tests",
+      "prompt": "What is the name of the adjustment applied to the ^2 formula for 2 × 2 tables to improve the approximation for discrete data?",
+      "answer": "Yates' continuity correction"
+    },
+    {
+      "id": "BOA_CS_363",
+      "topic": "Confounding",
+      "prompt": "To be considered a confounder, a variable must be associated with the exposure and _____",
+      "answer": "Independently influence the disease outcome"
+    },
+    {
+      "id": "BOA_CS_364",
+      "topic": "Confounding",
+      "prompt": "The method used to combine evidence from separate strata to produce a summary odds ratio is the _____ method",
+      "answer": "Mantel-Haenszel"
+    },
+    {
+      "id": "BOA_CS_365",
+      "topic": "Confounding",
+      "prompt": "In stratification, what term describes a situation where the effect of an exposure varies depending on the level of a third variable?",
+      "answer": "Effect modification (or interaction)"
+    },
+    {
+      "id": "BOA_CS_366",
+      "topic": "Confounding",
+      "prompt": "Which statistical test is used to check for effect modification across different strata?",
+      "answer": "The ^2 test of heterogeneity"
+    },
+    {
+      "id": "BOA_CS_367",
+      "topic": "Confounding",
+      "prompt": "In cluster analysis, what defines an 'interval' attribute?",
+      "answer": "A continuous linear scale divided into equal intervals"
+    },
+    {
+      "id": "BOA_LR_383",
+      "topic": "Logistic regression",
+      "prompt": "What type of outcome variable is specifically analysed using logistic regression?",
+      "answer": "A binary (or dichotomous) outcome variable"
+    },
+    {
+      "id": "BOA_LR_384",
+      "topic": "Logistic regression",
+      "prompt": "If the probability of an event is π, what is the mathematical formula for the 'odds' of that event?",
+      "answer": "Odds = π/1 - π"
+    },
+    {
+      "id": "BOA_LR_385",
+      "topic": "Logistic regression",
+      "prompt": "The transformation of the probability π into the log of the odds is known as the _____ function",
+      "answer": "logit"
+    },
+    {
+      "id": "BOA_LR_386",
+      "topic": "Logistic regression",
+      "prompt": "How is the exposure odds ratio (OR) derived from a logistic regression coefficient β?",
+      "answer": "By calculating the exponential of the coefficient: (β)"
+    },
+    {
+      "id": "BOA_LR_387",
+      "topic": "Logistic regression",
+      "prompt": "To calculate a 95\\% confidence interval for an odds ratio in logistic regression, what value must first be determined on the log scale?",
+      "answer": "The standard error of the log-odds ratio"
+    },
+    {
+      "id": "BOA_MS_409",
+      "topic": "Matching studies",
+      "prompt": "In a matched study, what term describes a pair where the individuals have different exposure or outcome statuses?",
+      "answer": "Discordant pair"
+    },
+    {
+      "id": "BOA_MS_410",
+      "topic": "Matching studies",
+      "prompt": "What is the formula for the McNemar's chi-squared test statistic (^2_paired) using discordant pairs r and s?",
+      "answer": "^2_paired = (r - s)^2r + s"
+    },
+    {
+      "id": "BOA_MS_411",
+      "topic": "Matching studies",
+      "prompt": "In the analysis of matched case-control studies, information about the association is provided entirely by which type of pairs?",
+      "answer": "Discordant pairs"
+    },
+    {
+      "id": "BOA_MS_412",
+      "topic": "Matching studies",
+      "prompt": "What statistical method allows for the control of additional confounders in an individually matched case-control study?",
+      "answer": "Conditional logistic regression"
+    },
+    {
+      "id": "BOA_MS_413",
+      "topic": "Matching studies",
+      "prompt": "What is the minimum number of total discordant pairs required for the McNemar's chi-squared test to be valid?",
+      "answer": "10"
+    },
+    {
+      "id": "LSA_OHR_447",
+      "topic": "Odds and hazard ratios",
+      "prompt": "What is the formula for the estimated Odds Ratio (OR) comparing an exposed group to an unexposed group?",
+      "answer": "OR = d_1 × h_0/d_0 × h_1"
+    },
+    {
+      "id": "LSA_OHR_449",
+      "topic": "Odds and hazard ratios",
+      "prompt": "If the Risk Ratio (RR) is greater than 1, how does the corresponding Odds Ratio (OR) typically compare?",
+      "answer": "The Odds Ratio is greater than the Risk Ratio (OR > RR)"
+    },
+    {
+      "id": "LSA_OHR_450",
+      "topic": "Odds and hazard ratios",
+      "prompt": "Under what specific condition is the Odds Ratio numerically equivalent to the Risk Ratio?",
+      "answer": "When the outcome is rare"
+    },
+    {
+      "id": "LSA_OHR_451",
+      "topic": "Odds and hazard ratios",
+      "prompt": "What is the primary measure of effect used in the analysis of case-control studies?",
+      "answer": "The Odds Ratio"
+    },
+    {
+      "id": "LSA_OHR_452",
+      "topic": "Odds and hazard ratios",
+      "prompt": "What is the specific name of the formula used to calculate the standard error of the log Odds Ratio?",
+      "answer": "Woolf's formula"
+    },
+    {
+      "id": "LSA_CR_476",
+      "topic": "Computing risks",
+      "prompt": "The right of an individual to choose for himself or herself is the ethical principle of _____",
+      "answer": "Autonomy"
+    },
+    {
+      "id": "LSA_CR_477",
+      "topic": "Computing risks",
+      "prompt": "What term describes the procedures and technology employed to protect information from accidental or malicious alteration?",
+      "answer": "Security"
+    },
+    {
+      "id": "LSA_CR_478",
+      "topic": "Computing risks",
+      "prompt": "The right of an individual to control the use and dissemination of their personal information is known as _____",
+      "answer": "Information privacy"
+    },
+    {
+      "id": "LSA_CR_479",
+      "topic": "Computing risks",
+      "prompt": "A malicious code that blocks an organisation from using its computer systems until a payment is made is called _____",
+      "answer": "Ransomware"
+    },
+    {
+      "id": "LSA_CR_480",
+      "topic": "Computing risks",
+      "prompt": "The tricking of a user to load an infected physical device onto their computer is a security threat known as _____",
+      "answer": "Baiting"
+    },
+    {
+      "id": "LSA_SA_489",
+      "topic": "Kaplan-Meier survival",
+      "prompt": "The _____ assumes that the probability of being censored is unrelated to the probability of the event of interest occurring",
+      "answer": "non-informative censoring assumption"
+    },
+    {
+      "id": "LSA_SA_490",
+      "topic": "Kaplan-Meier survival",
+      "prompt": "In Kaplan–Meier estimation, how is the survival probability at time t, denoted s_t, calculated from the risk r_t?",
+      "answer": "s_t = 1 - r_t = (n_t - d_t) / n_t"
+    },
+    {
+      "id": "LSA_SA_491",
+      "topic": "Kaplan-Meier survival",
+      "prompt": "Identify the 'product-limit formula' used to calculate the survivor function S(t_j) for the j^th event",
+      "answer": "S(t_j) = s_t1 × s_t2 × × s_tj"
+    },
+    {
+      "id": "LSA_SA_492",
+      "topic": "Kaplan-Meier survival",
+      "prompt": "What is the 'Nelson–Aalen estimate' used to calculate?",
+      "answer": "The cumulative hazard function H(t)"
+    },
+    {
+      "id": "LSA_SA_493",
+      "topic": "Kaplan-Meier survival",
+      "prompt": "Formula: Relationship between S(t) and H(t)",
+      "answer": "S(t) = e^-H(t) or H(t) = -(S(t))"
+    },
+    {
+      "id": "LSA_RA_506",
+      "topic": "Cox regression",
+      "prompt": "In survival analysis, what does the 'hazard' (h(t)) represent?",
+      "answer": "The instantaneous rate of the event occurring at time t"
+    },
+    {
+      "id": "LSA_RA_507",
+      "topic": "Cox regression",
+      "prompt": "What is the fundamental assumption underlying the Cox regression model?",
+      "answer": "The proportional hazards assumption"
+    },
+    {
+      "id": "LSA_RA_508",
+      "topic": "Cox regression",
+      "prompt": "What is the mathematical form of the Cox proportional hazards model on the log scale?",
+      "answer": "(h(t)) = (h_0(t)) + β_1x_1 + β_2x_2 + + β_px_p"
+    },
+    {
+      "id": "LSA_RA_509",
+      "topic": "Cox regression",
+      "prompt": "How is the hazard ratio (HR) for a single binary exposure variable calculated from the Cox regression coefficient β_1?",
+      "answer": "HR = (β_1)"
+    },
+    {
+      "id": "LSA_RA_510",
+      "topic": "Cox regression",
+      "prompt": "What does a positive regression coefficient (β > 0) in a Cox model indicate about the hazard?",
+      "answer": "It indicates an increased hazard of the event occurring"
+    },
+    {
+      "id": "LSA_S_535",
+      "topic": "Standardization",
+      "prompt": "In the context of population health, overall rates that have not been adjusted for confounders are known as _____ rates",
+      "answer": "crude"
+    },
+    {
+      "id": "LSA_S_536",
+      "topic": "Standardization",
+      "prompt": "What are the two primary methods used for statistical standardisation?",
+      "answer": "Direct standardisation and indirect standardisation"
+    },
+    {
+      "id": "LSA_S_537",
+      "topic": "Standardization",
+      "prompt": "Which method of standardisation involves applying the age-sex specific rates of the study populations to a single standard population?",
+      "answer": "Direct standardisation"
+    },
+    {
+      "id": "LSA_S_538",
+      "topic": "Standardization",
+      "prompt": "Which method of standardisation applies the age-sex specific rates of a standard population to the composition of the study populations?",
+      "answer": "Indirect standardisation"
+    },
+    {
+      "id": "LSA_S_539",
+      "topic": "Standardization",
+      "prompt": "In indirect standardisation, what is the resulting measure called when the observed deaths are divided by the expected deaths?",
+      "answer": "Standardised Mortality Ratio (SMR)"
+    },
+    {
+      "id": "SM_LT_567",
+      "topic": "Likelihood theory",
+      "prompt": "How is the 'Likelihood Ratio' (LR) for a specific parameter value π calculated?",
+      "answer": "LR = Likelihood for π/Likelihood at the MLE"
+    },
+    {
+      "id": "SM_LT_569",
+      "topic": "Likelihood theory",
+      "prompt": "The _____ is used to measure the amount of support the data provide for a particular value of a parameter relative to the MLE",
+      "answer": "Likelihood Ratio"
+    },
+    {
+      "id": "SM_LT_570",
+      "topic": "Likelihood theory",
+      "prompt": "According to the quadratic approximation, what is the value of the (LR) at the Maximum Likelihood Estimate?",
+      "answer": "0"
+    },
+    {
+      "id": "SM_LT_571",
+      "topic": "Likelihood theory",
+      "prompt": "In the quadratic approximation Log(LR) = -1/2 (MLE - θ/S)^2, what does the variable S represent?",
+      "answer": "The standard error of the parameter estimate"
+    },
+    {
+      "id": "SM_LT_572",
+      "topic": "Likelihood theory",
+      "prompt": "What is the specific cut-off value of the Likelihood Ratio that approximately corresponds to a 95\\% confidence interval?",
+      "answer": "0.1465"
+    },
+    {
+      "id": "SM_NPM_596",
+      "topic": "Non-parametric methods",
+      "prompt": "What is the non-parametric counterpart to the paired t-test?",
+      "answer": "The Wilcoxon signed rank test"
+    },
+    {
+      "id": "SM_NPM_597",
+      "topic": "Non-parametric methods",
+      "prompt": "What is the non-parametric counterpart to the independent samples t-test?",
+      "answer": "The Wilcoxon rank sum test"
+    },
+    {
+      "id": "SM_NPM_598",
+      "topic": "Non-parametric methods",
+      "prompt": "In the Wilcoxon signed rank test, how is the rank assigned to equal differences (ties)?",
+      "answer": "The ranks of the tied values are averaged"
+    },
+    {
+      "id": "SM_NPM_599",
+      "topic": "Non-parametric methods",
+      "prompt": "What is the first step when calculating a Wilcoxon signed rank test from a set of paired differences?",
+      "answer": "Exclude any differences that are zero"
+    },
+    {
+      "id": "SM_NPM_600",
+      "topic": "Non-parametric methods",
+      "prompt": "In the Wilcoxon signed rank test, the null hypothesis states that the median of the differences is _____",
+      "answer": "Zero"
+    },
+    {
+      "id": "SM_BM_626",
+      "topic": "Bayesian methods",
+      "prompt": "What is the formula for Bayes' Rule relating the conditional probabilities of events A and B?",
+      "answer": "Prob(B given A) = Prob(A given B) × Prob(B)/Prob(A)"
+    },
+    {
+      "id": "SM_BM_627",
+      "topic": "Bayesian methods",
+      "prompt": "In e-DSS design, what graph structure is typically used to model causal relationships among evidence and diagnostic variables?",
+      "answer": "A directed acyclic graph (DAG)"
+    },
+    {
+      "id": "SM_BM_628",
+      "topic": "Bayesian methods",
+      "prompt": "How many votes does a rule with a probability of 'likely' contribute to its recommended diagnosis in the LBP e-DSS?",
+      "answer": "One vote"
+    },
+    {
+      "id": "SM_BM_629",
+      "topic": "Bayesian methods",
+      "prompt": "The validity measure V_sys for an e-DSS is inclusively bounded between which two values?",
+      "answer": "0 and 1"
+    },
+    {
+      "id": "SM_BM_630",
+      "topic": "Bayesian methods",
+      "prompt": "In the LBP consensus model, if d_j receives more votes than d_k and they have equal prior probabilities, which is more likely to be true?",
+      "answer": "d_j is more likely to be true"
+    },
+    {
+      "id": "SM_SRMA_636",
+      "topic": "Meta-analysis",
+      "prompt": "In Evidence-Based Medicine (EBM), what does the 'P' in the PICO acronym represent?",
+      "answer": "Patient population or problem"
+    },
+    {
+      "id": "SM_SRMA_637",
+      "topic": "Meta-analysis",
+      "prompt": "In the PICO acronym for formulating clinical questions, what does the 'I' stand for?",
+      "answer": "Intervention"
+    },
+    {
+      "id": "SM_SRMA_638",
+      "topic": "Meta-analysis",
+      "prompt": "Within the PICO framework, what does the 'C' represent?",
+      "answer": "Comparison, controls, or standard therapy"
+    },
+    {
+      "id": "SM_SRMA_639",
+      "topic": "Meta-analysis",
+      "prompt": "What outcome-related component does the 'O' represent in the PICO acronym?",
+      "answer": "The improved result or clinical outcome being measured"
+    },
+    {
+      "id": "SM_SRMA_640",
+      "topic": "Meta-analysis",
+      "prompt": "Which international organisation is dedicated to maintaining and disseminating systematic reviews of health care interventions?",
+      "answer": "The Cochrane Collaboration"
+    },
+    {
+      "id": "SM_DTA_658",
+      "topic": "Diagnostic tests",
+      "prompt": "What type of variable is 'smear result' when categorised as negative, uncertain, or positive?",
+      "answer": "Ordered categorical variable"
+    },
+    {
+      "id": "SM_DTA_659",
+      "topic": "Diagnostic tests",
+      "prompt": "A variable that can only take one of two possible values, such as 'dead' or 'alive', is classified as a _____ variable",
+      "answer": "Binary"
+    },
+    {
+      "id": "SM_DTA_660",
+      "topic": "Diagnostic tests",
+      "prompt": "The probability of obtaining a result at least as extreme as the one observed, assuming the null hypothesis is true, is called the _____",
+      "answer": "P-value"
+    },
+    {
+      "id": "SM_DTA_661",
+      "topic": "Diagnostic tests",
+      "prompt": "What happens to the PPV of a test if the prevalence of the disease in the population decreases?",
+      "answer": "The Positive Predictive Value (PPV) decreases"
+    },
+    {
+      "id": "SM_DTA_662",
+      "topic": "Diagnostic tests",
+      "prompt": "What is plotted on the horizontal axis of a Receiver Operating Characteristic (ROC) curve?",
+      "answer": "1 - Specificity (the false positive rate)"
+    },
+    {
+      "id": "SM_BJ_682",
+      "topic": "Bootstrapping",
+      "prompt": "In clinical epidemiology, what does the marker 'NNT' represent?",
+      "answer": "Number Needed to Treat"
+    },
+    {
+      "id": "SM_BJ_683",
+      "topic": "Bootstrapping",
+      "prompt": "What is the formula for calculating Relative Risk (RR) given outcomes A and B?",
+      "answer": "RR = A/B"
+    },
+    {
+      "id": "SM_BJ_684",
+      "topic": "Bootstrapping",
+      "prompt": "How is Absolute Risk Reduction (ARR) calculated in dichotomous outcomes?",
+      "answer": "ARR = A - B"
+    },
+    {
+      "id": "SM_BJ_685",
+      "topic": "Bootstrapping",
+      "prompt": "What is the mathematical relationship between NNT and ARR?",
+      "answer": "NNT = 1/ARR"
+    },
+    {
+      "id": "SM_BJ_686",
+      "topic": "Bootstrapping",
+      "prompt": "How is Relative Risk Reduction (RRR) defined using Relative Risk (RR)?",
+      "answer": "RRR = 1 - RR"
+    },
+    {
+      "id": "SDI_SSPC_704",
+      "topic": "Sample size and power",
+      "prompt": "The explicit process of using rules of evidence to interpret medical literature for direct patient care is known as _____",
+      "answer": "Evidence-based medicine"
+    },
+    {
+      "id": "SDI_SSPC_705",
+      "topic": "Sample size and power",
+      "prompt": "In statistics, a _____ is the larger group from which we collect a smaller group of data to make inferences",
+      "answer": "Population"
+    },
+    {
+      "id": "SDI_SSPC_706",
+      "topic": "Sample size and power",
+      "prompt": "What is the term for the number of individuals included in a study?",
+      "answer": "Sample size"
+    },
+    {
+      "id": "SDI_SSPC_708",
+      "topic": "Sample size and power",
+      "prompt": "What is the name of the frequency distribution of means collected from many independent samples of the same size?",
+      "answer": "Sampling distribution"
+    },
+    {
+      "id": "SDI_SSPC_709",
+      "topic": "Sample size and power",
+      "prompt": "What is the formula for the standard error (SE) of a sample mean using the sample standard deviation (s) and sample size (n)?",
+      "answer": "SE = s/√(n)"
+    },
+    {
+      "id": "SDI_MER_748",
+      "topic": "Measurement error",
+      "prompt": "Identify the type of error that results from mistakes in coding, copying, or data entry",
+      "answer": "Data processing errors"
+    },
+    {
+      "id": "SDI_MER_749",
+      "topic": "Measurement error",
+      "prompt": "The probability that a person with a positive test result actually has the disease is known as the _____",
+      "answer": "Positive Predictive Value (PPV)"
+    },
+    {
+      "id": "SDI_MER_750",
+      "topic": "Measurement error",
+      "prompt": "The probability that a person with a negative test result is truly free of the disease is known as the _____",
+      "answer": "Negative Predictive Value (NPV)"
+    },
+    {
+      "id": "SDI_MER_751",
+      "topic": "Measurement error",
+      "prompt": "Which statistical measure is most appropriate for assessing the reproducibility of categorical variables?",
+      "answer": "The Kappa statistic ()"
+    },
+    {
+      "id": "SDI_MER_752",
+      "topic": "Measurement error",
+      "prompt": "What does a Kappa value of 1 indicate?",
+      "answer": "Complete agreement between observers or occasions"
+    },
+    {
+      "id": "SDI_MAI_766",
+      "topic": "Measures of association",
+      "prompt": "Formula for the kth percentile of a distribution with n observations",
+      "answer": "kth percentile = k × (n + 1)/100"
+    },
+    {
+      "id": "SDI_MAI_768",
+      "topic": "Measures of association",
+      "prompt": "How is 'Efficacy' calculated from the Risk Ratio (RR)?",
+      "answer": "Efficacy = 1 - RR"
+    },
+    {
+      "id": "SDI_MAI_769",
+      "topic": "Measures of association",
+      "prompt": "Formula for the 'Number Needed to Treat' (NNT) based on the risk difference",
+      "answer": "NNT = 1/|risk difference|"
+    },
+    {
+      "id": "SDI_MAI_770",
+      "topic": "Measures of association",
+      "prompt": "What represents the 'True Positive Rate' in a diagnostic context?",
+      "answer": "Sensitivity"
+    },
+    {
+      "id": "SDI_MAI_771",
+      "topic": "Measures of association",
+      "prompt": "What represents the 'True Negative Rate' in a diagnostic context?",
+      "answer": "Specificity"
+    },
+    {
+      "id": "SDI_AB_780",
+      "topic": "Analysis bias",
+      "prompt": "What does a 'P-value' assess in statistical analysis?",
+      "answer": "The strength of the evidence against the null hypothesis"
+    },
+    {
+      "id": "SDI_AB_781",
+      "topic": "Analysis bias",
+      "prompt": "According to the philosopher Karl Popper, science is a process of _____ hypotheses",
+      "answer": "disproving"
+    },
+    {
+      "id": "SDI_AB_782",
+      "topic": "Analysis bias",
+      "prompt": "In a linear regression equation y = β_0 + β_1 x, what does the 'outcome variable' correspond to?",
+      "answer": "The y-variable (or dependent variable)"
+    },
+    {
+      "id": "SDI_AB_783",
+      "topic": "Analysis bias",
+      "prompt": "In a linear regression equation y = β_0 + β_1 x, what does the 'exposure variable' correspond to?",
+      "answer": "The x-variable (or independent variable)"
+    },
+    {
+      "id": "SDI_AB_784",
+      "topic": "Analysis bias",
+      "prompt": "The subsets defined by the levels of a confounding variable C during stratification are called _____",
+      "answer": "strata"
+    },
+    {
+      "id": "SDI_CIS_801",
+      "topic": "Causal inference",
+      "prompt": "In which study design is sampling based on 'disease status' rather than exposure status?",
+      "answer": "Case-control study"
+    },
+    {
+      "id": "SDI_CIS_802",
+      "topic": "Causal inference",
+      "prompt": "Which regression model is most appropriate for a 'numerical' outcome variable?",
+      "answer": "Linear regression"
+    },
+    {
+      "id": "SDI_CIS_803",
+      "topic": "Causal inference",
+      "prompt": "Which regression model is most appropriate for a 'binary' outcome variable?",
+      "answer": "Logistic regression"
+    },
+    {
+      "id": "SDI_CIS_804",
+      "topic": "Causal inference",
+      "prompt": "Which regression model is most appropriate for analysing 'rates' of disease?",
+      "answer": "Poisson regression"
+    },
+    {
+      "id": "SDI_CIS_805",
+      "topic": "Causal inference",
+      "prompt": "Which regression model is most appropriate for 'survival' data (time-to-event outcomes)?",
+      "answer": "Cox regression (proportional hazards model)"
+    }
+  ]
+}

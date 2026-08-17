@@ -8,7 +8,18 @@ import {
   sanitizeNickname,
 } from "./_lib/snap.js";
 
-const ALLOWED_PACKAGES = new Set(["genetics"]);
+const ALLOWED_PACKAGES = new Set([
+  "human-anatomy-1",
+  "medical-biology",
+  "genetics",
+  "physics",
+  "information-processing",
+  "statistics",
+  "history-of-medicine",
+  "moral-philosophy",
+  "health-technology-assessments",
+  "italian-health-system",
+]);
 
 export default async function handler(req, res) {
   if (handleStudio9CorsPreflight(req, res)) return;

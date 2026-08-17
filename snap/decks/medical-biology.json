@@ -1,0 +1,549 @@
+{
+  "packageId": "medical-biology",
+  "title": "Medical Biology",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "CB_P_0",
+      "topic": "Proto-oncogenes",
+      "prompt": "How many copies of a proto-oncogene must be mutated to promote the development of cancer?",
+      "answer": "Only one copy must undergo a gain-of-function mutation"
+    },
+    {
+      "id": "CB_P_1",
+      "topic": "Proto-oncogenes",
+      "prompt": "What is the typical effect of a gain-of-function mutation in a proto-oncogene on its inheritance pattern at the cellular level?",
+      "answer": "It acts in a dominant manner"
+    },
+    {
+      "id": "CB_P_2",
+      "topic": "Proto-oncogenes",
+      "prompt": "Which mechanism of proto-oncogene activation involves a small change in DNA sequence that produces a hyperactive protein in normal amounts?",
+      "answer": "Deletion or point mutation within the coding sequence"
+    },
+    {
+      "id": "CB_P_3",
+      "topic": "Proto-oncogenes",
+      "prompt": "Which activation mechanism involves placing a proto-oncogene under the control of a highly active, nearby regulatory DNA sequence?",
+      "answer": "Chromosomal rearrangement"
+    },
+    {
+      "id": "CB_P_4",
+      "topic": "Proto-oncogenes",
+      "prompt": "What type of protein is produced when a chromosomal rearrangement fuses a proto-oncogene with an actively transcribed gene?",
+      "answer": "A hyperactive fusion protein"
+    },
+    {
+      "id": "CB_TS_41",
+      "topic": "Tumour suppressors",
+      "prompt": "At the cellular level, mutations in tumour suppressor genes generally act in a _____ manner",
+      "answer": "Recessive"
+    },
+    {
+      "id": "CB_TS_42",
+      "topic": "Tumour suppressors",
+      "prompt": "How many copies of a tumour suppressor gene must typically be inactivated to promote cancer development?",
+      "answer": "Two"
+    },
+    {
+      "id": "CB_TS_43",
+      "topic": "Tumour suppressors",
+      "prompt": "Which specific rare human cancer led to the discovery of the first tumour suppressor gene?",
+      "answer": "Retinoblastoma"
+    },
+    {
+      "id": "CB_TS_44",
+      "topic": "Tumour suppressors",
+      "prompt": "The _____ hypothesis explains why some cancers appear in families as an autosomal dominant trait despite being recessive at the cellular level",
+      "answer": "Two-hit"
+    },
+    {
+      "id": "CB_TS_45",
+      "topic": "Tumour suppressors",
+      "prompt": "On which human chromosome is the RB1 gene located?",
+      "answer": "Chromosome 13"
+    },
+    {
+      "id": "CB_TT_91",
+      "topic": "Cell theory",
+      "prompt": "Cancer is described as a microevolutionary process because it results from repeated rounds of mutation, competition, and _____",
+      "answer": "Natural selection"
+    },
+    {
+      "id": "CB_TT_92",
+      "topic": "Cell theory",
+      "prompt": "What is the approximate estimated mutation rate per gene per cell division?",
+      "answer": "10^-6"
+    },
+    {
+      "id": "CB_TT_93",
+      "topic": "Cell theory",
+      "prompt": "A mutated cell that becomes the ancestor of a growing mutant clone is known as a _____",
+      "answer": "Founder"
+    },
+    {
+      "id": "CB_TT_94",
+      "topic": "Cell theory",
+      "prompt": "Cancer cells often achieve immortality by reactivating the production of which enzyme?",
+      "answer": "Telomerase"
+    },
+    {
+      "id": "CB_TT_95",
+      "topic": "Cell theory",
+      "prompt": "Mutations in proto-oncogenes are typically classified as _____ mutations",
+      "answer": "Dominant gain-of-function"
+    },
+    {
+      "id": "CF_M_165",
+      "topic": "Macromolecules",
+      "prompt": "What is the approximate percentage of water by weight in a typical living cell?",
+      "answer": "70%"
+    },
+    {
+      "id": "CF_M_166",
+      "topic": "Macromolecules",
+      "prompt": "On the basis of mass, what are the most abundant organic molecules in a living cell?",
+      "answer": "Macromolecules"
+    },
+    {
+      "id": "CF_M_167",
+      "topic": "Macromolecules",
+      "prompt": "Small organic molecules in the cytosol generally have molecular weights in what range?",
+      "answer": "100–1000"
+    },
+    {
+      "id": "CF_M_168",
+      "topic": "Macromolecules",
+      "prompt": "Which four elements make up approximately 96% of a cell's mass?",
+      "answer": "C, H, N, and O"
+    },
+    {
+      "id": "CF_M_169",
+      "topic": "Macromolecules",
+      "prompt": "What type of chemical bond links the monomer subunits in a macromolecule?",
+      "answer": "Covalent bond"
+    },
+    {
+      "id": "CF_PE_221",
+      "topic": "Prokaryotic vs eukaryotic",
+      "prompt": "According to the etymology of the terms, what does the Greek word 'karyon' signify in the context of cell classification?",
+      "answer": "It signifies a 'kernel' or 'nucleus'"
+    },
+    {
+      "id": "CF_PE_222",
+      "topic": "Prokaryotic vs eukaryotic",
+      "prompt": "What is the primary structural characteristic used to distinguish eukaryotes from prokaryotes?",
+      "answer": "The presence of a distinct, membrane-enclosed nucleus"
+    },
+    {
+      "id": "CF_PE_223",
+      "topic": "Prokaryotic vs eukaryotic",
+      "prompt": "Identify the two distinct evolutionary domains into which all prokaryotes are divided",
+      "answer": "The two domains are Bacteria and Archaea"
+    },
+    {
+      "id": "CF_PE_224",
+      "topic": "Prokaryotic vs eukaryotic",
+      "prompt": "In a prokaryotic cell, where is the genetic material (DNA) specifically located?",
+      "answer": "The DNA is located directly within the cytoplasm"
+    },
+    {
+      "id": "CF_PE_225",
+      "topic": "Prokaryotic vs eukaryotic",
+      "prompt": "Which organelle is the only one typically found within a bacterial cell?",
+      "answer": "The ribosome is the only organelle present in bacteria"
+    },
+    {
+      "id": "CF_V_240",
+      "topic": "Viruses",
+      "prompt": "What term describes the protein shell that encloses a viral genome?",
+      "answer": "Capsid"
+    },
+    {
+      "id": "CF_V_241",
+      "topic": "Viruses",
+      "prompt": "A complete, infectious virus particle is known as a _____",
+      "answer": "Virion"
+    },
+    {
+      "id": "CF_V_242",
+      "topic": "Viruses",
+      "prompt": "In the Hershey-Chase experiment, what radioactive isotope was used to label viral DNA?",
+      "answer": "^32P"
+    },
+    {
+      "id": "CF_V_243",
+      "topic": "Viruses",
+      "prompt": "In the Hershey-Chase experiment, what radioactive isotope was used to label viral proteins?",
+      "answer": "^35S"
+    },
+    {
+      "id": "CF_V_244",
+      "topic": "Viruses",
+      "prompt": "What specific enzymatic activity does the protein encoded by Src possess?",
+      "answer": "Tyrosine kinase activity"
+    },
+    {
+      "id": "CP_CD_278",
+      "topic": "Cell death",
+      "prompt": "What is the term for the molecularly distinct form of programmed cell death used to eliminate unwanted or damaged cells?",
+      "answer": "Apoptosis"
+    },
+    {
+      "id": "CP_CD_279",
+      "topic": "Cell death",
+      "prompt": "Which irregular protrusions often form on the surface of a cell during the middle stages of apoptosis?",
+      "answer": "Blebs"
+    },
+    {
+      "id": "CP_CD_280",
+      "topic": "Cell death",
+      "prompt": "In what form are caspases normally present in healthy, non-apoptotic cells?",
+      "answer": "As inactive precursors called procaspases"
+    },
+    {
+      "id": "CP_CD_281",
+      "topic": "Cell death",
+      "prompt": "Which class of caspases is first activated by an apoptotic signal to trigger the proteolytic cascade?",
+      "answer": "Initiator caspases"
+    },
+    {
+      "id": "CP_CD_282",
+      "topic": "Cell death",
+      "prompt": "Which class of caspases is responsible for the widespread protein cleavage that kills the cell?",
+      "answer": "Executioner caspases"
+    },
+    {
+      "id": "CP_CT_304",
+      "topic": "Cell trafficking",
+      "prompt": "In what folding state are proteins when they are transported from the cytosol into the nucleus?",
+      "answer": "They are transported in their fully folded conformation"
+    },
+    {
+      "id": "CP_CT_305",
+      "topic": "Cell trafficking",
+      "prompt": "The nuclear import receptor interacts with _____ to drive the transport of proteins into the nucleus",
+      "answer": "Ran-GTP"
+    },
+    {
+      "id": "CP_CT_306",
+      "topic": "Cell trafficking",
+      "prompt": "Unlike nuclear transport, proteins moving into mitochondria or chloroplasts must _____ to pass through the membrane",
+      "answer": "Unfold"
+    },
+    {
+      "id": "CP_CT_307",
+      "topic": "Cell trafficking",
+      "prompt": "Which signal sequence allows soluble proteins to be retained in the lumen of the endoplasmic reticulum?",
+      "answer": "The ER retention signal (often the KDEL sequence)"
+    },
+    {
+      "id": "CP_CT_308",
+      "topic": "Cell trafficking",
+      "prompt": "The _____ triggers an expansion of the ER and increases its folding capacity when misfolded proteins accumulate excessively",
+      "answer": "Unfolded Protein Response (UPR)"
+    },
+    {
+      "id": "CP_MM_331",
+      "topic": "Mitosis and meiosis",
+      "prompt": "In the context of cell biology, what is the primary outcome of mitosis regarding the daughter cells?",
+      "answer": "Two genetically identical diploid daughter cells"
+    },
+    {
+      "id": "CP_MM_332",
+      "topic": "Mitosis and meiosis",
+      "prompt": "The specialized cell division process that produces haploid gametes from a diploid cell is known as _____",
+      "answer": "Meiosis"
+    },
+    {
+      "id": "CP_MM_333",
+      "topic": "Mitosis and meiosis",
+      "prompt": "During which phase of the cell cycle is chromosomal DNA replicated?",
+      "answer": "S phase"
+    },
+    {
+      "id": "CP_MM_334",
+      "topic": "Mitosis and meiosis",
+      "prompt": "Identify the period that encompasses both nuclear division (mitosis) and cytoplasmic division (cytokinesis)",
+      "answer": "M phase"
+    },
+    {
+      "id": "CP_MM_335",
+      "topic": "Mitosis and meiosis",
+      "prompt": "What protein complexes hold sister chromatids together along their length after DNA replication?",
+      "answer": "Cohesins"
+    },
+    {
+      "id": "CP_S_378",
+      "topic": "Cell signalling",
+      "prompt": "The process by which a target cell converts an extracellular signal into a specific intracellular response is known as _____",
+      "answer": "Signal transduction"
+    },
+    {
+      "id": "CP_S_379",
+      "topic": "Cell signalling",
+      "prompt": "In which form of intercellular signalling are hormones carried through the bloodstream to reach distant target cells?",
+      "answer": "Endocrine signalling"
+    },
+    {
+      "id": "CP_S_380",
+      "topic": "Cell signalling",
+      "prompt": "What term describes signalling molecules that act locally on cells in the immediate environment of the signalling cell?",
+      "answer": "Local mediators"
+    },
+    {
+      "id": "CP_S_381",
+      "topic": "Cell signalling",
+      "prompt": "Which signalling style requires direct physical contact between the signal molecule in the plasma membrane of one cell and the receptor in another?",
+      "answer": "Contact-dependent signalling"
+    },
+    {
+      "id": "CP_S_382",
+      "topic": "Cell signalling",
+      "prompt": "Which intracellular signalling function involves increasing the strength of a signal so that a few extracellular molecules evoke a large response?",
+      "answer": "Amplification"
+    },
+    {
+      "id": "CSF_C_419",
+      "topic": "Cytoskeleton",
+      "prompt": "Which cytoskeletal filament type has the smallest diameter, measuring approximately 7 nm?",
+      "answer": "Actin filaments"
+    },
+    {
+      "id": "CSF_C_420",
+      "topic": "Cytoskeleton",
+      "prompt": "What is the approximate outer diameter of a microtubule?",
+      "answer": "25 nm"
+    },
+    {
+      "id": "CSF_C_421",
+      "topic": "Cytoskeleton",
+      "prompt": "Which filament type is characterized as ropelike with a diameter of about 10 nm?",
+      "answer": "Intermediate filaments"
+    },
+    {
+      "id": "CSF_C_422",
+      "topic": "Cytoskeleton",
+      "prompt": "The meshwork of intermediate filaments that supports the inner face of the nuclear envelope is called the _____",
+      "answer": "Nuclear lamina"
+    },
+    {
+      "id": "CSF_C_423",
+      "topic": "Cytoskeleton",
+      "prompt": "Which two families of linker proteins bridge the nuclear envelope to connect the cytoskeleton and the nucleoskeleton?",
+      "answer": "SUN and KASH families"
+    },
+    {
+      "id": "CSF_M_476",
+      "topic": "Mitochondria",
+      "prompt": "Which eukaryotic organelle is responsible for producing the majority of the cell's ATP via oxidative phosphorylation?",
+      "answer": "The mitochondrion"
+    },
+    {
+      "id": "CSF_M_477",
+      "topic": "Mitochondria",
+      "prompt": "Mitochondria consume O_2 and release CO_2 to extract energy from food in a process known as _____",
+      "answer": "Cell respiration"
+    },
+    {
+      "id": "CSF_M_478",
+      "topic": "Mitochondria",
+      "prompt": "What is the name of the highly convoluted folds found in the inner mitochondrial membrane?",
+      "answer": "Cristae"
+    },
+    {
+      "id": "CSF_M_479",
+      "topic": "Mitochondria",
+      "prompt": "Which mitochondrial compartment contains a highly concentrated mixture of enzymes for the citric acid cycle?",
+      "answer": "The matrix"
+    },
+    {
+      "id": "CSF_M_480",
+      "topic": "Mitochondria",
+      "prompt": "The mitochondrial outer membrane contains channel-forming proteins called _____ that allow molecules of 5000 daltons or less to pass through",
+      "answer": "Porins"
+    },
+    {
+      "id": "CSF_O_527",
+      "topic": "Organelles",
+      "prompt": "Which organelle serves as the repository for the cell's genetic material?",
+      "answer": "The nucleus"
+    },
+    {
+      "id": "CSF_O_528",
+      "topic": "Organelles",
+      "prompt": "How many membranes constitute the nuclear envelope?",
+      "answer": "Two (a double membrane)"
+    },
+    {
+      "id": "CSF_O_529",
+      "topic": "Organelles",
+      "prompt": "Which organelle is described as an irregular maze of interconnected membrane-enclosed spaces?",
+      "answer": "The endoplasmic reticulum (ER)"
+    },
+    {
+      "id": "CSF_O_530",
+      "topic": "Organelles",
+      "prompt": "What structural feature distinguishes the rough endoplasmic reticulum?",
+      "answer": "The presence of ribosomes on its cytosolic surface"
+    },
+    {
+      "id": "CSF_O_531",
+      "topic": "Organelles",
+      "prompt": "What is a major metabolic role of the smooth endoplasmic reticulum?",
+      "answer": "The synthesis of most lipids"
+    },
+    {
+      "id": "CSF_PM_585",
+      "topic": "Plasma membrane",
+      "prompt": "What is the approximate thickness of a typical plasma membrane lipid bilayer?",
+      "answer": "The lipid bilayer is approximately 5 nm thick"
+    },
+    {
+      "id": "CSF_PM_586",
+      "topic": "Plasma membrane",
+      "prompt": "The meshwork of fibrous proteins attached to the cytosolic surface of the plasma membrane in animal cells is called the _____",
+      "answer": "Cell cortex"
+    },
+    {
+      "id": "CSF_PM_587",
+      "topic": "Plasma membrane",
+      "prompt": "Most transmembrane proteins cross the lipid bilayer in the form of an _____",
+      "answer": "α helix"
+    },
+    {
+      "id": "CSF_PM_588",
+      "topic": "Plasma membrane",
+      "prompt": "The sugar coating on the exterior of the plasma membrane, composed of glycoproteins and proteoglycans, is known as the _____",
+      "answer": "Glycocalyx"
+    },
+    {
+      "id": "CSF_PM_589",
+      "topic": "Plasma membrane",
+      "prompt": "What term describes a membrane protein that is covalently attached to a lipid molecule embedded in the bilayer?",
+      "answer": "Lipid-linked membrane proteins"
+    },
+    {
+      "id": "MB_DSD_620",
+      "topic": "DNA structure and duplication",
+      "prompt": "Which two nitrogenous bases found in DNA are classified as purines?",
+      "answer": "Adenine (A) and Guanine (G)"
+    },
+    {
+      "id": "MB_DSD_621",
+      "topic": "DNA structure and duplication",
+      "prompt": "Which two nitrogenous bases found in DNA are classified as pyrimidines?",
+      "answer": "Cytosine (C) and Thymine (T)"
+    },
+    {
+      "id": "MB_DSD_622",
+      "topic": "DNA structure and duplication",
+      "prompt": "What type of strong covalent bond links the sugar-phosphate backbone of a DNA strand?",
+      "answer": "Phosphodiester bond"
+    },
+    {
+      "id": "MB_DSD_623",
+      "topic": "DNA structure and duplication",
+      "prompt": "How are the two strands of the DNA double helix held together between the nitrogenous bases?",
+      "answer": "By relatively weak hydrogen bonds"
+    },
+    {
+      "id": "MB_DSD_624",
+      "topic": "DNA structure and duplication",
+      "prompt": "According to the rules of complementary base pairing, Adenine always pairs with _____",
+      "answer": "Thymine (T)"
+    },
+    {
+      "id": "MB_GEC_651",
+      "topic": "Gene expression control",
+      "prompt": "The process by which the information encoded in a DNA sequence is converted into a functional product is known as _____",
+      "answer": "Gene expression"
+    },
+    {
+      "id": "MB_GEC_652",
+      "topic": "Gene expression control",
+      "prompt": "In which level of gene expression control is the synthesis of unnecessary intermediates most effectively avoided?",
+      "answer": "Transcriptional control"
+    },
+    {
+      "id": "MB_GEC_653",
+      "topic": "Gene expression control",
+      "prompt": "In bacteria, a cluster of genes that are co-ordinately transcribed from a single promoter as one long mRNA is called an _____",
+      "answer": "Operon"
+    },
+    {
+      "id": "MB_GEC_654",
+      "topic": "Gene expression control",
+      "prompt": "What environmental condition triggers the activation of the tryptophan repressor in E. coli?",
+      "answer": "A high concentration of tryptophan in the cell"
+    },
+    {
+      "id": "MB_GEC_655",
+      "topic": "Gene expression control",
+      "prompt": "The specific DNA sequence within a promoter that is recognised by a bacterial repressor is called the _____",
+      "answer": "Operator"
+    },
+    {
+      "id": "MB_PS_692",
+      "topic": "Protein synthesis",
+      "prompt": "What is the fundamental principle describing the flow of genetic information from DNA to RNA to protein?",
+      "answer": "The Central Dogma"
+    },
+    {
+      "id": "MB_PS_693",
+      "topic": "Protein synthesis",
+      "prompt": "Which molecule acts as an intermediary, carrying information from DNA to the ribosome for protein synthesis?",
+      "answer": "Messenger RNA (mRNA)"
+    },
+    {
+      "id": "MB_PS_695",
+      "topic": "Protein synthesis",
+      "prompt": "In which cellular compartment does translation occur in both prokaryotes and eukaryotes?",
+      "answer": "The cytoplasm (or cytosol)"
+    },
+    {
+      "id": "MB_PS_696",
+      "topic": "Protein synthesis",
+      "prompt": "Which sugar is found in RNA nucleotides, distinguishing it from DNA?",
+      "answer": "Ribose"
+    },
+    {
+      "id": "MB_PS_697",
+      "topic": "Protein synthesis",
+      "prompt": "Which nitrogenous base is used in RNA instead of the thymine found in DNA?",
+      "answer": "Uracil (U)"
+    },
+    {
+      "id": "MB_RT_747",
+      "topic": "RNA and transcription",
+      "prompt": "The flow of genetic information from DNA to RNA to protein is fundamentally known as the _____",
+      "answer": "Central Dogma"
+    },
+    {
+      "id": "MB_RT_748",
+      "topic": "RNA and transcription",
+      "prompt": "Which type of RNA forms the structural and catalytic core of the ribosomes?",
+      "answer": "Ribosomal RNA (rRNA)"
+    },
+    {
+      "id": "MB_RT_749",
+      "topic": "RNA and transcription",
+      "prompt": "In which direction is an RNA chain always synthesised by RNA polymerase?",
+      "answer": "5^ to 3^"
+    },
+    {
+      "id": "MB_RT_750",
+      "topic": "RNA and transcription",
+      "prompt": "What is the DNA sequence called that signals the starting point for RNA synthesis to RNA polymerase?",
+      "answer": "The promoter"
+    },
+    {
+      "id": "MB_RT_751",
+      "topic": "RNA and transcription",
+      "prompt": "In bacteria, which specific subunit is required for RNA polymerase to recognise and bind to a promoter?",
+      "answer": "The σ (sigma) factor"
+    }
+  ]
+}

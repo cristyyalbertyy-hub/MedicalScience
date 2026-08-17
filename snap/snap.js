@@ -10,10 +10,13 @@ import {
   GoogleAuthProvider,
 } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-auth.js";
 
-const PACKAGE_ID = "genetics";
 const NICK_KEY = "studio9.snap.nickname";
 const cfg = window.STUDIO9_FIREBASE ?? {};
 
+const hubEl = document.getElementById("snap-hub");
+const hubListEl = document.getElementById("snap-hub-list");
+const hubStatusEl = document.getElementById("snap-hub-status");
+const subjectsLink = document.getElementById("snap-subjects-link");
 const gateEl = document.getElementById("snap-gate");
 const playEl = document.getElementById("snap-play");
 const resultEl = document.getElementById("snap-result");
@@ -39,10 +42,18 @@ const showBoardBtn = document.getElementById("snap-show-board");
 const boardEl = document.getElementById("snap-board");
 const weekEl = document.getElementById("snap-week");
 const youEl = document.getElementById("snap-you");
+const headingEl = document.getElementById("snap-heading");
+const leadEl = document.getElementById("snap-lead");
+const lockedCopyEl = document.getElementById("snap-locked-copy");
+const readyNoteEl = document.getElementById("snap-ready-note");
+const boardTitleEl = document.getElementById("snap-board-title");
+const boardCardEl = document.getElementById("snap-board-card");
 
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
 
+let packageId = "";
+let subjectTitle = "";
 let app = null;
 let auth = null;
 let deck = null;
@@ -99,7 +110,7 @@ async function api(action, payload = {}) {
     body: JSON.stringify({
       action,
       id_token: idToken,
-      package_id: PACKAGE_ID,
+      package_id: packageId,
       ...payload,
     }),
   });
@@ -180,25 +191,31 @@ function startTimer(seconds) {
 }
 
 function showPlay() {
+  hubEl.hidden = true;
   gateEl.hidden = true;
   resultEl.hidden = true;
   playEl.hidden = false;
+  boardCardEl.hidden = false;
 }
 
 function showGate() {
+  hubEl.hidden = true;
   playEl.hidden = true;
   resultEl.hidden = true;
   gateEl.hidden = false;
+  boardCardEl.hidden = false;
 }
 
 function showResult(score, submitted) {
   clearTimer();
   playEl.hidden = true;
   gateEl.hidden = true;
+  hubEl.hidden = true;
   resultEl.hidden = false;
+  boardCardEl.hidden = false;
   finalScoreEl.textContent = String(score);
   resultNoteEl.textContent = submitted
-    ? "Weekly Genetics ranking updated with your best score."
+    ? `Weekly ${subjectTitle} ranking updated with your best score.`
     : "Session finished.";
 }
 
@@ -332,8 +349,8 @@ async function refreshAccess(user) {
     readyEl.hidden = false;
     setStatus(
       accessVia === "pass"
-        ? "Studio9 Pass active — ranked Genetics Snap unlocked."
-        : "Ranked Genetics Snap unlocked.",
+        ? `Studio9 Pass active — ranked ${subjectTitle} Snap unlocked.`
+        : `Ranked ${subjectTitle} Snap unlocked.`,
     );
     const board = await api("board");
     renderBoard(board);
@@ -375,11 +392,39 @@ async function initAuth() {
       authEl.hidden = false;
       lockedEl.hidden = true;
       readyEl.hidden = true;
-      setStatus("Sign in to play Genetics Snap.");
+      setStatus(`Sign in to play ${subjectTitle} Snap.`);
       return;
     }
     await refreshAccess(user);
   });
+}
+
+function applySubjectCopy(title) {
+  document.title = `${title} Snap · Studio9`;
+  headingEl.textContent = `${title} · Block Match`;
+  leadEl.textContent = `A prompt flies in. Snap it onto the right answer before time runs out. Climb this week’s ${title} ranking.`;
+  lockedCopyEl.innerHTML = `${title} Snap is a <strong>Studio9 Pass</strong> bonus — timed play and weekly rankings for subscribers.`;
+  readyNoteEl.textContent = `Best score today updates your weekly ${title} rank.`;
+  boardTitleEl.textContent = `${title} · this week`;
+}
+
+function renderHub(packages, errorMessage = "") {
+  hubEl.hidden = false;
+  gateEl.hidden = true;
+  playEl.hidden = true;
+  resultEl.hidden = true;
+  boardCardEl.hidden = true;
+  subjectsLink.hidden = true;
+  hubStatusEl.textContent = errorMessage;
+  hubStatusEl.classList.toggle("is-error", Boolean(errorMessage));
+  hubListEl.replaceChildren();
+  for (const pkg of packages) {
+    const a = document.createElement("a");
+    a.className = "snap-hub-item";
+    a.href = `./?package=${encodeURIComponent(pkg.id)}`;
+    a.innerHTML = `<strong>${escapeHtml(pkg.title)}</strong><span>Weekly ranking</span>`;
+    hubListEl.appendChild(a);
+  }
 }
 
 blockEl?.addEventListener("dragstart", (event) => {
@@ -394,10 +439,36 @@ showBoardBtn?.addEventListener("click", () => {
 });
 
 async function boot() {
+  let catalog;
   try {
-    const res = await fetch("./decks/genetics.json");
-    if (!res.ok) throw new Error("Could not load Genetics deck");
+    const res = await fetch("./catalog.json");
+    if (!res.ok) throw new Error("Could not load Snap catalogue");
+    catalog = await res.json();
+  } catch (err) {
+    renderHub([], err instanceof Error ? err.message : "Catalogue error");
+    return;
+  }
+
+  const packages = Array.isArray(catalog.packages) ? catalog.packages : [];
+  const requested = new URLSearchParams(window.location.search).get("package")?.trim() || "";
+  const meta = packages.find((pkg) => pkg.id === requested);
+
+  if (!meta) {
+    renderHub(packages, requested ? "That Snap subject is not available." : "");
+    return;
+  }
+
+  packageId = meta.id;
+  subjectTitle = meta.title;
+  applySubjectCopy(subjectTitle);
+  subjectsLink.hidden = false;
+  showGate();
+
+  try {
+    const res = await fetch(`./decks/${encodeURIComponent(packageId)}.json`);
+    if (!res.ok) throw new Error(`Could not load ${subjectTitle} deck`);
     deck = await res.json();
+    if (!deck?.cards?.length) throw new Error("Deck unavailable.");
   } catch (err) {
     setStatus(err instanceof Error ? err.message : "Deck error", true);
   }

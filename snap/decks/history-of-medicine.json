@@ -1,0 +1,537 @@
+{
+  "packageId": "history-of-medicine",
+  "title": "History of Medicine",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "AF_A_0",
+      "topic": "Aristotle",
+      "prompt": "What specific biological field did Aristotle and his followers launch a massive investigation program into?",
+      "answer": "Zoology"
+    },
+    {
+      "id": "AF_A_1",
+      "topic": "Aristotle",
+      "prompt": "Aristotle and Plato viewed abortion as a desirable option in the context of an _____ state",
+      "answer": "Ideal"
+    },
+    {
+      "id": "AF_A_2",
+      "topic": "Aristotle",
+      "prompt": "In the Aristotelian worldview, the Supreme Being was unable to create matter from _____",
+      "answer": "Nothingness"
+    },
+    {
+      "id": "AF_A_3",
+      "topic": "Aristotle",
+      "prompt": "According to 17th-century mechanists, Aristotle mistakenly attributed \"_____ causes\" to natural phenomena",
+      "answer": "Final"
+    },
+    {
+      "id": "AF_A_4",
+      "topic": "Aristotle",
+      "prompt": "Aristotle's concept of morally noble actions, used to establish medical humanitas, is called _____",
+      "answer": "Arete"
+    },
+    {
+      "id": "AF_A_5",
+      "topic": "Aristotle",
+      "prompt": "Which ancient contemporary of Aristotle is credited with writing the first book on animal dissection?",
+      "answer": "Diocles of Carystos"
+    },
+    {
+      "id": "AF_A_6",
+      "topic": "Aristotle",
+      "prompt": "Aristotle and his followers sought to depict the _____ self as the exemplary ideal for human nature",
+      "answer": "Rational"
+    },
+    {
+      "id": "AF_A_7",
+      "topic": "Aristotle",
+      "prompt": "According to Galen, a doctor must first study logic and Aristotelian theories of matter and the _____",
+      "answer": "Universe"
+    },
+    {
+      "id": "AF_HRM_65",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "Who is globally recognized as the \"Father of Medicine\" for transforming the field into a scientific system?",
+      "answer": "Hippocrates of Cos"
+    },
+    {
+      "id": "AF_HRM_66",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "Hippocrates shifted the practice of medicine away from superstition and magic toward what logical principle?",
+      "answer": "The principle of cause and effect"
+    },
+    {
+      "id": "AF_HRM_67",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "What Latin term describes the Hippocratic concept of the body's inherent ability to heal itself?",
+      "answer": "Vis Medicatrix Naturae"
+    },
+    {
+      "id": "AF_HRM_68",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "According to Hippocratic theory, what are the four bodily fluids known as humours?",
+      "answer": "Blood, Phlegm, Yellow Bile, and Black Bile"
+    },
+    {
+      "id": "AF_HRM_69",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "In the macrocosmic theory of elements, which element corresponds to the qualities of the humour Blood?",
+      "answer": "Air (Hot and Moist)"
+    },
+    {
+      "id": "AF_HRM_70",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "Which element and qualities are associated with the humour Yellow Bile?",
+      "answer": "Fire (Hot and Dry)"
+    },
+    {
+      "id": "AF_HRM_71",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "Which element and qualities are associated with the humour Phlegm?",
+      "answer": "Water (Cold and Moist)"
+    },
+    {
+      "id": "AF_HRM_72",
+      "topic": "Hippocrates and Rational Medicine",
+      "prompt": "Which element and qualities are associated with the humour Black Bile?",
+      "answer": "Earth (Cold and Dry)"
+    },
+    {
+      "id": "AF_MAG_106",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "What Greek term did Aristotle use to describe the sum total of the body's natural, instinctive reactions to maintain homeostasis?",
+      "answer": "Physis"
+    },
+    {
+      "id": "AF_MAG_107",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "The Hippocratic system was based on a scientific approach centered on the principle of _____ and _____",
+      "answer": "Cause and effect"
+    },
+    {
+      "id": "AF_MAG_108",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "What is the name of the collection of approximately sixty medical tracts ascribed to Hippocrates?",
+      "answer": "The Hippocratic Corpus"
+    },
+    {
+      "id": "AF_MAG_109",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "Which ancient Greek medical school prioritized the patient's entire environment and constitution over specific disease classification?",
+      "answer": "The Coan School"
+    },
+    {
+      "id": "AF_MAG_110",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "The _____ School of medicine was the Coan rival that focused on specific organ disturbances and exact disease diagnosis",
+      "answer": "Cnidian"
+    },
+    {
+      "id": "AF_MAG_112",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "In the humoral system, health is defined as a balanced _____ state of the four humors according to an individual's constitution",
+      "answer": "Qualitative"
+    },
+    {
+      "id": "AF_MAG_113",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "In the humoral theory, which two primary qualities are associated with Blood?",
+      "answer": "Hot and Moist"
+    },
+    {
+      "id": "AF_MAG_114",
+      "topic": "Medicine of Ancient Greece",
+      "prompt": "In the humoral theory, which two primary qualities are associated with Phlegm?",
+      "answer": "Cold and Moist"
+    },
+    {
+      "id": "AF_TH_170",
+      "topic": "Theory of humors",
+      "prompt": "Which two primary qualities are associated with the humor Blood (Sanguinous)?",
+      "answer": "Blood is characterized by Hot and Moist qualities"
+    },
+    {
+      "id": "AF_TH_171",
+      "topic": "Theory of humors",
+      "prompt": "What are the primary qualitative characteristics of the humor Phlegm?",
+      "answer": "Phlegm is characterized by Cold and Moist qualities"
+    },
+    {
+      "id": "AF_TH_172",
+      "topic": "Theory of humors",
+      "prompt": "Which qualitative pairing defines Yellow Bile (Choleric/Bilious)?",
+      "answer": "Yellow Bile is characterized by Hot and Dry qualities"
+    },
+    {
+      "id": "AF_TH_173",
+      "topic": "Theory of humors",
+      "prompt": "Black Bile (Melancholic) is associated with which two primary qualities?",
+      "answer": "Black Bile is characterized by Cold and Dry qualities"
+    },
+    {
+      "id": "AF_TH_174",
+      "topic": "Theory of humors",
+      "prompt": "In the macrocosmic theory of elements, which element corresponds to the humor Blood?",
+      "answer": "The humor Blood corresponds to the element of Air"
+    },
+    {
+      "id": "AF_TH_175",
+      "topic": "Theory of humors",
+      "prompt": "To which of the four elements of creation is Phlegm linked?",
+      "answer": "Phlegm is linked to the element of Water"
+    },
+    {
+      "id": "AF_TH_176",
+      "topic": "Theory of humors",
+      "prompt": "Yellow Bile is considered a microcosmic form of which macrocosmic element?",
+      "answer": "Yellow Bile corresponds to the element of Fire"
+    },
+    {
+      "id": "AF_TH_177",
+      "topic": "Theory of humors",
+      "prompt": "Which element represents the humor Black Bile in the theory of creation?",
+      "answer": "Black Bile corresponds to the element of Earth"
+    },
+    {
+      "id": "PH_EJV_216",
+      "topic": "Jenner and vaccines",
+      "prompt": "Who was the eighteenth-century surgeon that served as Edward Jenner’s mentor and encouraged his experimental approach?",
+      "answer": "John Hunter"
+    },
+    {
+      "id": "PH_EJV_217",
+      "topic": "Jenner and vaccines",
+      "prompt": "What famous advice did John Hunter give to Edward Jenner regarding his theories on medical research?",
+      "answer": "\"Why think? Why not try the experiment?\""
+    },
+    {
+      "id": "PH_EJV_218",
+      "topic": "Jenner and vaccines",
+      "prompt": "In what year did Edward Jenner perform the first vaccination against smallpox using cowpox?",
+      "answer": "1796"
+    },
+    {
+      "id": "PH_EJV_219",
+      "topic": "Jenner and vaccines",
+      "prompt": "The early technique of inserting smallpox pus into the skin to induce a mild form of the disease is known as _____",
+      "answer": "Variolation"
+    },
+    {
+      "id": "PH_EJV_220",
+      "topic": "Jenner and vaccines",
+      "prompt": "Smallpox is believed to have adapted to humans through a long evolutionary process from what animal disease?",
+      "answer": "Cowpox"
+    },
+    {
+      "id": "PH_EJV_221",
+      "topic": "Jenner and vaccines",
+      "prompt": "In which century did variolation likely originate before being introduced to England?",
+      "answer": "The early eighteenth century"
+    },
+    {
+      "id": "PH_EJV_222",
+      "topic": "Jenner and vaccines",
+      "prompt": "Variolation was a technique possibly originated in which two ancient civilizations?",
+      "answer": "China and India"
+    },
+    {
+      "id": "PH_EJV_223",
+      "topic": "Jenner and vaccines",
+      "prompt": "Which disease was historically dubbed the \"white plague\" to contrast it with the Black Death?",
+      "answer": "Tuberculosis"
+    },
+    {
+      "id": "PH_IS_284",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "In the Vienna General Hospital during the 1840s, which obstetrical division had a mortality rate ten times higher than the other?",
+      "answer": "Division I"
+    },
+    {
+      "id": "PH_IS_285",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "Whose accidental death in 1847 provided the key insight for Ignaz Semmelweis’s theory on puerperal fever?",
+      "answer": "Jakob Kolletschka"
+    },
+    {
+      "id": "PH_IS_286",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "What did Semmelweis identify as the causative agent of puerperal fever before the discovery of bacteria?",
+      "answer": "Invisible cadaver particles"
+    },
+    {
+      "id": "PH_IS_287",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "What specific intervention did Semmelweis institute in May 1847 to reduce maternal mortality?",
+      "answer": "Hand washing in a chlorinated lime solution"
+    },
+    {
+      "id": "PH_IS_288",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "What chemical solution did Semmelweis require staff to use until the \"cadaver smell\" was gone?",
+      "answer": "Chlorinated lime (CaOCl_2)"
+    },
+    {
+      "id": "PH_IS_289",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "Who was the Professor of Obstetrics and \"old guard\" figure who most strongly opposed Semmelweis in Vienna?",
+      "answer": "Johann Klein"
+    },
+    {
+      "id": "PH_IS_290",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "How many years did Semmelweis wait after his discovery before publishing his first formal work on the subject?",
+      "answer": "Eleven years"
+    },
+    {
+      "id": "PH_IS_291",
+      "topic": "Ignaz Semmelweis",
+      "prompt": "To which city did Semmelweis abruptly flee in 1850 after his teaching prerogatives were restricted in Vienna?",
+      "answer": "Pest (Budapest)"
+    },
+    {
+      "id": "PH_MG_302",
+      "topic": "Medical geography",
+      "prompt": "What term describes human infections that are acquired from or shared with wild or domesticated animals?",
+      "answer": "Zoonoses"
+    },
+    {
+      "id": "PH_MG_303",
+      "topic": "Medical geography",
+      "prompt": "According to the historian William McNeill, how many distinct diseases do humans share with domesticated dogs?",
+      "answer": "65"
+    },
+    {
+      "id": "PH_MG_304",
+      "topic": "Medical geography",
+      "prompt": "The first documented quarantine to block the spread of the Black Death was imposed in 1377 at which location?",
+      "answer": "Dubrovnik"
+    },
+    {
+      "id": "PH_MG_305",
+      "topic": "Medical geography",
+      "prompt": "Which two highly lethal diseases were introduced to the Americas primarily as a result of the transatlantic slave trade?",
+      "answer": "Yellow fever and falciparum malaria"
+    },
+    {
+      "id": "PH_MG_306",
+      "topic": "Medical geography",
+      "prompt": "In the geographic exchange of diseases, the Americas are often cited as the likely origin of which infection spread to the Old World?",
+      "answer": "Venereal syphilis"
+    },
+    {
+      "id": "PH_MG_307",
+      "topic": "Medical geography",
+      "prompt": "The cradle of the rodent disease Yersinia pestis (bubonic plague) is believed to be located in which geographic region?",
+      "answer": "The Himalayas (where China and India share a border)"
+    },
+    {
+      "id": "PH_MG_308",
+      "topic": "Medical geography",
+      "prompt": "Which specific agricultural practice in sub-Saharan Africa led to the proliferation of the mosquito Anopheles gambiae?",
+      "answer": "Slash-and-burn agriculture"
+    },
+    {
+      "id": "PH_MG_309",
+      "topic": "Medical geography",
+      "prompt": "The technique of variolation to prevent smallpox is believed to have originated in which country?",
+      "answer": "China"
+    },
+    {
+      "id": "SA_AF_345",
+      "topic": "Alexander Fleming",
+      "prompt": "In which London hospital did Alexander Fleming conduct his research into bacteriology?",
+      "answer": "St Mary's Hospital"
+    },
+    {
+      "id": "SA_AF_346",
+      "topic": "Alexander Fleming",
+      "prompt": "What antimicrobial enzyme did Alexander Fleming discover in human nasal secretions in 1922?",
+      "answer": "Lysozyme"
+    },
+    {
+      "id": "SA_AF_347",
+      "topic": "Alexander Fleming",
+      "prompt": "Why was Fleming's 1922 discovery of lysozyme considered medically impractical at the time?",
+      "answer": "It could not be prepared in a concentrated form"
+    },
+    {
+      "id": "SA_AF_348",
+      "topic": "Alexander Fleming",
+      "prompt": "In what year did Alexander Fleming first observe the bactericidal effects of penicillin?",
+      "answer": "1928"
+    },
+    {
+      "id": "SA_AF_349",
+      "topic": "Alexander Fleming",
+      "prompt": "Which specific genus of bacteria was Alexander Fleming culturing when he discovered penicillin?",
+      "answer": "Staphylococcus"
+    },
+    {
+      "id": "SA_AF_350",
+      "topic": "Alexander Fleming",
+      "prompt": "What was the genus of the contaminating mould that led to the discovery of penicillin?",
+      "answer": "Penicillium"
+    },
+    {
+      "id": "SA_AF_351",
+      "topic": "Alexander Fleming",
+      "prompt": "How did the mould spores reach Alexander Fleming's culture plate in 1928?",
+      "answer": "They were airborne spores"
+    },
+    {
+      "id": "SA_AF_352",
+      "topic": "Alexander Fleming",
+      "prompt": "What specific observation regarding the bacteria near the mould colony sparked Fleming's interest?",
+      "answer": "The bacteria were killed (creating a zone of inhibition)"
+    },
+    {
+      "id": "SA_AVD_389",
+      "topic": "Vesalius and dissection",
+      "prompt": "In what year was Andreas Vesalius's influential anatomical work, *De Humani Corporis Fabrica*, first published?",
+      "answer": "1543"
+    },
+    {
+      "id": "SA_AVD_390",
+      "topic": "Vesalius and dissection",
+      "prompt": "Which major work of astronomy was published in 1543, the same year as Vesalius's *Fabrica*?",
+      "answer": "Copernicus's *De Revolutionibus Orbium Coelestium*"
+    },
+    {
+      "id": "SA_AVD_391",
+      "topic": "Vesalius and dissection",
+      "prompt": "In what city did Vesalius receive his Doctor of Medicine degree and become a professor of surgery and anatomy in 1537?",
+      "answer": "Padua"
+    },
+    {
+      "id": "SA_AVD_392",
+      "topic": "Vesalius and dissection",
+      "prompt": "Which ancient physician's anatomical authority did Vesalius systematically dismantle through human dissection?",
+      "answer": "Galen"
+    },
+    {
+      "id": "SA_AVD_393",
+      "topic": "Vesalius and dissection",
+      "prompt": "Vesalius realized that Galen's anatomical descriptions were flawed because they were based on the dissection of _____",
+      "answer": "Animals (specifically apes and monkeys)"
+    },
+    {
+      "id": "SA_AVD_394",
+      "topic": "Vesalius and dissection",
+      "prompt": "Who was the primary artist and pupil of Titian credited with the illustrations in the *Fabrica*?",
+      "answer": "Jan Stephan van Calcar"
+    },
+    {
+      "id": "SA_AVD_395",
+      "topic": "Vesalius and dissection",
+      "prompt": "In which city did Joannes Oporinus print the first edition of the *Fabrica*?",
+      "answer": "Basel"
+    },
+    {
+      "id": "SA_AVD_396",
+      "topic": "Vesalius and dissection",
+      "prompt": "How many 'books' or volumes make up the *De Humani Corporis Fabrica*?",
+      "answer": "Seven"
+    },
+    {
+      "id": "SA_SR_439",
+      "topic": "Scientific Revolution",
+      "prompt": "Which 16th-century movement encouraged fresh biomedical inquiry by purifying old doctrines and discovering new truths?",
+      "answer": "The Renaissance"
+    },
+    {
+      "id": "SA_SR_440",
+      "topic": "Scientific Revolution",
+      "prompt": "During the Scientific Revolution, the body began to be compared to the running of what type of object?",
+      "answer": "A well-tuned, well-oiled machine"
+    },
+    {
+      "id": "SA_SR_441",
+      "topic": "Scientific Revolution",
+      "prompt": "Which Renaissance anatomist began the systematic dissection of the human body, laying the foundation for modern medical research?",
+      "answer": "Andreas Vesalius"
+    },
+    {
+      "id": "SA_SR_442",
+      "topic": "Scientific Revolution",
+      "prompt": "What was the primary method introduced in the 17th century that put medicine on a 'new footing'?",
+      "answer": "Observation and experiments"
+    },
+    {
+      "id": "SA_SR_443",
+      "topic": "Scientific Revolution",
+      "prompt": "Who is credited with the 17th-century discovery of the double-helical structure of DNA, marking a later peak in medical science?",
+      "answer": "Francis Crick and James Watson"
+    },
+    {
+      "id": "SA_SR_444",
+      "topic": "Scientific Revolution",
+      "prompt": "Which 17th-century physician depicted the heart as a pump and argued for the circulation of the blood?",
+      "answer": "William Harvey"
+    },
+    {
+      "id": "SA_SR_445",
+      "topic": "Scientific Revolution",
+      "prompt": "What was the name of William Harvey's revolutionary 1603 treatise on the blood system?",
+      "answer": "De Motu Cordis"
+    },
+    {
+      "id": "SA_SR_446",
+      "topic": "Scientific Revolution",
+      "prompt": "Before the Scientific Revolution, Galen believed that veins carrying blood originated in which organ?",
+      "answer": "The liver"
+    },
+    {
+      "id": "SA_WH_501",
+      "topic": "William Harvey",
+      "prompt": "In which English town was William Harvey born in 1578?",
+      "answer": "Folkestone, Kent"
+    },
+    {
+      "id": "SA_WH_502",
+      "topic": "William Harvey",
+      "prompt": "At which Italian university did William Harvey study medicine under the famous anatomist Girolamo Fabrizio?",
+      "answer": "University of Padua"
+    },
+    {
+      "id": "SA_WH_503",
+      "topic": "William Harvey",
+      "prompt": "What was the name of Harvey's most influential teacher at Padua, who described the valves in the veins?",
+      "answer": "Girolamo Fabrizio (Fabricius ab Acquapendente)"
+    },
+    {
+      "id": "SA_WH_505",
+      "topic": "William Harvey",
+      "prompt": "Before Harvey, what did Galenic medicine believe was the primary function of the liver regarding blood?",
+      "answer": "The constant production of new blood from ingested food"
+    },
+    {
+      "id": "SA_WH_506",
+      "topic": "William Harvey",
+      "prompt": "What did Galen believe happened to blood once it reached the peripheral tissues of the body?",
+      "answer": "It was entirely consumed as nourishment"
+    },
+    {
+      "id": "SA_WH_507",
+      "topic": "William Harvey",
+      "prompt": "What mechanical model did William Harvey use to describe the function of the heart?",
+      "answer": "A pump"
+    },
+    {
+      "id": "SA_WH_508",
+      "topic": "William Harvey",
+      "prompt": "Contrary to Galen's 'ebb and flow' theory, Harvey proposed that blood moves in a _____",
+      "answer": "Constant circular cycle"
+    },
+    {
+      "id": "SA_WH_509",
+      "topic": "William Harvey",
+      "prompt": "Harvey proved that the arterial pulse is caused by which specific heart action?",
+      "answer": "The contraction of the ventricles (systole)"
+    }
+  ]
+}

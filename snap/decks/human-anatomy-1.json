@@ -1,0 +1,699 @@
+{
+  "packageId": "human-anatomy-1",
+  "title": "Human Anatomy I",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "CLS_CABV_0",
+      "topic": "Chest and abdomen vessels",
+      "prompt": "In the cardiovascular system, which vessels lead away from the heart to carry blood to peripheral body parts?",
+      "answer": "Arteries"
+    },
+    {
+      "id": "CLS_CABV_1",
+      "topic": "Chest and abdomen vessels",
+      "prompt": "In the cardiovascular system, which vessels return blood to the heart?",
+      "answer": "Veins"
+    },
+    {
+      "id": "CLS_CABV_2",
+      "topic": "Chest and abdomen vessels",
+      "prompt": "The cardiovascular system serves the lungs via the _____ circulation",
+      "answer": "Pulmonary"
+    },
+    {
+      "id": "CLS_CABV_3",
+      "topic": "Chest and abdomen vessels",
+      "prompt": "The cardiovascular system serves the rest of the body via the _____ circulation",
+      "answer": "Systemic"
+    },
+    {
+      "id": "CLS_CABV_4",
+      "topic": "Chest and abdomen vessels",
+      "prompt": "Which system returns interstitial fluid from peripheral tissues to the blood vascular system?",
+      "answer": "The lymphatic system"
+    },
+    {
+      "id": "CLS_HNV_59",
+      "topic": "Head and neck vessels",
+      "prompt": "The cardiovascular system redistributes and disperses what form of energy throughout the body?",
+      "answer": "Heat"
+    },
+    {
+      "id": "CLS_HNV_61",
+      "topic": "Head and neck vessels",
+      "prompt": "What mechanical effect does pulse pressure maintain in the tissues of the body?",
+      "answer": "Tissue turgidity"
+    },
+    {
+      "id": "CLS_HNV_62",
+      "topic": "Head and neck vessels",
+      "prompt": "Lymphatic vessels originate as _____ endothelial tubes in peripheral tissues",
+      "answer": "blind-ended"
+    },
+    {
+      "id": "CLS_HNV_63",
+      "topic": "Head and neck vessels",
+      "prompt": "Into which part of the blood vascular system is lymph finally returned?",
+      "answer": "Large veins in the root of the neck"
+    },
+    {
+      "id": "CLS_HNV_64",
+      "topic": "Head and neck vessels",
+      "prompt": "Which vessel forms the internal jugular vein from its cranial part during development?",
+      "answer": "Precardinal vein"
+    },
+    {
+      "id": "CLS_PH_125",
+      "topic": "Pericardium and heart",
+      "prompt": "The cardiovascular system uses what type of muscle for the walls of heart chambers?",
+      "answer": "Cardiac muscle"
+    },
+    {
+      "id": "CLS_PH_126",
+      "topic": "Pericardium and heart",
+      "prompt": "Which major type of muscle tissue cells appear to remain capable of division throughout life?",
+      "answer": "Smooth muscle cells"
+    },
+    {
+      "id": "CLS_PH_127",
+      "topic": "Pericardium and heart",
+      "prompt": "The heart is considered a 'central pump' feeding two loops; name the loop that serves the lungs to oxygenate blood",
+      "answer": "Pulmonary circulation"
+    },
+    {
+      "id": "CLS_PH_129",
+      "topic": "Pericardium and heart",
+      "prompt": "In cardiac muscle, electrical impulses propagate from cell to cell via _____ junctions found in the lateral portions of intercalated discs",
+      "answer": "gap"
+    },
+    {
+      "id": "CLS_PH_130",
+      "topic": "Pericardium and heart",
+      "prompt": "What is the term for the functional coordination of individual heart cells so they act as a single unit?",
+      "answer": "Syncytium"
+    },
+    {
+      "id": "LS_AT_L_178",
+      "topic": "Localization terms",
+      "prompt": "In the conventional anatomical position, in what direction do the palms face?",
+      "answer": "Forwards"
+    },
+    {
+      "id": "LS_AT_L_179",
+      "topic": "Localization terms",
+      "prompt": "Which imaginary plane passes longitudinally through the body to divide it into right and left halves?",
+      "answer": "The median plane"
+    },
+    {
+      "id": "LS_AT_L_180",
+      "topic": "Localization terms",
+      "prompt": "The _____ plane is any plane oriented parallel to the median plane",
+      "answer": "sagittal"
+    },
+    {
+      "id": "LS_AT_L_181",
+      "topic": "Localization terms",
+      "prompt": "Which plane is orthogonal to the median plane and divides the body into anterior and posterior portions?",
+      "answer": "The coronal plane"
+    },
+    {
+      "id": "LS_AT_L_182",
+      "topic": "Localization terms",
+      "prompt": "What is the term for a plane that is orthogonal to both the median and sagittal planes?",
+      "answer": "Horizontal (or transverse) plane"
+    },
+    {
+      "id": "LS_AT_MT_237",
+      "topic": "Movement terms",
+      "prompt": "Which imaginary anatomical plane passes longitudinally through the body to divide it into equal right and left halves?",
+      "answer": "Median plane"
+    },
+    {
+      "id": "LS_AT_MT_239",
+      "topic": "Movement terms",
+      "prompt": "Which plane is orthogonal to the median plane and divides the body into anterior (front) and posterior (back) sections?",
+      "answer": "Coronal plane"
+    },
+    {
+      "id": "LS_AT_MT_240",
+      "topic": "Movement terms",
+      "prompt": "The horizontal (transverse) plane is orthogonal to which two other planes?",
+      "answer": "Median and sagittal planes"
+    },
+    {
+      "id": "LS_AT_MT_241",
+      "topic": "Movement terms",
+      "prompt": "How is 'axial' anatomy traditionally viewed by radiologists when looking at transverse planes?",
+      "answer": "As though looking from the feet towards the head"
+    },
+    {
+      "id": "LS_AT_MT_242",
+      "topic": "Movement terms",
+      "prompt": "In anatomical terminology, which term is used to describe structures situated nearer to the head?",
+      "answer": "Superior"
+    },
+    {
+      "id": "LS_AT_S_298",
+      "topic": "Anatomical sections",
+      "prompt": "Topographical or gross anatomy includes surface, radiological, and _____ anatomy",
+      "answer": "Endoscopic"
+    },
+    {
+      "id": "LS_AT_S_299",
+      "topic": "Anatomical sections",
+      "prompt": "Which international guide served as the basis for anatomical terminology in the 39th Edition of Gray's Anatomy?",
+      "answer": "Terminologia Anatomica (drawn up by the FCAT in 1998)"
+    },
+    {
+      "id": "LS_AT_S_301",
+      "topic": "Anatomical sections",
+      "prompt": "What is the relationship between the sagittal plane and the median plane?",
+      "answer": "The sagittal plane is parallel to the median plane"
+    },
+    {
+      "id": "LS_AT_S_303",
+      "topic": "Anatomical sections",
+      "prompt": "In radiological terminology, what is the synonym for the horizontal or transverse plane?",
+      "answer": "The axial (or transaxial) plane"
+    },
+    {
+      "id": "LS_AT_S_304",
+      "topic": "Anatomical sections",
+      "prompt": "From what direction is axial anatomy conventionally viewed by radiologists?",
+      "answer": "Looking from the feet towards the head"
+    },
+    {
+      "id": "LS_A_JD_362",
+      "topic": "Joints and diarthroses",
+      "prompt": "What collective term describes the variety of structural arrangements that join the bones of the skeleton?",
+      "answer": "Joints (arthroses)"
+    },
+    {
+      "id": "LS_A_JD_363",
+      "topic": "Joints and diarthroses",
+      "prompt": "Solid (non-synovial) joints are collectively known as _____",
+      "answer": "Synarthroses"
+    },
+    {
+      "id": "LS_A_JD_364",
+      "topic": "Joints and diarthroses",
+      "prompt": "What term is used for synovial joints that possess a fluid-containing cavity?",
+      "answer": "Diarthroses"
+    },
+    {
+      "id": "LS_A_JD_365",
+      "topic": "Joints and diarthroses",
+      "prompt": "Into which two groups are synarthroses commonly divided based on their intervening connective tissue?",
+      "answer": "Fibrous joints and cartilaginous joints"
+    },
+    {
+      "id": "LS_A_JD_366",
+      "topic": "Joints and diarthroses",
+      "prompt": "Which type of fibrous joint is characterized by a thin layer of fibrous tissue, such as those found between the bones of the skull?",
+      "answer": "Suture"
+    },
+    {
+      "id": "LS_A_L_404",
+      "topic": "Limb joints",
+      "prompt": "According to complexity, how is a synovial joint with only two articular surfaces classified?",
+      "answer": "Simple joint"
+    },
+    {
+      "id": "LS_A_L_405",
+      "topic": "Limb joints",
+      "prompt": "What classification is given to a joint containing more than two articular surfaces, such as the elbow?",
+      "answer": "Compound joint"
+    },
+    {
+      "id": "LS_A_L_406",
+      "topic": "Limb joints",
+      "prompt": "What structural feature characterizes a 'complex' synovial joint?",
+      "answer": "The presence of an intra-articular disc or meniscus"
+    },
+    {
+      "id": "LS_A_L_407",
+      "topic": "Limb joints",
+      "prompt": "Which joint type consists of almost flat apposing surfaces and primarily permits sliding movements?",
+      "answer": "Plane joints"
+    },
+    {
+      "id": "LS_A_L_408",
+      "topic": "Limb joints",
+      "prompt": "What is the anatomical synonym for a uniaxial 'hinge' joint?",
+      "answer": "Ginglymus"
+    },
+    {
+      "id": "LS_A_T_478",
+      "topic": "Thorax",
+      "prompt": "Which joint serves as the only bony connection between the pectoral girdle and the axial skeleton?",
+      "answer": "Sternoclavicular joint"
+    },
+    {
+      "id": "LS_A_T_479",
+      "topic": "Thorax",
+      "prompt": "Which costal cartilages articulate with the sternum at the level of the sternal angle?",
+      "answer": "Second costal cartilages"
+    },
+    {
+      "id": "LS_A_T_480",
+      "topic": "Thorax",
+      "prompt": "What ligament connects the transverse process of a vertebra to the tubercle of its corresponding rib?",
+      "answer": "Costotransverse ligament"
+    },
+    {
+      "id": "LS_A_T_481",
+      "topic": "Thorax",
+      "prompt": "The xiphisternal joint is typically found at the level of which thoracic vertebra?",
+      "answer": "Ninth thoracic vertebra (T9)"
+    },
+    {
+      "id": "LS_A_T_482",
+      "topic": "Thorax",
+      "prompt": "Which ligament attaches the neck of a rib to the transverse process of the vertebra immediately superior to it?",
+      "answer": "Superior costotransverse ligament"
+    },
+    {
+      "id": "LS_A_VC_540",
+      "topic": "Vertebral column",
+      "prompt": "What type of joint unites the vertebral bodies from C2 to the sacrum?",
+      "answer": "Secondary cartilaginous joints (symphyses)"
+    },
+    {
+      "id": "LS_A_VC_541",
+      "topic": "Vertebral column",
+      "prompt": "Which structure serves as the primary bond between adjacent vertebral bodies?",
+      "answer": "Intervertebral disc"
+    },
+    {
+      "id": "LS_A_VC_542",
+      "topic": "Vertebral column",
+      "prompt": "The outer lamellated portion of an intervertebral disc is called the _____",
+      "answer": "Anulus fibrosus"
+    },
+    {
+      "id": "LS_A_VC_543",
+      "topic": "Vertebral column",
+      "prompt": "What is the name of the inner, highly elastic core of the intervertebral disc?",
+      "answer": "Nucleus pulposus"
+    },
+    {
+      "id": "LS_A_VC_544",
+      "topic": "Vertebral column",
+      "prompt": "In the cervical and lumbar regions, intervertebral discs are thicker _____",
+      "answer": "Anteriorly"
+    },
+    {
+      "id": "LS_M_CAM_597",
+      "topic": "Chest and abdomen muscles",
+      "prompt": "What term do radiologists use to refer to the transverse plane?",
+      "answer": "(Trans)axial"
+    },
+    {
+      "id": "LS_M_CAM_598",
+      "topic": "Chest and abdomen muscles",
+      "prompt": "In descriptive anatomy, what term is used as a synonym for 'superior' when referring specifically to the head?",
+      "answer": "Cranial"
+    },
+    {
+      "id": "LS_M_CAM_599",
+      "topic": "Chest and abdomen muscles",
+      "prompt": "What term indicates that a structure is closer to the midline than another structure?",
+      "answer": "Medial"
+    },
+    {
+      "id": "LS_M_CAM_600",
+      "topic": "Chest and abdomen muscles",
+      "prompt": "When referring to limbs, what term describes a structure that is closer to the attachment of the limb to the trunk?",
+      "answer": "Proximal"
+    },
+    {
+      "id": "LS_M_CAM_601",
+      "topic": "Chest and abdomen muscles",
+      "prompt": "Which anatomical term refers to a structure on the same side of the body as another?",
+      "answer": "Ipsilateral"
+    },
+    {
+      "id": "LS_M_LM_664",
+      "topic": "Limb muscles",
+      "prompt": "According to the source, what property makes cardiac muscle distinct from skeletal muscle regarding endurance?",
+      "answer": "Cardiac muscle is far more resistant to fatigue"
+    },
+    {
+      "id": "LS_M_LM_665",
+      "topic": "Limb muscles",
+      "prompt": "Muscle Nomenclature: What does the term 'Teres' describe about a muscle's shape?",
+      "answer": "Round"
+    },
+    {
+      "id": "LS_M_LM_666",
+      "topic": "Limb muscles",
+      "prompt": "Muscle Nomenclature: What does the term 'Gracilis' describe about a muscle's shape?",
+      "answer": "Slender"
+    },
+    {
+      "id": "LS_M_LM_667",
+      "topic": "Limb muscles",
+      "prompt": "Muscle Nomenclature: What does the term 'Rectus' describe about a muscle's architecture?",
+      "answer": "Straight"
+    },
+    {
+      "id": "LS_M_LM_668",
+      "topic": "Limb muscles",
+      "prompt": "Muscle Nomenclature: Which term is used to describe a muscle with 'two bellies'?",
+      "answer": "Digastric"
+    },
+    {
+      "id": "LS_M_NTM_703",
+      "topic": "Neck and trunk muscles",
+      "prompt": "In anatomical nomenclature, what does the term 'rectus' indicate about a muscle's fibers?",
+      "answer": "They run in a straight direction"
+    },
+    {
+      "id": "LS_M_NTM_704",
+      "topic": "Neck and trunk muscles",
+      "prompt": "What specific shape is described by the muscle name 'deltoid'?",
+      "answer": "Triangular"
+    },
+    {
+      "id": "LS_M_NTM_705",
+      "topic": "Neck and trunk muscles",
+      "prompt": "Which muscle name indicates a 'slender' shape?",
+      "answer": "Gracilis"
+    },
+    {
+      "id": "LS_M_NTM_706",
+      "topic": "Neck and trunk muscles",
+      "prompt": "What is the meaning of the muscle term 'profundus'?",
+      "answer": "Deep"
+    },
+    {
+      "id": "LS_M_NTM_707",
+      "topic": "Neck and trunk muscles",
+      "prompt": "In muscle naming, the term 'latissimus' refers to which relative size?",
+      "answer": "Broadest"
+    },
+    {
+      "id": "LS_O_APS_766",
+      "topic": "Appendicular skeleton",
+      "prompt": "In the conventional 'anatomical position', which direction do the palms of the hands face?",
+      "answer": "Forward (anterior)"
+    },
+    {
+      "id": "LS_O_APS_768",
+      "topic": "Appendicular skeleton",
+      "prompt": "How does the coronal plane divide the human body?",
+      "answer": "Into anterior (front) and posterior (back) portions"
+    },
+    {
+      "id": "LS_O_APS_769",
+      "topic": "Appendicular skeleton",
+      "prompt": "What term do radiologists specifically use to refer to the transverse plane?",
+      "answer": "Axial (or transaxial)"
+    },
+    {
+      "id": "LS_O_APS_771",
+      "topic": "Appendicular skeleton",
+      "prompt": "What inorganic salts primarily compose the remaining 60\\% of the mature bone matrix?",
+      "answer": "Calcium and phosphate"
+    },
+    {
+      "id": "LS_O_APS_772",
+      "topic": "Appendicular skeleton",
+      "prompt": "From which specific embryonic cell type are all cells of the musculoskeletal system derived?",
+      "answer": "Mesenchymal stem cells"
+    },
+    {
+      "id": "LS_O_AS_819",
+      "topic": "Axial skeleton",
+      "prompt": "In human anatomy, which two bones connect for a large portion of their length via an interosseous membrane in the upper limb?",
+      "answer": "Radius and ulna"
+    },
+    {
+      "id": "LS_O_AS_820",
+      "topic": "Axial skeleton",
+      "prompt": "What is the only bony connection between the pectoral girdle and the axial skeleton?",
+      "answer": "The sternoclavicular joint"
+    },
+    {
+      "id": "LS_O_AS_821",
+      "topic": "Axial skeleton",
+      "prompt": "Which bone of the upper limb is described as the longest and largest, featuring a rounded head and a shaft?",
+      "answer": "Humerus"
+    },
+    {
+      "id": "LS_O_AS_822",
+      "topic": "Axial skeleton",
+      "prompt": "The head of the humerus forms an enarthrodial articulation with which specific part of the scapula?",
+      "answer": "Glenoid cavity"
+    },
+    {
+      "id": "LS_O_AS_823",
+      "topic": "Axial skeleton",
+      "prompt": "On the humerus, which structure projects from the front of the shaft close to the head and is limited laterally by a groove?",
+      "answer": "Lesser tubercle"
+    },
+    {
+      "id": "LS_O_S_892",
+      "topic": "Skull",
+      "prompt": "How many separate bones typically compose the human skull?",
+      "answer": "28 bones"
+    },
+    {
+      "id": "LS_O_S_893",
+      "topic": "Skull",
+      "prompt": "Which division of the skull surrounds the brain, eyes, and inner/middle ears?",
+      "answer": "The neurocranium"
+    },
+    {
+      "id": "LS_O_S_894",
+      "topic": "Skull",
+      "prompt": "Which division of the skull forms the facial skeleton?",
+      "answer": "The viscerocranium"
+    },
+    {
+      "id": "LS_O_S_895",
+      "topic": "Skull",
+      "prompt": "What term describes the cancellous bone located between the two tables of compact bone in the skull?",
+      "answer": "Diploë"
+    },
+    {
+      "id": "LS_O_S_896",
+      "topic": "Skull",
+      "prompt": "What is the average cranial capacity in an adult human?",
+      "answer": "Approximately 1400 ml"
+    },
+    {
+      "id": "RSC_NCS_954",
+      "topic": "Nasal cavity and sinuses",
+      "prompt": "What anatomical structure separates the two halves of the nasal cavity in the midline?",
+      "answer": "The nasal septum"
+    },
+    {
+      "id": "RSC_NCS_955",
+      "topic": "Nasal cavity and sinuses",
+      "prompt": "The nasal cavity is continuous posteriorly with the nasopharynx through which apertures?",
+      "answer": "The posterior nasal apertures (choanae)"
+    },
+    {
+      "id": "RSC_NCS_956",
+      "topic": "Nasal cavity and sinuses",
+      "prompt": "Which region of the nasal cavity is described as the slightly expanded anterior part just inside the naris?",
+      "answer": "The nasal vestibule"
+    },
+    {
+      "id": "RSC_NCS_957",
+      "topic": "Nasal cavity and sinuses",
+      "prompt": "The nasal vestibule is lined with skin containing coarse hairs called _____",
+      "answer": "Vibrissae"
+    },
+    {
+      "id": "RSC_NCS_958",
+      "topic": "Nasal cavity and sinuses",
+      "prompt": "What specific feature marks the boundary between the skin of the vestibule and the nasal mucosa?",
+      "answer": "The limen nasi (nasal valve)"
+    },
+    {
+      "id": "RSC_OC_FM_1015",
+      "topic": "Face muscles",
+      "prompt": "What anatomical structure defines the boundary between the oral cavity and the oropharynx?",
+      "answer": "Anterior pillars of the fauces"
+    },
+    {
+      "id": "RSC_OC_FM_1016",
+      "topic": "Face muscles",
+      "prompt": "The oral cavity is subdivided into the oral cavity proper and the _____",
+      "answer": "Vestibule"
+    },
+    {
+      "id": "RSC_OC_FM_1017",
+      "topic": "Face muscles",
+      "prompt": "Which muscle group forms the floor of the mouth?",
+      "answer": "Mylohyoid muscles"
+    },
+    {
+      "id": "RSC_OC_FM_1018",
+      "topic": "Face muscles",
+      "prompt": "What structures form the lateral walls of the mouth?",
+      "answer": "Cheeks and retromolar regions"
+    },
+    {
+      "id": "RSC_OC_FM_1019",
+      "topic": "Face muscles",
+      "prompt": "The palate serves as the roof of the mouth and separates the oral cavity from the _____",
+      "answer": "Nasal cavity"
+    },
+    {
+      "id": "RSC_OC_SG_1072",
+      "topic": "Salivary glands",
+      "prompt": "Which subdivision of the mouth is located external to the teeth?",
+      "answer": "The vestibule"
+    },
+    {
+      "id": "RSC_OC_SG_1073",
+      "topic": "Salivary glands",
+      "prompt": "Which subdivision of the mouth is located internal to the teeth?",
+      "answer": "The oral cavity proper"
+    },
+    {
+      "id": "RSC_OC_SG_1074",
+      "topic": "Salivary glands",
+      "prompt": "What muscular structure forms the floor of the mouth?",
+      "answer": "The mylohyoid muscles"
+    },
+    {
+      "id": "RSC_OC_SG_1075",
+      "topic": "Salivary glands",
+      "prompt": "The internal mucous surfaces of the lips are lined by what specific type of epithelium?",
+      "answer": "Thick non-keratinizing stratified squamous epithelium"
+    },
+    {
+      "id": "RSC_OC_SG_1076",
+      "topic": "Salivary glands",
+      "prompt": "Which muscle primarily makes up the thick fibrous strand in the center of the lips?",
+      "answer": "Orbicularis oris"
+    },
+    {
+      "id": "RSC_OC_TT_1125",
+      "topic": "Teeth and tongue",
+      "prompt": "What slit-like space is located between the lips/cheeks and the teeth?",
+      "answer": "Oral vestibule"
+    },
+    {
+      "id": "RSC_OC_TT_1126",
+      "topic": "Teeth and tongue",
+      "prompt": "Which specific region is defined as the area internal to the dental arches?",
+      "answer": "Oral cavity proper"
+    },
+    {
+      "id": "RSC_OC_TT_1127",
+      "topic": "Teeth and tongue",
+      "prompt": "The trough formed where the oral mucosa reflects from the alveolus to the lips and cheeks is the _____",
+      "answer": "Fornix vestibuli"
+    },
+    {
+      "id": "RSC_OC_TT_1128",
+      "topic": "Teeth and tongue",
+      "prompt": "What midline mucosal folds connect the lips to the alveolar processes?",
+      "answer": "Labial frena (or frenula)"
+    },
+    {
+      "id": "RSC_OC_TT_1129",
+      "topic": "Teeth and tongue",
+      "prompt": "Which structure forms the roof of the mouth and separates the oral and nasal cavities?",
+      "answer": "Palate"
+    },
+    {
+      "id": "RSC_PL_1201",
+      "topic": "Pharynx and larynx",
+      "prompt": "What is the average length of the adult human pharynx?",
+      "answer": "12-14 cm"
+    },
+    {
+      "id": "RSC_PL_1202",
+      "topic": "Pharynx and larynx",
+      "prompt": "The pharynx becomes continuous with the oesophagus at the level of which cervical vertebra?",
+      "answer": "C_6"
+    },
+    {
+      "id": "RSC_PL_1203",
+      "topic": "Pharynx and larynx",
+      "prompt": "Which cartilage marks the inferior boundary of the pharynx?",
+      "answer": "Cricoid cartilage"
+    },
+    {
+      "id": "RSC_PL_1204",
+      "topic": "Pharynx and larynx",
+      "prompt": "The pharyngeal isthmus is located between the posterior pharyngeal wall and which other structure?",
+      "answer": "Soft palate"
+    },
+    {
+      "id": "RSC_PL_1205",
+      "topic": "Pharynx and larynx",
+      "prompt": "Where is the opening of the pharyngotympanic tube located in the nasopharynx?",
+      "answer": "10-12 mm behind the inferior nasal concha"
+    },
+    {
+      "id": "RSC_PM_1256",
+      "topic": "Pleura and mediastinum",
+      "prompt": "What anatomical region is defined as the partition between the lungs, including the mediastinal pleura?",
+      "answer": "The mediastinum"
+    },
+    {
+      "id": "RSC_PM_1257",
+      "topic": "Pleura and mediastinum",
+      "prompt": "The horizontal plane dividing the superior and inferior mediastinum extends from the manubriosternal joint to the lower surface of which vertebra?",
+      "answer": "The fourth thoracic vertebra (T4)"
+    },
+    {
+      "id": "RSC_PM_1258",
+      "topic": "Pleura and mediastinum",
+      "prompt": "Which mediastinal subdivision is located between the manubrium sterni and the upper four thoracic vertebrae?",
+      "answer": "The superior mediastinum"
+    },
+    {
+      "id": "RSC_PM_1259",
+      "topic": "Pleura and mediastinum",
+      "prompt": "The inferior mediastinum is subdivided into which three parts?",
+      "answer": "The anterior, middle, and posterior mediastinum"
+    },
+    {
+      "id": "RSC_PM_1260",
+      "topic": "Pleura and mediastinum",
+      "prompt": "Which specific space in the superior mediastinum contains the aortic arch and the great vessels?",
+      "answer": "The prevascular (anterior) junction"
+    },
+    {
+      "id": "RSC_TL_1314",
+      "topic": "Trachea and lungs",
+      "prompt": "At what vertebral level does the trachea typically begin?",
+      "answer": "The level of the sixth cervical vertebra (C6)"
+    },
+    {
+      "id": "RSC_TL_1315",
+      "topic": "Trachea and lungs",
+      "prompt": "The trachea extends from the larynx down to the upper border of which vertebra?",
+      "answer": "The fifth thoracic vertebra (T5)"
+    },
+    {
+      "id": "RSC_TL_1316",
+      "topic": "Trachea and lungs",
+      "prompt": "What is the approximate length of the adult human trachea?",
+      "answer": "10-11 cm"
+    },
+    {
+      "id": "RSC_TL_1317",
+      "topic": "Trachea and lungs",
+      "prompt": "Which specific structure marks the origin of the trachea superiorly?",
+      "answer": "The cricoid cartilage"
+    },
+    {
+      "id": "RSC_TL_1318",
+      "topic": "Trachea and lungs",
+      "prompt": "The trachea is flattened posteriorly, giving its transverse section a shape resembling the letter _____",
+      "answer": "D"
+    }
+  ]
+}

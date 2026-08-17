@@ -1,0 +1,381 @@
+{
+  "packageId": "information-processing",
+  "title": "Information Processing",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "DM_0",
+      "topic": "Data Mining",
+      "prompt": "What is the alternative term used in the text to refer to data mining techniques?",
+      "answer": "Data dipping"
+    },
+    {
+      "id": "DM_1",
+      "topic": "Data Mining",
+      "prompt": "A data mining model is comprised of a mining structure and a(n) _____",
+      "answer": "Algorithm"
+    },
+    {
+      "id": "DM_2",
+      "topic": "Data Mining",
+      "prompt": "Which technique is used to find relationships among data elements when the data are incomplete or redundant?",
+      "answer": "Rough set analysis"
+    },
+    {
+      "id": "DM_3",
+      "topic": "Data Mining",
+      "prompt": "What is the 'action complement' of bioinformatics that uses data-analytical methods to study biological systems?",
+      "answer": "Computational biology"
+    },
+    {
+      "id": "DM_4",
+      "topic": "Data Mining",
+      "prompt": "In the 'Foundation of Knowledge' model, data mining primarily supports which process?",
+      "answer": "Knowledge generation"
+    },
+    {
+      "id": "DM_5",
+      "topic": "Data Mining",
+      "prompt": "According to the text, what is the main reason for an organisation to acquire a data warehouse?",
+      "answer": "To perform data mining"
+    },
+    {
+      "id": "DM_6",
+      "topic": "Data Mining",
+      "prompt": "The ability to 'slice and dice' data in a warehouse refers to using _____ tools",
+      "answer": "OLAP (Online Analytical Processing)"
+    },
+    {
+      "id": "DS_7",
+      "topic": "DataBase and SQL",
+      "prompt": "In database terminology, what is the alternative name for 'columns'?",
+      "answer": "Fields"
+    },
+    {
+      "id": "DS_8",
+      "topic": "DataBase and SQL",
+      "prompt": "In database terminology, what are the two alternative names for 'rows'?",
+      "answer": "Records or tuples"
+    },
+    {
+      "id": "DS_9",
+      "topic": "DataBase and SQL",
+      "prompt": "What is the function of a 'primary key' in a database record?",
+      "answer": "It acts as a unique identifier for that specific record"
+    },
+    {
+      "id": "DS_10",
+      "topic": "DataBase and SQL",
+      "prompt": "The characteristic of data being whole, complete, correct, and consistent is known as _____",
+      "answer": "Data integrity"
+    },
+    {
+      "id": "DS_11",
+      "topic": "DataBase and SQL",
+      "prompt": "What term describes a database containing errors such as duplicate, incomplete, or outdated records?",
+      "answer": "Dirty data"
+    },
+    {
+      "id": "DS_12",
+      "topic": "DataBase and SQL",
+      "prompt": "What does the acronym SQL stand for?",
+      "answer": "Structured Query Language"
+    },
+    {
+      "id": "DS_13",
+      "topic": "DataBase and SQL",
+      "prompt": "Which SQL command is used to extract data from a database?",
+      "answer": "SELECT"
+    },
+    {
+      "id": "DS_14",
+      "topic": "DataBase and SQL",
+      "prompt": "Which SQL command is used to modify existing information within a database?",
+      "answer": "UPDATE"
+    },
+    {
+      "id": "DS_15",
+      "topic": "DataBase and SQL",
+      "prompt": "Which SQL command is used to remove specific data from a database?",
+      "answer": "DELETE"
+    },
+    {
+      "id": "DS_16",
+      "topic": "DataBase and SQL",
+      "prompt": "Which SQL command is used to add new data to a database?",
+      "answer": "INSERT"
+    },
+    {
+      "id": "DS_17",
+      "topic": "DataBase and SQL",
+      "prompt": "In an SQL query, which clause is used to specify selection criteria to restrict results?",
+      "answer": "WHERE"
+    },
+    {
+      "id": "DS_18",
+      "topic": "DataBase and SQL",
+      "prompt": "A collection of related records in a database is referred to as a _____",
+      "answer": "Data file"
+    },
+    {
+      "id": "DS_19",
+      "topic": "DataBase and SQL",
+      "prompt": "The electronic database that holds both clinical data and the clinical data dictionary is called the _____",
+      "answer": "Clinical data repository"
+    },
+    {
+      "id": "DS_20",
+      "topic": "DataBase and SQL",
+      "prompt": "What was the original name of SQL before it was shortened?",
+      "answer": "SEQUEL (Structured English Query Language)"
+    },
+    {
+      "id": "EMR_31",
+      "topic": "Electronic Medical Records",
+      "prompt": "What term does the Canadian ACHI-OHIH use for selected electronic data on a single patient for a specific episode of care?",
+      "answer": "Electronic incidental records"
+    },
+    {
+      "id": "EMR_32",
+      "topic": "Electronic Medical Records",
+      "prompt": "The Institute of Medicine (IOM) identifies eight essential components of an EHR; which component involves the ability to manage laboratory and radiology repo...",
+      "answer": "Results management"
+    },
+    {
+      "id": "EMR_33",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which IOM component of an EHR allows clinicians to enter medication, nursing, and supply orders directly into the system?",
+      "answer": "Order entry management"
+    },
+    {
+      "id": "EMR_34",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which EHR component provides tools like home monitoring and health education to improve the management of chronic conditions?",
+      "answer": "Patient support"
+    },
+    {
+      "id": "EMR_35",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which EHR function supports public health tracking and internal quality improvement through standardised, machine-readable data?",
+      "answer": "Reporting and population health management"
+    },
+    {
+      "id": "EMR_36",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which level of interoperability involves the simple reception of data from one system to another without interpretation?",
+      "answer": "Foundational interoperability"
+    },
+    {
+      "id": "EMR_37",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which level of interoperability is the highest, enabling seamless machine-to-machine data exchange through standardised terminologies?",
+      "answer": "Semantic interoperability"
+    },
+    {
+      "id": "EMR_38",
+      "topic": "Electronic Medical Records",
+      "prompt": "In the DIKW paradigm used in informatics, what does the 'W' represent?",
+      "answer": "Wisdom"
+    },
+    {
+      "id": "EMR_39",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which standardised coding system is commonly used in EHRs for classifying diseases and health problems?",
+      "answer": "The International Classification of Diseases (ICD)"
+    },
+    {
+      "id": "EMR_40",
+      "topic": "Electronic Medical Records",
+      "prompt": "The 'Continuity-of-Care Document' (CCD) uses which organisation's standards to ensure it is both human and machine-readable?",
+      "answer": "HL7 (Health Level Seven)"
+    },
+    {
+      "id": "EMR_41",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which EHR tool allows patients to access their own records, view lab results, and communicate with providers via a secure website?",
+      "answer": "A patient portal"
+    },
+    {
+      "id": "EMR_42",
+      "topic": "Electronic Medical Records",
+      "prompt": "What is 'CPOE' in the context of EHR functionality?",
+      "answer": "Computerised Provider Order Entry"
+    },
+    {
+      "id": "EMR_43",
+      "topic": "Electronic Medical Records",
+      "prompt": "According to the text, what is the 'lifeblood' of e-health care?",
+      "answer": "Electronic Health Records (EHRs)"
+    },
+    {
+      "id": "EMR_44",
+      "topic": "Electronic Medical Records",
+      "prompt": "Which encryption protocol is commonly used for secure web-based health information exchange between browsers and servers?",
+      "answer": "Secure Socket Layer (SSL)"
+    },
+    {
+      "id": "HIS_46",
+      "topic": "Health Information Systems",
+      "prompt": "In the DIKW paradigm, what is the term for 'signals' that represent a 'know-nothing' state?",
+      "answer": "Data"
+    },
+    {
+      "id": "HIS_47",
+      "topic": "Health Information Systems",
+      "prompt": "Which level of the DIKW paradigm involves contextual, synthesized understanding?",
+      "answer": "Knowledge"
+    },
+    {
+      "id": "HIS_48",
+      "topic": "Health Information Systems",
+      "prompt": "According to the Foundation of Knowledge model, what are the four recurring processes used to manage knowledge?",
+      "answer": "Acquisition, processing, generation, and dissemination"
+    },
+    {
+      "id": "HIS_49",
+      "topic": "Health Information Systems",
+      "prompt": "Which specific information system manages reports for blood, body fluid, and tissue samples?",
+      "answer": "Laboratory Information System (LIS)"
+    },
+    {
+      "id": "HIS_50",
+      "topic": "Health Information Systems",
+      "prompt": "What does the clinical acronym PACS stand for?",
+      "answer": "Picture Archiving and Communication System"
+    },
+    {
+      "id": "HIS_51",
+      "topic": "Health Information Systems",
+      "prompt": "Which standard is primarily used for the electronic exchange of clinical data between disparate health systems?",
+      "answer": "Health Level Seven (HL7)"
+    },
+    {
+      "id": "HIS_52",
+      "topic": "Health Information Systems",
+      "prompt": "What does the 'HITECH Act' incentivise healthcare providers to demonstrate?",
+      "answer": "Meaningful Use of electronic health records"
+    },
+    {
+      "id": "HIS_53",
+      "topic": "Health Information Systems",
+      "prompt": "In the DIKW hierarchy, what type of information is revealed by 'Data'?",
+      "answer": "Relationships"
+    },
+    {
+      "id": "HIS_54",
+      "topic": "Health Information Systems",
+      "prompt": "In the DIKW hierarchy, what type of information is revealed by 'Information'?",
+      "answer": "Patterns"
+    },
+    {
+      "id": "HIS_55",
+      "topic": "Health Information Systems",
+      "prompt": "In the DIKW hierarchy, what type of information is revealed by 'Knowledge'?",
+      "answer": "Principles"
+    },
+    {
+      "id": "HIS_56",
+      "topic": "Health Information Systems",
+      "prompt": "In the DIKW hierarchy, what type of information is revealed by 'Wisdom'?",
+      "answer": "Direction or principles for future action"
+    },
+    {
+      "id": "HIS_57",
+      "topic": "Health Information Systems",
+      "prompt": "What is the primary anchor of a 'Learning Healthcare System'?",
+      "answer": "Patient needs and perspectives"
+    },
+    {
+      "id": "HIS_58",
+      "topic": "Health Information Systems",
+      "prompt": "In a Relational Database Management System (RDBMS), what is a 'Tuple'?",
+      "answer": "A single row or record within a data table"
+    },
+    {
+      "id": "PS_59",
+      "topic": "Privacy and Security",
+      "prompt": "In the context of healthcare informatics, what is defined as an individual's right to control the use and dissemination of their personal information?",
+      "answer": "Information privacy"
+    },
+    {
+      "id": "PS_60",
+      "topic": "Privacy and Security",
+      "prompt": "Which term refers to the procedures, techniques, and technology employed to protect information from accidental or malicious destruction or access?",
+      "answer": "Security"
+    },
+    {
+      "id": "PS_61",
+      "topic": "Privacy and Security",
+      "prompt": "What is the tool or responsibility used for protecting privacy by ensuring personal information is disclosed only as authorised?",
+      "answer": "Confidentiality"
+    },
+    {
+      "id": "PS_62",
+      "topic": "Privacy and Security",
+      "prompt": "According to the Tan source material, which encryption method uses the same key for both data encryption and decryption?",
+      "answer": "Symmetric private key cryptography"
+    },
+    {
+      "id": "PS_63",
+      "topic": "Privacy and Security",
+      "prompt": "What is the primary challenge associated with symmetric encryption regarding the maintenance of security?",
+      "answer": "The distribution of keys"
+    },
+    {
+      "id": "PS_64",
+      "topic": "Privacy and Security",
+      "prompt": "Which encryption class uses a public key and a private key to allow 'strangers' to share information with both authentication and privacy?",
+      "answer": "Asymmetric public key cryptography"
+    },
+    {
+      "id": "PS_65",
+      "topic": "Privacy and Security",
+      "prompt": "The class of problems dealing with the distribution of keys and certificates in asymmetric encryption is known as _____",
+      "answer": "Public key infrastructure (PKI)"
+    },
+    {
+      "id": "PS_66",
+      "topic": "Privacy and Security",
+      "prompt": "At which layer of the Open System Interconnect (OSI) model does Internet Protocol Security (IPSec) operate?",
+      "answer": "The network layer"
+    },
+    {
+      "id": "PS_67",
+      "topic": "Privacy and Security",
+      "prompt": "Transport Layer Security (TLS) provides security at which layer of the OSI model?",
+      "answer": "The transport layer"
+    },
+    {
+      "id": "PS_68",
+      "topic": "Privacy and Security",
+      "prompt": "Pretty Good Privacy (PGP) is a security protocol that operates at which layer of the OSI model?",
+      "answer": "The application layer"
+    },
+    {
+      "id": "PS_69",
+      "topic": "Privacy and Security",
+      "prompt": "Which security protocol combines symmetric cryptography for session keys with asymmetric cryptography for message transmission?",
+      "answer": "Pretty Good Privacy (PGP)"
+    },
+    {
+      "id": "PS_70",
+      "topic": "Privacy and Security",
+      "prompt": "What is the full meaning of the acronym HIPAA in United States healthcare legislation?",
+      "answer": "Health Insurance Portability and Accountability Act"
+    },
+    {
+      "id": "PS_71",
+      "topic": "Privacy and Security",
+      "prompt": "In Canada, which act governs the collection, use, and disclosure of personal information by federal departments?",
+      "answer": "The Privacy Act"
+    },
+    {
+      "id": "PS_72",
+      "topic": "Privacy and Security",
+      "prompt": "The PIPEDA principle of _____ requires an organisation to designate an individual to be responsible for compliance with privacy principles",
+      "answer": "Accountability"
+    }
+  ]
+}

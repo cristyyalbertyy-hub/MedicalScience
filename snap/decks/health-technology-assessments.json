@@ -1,0 +1,261 @@
+{
+  "packageId": "health-technology-assessments",
+  "title": "Health Technology Assessments (EU)",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "HTA_CCA_0",
+      "topic": "Cost-consequences approach",
+      "prompt": "In economic evaluation, what term refers to the value of the benefits achievable in another program that are sacrificed to fund the current program?",
+      "answer": "Opportunity cost"
+    },
+    {
+      "id": "HTA_CCA_1",
+      "topic": "Cost-consequences approach",
+      "prompt": "What are the four basic tasks of any economic evaluation regarding costs and consequences?",
+      "answer": "To identify, measure, value, and compare them"
+    },
+    {
+      "id": "HTA_CCA_2",
+      "topic": "Cost-consequences approach",
+      "prompt": "Which type of evaluation examines only costs without comparing alternatives or consequences?",
+      "answer": "Cost description"
+    },
+    {
+      "id": "HTA_CCA_3",
+      "topic": "Cost-consequences approach",
+      "prompt": "An evaluation that examines only consequences without a comparison of alternatives is called an _____",
+      "answer": "Outcome description"
+    },
+    {
+      "id": "HTA_CCA_4",
+      "topic": "Cost-consequences approach",
+      "prompt": "Which specific economic evaluation approach measures consequences in natural units, such as life-years gained or cases detected?",
+      "answer": "Cost-effectiveness analysis (CEA)"
+    },
+    {
+      "id": "HTA_CCA_5",
+      "topic": "Cost-consequences approach",
+      "prompt": "In which economic evaluation approach are both costs and consequences valued in monetary units?",
+      "answer": "Cost-benefit analysis (CBA)"
+    },
+    {
+      "id": "HTA_CCA_6",
+      "topic": "Cost-consequences approach",
+      "prompt": "Equation: Incremental Cost-Effectiveness Ratio (ICER)",
+      "answer": "ICER = C_1 - C_0/E_1 - E_0"
+    },
+    {
+      "id": "HTA_CCA_7",
+      "topic": "Cost-consequences approach",
+      "prompt": "The two main elements of costing are the measurement of the _____ of resource use and the assignment of unit costs",
+      "answer": "Quantities"
+    },
+    {
+      "id": "HTA_CCA_8",
+      "topic": "Cost-consequences approach",
+      "prompt": "The process of varying key parameters to see how they affect the results of an economic evaluation is called _____",
+      "answer": "Sensitivity analysis"
+    },
+    {
+      "id": "HTA_CCA_9",
+      "topic": "Cost-consequences approach",
+      "prompt": "What is the 'incremental net benefit' (INB) formula using a threshold λ?",
+      "answer": "INB = λ Δ E - Δ C"
+    },
+    {
+      "id": "HTA_CCA_10",
+      "topic": "Cost-consequences approach",
+      "prompt": "What type of study design provides the most common basis for measuring resource quantities in economic evaluations alongside clinical trials?",
+      "answer": "Prospective clinical studies"
+    },
+    {
+      "id": "HTA_CCA_11",
+      "topic": "Cost-consequences approach",
+      "prompt": "Which tool is used to represent the probability that an intervention is cost-effective across a range of threshold values?",
+      "answer": "Cost-Effectiveness Acceptability Curve (CEAC)"
+    },
+    {
+      "id": "HTA_CCA_13",
+      "topic": "Cost-consequences approach",
+      "prompt": "In economic evaluation, 'measurement' involves quantifying resources in _____ units before valuation",
+      "answer": "Physical (or natural)"
+    },
+    {
+      "id": "HTA_CCA_14",
+      "topic": "Cost-consequences approach",
+      "prompt": "The technique of _____ is used in CBA to elicit the monetary value individuals place on health improvements",
+      "answer": "Willingness to Pay (WTP)"
+    },
+    {
+      "id": "HTA_ER_18",
+      "topic": "European regulations",
+      "prompt": "According to the Cox Report, HTA helps decision-makers capture the benefits of new technologies within the constraints of _____",
+      "answer": "Overall health system resources"
+    },
+    {
+      "id": "HTA_ER_19",
+      "topic": "European regulations",
+      "prompt": "Which principle states that HTA should be undertaken within a country's national priorities and systems rather than solely at the European level?",
+      "answer": "The principle of subsidiarity"
+    },
+    {
+      "id": "HTA_ER_20",
+      "topic": "European regulations",
+      "prompt": "Under the proposed EU Directive Article 17, who is responsible for designating the authorities participating in the HTA network?",
+      "answer": "The Member States"
+    },
+    {
+      "id": "HTA_ER_21",
+      "topic": "European regulations",
+      "prompt": "Which 2004 body requested the establishment of a sustainable network for HTA in Europe?",
+      "answer": "The High Level Group on health services and medical care"
+    },
+    {
+      "id": "HTA_ER_22",
+      "topic": "European regulations",
+      "prompt": "According to the Cox Report, for HTA to be valuable in decision-making, the process must be transparent, relevant, in-depth, usable, and _____",
+      "answer": "Timely"
+    },
+    {
+      "id": "HTA_ER_23",
+      "topic": "European regulations",
+      "prompt": "The explanatory memorandum for the Directive on patients' rights suggests that HTA collaboration will help realize the potential of the _____",
+      "answer": "Internal market"
+    },
+    {
+      "id": "HTA_ER_24",
+      "topic": "European regulations",
+      "prompt": "What mechanism does the European Commission use to adopt measures for the management of the HTA network?",
+      "answer": "Comitology"
+    },
+    {
+      "id": "HTA_ER_25",
+      "topic": "European regulations",
+      "prompt": "According to the WHO policy brief, what facilitates the transfer of knowledge and skills across jurisdictions?",
+      "answer": "International collaboration amongst HTA bodies"
+    },
+    {
+      "id": "HTA_ER_26",
+      "topic": "European regulations",
+      "prompt": "According to the EUnetHTA Project, HTA must always be firmly rooted in which two foundations?",
+      "answer": "Research and the scientific method"
+    },
+    {
+      "id": "HTA_ER_27",
+      "topic": "European regulations",
+      "prompt": "The proposed Article 17 aims to support the provision of objective and transferable information on the short- and long-term _____ of health technologies",
+      "answer": "Effectiveness"
+    },
+    {
+      "id": "HTA_ER_28",
+      "topic": "European regulations",
+      "prompt": "Which organization's 120th session suggested that Member States collection and exchange of technology information aids in resource allocation?",
+      "answer": "The WHO Executive Board"
+    },
+    {
+      "id": "HTA_ER_29",
+      "topic": "European regulations",
+      "prompt": "The 2008 WHO policy brief suggests that incentives within a health-care system should be aligned with decisions based on _____",
+      "answer": "HTA (Health Technology Assessment)"
+    },
+    {
+      "id": "HTA_ER_30",
+      "topic": "European regulations",
+      "prompt": "In terms of applied economics, HTA aims to inform policies that are patient-focused and seek to achieve _____",
+      "answer": "Best value"
+    },
+    {
+      "id": "HTA_ER_31",
+      "topic": "European regulations",
+      "prompt": "Which European country established the first national HTA agency in the 1980s?",
+      "answer": "Sweden"
+    },
+    {
+      "id": "HTA_HTAS_42",
+      "topic": "HTA structure",
+      "prompt": "What metaphor is commonly used to describe the role of HTA between the research and decision-making domains?",
+      "answer": "A bridge"
+    },
+    {
+      "id": "HTA_HTAS_43",
+      "topic": "HTA structure",
+      "prompt": "The first step in the HTA process, where criteria are applied to select technologies for evaluation, is called _____",
+      "answer": "Priority setting"
+    },
+    {
+      "id": "HTA_HTAS_44",
+      "topic": "HTA structure",
+      "prompt": "In Italy, HTA capacity is integrated into the organizational structure of hospitals and regional authorities based on the _____ principle",
+      "answer": "Subsidiarity"
+    },
+    {
+      "id": "HTA_HTAS_45",
+      "topic": "HTA structure",
+      "prompt": "Which specific unit in the UK focuses exclusively on the identification of emerging technologies?",
+      "answer": "The National Horizon Scanning Centre (NHSC)"
+    },
+    {
+      "id": "HTA_HTAS_46",
+      "topic": "HTA structure",
+      "prompt": "In the HTA value chain, what is necessary to fulfill the process after a decision is made and the technology is implemented?",
+      "answer": "Rigorous monitoring and evaluation of the implementation"
+    },
+    {
+      "id": "HTA_HTAS_47",
+      "topic": "HTA structure",
+      "prompt": "What organizational trend is represented by the establishment of HTA units within regional authorities and hospital trusts?",
+      "answer": "Decentralization"
+    },
+    {
+      "id": "HTA_HTAS_48",
+      "topic": "HTA structure",
+      "prompt": "HTA aims to promote 'rationality' in policy problems that lack _____ or _____ to generate a solution",
+      "answer": "Information; understanding"
+    },
+    {
+      "id": "HTA_HTAS_49",
+      "topic": "HTA structure",
+      "prompt": "Which Spanish agency is noted for concentrating activities on the production and dissemination of HTA reports?",
+      "answer": "AETS (Agencia de Evaluación de Tecnologías Sanitarias)"
+    },
+    {
+      "id": "HTA_HTAS_50",
+      "topic": "HTA structure",
+      "prompt": "In the French health system, which organization combines accreditation, evaluation, and reimbursement assessment under one roof since 2005?",
+      "answer": "Haute Autorité de Santé (HAS)"
+    },
+    {
+      "id": "HTA_HTAS_51",
+      "topic": "HTA structure",
+      "prompt": "What are the three main types of settings in which European HTA organizations operate?",
+      "answer": "National, regional, and hospital-based"
+    },
+    {
+      "id": "HTA_HTAS_52",
+      "topic": "HTA structure",
+      "prompt": "The Irish agency mandated with both HTA functions and setting standards for health and social care facilities is the _____",
+      "answer": "Health Information and Quality Authority (HIQA)"
+    },
+    {
+      "id": "HTA_HTAS_53",
+      "topic": "HTA structure",
+      "prompt": "In applied economics, HTA is viewed as a tool for _____ management for policy-makers",
+      "answer": "Knowledge"
+    },
+    {
+      "id": "HTA_HTAS_54",
+      "topic": "HTA structure",
+      "prompt": "Which phase of HTA involves the 'contextualization' of scientific evidence to provide decision-makers with adopt/reject recommendations?",
+      "answer": "Appraisal"
+    },
+    {
+      "id": "HTA_HTAS_55",
+      "topic": "HTA structure",
+      "prompt": "In Sweden, the SBU informs both the central government and the _____ on the value of health technologies",
+      "answer": "County councils"
+    }
+  ]
+}

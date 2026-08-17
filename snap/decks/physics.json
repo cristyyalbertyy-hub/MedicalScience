@@ -1,0 +1,609 @@
+{
+  "packageId": "physics",
+  "title": "Physics",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "EM_ECF_0",
+      "topic": "Electric Charge and Field",
+      "prompt": "In a neutral conductor, what is the net charge if extra electrons are added?",
+      "answer": "Negative"
+    },
+    {
+      "id": "EM_ECF_1",
+      "topic": "Electric Charge and Field",
+      "prompt": "An object acquires a positive charge when _____ are removed from it",
+      "answer": "Electrons"
+    },
+    {
+      "id": "EM_ECF_2",
+      "topic": "Electric Charge and Field",
+      "prompt": "What term refers to the electrons in a conductor that are loosely bound to atoms and can move freely?",
+      "answer": "Conduction electrons (or free charges)"
+    },
+    {
+      "id": "EM_ECF_3",
+      "topic": "Electric Charge and Field",
+      "prompt": "In an electroscope, the horizontal component of the tension force on the leaves balances the _____",
+      "answer": "Electric force of repulsion"
+    },
+    {
+      "id": "EM_ECF_4",
+      "topic": "Electric Charge and Field",
+      "prompt": "Formula: Coulomb's Law for the magnitude of electric force between two point charges",
+      "answer": "F = k Q_1 Q_2/r^2"
+    },
+    {
+      "id": "EM_EI_54",
+      "topic": "Electromagnetic Induction",
+      "prompt": "What is the physical phenomenon where a changing magnetic flux through a loop of wire results in an induced electromotive force (EMF)?",
+      "answer": "Electromagnetic Induction"
+    },
+    {
+      "id": "EM_EI_55",
+      "topic": "Electromagnetic Induction",
+      "prompt": "What is the formula for magnetic flux, _B, in terms of magnetic field B, area A, and the angle θ between B and the area's normal?",
+      "answer": "_B = BA θ"
+    },
+    {
+      "id": "EM_EI_56",
+      "topic": "Electromagnetic Induction",
+      "prompt": "What is the SI unit for magnetic flux?",
+      "answer": "The Weber (Wb)"
+    },
+    {
+      "id": "EM_EI_57",
+      "topic": "Electromagnetic Induction",
+      "prompt": "State the mathematical expression for Faraday's Law of Induction for a coil with N loops",
+      "answer": "E = -N Δ _B/Δ t"
+    },
+    {
+      "id": "EM_EI_58",
+      "topic": "Electromagnetic Induction",
+      "prompt": "What law states that an induced current always flows in a direction such that its own magnetic field opposes the change in the original magnetic flux?",
+      "answer": "Lenz's Law"
+    },
+    {
+      "id": "EM_EP_89",
+      "topic": "Electric Potential",
+      "prompt": "In a neutral conductor, what occurs to the net charge if electrons are removed?",
+      "answer": "The net charge becomes positive"
+    },
+    {
+      "id": "EM_EP_91",
+      "topic": "Electric Potential",
+      "prompt": "How is the magnitude of an electric field (E) defined in terms of the force (F) exerted on a positive test charge (q)?",
+      "answer": "E = F/q"
+    },
+    {
+      "id": "EM_EP_92",
+      "topic": "Electric Potential",
+      "prompt": "In which direction do electric field lines always point relative to a positive point charge?",
+      "answer": "Radiating outwards, away from the positive charge"
+    },
+    {
+      "id": "EM_EP_93",
+      "topic": "Electric Potential",
+      "prompt": "What does the spacing of electric field lines indicate about the field's strength?",
+      "answer": "Closer spacing indicates a stronger electric field"
+    },
+    {
+      "id": "EM_EP_94",
+      "topic": "Electric Potential",
+      "prompt": "How does the mass of an object change when it acquires a positive charge via the removal of electrons?",
+      "answer": "The mass of the object decreases"
+    },
+    {
+      "id": "EM_M_129",
+      "topic": "Magnetism",
+      "prompt": "Where is the Earth's magnetic south pole located geographically?",
+      "answer": "It is located at the geographic north pole"
+    },
+    {
+      "id": "EM_M_130",
+      "topic": "Magnetism",
+      "prompt": "Which pole of a compass needle points towards the geographic north?",
+      "answer": "The north pole of the compass needle"
+    },
+    {
+      "id": "EM_M_131",
+      "topic": "Magnetism",
+      "prompt": "Which specific class of materials, including iron and nickel, is strongly attracted to magnets?",
+      "answer": "Ferromagnetic materials"
+    },
+    {
+      "id": "EM_M_132",
+      "topic": "Magnetism",
+      "prompt": "What are the small regions within ferromagnetic materials where magnetic moments are aligned called?",
+      "answer": "Magnetic domains"
+    },
+    {
+      "id": "EM_M_133",
+      "topic": "Magnetism",
+      "prompt": "What is the formula for the magnetic force (F) on a particle with charge q moving at velocity v in a magnetic field B?",
+      "answer": "F = qvB θ"
+    },
+    {
+      "id": "F_157",
+      "topic": "Fluids",
+      "prompt": "How is the density (ρ) of a substance defined?",
+      "answer": "It is the mass per unit volume"
+    },
+    {
+      "id": "F_158",
+      "topic": "Fluids",
+      "prompt": "What is the formula to find mass (m) using density (ρ) and volume (V)?",
+      "answer": "m = ρ V"
+    },
+    {
+      "id": "F_159",
+      "topic": "Fluids",
+      "prompt": "What is the SI unit for pressure (P)?",
+      "answer": "The Pascal (Pa), equivalent to 1 N/m^2"
+    },
+    {
+      "id": "F_160",
+      "topic": "Fluids",
+      "prompt": "According to Bernoulli's principle, what happens to the pressure of a gas as its speed increases (at a constant height)?",
+      "answer": "The pressure decreases"
+    },
+    {
+      "id": "F_161",
+      "topic": "Fluids",
+      "prompt": "The buoyant force on an object is equal to the _____",
+      "answer": "weight of the fluid displaced by the object"
+    },
+    {
+      "id": "M_K_218",
+      "topic": "Kinematics",
+      "prompt": "Average speed is calculated by dividing the total _____ by the total time elapsed",
+      "answer": "distance travelled"
+    },
+    {
+      "id": "M_K_219",
+      "topic": "Kinematics",
+      "prompt": "What is the SI unit for acceleration?",
+      "answer": "m/s^2 (metres per second squared)"
+    },
+    {
+      "id": "M_K_220",
+      "topic": "Kinematics",
+      "prompt": "Formula: The kinematic equation relating final velocity, initial velocity, acceleration, and time",
+      "answer": "v = v_0 + at"
+    },
+    {
+      "id": "M_K_221",
+      "topic": "Kinematics",
+      "prompt": "Formula: The kinematic equation for position x as a function of time t under constant acceleration a",
+      "answer": "x = x_0 + v_0t + 1/2at^2"
+    },
+    {
+      "id": "M_K_222",
+      "topic": "Kinematics",
+      "prompt": "Formula: The kinematic equation relating velocities, acceleration, and displacement without explicit time",
+      "answer": "v^2 = v_0^2 + 2a(x - x_0)"
+    },
+    {
+      "id": "M_MU_252",
+      "topic": "Measurement and Units",
+      "prompt": "What is the standard SI unit for length?",
+      "answer": "The metre (m)"
+    },
+    {
+      "id": "M_MU_253",
+      "topic": "Measurement and Units",
+      "prompt": "What is the standard SI unit for time?",
+      "answer": "The second (s)"
+    },
+    {
+      "id": "M_MU_254",
+      "topic": "Measurement and Units",
+      "prompt": "What is the standard SI unit for mass?",
+      "answer": "The kilogram (kg)"
+    },
+    {
+      "id": "M_MU_255",
+      "topic": "Measurement and Units",
+      "prompt": "What does the term 'significant figures' indicate in a measurement?",
+      "answer": "The number of reliably known digits in a value"
+    },
+    {
+      "id": "M_MU_256",
+      "topic": "Measurement and Units",
+      "prompt": "Formula: Average velocity",
+      "answer": "v = Δ x/Δ t"
+    },
+    {
+      "id": "M_NL_298",
+      "topic": "Newton's Laws",
+      "prompt": "According to Newton’s first law, what property of matter causes a child sitting in a wagon to seem to fall backwards when the wagon is pulled sharply forward?",
+      "answer": "Inertia"
+    },
+    {
+      "id": "M_NL_299",
+      "topic": "Newton's Laws",
+      "prompt": "When a wagon is pulled forward, the child inside moves forward because of the _____ force between the child and the wagon's surface",
+      "answer": "frictional"
+    },
+    {
+      "id": "M_NL_300",
+      "topic": "Newton's Laws",
+      "prompt": "State the formula for Newton’s second law relating net force, mass, and acceleration",
+      "answer": "F = ma"
+    },
+    {
+      "id": "M_NL_301",
+      "topic": "Newton's Laws",
+      "prompt": "In the equation for average acceleration a_avg = v^2 - v_0^22(x - x_0), what does the term (x - x_0) represent?",
+      "answer": "Displacement"
+    },
+    {
+      "id": "M_NL_302",
+      "topic": "Newton's Laws",
+      "prompt": "In a vertical system where 'up' is positive, what is the formula for the tension force (F_T) required to accelerate a mass (m) upwards at rate (a)?",
+      "answer": "F_T = m(g + a)"
+    },
+    {
+      "id": "M_RM_349",
+      "topic": "Rotational Motion",
+      "prompt": "Equation: Relationship between linear velocity v and angular velocity ω for a point at radius r",
+      "answer": "v = rω"
+    },
+    {
+      "id": "M_RM_350",
+      "topic": "Rotational Motion",
+      "prompt": "What is the formula for centripetal acceleration a_c in terms of tangential velocity v and radius r?",
+      "answer": "a_c = v^2/r"
+    },
+    {
+      "id": "M_RM_351",
+      "topic": "Rotational Motion",
+      "prompt": "Equation: Centripetal acceleration a_c expressed in terms of angular velocity ω",
+      "answer": "a_c = rω^2"
+    },
+    {
+      "id": "M_RM_352",
+      "topic": "Rotational Motion",
+      "prompt": "In rotational motion, the tangential acceleration a_tan is related to angular acceleration α by the formula _____",
+      "answer": "a_tan = rα"
+    },
+    {
+      "id": "M_RM_353",
+      "topic": "Rotational Motion",
+      "prompt": "If a rotating object is slowing down, in which direction does the decelerating force vector point relative to the velocity vector?",
+      "answer": "Opposite to the velocity"
+    },
+    {
+      "id": "M_WE_398",
+      "topic": "Work and Energy",
+      "prompt": "Non-conservative forces typically dissipate mechanical energy into what form?",
+      "answer": "They dissipate energy into heat, sound, or light"
+    },
+    {
+      "id": "M_WE_399",
+      "topic": "Work and Energy",
+      "prompt": "What is the formula for calculating translational kinetic energy?",
+      "answer": "KE = 1/2 m v^2"
+    },
+    {
+      "id": "M_WE_400",
+      "topic": "Work and Energy",
+      "prompt": "According to the Work-Energy Principle, the net work done on an object is equal to its change in _____",
+      "answer": "Kinetic energy"
+    },
+    {
+      "id": "M_WE_401",
+      "topic": "Work and Energy",
+      "prompt": "The potential energy stored in a compressed or stretched spring is known as _____ potential energy",
+      "answer": "Elastic"
+    },
+    {
+      "id": "M_WE_402",
+      "topic": "Work and Energy",
+      "prompt": "What is the formula for the elastic potential energy of a spring with spring constant k and displacement x?",
+      "answer": "PE_el = 1/2 k x^2"
+    },
+    {
+      "id": "N_MN_422",
+      "topic": "MRI and NMR",
+      "prompt": "In the context of NMR, what does the acronym stand for?",
+      "answer": "Nuclear Magnetic Resonance"
+    },
+    {
+      "id": "N_MN_423",
+      "topic": "MRI and NMR",
+      "prompt": "What does the abbreviation MRI represent in medical physics?",
+      "answer": "Magnetic Resonance Imaging"
+    },
+    {
+      "id": "N_MN_424",
+      "topic": "MRI and NMR",
+      "prompt": "Which specific nucleus is most commonly targeted in clinical MRI?",
+      "answer": "The hydrogen nucleus (proton)"
+    },
+    {
+      "id": "N_MN_425",
+      "topic": "MRI and NMR",
+      "prompt": "In an NMR system operating at 42.58 MHz, what is the calculated wavelength (λ) of the signal?",
+      "answer": "7.041 m"
+    },
+    {
+      "id": "N_MN_426",
+      "topic": "MRI and NMR",
+      "prompt": "To which region of the electromagnetic spectrum do the frequencies used in MRI and NMR typically belong?",
+      "answer": "Radio waves"
+    },
+    {
+      "id": "N_NF_460",
+      "topic": "Nuclear Forces",
+      "prompt": "What is the primary force responsible for holding the protons and neutrons together within an atomic nucleus?",
+      "answer": "The strong nuclear force"
+    },
+    {
+      "id": "N_NF_461",
+      "topic": "Nuclear Forces",
+      "prompt": "In the context of the nucleus, the electrical repulsion between protons is known as the _____ force",
+      "answer": "Coulomb"
+    },
+    {
+      "id": "N_NF_462",
+      "topic": "Nuclear Forces",
+      "prompt": "What is the approximate range beyond which the strong nuclear force becomes negligible?",
+      "answer": "10^-15 metres (roughly the size of the nucleus)"
+    },
+    {
+      "id": "N_NF_463",
+      "topic": "Nuclear Forces",
+      "prompt": "The strong nuclear force is always _____ between nucleons, whereas the electromagnetic force can be either attractive or repulsive",
+      "answer": "attractive"
+    },
+    {
+      "id": "N_NF_464",
+      "topic": "Nuclear Forces",
+      "prompt": "Which fundamental force acts only between charged particles within the nucleus?",
+      "answer": "The electromagnetic (EM) force"
+    },
+    {
+      "id": "N_R_486",
+      "topic": "Radioactivity",
+      "prompt": "In nuclear physics, what does the atomic number (Z) represent?",
+      "answer": "The number of protons in the nucleus"
+    },
+    {
+      "id": "N_R_487",
+      "topic": "Radioactivity",
+      "prompt": "What is the term for nuclei that have the same number of protons but different numbers of neutrons?",
+      "answer": "Isotopes"
+    },
+    {
+      "id": "N_R_488",
+      "topic": "Radioactivity",
+      "prompt": "How is the mass number (A) of a nucleus calculated?",
+      "answer": "The sum of the number of protons and neutrons (Z + N)"
+    },
+    {
+      "id": "N_R_490",
+      "topic": "Radioactivity",
+      "prompt": "Formula: Empirical relationship for nuclear radius (r)",
+      "answer": "r ≈ (1.2 × 10^-15 m) A^1/3"
+    },
+    {
+      "id": "N_R_491",
+      "topic": "Radioactivity",
+      "prompt": "How does the density of nuclear matter change as the mass number (A) of an atom increases?",
+      "answer": "It remains approximately constant and independent of A"
+    },
+    {
+      "id": "T_HC_532",
+      "topic": "Heat and Calorimetry",
+      "prompt": "The SI unit for heat energy is the _____",
+      "answer": "Joule (J)"
+    },
+    {
+      "id": "T_HC_533",
+      "topic": "Heat and Calorimetry",
+      "prompt": "For an ideal gas, the internal energy depends only on its _____",
+      "answer": "Temperature"
+    },
+    {
+      "id": "T_HC_534",
+      "topic": "Heat and Calorimetry",
+      "prompt": "Formula: Heat required for a temperature change",
+      "answer": "Q = mc Δ T"
+    },
+    {
+      "id": "T_HC_535",
+      "topic": "Heat and Calorimetry",
+      "prompt": "In the formula Q = mc Δ T, what does the symbol Δ T represent?",
+      "answer": "The change in temperature (T_final - T_initial)"
+    },
+    {
+      "id": "T_HC_536",
+      "topic": "Heat and Calorimetry",
+      "prompt": "What happens to the temperature of a substance while it is undergoing a phase change?",
+      "answer": "The temperature remains constant"
+    },
+    {
+      "id": "T_TK_560",
+      "topic": "Temperature and Kinetic Theory",
+      "prompt": "Which temperature scale is defined such that 0 K represents absolute zero?",
+      "answer": "The Kelvin scale"
+    },
+    {
+      "id": "T_TK_561",
+      "topic": "Temperature and Kinetic Theory",
+      "prompt": "How is the Kelvin temperature (T) calculated from the Celsius temperature (T_C)?",
+      "answer": "T = T_C + 273.15"
+    },
+    {
+      "id": "T_TK_562",
+      "topic": "Temperature and Kinetic Theory",
+      "prompt": "Formula: Linear thermal expansion of a solid",
+      "answer": "Δ L = α L_0 Δ T"
+    },
+    {
+      "id": "T_TK_563",
+      "topic": "Temperature and Kinetic Theory",
+      "prompt": "In the formula for linear expansion, what does the symbol α represent?",
+      "answer": "The coefficient of linear expansion"
+    },
+    {
+      "id": "T_TK_564",
+      "topic": "Temperature and Kinetic Theory",
+      "prompt": "Formula: Volume thermal expansion",
+      "answer": "Δ V = β V_0 Δ T"
+    },
+    {
+      "id": "T_TL_591",
+      "topic": "Thermodynamic Laws",
+      "prompt": "The internal energy of a system is defined as the sum of all the _____ of its constituent molecules",
+      "answer": "Kinetic and potential energies"
+    },
+    {
+      "id": "T_TL_592",
+      "topic": "Thermodynamic Laws",
+      "prompt": "Write the mathematical expression for the First Law of Thermodynamics, where W is work done by the system",
+      "answer": "Δ U = Q - W"
+    },
+    {
+      "id": "T_TL_593",
+      "topic": "Thermodynamic Laws",
+      "prompt": "In the First Law of Thermodynamics, what does a positive value for Q represent?",
+      "answer": "Heat is added to the system"
+    },
+    {
+      "id": "T_TL_594",
+      "topic": "Thermodynamic Laws",
+      "prompt": "What thermodynamic process occurs at a constant temperature, resulting in Δ U = 0 for an ideal gas?",
+      "answer": "Isothermal process"
+    },
+    {
+      "id": "T_TL_595",
+      "topic": "Thermodynamic Laws",
+      "prompt": "An _____ process is one in which no heat flows into or out of the system (Q = 0)",
+      "answer": "Adiabatic"
+    },
+    {
+      "id": "VW_EW_639",
+      "topic": "Electromagnetic Waves",
+      "prompt": "Which type of mechanical wave can travel through both solids and liquids?",
+      "answer": "Longitudinal waves"
+    },
+    {
+      "id": "VW_EW_640",
+      "topic": "Electromagnetic Waves",
+      "prompt": "Formula: Wave speed (v) on a cord with tension (F_T) and mass per unit length (μ)",
+      "answer": "v = √(F_T)μ"
+    },
+    {
+      "id": "VW_EW_641",
+      "topic": "Electromagnetic Waves",
+      "prompt": "In a standing wave, what is the term for a point on the medium that experiences no motion?",
+      "answer": "Node"
+    },
+    {
+      "id": "VW_EW_642",
+      "topic": "Electromagnetic Waves",
+      "prompt": "What phase shift, in degrees, corresponds to a displacement of half a wavelength (λ/2)?",
+      "answer": "180^°"
+    },
+    {
+      "id": "VW_EW_643",
+      "topic": "Electromagnetic Waves",
+      "prompt": "Formula: The relationship between speed of light (c), wavelength (λ), and frequency (f)",
+      "answer": "c = λ f"
+    },
+    {
+      "id": "VW_LO_660",
+      "topic": "Light and Optics",
+      "prompt": "Approximately how many octaves are contained within the human hearing range of 20 Hz to 20,000 Hz?",
+      "answer": "Approximately 10 octaves"
+    },
+    {
+      "id": "VW_LO_661",
+      "topic": "Light and Optics",
+      "prompt": "According to electromagnetic theory, what is the geometric relationship between the electric field, the magnetic field, and the direction of wave travel?",
+      "answer": "All three are mutually perpendicular to each other"
+    },
+    {
+      "id": "VW_LO_662",
+      "topic": "Light and Optics",
+      "prompt": "What is the standard value for the speed of light in a vacuum (c)?",
+      "answer": "3.00 × 10^8 m/s"
+    },
+    {
+      "id": "VW_LO_663",
+      "topic": "Light and Optics",
+      "prompt": "In a vacuum, what is the formula relating the speed of light (c), frequency (f), and wavelength (λ)?",
+      "answer": "c = fλ"
+    },
+    {
+      "id": "VW_LO_664",
+      "topic": "Light and Optics",
+      "prompt": "Which wave property provides evidence that light is a transverse wave rather than a longitudinal wave?",
+      "answer": "Polarisation"
+    },
+    {
+      "id": "VW_WMS_691",
+      "topic": "Wave Motion and Sound",
+      "prompt": "What is the fundamental wavelength of an organ pipe of length L that is open at both ends?",
+      "answer": "The fundamental wavelength is 2L"
+    },
+    {
+      "id": "VW_WMS_692",
+      "topic": "Wave Motion and Sound",
+      "prompt": "If the intensity of a sound wave increases by a factor of 100, by what factor does the displacement amplitude increase?",
+      "answer": "The amplitude increases by a factor of 10, as A √(I)"
+    },
+    {
+      "id": "VW_WMS_693",
+      "topic": "Wave Motion and Sound",
+      "prompt": "In a pipe closed at one end, which harmonics are allowed to form standing waves?",
+      "answer": "Only odd harmonics (n = 1, 3, 5, ) are allowed"
+    },
+    {
+      "id": "VW_WMS_695",
+      "topic": "Wave Motion and Sound",
+      "prompt": "How does the speed of light (c) relate to frequency (f) and wavelength (λ)?",
+      "answer": "The relationship is c = fλ"
+    },
+    {
+      "id": "VW_WMS_696",
+      "topic": "Wave Motion and Sound",
+      "prompt": "Formula: Wave speed in terms of period (T) and wavelength (λ)",
+      "answer": "v = λ/T"
+    },
+    {
+      "id": "VW_XRC_705",
+      "topic": "X-Rays and CT Scans",
+      "prompt": "What type of wave is an X-ray classified as?",
+      "answer": "An electromagnetic wave"
+    },
+    {
+      "id": "VW_XRC_706",
+      "topic": "X-Rays and CT Scans",
+      "prompt": "Do X-rays require a medium, such as air or water, to travel through space?",
+      "answer": "No, they can travel through a vacuum"
+    },
+    {
+      "id": "VW_XRC_707",
+      "topic": "X-Rays and CT Scans",
+      "prompt": "The continuous portion of the X-ray spectrum is produced by radiation known as _____",
+      "answer": "Bremsstrahlung (braking radiation)"
+    },
+    {
+      "id": "VW_XRC_708",
+      "topic": "X-Rays and CT Scans",
+      "prompt": "What is the formula for the cutoff wavelength λ_0 in terms of the accelerating potential V?",
+      "answer": "λ_0 = hc/eV"
+    },
+    {
+      "id": "VW_XRC_709",
+      "topic": "X-Rays and CT Scans",
+      "prompt": "How does increasing the number of electrons (current) in an X-ray tube affect the cutoff wavelength?",
+      "answer": "It has no effect on the cutoff wavelength"
+    }
+  ]
+}

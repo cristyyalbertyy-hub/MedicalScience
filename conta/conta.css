@@ -173,8 +173,42 @@
   gap: 0.65rem;
 }
 
-#packages-progress[hidden] {
+#packages-progress[hidden],
+#packages-snap[hidden] {
   display: none !important;
+}
+
+.acesso-snap-entry {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.acesso-snap-list {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.acesso-snap-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.1rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(31, 78, 107, 0.28);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.acesso-snap-chip:hover {
+  background: #fff;
+  border-color: rgba(31, 78, 107, 0.5);
 }
 
 .acesso-progress-entry {

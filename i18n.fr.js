@@ -237,7 +237,7 @@ SITE_LOCALES.fr = {
     },
     final: {
       title: "À partir de $5.99 par module — ou Studio9 Pass dès $14.99/mois.",
-      text: "Achetez une discipline pour étudier — ou débloquez les quinze plus Genetics Snap avec le Pass.",
+      text: "Achetez une discipline pour étudier — ou débloquez les quinze plus Studio9 Snap avec le Pass.",
       cta: "Voir les tarifs et commencer",
     },
   },
@@ -407,8 +407,8 @@ SITE_LOCALES.fr = {
     passCancelAnytime:
       "Résiliez à tout moment — l'accès continue jusqu'à la fin de la période de facturation en cours.",
     passManage: "Gérer l'abonnement",
-    snapTitle: "Genetics Snap",
-    snapHint: "Bonus Pass · jeu chronométré · classement hebdomadaire",
+    snapTitle: "Studio9 Snap",
+    snapHint: "Bonus Pass · jeu chronométré · classement hebdomadaire par matière",
     snapOpen: "Jouer",
   },
   precos: {
@@ -442,9 +442,9 @@ SITE_LOCALES.fr = {
       modulesCta: "Choisir une discipline →",
       passLabel: "Studio9 Pass",
       passPeriod: "par mois · résiliable à tout moment",
-      passLead: "Pour celles et ceux qui portent plusieurs disciplines — avec Genetics Snap en bonus Pass.",
+      passLead: "Pour celles et ceux qui portent plusieurs disciplines — avec Studio9 Snap en bonus Pass.",
       passF1: "Les 15 modules payants débloqués tant que c'est actif",
-      passF2: "Genetics Snap — jeu d'encastrement chronométré + classement hebdomadaire",
+      passF2: "Studio9 Snap — jeux d'encastrement chronométrés + classement hebdomadaire par matière",
       passF3: "Changez de matière à l'approche des examens",
       passF4: "Suivi de progression sur le semestre",
       passF5: "Résiliez à tout moment — sans tuteur 24h/24",
@@ -456,22 +456,22 @@ SITE_LOCALES.fr = {
     passWhy: {
       eyebrow: "Pourquoi s'abonner",
       title: "Une discipline, c'est clair. Un semestre demande un Pass.",
-      lead: "Les packs restent le bon choix pour une seule matière. Studio9 Pass débloque tous les modules — et Genetics Snap, un jeu chronométré avec classement hebdomadaire que l'achat à l'unité n'inclut pas.",
+      lead: "Les packs restent le bon choix pour une seule matière. Studio9 Pass débloque tous les modules — et Studio9 Snap, un jeu chronométré avec classement hebdomadaire que l'achat à l'unité n'inclut pas.",
       c1Title: "Moins cher que d'empiler les modules",
       c1Text:
         "Trois modules moyens coûtent déjà plus que deux mois de Pass. Avec quatre ou cinq matières, l'abonnement s'amortit.",
       c2Title: "Un accès qui suit le semestre",
       c2Text:
         "Débloquez tout pendant la rotation des examens. Mettez en pause ou résiliez en fin de période — sans engagement à vie.",
-      c3Title: "Genetics Snap — bonus exclusif Pass",
+      c3Title: "Studio9 Snap — bonus exclusif Pass",
       c3Text:
-        "Jeu d'encastrement chronométré avec classement hebdomadaire. Pas un quiz de plus — de l'habileté sous pression, et une raison de revenir entre les sessions.",
+        "Jeu d'encastrement chronométré avec classement hebdomadaire par matière. Pas un quiz de plus — de l'habileté sous pression, et une raison de revenir entre les sessions.",
     },
     pricing: {
       eyebrow: "Sans surprise",
       title: "Tarifs simples.",
       pilotNotice:
-        "Achetez une discipline quand vous en avez besoin — ou débloquez tout avec Studio9 Pass, Genetics Snap inclus.",
+        "Achetez une discipline quand vous en avez besoin — ou débloquez tout avec Studio9 Pass, Studio9 Snap inclus.",
       modulesEyebrow: "Ou achetez à la carte",
       modulesTitle: "Prix des modules par taille.",
       currencyLabel: "Devise",
@@ -522,8 +522,8 @@ SITE_LOCALES.fr = {
       a6: "Achetez un module si vous n'avez besoin que d'une discipline. Choisissez Studio9 Pass si vous étudiez plusieurs matières le même semestre — vous débloquez tous les modules payants pendant l'abonnement et pouvez résilier en fin de période.",
       q7: "Le Pass inclut-il un tuteur 24h/24 ?",
       a7: "Non. Le Pass, c'est l'accès continu à toute la bibliothèque de modules, aux outils de progression et aux mises à jour — pas du tutorat privé. Pour le compte ou les questions, nous répondons par email sous 24 heures.",
-      q8: "Qu'est-ce que Genetics Snap ?",
-      a8: "Un jeu exclusif Pass : un bloc apparaît et vous l'encastrez sur la bonne réponse avant la fin du temps. Montez dans le classement hebdomadaire Genetics. L'achat du module permet d'étudier ; le Pass ajoute aussi Snap.",
+      q8: "Qu'est-ce que Studio9 Snap ?",
+      a8: "Un jeu exclusif Pass : un bloc apparaît et vous l'encastrez sur la bonne réponse avant la fin du temps. Chaque module simple en ligne a son classement hebdomadaire. L'achat du module permet d'étudier ; le Pass ajoute aussi Snap.",
     },
   },
   contactPage: {

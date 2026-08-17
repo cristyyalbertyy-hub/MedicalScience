@@ -1,0 +1,14 @@
+{
+  "packages": [
+    { "id": "human-anatomy-1", "title": "Human Anatomy I" },
+    { "id": "medical-biology", "title": "Medical Biology" },
+    { "id": "genetics", "title": "Genetics" },
+    { "id": "physics", "title": "Physics" },
+    { "id": "information-processing", "title": "Information Processing" },
+    { "id": "statistics", "title": "Statistics" },
+    { "id": "history-of-medicine", "title": "History of Medicine" },
+    { "id": "moral-philosophy", "title": "Moral Philosophy" },
+    { "id": "health-technology-assessments", "title": "Health Technology Assessments (EU)" },
+    { "id": "italian-health-system", "title": "Italian Health System" }
+  ]
+}

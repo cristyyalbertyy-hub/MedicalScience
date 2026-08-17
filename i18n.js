@@ -243,7 +243,7 @@ const SITE_LOCALES = {
       },
       final: {
         title: "From $5.99 per module — or Studio9 Pass from $14.99/month.",
-        text: "Buy one discipline to study — or unlock all fifteen plus Genetics Snap with Pass.",
+        text: "Buy one discipline to study — or unlock all fifteen plus Studio9 Snap with Pass.",
         cta: "See pricing and start",
       },
     },
@@ -412,8 +412,8 @@ const SITE_LOCALES = {
       passCancelAnytime:
         "Cancel anytime — access continues until the end of the current billing period.",
       passManage: "Manage subscription",
-      snapTitle: "Genetics Snap",
-      snapHint: "Pass bonus · timed block-match · weekly ranking",
+      snapTitle: "Studio9 Snap",
+      snapHint: "Pass bonus · timed block-match · weekly ranking per subject",
       snapOpen: "Play",
     },
     precos: {
@@ -447,9 +447,9 @@ const SITE_LOCALES = {
         modulesCta: "Choose a discipline →",
         passLabel: "Studio9 Pass",
         passPeriod: "per month · cancel anytime",
-        passLead: "For students juggling several disciplines — plus Genetics Snap as a Pass bonus.",
+        passLead: "For students juggling several disciplines — plus Studio9 Snap as a Pass bonus.",
         passF1: "All 15 paid modules unlocked while active",
-        passF2: "Genetics Snap — timed block-match game + weekly ranking",
+        passF2: "Studio9 Snap — timed block-match games + weekly ranking per subject",
         passF3: "Switch subjects as exams approach",
         passF4: "Progress tracking across your semester",
         passF5: "Cancel anytime — no 24/7 tutor required",
@@ -461,22 +461,22 @@ const SITE_LOCALES = {
       passWhy: {
         eyebrow: "Why subscribe",
         title: "One discipline is clear. A full semester needs a Pass.",
-        lead: "Packages stay the right choice for a single subject. Studio9 Pass unlocks every module — and Genetics Snap, a timed game with weekly rankings that package buyers do not get.",
+        lead: "Packages stay the right choice for a single subject. Studio9 Pass unlocks every module — and Studio9 Snap, a timed game with weekly rankings that package buyers do not get.",
         c1Title: "Cheaper than stacking modules",
         c1Text:
           "Three medium modules already cost more than two months of Pass. If you study four or five subjects, subscription pays for itself.",
         c2Title: "Access that follows the semester",
         c2Text:
           "Unlock everything while exams rotate. Pause or cancel when the term ends — you are not locked into a lifetime promise.",
-        c3Title: "Genetics Snap — Pass-only bonus",
+        c3Title: "Studio9 Snap — Pass-only bonus",
         c3Text:
-          "Timed block-match play with a weekly ranking. Not another quiz list — skill under pressure, and a reason to come back between study sessions.",
+          "Timed block-match play with a weekly ranking for each live standalone module. Not another quiz list — skill under pressure, and a reason to come back between study sessions.",
       },
       pricing: {
         eyebrow: "No surprises",
         title: "Simple pricing.",
         pilotNotice:
-          "Buy one discipline when you need it — or unlock everything with Studio9 Pass, including Genetics Snap.",
+          "Buy one discipline when you need it — or unlock everything with Studio9 Pass, including Studio9 Snap.",
         modulesEyebrow: "Or buy à la carte",
         modulesTitle: "Module prices by size.",
         currencyLabel: "Currency",
@@ -524,11 +524,11 @@ const SITE_LOCALES = {
         q5: "Where can I find further study suggestions?",
         a5: "Each live Studio9 app includes a Further study section on the course overview — books we recommend when you want to go deeper after a lesson. They support your own reading alongside university; they do not replace your official programme bibliography.",
         q6: "Should I buy a module or take Studio9 Pass?",
-        a6: "Buy a module if you only need one discipline. Choose Studio9 Pass if you will study several subjects — you unlock all paid modules while subscribed, plus Genetics Snap (timed game + weekly ranking). Cancel when the term ends.",
+        a6: "Buy a module if you only need one discipline. Choose Studio9 Pass if you will study several subjects — you unlock all paid modules while subscribed, plus Studio9 Snap (timed game + weekly ranking). Cancel when the term ends.",
         q7: "Does the Pass include a 24/7 tutor?",
         a7: "No. Pass is continuous access to the full module library, progress tools and updates — not private tutoring. For account or study questions we reply by email within 24 hours.",
-        q8: "What is Genetics Snap?",
-        a8: "A Pass-only timed game: a prompt appears and you snap it onto the right answer before the clock runs out. Climb the weekly Genetics ranking. Package buyers study the module; Pass subscribers also get Snap.",
+        q8: "What is Studio9 Snap?",
+        a8: "A Pass-only timed game: a prompt appears and you snap it onto the right answer before the clock runs out. Each live standalone module has its own weekly ranking. Package buyers study the module; Pass subscribers also get Snap.",
       },
     },
     contactPage: {

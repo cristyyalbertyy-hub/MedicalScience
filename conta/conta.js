@@ -45,6 +45,7 @@ const packagesEmptyHint = document.getElementById("packages-empty-hint");
 const packagesFootnote = document.getElementById("packages-footnote");
 const packagesProgressEntry = document.getElementById("packages-progress");
 const packagesSnapEntry = document.getElementById("packages-snap");
+const packagesSnapList = document.getElementById("packages-snap-list");
 const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: "select_account" });
@@ -612,6 +613,35 @@ function appendFamilyGroupRow(list, group, ownedIds, catalog) {
   }
 }
 
+async function fillSnapList() {
+  if (!packagesSnapList || packagesSnapList.dataset.filled === "1") return;
+  try {
+    const res = await fetch("../snap/catalog.json");
+    if (!res.ok) throw new Error("catalog");
+    const data = await res.json();
+    packagesSnapList.replaceChildren();
+    for (const pkg of data.packages ?? []) {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.className = "acesso-snap-chip";
+      a.href = `../snap/?package=${encodeURIComponent(pkg.id)}`;
+      a.textContent = pkg.title;
+      li.appendChild(a);
+      packagesSnapList.appendChild(li);
+    }
+    packagesSnapList.dataset.filled = "1";
+  } catch {
+    packagesSnapList.replaceChildren();
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.className = "acesso-snap-chip";
+    a.href = "../snap/";
+    a.textContent = t("accountPage.snapOpen");
+    li.appendChild(a);
+    packagesSnapList.appendChild(li);
+  }
+}
+
 function renderPackages(catalog) {
   packagesList.replaceChildren();
   renderPassBanner();
@@ -646,6 +676,7 @@ function renderPackages(catalog) {
   if (packagesProgressEntry) packagesProgressEntry.hidden = false;
   if (packagesSnapEntry) {
     packagesSnapEntry.hidden = !activePass?.active;
+    if (activePass?.active) void fillSnapList();
   }
 
   const plan = buildOwnedRenderPlan(catalog, ownedSet);

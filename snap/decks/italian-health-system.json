@@ -1,0 +1,261 @@
+{
+  "packageId": "italian-health-system",
+  "title": "Italian Health System",
+  "version": 1,
+  "timerSeconds": 10,
+  "roundsPerSession": 10,
+  "cards": [
+    {
+      "id": "IHS_BC_0",
+      "topic": "Basic concepts",
+      "prompt": "What fundamental principle governs the decentralization of health care provision to regions in the Italian health system?",
+      "answer": "The subsidiarity principle"
+    },
+    {
+      "id": "IHS_BC_1",
+      "topic": "Basic concepts",
+      "prompt": "Which specific tool evaluates the sustainability or economic acceptability of a health intervention based on its impact on a fixed budget?",
+      "answer": "Budget Impact Analysis (BIA)"
+    },
+    {
+      "id": "IHS_BC_2",
+      "topic": "Basic concepts",
+      "prompt": "The Incremental Cost-Effectiveness Ratio (ICER) is defined as the ratio between the difference in costs and the _____",
+      "answer": "Difference in effectiveness between two alternatives"
+    },
+    {
+      "id": "IHS_BC_3",
+      "topic": "Basic concepts",
+      "prompt": "Formula: Incremental Cost-Effectiveness Ratio (ICER)",
+      "answer": "ICER = Cost_A - Cost_B/Effectiveness_A - Effectiveness_B"
+    },
+    {
+      "id": "IHS_BC_4",
+      "topic": "Basic concepts",
+      "prompt": "In economic evaluation, what is represented by the variable r?",
+      "answer": "The discount rate that reflects real rates of return"
+    },
+    {
+      "id": "IHS_BC_5",
+      "topic": "Basic concepts",
+      "prompt": "Which costing category includes specific items like physician fees, laboratory tests, and drugs used directly for a program?",
+      "answer": "Directly allocatable costs"
+    },
+    {
+      "id": "IHS_BC_6",
+      "topic": "Basic concepts",
+      "prompt": "In hospital accounting, what is the term for the measure used to distribute overhead items, such as square meters for housekeeping?",
+      "answer": "An allocation basis"
+    },
+    {
+      "id": "IHS_BC_7",
+      "topic": "Basic concepts",
+      "prompt": "What term refers to the range of services or products reimbursed within a publicly funded health system?",
+      "answer": "The benefit basket"
+    },
+    {
+      "id": "IHS_BC_8",
+      "topic": "Basic concepts",
+      "prompt": "In a Bismarckian (Social Health Insurance) system like those seen in parts of Europe, coverage decisions define explicit _____",
+      "answer": "Individual entitlements"
+    },
+    {
+      "id": "IHS_BC_9",
+      "topic": "Basic concepts",
+      "prompt": "In a scenario with a fixed budget, efficiency requires replacing programs with small net benefits with programs that have _____",
+      "answer": "Larger net benefits"
+    },
+    {
+      "id": "IHS_BC_10",
+      "topic": "Basic concepts",
+      "prompt": "Which Italian entity manages the level of reimbursement for health insurance providers (UNCAM)?",
+      "answer": "Union Nationale des Caisses d’Assurance Maladie"
+    },
+    {
+      "id": "IHS_BC_11",
+      "topic": "Basic concepts",
+      "prompt": "At the macro level of national executives, health policy-making is most closely related to the process of _____",
+      "answer": "Legislation"
+    },
+    {
+      "id": "IHS_BC_12",
+      "topic": "Basic concepts",
+      "prompt": "Which costing method involves collecting and analyzing variations at the micro-level for international comparisons?",
+      "answer": "The HealthBASKET project methodology"
+    },
+    {
+      "id": "IHS_BC_13",
+      "topic": "Basic concepts",
+      "prompt": "What distinguishes 'Cost-Benefit Analysis' (CBA) from 'Cost-Effectiveness Analysis' (CEA)?",
+      "answer": "CBA values both costs and consequences in monetary units"
+    },
+    {
+      "id": "IHS_OS_15",
+      "topic": "Organizational levels",
+      "prompt": "In the context of health system organizational levels, what institutions constitute the meso level?",
+      "answer": "Regional or provincial health authorities"
+    },
+    {
+      "id": "IHS_OS_16",
+      "topic": "Organizational levels",
+      "prompt": "The micro level of health-care organization refers to _____ institutions",
+      "answer": "Local"
+    },
+    {
+      "id": "IHS_OS_17",
+      "topic": "Organizational levels",
+      "prompt": "What is the primary organizational characteristic of the Italian health system approach?",
+      "answer": "Absolute decentralization"
+    },
+    {
+      "id": "IHS_OS_18",
+      "topic": "Organizational levels",
+      "prompt": "The decentralization of the Italian health system is based on the principle of _____",
+      "answer": "Subsidiarity"
+    },
+    {
+      "id": "IHS_OS_19",
+      "topic": "Organizational levels",
+      "prompt": "In Italy, responsibilities for health-care provision have been delegated to the regions through a process called _____",
+      "answer": "Devolution"
+    },
+    {
+      "id": "IHS_OS_20",
+      "topic": "Organizational levels",
+      "prompt": "Under which Italian body does the National Agency for Regional Health Care Services (ASSR) operate?",
+      "answer": "The Ministry of Health"
+    },
+    {
+      "id": "IHS_OS_21",
+      "topic": "Organizational levels",
+      "prompt": "As of 2008, what was a notable absence in the Italian national HTA infrastructure compared to other European countries?",
+      "answer": "A national HTA agency"
+    },
+    {
+      "id": "IHS_OS_22",
+      "topic": "Organizational levels",
+      "prompt": "How many partner organizations were involved in the initial Italian HTA network established in 2003?",
+      "answer": "Ten"
+    },
+    {
+      "id": "IHS_OS_23",
+      "topic": "Organizational levels",
+      "prompt": "Which meso-level entities are part of the Italian HTA network structure?",
+      "answer": "Regional and local health authorities"
+    },
+    {
+      "id": "IHS_OS_24",
+      "topic": "Organizational levels",
+      "prompt": "The Italian HTA network aims to identify an organizational and methodological _____ from the best experiences of its partners",
+      "answer": "Standard"
+    },
+    {
+      "id": "IHS_OS_25",
+      "topic": "Organizational levels",
+      "prompt": "To what are the competences and processes of the Italian HTA network partners compared for improvement?",
+      "answer": "International benchmarks"
+    },
+    {
+      "id": "IHS_OS_26",
+      "topic": "Organizational levels",
+      "prompt": "The Italian network is developing an accredited _____ on HTA to build professional capacity among providers",
+      "answer": "Curriculum"
+    },
+    {
+      "id": "IHS_OS_27",
+      "topic": "Organizational levels",
+      "prompt": "In Italy, HTA capacity can be organized as a formal unit or as part of _____",
+      "answer": "Other departments"
+    },
+    {
+      "id": "IHS_OS_28",
+      "topic": "Organizational levels",
+      "prompt": "The National Agency for Regional Health Care Services is known by the Italian acronym _____",
+      "answer": "ASSR"
+    },
+    {
+      "id": "IHS_SS_43",
+      "topic": "System structure",
+      "prompt": "What is the status of a centralized national HTA agency in the Italian health system?",
+      "answer": "Italy does not have a single national HTA agency"
+    },
+    {
+      "id": "IHS_SS_44",
+      "topic": "System structure",
+      "prompt": "The Italian approach to HTA is characterized by absolute _____ based on the subsidiarity principle",
+      "answer": "decentralization"
+    },
+    {
+      "id": "IHS_SS_46",
+      "topic": "System structure",
+      "prompt": "What central institution was created in 1997 to support the development and coordination of regional health services in Italy?",
+      "answer": "National Agency for Regional Health Care Services (ASSR)"
+    },
+    {
+      "id": "IHS_SS_47",
+      "topic": "System structure",
+      "prompt": "In 2007, the Italian ASSR was given the specific mandate to promote and support _____ HTA activities",
+      "answer": "regional"
+    },
+    {
+      "id": "IHS_SS_48",
+      "topic": "System structure",
+      "prompt": "The integration of HTA units in Italian university hospitals has a 'signalling effect' that contributes to the _____ of a culture of assessment among clinicians",
+      "answer": "diffusion"
+    },
+    {
+      "id": "IHS_SS_49",
+      "topic": "System structure",
+      "prompt": "Which specific directorate houses the HTA unit at the Agostino Gemelli University Hospital in Rome?",
+      "answer": "Medical Directorate"
+    },
+    {
+      "id": "IHS_SS_50",
+      "topic": "System structure",
+      "prompt": "Economic evaluation in healthcare is the comparative analysis of alternative actions in terms of both _____ and _____",
+      "answer": "costs; consequences"
+    },
+    {
+      "id": "IHS_SS_51",
+      "topic": "System structure",
+      "prompt": "From a geographical perspective, the administrative level of regional or provincial health authorities represents the _____ level",
+      "answer": "meso"
+    },
+    {
+      "id": "IHS_SS_52",
+      "topic": "System structure",
+      "prompt": "At the macro level, what type of technological decision-making is typically highly formalized and centralized in Europe?",
+      "answer": "Market approval or licensing"
+    },
+    {
+      "id": "IHS_SS_53",
+      "topic": "System structure",
+      "prompt": "In the context of cost-benefit analysis, what does 'v' represent?",
+      "answer": "The consumption value of a unit of health (e.g., a QALY)"
+    },
+    {
+      "id": "IHS_SS_54",
+      "topic": "System structure",
+      "prompt": "Under a fixed budget scenario, the opportunity cost of adopting a new technology is the _____ of the existing programmes that are displaced",
+      "answer": "net benefit"
+    },
+    {
+      "id": "IHS_SS_55",
+      "topic": "System structure",
+      "prompt": "The organization of the availability and delivery of specific technologies for which coverage has been granted is a concern of the _____ and _____ levels",
+      "answer": "macro; meso"
+    },
+    {
+      "id": "IHS_SS_56",
+      "topic": "System structure",
+      "prompt": "Which domain of an HTA report focuses on how material and financial resources must be activated and organized for a technology?",
+      "answer": "Organizational aspects"
+    },
+    {
+      "id": "IHS_SS_57",
+      "topic": "System structure",
+      "prompt": "In economic evaluation, what term describes an improvement where benefits accrue to some with no cost to others?",
+      "answer": "Pareto improvement"
+    }
+  ]
+}
