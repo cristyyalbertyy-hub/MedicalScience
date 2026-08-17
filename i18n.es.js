@@ -237,7 +237,7 @@ SITE_LOCALES.es = {
     },
     final: {
       title: "Desde $5.99 por módulo — o Studio9 Pass desde $9.99/mes.",
-      text: "Compra una disciplina para estudiar — o desbloquea las quince más Studio9 Snap con el Pass.",
+      text: "Compra una disciplina para estudiar — o desbloquea todos los módulos de pago más Studio9 Snap con el Pass.",
       cta: "Ver precios y empezar",
     },
   },
@@ -442,7 +442,7 @@ SITE_LOCALES.es = {
       passLabel: "Studio9 Pass",
       passPeriod: "al mes · cancela cuando quieras",
       passLead: "Para quien lleva varias disciplinas — y quiere Studio9 Snap como bonus del Pass.",
-      passF1: "Los 15 módulos de pago desbloqueados mientras esté activo",
+      passF1: "Todos los módulos de pago desbloqueados mientras esté activo",
       passF2: "Studio9 Snap — juegos de encaje con tiempo + ranking semanal por materia",
       passF3: "Cambia de materia según se acerquen los exámenes",
       passF4: "Progreso a lo largo del semestre",

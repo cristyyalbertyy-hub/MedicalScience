@@ -243,7 +243,7 @@ const SITE_LOCALES = {
       },
       final: {
         title: "From $5.99 per module — or Studio9 Pass from $9.99/month.",
-        text: "Buy one discipline to study — or unlock all fifteen plus Studio9 Snap with Pass.",
+        text: "Buy one discipline to study — or unlock all paid modules plus Studio9 Snap with Pass.",
         cta: "See pricing and start",
       },
     },
@@ -448,7 +448,7 @@ const SITE_LOCALES = {
         passLabel: "Studio9 Pass",
         passPeriod: "per month · cancel anytime",
         passLead: "For students juggling several disciplines — plus Studio9 Snap as a Pass bonus.",
-        passF1: "All 15 paid modules unlocked while active",
+        passF1: "All paid modules unlocked while active",
         passF2: "Studio9 Snap — timed block-match games + weekly ranking per subject",
         passF3: "Switch subjects as exams approach",
         passF4: "Progress tracking across your semester",

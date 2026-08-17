@@ -279,7 +279,7 @@
       "enabled": false
     },
     "full_year": {
-      "label": "Full year (15 paid modules)",
+      "label": "Full year (all paid modules)",
       "includes": "all_paid",
       "durationDays": 365,
       "enabled": false

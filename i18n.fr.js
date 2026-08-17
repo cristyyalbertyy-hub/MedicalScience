@@ -237,7 +237,7 @@ SITE_LOCALES.fr = {
     },
     final: {
       title: "À partir de $5.99 par module — ou Studio9 Pass dès $9.99/mois.",
-      text: "Achetez une discipline pour étudier — ou débloquez les quinze plus Studio9 Snap avec le Pass.",
+      text: "Achetez une discipline pour étudier — ou débloquez tous les modules payants plus Studio9 Snap avec le Pass.",
       cta: "Voir les tarifs et commencer",
     },
   },
@@ -443,7 +443,7 @@ SITE_LOCALES.fr = {
       passLabel: "Studio9 Pass",
       passPeriod: "par mois · résiliable à tout moment",
       passLead: "Pour celles et ceux qui portent plusieurs disciplines — avec Studio9 Snap en bonus Pass.",
-      passF1: "Les 15 modules payants débloqués tant que c'est actif",
+      passF1: "Tous les modules payants débloqués tant que c'est actif",
       passF2: "Studio9 Snap — jeux d'encastrement chronométrés + classement hebdomadaire par matière",
       passF3: "Changez de matière à l'approche des examens",
       passF4: "Suivi de progression sur le semestre",
