@@ -126,7 +126,7 @@ function renderBoard(data) {
   if (!board.length) {
     const li = document.createElement("li");
     li.className = "snap-board-empty";
-    li.textContent = "No scores yet this week — be the first.";
+    li.textContent = "No scores yet this week. Be the first.";
     boardEl.appendChild(li);
   } else {
     for (const row of board) {
@@ -349,7 +349,7 @@ async function refreshAccess(user) {
     readyEl.hidden = false;
     setStatus(
       accessVia === "pass"
-        ? `Studio9 Pass active — ranked ${subjectTitle} Snap unlocked.`
+        ? `Studio9 Pass active. Ranked ${subjectTitle} Snap unlocked.`
         : `Ranked ${subjectTitle} Snap unlocked.`,
     );
     const board = await api("board");
@@ -403,7 +403,7 @@ function applySubjectCopy(title) {
   document.title = `${title} Snap · Studio9`;
   headingEl.textContent = `${title} · Block Match`;
   leadEl.textContent = `A prompt flies in. Snap it onto the right answer before time runs out. Climb this week’s ${title} ranking.`;
-  lockedCopyEl.innerHTML = `${title} Snap is a <strong>Studio9 Pass</strong> bonus — timed play and weekly rankings for subscribers.`;
+  lockedCopyEl.innerHTML = `${title} Snap is a <strong>Studio9 Pass</strong> bonus. Timed play and weekly rankings for subscribers.`;
   readyNoteEl.textContent = `Best score today updates your weekly ${title} rank.`;
   boardTitleEl.textContent = `${title} · this week`;
 }

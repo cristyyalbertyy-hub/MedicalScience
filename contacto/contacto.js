@@ -113,7 +113,7 @@ form?.addEventListener("submit", async (event) => {
         email,
         topic: topicLabel(topic),
         message,
-        _subject: `Studio9 — ${topicLabel(topic)}`,
+        _subject: `Studio9. ${topicLabel(topic)}`,
         _replyto: email,
         _template: "table",
         _captcha: "false",

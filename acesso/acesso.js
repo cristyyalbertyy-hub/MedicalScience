@@ -223,7 +223,7 @@ async function bootstrap() {
   authPanel.hidden = false;
 
   if (!configured()) {
-    setStatus("Conta indisponível — Firebase não configurado neste deploy.", "error");
+    setStatus("Conta indisponível. Firebase não configurado neste deploy.", "error");
     return;
   }
 

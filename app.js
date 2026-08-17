@@ -22,7 +22,7 @@ const READY_PACKAGES = [
     number: "01",
     title: "Human Anatomy I",
     description:
-      "Skeletal, muscular and nervous systems — the base for clinical study and dissection-ready terminology.",
+      "Skeletal, muscular and nervous systems. The base for clinical study and dissection ready terminology.",
     url: "/human-anatomy-1/",
     status: "live",
   },
@@ -31,7 +31,7 @@ const READY_PACKAGES = [
     number: "02",
     title: "Medical Biology",
     description:
-      "Cell biology, tissues, metabolism and the core foundations for health-sciences study.",
+      "Cell biology, tissues, metabolism and the core foundations for health sciences study.",
     url: "/medical-biology/",
     status: "live",
   },
@@ -58,7 +58,7 @@ const READY_PACKAGES = [
     number: "05",
     title: "Information Processing",
     description:
-      "Data literacy and digital tools for evidence-based study — classes, videos, podcasts and questions.",
+      "Data literacy and digital tools for evidence based study. Classes, videos, podcasts and questions.",
     url: "/information-processing/",
     status: "live",
   },
@@ -85,7 +85,7 @@ const READY_PACKAGES = [
     number: "12",
     title: "Moral Philosophy",
     description:
-      "Ethical frameworks for consent, confidentiality, end-of-life care and professional conduct.",
+      "Ethical frameworks for consent, confidentiality, end of life care and professional conduct.",
     url: "/moral-philosophy/",
     status: "live",
   },
@@ -94,7 +94,7 @@ const READY_PACKAGES = [
     number: "13",
     title: "Health Technology Assessments (EU)",
     description:
-      "European Union focus — HTA methods, evidence appraisal and decision-making for drugs, devices and health interventions.",
+      "European Union focus. HTA methods, evidence appraisal and decision making for drugs, devices and health interventions.",
     url: "/health-technology-assessments/",
     status: "live",
   },
@@ -103,7 +103,7 @@ const READY_PACKAGES = [
     number: "14",
     title: "Italian Health System",
     description:
-      "Structure, funding and organisation of healthcare in Italy — regions, services and policy context.",
+      "Structure, funding and organisation of healthcare in Italy. Regions, services and policy context.",
     url: "/italian-health-system/",
     status: "live",
   },
@@ -147,7 +147,7 @@ const SOON_PACKAGES = [
     number: "19",
     title: "Microbiology",
     description:
-      "Bacteria, viruses, fungi and parasites — pathogenesis, diagnosis and treatment basics.",
+      "Bacteria, viruses, fungi and parasites. Pathogenesis, diagnosis and treatment basics.",
     status: "soon",
   },
   {
@@ -218,7 +218,7 @@ const SPLIT_PACKAGE_FALLBACK = {
   histology: {
     title: "Histology",
     description:
-      "Cytology and fundamental tissues — epithelia, connective tissue, muscle and nervous tissue.",
+      "Cytology and fundamental tissues. Epithelia, connective tissue, muscle and nervous tissue.",
     url: "/histology/",
     parentApp: "histology-embryology",
   },
@@ -238,14 +238,14 @@ const SPLIT_PACKAGE_FALLBACK = {
   },
   chemistry: {
     title: "Chemistry",
-    description: "General and organic chemistry — structure, bonding, equilibrium and functional groups.",
+    description: "General and organic chemistry. Structure, bonding, equilibrium and functional groups.",
     url: "/chemistry/",
     parentApp: "chemistry-introductory-biochemistry",
   },
   "introductory-biochemistry": {
     title: "Introductory Biochemistry",
     description:
-      "Carbohydrates, proteins, lipids and nucleotides — the molecular foundations for health sciences.",
+      "Carbohydrates, proteins, lipids and nucleotides. The molecular foundations for health sciences.",
     url: "/introductory-biochemistry/",
     parentApp: "chemistry-introductory-biochemistry",
   },
@@ -712,7 +712,7 @@ function formatTierTopicsRange(tierId, pricingConfig = getPricingConfig()) {
   if (max == null) {
     return packageText("packagesUi.tierTopicsPlus", `${min}+ topics`).replace("{min}", String(min));
   }
-  return packageText("packagesUi.tierTopicsRange", `${min}–${max} topics`)
+  return packageText("packagesUi.tierTopicsRange", `${min} to ${max} topics`)
     .replace("{min}", String(min))
     .replace("{max}", String(max));
 }
@@ -720,7 +720,7 @@ function formatTierTopicsRange(tierId, pricingConfig = getPricingConfig()) {
 function formatPriceRange(fromUsd, toUsd) {
   const from = formatPlanAmount(planAmount(fromUsd, pricingCurrency), pricingCurrency);
   const to = formatPlanAmount(planAmount(toUsd, pricingCurrency), pricingCurrency);
-  return `${from} – ${to}`;
+  return `${from} to ${to}`;
 }
 
 function renderTierPriceBadge(tierId, pricingConfig, { free = false, topicCount = null, priceUsd = null } = {}) {

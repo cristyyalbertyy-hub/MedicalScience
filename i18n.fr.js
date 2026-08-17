@@ -12,7 +12,7 @@ SITE_LOCALES.fr = {
     },
     packages: {
       title: "Forfaits prêts à l'emploi · Medical Science · Studio9",
-      description: "25 disciplines de sciences de la santé - 14 en ligne aujourd'hui, 11 à venir.",
+      description: "25 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 11 à venir.",
     },
     precos: {
       title: "Comment ça marche + Tarifs · Medical Science · Studio9",
@@ -25,25 +25,25 @@ SITE_LOCALES.fr = {
     tomatoTime: {
       title: "Tomato Time · Medical Science · Studio9",
       description:
-        "Minuteur Pomodoro pour l'étude en sciences de la santé — blocs de focus avec pauses régulières.",
+        "Minuteur Pomodoro pour l'étude en sciences de la santé. Blocs de focus avec pauses régulières.",
     },
     termos: {
       title: "Conditions de vente · Medical Science · Studio9",
       description:
-        "Conditions de vente des modules numériques Studio9 Medical Science — durée d'accès, remboursements et information consommateur.",
+        "Conditions de vente des modules numériques Studio9 Medical Science. Durée d'accès, remboursements et information consommateur.",
     },
     privacidade: {
       title: "Politique de confidentialité · Medical Science · Studio9",
       description:
-        "Politique de confidentialité de Studio9 Medical Science — comment nous collectons et utilisons vos données.",
+        "Politique de confidentialité de Studio9 Medical Science. Comment nous collectons et utilisons vos données.",
     },
     contacto: {
       title: "Contact · Medical Science · Studio9",
       description:
-        "Contactez Studio9 Medical Science — nous sommes là pour l'accès, les achats et vos questions d'étude.",
+        "Contactez Studio9 Medical Science. Nous sommes là pour l'accès, les achats et vos questions d'étude.",
     },
   },
-  brand: { aria: "Studio9 Medical Science - accueil", name: "Studio9" },
+  brand: { aria: "Studio9 Medical Science. Accueil", name: "Studio9" },
   lang: { label: "Langue" },
   nav: {
     skip: "Aller au contenu",
@@ -69,7 +69,7 @@ SITE_LOCALES.fr = {
     contact: "Contact",
     terms: "Conditions de vente",
     privacy: "Politique de confidentialité",
-    copy: "© 2026 Studio9 – apprendre sans stress, vraiment",
+    copy: "© 2026 Studio9. Apprendre sans stress, vraiment",
     aria: "Liens du pied de page",
     socialAria: "Réseaux sociaux",
     tiktok: "TikTok",
@@ -107,11 +107,11 @@ SITE_LOCALES.fr = {
     viewContents: "Voir le contenu",
     hideContents: "Masquer le contenu",
     syllabusNotePurchase:
-      "Index complet — accès aux vidéos, podcasts et exercices après l'achat.",
-    syllabusNoteBrowse: "Index complet du module — chaque thème inclut les formats ci-dessous.",
+      "Index complet. Accès aux vidéos, podcasts et exercices après l'achat.",
+    syllabusNoteBrowse: "Index complet du module. Chaque thème inclut les formats ci-dessous.",
     syllabusPending: "Index complet bientôt disponible.",
     appMenuAria: "Menu des chapitres",
-    appMenuHint: "Tel qu'il apparaîtra dans l'app Studio9 — ouvrez un thème pour voir vidéo, podcast, infographie et questionnaire",
+    appMenuHint: "Tel qu'il apparaîtra dans l'app Studio9. Ouvrez un thème pour voir vidéo, podcast, infographie et questionnaire",
     resourceLegend: "V · Vidéo · P · Podcast · I · Infographie · Q · Questionnaire",
     resource: {
       V: "Vidéo",
@@ -122,7 +122,7 @@ SITE_LOCALES.fr = {
     tierS: "Small",
     tierM: "Medium",
     tierL: "Large",
-    tierTopicsRange: "{min}–{max} thèmes",
+    tierTopicsRange: "{min} à {max} thèmes",
     tierTopicsPlus: "{min}+ thèmes",
     tierTopicCount: "{count} thèmes",
     priceFree: "Gratuit",
@@ -132,7 +132,7 @@ SITE_LOCALES.fr = {
     buyBundle: "Acheter le forfait complet",
   },
   screenshots: {
-    hero: { alt: "Vue d'ensemble du cours Medical Statistics dans l'app Studio9 — chapitres, thèmes et infographie du programme" },
+    hero: { alt: "Vue d'ensemble du cours Medical Statistics dans l'app Studio9. Chapitres, thèmes et infographie du programme" },
     videos: { alt: "Application mobile avec une leçon vidéo de 5 à 10 minutes" },
     podcasts: { alt: "Étudiant écoutant un podcast de sciences médicales en déplacement" },
     exercises: { alt: "Exercice interactif avec retour instantané dans l'app" },
@@ -144,13 +144,13 @@ SITE_LOCALES.fr = {
   home: {
     hero: {
       eyebrow: "Cours en ligne · 25 modules · App Studio9",
-      title: "Medical Science — où et quand vous voulez.",
+      title: "Medical Science, où et quand vous voulez.",
       lead: "Étudiez l'anatomie, la physiologie, la génétique et bien plus encore. En courtes vidéos, podcasts pour le bus et exercices interactifs. Le tout dans l'app Studio9.",
       ctaDisciplines: "Voir toutes les disciplines",
       ctaHow: "Voir comment ça marche",
       ctaFreeIntro:
         "Essayez un module gratuitement. Explorez les vidéos, podcasts, infographies et questionnaires.",
-      ctaFreeItalian: "Essayer Italian Health System — gratuit",
+      ctaFreeItalian: "Essayer Italian Health System gratuitement",
       ctaFreeHint: "Gratuit · sans paiement · sans compte",
       mediaAria: "App Studio9 affichant la vue d'ensemble d'un cours, les chapitres et le programme",
     },
@@ -169,33 +169,33 @@ SITE_LOCALES.fr = {
     },
     preview: {
       eyebrow: "Toutes les disciplines",
-      title: "25 matières — choisissez celles dont vous avez besoin.",
+      title: "25 matières. Choisissez celles dont vous avez besoin.",
       intro:
-        "Quatorze apps Studio9 sont déjà en ligne. Onze disciplines arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude — vidéos, podcasts, infographies et questionnaires.",
+        "Quatorze apps Studio9 sont déjà en ligne. Onze disciplines arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude. Vidéos, podcasts, infographies et questionnaires.",
       liveCount: "14 apps en ligne",
       soonCount: "11 autres à venir",
-      hours: "40–60 heures par module",
+      hours: "40 à 60 heures par module",
       cta: "Voir toutes les disciplines →",
     },
     packages: {
       eyebrow: "Déjà disponibles",
       title: "Forfaits prêts à l'emploi.",
-      intro: 'Quatorze apps Studio9 sont déjà en ligne — le reste arrive. <a href="packages/">Voir tous les forfaits →</a>',
+      intro: 'Quatorze apps Studio9 sont déjà en ligne. Le reste arrive. <a href="packages/">Voir tous les forfaits →</a>',
     },
     testimonials: {
       aria: "Témoignages",
       eyebrow: "Voix réelles",
       title: "Ce que disent<br>étudiants et familles.",
       t1Quote:
-        "Les forfaits sont fantastiques pour une première approche de la matière — on apprend avec confiance et sans stress. En cours, les étudiants peuvent en profiter à presque 100 %, parce que ce n'est plus une matière nouvelle.",
+        "Les forfaits sont fantastiques pour une première approche de la matière. On apprend avec confiance et sans stress. En cours, les étudiants peuvent en profiter à presque 100 %, parce que ce n'est plus une matière nouvelle.",
       t1Name: "Cristina Alberto",
       t1Role: "Professeure d'université · Studio9",
       t2Quote:
-        "Studio9 a été l'outil parfait pour ma fille. Elle met un effort considérable dans ses études et se sent parfois complètement dépassée. Cette app lui apporte clarté et repères sur les matières exigeantes — elle sait exactement comment aborder chaque sujet. De plus, elle peut écouter les podcasts en allant à l'université ou entre les cours, ce qui valorise chaque instant. Cela a transformé sa confiance et sa routine.",
+        "Studio9 a été l'outil parfait pour ma fille. Elle met un effort considérable dans ses études et se sent parfois complètement dépassée. Cette app lui apporte clarté et repères sur les matières exigeantes. Elle sait exactement comment aborder chaque sujet. De plus, elle peut écouter les podcasts en allant à l'université ou entre les cours, ce qui valorise chaque instant. Cela a transformé sa confiance et sa routine.",
       t2Name: "Patricia Moreira",
       t2Role: "Mère d'étudiante universitaire",
       t3Quote:
-        "Ce programme a été un excellent outil pour m'aider dans mes études. Il m'a permis de réviser rapidement les matières et d'écouter des podcasts informatifs lorsque je suis occupé avec les tâches ménagères ou en me déplaçant. Il apporte une bonne clarté et reste facile à comprendre même si je n'ai pas encore vu la matière — ce qui me prépare à mieux comprendre, en cours comme en dehors. Bref, c'est un 10/10. Merci de l'avoir créé.",
+        "Ce programme a été un excellent outil pour m'aider dans mes études. Il m'a permis de réviser rapidement les matières et d'écouter des podcasts informatifs lorsque je suis occupé avec les tâches ménagères ou en me déplaçant. Il apporte une bonne clarté et reste facile à comprendre même si je n'ai pas encore vu la matière. Ce qui me prépare à mieux comprendre, en cours comme en dehors. Bref, c'est un 10/10. Merci de l'avoir créé.",
       t3Name: "Henrique",
       t3Role: "Étudiant universitaire",
     },
@@ -203,21 +203,21 @@ SITE_LOCALES.fr = {
       aria: "Reconnaissance du partenariat avec l'IA",
       eyebrow: "Expertise humaine + IA",
       title: "Transparents sur la façon dont tout a été construit.",
-      text: "Studio9 Medical Science repose sur des décennies d'enseignement universitaire — et sur une utilisation réfléchie de l'intelligence artificielle. L'IA a contribué au contenu des cours, à la conception de ce site et au développement de la plateforme. Nous l'affirmons ouvertement et avec fierté : lorsque des experts humains dirigent et que l'IA assiste, l'apprentissage peut être plus riche, plus clair et plus accessible pour les étudiants du monde entier.",
+      text: "Studio9 Medical Science repose sur des décennies d'enseignement universitaire, et sur une utilisation réfléchie de l'intelligence artificielle. L'IA a contribué au contenu des cours, à la conception de ce site et au développement de la plateforme. Nous l'affirmons ouvertement et avec fierté : lorsque des experts humains dirigent et que l'IA assiste, l'apprentissage peut être plus riche, plus clair et plus accessible pour les étudiants du monde entier.",
     },
     progress: {
       aria: "Progression de l'étudiant",
       eyebrow: "Déjà inscrit ?",
       title: "Tableau de bord de progression",
-      text: "Un seul endroit pour suivre votre étude dans chaque forfait — vidéos, podcasts, infographies et questionnaires, mis à jour au fil de votre apprentissage. Disponible depuis Mon compte après l'achat.",
+      text: "Un seul endroit pour suivre votre étude dans chaque forfait. Vidéos, podcasts, infographies et questionnaires, mis à jour au fil de votre apprentissage. Disponible depuis Mon compte après l'achat.",
       cta: "Ouvrir le tableau de bord →",
     },
     tomatoTime: {
       aria: "Minuteur de focus Tomato Time",
       eyebrow: "Outil gratuit · Studio9",
-      title: "Tomato Time — étudiez sans souhaiter que le temps s'écoule.",
+      title: "Tomato Time. Étudiez sans souhaiter que le temps s'écoule.",
       text:
-        "Un minuteur Pomodoro qui compte vers l'avant (0:00 → 25:00), pas vers l'arrière. Construisez focus et présence — puis ouvrez vos forfaits Medical Science quand le parcours est terminé.",
+        "Un minuteur Pomodoro qui compte vers l'avant (0:00 → 25:00), pas vers l'arrière. Construisez focus et présence. Puis ouvrez vos forfaits Medical Science quand le parcours est terminé.",
       cta: "Découvrir Tomato Time →",
       ctaApp: "Ouvrir l'app",
     },
@@ -230,14 +230,14 @@ SITE_LOCALES.fr = {
       c2Text: "Apprenez le contenu dans le bus, en marchant vers les cours ou en rangeant votre chambre.",
       c3Title: "Infographies en un coup d'œil",
       c3Text:
-        "Sujets complexes en résumés visuels — idéals pour réviser avant le cours ou l'examen.",
+        "Sujets complexes en résumés visuels. Idéals pour réviser avant le cours ou l'examen.",
       c4Title: "Questionnaires et quiz",
       c4Text:
         "Testez ce que vous avez appris. Le retour instantané montre vos erreurs et réexplique.",
     },
     final: {
-      title: "À partir de $5.99 par module — ou Studio9 Pass dès $9.99/mois.",
-      text: "Achetez une discipline pour étudier — ou débloquez tous les modules payants plus Studio9 Snap avec le Pass.",
+      title: "À partir de $5.99 par module, ou Studio9 Pass dès $9.99/mois.",
+      text: "Achetez une discipline pour étudier, ou débloquez tous les modules payants plus Studio9 Snap avec le Pass.",
       cta: "Voir les tarifs et commencer",
     },
   },
@@ -266,7 +266,7 @@ SITE_LOCALES.fr = {
     hero: {
       eyebrow: "Interactif · prêt à l'emploi",
       title: "Forfaits prêts à l'emploi.",
-      text: "25 disciplines de sciences de la santé - 14 en ligne aujourd'hui, 11 à venir. Achetez seulement ce dont vous avez besoin.",
+      text: "25 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 11 à venir. Achetez seulement ce dont vous avez besoin.",
     },
     sectionAria: "Forfaits d'apprentissage prêts à l'emploi",
     freeSpotlight: {
@@ -274,7 +274,7 @@ SITE_LOCALES.fr = {
       eyebrow: "Essayez gratuitement",
       intro:
         "Essayez un module gratuitement. Explorez les vidéos, podcasts, infographies et questionnaires.",
-      cta: "Essayer Italian Health System — gratuit",
+      cta: "Essayer Italian Health System gratuitement",
       hint: "Gratuit · sans paiement · sans compte",
     },
   },
@@ -283,7 +283,7 @@ SITE_LOCALES.fr = {
       eyebrow: "Focus · Pomodoro · Studio9",
       title: "Tomato Time",
       lead:
-        "Quatre blocs de 25 minutes, courtes pauses, un parcours de 2 heures. Le minuteur compte vers l'avant — vous accumulez du temps d'étude, au lieu d'attendre la fin.",
+        "Quatre blocs de 25 minutes, courtes pauses, un parcours de 2 heures. Le minuteur compte vers l'avant. Vous accumulez du temps d'étude, au lieu d'attendre la fin.",
       cta: "Ouvrir Tomato Time",
       ctaHint: "Gratuit · dans le navigateur · sans compte",
       ringPhase: "Focus",
@@ -293,7 +293,7 @@ SITE_LOCALES.fr = {
       eyebrow: "Comptez vers l'avant, pas vers l'arrière",
       title: "La présence, pas l'échappement.",
       text:
-        "La plupart des minuteurs comptent à rebours. Cela dit silencieusement au cerveau : « quand est-ce que ça finit ? » Tomato Time compte vers l'avant — 0:00, 0:01, 0:02 — pour suivre le progrès, pas la fuite.",
+        "La plupart des minuteurs comptent à rebours. Cela dit silencieusement au cerveau : « quand est-ce que ça finit ? » Tomato Time compte vers l'avant. 0:00, 0:01, 0:02. Pour suivre le progrès, pas la fuite.",
       quote:
         "Quand l'horloge descend, on souhaite inconsciemment que la tâche se termine. Quand elle monte, on accumule le focus.",
     },
@@ -301,13 +301,13 @@ SITE_LOCALES.fr = {
       eyebrow: "Un parcours",
       title: "Comment fonctionne un cycle de 2 heures.",
       intro:
-        "Appuyez sur Go une fois. La tomate parcourt quatre lignes — focus, pause, focus, pause — jusqu'à la fin du parcours.",
+        "Appuyez sur Go une fois. La tomate parcourt quatre lignes. Focus, pause, focus, pause. Jusqu'à la fin du parcours.",
       f1Title: "Compteur progressif",
       f1Text: "0:00 → 25:00 avec un anneau qui se remplit. Vous voyez le temps gagné, pas le temps restant à endurer.",
       f2Title: "Tomate sur la piste",
-      f2Text: "Quatre sessions montrent où vous en êtes — progrès visuel, pas seulement des chiffres.",
+      f2Text: "Quatre sessions montrent où vous en êtes. Progrès visuel, pas seulement des chiffres.",
       f3Title: "Parcours terminé",
-      f3Text: "Terminez les quatre blocs et célébrez — puis ouvrez vos forfaits Studio9 avec énergie.",
+      f3Text: "Terminez les quatre blocs et célébrez. Puis ouvrez vos forfaits Studio9 avec énergie.",
       f4Title: "Harvest",
       f4Text: "Tomates et parcours s'additionnent au fil des jours. Séries d'étude sans culpabilité ni précipitation.",
     },
@@ -325,7 +325,7 @@ SITE_LOCALES.fr = {
     eyebrow: "Compte Studio9",
     title: "Mon compte",
     leadHtml:
-      "Ouvrez vos forfaits ici. Connectez-vous avec Google — <strong>un clic</strong>, même email que l'achat.",
+      "Ouvrez vos forfaits ici. Connectez-vous avec Google. <strong>un clic</strong>, même email que l'achat.",
     signInTitle: "Se connecter",
     sessionTitle: "Votre session",
     googleSignIn: "Continuer avec Google",
@@ -339,7 +339,7 @@ SITE_LOCALES.fr = {
     sendLink: "Envoyer le lien de connexion",
     resendLink: "Renvoyer le lien",
     signInNote:
-      "Une fois connecté, ce navigateur garde votre session. Utilisez Ouvrir ci-dessous — sans nouvel email.",
+      "Une fois connecté, ce navigateur garde votre session. Utilisez Ouvrir ci-dessous. Sans nouvel email.",
     signInNoteReturning:
       "Envoyez un lien seulement si ce navigateur a perdu la session (après déconnexion ou effacement des données).",
     checkingSession: "Vérification de votre session…",
@@ -348,7 +348,7 @@ SITE_LOCALES.fr = {
     signedInSubtitle:
       "Compte actif dans ce navigateur. Utilisez Ouvrir pour accéder à vos forfaits.",
     signedOutSubtitle:
-      "Connectez-vous avec Google — même compte que l'email de l'achat.",
+      "Connectez-vous avec Google. Même compte que l'email de l'achat.",
     signedOutReturningSubtitle:
       "Bon retour. Connectez-vous avec Google pour ouvrir vos forfaits.",
     linkPendingSubtitle:
@@ -356,10 +356,10 @@ SITE_LOCALES.fr = {
     linkPendingNote:
       "Vérifiez les spams. Pour économiser le quota d'emails, attendez le lien au lieu de renvoyer.",
     myPackages: "Mes forfaits",
-    packagesIntro: "Cliquez sur Ouvrir — entrez dans le forfait tout de suite.",
+    packagesIntro: "Cliquez sur Ouvrir. Entrez dans le forfait tout de suite.",
     emptyTitle: "Vous n'avez pas encore de modules sur ce compte.",
     emptySignedInHint:
-      "Connecté en tant que {email}. Si l'accès a été accordé dans l'admin, l'email doit correspondre — puis cliquez sur Actualiser l'accès.",
+      "Connecté en tant que {email}. Si l'accès a été accordé dans l'admin, l'email doit correspondre. Puis cliquez sur Actualiser l'accès.",
     emptyText: "Après l'achat, l'accès apparaîtra ici automatiquement.",
     emptyCta: "Voir les offres et acheter",
     refreshAccess: "Actualiser l'accès",
@@ -380,13 +380,13 @@ SITE_LOCALES.fr = {
     chaptersFull: "Tous les groupes de chapitres débloqués",
     chaptersPartial: "{unlocked} sur {total} groupes de chapitres débloqués",
     confirmEmail: "Confirmez l'email utilisé pour demander le lien",
-    linkConfirmSubtitle: "Presque terminé — confirmez l'email utilisé à l'achat pour finir la connexion.",
+    linkConfirmSubtitle: "Presque terminé. Confirmez l'email utilisé à l'achat pour finir la connexion.",
     linkConfirmBtn: "Terminer la connexion",
     linkConfirmNote:
       "Ouvrez le lien reçu par email dans ce navigateur, puis confirmez le même email utilisé à l'achat.",
     completingLink: "Connexion en cours…",
     catalogError: "Catalogue indisponible.",
-    firebaseError: "Compte indisponible — Firebase non configuré sur ce déploiement.",
+    firebaseError: "Compte indisponible. Firebase non configuré sur ce déploiement.",
     sendingLink: "Envoi du lien…",
     linkSent: "Lien envoyé à {email}. Ouvrez l'email dans ce navigateur.",
     quotaError:
@@ -405,7 +405,7 @@ SITE_LOCALES.fr = {
     passEndsSoon: "L'accès continue jusqu'à la fin de la période en cours.",
     passActiveFallback: "Tous les modules payants débloqués tant que le Pass est actif.",
     passCancelAnytime:
-      "Résiliez à tout moment — l'accès continue jusqu'à la fin de la période de facturation en cours.",
+      "Résiliez à tout moment. L'accès continue jusqu'à la fin de la période de facturation en cours.",
     passManage: "Gérer l'abonnement",
     snapTitle: "Studio9 Snap",
     snapHint: "Bonus Pass · jeu chronométré · classement hebdomadaire par matière",
@@ -420,10 +420,10 @@ SITE_LOCALES.fr = {
     steps: {
       s1Title: "Choisissez comment acheter",
       s1Text:
-        "Un module quand vous n'avez besoin que d'une matière — ou Studio9 Pass pour tout le semestre.",
+        "Un module quand vous n'avez besoin que d'une matière, ou Studio9 Pass pour tout le semestre.",
       s2Title: "Accédez-y dans l'app Studio9",
       s2Text:
-        "Après l'achat, connectez-vous sur studio9medical.com/conta/ avec Google — même email que l'achat. L'accès module dure 1 an ; le Pass reste actif tant que l'abonnement est actif.",
+        "Après l'achat, connectez-vous sur studio9medical.com/conta/ avec Google. Même email que l'achat. L'accès module dure 1 an ; le Pass reste actif tant que l'abonnement est actif.",
       s3Title: "Étudiez à votre rythme",
       s3Text: "Vidéos quand vous êtes concentré. Podcasts en déplacement. Exercices pour vous tester.",
       s4Title: "Suivez votre progression",
@@ -438,16 +438,16 @@ SITE_LOCALES.fr = {
       modulesF2: "Vidéos, podcasts, exercices, résumé",
       modulesF3: "12 mois d'accès à partir de l'achat",
       modulesF4: "Sans prélèvement récurrent",
-      modulesF5: "Matériel d'étude seulement — Snap est exclusif au Pass",
+      modulesF5: "Matériel d'étude seulement. Snap est exclusif au Pass",
       modulesCta: "Choisir une discipline →",
       passLabel: "Studio9 Pass",
       passPeriod: "par mois · résiliable à tout moment",
-      passLead: "Pour celles et ceux qui portent plusieurs disciplines — avec Studio9 Snap en bonus Pass.",
+      passLead: "Pour celles et ceux qui portent plusieurs disciplines. Avec Studio9 Snap en bonus Pass.",
       passF1: "Tous les modules payants débloqués tant que c'est actif",
-      passF2: "Studio9 Snap — jeux d'encastrement chronométrés + classement hebdomadaire par matière",
+      passF2: "Studio9 Snap. Jeux d'encastrement chronométrés + classement hebdomadaire par matière",
       passF3: "Changez de matière à l'approche des examens",
       passF4: "Suivi de progression sur le semestre",
-      passF5: "Résiliez à tout moment — sans tuteur 24h/24",
+      passF5: "Résiliez à tout moment. Sans tuteur 24h/24",
       annualNote: "Option annuelle : {annual}/an (environ {monthly}/mois).",
       monthlyCta: "Démarrer le Pass mensuel",
       annualCta: "Prendre le Pass annuel",
@@ -456,37 +456,37 @@ SITE_LOCALES.fr = {
     passWhy: {
       eyebrow: "Pourquoi s'abonner",
       title: "Une discipline, c'est clair. Un semestre demande un Pass.",
-      lead: "Les packs restent le bon choix pour une seule matière. Studio9 Pass débloque tous les modules — et Studio9 Snap, un jeu chronométré avec classement hebdomadaire que l'achat à l'unité n'inclut pas.",
+      lead: "Les packs restent le bon choix pour une seule matière. Studio9 Pass débloque tous les modules, et Studio9 Snap, un jeu chronométré avec classement hebdomadaire que l'achat à l'unité n'inclut pas.",
       c1Title: "Moins cher que d'empiler les modules",
       c1Text:
         "Trois modules moyens coûtent déjà plus que deux mois de Pass. Avec quatre ou cinq matières, l'abonnement s'amortit.",
       c2Title: "Un accès qui suit le semestre",
       c2Text:
-        "Débloquez tout pendant la rotation des examens. Mettez en pause ou résiliez en fin de période — sans engagement à vie.",
-      c3Title: "Studio9 Snap — bonus exclusif Pass",
+        "Débloquez tout pendant la rotation des examens. Mettez en pause ou résiliez en fin de période. Sans engagement à vie.",
+      c3Title: "Studio9 Snap, bonus exclusif Pass",
       c3Text:
-        "Jeu d'encastrement chronométré avec classement hebdomadaire par matière. Pas un quiz de plus — de l'habileté sous pression, et une raison de revenir entre les sessions.",
+        "Jeu d'encastrement chronométré avec classement hebdomadaire par matière. Pas un quiz de plus. De l'habileté sous pression, et une raison de revenir entre les sessions.",
     },
     pricing: {
       eyebrow: "Sans surprise",
       title: "Tarifs simples.",
       pilotNotice:
-        "Achetez une discipline quand vous en avez besoin — ou débloquez tout avec Studio9 Pass, Studio9 Snap inclus.",
+        "Achetez une discipline quand vous en avez besoin, ou débloquez tout avec Studio9 Pass, Studio9 Snap inclus.",
       modulesEyebrow: "Ou achetez à la carte",
       modulesTitle: "Prix des modules par taille.",
       currencyLabel: "Devise",
       tierSLabel: "Small",
-      tierSRange: "1–9 thèmes",
+      tierSRange: "1 à 9 thèmes",
       tierMLabel: "Medium",
-      tierMRange: "10–19 thèmes",
+      tierMRange: "10 à 19 thèmes",
       tierLLabel: "Large",
       tierLRange: "20+ thèmes",
-      tierItem1: "40–60h d'étude",
+      tierItem1: "40 à 60h d'étude",
       tierItem2: "Accès immédiat (1 an)",
       tierItem3: "Vidéos + podcasts + exercices + résumé",
       volumeTitle: "Offres promotionnelles",
       volumeNote:
-        "Des codes promotionnels peuvent être proposés ponctuellement au checkout. Chaque module est tarifé selon le nombre de thèmes — voir le tableau ci-dessus.",
+        "Des codes promotionnels peuvent être proposés ponctuellement au checkout. Chaque module est tarifé selon le nombre de thèmes. Voir le tableau ci-dessus.",
       moduleTableTitle: "Prix par module",
       moduleTableModule: "Module",
       moduleTableTopics: "Thèmes",
@@ -509,7 +509,7 @@ SITE_LOCALES.fr = {
       eyebrow: "Questions rapides",
       title: "FAQ.",
       q1: "Puis-je vraiment étudier à la plage ?",
-      a1: "Absolument — à la plage, au parc, dans le bus, au bar. Vidéos, podcasts et infographies sont faits pour être absorbés en mode détendu : vous apprenez pendant que la vie avance, pas seulement quand vous êtes cloué à un bureau.",
+      a1: "Absolument. À la plage, au parc, dans le bus, au bar. Vidéos, podcasts et infographies sont faits pour être absorbés en mode détendu : vous apprenez pendant que la vie avance, pas seulement quand vous êtes cloué à un bureau.",
       q2: "Les enseignants sont-ils de vrais professeurs ?",
       a2: "Oui. Cristina Alberto, professeure d'université avec 30 ans d'expérience, et Alexandra Sousa, consultante en affaires avec 20 ans d'expérience, orientent la vision académique du cours.",
       q3: "Est-ce que ça remplace l'université ?",
@@ -517,11 +517,11 @@ SITE_LOCALES.fr = {
       q4: "Puis-je obtenir un remboursement ?",
       a4: "Non. Toutes les ventes sont finales. Chaque module comprend 12 mois d'accès numérique à partir de l'achat. En finalisant le checkout, vous acceptez la livraison immédiate et renoncez au droit de rétractation de 14 jours pour le contenu numérique. Voir nos Conditions de vente pour les détails complets.",
       q5: "Où trouver des suggestions pour approfondir ?",
-      a5: "Chaque app Studio9 disponible inclut une section Further study dans la vue d'ensemble du cours — des ouvrages que nous conseillons lorsque vous voulez aller plus loin après une leçon. Ils soutiennent votre lecture personnelle en parallèle de l'université ; ils ne remplacent pas la bibliographie officielle du programme.",
+      a5: "Chaque app Studio9 disponible inclut une section Further study dans la vue d'ensemble du cours. Des ouvrages que nous conseillons lorsque vous voulez aller plus loin après une leçon. Ils soutiennent votre lecture personnelle en parallèle de l'université ; ils ne remplacent pas la bibliographie officielle du programme.",
       q6: "Dois-je acheter un module ou Studio9 Pass ?",
-      a6: "Achetez un module si vous n'avez besoin que d'une discipline. Choisissez Studio9 Pass si vous étudiez plusieurs matières le même semestre — vous débloquez tous les modules payants pendant l'abonnement et pouvez résilier en fin de période.",
+      a6: "Achetez un module si vous n'avez besoin que d'une discipline. Choisissez Studio9 Pass si vous étudiez plusieurs matières le même semestre. Vous débloquez tous les modules payants pendant l'abonnement et pouvez résilier en fin de période.",
       q7: "Le Pass inclut-il un tuteur 24h/24 ?",
-      a7: "Non. Le Pass, c'est l'accès continu à toute la bibliothèque de modules, aux outils de progression et aux mises à jour — pas du tutorat privé. Pour le compte ou les questions, nous répondons par email sous 24 heures.",
+      a7: "Non. Le Pass, c'est l'accès continu à toute la bibliothèque de modules, aux outils de progression et aux mises à jour. Pas du tutorat privé. Pour le compte ou les questions, nous répondons par email sous 24 heures.",
       q8: "Qu'est-ce que Studio9 Snap ?",
       a8: "Un jeu exclusif Pass : un bloc apparaît et vous l'encastrez sur la bonne réponse avant la fin du temps. Chaque module simple en ligne a son classement hebdomadaire. L'achat du module permet d'étudier ; le Pass ajoute aussi Snap.",
     },
@@ -529,7 +529,7 @@ SITE_LOCALES.fr = {
   contactPage: {
     eyebrow: "Nous sommes là pour vous",
     title: "Contact",
-    lead: "Étudier les sciences de la santé demande beaucoup — vous n'avez pas à gérer seul/e l'accès ou les paiements. Écrivez-nous, nous vous aidons.",
+    lead: "Étudier les sciences de la santé demande beaucoup. Vous n'avez pas à gérer seul/e l'accès ou les paiements. Écrivez-nous, nous vous aidons.",
     formTitle: "Envoyez-nous un message",
     formIntro:
       "Dites-nous ce dont vous avez besoin. Pour l'accès après achat, indiquez l'email utilisé au checkout.",
@@ -546,7 +546,7 @@ SITE_LOCALES.fr = {
     messagePlaceholder: "Comment pouvons-nous vous aider ?",
     submit: "Envoyer le message",
     sending: "Envoi…",
-    submitNote: "Nous envoyons votre message directement — pas besoin d'ouvrir votre application mail.",
+    submitNote: "Nous envoyons votre message directement. Pas besoin d'ouvrir votre application mail.",
     directTitle: "Email direct",
     directText: "Vous préférez écrire depuis votre boîte mail ? Nous lisons chaque message.",
     responseTime: "Pour l'instant, nous répondons sous 24 heures.",
@@ -555,14 +555,14 @@ SITE_LOCALES.fr = {
     helpBuy: 'Acheter un module → <a href="../packages/">Disciplines</a>',
     helpFaq: 'Comment ça marche → <a href="../precos/#faq">FAQ</a>',
     errorRequired: "Veuillez remplir tous les champs.",
-    success: "Merci — votre application mail devrait s'ouvrir. Sinon, écrivez à hello@studio9medical.com.",
+    success: "Merci. Votre application mail devrait s'ouvrir. Sinon, écrivez à hello@studio9medical.com.",
     modalSuccessTitle: "Message envoyé",
     modalSuccessBody: "Merci de nous avoir écrit. Pour l'instant, nous répondons sous 24 heures.",
     modalErrorTitle: "Envoi impossible",
     modalErrorBody: "Une erreur s'est produite. Réessayez ou écrivez à hello@studio9medical.com.",
     modalActivationTitle: "Presque prêt",
     modalActivationBody:
-      "Le formulaire doit encore être activé. Vérifiez hello@studio9medical.com — un email d'activation de FormSubmit devrait s'y trouver. Cliquez sur le lien et réessayez.",
+      "Le formulaire doit encore être activé. Vérifiez hello@studio9medical.com. Un email d'activation de FormSubmit devrait s'y trouver. Cliquez sur le lien et réessayez.",
     modalClose: "OK",
   },
   legal: {
@@ -584,7 +584,7 @@ SITE_LOCALES.fr = {
         "Après paiement confirmé, connectez-vous sur studio9medical.com/conta/ avec Google (même email que l'achat). L'accès peut commencer immédiatement.",
       s05Title: "5. Aucun remboursement",
       s05Body:
-        "Toutes les ventes sont finales. Nous n'offrons pas de remboursements — y compris si vous n'utilisez pas le contenu, si l'accès expire après 12 mois, si vous changez de filière ou d'université, ou en cas d'incompatibilité de l'appareil (sous réserve des exigences minimales indiquées sur le site). Exceptions uniquement lorsque la loi l'exige (p. ex. double facturation prouvée) ou selon la politique de litiges de Lemon Squeezy.",
+        "Toutes les ventes sont finales. Nous n'offrons pas de remboursements, y compris si vous n'utilisez pas le contenu, si l'accès expire après 12 mois, si vous changez de filière ou d'université, ou en cas d'incompatibilité de l'appareil (sous réserve des exigences minimales indiquées sur le site). Exceptions uniquement lorsque la loi l'exige (p. ex. double facturation prouvée) ou selon la politique de litiges de Lemon Squeezy.",
       s06Title: "6. Droit de rétractation (UE)",
       s06Body:
         "Pour le contenu numérique avec livraison immédiate : en finalisant l'achat et en cochant la case d'acceptation, vous consentez à l'exécution immédiate et reconnaissez perdre le droit de rétractation de 14 jours en vertu du droit de la consommation applicable dans l'UE.",
@@ -625,7 +625,7 @@ SITE_LOCALES.fr = {
         "Fournir l'accès après achat, vous authentifier sans mot de passe, afficher vos modules actifs, synchroniser la progression entre apps, répondre au support et améliorer le service. Nous ne vendons pas vos données personnelles.",
       s04Title: "4. Traitement des paiements",
       s04Body:
-        "Les données de carte et de facturation sont gérées par Lemon Squeezy (merchant of record). Nous recevons la confirmation de commande, l'email et le produit acheté — pas les numéros complets de carte. Voir la politique de confidentialité de Lemon Squeezy.",
+        "Les données de carte et de facturation sont gérées par Lemon Squeezy (merchant of record). Nous recevons la confirmation de commande, l'email et le produit acheté. Pas les numéros complets de carte. Voir la politique de confidentialité de Lemon Squeezy.",
       s05Title: "5. Authentification et hébergement",
       s05Body:
         "Nous utilisons Google Firebase (Auth, Firestore) et Vercel pour l'hébergement. Les données peuvent être traitées dans l'UE ou d'autres régions où ces fournisseurs opèrent, avec leurs garanties contractuelles standard.",
@@ -647,7 +647,7 @@ SITE_LOCALES.fr = {
     "human-anatomy-1": {
       title: "Anatomie Humaine I",
       description:
-        "Systèmes squelettique, musculaire et nerveux — la base pour l'étude clinique et la terminologie adaptée à la dissection.",
+        "Systèmes squelettique, musculaire et nerveux. La base pour l'étude clinique et la terminologie adaptée à la dissection.",
     },
     "medical-biology": {
       title: "Biologie Médicale",
@@ -668,7 +668,7 @@ SITE_LOCALES.fr = {
     "information-processing": {
       title: "Traitement de l'Information",
       description:
-        "Culture des données et outils numériques pour l'étude fondée sur les preuves — cours, vidéos, podcasts et questions.",
+        "Culture des données et outils numériques pour l'étude fondée sur les preuves. Cours, vidéos, podcasts et questions.",
     },
     statistics: {
       title: "Statistiques",
@@ -681,7 +681,7 @@ SITE_LOCALES.fr = {
     },
     histology: {
       title: "Histologie",
-      description: "Cytologie et tissus fondamentaux — épithélia, tissu conjonctif, muscle et tissu nerveux.",
+      description: "Cytologie et tissus fondamentaux. Épithélia, tissu conjonctif, muscle et tissu nerveux.",
     },
     embryology: {
       title: "Embryologie",
@@ -694,11 +694,11 @@ SITE_LOCALES.fr = {
     },
     chemistry: {
       title: "Chimie",
-      description: "Chimie générale et organique — structure, liaisons, équilibre et groupes fonctionnels.",
+      description: "Chimie générale et organique. Structure, liaisons, équilibre et groupes fonctionnels.",
     },
     "introductory-biochemistry": {
       title: "Biochimie Introductive",
-      description: "Glucides, protéines, lipides et nucléotides — fondements moléculaires pour les sciences de la santé.",
+      description: "Glucides, protéines, lipides et nucléotides. Fondements moléculaires pour les sciences de la santé.",
     },
     "history-of-medicine": {
       title: "Histoire de la Médecine",
@@ -712,12 +712,12 @@ SITE_LOCALES.fr = {
     "health-technology-assessments": {
       title: "Évaluation des technologies de santé (UE)",
       description:
-        "Contexte Union européenne — méthodes HTA, évaluation des preuves et prise de décision pour les médicaments, dispositifs et interventions de santé.",
+        "Contexte Union européenne. Méthodes HTA, évaluation des preuves et prise de décision pour les médicaments, dispositifs et interventions de santé.",
     },
     "italian-health-system": {
       title: "Système de Santé Italien",
       description:
-        "Structure, financement et organisation des soins en Italie — régions, services et contexte politique.",
+        "Structure, financement et organisation des soins en Italie. Régions, services et contexte politique.",
       freeCta: "Essayer gratuitement",
     },
     "human-anatomy-2": {
@@ -743,7 +743,7 @@ SITE_LOCALES.fr = {
     microbiology: {
       title: "Microbiologie",
       description:
-        "Bactéries, virus, champignons et parasites — pathogenèse, diagnostic et bases thérapeutiques.",
+        "Bactéries, virus, champignons et parasites. Pathogenèse, diagnostic et bases thérapeutiques.",
     },
     "pharmacology-1": {
       title: "Pharmacologie I",
@@ -763,7 +763,7 @@ SITE_LOCALES.fr = {
     "systemic-pathology": {
       title: "Pathologie Systémique",
       description:
-        "Pathologie des systèmes d'organes — cœur, poumon, rein, foie et schémas cliniques associés.",
+        "Pathologie des systèmes d'organes. Cœur, poumon, rein, foie et schémas cliniques associés.",
     },
     "clinical-medicine-1": {
       title: "Médecine Clinique I",
@@ -794,7 +794,7 @@ SITE_LOCALES.fr = {
     },
     y1anat: {
       name: "Anatomie Humaine I",
-      desc: 'Systèmes squelettique, musculaire et nerveux – la base pour l\'étude clinique. <a href="../packages/#package-human-anatomy-1">Forfait Studio9 (en ligne) →</a>',
+      desc: 'Systèmes squelettique, musculaire et nerveux. La base pour l\'étude clinique. <a href="../packages/#package-human-anatomy-1">Forfait Studio9 (en ligne) →</a>',
     },
     y1psi: {
       name: "Physique, Statistiques et Traitement de l'Information",
@@ -818,7 +818,7 @@ SITE_LOCALES.fr = {
     },
     y2micro: {
       name: "Microbiologie",
-      desc: "Bactéries, virus, champignons, parasites – pathogenèse et diagnostic",
+      desc: "Bactéries, virus, champignons, parasites. Pathogenèse et diagnostic",
     },
     y2pharm: {
       name: "Pharmacologie I",

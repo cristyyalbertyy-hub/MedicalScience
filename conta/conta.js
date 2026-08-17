@@ -655,7 +655,7 @@ function renderPackages(catalog) {
   if (packagesEmptyHint && auth?.currentUser?.email) {
     packagesEmptyHint.textContent = t("accountPage.emptySignedInHint", {
       email: auth.currentUser.email,
-      uid: lastAccountUid ?? "—",
+      uid: lastAccountUid ?? ". ",
     });
   }
 
@@ -840,7 +840,7 @@ function initLanguage() {
     if (packagesEmptyHint && auth?.currentUser?.email) {
       packagesEmptyHint.textContent = t("accountPage.emptySignedInHint", {
         email: auth.currentUser.email,
-        uid: lastAccountUid ?? "—",
+        uid: lastAccountUid ?? ". ",
       });
     }
     if (catalogData && auth?.currentUser) renderPackages(catalogData);
