@@ -12,7 +12,7 @@ SITE_LOCALES.fr = {
     },
     packages: {
       title: "Forfaits prêts à l'emploi · Medical Science · Studio9",
-      description: "25 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 11 à venir.",
+      description: "25 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 11 à venir. Achetez une discipline, ou débloquez tous les modules payants avec Studio9 Pass.",
     },
     precos: {
       title: "Comment ça marche + Tarifs · Medical Science · Studio9",
@@ -266,7 +266,7 @@ SITE_LOCALES.fr = {
     hero: {
       eyebrow: "Interactif · prêt à l'emploi",
       title: "Forfaits prêts à l'emploi.",
-      text: "25 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 11 à venir. Achetez seulement ce dont vous avez besoin.",
+      text: '25 disciplines de sciences de la santé. 14 en ligne aujourd\'hui, 11 à venir. Achetez une discipline, ou débloquez tous les modules payants avec <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
     sectionAria: "Forfaits d'apprentissage prêts à l'emploi",
     freeSpotlight: {

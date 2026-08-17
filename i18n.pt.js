@@ -12,7 +12,7 @@ SITE_LOCALES.pt = {
     },
     packages: {
       title: "Pacotes prontos · Medical Science · Studio9",
-      description: "25 disciplinas de ciências da saúde. 14 disponíveis hoje, 11 em breve.",
+      description: "25 disciplinas de ciências da saúde. 14 disponíveis hoje, 11 em breve. Compra uma disciplina, ou desbloqueia todos os módulos pagos com o Studio9 Pass.",
     },
     precos: {
       title: "Como funciona + Preços · Medical Science · Studio9",
@@ -265,7 +265,7 @@ SITE_LOCALES.pt = {
     hero: {
       eyebrow: "Interactivo · catálogo",
       title: "Todas as disciplinas.",
-      text: "25 disciplinas de ciências da saúde. 14 disponíveis hoje, 11 em breve. Compra só o que precisas.",
+      text: '25 disciplinas de ciências da saúde. 14 disponíveis hoje, 11 em breve. Compra uma disciplina, ou desbloqueia todos os módulos pagos com o <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
     sectionAria: "Disciplinas de ciências da saúde",
     freeSpotlight: {

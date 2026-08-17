@@ -12,7 +12,7 @@ SITE_LOCALES.es = {
     },
     packages: {
       title: "Pacotes prontos · Medical Science · Studio9",
-      description: "25 asignaturas de ciencias de la salud. 14 disponibles hoy, 11 en camino.",
+      description: "25 asignaturas de ciencias de la salud. 14 disponibles hoy, 11 en camino. Compra una disciplina, o desbloquea todos los módulos de pago con Studio9 Pass.",
     },
     precos: {
       title: "Como funciona + Preços · Medical Science · Studio9",
@@ -266,7 +266,7 @@ SITE_LOCALES.es = {
     hero: {
       eyebrow: "Interactivo · listo para usar",
       title: "Paquetes listos para usar.",
-      text: "25 asignaturas de ciencias de la salud. 14 disponibles hoy, 11 en camino. Compra solo lo que necesitas.",
+      text: '25 asignaturas de ciencias de la salud. 14 disponibles hoy, 11 en camino. Compra una disciplina, o desbloquea todos los módulos de pago con <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
     sectionAria: "Paquetes de aprendizaje listos para usar",
     freeSpotlight: {

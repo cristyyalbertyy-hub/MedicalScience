@@ -12,7 +12,7 @@ SITE_LOCALES.it = {
     },
     packages: {
       title: "Pacchetti pronti · Medical Science · Studio9",
-      description: "25 discipline di scienze della salute. 14 online oggi, 11 in arrivo.",
+      description: "25 discipline di scienze della salute. 14 online oggi, 11 in arrivo. Compra una disciplina, o sblocca tutti i moduli a pagamento con Studio9 Pass.",
     },
     precos: {
       title: "Come funziona + Prezzi · Medical Science · Studio9",
@@ -266,7 +266,7 @@ SITE_LOCALES.it = {
     hero: {
       eyebrow: "Interattivo · pronto all'uso",
       title: "Pacchetti pronti all'uso.",
-      text: "25 discipline di scienze della salute. 14 online oggi, 11 in arrivo. Acquista solo ciò che ti serve.",
+      text: '25 discipline di scienze della salute. 14 online oggi, 11 in arrivo. Compra una disciplina, o sblocca tutti i moduli a pagamento con <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
     sectionAria: "Pacchetti di apprendimento pronti all'uso",
     freeSpotlight: {

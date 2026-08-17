@@ -19,7 +19,7 @@ const SITE_LOCALES = {
       },
       packages: {
         title: "All disciplines · Medical Science · Studio9",
-        description: "25 health science subjects. 14 live today, 11 coming soon.",
+        description: "25 health science subjects. 14 live today, 11 coming soon. Buy one discipline, or unlock all paid modules with Studio9 Pass.",
       },
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
@@ -272,7 +272,7 @@ const SITE_LOCALES = {
       hero: {
         eyebrow: "Interactive · catalogue",
         title: "All disciplines.",
-        text: "25 health science subjects. 14 live today, 11 coming soon. Buy only what you need.",
+        text: '25 health science subjects. 14 live today, 11 coming soon. Buy one discipline, or unlock all paid modules with <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
       },
       sectionAria: "Health science disciplines",
       freeSpotlight: {
