@@ -311,12 +311,12 @@
     "monthly": {
       "plan": "subscription_monthly",
       "priceUsd": 9.99,
-      "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/29e98717-8368-4f80-a6de-fdbe7744dfb3?embed=1"
+      "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/96a264e5-84e7-4546-9c11-cb91fb502d46?embed=1"
     },
     "annual": {
       "plan": "subscription_annual",
       "priceUsd": 99,
-      "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/251a28c3-58b7-4a53-9660-023e9e4e1a9b?embed=1",
+      "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/4cfcbf2c-1941-435f-8edb-917edca394a7?embed=1",
       "equivalentMonthlyUsd": 8.25
     }
   },
@@ -367,6 +367,10 @@
       "annual": "subscription_annual"
     },
     "subscriptionVariants": {
+      "96a264e5-84e7-4546-9c11-cb91fb502d46": "subscription_monthly",
+      "2028112": "subscription_monthly",
+      "4cfcbf2c-1941-435f-8edb-917edca394a7": "subscription_annual",
+      "2028113": "subscription_annual",
       "29e98717-8368-4f80-a6de-fdbe7744dfb3": "subscription_monthly",
       "2016855": "subscription_monthly",
       "251a28c3-58b7-4a53-9660-023e9e4e1a9b": "subscription_annual",
