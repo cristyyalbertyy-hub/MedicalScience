@@ -706,7 +706,7 @@ function getPackagePriceUsd(pkgId, catalog = packageCatalog ?? {}, topicCount = 
   if (meta?.priceUsd != null) return meta.priceUsd;
   const pricingConfig = getPricingConfig(catalog);
   const tierId = resolvePackageTier(topicCount, pricingConfig);
-  return tierPriceUsd(tierId, pricingConfig);
+  return tierPriceUsdForTopics(tierId, topicCount, pricingConfig);
 }
 
 function resolvePackageTier(topicCount, pricingConfig = getPricingConfig()) {
@@ -716,8 +716,27 @@ function resolvePackageTier(topicCount, pricingConfig = getPricingConfig()) {
   return "s";
 }
 
+function snapUsd99(amount) {
+  if (!Number.isFinite(amount)) return 0;
+  return Math.round(amount) - 0.01;
+}
+
 function tierPriceUsd(tierId, pricingConfig = getPricingConfig()) {
   return pricingConfig.tiers?.[tierId]?.priceUsd ?? 0;
+}
+
+/** Scale coming-soon prices inside the tier band. Statistics (34 topics) is $18.99. */
+function tierPriceUsdForTopics(tierId, topicCount, pricingConfig = getPricingConfig()) {
+  const tier = pricingConfig.tiers?.[tierId];
+  if (!tier) return 0;
+  const from = Number(tier.priceFromUsd ?? tier.priceUsd ?? 0);
+  const to = Number(tier.priceToUsd ?? tier.priceUsd ?? from);
+  const minTopics = Number(tier.minTopics ?? 1);
+  const maxTopics = Number(tier.maxTopics ?? 34);
+  if (topicCount <= minTopics) return from;
+  if (topicCount >= maxTopics) return to;
+  if (to <= from || maxTopics <= minTopics) return from;
+  return snapUsd99(from + ((topicCount - minTopics) / (maxTopics - minTopics)) * (to - from));
 }
 
 function formatTierTopicsRange(tierId, pricingConfig = getPricingConfig()) {
