@@ -8,11 +8,11 @@ SITE_LOCALES.es = {
     curriculo: {
       title: "Programa completo · Medical Science · Studio9",
       description:
-        "Catálogo del curso Medical Science: 25 módulos con horas de estudio y descripción de cada asignatura.",
+        "Catálogo del curso Medical Science: 27 módulos con horas de estudio y descripción de cada asignatura.",
     },
     packages: {
       title: "Pacotes prontos · Medical Science · Studio9",
-      description: "25 asignaturas de ciencias de la salud. 14 disponibles hoy, 11 en camino. Compra una disciplina, o desbloquea todos los módulos de pago con Studio9 Pass.",
+      description: "27 asignaturas de ciencias de la salud. 14 disponibles hoy, 13 en camino. Compra una disciplina, o desbloquea todos los módulos de pago con Studio9 Pass.",
     },
     precos: {
       title: "Como funciona + Preços · Medical Science · Studio9",
@@ -143,7 +143,7 @@ SITE_LOCALES.es = {
   },
   home: {
     hero: {
-      eyebrow: "Curso online · 25 módulos · App Studio9",
+      eyebrow: "Curso online · 27 módulos · App Studio9",
       title: "Medical Science. Donde y cuando quieras.",
       lead: "Estudia anatomía, fisiología, genética y mucho más. En vídeos cortos, podcasts para el autobús y ejercicios interactivos. Todo dentro de la app Studio9.",
       ctaDisciplines: "Ver todas las disciplinas",
@@ -169,11 +169,11 @@ SITE_LOCALES.es = {
     },
     preview: {
       eyebrow: "Todas las disciplinas",
-      title: "25 asignaturas. Elige las que necesitas.",
+      title: "27 asignaturas. Elige las que necesitas.",
       intro:
-        "Catorce apps Studio9 ya están disponibles. Once disciplinas llegarán pronto. Cada módulo incluye 40 a 60 horas de estudio. Vídeos, podcasts, infografías y cuestionarios.",
+        "Catorce apps Studio9 ya están disponibles. Trece disciplinas llegarán pronto. Cada módulo incluye 40 a 60 horas de estudio. Vídeos, podcasts, infografías y cuestionarios.",
       liveCount: "14 apps disponibles",
-      soonCount: "11 más en camino",
+      soonCount: "13 más en camino",
       hours: "40 a 60 horas por módulo",
       cta: "Ver todas las disciplinas →",
     },
@@ -243,9 +243,9 @@ SITE_LOCALES.es = {
   },
   curriculo: {
     hero: {
-      eyebrow: "25 módulos · Apps Studio9",
+      eyebrow: "27 módulos · Apps Studio9",
       title: "Catálogo completo · Medical Science",
-      text: "25 módulos. Cada módulo = 40 a 60 horas de estudio. A tu ritmo.",
+      text: "27 módulos. Cada módulo = 40 a 60 horas de estudio. A tu ritmo.",
       statModules: "módulos",
       statApps: "apps live",
       mediaAria: "Vista general de los paquetes de aprendizaje Studio9",
@@ -266,7 +266,7 @@ SITE_LOCALES.es = {
     hero: {
       eyebrow: "Interactivo · listo para usar",
       title: "Paquetes listos para usar.",
-      text: '25 asignaturas de ciencias de la salud. 14 disponibles hoy, 11 en camino. Compra una disciplina, o desbloquea todos los módulos de pago con <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
+      text: '27 asignaturas de ciencias de la salud. 14 disponibles hoy, 13 en camino. Compra una disciplina, o desbloquea todos los módulos de pago con <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
     sectionAria: "Paquetes de aprendizaje listos para usar",
     freeSpotlight: {
@@ -734,6 +734,11 @@ SITE_LOCALES.es = {
       description:
         "Fisiología endocrina, nerviosa, gastrointestinal, sentidos especiales y reproductiva.",
     },
+    biochemistry: {
+      title: "Bioquímica",
+      description:
+        "Fundamentos moleculares de la medicina: biomoléculas, enzimas, metabolismo, expresión génica y la base bioquímica de enfermedades comunes.",
+    },
     immunology: {
       title: "Inmunología e Inmunopatología",
       description:
@@ -758,6 +763,11 @@ SITE_LOCALES.es = {
       title: "Economía y Política Sanitaria",
       description:
         "Sistemas de salud, modelos de financiación y el contexto social y político de la medicina.",
+    },
+    "general-pathology": {
+      title: "Patología General",
+      description:
+        "Lesión celular, inflamación y reparación, trastornos hemodinámicos, neoplasia, enfermedades genéticas e introducción a la fisiopatología sistémica.",
     },
     "systemic-pathology": {
       title: "Patología Sistémica",

@@ -1851,6 +1851,666 @@
           "resources": ["V", "P", "I", "Q"]
         }
       ]
+    },
+    "biochemistry": {
+      "title": "Biochemistry",
+      "topics": [
+        {
+          "id": "SB_AA",
+          "label": "Structure of Biomolecules · Amino acids and protein structure (primary to quaternary)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SB_FD",
+          "label": "Structure of Biomolecules · Protein folding and denaturation",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SB_CH",
+          "label": "Structure of Biomolecules · Carbohydrates (mono-, oligo-, and polysaccharides)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SB_LP",
+          "label": "Structure of Biomolecules · Lipids (fatty acids, triglycerides, phospholipids, steroids)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SB_NA",
+          "label": "Structure of Biomolecules · Nucleotides and nucleic acids (DNA, RNA)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EZ_KM",
+          "label": "Enzymology · Enzyme kinetics (Michaelis-Menten)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EZ_IN",
+          "label": "Enzymology · Enzyme inhibition (competitive, non-competitive, uncompetitive)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "EZ_RG",
+          "label": "Enzymology · Enzyme regulation (allosteric, covalent modification)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BE_TD",
+          "label": "Bioenergetics · Laws of thermodynamics",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BE_ATP",
+          "label": "Bioenergetics · ATP as energy currency",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BE_RD",
+          "label": "Bioenergetics · Redox reactions",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BE_ETC",
+          "label": "Bioenergetics · Electron transport chain",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BE_OP",
+          "label": "Bioenergetics · Oxidative phosphorylation",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CM_GL",
+          "label": "Carbohydrate Metabolism · Glycolysis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CM_GN",
+          "label": "Carbohydrate Metabolism · Gluconeogenesis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CM_GY",
+          "label": "Carbohydrate Metabolism · Glycogen synthesis and degradation",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CM_PP",
+          "label": "Carbohydrate Metabolism · Pentose phosphate pathway",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CM_CA",
+          "label": "Carbohydrate Metabolism · Citric acid cycle",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "LM_BO",
+          "label": "Lipid Metabolism · Beta-oxidation",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "LM_KG",
+          "label": "Lipid Metabolism · Ketogenesis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "LM_FA",
+          "label": "Lipid Metabolism · Fatty acid synthesis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "LM_CH",
+          "label": "Lipid Metabolism · Cholesterol metabolism",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "LM_LP",
+          "label": "Lipid Metabolism · Lipoprotein transport",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "PM_TR",
+          "label": "Protein and Amino Acid Metabolism · Transamination",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "PM_UC",
+          "label": "Protein and Amino Acid Metabolism · Urea cycle",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "PM_AC",
+          "label": "Protein and Amino Acid Metabolism · Amino acid catabolism",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MB_DNA",
+          "label": "Molecular Biology · DNA replication, repair, and recombination",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MB_TX",
+          "label": "Molecular Biology · Transcription (RNA synthesis and processing)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MB_TL",
+          "label": "Molecular Biology · Translation (protein synthesis and the genetic code)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "MB_GE",
+          "label": "Molecular Biology · Regulation of gene expression in prokaryotes and eukaryotes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HS_IG",
+          "label": "Hormonal Signaling · Insulin, glucagon, and adrenaline",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HS_FF",
+          "label": "Hormonal Signaling · Fed and fasting states",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BD_DM",
+          "label": "Biochemical Basis of Disease · Diabetes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BD_HL",
+          "label": "Biochemical Basis of Disease · Hyperlipidemias",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "BD_MA",
+          "label": "Biochemical Basis of Disease · Metabolic acidosis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        }
+      ]
+    },
+    "general-pathology": {
+      "title": "General Pathology",
+      "topics": [
+        {
+          "id": "CP_REV",
+          "label": "Cellular Pathology · Reversible cell injury: hydropic change, fatty change",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CP_IRR",
+          "label": "Cellular Pathology · Irreversible cell injury: necrosis (types) and apoptosis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CP_ACC",
+          "label": "Cellular Pathology · Intracellular accumulations",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "CP_CAL",
+          "label": "Cellular Pathology · Pathological calcification",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IR_AVE",
+          "label": "Inflammation and Repair · Acute inflammation: vascular and cellular events",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IR_ACM",
+          "label": "Inflammation and Repair · Acute inflammation: chemical mediators",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IR_CG",
+          "label": "Inflammation and Repair · Chronic inflammation and granulomas",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IR_WH",
+          "label": "Inflammation and Repair · Wound healing (primary and secondary intention)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "IR_FT",
+          "label": "Inflammation and Repair · Fibrosis and tissue repair",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HD_EHC",
+          "label": "Hemodynamic Disorders · Edema, hyperemia, and congestion",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HD_HS",
+          "label": "Hemodynamic Disorders · Hemostasis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HD_TH",
+          "label": "Hemodynamic Disorders · Thrombosis (arterial and venous)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HD_EM",
+          "label": "Hemodynamic Disorders · Embolism (types)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HD_IN",
+          "label": "Hemodynamic Disorders · Infarction",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "HD_SH",
+          "label": "Hemodynamic Disorders · Shock (types and pathophysiology)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "NE_DEF",
+          "label": "Neoplasia · Definitions: tumor, cancer, malignant/benign",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "NE_CA",
+          "label": "Neoplasia · Carcinogenesis: chemical, physical, viral, genetic",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "NE_OG",
+          "label": "Neoplasia · Oncogenes and tumor suppressor genes (p53, Rb)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "NE_CG",
+          "label": "Neoplasia · Tumor classification, grading and staging",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "NE_IM",
+          "label": "Neoplasia · Invasion and metastasis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "NE_PS",
+          "label": "Neoplasia · Paraneoplastic syndromes",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "GD_MD",
+          "label": "Genetic Disorders · Mendelian disorders",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "GD_CA",
+          "label": "Genetic Disorders · Chromosomal abnormalities (aneuploidies, structural)",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "GD_MI",
+          "label": "Genetic Disorders · Multifactorial inheritance",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "ENV_CT",
+          "label": "Environmental and Nutritional Diseases · Chemical toxicity",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "ENV_SA",
+          "label": "Environmental and Nutritional Diseases · Smoking and alcohol",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "ENV_VT",
+          "label": "Environmental and Nutritional Diseases · Vitamin deficiencies and excesses",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SSP_AS",
+          "label": "Selected Systemic Pathology · Basic pathophysiology of atherosclerosis",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SSP_HT",
+          "label": "Selected Systemic Pathology · Basic pathophysiology of hypertension",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        },
+        {
+          "id": "SSP_DM",
+          "label": "Selected Systemic Pathology · Basic pathophysiology of diabetes mellitus types I/II",
+          "resources": [
+            "V",
+            "P",
+            "I",
+            "Q"
+          ]
+        }
+      ]
     }
   }
 }

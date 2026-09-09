@@ -15,11 +15,11 @@ const SITE_LOCALES = {
       curriculo: {
         title: "Full curriculum · Medical Science · Studio9",
         description:
-          "Medical Science course catalogue: 25 modules with study hours and a description for each subject.",
+          "Medical Science course catalogue: 27 modules with study hours and a description for each subject.",
       },
       packages: {
         title: "All disciplines · Medical Science · Studio9",
-        description: "25 health science subjects. 14 live today, 11 coming soon. Buy one discipline, or unlock all paid modules with Studio9 Pass.",
+        description: "27 health science subjects. 14 live today, 13 coming soon. Buy one discipline, or unlock all paid modules with Studio9 Pass.",
       },
       precos: {
         title: "How it works + Pricing · Medical Science · Studio9",
@@ -148,7 +148,7 @@ const SITE_LOCALES = {
     },
     home: {
       hero: {
-        eyebrow: "Online course · 25 modules · Studio9 app",
+        eyebrow: "Online course · 27 modules · Studio9 app",
         title: "Medical Science. Wherever and whenever you want.",
         lead: "Study anatomy, physiology, genetics and much more. In short videos, podcasts for the bus, and interactive exercises. All inside the Studio9 app.",
         ctaDisciplines: "Browse all disciplines",
@@ -174,11 +174,11 @@ const SITE_LOCALES = {
       },
       preview: {
         eyebrow: "All disciplines",
-        title: "25 subjects. Pick the ones you need.",
+        title: "27 subjects. Pick the ones you need.",
         intro:
-          "Fourteen interactive Studio9 apps are live today. Eleven more disciplines are coming soon. Each module includes 40 to 60 hours of study. Videos, podcasts, infographics and quizzes.",
+          "Fourteen interactive Studio9 apps are live today. Thirteen more disciplines are coming soon. Each module includes 40 to 60 hours of study. Videos, podcasts, infographics and quizzes.",
         liveCount: "14 apps live now",
-        soonCount: "11 more coming soon",
+        soonCount: "13 more coming soon",
         hours: "40 to 60 hours per module",
         cta: "See all disciplines →",
       },
@@ -249,9 +249,9 @@ const SITE_LOCALES = {
     },
     curriculo: {
       hero: {
-        eyebrow: "25 modules · Studio9 apps",
+        eyebrow: "27 modules · Studio9 apps",
         title: "Full catalogue · Medical Science",
-        text: "25 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
+        text: "27 modules. Each module = 40 to 60 hours of study. Go at your own pace.",
         statModules: "modules",
         statApps: "live apps",
         mediaAria: "Overview of Studio9 learning packages",
@@ -272,7 +272,7 @@ const SITE_LOCALES = {
       hero: {
         eyebrow: "Interactive · catalogue",
         title: "All disciplines.",
-        text: '25 health science subjects. 14 live today, 11 coming soon. Buy one discipline, or unlock all paid modules with <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
+        text: '27 health science subjects. 14 live today, 13 coming soon. Buy one discipline, or unlock all paid modules with <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
       },
       sectionAria: "Health science disciplines",
       freeSpotlight: {
@@ -740,6 +740,11 @@ const SITE_LOCALES = {
         description:
           "Endocrine, nervous, gastrointestinal, special senses and reproductive physiology.",
       },
+      biochemistry: {
+        title: "Biochemistry",
+        description:
+          "Molecular foundations of medicine: biomolecules, enzymes, metabolism, gene expression, and the biochemical basis of common diseases.",
+      },
       immunology: {
         title: "Immunology and Immunopathology",
         description:
@@ -764,6 +769,11 @@ const SITE_LOCALES = {
         title: "Economics and Health Policy",
         description:
           "Health systems, funding models, and the social and political context of medicine.",
+      },
+      "general-pathology": {
+        title: "General Pathology",
+        description:
+          "Cellular injury, inflammation and repair, hemodynamic disorders, neoplasia, genetic disorders, and introductory systemic pathophysiology.",
       },
       "systemic-pathology": {
         title: "Systemic Pathology",

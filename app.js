@@ -135,8 +135,16 @@ const SOON_PACKAGES = [
     status: "soon",
   },
   {
-    id: "immunology",
+    id: "biochemistry",
     number: "18",
+    title: "Biochemistry",
+    description:
+      "Molecular foundations of medicine: biomolecules, enzymes, metabolism, gene expression, and the biochemical basis of common diseases.",
+    status: "soon",
+  },
+  {
+    id: "immunology",
+    number: "19",
     title: "Immunology and Immunopathology",
     description:
       "Innate and adaptive immunity, then hypersensitivity, autoimmunity, immunodeficiency, transplantation and tumour immunity.",
@@ -144,7 +152,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "microbiology",
-    number: "19",
+    number: "20",
     title: "Microbiology",
     description:
       "Bacteria, viruses, fungi and parasites. Pathogenesis, diagnosis and treatment basics.",
@@ -152,7 +160,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "pharmacology-1",
-    number: "20",
+    number: "21",
     title: "Pharmacology I",
     description:
       "Pharmacokinetics, pharmacodynamics, and core drug classes for the nervous and cardiovascular systems.",
@@ -160,7 +168,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "epidemiology",
-    number: "21",
+    number: "22",
     title: "Epidemiology",
     description:
       "Frequency measures, study designs, screening and population health reasoning.",
@@ -168,15 +176,23 @@ const SOON_PACKAGES = [
   },
   {
     id: "economics-health-policy",
-    number: "22",
+    number: "23",
     title: "Economics and Health Policy",
     description:
       "Health systems, funding models, and the social and political context of medicine.",
     status: "soon",
   },
   {
+    id: "general-pathology",
+    number: "24",
+    title: "General Pathology",
+    description:
+      "Cellular injury, inflammation and repair, hemodynamic disorders, neoplasia, genetic disorders, and introductory systemic pathophysiology.",
+    status: "soon",
+  },
+  {
     id: "systemic-pathology",
-    number: "23",
+    number: "25",
     title: "Systemic Pathology",
     description:
       "Organ-system pathology spanning heart, lung, kidney, liver and related clinical patterns.",
@@ -184,7 +200,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "clinical-medicine-1",
-    number: "24",
+    number: "26",
     title: "Clinical Medicine I",
     description:
       "Basic semiology, common symptoms and introductory clinical reasoning.",
@@ -192,7 +208,7 @@ const SOON_PACKAGES = [
   },
   {
     id: "clinical-medicine-2",
-    number: "25",
+    number: "27",
     title: "Clinical Medicine II",
     description:
       "Common conditions such as hypertension, diabetes, asthma and major infections.",

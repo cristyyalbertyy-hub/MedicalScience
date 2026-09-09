@@ -8,11 +8,11 @@ SITE_LOCALES.fr = {
     curriculo: {
       title: "Programme complet · Medical Science · Studio9",
       description:
-        "Catalogue du cours Medical Science : 25 modules avec heures d'étude et description de chaque matière.",
+        "Catalogue du cours Medical Science : 27 modules avec heures d'étude et description de chaque matière.",
     },
     packages: {
       title: "Forfaits prêts à l'emploi · Medical Science · Studio9",
-      description: "25 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 11 à venir. Achetez une discipline, ou débloquez tous les modules payants avec Studio9 Pass.",
+      description: "27 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 13 à venir. Achetez une discipline, ou débloquez tous les modules payants avec Studio9 Pass.",
     },
     precos: {
       title: "Comment ça marche + Tarifs · Medical Science · Studio9",
@@ -143,7 +143,7 @@ SITE_LOCALES.fr = {
   },
   home: {
     hero: {
-      eyebrow: "Cours en ligne · 25 modules · App Studio9",
+      eyebrow: "Cours en ligne · 27 modules · App Studio9",
       title: "Medical Science, où et quand vous voulez.",
       lead: "Étudiez l'anatomie, la physiologie, la génétique et bien plus encore. En courtes vidéos, podcasts pour le bus et exercices interactifs. Le tout dans l'app Studio9.",
       ctaDisciplines: "Voir toutes les disciplines",
@@ -169,11 +169,11 @@ SITE_LOCALES.fr = {
     },
     preview: {
       eyebrow: "Toutes les disciplines",
-      title: "25 matières. Choisissez celles dont vous avez besoin.",
+      title: "27 matières. Choisissez celles dont vous avez besoin.",
       intro:
-        "Quatorze apps Studio9 sont déjà en ligne. Onze disciplines arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude. Vidéos, podcasts, infographies et questionnaires.",
+        "Quatorze apps Studio9 sont déjà en ligne. Treize disciplines arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude. Vidéos, podcasts, infographies et questionnaires.",
       liveCount: "14 apps en ligne",
-      soonCount: "11 autres à venir",
+      soonCount: "13 autres à venir",
       hours: "40 à 60 heures par module",
       cta: "Voir toutes les disciplines →",
     },
@@ -243,9 +243,9 @@ SITE_LOCALES.fr = {
   },
   curriculo: {
     hero: {
-      eyebrow: "25 modules · Apps Studio9",
+      eyebrow: "27 modules · Apps Studio9",
       title: "Catalogue complet · Medical Science",
-      text: "25 modules. Chaque module = 40 à 60 heures d'étude. À votre rythme.",
+      text: "27 modules. Chaque module = 40 à 60 heures d'étude. À votre rythme.",
       statModules: "modules",
       statApps: "apps live",
       mediaAria: "Aperçu des forfaits d'apprentissage Studio9",
@@ -266,7 +266,7 @@ SITE_LOCALES.fr = {
     hero: {
       eyebrow: "Interactif · prêt à l'emploi",
       title: "Forfaits prêts à l'emploi.",
-      text: '25 disciplines de sciences de la santé. 14 en ligne aujourd\'hui, 11 à venir. Achetez une discipline, ou débloquez tous les modules payants avec <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
+      text: '27 disciplines de sciences de la santé. 14 en ligne aujourd\'hui, 13 à venir. Achetez une discipline, ou débloquez tous les modules payants avec <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
     sectionAria: "Forfaits d'apprentissage prêts à l'emploi",
     freeSpotlight: {
@@ -735,6 +735,11 @@ SITE_LOCALES.fr = {
       description:
         "Physiologie endocrinienne, nerveuse, gastro-intestinale, sens spéciaux et reproductive.",
     },
+    biochemistry: {
+      title: "Biochimie",
+      description:
+        "Fondements moléculaires de la médecine : biomolécules, enzymes, métabolisme, expression des gènes et base biochimique des maladies courantes.",
+    },
     immunology: {
       title: "Immunologie et Immunopathologie",
       description:
@@ -759,6 +764,11 @@ SITE_LOCALES.fr = {
       title: "Économie et Politique de Santé",
       description:
         "Systèmes de santé, modèles de financement et contexte social et politique de la médecine.",
+    },
+    "general-pathology": {
+      title: "Pathologie Générale",
+      description:
+        "Lésion cellulaire, inflammation et réparation, troubles hémodynamiques, néoplasie, maladies génétiques et introduction à la physiopathologie systémique.",
     },
     "systemic-pathology": {
       title: "Pathologie Systémique",
