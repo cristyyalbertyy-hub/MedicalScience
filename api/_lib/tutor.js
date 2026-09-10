@@ -119,9 +119,12 @@ function buildUserPrompt({ mode, lang, topic, message, history }) {
     }
   }
   if (message) {
+    parts.push(
+      "The student is following up. Stay in this mode and this topic. Answer their point. Do not restart unless they ask.",
+    );
     parts.push(`Student message: ${message}`);
   } else {
-    parts.push("Start the requested mode for this topic now.");
+    parts.push("Start the requested mode for this topic now. Do not end with a question unless the mode is test_me.");
   }
   return parts.join("\n");
 }
