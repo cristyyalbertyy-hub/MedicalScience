@@ -10,9 +10,10 @@ import {
   logAdminGrant,
 } from "./_lib/entitlements.js";
 import { parseJsonBody } from "./_lib/request.js";
+import { isTutorProGrantId } from "./_lib/tutor.js";
 
 function isValidPackageId(id) {
-  return isPaidPackageId(id) || isFreePackageId(id);
+  return isPaidPackageId(id) || isFreePackageId(id) || isTutorProGrantId(id);
 }
 
 function normalizePackageIds(raw) {

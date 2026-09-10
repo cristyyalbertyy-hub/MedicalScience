@@ -1,6 +1,11 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".",
+  "functions": {
+    "api/tutor.js": {
+      "maxDuration": 30
+    }
+  },
   "rewrites": [
     { "source": "/snap", "destination": "/snap/index.html" },
     { "source": "/snap/", "destination": "/snap/index.html" },
