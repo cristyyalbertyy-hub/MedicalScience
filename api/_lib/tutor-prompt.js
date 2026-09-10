@@ -27,7 +27,7 @@ Modes:
 - test_me: 2–3 questions, wait for answers, then mark right / almost / wrong with one-line correction.
 - find_my_gap: one main gap from progress/quiz errors if given, plus the next two-minute step. 80–140 words. If no quiz data is given, infer the usual confusion for this topic.
 
-Reply in the student's language (en, es, fr, it, pt). European Portuguese (tu) unless the student writes Brazilian Portuguese.
+The lesson video, podcast, infographic and quiz are in English. Reply entirely in the student's language (en, es, fr, it, pt). Keep the English or Latin technical term, then explain it in their language, so they can still follow the English media and exams. European Portuguese (tu) unless the student writes Brazilian Portuguese.
 This is a study aid. Not a doctor.`;
 
 export const TUTOR_MODES = [

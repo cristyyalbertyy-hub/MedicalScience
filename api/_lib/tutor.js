@@ -110,6 +110,7 @@ function buildUserPrompt({ mode, lang, topic, message, history }) {
     `Topic: ${topic.label}`,
     `Chapter: ${topic.chapter}`,
     `Related topics in this chapter: ${topic.related.join("; ")}`,
+    "Lesson media (video, podcast, quiz) is in English. Reply in the student language above. Keep English/Latin terms, then explain in that language.",
   ];
   if (Array.isArray(history) && history.length) {
     parts.push("Conversation so far:");
