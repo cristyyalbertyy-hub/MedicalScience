@@ -130,6 +130,23 @@ function buildUserPrompt({ mode, lang, topic, message, history }) {
   return parts.join("\n");
 }
 
+function cachedSystem(system) {
+  const topics = progressManifest?.packages?.[TUTOR_PACKAGE_ID]?.topics ?? [];
+  const syllabus = topics.map((topic) => `- ${topic.id}: ${topic.label}`).join("\n");
+  const text = `${system}
+
+Medical Biology syllabus (titles only; answer the current topic, not the whole list):
+${syllabus}
+This list is orientation. It does not replace the current topic. Stay on the requested topic and mode.`;
+  return [
+    {
+      type: "text",
+      text,
+      cache_control: { type: "ephemeral", ttl: "1h" },
+    },
+  ];
+}
+
 async function callAnthropic({ system, userText }) {
   const key = process.env.ANTHROPIC_API_KEY?.trim();
   if (!key) return null;
@@ -144,7 +161,7 @@ async function callAnthropic({ system, userText }) {
     body: JSON.stringify({
       model,
       max_tokens: 900,
-      system,
+      system: cachedSystem(system),
       messages: [{ role: "user", content: userText }],
     }),
   });
