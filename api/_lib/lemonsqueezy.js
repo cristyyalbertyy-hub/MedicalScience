@@ -40,7 +40,11 @@ function variantIdFromAttrs(attrs) {
 }
 
 function isSubscriptionPlanId(plan) {
-  return plan === "subscription_monthly" || plan === "subscription_annual";
+  return (
+    plan === "subscription_monthly" ||
+    plan === "subscription_semester" ||
+    plan === "subscription_annual"
+  );
 }
 
 function isSubscriptionProductName(name) {
@@ -58,6 +62,9 @@ function planFromVariantName(variantName) {
 
   if (key === "annual" || key === "yearly" || key === "year") {
     return "subscription_annual";
+  }
+  if (key === "semester" || key === "semestral" || key === "6 months" || key === "6-months") {
+    return "subscription_semester";
   }
   if (key === "monthly" || key === "month") {
     return "subscription_monthly";
@@ -115,6 +122,9 @@ function resolveSubscriptionPlan(custom, attrs) {
 
   if (interval === "year" || interval === "yearly" || interval === "annual") {
     return "subscription_annual";
+  }
+  if (interval === "6" || interval === "six_months" || interval === "semester") {
+    return "subscription_semester";
   }
   if (interval === "month" || interval === "monthly") {
     return "subscription_monthly";

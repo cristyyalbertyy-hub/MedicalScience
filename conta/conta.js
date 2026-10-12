@@ -386,7 +386,9 @@ function renderPassBanner() {
     passBilling.textContent =
       activePass.billing === "annual"
         ? t("accountPage.passBillingAnnual")
-        : t("accountPage.passBillingMonthly");
+        : activePass.billing === "semester"
+          ? t("accountPage.passBillingSemester")
+          : t("accountPage.passBillingMonthly");
   }
 
   if (passRenewal) {

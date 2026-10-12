@@ -111,13 +111,13 @@
     "human-anatomy-1": {
       "title": "Human Anatomy I",
       "url": "/human-anatomy-1/",
-      "priceUsd": 14.99,
+      "priceUsd": 19.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/bab797ec-5572-49cd-8f4b-50435d9bc1c0?embed=1"
     },
     "medical-biology": {
       "title": "Medical Biology",
       "url": "/medical-biology/",
-      "priceUsd": 12.99,
+      "priceUsd": 16.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=medical-biology",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/e9fb6c31-00b8-442e-a257-94facf465056?embed=1"
@@ -125,7 +125,7 @@
     "genetics": {
       "title": "Genetics",
       "url": "/genetics/",
-      "priceUsd": 8.99,
+      "priceUsd": 11.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=genetics",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/7c8aa8d6-f028-435e-ae30-b91e7b1269a0?embed=1"
@@ -133,26 +133,26 @@
     "physics": {
       "title": "Physics",
       "url": "/physics/",
-      "priceUsd": 13.99,
+      "priceUsd": 17.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/edd15588-c166-42cb-9614-9f91fce6dd4d?embed=1"
     },
     "information-processing": {
       "title": "Information Processing",
       "url": "/information-processing/",
-      "priceUsd": 6.99,
+      "priceUsd": 8.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/83648a24-754e-4c40-b55d-847dba7fcbd2?embed=1"
     },
     "statistics": {
       "title": "Statistics",
       "url": "/statistics/",
-      "priceUsd": 18.99,
+      "priceUsd": 24.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/28ad6590-b686-4ee1-85f7-2fdd12d89335?embed=1"
     },
     "histology": {
       "title": "Histology",
       "parentApp": "histology-embryology",
       "url": "/histology/",
-      "priceUsd": 10.99,
+      "priceUsd": 13.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=histology",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/30dadd74-63df-4792-9e6b-87f0aa4e4606?embed=1"
@@ -161,7 +161,7 @@
       "title": "Embryology",
       "parentApp": "histology-embryology",
       "url": "/embryology/",
-      "priceUsd": 11.99,
+      "priceUsd": 15.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=embryology",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/61ba830b-04c2-441d-a182-30a292f7abcc?embed=1"
@@ -170,7 +170,7 @@
       "title": "Histology and Embryology",
       "parentApp": "histology-embryology",
       "url": "/histology-embryology/",
-      "priceUsd": 15.99,
+      "priceUsd": 20.99,
       "bundleOf": [
         "histology",
         "embryology"
@@ -183,7 +183,7 @@
       "title": "Chemistry",
       "parentApp": "chemistry-introductory-biochemistry",
       "url": "/chemistry/",
-      "priceUsd": 14.99,
+      "priceUsd": 19.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=chemistry",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/a8e270a9-9e42-4396-9bfc-11f0203770bb?embed=1"
@@ -192,7 +192,7 @@
       "title": "Introductory Biochemistry",
       "parentApp": "chemistry-introductory-biochemistry",
       "url": "/introductory-biochemistry/",
-      "priceUsd": 6.99,
+      "priceUsd": 8.99,
       "loginReady": true,
       "progressUrl": "https://progress-azure-five.vercel.app/?package=introductory-biochemistry",
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/ae69e9a5-9642-45ea-879b-1ef9a0c22b06?embed=1"
@@ -201,7 +201,7 @@
       "title": "Chemistry and Introductory Biochemistry",
       "parentApp": "chemistry-introductory-biochemistry",
       "url": "/chemistry-introductory-biochemistry/",
-      "priceUsd": 17.99,
+      "priceUsd": 22.99,
       "bundleOf": [
         "chemistry",
         "introductory-biochemistry"
@@ -213,19 +213,19 @@
     "history-of-medicine": {
       "title": "History of Medicine",
       "url": "/history-of-medicine/",
-      "priceUsd": 9.99,
+      "priceUsd": 12.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/2d743817-b578-4c6e-af1b-d5ea1272dc81?embed=1"
     },
     "moral-philosophy": {
       "title": "Moral Philosophy",
       "url": "/moral-philosophy/",
-      "priceUsd": 9.99,
+      "priceUsd": 12.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/8a6bd132-16a6-428f-bc7f-a5a91d7f3c74?embed=1"
     },
     "health-technology-assessments": {
       "title": "Health Technology Assessments (EU)",
       "url": "/health-technology-assessments/",
-      "priceUsd": 5.99,
+      "priceUsd": 7.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/8eed3ddf-83a1-4712-a652-ac688f856742?embed=1"
     },
     "italian-health-system": {
@@ -235,32 +235,32 @@
     }
   },
   "pricing": {
-    "minPriceUsd": 5.99,
-    "maxPriceUsd": 18.99,
+    "minPriceUsd": 7.99,
+    "maxPriceUsd": 24.99,
     "tiers": {
       "s": {
         "label": "Small",
         "minTopics": 1,
         "maxTopics": 9,
-        "priceFromUsd": 5.99,
-        "priceToUsd": 9.99,
-        "priceUsd": 9.99
+        "priceFromUsd": 7.99,
+        "priceToUsd": 8.99,
+        "priceUsd": 8.99
       },
       "m": {
         "label": "Medium",
         "minTopics": 10,
         "maxTopics": 19,
-        "priceFromUsd": 9.99,
-        "priceToUsd": 12.99,
-        "priceUsd": 11.99
+        "priceFromUsd": 11.99,
+        "priceToUsd": 16.99,
+        "priceUsd": 13.99
       },
       "l": {
         "label": "Large",
         "minTopics": 20,
         "maxTopics": null,
-        "priceFromUsd": 13.99,
-        "priceToUsd": 18.99,
-        "priceUsd": 14.99
+        "priceFromUsd": 17.99,
+        "priceToUsd": 24.99,
+        "priceUsd": 19.99
       }
     },
     "volumeDiscounts": []
@@ -297,6 +297,13 @@
       "enabled": true,
       "billing": "monthly"
     },
+    "subscription_semester": {
+      "label": "Studio9 Pass — semester",
+      "includes": "all_paid",
+      "durationDays": 183,
+      "enabled": true,
+      "billing": "semester"
+    },
     "subscription_annual": {
       "label": "Studio9 Pass — annual",
       "includes": "all_paid",
@@ -310,14 +317,20 @@
     "id": "studio9-pass",
     "monthly": {
       "plan": "subscription_monthly",
-      "priceUsd": 9.99,
+      "priceUsd": 12.99,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/96a264e5-84e7-4546-9c11-cb91fb502d46?embed=1"
+    },
+    "semester": {
+      "plan": "subscription_semester",
+      "priceUsd": 69,
+      "equivalentMonthlyUsd": 11.5,
+      "checkoutUrl": ""
     },
     "annual": {
       "plan": "subscription_annual",
-      "priceUsd": 99,
+      "priceUsd": 129,
       "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/4cfcbf2c-1941-435f-8edb-917edca394a7?embed=1",
-      "equivalentMonthlyUsd": 8.25
+      "equivalentMonthlyUsd": 10.75
     }
   },
   "lemonSqueezy": {

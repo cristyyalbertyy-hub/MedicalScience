@@ -128,7 +128,11 @@ export async function grantEntitlements({
 }
 
 function isSubscriptionPlan(plan) {
-  return plan === "subscription_monthly" || plan === "subscription_annual";
+  return (
+    plan === "subscription_monthly" ||
+    plan === "subscription_semester" ||
+    plan === "subscription_annual"
+  );
 }
 
 export async function upsertSubscriptionRecord({

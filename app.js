@@ -555,7 +555,7 @@ function renderPackageCard(pkg, { compact = false, catalog = {}, manifest = {} }
   const partHint = renderPartOfAppHint({ ...pkg, isBundle }, catalog);
   const syllabus = renderSyllabusBlock(pkg, catalog, manifest);
   const tierBadge =
-    tierId != null
+    tierId != null && !isSoon
       ? `<div class="package-tier-row">${renderTierPriceBadge(tierId, pricingConfig, { free, topicCount, priceUsd })}</div>`
       : "";
 
@@ -689,12 +689,12 @@ function planAmount(amountUsd, currency) {
 function getPricingConfig(catalog = packageCatalog ?? {}) {
   return (
     catalog.pricing ?? {
-      minPriceUsd: 5.99,
-      maxPriceUsd: 18.99,
+      minPriceUsd: 7.99,
+      maxPriceUsd: 24.99,
       tiers: {
-        s: { label: "Small", minTopics: 1, maxTopics: 9, priceFromUsd: 5.99, priceToUsd: 9.99, priceUsd: 9.99 },
-        m: { label: "Medium", minTopics: 10, maxTopics: 19, priceFromUsd: 9.99, priceToUsd: 12.99, priceUsd: 11.99 },
-        l: { label: "Large", minTopics: 20, maxTopics: null, priceFromUsd: 13.99, priceToUsd: 18.99, priceUsd: 14.99 },
+        s: { label: "Small", minTopics: 1, maxTopics: 9, priceFromUsd: 7.99, priceToUsd: 8.99, priceUsd: 8.99 },
+        m: { label: "Medium", minTopics: 10, maxTopics: 19, priceFromUsd: 11.99, priceToUsd: 16.99, priceUsd: 13.99 },
+        l: { label: "Large", minTopics: 20, maxTopics: null, priceFromUsd: 17.99, priceToUsd: 24.99, priceUsd: 19.99 },
       },
       volumeDiscounts: [],
     }
@@ -852,24 +852,8 @@ async function applyPricingCurrency(next) {
 }
 
 function initPricingCurrency() {
-  const selector = document.querySelector(".currency-selector");
-  if (!selector) return;
-
-  try {
-    const stored = localStorage.getItem(CURRENCY_STORAGE_KEY);
-    if (stored === "eur" || stored === "usd") pricingCurrency = stored;
-  } catch {
-    /* ignore */
-  }
-
-  selector.querySelectorAll("[data-currency]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const next = btn.dataset.currency;
-      if (next === "eur" || next === "usd") applyPricingCurrency(next);
-    });
-  });
-
-  applyPricingCurrency(pricingCurrency);
+  pricingCurrency = "usd";
+  applyPricingCurrency("usd");
 }
 
 function buildModulePriceRow(id, catalog, manifest) {
@@ -984,6 +968,7 @@ function renderSubscriptionPrices(catalog = packageCatalog ?? {}) {
   if (!sub) return;
 
   const monthlyUsd = Number(sub.monthly?.priceUsd);
+  const semesterUsd = Number(sub.semester?.priceUsd);
   const annualUsd = Number(sub.annual?.priceUsd);
   const equivUsd = Number(sub.annual?.equivalentMonthlyUsd);
 
@@ -992,20 +977,29 @@ function renderSubscriptionPrices(catalog = packageCatalog ?? {}) {
     el.textContent = formatPlanAmount(planAmount(monthlyUsd, pricingCurrency), pricingCurrency);
   });
 
+  document.querySelectorAll('[data-subscription-price="semester"]').forEach((el) => {
+    if (!Number.isFinite(semesterUsd)) return;
+    el.textContent = formatPlanAmount(planAmount(semesterUsd, pricingCurrency), pricingCurrency);
+  });
+
   document.querySelectorAll('[data-subscription-price="annual"]').forEach((el) => {
     if (!Number.isFinite(annualUsd)) return;
     el.textContent = formatPlanAmount(planAmount(annualUsd, pricingCurrency), pricingCurrency);
   });
 
   document.querySelectorAll("[data-subscription-annual-note]").forEach((el) => {
-    if (!Number.isFinite(annualUsd) || !Number.isFinite(equivUsd)) return;
+    if (!Number.isFinite(monthlyUsd) || !Number.isFinite(semesterUsd) || !Number.isFinite(annualUsd)) return;
+    const monthly = formatPlanAmount(planAmount(monthlyUsd, pricingCurrency), pricingCurrency);
+    const semester = formatPlanAmount(planAmount(semesterUsd, pricingCurrency), pricingCurrency);
     const annual = formatPlanAmount(planAmount(annualUsd, pricingCurrency), pricingCurrency);
-    const monthly = formatPlanAmount(planAmount(equivUsd, pricingCurrency), pricingCurrency);
     const template = packageText(
       "precos.paths.annualNote",
-      "Or {annual}/year (about {monthly}/mo).",
+      "Plans: Monthly {monthly} · Semester (6 months) {semester}, save 12% · Annual {annual}, save 17%.",
     );
-    el.textContent = template.replace("{annual}", annual).replace("{monthly}", monthly);
+    el.textContent = template
+      .replace("{monthly}", monthly)
+      .replace("{semester}", semester)
+      .replace("{annual}", annual);
   });
 }
 
@@ -1033,8 +1027,10 @@ function renderSubscriptionCtas(catalog = packageCatalog ?? {}) {
   }
 
   const monthlyUrl = String(sub.monthly?.checkoutUrl ?? "").trim();
+  const semesterUrl = String(sub.semester?.checkoutUrl ?? "").trim();
   const annualUrl = String(sub.annual?.checkoutUrl ?? "").trim();
   const monthlyPlan = sub.monthly?.plan || "subscription_monthly";
+  const semesterPlan = sub.semester?.plan || "subscription_semester";
   const annualPlan = sub.annual?.plan || "subscription_annual";
   const waitlistHref = "../contacto/?topic=subscription";
 
@@ -1054,6 +1050,20 @@ function renderSubscriptionCtas(catalog = packageCatalog ?? {}) {
     );
   }
 
+  if (semesterUrl) {
+    parts.push(
+      `<a class="btn btn-secondary lemonsqueezy-button" data-purchase-action href="${escapeHtml(
+        buildSubscriptionCheckoutHref(semesterUrl, semesterPlan),
+      )}">${escapeHtml(packageText("precos.paths.semesterCta", "Get semester Pass"))}</a>`,
+    );
+  } else {
+    parts.push(
+      `<a class="btn btn-secondary" href="${escapeHtml(waitlistHref)}">${escapeHtml(
+        packageText("precos.paths.semesterCta", "Get semester Pass"),
+      )}</a>`,
+    );
+  }
+
   if (annualUrl) {
     parts.push(
       `<a class="btn btn-secondary lemonsqueezy-button" data-purchase-action href="${escapeHtml(
@@ -1064,7 +1074,7 @@ function renderSubscriptionCtas(catalog = packageCatalog ?? {}) {
 
   root.innerHTML = parts.join("");
 
-  if (monthlyUrl || annualUrl) ensureLemonSqueezyScript();
+  if (monthlyUrl || semesterUrl || annualUrl) ensureLemonSqueezyScript();
 }
 
 function refreshSubscriptionUi(catalog = packageCatalog ?? {}) {
