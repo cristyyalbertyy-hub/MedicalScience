@@ -11,13 +11,13 @@ SITE_LOCALES.it = {
         "Catalogo del corso Medical Science: 27 moduli con ore di studio e descrizione di ogni materia.",
     },
     packages: {
-      title: "Pacchetti pronti · Medical Science · Studio9",
-      description: "27 discipline di scienze della salute. 14 online oggi, 13 in arrivo. Compra una disciplina, o sblocca tutti i moduli a pagamento con Studio9 Pass.",
+      title: "Tutti i moduli · Medical Science · Studio9",
+      description: "27 moduli di scienze della salute. 14 online oggi, 13 in arrivo. Compra un modulo, o sblocca tutti i moduli a pagamento con Studio9 Pass.",
     },
     precos: {
       title: "Come funziona + Prezzi · Medical Science · Studio9",
       description:
-        "Come funziona il corso Medical Science di Studio9, con piani tariffari per moduli, bundle e corso integrale.",
+        "Come funziona Studio9 Medical Science. Compra un modulo o sblocca tutti i moduli con Studio9 Pass.",
     },
     account: {
       title: "Il mio account · Studio9 Medical Science",
@@ -50,7 +50,7 @@ SITE_LOCALES.it = {
     menu: "Menu",
     home: "Home",
     curriculo: "Programma",
-    packages: "Pacchetti",
+    packages: "Moduli",
     precos: "Come funziona + Prezzi",
     account: "Il mio account",
     tomatoTime: "Tomato Time",
@@ -60,7 +60,7 @@ SITE_LOCALES.it = {
   footer: {
     brand: "Studio9 + Medical Science",
     curriculo: "Programma",
-    packages: "Pacchetti",
+    packages: "Moduli",
     howItWorks: "Come funziona",
     pricing: "Prezzi",
     faq: "FAQ",
@@ -138,15 +138,15 @@ SITE_LOCALES.it = {
     exercises: { alt: "Esercizio interattivo con feedback immediato nell'app" },
     infographics: { alt: "Tablet su una scrivania con infografica di anatomia umana" },
     quiz: { alt: "Questionario interattivo con domande aperte e verifica immediata nell'app" },
-    packages: { alt: "Panoramica dei pacchetti di apprendimento Studio9 pronti all'uso" },
-    progress: { alt: "Dashboard dei progressi dello studente per disciplina" },
+    packages: { alt: "Panoramica dei moduli di apprendimento Studio9 pronti all'uso" },
+    progress: { alt: "Dashboard dei progressi dello studente per modulo" },
   },
   home: {
     hero: {
       eyebrow: "Corso online · 27 moduli · App Studio9",
       title: "Medical Science. Dove e quando vuoi.",
       lead: "Studia anatomia, fisiologia, genetica e molto altro. In video brevi, podcast per l'autobus ed esercizi interattivi. Tutto dentro l'app Studio9.",
-      ctaDisciplines: "Vedi tutte le discipline",
+      ctaDisciplines: "Vedi tutti i moduli",
       ctaHow: "Scopri come funziona",
       ctaFreeIntro:
         "Prova un modulo gratis. Esplora video, podcast, infografiche e questionari.",
@@ -168,19 +168,19 @@ SITE_LOCALES.it = {
         "Lavori o hai orari complicati? Studia sull'autobus, nella pausa pranzo o prima di dormire. Senza sensi di colpa, senza stress.",
     },
     preview: {
-      eyebrow: "Tutte le discipline",
-      title: "27 materie. Scegli quelle che ti servono.",
+      eyebrow: "Tutti i moduli",
+      title: "27 moduli. Scegli quelli che ti servono.",
       intro:
-        "Quattordici app Studio9 sono già online. Tredici discipline arriveranno presto. Ogni modulo include 40 a 60 ore di studio. Video, podcast, infografiche e questionari.",
+        "Quattordici app Studio9 sono già online. Tredici moduli arriveranno presto. Ogni modulo include 40 a 60 ore di studio. Video, podcast, infografiche e questionari.",
       liveCount: "14 app online",
       soonCount: "13 in arrivo",
       hours: "40 a 60 ore per modulo",
-      cta: "Vedi tutte le discipline →",
+      cta: "Vedi tutti i moduli →",
     },
     packages: {
       eyebrow: "Già disponibili",
-      title: "Pacchetti pronti all'uso.",
-      intro: 'Quattordici app Studio9 sono già online. Il resto è in arrivo. <a href="packages/">Vedi tutti i pacchetti →</a>',
+      title: "Tutti i moduli.",
+      intro: 'Quattordici app Studio9 sono già online. Il resto è in arrivo. <a href="packages/">Vedi l\'elenco completo →</a>',
     },
     testimonials: {
       aria: "Testimonianze",
@@ -209,7 +209,7 @@ SITE_LOCALES.it = {
       aria: "Progressi dello studente",
       eyebrow: "Sei già iscritto?",
       title: "Dashboard dei progressi",
-      text: "Un unico posto per seguire lo studio in ogni pacchetto. Video, podcast, infografiche e questionari, aggiornati mentre impari. Disponibile da Il mio account dopo l'acquisto.",
+      text: "Un unico posto per seguire lo studio in ogni modulo. Video, podcast, infografiche e questionari, aggiornati mentre impari. Disponibile da Il mio account dopo l'acquisto.",
       cta: "Apri dashboard progressi →",
     },
     tomatoTime: {
@@ -217,7 +217,7 @@ SITE_LOCALES.it = {
       eyebrow: "Strumento gratuito · Studio9",
       title: "Tomato Time. Studia senza desiderare che il tempo finisca.",
       text:
-        "Un timer Pomodoro che conta in avanti (0:00 → 25:00), non all'indietro. Costruisci focus e presenza. Poi apri i tuoi pacchetti Medical Science quando il percorso è finito.",
+        "Un timer Pomodoro che conta in avanti (0:00 → 25:00), non all'indietro. Costruisci focus e presenza. Poi apri i tuoi moduli Medical Science quando il percorso è finito.",
       cta: "Scopri Tomato Time →",
       ctaApp: "Apri app",
     },
@@ -237,7 +237,7 @@ SITE_LOCALES.it = {
     },
     final: {
       title: "Da $7.99 a modulo, o Studio9 Pass da $12.99/mese.",
-      text: "Compra una disciplina per studiare, o sblocca tutti i moduli a pagamento più Studio9 Snap con il Pass.",
+      text: "Compra un modulo per studiare, o sblocca tutti i moduli a pagamento più Studio9 Snap con il Pass.",
       cta: "Vedi i prezzi e inizia",
     },
   },
@@ -248,27 +248,27 @@ SITE_LOCALES.it = {
       text: "27 moduli. Ogni modulo = 40 a 60 ore di studio. Al tuo ritmo.",
       statModules: "moduli",
       statApps: "app live",
-      mediaAria: "Panoramica dei pacchetti di apprendimento Studio9",
+      mediaAria: "Panoramica dei moduli di apprendimento Studio9",
     },
     table: {
-      subject: "Materia",
+      subject: "Modulo",
       hours: "Ore",
       description: "Breve descrizione",
-      packageLink: "Pacchetto Studio9 (online) →",
+      packageLink: "Modulo Studio9 (online) →",
     },
     note: {
       text: "Puoi acquistare moduli singoli o bundle. Ogni modulo include video, podcast, esercizi e un riassunto scaricabile.",
       cta: "Vedi i piani tariffari →",
     },
-    listAria: "Elenco delle materie",
+    listAria: "Elenco dei moduli",
   },
   packagesPage: {
     hero: {
       eyebrow: "Interattivo · pronto all'uso",
-      title: "Pacchetti pronti all'uso.",
-      text: '27 discipline di scienze della salute. 14 online oggi, 13 in arrivo. Compra una disciplina, o sblocca tutti i moduli a pagamento con <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
+      title: "Tutti i moduli.",
+      text: '27 moduli di scienze della salute. 14 online oggi, 13 in arrivo. Compra un modulo, o sblocca tutti i moduli a pagamento con <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
-    sectionAria: "Pacchetti di apprendimento pronti all'uso",
+    sectionAria: "Moduli di scienze della salute",
     freeSpotlight: {
       aria: "Modulo gratuito da provare",
       eyebrow: "Provalo gratis",
@@ -307,7 +307,7 @@ SITE_LOCALES.it = {
       f2Title: "Pomodoro sulla linea",
       f2Text: "Quattro sessioni mostrano dove sei nel ciclo. Progresso visivo, non solo numeri.",
       f3Title: "Percorso completato",
-      f3Text: "Finisci i quattro blocchi e festeggia. Poi apri i tuoi pacchetti Studio9 con energia.",
+      f3Text: "Finisci i quattro blocchi e festeggia. Poi apri i tuoi moduli Studio9 con energia.",
       f4Title: "Harvest",
       f4Text: "Pomodori e percorsi si sommano nel tempo. Serie di studio senza colpa né fretta.",
     },
@@ -325,7 +325,7 @@ SITE_LOCALES.it = {
     eyebrow: "Account Studio9",
     title: "Il mio account",
     leadHtml:
-      "Apri i tuoi pacchetti da qui. Accedi con Google. <strong>un clic</strong>, stessa email del checkout.",
+      "Apri i tuoi moduli da qui. Accedi con Google. <strong>un clic</strong>, stessa email del checkout.",
     signInTitle: "Accedi",
     sessionTitle: "La tua sessione",
     googleSignIn: "Continua con Google",
@@ -346,16 +346,16 @@ SITE_LOCALES.it = {
     sessionLabel: "Sessione:",
     signOut: "Esci",
     signedInSubtitle:
-      "Account attivo in questo browser. Usa Apri per entrare nei pacchetti.",
+      "Account attivo in questo browser. Usa Apri per entrare nei moduli.",
     signedOutSubtitle: "Accedi con Google. Stesso account dell'email di acquisto.",
     signedOutReturningSubtitle:
-      "Bentornato. Accedi con Google per aprire i tuoi pacchetti.",
+      "Bentornato. Accedi con Google per aprire i tuoi moduli.",
     linkPendingSubtitle:
       "Abbiamo inviato un link a {email}. Aprilo in questo browser prima di richiederne un altro.",
     linkPendingNote:
       "Controlla lo spam. Per risparmiare quota email, attendi il link invece di reinviare.",
-    myPackages: "I miei pacchetti",
-    packagesIntro: "Clicca Apri. Entra nel pacchetto subito.",
+    myPackages: "I miei moduli",
+    packagesIntro: "Clicca Apri. Entra nel modulo subito.",
     emptyTitle: "Non hai ancora moduli disponibili su questo account.",
     emptySignedInHint:
       "Accesso come {email}. Se l'accesso è stato concesso in admin, l'email deve coincidere. Poi clicca Aggiorna accesso.",
@@ -366,7 +366,7 @@ SITE_LOCALES.it = {
     entitlementsError:
       "Impossibile caricare l'elenco accessi. Controlla la connessione e prova Aggiorna accesso.",
     footnoteHtml:
-      'Vuoi più moduli? <a href="../packages/">Vedi tutte le discipline</a> · <a href="../precos/">Acquista</a>',
+      'Vuoi più moduli? <a href="../packages/">Vedi tutti i moduli</a> · <a href="../precos/">Acquista</a>',
     progressTitle: "I miei progressi",
     progressHint: "Dashboard progressi · video, podcast, infografiche e questionari",
     progressOpen: "Apri",
@@ -391,7 +391,7 @@ SITE_LOCALES.it = {
     quotaError:
       "Quota giornaliera di email esaurita. Riprova domani o usa una sessione attiva.",
     signInFirst: "Accedi prima.",
-    openError: "Impossibile aprire il pacchetto.",
+    openError: "Impossibile aprire il modulo.",
     sendError: "Impossibile inviare il link.",
     genericError: "Qualcosa è andato storto.",
     startError: "Impossibile avviare.",
@@ -408,7 +408,7 @@ SITE_LOCALES.it = {
       "Annulla quando vuoi: l'accesso continua fino alla fine del periodo di fatturazione corrente.",
     passManage: "Gestisci abbonamento",
     snapTitle: "Studio9 Snap",
-    snapHint: "Bonus Pass · gioco a tempo · classifica settimanale per materia",
+    snapHint: "Bonus Pass · gioco a tempo · classifica settimanale per modulo",
     snapOpen: "Gioca",
   },
   precos: {
@@ -431,7 +431,7 @@ SITE_LOCALES.it = {
         "Consulta cosa hai completato e cosa resta, materia per materia.",
     },
     paths: {
-      modulesLabel: "Una disciplina",
+      modulesLabel: "Un modulo",
       modulesPeriod: "pagamento unico · 12 mesi di accesso",
       modulesLead: "Perfetto quando ti serve una sola materia in questo periodo.",
       modulesF1: "Prezzo per dimensione (S / M / L)",
@@ -439,10 +439,10 @@ SITE_LOCALES.it = {
       modulesF3: "12 mesi di accesso dall'acquisto",
       modulesF4: "Nessun addebito ricorrente",
       modulesF5: "Solo materiale di studio. Snap è esclusivo del Pass",
-      modulesCta: "Scegli una disciplina →",
+      modulesCta: "Scegli un modulo →",
       passLabel: "Studio9 Pass",
       passPeriod: "al mese · annulla quando vuoi",
-      passLead: "Per chi porta più discipline, e vuole Studio9 Snap come bonus Pass.",
+      passLead: "Ideale per tre o più moduli, o se vuoi cambiare focus quando arrivano gli esami.",
       passF1: "Tutti i moduli a pagamento sbloccati mentre è attivo",
       passF2: "Studio9 Snap. Giochi di innesto a tempo + classifica settimanale per materia",
       passF3: "Cambia materia man mano che arrivano gli esami",
@@ -455,8 +455,8 @@ SITE_LOCALES.it = {
     },
     passWhy: {
       eyebrow: "Perché abbonarsi",
-      title: "Una disciplina è chiara. Un semestre chiede un Pass.",
-      lead: "I pacchetti restano la scelta giusta per una sola materia. Studio9 Pass sblocca tutti i moduli, e Studio9 Snap, un gioco a tempo con classifica settimanale che chi compra il singolo pacchetto non ha.",
+      title: "Ne serve uno? Compra un modulo. Diversi? Il Pass",
+      lead: "Più conveniente che accumulare moduli. L'abbonamento si ripaga quando studi più moduli nello stesso periodo.",
       c1Title: "Più conveniente che accumulare moduli",
       c1Text:
         "Tre moduli medi costano già più di due mesi di Pass. Se studi quattro o cinque materie, l'abbonamento si ripaga da solo.",
@@ -471,7 +471,7 @@ SITE_LOCALES.it = {
       eyebrow: "Nessuna sorpresa",
       title: "Prezzi semplici.",
       pilotNotice:
-        "Compra una disciplina quando ti serve, o sblocca tutto con Studio9 Pass, Studio9 Snap incluso.",
+        "Compra un modulo quando ti serve, o sblocca tutto con Studio9 Pass, Studio9 Snap incluso.",
       modulesEyebrow: "Oppure compra à la carte",
       modulesTitle: "Prezzi dei moduli per dimensione.",
       currencyLabel: "Valuta",
@@ -494,7 +494,7 @@ SITE_LOCALES.it = {
       moduleTableBundle: "Pacchetto completo",
       groupHistologyEmbryology: "Istologia ed Embriologia",
       groupChemistryBiochemistry: "Chimica e Biochimica",
-      chooseCta: "Scegli le discipline →",
+      chooseCta: "Scegli i moduli →",
       planSoon: "In arrivo",
     },
     terms: {
@@ -523,7 +523,7 @@ SITE_LOCALES.it = {
       q7: "Hai altre domande?",
       a7: "Rispondiamo via email entro un giorno lavorativo.",
       q8: "Cos'è Studio9 Snap?",
-      a8: "Un gioco esclusivo Pass: compare un blocco e lo innesti sulla risposta giusta prima che scada il tempo. Ogni modulo semplice live ha la sua classifica settimanale. Chi compra il pacchetto studia la materia; chi ha il Pass gioca anche Snap.",
+      a8: "Un gioco esclusivo Pass: compare un blocco e lo innesti sulla risposta giusta prima che scada il tempo. Ogni modulo semplice live ha la sua classifica settimanale. Chi compra il modulo studia il modulo; chi ha il Pass gioca anche Snap.",
       q9: "In che lingua sono le lezioni?",
       a9: "Le lezioni sono in inglese. Il sito è disponibile in cinque lingue.",
       q10: "I prezzi includono l'IVA?",
@@ -556,7 +556,7 @@ SITE_LOCALES.it = {
     responseTime: "Per ora rispondiamo entro 24 ore.",
     helpTitle: "Aiuto rapido",
     helpAccount: 'Accesso dopo l\'acquisto → <a href="../conta/">Il mio account</a>',
-    helpBuy: 'Acquista un modulo → <a href="../packages/">Discipline</a>',
+    helpBuy: 'Acquista un modulo → <a href="../packages/">Moduli</a>',
     helpFaq: 'Come funziona → <a href="../precos/#faq">FAQ</a>',
     errorRequired: "Compila tutti i campi.",
     success: "Grazie. L'app email dovrebbe aprirsi ora. Altrimenti scrivi a hello@studio9medical.com.",
@@ -796,7 +796,7 @@ SITE_LOCALES.it = {
     },
     y1chem: {
       name: "Chimica e Biochimica Introduttiva",
-      desc: 'Atomi, molecole, legami, pH e vie biochimiche essenziali per le scienze della salute. <a href="../packages/#package-chemistry-introductory-biochemistry">Pacchetto Studio9 (online) →</a>',
+      desc: 'Atomi, molecole, legami, pH e vie biochimiche essenziali per le scienze della salute. <a href="../packages/#package-chemistry-introductory-biochemistry">Modulo Studio9 (online) →</a>',
     },
     y1econ: {
       name: "Economia e Politica Sociale Internazionale",
@@ -804,11 +804,11 @@ SITE_LOCALES.it = {
     },
     y1histo: {
       name: "Istologia ed Embriologia",
-      desc: 'Microscopia, tessuti fondamentali, sviluppo precoce e correlazione con l\'anatomia. <a href="../packages/#package-histology-embryology">Pacchetto Studio9 (online) →</a>',
+      desc: 'Microscopia, tessuti fondamentali, sviluppo precoce e correlazione con l\'anatomia. <a href="../packages/#package-histology-embryology">Modulo Studio9 (online) →</a>',
     },
     y1anat: {
       name: "Anatomia Umana I",
-      desc: 'Sistemi scheletrico, muscolare e nervoso. La base per lo studio clinico. <a href="../packages/#package-human-anatomy-1">Pacchetto Studio9 (online) →</a>',
+      desc: 'Sistemi scheletrico, muscolare e nervoso. La base per lo studio clinico. <a href="../packages/#package-human-anatomy-1">Modulo Studio9 (online) →</a>',
     },
     y1psi: {
       name: "Fisica, Statistica ed Elaborazione dell'Informazione",
@@ -844,7 +844,7 @@ SITE_LOCALES.it = {
     },
     y2stats: {
       name: "Biostatistica",
-      desc: 'Statistica descrittiva e inferenziale per le scienze della salute. <a href="../packages/#package-statistics">Pacchetto Studio9 (online) →</a>',
+      desc: 'Statistica descrittiva e inferenziale per le scienze della salute. <a href="../packages/#package-statistics">Modulo Studio9 (online) →</a>',
     },
     y3path: {
       name: "Patologia Sistemica",

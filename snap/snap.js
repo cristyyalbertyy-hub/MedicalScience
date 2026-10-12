@@ -454,7 +454,7 @@ async function boot() {
   const meta = packages.find((pkg) => pkg.id === requested);
 
   if (!meta) {
-    renderHub(packages, requested ? "That Snap subject is not available." : "");
+    renderHub(packages, requested ? "That Snap module is not available." : "");
     return;
   }
 

@@ -11,13 +11,13 @@ SITE_LOCALES.fr = {
         "Catalogue du cours Medical Science : 27 modules avec heures d'étude et description de chaque matière.",
     },
     packages: {
-      title: "Forfaits prêts à l'emploi · Medical Science · Studio9",
-      description: "27 disciplines de sciences de la santé. 14 en ligne aujourd'hui, 13 à venir. Achetez une discipline, ou débloquez tous les modules payants avec Studio9 Pass.",
+      title: "Tous les modules · Medical Science · Studio9",
+      description: "27 modules de sciences de la santé. 14 en ligne aujourd'hui, 13 à venir. Achetez un module, ou débloquez tous les modules payants avec Studio9 Pass.",
     },
     precos: {
       title: "Comment ça marche + Tarifs · Medical Science · Studio9",
       description:
-        "Comment fonctionne le cours Medical Science de Studio9, avec des formules tarifaires pour les modules, packs et le cursus intégral.",
+        "Comment fonctionne Studio9 Medical Science. Achetez un module ou débloquez tous les modules avec Studio9 Pass.",
     },
     account: {
       title: "Mon compte · Studio9 Medical Science",
@@ -50,7 +50,7 @@ SITE_LOCALES.fr = {
     menu: "Menu",
     home: "Accueil",
     curriculo: "Programme",
-    packages: "Forfaits",
+    packages: "Modules",
     precos: "Comment ça marche + Tarifs",
     account: "Mon compte",
     tomatoTime: "Tomato Time",
@@ -60,7 +60,7 @@ SITE_LOCALES.fr = {
   footer: {
     brand: "Studio9 + Medical Science",
     curriculo: "Programme",
-    packages: "Forfaits",
+    packages: "Modules",
     howItWorks: "Comment ça marche",
     pricing: "Tarifs",
     faq: "FAQ",
@@ -138,15 +138,15 @@ SITE_LOCALES.fr = {
     exercises: { alt: "Exercice interactif avec retour instantané dans l'app" },
     infographics: { alt: "Tablette sur un bureau avec infographie d'anatomie humaine" },
     quiz: { alt: "Questionnaire interactif avec questions ouvertes et vérification instantanée dans l'app" },
-    packages: { alt: "Aperçu des forfaits d'apprentissage Studio9 prêts à l'emploi" },
-    progress: { alt: "Tableau de bord de progression de l'étudiant par discipline" },
+    packages: { alt: "Aperçu des modules d'apprentissage Studio9 prêts à l'emploi" },
+    progress: { alt: "Tableau de bord de progression de l'étudiant par module" },
   },
   home: {
     hero: {
       eyebrow: "Cours en ligne · 27 modules · App Studio9",
       title: "Medical Science, où et quand vous voulez.",
       lead: "Étudiez l'anatomie, la physiologie, la génétique et bien plus encore. En courtes vidéos, podcasts pour le bus et exercices interactifs. Le tout dans l'app Studio9.",
-      ctaDisciplines: "Voir toutes les disciplines",
+      ctaDisciplines: "Voir tous les modules",
       ctaHow: "Voir comment ça marche",
       ctaFreeIntro:
         "Essayez un module gratuitement. Explorez les vidéos, podcasts, infographies et questionnaires.",
@@ -168,19 +168,19 @@ SITE_LOCALES.fr = {
         "Vous travaillez ou jonglez avec des horaires compliqués ? Étudiez dans le bus, à la pause déjeuner ou avant de dormir. Sans culpabilité, sans stress.",
     },
     preview: {
-      eyebrow: "Toutes les disciplines",
-      title: "27 matières. Choisissez celles dont vous avez besoin.",
+      eyebrow: "Tous les modules",
+      title: "27 modules. Choisissez ceux dont vous avez besoin.",
       intro:
-        "Quatorze apps Studio9 sont déjà en ligne. Treize disciplines arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude. Vidéos, podcasts, infographies et questionnaires.",
+        "Quatorze apps Studio9 sont déjà en ligne. Treize modules arrivent bientôt. Chaque module comprend 40 à 60 heures d'étude. Vidéos, podcasts, infographies et questionnaires.",
       liveCount: "14 apps en ligne",
       soonCount: "13 autres à venir",
       hours: "40 à 60 heures par module",
-      cta: "Voir toutes les disciplines →",
+      cta: "Voir tous les modules →",
     },
     packages: {
       eyebrow: "Déjà disponibles",
-      title: "Forfaits prêts à l'emploi.",
-      intro: 'Quatorze apps Studio9 sont déjà en ligne. Le reste arrive. <a href="packages/">Voir tous les forfaits →</a>',
+      title: "Tous les modules.",
+      intro: 'Quatorze apps Studio9 sont déjà en ligne. Le reste arrive. <a href="packages/">Voir la liste complète →</a>',
     },
     testimonials: {
       aria: "Témoignages",
@@ -209,7 +209,7 @@ SITE_LOCALES.fr = {
       aria: "Progression de l'étudiant",
       eyebrow: "Déjà inscrit ?",
       title: "Tableau de bord de progression",
-      text: "Un seul endroit pour suivre votre étude dans chaque forfait. Vidéos, podcasts, infographies et questionnaires, mis à jour au fil de votre apprentissage. Disponible depuis Mon compte après l'achat.",
+      text: "Un seul endroit pour suivre votre étude dans chaque module. Vidéos, podcasts, infographies et questionnaires, mis à jour au fil de votre apprentissage. Disponible depuis Mon compte après l'achat.",
       cta: "Ouvrir le tableau de bord →",
     },
     tomatoTime: {
@@ -217,7 +217,7 @@ SITE_LOCALES.fr = {
       eyebrow: "Outil gratuit · Studio9",
       title: "Tomato Time. Étudiez sans souhaiter que le temps s'écoule.",
       text:
-        "Un minuteur Pomodoro qui compte vers l'avant (0:00 → 25:00), pas vers l'arrière. Construisez focus et présence. Puis ouvrez vos forfaits Medical Science quand le parcours est terminé.",
+        "Un minuteur Pomodoro qui compte vers l'avant (0:00 → 25:00), pas vers l'arrière. Construisez focus et présence. Puis ouvrez vos modules Medical Science quand le parcours est terminé.",
       cta: "Découvrir Tomato Time →",
       ctaApp: "Ouvrir l'app",
     },
@@ -237,7 +237,7 @@ SITE_LOCALES.fr = {
     },
     final: {
       title: "À partir de $7.99 par module, ou Studio9 Pass dès $12.99/mois.",
-      text: "Achetez une discipline pour étudier, ou débloquez tous les modules payants plus Studio9 Snap avec le Pass.",
+      text: "Achetez un module pour étudier, ou débloquez tous les modules payants plus Studio9 Snap avec le Pass.",
       cta: "Voir les tarifs et commencer",
     },
   },
@@ -248,27 +248,27 @@ SITE_LOCALES.fr = {
       text: "27 modules. Chaque module = 40 à 60 heures d'étude. À votre rythme.",
       statModules: "modules",
       statApps: "apps live",
-      mediaAria: "Aperçu des forfaits d'apprentissage Studio9",
+      mediaAria: "Aperçu des modules d'apprentissage Studio9",
     },
     table: {
-      subject: "Matière",
+      subject: "Module",
       hours: "Heures",
       description: "Brève description",
-      packageLink: "Forfait Studio9 (en ligne) →",
+      packageLink: "Module Studio9 (en ligne) →",
     },
     note: {
       text: "Vous pouvez acheter des modules individuels ou des packs. Chaque module comprend vidéos, podcasts, exercices et un résumé téléchargeable.",
       cta: "Voir les formules tarifaires →",
     },
-    listAria: "Liste des matières",
+    listAria: "Liste des modules",
   },
   packagesPage: {
     hero: {
       eyebrow: "Interactif · prêt à l'emploi",
-      title: "Forfaits prêts à l'emploi.",
-      text: '27 disciplines de sciences de la santé. 14 en ligne aujourd\'hui, 13 à venir. Achetez une discipline, ou débloquez tous les modules payants avec <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
+      title: "Tous les modules.",
+      text: '27 modules de sciences de la santé. 14 en ligne aujourd\'hui, 13 à venir. Achetez un module, ou débloquez tous les modules payants avec <a href="/precos/#studio9-pass">Studio9 Pass</a>.',
     },
-    sectionAria: "Forfaits d'apprentissage prêts à l'emploi",
+    sectionAria: "Modules de sciences de la santé",
     freeSpotlight: {
       aria: "Module gratuit à essayer",
       eyebrow: "Essayez gratuitement",
@@ -307,7 +307,7 @@ SITE_LOCALES.fr = {
       f2Title: "Tomate sur la piste",
       f2Text: "Quatre sessions montrent où vous en êtes. Progrès visuel, pas seulement des chiffres.",
       f3Title: "Parcours terminé",
-      f3Text: "Terminez les quatre blocs et célébrez. Puis ouvrez vos forfaits Studio9 avec énergie.",
+      f3Text: "Terminez les quatre blocs et célébrez. Puis ouvrez vos modules Studio9 avec énergie.",
       f4Title: "Harvest",
       f4Text: "Tomates et parcours s'additionnent au fil des jours. Séries d'étude sans culpabilité ni précipitation.",
     },
@@ -325,7 +325,7 @@ SITE_LOCALES.fr = {
     eyebrow: "Compte Studio9",
     title: "Mon compte",
     leadHtml:
-      "Ouvrez vos forfaits ici. Connectez-vous avec Google. <strong>un clic</strong>, même email que l'achat.",
+      "Ouvrez vos modules ici. Connectez-vous avec Google. <strong>un clic</strong>, même email que l'achat.",
     signInTitle: "Se connecter",
     sessionTitle: "Votre session",
     googleSignIn: "Continuer avec Google",
@@ -346,17 +346,17 @@ SITE_LOCALES.fr = {
     sessionLabel: "Session :",
     signOut: "Se déconnecter",
     signedInSubtitle:
-      "Compte actif dans ce navigateur. Utilisez Ouvrir pour accéder à vos forfaits.",
+      "Compte actif dans ce navigateur. Utilisez Ouvrir pour accéder à vos modules.",
     signedOutSubtitle:
       "Connectez-vous avec Google. Même compte que l'email de l'achat.",
     signedOutReturningSubtitle:
-      "Bon retour. Connectez-vous avec Google pour ouvrir vos forfaits.",
+      "Bon retour. Connectez-vous avec Google pour ouvrir vos modules.",
     linkPendingSubtitle:
       "Nous avons envoyé un lien à {email}. Ouvrez-le dans ce navigateur avant d'en demander un autre.",
     linkPendingNote:
       "Vérifiez les spams. Pour économiser le quota d'emails, attendez le lien au lieu de renvoyer.",
-    myPackages: "Mes forfaits",
-    packagesIntro: "Cliquez sur Ouvrir. Entrez dans le forfait tout de suite.",
+    myPackages: "Mes modules",
+    packagesIntro: "Cliquez sur Ouvrir. Entrez dans le module tout de suite.",
     emptyTitle: "Vous n'avez pas encore de modules sur ce compte.",
     emptySignedInHint:
       "Connecté en tant que {email}. Si l'accès a été accordé dans l'admin, l'email doit correspondre. Puis cliquez sur Actualiser l'accès.",
@@ -367,7 +367,7 @@ SITE_LOCALES.fr = {
     entitlementsError:
       "Impossible de charger votre liste d'accès. Vérifiez la connexion et essayez Actualiser l'accès.",
     footnoteHtml:
-      'Vous voulez plus de modules ? <a href="../packages/">Voir toutes les disciplines</a> · <a href="../precos/">Acheter</a>',
+      'Vous voulez plus de modules ? <a href="../packages/">Voir tous les modules</a> · <a href="../precos/">Acheter</a>',
     progressTitle: "Ma progression",
     progressHint: "Tableau de bord · vidéos, podcasts, infographies et questionnaires",
     progressOpen: "Ouvrir",
@@ -392,7 +392,7 @@ SITE_LOCALES.fr = {
     quotaError:
       "Quota quotidien d'emails épuisé. Réessayez demain ou utilisez une session active.",
     signInFirst: "Connectez-vous d'abord.",
-    openError: "Impossible d'ouvrir le forfait.",
+    openError: "Impossible d'ouvrir le module.",
     sendError: "Impossible d'envoyer le lien.",
     genericError: "Une erreur s'est produite.",
     startError: "Impossible de démarrer.",
@@ -409,7 +409,7 @@ SITE_LOCALES.fr = {
       "Résiliez à tout moment. L'accès continue jusqu'à la fin de la période de facturation en cours.",
     passManage: "Gérer l'abonnement",
     snapTitle: "Studio9 Snap",
-    snapHint: "Bonus Pass · jeu chronométré · classement hebdomadaire par matière",
+    snapHint: "Bonus Pass · jeu chronométré · classement hebdomadaire par module",
     snapOpen: "Jouer",
   },
   precos: {
@@ -429,10 +429,10 @@ SITE_LOCALES.fr = {
       s3Text: "Vidéos quand vous êtes concentré. Podcasts en déplacement. Exercices pour vous tester.",
       s4Title: "Suivez votre progression",
       s4Text:
-        "Consultez ce que vous avez terminé et ce qu'il reste, discipline par discipline.",
+        "Consultez ce que vous avez terminé et ce qu'il reste, module par module.",
     },
     paths: {
-      modulesLabel: "Une discipline",
+      modulesLabel: "Un module",
       modulesPeriod: "paiement unique · 12 mois d'accès",
       modulesLead: "Idéal quand vous n'avez besoin que d'une matière cette période.",
       modulesF1: "Tarif selon la taille (S / M / L)",
@@ -440,10 +440,10 @@ SITE_LOCALES.fr = {
       modulesF3: "12 mois d'accès à partir de l'achat",
       modulesF4: "Sans prélèvement récurrent",
       modulesF5: "Matériel d'étude seulement. Snap est exclusif au Pass",
-      modulesCta: "Choisir une discipline →",
+      modulesCta: "Choisir un module →",
       passLabel: "Studio9 Pass",
       passPeriod: "par mois · résiliable à tout moment",
-      passLead: "Pour celles et ceux qui portent plusieurs disciplines. Avec Studio9 Snap en bonus Pass.",
+      passLead: "Idéal pour trois modules ou plus, ou si vous voulez changer de focus à l'approche des examens.",
       passF1: "Tous les modules payants débloqués tant que c'est actif",
       passF2: "Studio9 Snap. Jeux d'encastrement chronométrés + classement hebdomadaire par matière",
       passF3: "Changez de matière à l'approche des examens",
@@ -456,8 +456,8 @@ SITE_LOCALES.fr = {
     },
     passWhy: {
       eyebrow: "Pourquoi s'abonner",
-      title: "Une discipline, c'est clair. Un semestre demande un Pass.",
-      lead: "Les packs restent le bon choix pour une seule matière. Studio9 Pass débloque tous les modules, et Studio9 Snap, un jeu chronométré avec classement hebdomadaire que l'achat à l'unité n'inclut pas.",
+      title: "Un seul ? Achetez un module. Plusieurs ? Le Pass",
+      lead: "Moins cher que d'empiler les modules. L'abonnement s'amortit lorsque vous étudiez plusieurs modules dans la même période.",
       c1Title: "Moins cher que d'empiler les modules",
       c1Text:
         "Trois modules moyens coûtent déjà plus que deux mois de Pass. Avec quatre ou cinq matières, l'abonnement s'amortit.",
@@ -472,7 +472,7 @@ SITE_LOCALES.fr = {
       eyebrow: "Sans surprise",
       title: "Tarifs simples.",
       pilotNotice:
-        "Achetez une discipline quand vous en avez besoin, ou débloquez tout avec Studio9 Pass, Studio9 Snap inclus.",
+        "Achetez un module quand vous en avez besoin, ou débloquez tout avec Studio9 Pass, Studio9 Snap inclus.",
       modulesEyebrow: "Ou achetez à la carte",
       modulesTitle: "Prix des modules par taille.",
       currencyLabel: "Devise",
@@ -495,7 +495,7 @@ SITE_LOCALES.fr = {
       moduleTableBundle: "Forfait complet",
       groupHistologyEmbryology: "Histologie et Embryologie",
       groupChemistryBiochemistry: "Chimie et Biochimie",
-      chooseCta: "Choisir vos disciplines →",
+      chooseCta: "Choisir vos modules →",
       planSoon: "Bientôt disponible",
     },
     terms: {
@@ -557,7 +557,7 @@ SITE_LOCALES.fr = {
     responseTime: "Pour l'instant, nous répondons sous 24 heures.",
     helpTitle: "Aide rapide",
     helpAccount: 'Accès après achat → <a href="../conta/">Mon compte</a>',
-    helpBuy: 'Acheter un module → <a href="../packages/">Disciplines</a>',
+    helpBuy: 'Acheter un module → <a href="../packages/">Modules</a>',
     helpFaq: 'Comment ça marche → <a href="../precos/#faq">FAQ</a>',
     errorRequired: "Veuillez remplir tous les champs.",
     success: "Merci. Votre application mail devrait s'ouvrir. Sinon, écrivez à hello@studio9medical.com.",
@@ -797,7 +797,7 @@ SITE_LOCALES.fr = {
     },
     y1chem: {
       name: "Chimie et Biochimie Introductive",
-      desc: 'Atomes, molécules, liaisons, pH et voies biochimiques essentielles pour les sciences de la santé. <a href="../packages/#package-chemistry-introductory-biochemistry">Forfait Studio9 (en ligne) →</a>',
+      desc: 'Atomes, molécules, liaisons, pH et voies biochimiques essentielles pour les sciences de la santé. <a href="../packages/#package-chemistry-introductory-biochemistry">Module Studio9 (en ligne) →</a>',
     },
     y1econ: {
       name: "Économie et Politique Sociale Internationale",
@@ -805,11 +805,11 @@ SITE_LOCALES.fr = {
     },
     y1histo: {
       name: "Histologie et Embryologie",
-      desc: 'Microscopie, tissus fondamentaux, développement précoce et corrélation avec l\'anatomie. <a href="../packages/#package-histology-embryology">Forfait Studio9 (en ligne) →</a>',
+      desc: 'Microscopie, tissus fondamentaux, développement précoce et corrélation avec l\'anatomie. <a href="../packages/#package-histology-embryology">Module Studio9 (en ligne) →</a>',
     },
     y1anat: {
       name: "Anatomie Humaine I",
-      desc: 'Systèmes squelettique, musculaire et nerveux. La base pour l\'étude clinique. <a href="../packages/#package-human-anatomy-1">Forfait Studio9 (en ligne) →</a>',
+      desc: 'Systèmes squelettique, musculaire et nerveux. La base pour l\'étude clinique. <a href="../packages/#package-human-anatomy-1">Module Studio9 (en ligne) →</a>',
     },
     y1psi: {
       name: "Physique, Statistiques et Traitement de l'Information",
@@ -845,7 +845,7 @@ SITE_LOCALES.fr = {
     },
     y2stats: {
       name: "Biostatistiques",
-      desc: 'Statistiques descriptives et inférentielles pour les sciences de la santé. <a href="../packages/#package-statistics">Forfait Studio9 (en ligne) →</a>',
+      desc: 'Statistiques descriptives et inférentielles pour les sciences de la santé. <a href="../packages/#package-statistics">Module Studio9 (en ligne) →</a>',
     },
     y3path: {
       name: "Pathologie Systémique",
