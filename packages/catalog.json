@@ -324,7 +324,7 @@
       "plan": "subscription_semester",
       "priceUsd": 69,
       "equivalentMonthlyUsd": 11.5,
-      "checkoutUrl": ""
+      "checkoutUrl": "https://studio9medical.lemonsqueezy.com/checkout/buy/c87fc083-5da8-48db-b3e5-469358c82d31?embed=1"
     },
     "annual": {
       "plan": "subscription_annual",
@@ -377,11 +377,13 @@
     "subscriptionProductNames": ["Studio9 Pass"],
     "subscriptionVariantNames": {
       "monthly": "subscription_monthly",
+      "semester": "subscription_semester",
       "annual": "subscription_annual"
     },
     "subscriptionVariants": {
       "96a264e5-84e7-4546-9c11-cb91fb502d46": "subscription_monthly",
       "2028112": "subscription_monthly",
+      "c87fc083-5da8-48db-b3e5-469358c82d31": "subscription_semester",
       "4cfcbf2c-1941-435f-8edb-917edca394a7": "subscription_annual",
       "2028113": "subscription_annual",
       "29e98717-8368-4f80-a6de-fdbe7744dfb3": "subscription_monthly",

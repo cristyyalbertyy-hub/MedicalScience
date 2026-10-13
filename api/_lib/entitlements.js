@@ -195,14 +195,29 @@ function subscriptionLooksActive(data, nowMs) {
   return false;
 }
 
-function toPassPayload(data) {
-  const billing =
-    data.billing_interval === "year" ||
-    data.billing_interval === "yearly" ||
-    data.billing_interval === "annual" ||
+function passBillingFromRecord(data) {
+  const interval = String(data.billing_interval ?? "").toLowerCase();
+  if (
+    interval === "year" ||
+    interval === "yearly" ||
+    interval === "annual" ||
     data.plan === "subscription_annual"
-      ? "annual"
-      : "monthly";
+  ) {
+    return "annual";
+  }
+  if (
+    interval === "semester" ||
+    interval === "six_months" ||
+    interval === "6" ||
+    data.plan === "subscription_semester"
+  ) {
+    return "semester";
+  }
+  return "monthly";
+}
+
+function toPassPayload(data) {
+  const billing = passBillingFromRecord(data);
 
   return {
     active: true,
@@ -268,7 +283,7 @@ export async function getActivePassForUser(userId, email = null) {
     return {
       active: true,
       plan: data.plan,
-      billing: data.plan === "subscription_annual" ? "annual" : "monthly",
+      billing: passBillingFromRecord(data),
       status: "active",
       renews_at: data.expires_at ?? null,
       ends_at: null,

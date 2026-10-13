@@ -119,11 +119,17 @@ function resolveSubscriptionPlan(custom, attrs) {
   const interval = String(
     attrs.variant_interval ?? attrs.billing_interval ?? "",
   ).toLowerCase();
+  const intervalCount = Number(attrs.variant_interval_count ?? attrs.billing_interval_count ?? 1);
 
   if (interval === "year" || interval === "yearly" || interval === "annual") {
     return "subscription_annual";
   }
-  if (interval === "6" || interval === "six_months" || interval === "semester") {
+  if (
+    interval === "6" ||
+    interval === "six_months" ||
+    interval === "semester" ||
+    ((interval === "month" || interval === "monthly") && intervalCount === 6)
+  ) {
     return "subscription_semester";
   }
   if (interval === "month" || interval === "monthly") {
@@ -208,7 +214,11 @@ export function parseSubscriptionEvent(body) {
   const attrsStatus = String(attrs.status ?? "").toLowerCase();
   const billingInterval =
     String(attrs.variant_interval ?? attrs.billing_interval ?? "").toLowerCase() ||
-    (plan === "subscription_annual" ? "year" : "month");
+    (plan === "subscription_annual"
+      ? "year"
+      : plan === "subscription_semester"
+        ? "semester"
+        : "month");
 
   const cancelAtPeriodEnd = Boolean(
     attrs.cancelled ||
